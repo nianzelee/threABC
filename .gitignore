@@ -1,0 +1,55 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.d
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+bin/*
+abc
+arch_flags
+depends.sh
+
+# vim temp files
+*.swp
+
+# log files
+*.log
+*.out
+*.result
+expProb/*
+expEC/*
+log/*
+
+# matlab files
+*.m
+*.matlab*
+
+# circuit files
+*.blif
+*.aig
+*.paig
+*.bench
+benchmarks/*
