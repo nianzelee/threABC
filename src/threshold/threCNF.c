@@ -208,6 +208,29 @@ int Thre_LocalMin(Thre_S* t, int lvl)
     return min;
 }
 
+// NZ : including current level
+int Th_LocalMax( Thre_S * t , int lvl )
+{
+    int max = 0;
+    int i;
+    int size = Vec_IntSize(t->weights);
+    for( i = lvl ; i < size; ++i )
+        if(Vec_IntEntry( t->weights, i) > 0)
+            max += Vec_IntEntry( t->weights, i );
+    return max;
+}
+
+int Th_LocalMin( Thre_S * t , int lvl )
+{
+    int min = 0;
+    int i;
+    int size = Vec_IntSize(t->weights);
+    for( i = lvl ; i < size; ++i )
+        if(Vec_IntEntry( t->weights, i) < 0)
+            min += Vec_IntEntry( t->weights, i );
+    return min;
+}
+// NZ : including current level
 
 Thre_S* slow_sortByWeights( Thre_S* tObj )
 {

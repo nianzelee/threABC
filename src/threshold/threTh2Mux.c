@@ -41,15 +41,16 @@
 // extern functions
 extern Thre_S * slow_sortByWeights         ( Thre_S * );
 extern void     delete_sortedNode          ( Thre_S * );
-extern int      Thre_LocalMax              (Thre_S * , int );
-extern int      Thre_LocalMin              (Thre_S * , int );
+extern int      Th_LocalMax                ( Thre_S * , int );
+extern int      Th_LocalMin                ( Thre_S * , int );
 
 // main function
 Abc_Ntk_t*   Th_Ntk2Mux              ( Vec_Ptr_t * );
 // helper functions
 static void         Th_Ntk2MuxCreatePio     ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * , Vec_Ptr_t * );
 static void         Th_Ntk2MuxCreateMux     ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * );
-static Abc_Obj_t*   Th_Node2Mux_rec         ( Thre_S * ,  Abc_Ntk_t * );
+static Abc_Obj_t*   Th_Node2Mux             ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * );
+static Abc_Obj_t*   Th_Node2Mux_rec         ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int );
 static void         Th_Ntk2MuxFinalize      ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * );
 
 /**Function*************************************************************
@@ -188,15 +189,47 @@ Th_Ntk2MuxCreateMux( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
 #else
    Vec_PtrForEachEntry( Thre_S * , vTh , tObj , i )
    {
-      tObj->pCopy = Th_Node2Mux_rec( tObj , pNtkMux );
+      tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux );
    }
 #endif
 }
 
 Abc_Obj_t*
-Th_Node2Mux_rec( Thre_S * tObj ,  Abc_Ntk_t * pNtkMux )
+Th_Node2Mux( Vec_Ptr_t * thre_list , Thre_S * tObj ,  Abc_Ntk_t * pNtkMux )
 {
-   return NULL;
+   Thre_S    * tObjSort;
+   Abc_Obj_t * pObjMux;
+
+   tObjSort = slow_sortByWeights( tObj );
+   pObjMux  = Th_Node2Mux_rec( thre_list , tObjSort , pNtkMux , tObjSort->thre , 0 );
+   delete_sortedNode( tObjSort );
+   if ( !pObjMux ) {
+      printf( "[Error] convert Th node to mux trees fail.\n" );
+      return NULL;
+   }
+   return pObjMux;
+}
+
+Abc_Obj_t*
+Th_Node2Mux_rec( Vec_Ptr_t * list , Thre_S * tObjSort , Abc_Ntk_t * pNtkMux , int thre , int lvl )
+{
+   assert( lvl < Vec_IntSize( tObjSort->Fanins ) );
+   Abc_Obj_t * pObjMux; 
+   Thre_S    * tObjC;
+   int curMax , curMin , curW;
+
+   curMax = Th_LocalMax( tObjSort , lvl );
+   curMin = Th_LocalMin( tObjSort , lvl );
+
+   if ( curMax <  thre ) return Abc_ObjNot( Abc_AigConst1( pNtkMux ) );
+   if ( curMin >= thre ) return Abc_AigConst1( pNtkMux );
+   
+   curW    = Vec_IntEntry( tObjSort->weights , lvl );
+   tObjC   = Th_GetObjById( list , Vec_IntEntry( tObjSort->Fanins , lvl ) );
+   pObjMux = Abc_AigMux( pNtkMux->pManFunc , tObjC->pCopy , 
+                         Th_Node2Mux_rec( list , tObjSort , pNtkMux , thre-curW , lvl+1 ) ,
+                         Th_Node2Mux_rec( list , tObjSort , pNtkMux , thre      , lvl+1 ) );
+   return pObjMux;
 }
 
 /**Function*************************************************************

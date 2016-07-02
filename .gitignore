@@ -42,6 +42,7 @@ depends.sh
 *.opb
 *.cnf
 *.ps
+*.th
 expProb/*
 expEC/*
 log/*
