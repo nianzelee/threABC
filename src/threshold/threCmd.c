@@ -223,6 +223,7 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
 	       Th_CollapseNtk( current_TList , fIterative , i );
 	 }
 #endif
+    // sort current_TList and clean up NULL objects
     Th_NtkDfs();
 	 Abc_PrintTime( 1 , "collapse time : " , Abc_Clock()-clk );
     
