@@ -213,7 +213,7 @@ Th_Node2Mux( Vec_Ptr_t * thre_list , Thre_S * tObj ,  Abc_Ntk_t * pNtkMux )
 Abc_Obj_t*
 Th_Node2Mux_rec( Vec_Ptr_t * list , Thre_S * tObjSort , Abc_Ntk_t * pNtkMux , int thre , int lvl )
 {
-   assert( lvl < Vec_IntSize( tObjSort->Fanins ) );
+   assert( lvl <= Vec_IntSize( tObjSort->Fanins ) );
    Abc_Obj_t * pObjMux; 
    Thre_S    * tObjC;
    int curMax , curMin , curW;
