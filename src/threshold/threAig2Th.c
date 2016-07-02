@@ -184,7 +184,8 @@ aigThCreateCi( Abc_Ntk_t * pNtk , Vec_Ptr_t * thre_list , Vec_Int_t * id_map )
 
    Abc_NtkForEachCi( pNtk , pObj , i )
 	{
-      tObj      = Th_CreateObj( thre_list , Th_Pi );
+      tObj        = Th_CreateObj( thre_list , Th_Pi );
+      //tObj->pName = Abc_ObjName( pObj );
 		Vec_IntWriteEntry( id_map , Abc_ObjId( pObj ) , tObj->Id );
 	}
 }
@@ -198,7 +199,8 @@ aigThCreateCo( Abc_Ntk_t * pNtk , Vec_Ptr_t * thre_list , Vec_Int_t * id_map )
 
    Abc_NtkForEachCo( pNtk , pObj , i )
 	{
-      tObj      = Th_CreateObj( thre_list , Th_Po );
+      tObj        = Th_CreateObj( thre_list , Th_Po );
+      //tObj->pName = Abc_ObjName( pObj );
 		Vec_IntWriteEntry( id_map , Abc_ObjId( pObj ) , tObj->Id );
 	}
 }
