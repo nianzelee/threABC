@@ -673,7 +673,8 @@ Th_CollapseNtk( Vec_Ptr_t * TList , int fIterative , int fOutBound )
                if ( Th_CollapseNodes( tObj , j , fOutBound ) ) {
 						// delete tObj`s j-fanin and all its fanouts
 						Th_DeleteClpObj( tObj , j );
-                  continue;
+                  //continue;
+                  break;
                }
                //printf("(%d) cannot be merged.\n", tObj->Id);
                // non-mergable node-> color = black
@@ -748,7 +749,7 @@ Th_NtkDfs()
 	idMap    = Vec_IntStart( Vec_PtrSize( current_TList ) );
 	Vec_PtrPush( newTList , Vec_PtrEntry( current_TList , 0 ) );
 	Th_UnmarkAllNode();
-#if 0
+#if 1
 	Vec_PtrForEachEntry( Thre_S * , current_TList , tObj , i )
 	{
 		if ( tObj && tObj->Type == Th_Po )
@@ -761,15 +762,18 @@ Th_NtkDfs()
 		   Th_NtkDfs_rec( tObj , newTList );
 	}
 #endif
+  
    Vec_PtrFree( current_TList );
-	current_TList = newTList;
+   current_TList = newTList;
 	Vec_PtrForEachEntry( Thre_S * , current_TList , tObj , i )
+	//Vec_PtrForEachEntry( Thre_S * , newTList , tObj , i )
 	{
 		Vec_IntWriteEntry( idMap , tObj->Id , i );
       tObj->Id = i;
 	}
 	Th_NtkDfsUpdateId( idMap );
 	Vec_IntFree( idMap );
+   //Vec_PtrFree( newTList );
 }
 
 void
@@ -781,7 +785,7 @@ Th_NtkDfs_rec( Thre_S * tObj , Vec_Ptr_t * newTList )
 	if ( tObj->nId == globalRef ) return;
 
 	//printf( "Visiting tObj = %d\n" , tObj->Id  );
-#if 0
+#if 1
 	Vec_IntForEachEntry( tObj->Fanins , Entry , i )
 	{
       tObjFin = Th_GetObjById( current_TList , Entry );

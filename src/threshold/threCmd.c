@@ -83,9 +83,18 @@ Threshold_Init( Abc_Frame_t *pAbc)
 void 
 Threshold_End( Abc_Frame_t *pAbc )
 {
-	if ( current_TList ) DeleteTList( current_TList );
-	if ( another_TList ) DeleteTList( another_TList );
-	if ( cut_TList     ) DeleteTList( cut_TList     );
+	if ( current_TList ) {
+      printf( "current_TList = %p\n" , current_TList );
+      DeleteTList( current_TList );
+   }
+	if ( another_TList ) {
+      printf( "another_TList = %p\n" , another_TList );
+      DeleteTList( another_TList );
+   }
+	if ( cut_TList     ) {
+      printf( "cut_TList = %p\n" , cut_TList );
+      DeleteTList( cut_TList     );
+   }
 }
 
 void
@@ -215,6 +224,7 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
 	       Th_CollapseNtk( current_TList , fIterative , i );
 	 }
 #endif
+    Th_NtkDfs();
 	 Abc_PrintTime( 1 , "collapse time : " , Abc_Clock()-clk );
     
 	 return 0;

@@ -16,14 +16,16 @@ void DeleteTList(Vec_Ptr_t * tList)
 {
     int i;
     Thre_S * tObj;
-    Vec_PtrForEachEntry( Thre_S*, tList, tObj, i){
-        if (tObj == NULL) continue;
-        if (tObj->pName) ABC_FREE(tObj->pName);
-        Vec_IntFree(tObj->weights);
-        Vec_IntFree(tObj->Fanins);
-        Vec_IntFree(tObj->Fanouts);
-        ABC_FREE(tObj);
+    Vec_PtrForEachEntry( Thre_S * , tList , tObj , i ) {
+       if ( tObj != NULL ) {
+          if ( tObj->pName ) ABC_FREE( tObj->pName );
+          Vec_IntFree( tObj->weights );
+          Vec_IntFree( tObj->Fanins  );
+          Vec_IntFree( tObj->Fanouts );
+          ABC_FREE( tObj );
+       }
     }
+    printf( "tList = %p\n" , tList );
     Vec_PtrFree( tList );
 }
 
