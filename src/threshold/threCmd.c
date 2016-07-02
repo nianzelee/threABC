@@ -84,16 +84,16 @@ void
 Threshold_End( Abc_Frame_t *pAbc )
 {
 	if ( current_TList ) {
-      printf( "current_TList = %p\n" , current_TList );
+      //printf( "current_TList = %p\n" , current_TList );
       DeleteTList( current_TList );
    }
 	if ( another_TList ) {
-      printf( "another_TList = %p\n" , another_TList );
+      //printf( "another_TList = %p\n" , another_TList );
       DeleteTList( another_TList );
    }
-	if ( cut_TList     ) {
-      printf( "cut_TList = %p\n" , cut_TList );
-      DeleteTList( cut_TList     );
+	if ( cut_TList ) {
+      //printf( "cut_TList = %p\n" , cut_TList );
+      DeleteTList( cut_TList );
    }
 }
 
@@ -207,7 +207,6 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
     
 	 clk = Abc_Clock();
 
-    //Th_NtkDfs();
 #if 0
     i = 1;
 	 while ( true ) {
@@ -817,9 +816,13 @@ Abc_CommandTestTH( Abc_Frame_t * pAbc, int argc, char ** argv )
    Thre_S * tObj;
 	int i;
 
-	Th_NtkDfs();
-	printf( "current TList ptr = %p , size = %d\n" , current_TList , Vec_PtrSize(current_TList) );
-   Vec_PtrForEachEntry( Thre_S * , current_TList , tObj , i ) Th_DumpObj( tObj );
+	//Th_NtkDfs();
+	//printf( "current TList ptr = %p , size = %d\n" , current_TList , Vec_PtrSize(current_TList) );
+   Vec_PtrForEachEntry( Thre_S * , current_TList , tObj , i )
+   {
+      if ( tObj == NULL )  printf( " > id = %d , tObj = NULL\n" , i );
+      //Th_DumpObj( tObj );
+   }
 }
 
 ////////////////////////////////////////////////////////////////////////

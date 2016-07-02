@@ -17,6 +17,8 @@ void DeleteTList(Vec_Ptr_t * tList)
     int i;
     Thre_S * tObj;
     Vec_PtrForEachEntry( Thre_S * , tList , tObj , i ) {
+       //printf( " > Delete %d-th object , ptr = %p\n" , i  , tObj );
+       //fflush( stdout );
        if ( tObj != NULL ) {
           if ( tObj->pName ) ABC_FREE( tObj->pName );
           Vec_IntFree( tObj->weights );
@@ -25,7 +27,7 @@ void DeleteTList(Vec_Ptr_t * tList)
           ABC_FREE( tObj );
        }
     }
-    printf( "tList = %p\n" , tList );
+    //printf( "tList = %p\n" , tList );
     Vec_PtrFree( tList );
 }
 

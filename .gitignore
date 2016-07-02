@@ -39,6 +39,8 @@ depends.sh
 *.log
 *.out
 *.result
+*.opb
+*.cnf
 expProb/*
 expEC/*
 log/*

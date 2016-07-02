@@ -673,7 +673,6 @@ Th_CollapseNtk( Vec_Ptr_t * TList , int fIterative , int fOutBound )
                if ( Th_CollapseNodes( tObj , j , fOutBound ) ) {
 						// delete tObj`s j-fanin and all its fanouts
 						Th_DeleteClpObj( tObj , j );
-                  //continue;
                   break;
                }
                //printf("(%d) cannot be merged.\n", tObj->Id);
@@ -742,18 +741,26 @@ Th_NtkDfs()
 {
 	Vec_Ptr_t * newTList;
 	Vec_Int_t * idMap;
-	Thre_S * tObj;
+	Thre_S    * tObj;
 	int i;
 	
 	newTList = Vec_PtrAlloc( Vec_PtrSize( current_TList ) );
 	idMap    = Vec_IntStart( Vec_PtrSize( current_TList ) );
-	Vec_PtrPush( newTList , Vec_PtrEntry( current_TList , 0 ) );
 	Th_UnmarkAllNode();
+
+   // push CONST1
+   Vec_PtrPush( newTList , Vec_PtrEntry( current_TList , 0 ) );
+   ((Thre_S*)Vec_PtrEntry( newTList , 0 ))->nId = globalRef;
 #if 1
 	Vec_PtrForEachEntry( Thre_S * , current_TList , tObj , i )
 	{
-		if ( tObj && tObj->Type == Th_Po )
-		   Th_NtkDfs_rec( tObj , newTList );
+		if ( tObj ) {
+         if ( tObj->Type == Th_Pi ) {	
+            Vec_PtrPush( newTList , tObj );
+            tObj->nId = globalRef;
+         }
+         if ( tObj->Type == Th_Po ) Th_NtkDfs_rec( tObj , newTList );
+      }
 	}
 #else
 	Vec_PtrForEachEntry( Thre_S * , current_TList , tObj , i )
@@ -766,14 +773,12 @@ Th_NtkDfs()
    Vec_PtrFree( current_TList );
    current_TList = newTList;
 	Vec_PtrForEachEntry( Thre_S * , current_TList , tObj , i )
-	//Vec_PtrForEachEntry( Thre_S * , newTList , tObj , i )
 	{
 		Vec_IntWriteEntry( idMap , tObj->Id , i );
       tObj->Id = i;
 	}
 	Th_NtkDfsUpdateId( idMap );
 	Vec_IntFree( idMap );
-   //Vec_PtrFree( newTList );
 }
 
 void
@@ -784,7 +789,6 @@ Th_NtkDfs_rec( Thre_S * tObj , Vec_Ptr_t * newTList )
 
 	if ( tObj->nId == globalRef ) return;
 
-	//printf( "Visiting tObj = %d\n" , tObj->Id  );
 #if 1
 	Vec_IntForEachEntry( tObj->Fanins , Entry , i )
 	{
@@ -800,6 +804,7 @@ Th_NtkDfs_rec( Thre_S * tObj , Vec_Ptr_t * newTList )
 #endif
    tObj->nId = globalRef;
    Vec_PtrPush( newTList , tObj );
+   //if ( Vec_PtrPushUnique( newTList , tObj ) ) printf( "[Error] repeat object! (Id = %d)\n" , tObj->Id );
 }
 
 void

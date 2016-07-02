@@ -73,10 +73,7 @@ Th_Ntk2Mux( Vec_Ptr_t * thre_list )
    sprintf( Buffer , "th2mux" );
    pNtkMux->pName = Extra_UtilStrsav( Buffer );
   
-   printf( "  > Th_Ntk2Mux() : perform DFS\n" );
-
-   Th_NtkDfs();
-	thre_list = current_TList;
+   // thre_list must be topologically sorted!
    vPi = Vec_PtrAlloc( 1024 );
 	vPo = Vec_PtrAlloc( 1024 );
 	vTh = Vec_PtrAlloc( 1024 );

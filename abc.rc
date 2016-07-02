@@ -165,10 +165,14 @@ alias pt  "print_th"
 alias tt  "test_th"
 alias ft  "profile_th"
 alias mpt "mt; pt"
+
+# For debug
 alias qq  "r c17.bench; a2t; t2m"
 alias gg  "r b21.blif; a2t; mt; pt"
+alias zz  "r s13207.blif; a2t; mt; pt; q"
 alias QAQ "rt before.th; OAO;"
-#For experiment
+
+# For experiment
 alias thexp  "st; ps; synthio; pt; mt -B 100; pt"
 alias thexp2 "st; ps; synthio; pt; mt; pt"
 alias thexp3 "a2t; pt; mt; pt"
