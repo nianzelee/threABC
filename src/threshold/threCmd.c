@@ -32,6 +32,7 @@
 static int Abc_CommandTestTH           ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandAig2Th           ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandTh2Blif          ( Abc_Frame_t * pAbc, int argc, char ** argv );
+static int Abc_CommandTh2Mux           ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandMerge            ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandPrintThreshold   ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandOAO              ( Abc_Frame_t * pAbc, int argc, char ** argv );
@@ -69,6 +70,7 @@ Threshold_Init( Abc_Frame_t *pAbc)
     Cmd_CommandAdd( pAbc, "z Alcom", "OAO"         , Abc_CommandOAO,            0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "aig2th"      , Abc_CommandAig2Th,         1 );
     Cmd_CommandAdd( pAbc, "z Alcom", "th2blif"     , Abc_CommandTh2Blif,        0 );
+    Cmd_CommandAdd( pAbc, "z Alcom", "th2mux"      , Abc_CommandTh2Mux,         1 );
     Cmd_CommandAdd( pAbc, "z Alcom", "merge_th"    , Abc_CommandMerge,          1 );
     Cmd_CommandAdd( pAbc, "z Alcom", "print_th"    , Abc_CommandPrintThreshold, 0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "read_th"     , Abc_CommandReadThreshold,  1 );
@@ -348,6 +350,57 @@ Abc_CommandTh2Blif( Abc_Frame_t * pAbc, int argc, char ** argv )
 usage:
     fprintf( pErr, "usage:    th2blif [-h]\n" );
     fprintf( pErr, "\t        write out threshold network as blif file\n");
+    fprintf( pErr, "\t-h    : print the command usage\n");
+    return 1;
+}
+
+/**Function*************************************************************
+
+  Synopsis    [Convert threshold network to mux trees.]
+
+  Description []
+               
+  SideEffects []
+
+  SeeAlso     []
+
+***********************************************************************/
+
+int 
+Abc_CommandTh2Mux( Abc_Frame_t * pAbc, int argc, char ** argv )
+{
+    FILE * pOut, * pErr;
+	 Abc_Ntk_t * pNtkRes;
+    int c;
+	 abctime clk;
+	 
+	 pOut = Abc_FrameReadOut(pAbc);
+    pErr = Abc_FrameReadErr(pAbc);
+
+    Extra_UtilGetoptReset();
+    while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
+    {
+        goto usage;
+    }
+
+    if ( !current_TList ) {
+		 fprintf( pErr , "Empty threshold network.\n" );
+		 return 1;
+	 }
+
+	 clk     = Abc_Clock();
+    pNtkRes = Th_Ntk2Mux( current_TList );
+    if ( !pNtkRes ) {
+       Abc_Print( -1 , "Construct mux trees from threshold fail\n" );
+       return 1;
+    }
+    Abc_FrameReplaceCurrentNetwork( pAbc , pNtkRes );
+	 Abc_PrintTime( 1 , "mux convert time " , Abc_Clock()-clk );
+
+    return 0;
+usage:
+    fprintf( pErr, "usage:    th2mux [-h]\n" );
+    fprintf( pErr, "\t        convert threshold network to mux trees\n");
     fprintf( pErr, "\t-h    : print the command usage\n");
     return 1;
 }
