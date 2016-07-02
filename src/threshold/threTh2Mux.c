@@ -39,13 +39,13 @@
 ////////////////////////////////////////////////////////////////////////
 
 // extern functions
-extern Thre_S * slow_sortByWeights         ( Thre_S * );
-extern void     delete_sortedNode          ( Thre_S * );
-extern int      Th_LocalMax                ( Thre_S * , int );
-extern int      Th_LocalMin                ( Thre_S * , int );
+extern Thre_S * slow_sortByWeights          ( Thre_S * );
+extern void     delete_sortedNode           ( Thre_S * );
+extern int      Th_LocalMax                 ( Thre_S * , int );
+extern int      Th_LocalMin                 ( Thre_S * , int );
 
 // main function
-Abc_Ntk_t*   Th_Ntk2Mux              ( Vec_Ptr_t * );
+Abc_Ntk_t*      Th_Ntk2Mux                  ( Vec_Ptr_t * );
 // helper functions
 static void         Th_Ntk2MuxCreatePio     ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * , Vec_Ptr_t * );
 static void         Th_Ntk2MuxCreateMux     ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * );
@@ -139,7 +139,6 @@ Th_Ntk2MuxCreatePio( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
    {
       tObj->pCopy = Abc_NtkCreatePi( pNtkMux );
       sprintf( Buffer , "muxPi-%d" , i );
-      //printf( "Pi name = %s\n" , Buffer );
       Abc_ObjAssignName( tObj->pCopy , Buffer , NULL );
    }
    
@@ -147,7 +146,6 @@ Th_Ntk2MuxCreatePio( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
    {
       tObj->pCopy = Abc_NtkCreatePo( pNtkMux );
       sprintf( Buffer , "muxPo-%d" , i );
-      //printf( "Po name = %s\n" , Buffer );
       Abc_ObjAssignName( tObj->pCopy , Buffer , NULL );
    }
 }
@@ -169,29 +167,11 @@ Th_Ntk2MuxCreateMux( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
                      Vec_Ptr_t * vTh )
 {
    printf( "  > Ntk2Mux : create mux ...\n" );
-   Thre_S * tObj , * tObjFin;
-   int Entry , i , j;
+   Thre_S * tObj;
+   int i;
 
-#if 0
-   // check topological sort
    Vec_PtrForEachEntry( Thre_S * , vTh , tObj , i )
-   {
-      Vec_IntForEachEntry( tObj->Fanins , Entry , j )
-      {
-         tObjFin = Th_GetObjById( thre_list , Entry );
-         if ( !tObjFin->pCopy ) {
-            printf( "[Error] The list is not sorted!\n" );
-            assert(0);
-         }
-      }
-      tObj->pCopy = Abc_AigConst1( pNtkMux );
-   }
-#else
-   Vec_PtrForEachEntry( Thre_S * , vTh , tObj , i )
-   {
       tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux );
-   }
-#endif
 }
 
 Abc_Obj_t*
@@ -248,6 +228,7 @@ void
 Th_Ntk2MuxFinalize( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
                     Vec_Ptr_t * vPo )
 {
+   printf( "  > Ntk2Mux : connect Po ...\n" );
    Thre_S * tObj , * tObjFin;
    int i;
 
