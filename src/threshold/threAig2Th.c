@@ -89,7 +89,9 @@ Th_CreateObj( Vec_Ptr_t * TList , Th_Gate_Type Type )
 	tObj->weights    = Vec_IntAlloc(16);
 	tObj->Fanins     = Vec_IntAlloc(16);
 	tObj->Fanouts    = Vec_IntAlloc(16);
-	Vec_PtrPush( TList , tObj );
+	tObj->pCopy      = NULL;
+
+   Vec_PtrPush( TList , tObj );
 
 	return tObj;
 }

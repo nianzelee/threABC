@@ -61,6 +61,7 @@ struct Thre_S_
    Vec_Int_t * weights;
    Vec_Int_t * Fanins;
    Vec_Int_t * Fanouts;
+   Abc_Obj_t * pCopy;
 };
 
 struct Pair_S_
