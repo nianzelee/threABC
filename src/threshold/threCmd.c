@@ -380,17 +380,28 @@ int
 Abc_CommandTh2Mux( Abc_Frame_t * pAbc, int argc, char ** argv )
 {
     FILE * pOut, * pErr;
-	 Abc_Ntk_t * pNtkRes;
-    int c;
+	 Abc_Ntk_t * pNtk , * pNtkRes;
+    int fDynamic , c;
 	 abctime clk;
 	 
+    fDynamic = 0;
+	 pNtk = Abc_FrameReadOut(pAbc);
 	 pOut = Abc_FrameReadOut(pAbc);
     pErr = Abc_FrameReadErr(pAbc);
 
     Extra_UtilGetoptReset();
-    while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
+    while ( ( c = Extra_UtilGetopt( argc, argv, "dh" ) ) != EOF )
     {
-        goto usage;
+       switch ( c )
+		 {
+		    case 'd':
+			    fDynamic ^= 1;
+			    break;
+		    case 'h':
+             goto usage;
+		    default:
+             goto usage;
+		 }
     }
 
     if ( !current_TList ) {
@@ -399,18 +410,20 @@ Abc_CommandTh2Mux( Abc_Frame_t * pAbc, int argc, char ** argv )
 	 }
 
 	 clk     = Abc_Clock();
-    pNtkRes = Th_Ntk2Mux( current_TList );
+    pNtkRes = Th_Ntk2Mux( current_TList , fDynamic );
     if ( !pNtkRes ) {
        Abc_Print( -1 , "Construct mux trees from threshold fail\n" );
        return 1;
     }
+    if ( pNtk ) Abc_Print( 1 , "Current network is replaced\n" );
     Abc_FrameReplaceCurrentNetwork( pAbc , pNtkRes );
 	 Abc_PrintTime( 1 , "mux convert time " , Abc_Clock()-clk );
 
     return 0;
 usage:
-    fprintf( pErr, "usage:    th2mux [-h]\n" );
+    fprintf( pErr, "usage:    th2mux [-dh]\n" );
     fprintf( pErr, "\t        convert threshold network to mux trees\n");
+    fprintf( pErr, "\t-d    : toggles dynamic variable selection [default = %s]\n" , "no" );
     fprintf( pErr, "\t-h    : print the command usage\n");
     return 1;
 }
