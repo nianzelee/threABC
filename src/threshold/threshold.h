@@ -146,7 +146,6 @@ extern void       Th_DumpMergeObj        ( const Thre_S * , const Thre_S * , con
 extern void       mergeThreNtk_Iter      ( Vec_Ptr_t * , int );
 extern void       deleteNode             ( Vec_Ptr_t * , Thre_S * );
 
-
 //===threStat.c===================================//
 
 extern void       Th_PrintStat          ( Vec_Ptr_t * );
@@ -158,6 +157,33 @@ extern void       Th_ComputeLevel_rec   ( Vec_Ptr_t * , Thre_S * );
 extern int        Th_FindMaxLevel       ( Vec_Ptr_t * );
 extern Vec_Int_t* Th_CountFanio         ( Vec_Ptr_t * , int );
 extern void       Th_PrintData          ( int , int , int , int , Vec_Int_t * , Vec_Int_t * );
+
+//===threProfile.c================================//
+
+extern void       Th_ProfileInit        ();
+extern void       Th_ProfilePrint       ();
+
+//===threCNF.c================================//
+
+extern void       func_EC_writeCNF      ( Abc_Ntk_t * , Vec_Ptr_t * , char * );
+
+//===thresholdNZ.c================================//
+
+extern void       func_EC_compareTH     ( Vec_Ptr_t * , Vec_Ptr_t * );
+extern void       func_CNF_compareTH    ( Vec_Ptr_t * , Vec_Ptr_t * );
+
+//===threKLCollapse.c================================//
+
+extern void       Th_CollapseNtk         ( Vec_Ptr_t * , int , int );
+extern void       Th_NtkDfs              ();
+
+//===threTh2Blif.c===================================//
+
+extern void       Th_WriteBlif           ( Vec_Ptr_t * thre_list , const char * );
+
+//===threTh2Mux.c====================================//
+
+extern Abc_Ntk_t* Th_Ntk2Mux             ( Vec_Ptr_t * , int );
 
 #endif
 

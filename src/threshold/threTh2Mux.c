@@ -53,7 +53,7 @@ static Abc_Obj_t*   Th_Node2Mux             ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t
 static Abc_Obj_t*   Th_Node2Mux_rec         ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int );
 static Abc_Obj_t*   Th_Node2MuxDyn_rec      ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int , int );
 static int          Th_SelectVar            ( Thre_S * , int , int );
-static void         Th_Ntk2MuxFinalize      ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * );
+static void         Th_Ntk2MuxFinalize      ( Vec_Ptr_t * , Vec_Ptr_t * );
 
 /**Function*************************************************************
 
@@ -98,7 +98,7 @@ Th_Ntk2Mux( Vec_Ptr_t * thre_list , int fDynamic )
 
    Th_Ntk2MuxCreatePio  ( thre_list , pNtkMux , vPi , vPo );
    Th_Ntk2MuxCreateMux  ( thre_list , pNtkMux , vTh , fDynamic );
-   Th_Ntk2MuxFinalize   ( thre_list , pNtkMux , vPo );
+   Th_Ntk2MuxFinalize   ( thre_list , vPo );
    
 	Vec_PtrFree( vPi );
 	Vec_PtrFree( vPo );
@@ -264,8 +264,7 @@ Th_SelectVar( Thre_S * t , int head , int tail )
 ***********************************************************************/
 
 void
-Th_Ntk2MuxFinalize( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
-                    Vec_Ptr_t * vPo )
+Th_Ntk2MuxFinalize( Vec_Ptr_t * thre_list , Vec_Ptr_t * vPo )
 {
    printf( "  > Ntk2Mux : connect Po ...\n" );
    Thre_S * tObj , * tObjFin;
@@ -274,7 +273,7 @@ Th_Ntk2MuxFinalize( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
    Vec_PtrForEachEntry( Thre_S * , vPo , tObj , i )
    {
       tObjFin = Th_GetObjById( thre_list , Vec_IntEntry( tObj->Fanins , 0 ) );
-      if ( Vec_IntEntry( tObj->weights , 0 ) == 1 )
+      if ( tObj->thre == 1 )
          Abc_ObjAddFanin( tObj->pCopy , tObjFin->pCopy );  
       else
          Abc_ObjAddFanin( tObj->pCopy , Abc_ObjNot( tObjFin->pCopy ) );  

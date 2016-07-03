@@ -385,7 +385,7 @@ Abc_CommandTh2Mux( Abc_Frame_t * pAbc, int argc, char ** argv )
 	 abctime clk;
 	 
     fDynamic = 0;
-	 pNtk = Abc_FrameReadOut(pAbc);
+	 pNtk = Abc_FrameReadNtk(pAbc);
 	 pOut = Abc_FrameReadOut(pAbc);
     pErr = Abc_FrameReadErr(pAbc);
 
@@ -486,7 +486,7 @@ Abc_CommandReadThreshold( Abc_Frame_t * pAbc, int argc, char ** argv )
 {   
     FILE * pFile;
     char ** pArgvNew;
-    char * FileName, * pTemp;
+    char * FileName; //, * pTemp;
     int nArgcNew;
     int c;
     Extra_UtilGetoptReset();
@@ -546,11 +546,11 @@ usage:
 int 
 Abc_CommandWriteThreshold( Abc_Frame_t * pAbc,int argc, char ** argv )
 {
-    FILE * pFile;
     char ** pArgvNew;
-    char * FileName, * pTemp;
+    char * FileName; //, * pTemp;
     int nArgcNew;
     int c;
+
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
@@ -566,12 +566,11 @@ Abc_CommandWriteThreshold( Abc_Frame_t * pAbc,int argc, char ** argv )
 
     // get the input file name
     FileName = pArgvNew[0];
-    if (current_TList == NULL){
-        printf("ERROR: current threshold gateList is empty!!\n\n");
-        return 1;
+    if ( !current_TList) {
+       printf("[Error] current threshold gateList is empty!!\n");
+       return 1;
     }
-
-    dumpTh2FileNZ (current_TList, FileName);
+    dumpTh2FileNZ( current_TList , FileName );
     return 0;
 
 usage:
@@ -599,7 +598,7 @@ int Abc_CommandEC_Threshold( Abc_Frame_t * pAbc,int argc, char ** argv )
     FILE * pOut, * pErr;
     Abc_Ntk_t * pNtk, * pNtkRes;
     char ** pArgvNew;
-    char * FileName, * pTemp;
+    char * FileName; //, * pTemp;
     int nArgcNew;
     int c;
     int fAllNodes      = 0;
@@ -688,7 +687,7 @@ Abc_CommandCNF_Threshold( Abc_Frame_t * pAbc,int argc, char ** argv )
     FILE * pOut, * pErr;
     Abc_Ntk_t * pNtk, * pNtkRes;
     char ** pArgvNew;
-    char * FileName, * pTemp;
+    char * FileName; // , * pTemp;
     int nArgcNew;
     int c;
     int fAllNodes      = 0;
@@ -793,7 +792,7 @@ Abc_CommandProfileTh( Abc_Frame_t * pAbc, int argc, char ** argv )
 int 
 Abc_CommandTestTH( Abc_Frame_t * pAbc, int argc, char ** argv )
 {
-	extern int Th_subSumSolveDP( Vec_Int_t * , int , int );
+	//extern int Th_subSumSolveDP( Vec_Int_t * , int , int );
    extern Pair_S* Th_CalKLDP( const Thre_S * , const Thre_S * , int , int , int );
 #if 0
 	Vec_Int_t * p = Vec_IntStart(4);
@@ -837,6 +836,7 @@ Abc_CommandTestTH( Abc_Frame_t * pAbc, int argc, char ** argv )
       if ( tObj == NULL )  printf( " > id = %d , tObj = NULL\n" , i );
       //Th_DumpObj( tObj );
    }
+   return 0;
 }
 
 ////////////////////////////////////////////////////////////////////////
