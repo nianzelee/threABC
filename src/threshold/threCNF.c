@@ -209,25 +209,25 @@ int Thre_LocalMin(Thre_S* t, int lvl)
 }
 
 // NZ : including current level
-int Th_LocalMax( Thre_S * t , int lvl )
+int Th_LocalMax( Thre_S * t , int head , int tail )
 {
     int max = 0;
     int i;
-    int size = Vec_IntSize(t->weights);
-    for( i = lvl ; i < size; ++i )
-        if(Vec_IntEntry( t->weights, i) > 0)
-            max += Vec_IntEntry( t->weights, i );
+    //int size = Vec_IntSize(t->weights);
+    for ( i = head ; i <= tail ; ++i )
+        if ( Vec_IntEntry( t->weights , i ) > 0 )
+            max += Vec_IntEntry( t->weights , i );
     return max;
 }
 
-int Th_LocalMin( Thre_S * t , int lvl )
+int Th_LocalMin( Thre_S * t , int head , int tail )
 {
     int min = 0;
     int i;
-    int size = Vec_IntSize(t->weights);
-    for( i = lvl ; i < size; ++i )
-        if(Vec_IntEntry( t->weights, i) < 0)
-            min += Vec_IntEntry( t->weights, i );
+    //int size = Vec_IntSize(t->weights);
+    for ( i = head ; i <= tail ; ++i )
+        if ( Vec_IntEntry( t->weights , i) < 0 )
+            min += Vec_IntEntry( t->weights , i );
     return min;
 }
 // NZ : including current level
