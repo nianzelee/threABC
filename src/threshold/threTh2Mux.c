@@ -294,23 +294,29 @@ int
 Th_SelectVar_Ahead( Thre_S * t , int head , int tail , int thre )
 {
    if ( head == tail ) return head;
-   int curMax , curMin , curW , curTh;
+   int curMax , curMin , curW , curTh , selHead , selTail;
+   selHead = selTail = 0;
    // select head
    curMax = Th_LocalMax   ( t , head+1 , tail );
    curMin = Th_LocalMin   ( t , head+1 , tail );
    curW   = Vec_IntEntry  ( t->weights , head );
    curTh  = thre - curW;
-   if ( curMax < curTh || curMin >= curTh ) return head;
+   if ( curMax < curTh || curMin >= curTh ) selHead = 1;
    // select tail
    curMax = Th_LocalMax   ( t , head , tail-1 );
    curMin = Th_LocalMin   ( t , head , tail-1 );
    curW   = Vec_IntEntry  ( t->weights , tail );
    curTh  = thre - curW;
-   if ( curMax < curTh || curMin >= curTh ) return tail;
-   // break tie by absolute value
-   if ( abs( Vec_IntEntry( t->weights , head ) ) > abs( Vec_IntEntry( t->weights , tail ) ) )
-      return head;
-   else return tail;
+   if ( curMax < curTh || curMin >= curTh ) selTail = 1;
+
+   if ( selHead > selTail ) return head;
+   else if ( selTail > selHead ) return tail;
+   else {
+      // break tie by absolute value
+      if ( abs( Vec_IntEntry( t->weights , head ) ) > abs( Vec_IntEntry( t->weights , tail ) ) )
+         return head;
+      else return tail;
+   }
 }
 
 /**Function*************************************************************
