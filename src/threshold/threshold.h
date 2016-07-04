@@ -183,7 +183,7 @@ extern void       Th_WriteBlif           ( Vec_Ptr_t * thre_list , const char * 
 
 //===threTh2Mux.c====================================//
 
-extern Abc_Ntk_t* Th_Ntk2Mux             ( Vec_Ptr_t * , int );
+extern Abc_Ntk_t* Th_Ntk2Mux             ( Vec_Ptr_t * , int , int );
 
 #endif
 

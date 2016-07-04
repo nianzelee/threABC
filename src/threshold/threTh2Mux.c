@@ -45,13 +45,14 @@ extern int      Th_LocalMax                 ( Thre_S * , int , int );
 extern int      Th_LocalMin                 ( Thre_S * , int , int );
 
 // main function
-Abc_Ntk_t*      Th_Ntk2Mux                  ( Vec_Ptr_t * , int );
+Abc_Ntk_t*      Th_Ntk2Mux                  ( Vec_Ptr_t * , int , int );
 // helper functions
 static void         Th_Ntk2MuxCreatePio     ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * , Vec_Ptr_t * );
-static void         Th_Ntk2MuxCreateMux     ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * , int );
-static Abc_Obj_t*   Th_Node2Mux             ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int );
+static void         Th_Ntk2MuxCreateMux     ( Vec_Ptr_t * , Abc_Ntk_t * , Vec_Ptr_t * , int , int );
+static Abc_Obj_t*   Th_Node2Mux             ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int );
 static Abc_Obj_t*   Th_Node2Mux_rec         ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int );
 static Abc_Obj_t*   Th_Node2MuxDyn_rec      ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int , int );
+static Abc_Obj_t*   Th_Node2MuxAhead_rec    ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int , int );
 static int          Th_SelectVar            ( Thre_S * , int , int );
 static int          Th_SelectVar_Ahead      ( Thre_S * , int , int , int );
 static void         Th_Ntk2MuxFinalize      ( Vec_Ptr_t * , Vec_Ptr_t * );
@@ -69,7 +70,7 @@ static void         Th_Ntk2MuxFinalize      ( Vec_Ptr_t * , Vec_Ptr_t * );
 ***********************************************************************/
 
 Abc_Ntk_t*
-Th_Ntk2Mux( Vec_Ptr_t * thre_list , int fDynamic )
+Th_Ntk2Mux( Vec_Ptr_t * thre_list , int fDynamic , int fAhead )
 {
    char Buffer[1000];
    Abc_Ntk_t * pNtkMux;
@@ -98,7 +99,7 @@ Th_Ntk2Mux( Vec_Ptr_t * thre_list , int fDynamic )
 	}
 
    Th_Ntk2MuxCreatePio  ( thre_list , pNtkMux , vPi , vPo );
-   Th_Ntk2MuxCreateMux  ( thre_list , pNtkMux , vTh , fDynamic );
+   Th_Ntk2MuxCreateMux  ( thre_list , pNtkMux , vTh , fDynamic , fAhead );
    Th_Ntk2MuxFinalize   ( thre_list , vPo );
    
 	Vec_PtrFree( vPi );
@@ -167,26 +168,35 @@ Th_Ntk2MuxCreatePio( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
 
 void
 Th_Ntk2MuxCreateMux( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
-                     Vec_Ptr_t * vTh       , int fDynamic )
+                     Vec_Ptr_t * vTh       , int fDynamic , int fAhead )
 {
-   printf( "  > Ntk2Mux : create mux (dynamic = %s) ...\n" , ( fDynamic ) ? "yes" : "no" );
+   printf( "  > Ntk2Mux : create mux (dynamic = %s , ahead = %s) ...\n" , 
+            ( fDynamic ) ? "yes" : "no" ,
+            ( fAhead )   ? "yes" : "no" ) ;
    Thre_S * tObj;
    int i;
 
    Vec_PtrForEachEntry( Thre_S * , vTh , tObj , i )
-      tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux , fDynamic );
+      tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux , fDynamic , fAhead );
 }
 
 Abc_Obj_t*
-Th_Node2Mux( Vec_Ptr_t * thre_list , Thre_S * tObj ,  Abc_Ntk_t * pNtkMux , int fDynamic )
+Th_Node2Mux( Vec_Ptr_t * thre_list , Thre_S * tObj ,  Abc_Ntk_t * pNtkMux , int fDynamic , int fAhead )
 {
    Thre_S    * tObjSort;
    Abc_Obj_t * pObjMux;
 
    tObjSort = slow_sortByWeights( tObj );
-   if ( fDynamic ) pObjMux  = Th_Node2MuxDyn_rec  ( thre_list , tObjSort , pNtkMux , tObjSort->thre , 0 , 
-                                                    Vec_IntSize( tObjSort->weights )-1 );
-   else            pObjMux  = Th_Node2Mux_rec     ( thre_list , tObjSort , pNtkMux , tObjSort->thre , 0 );
+
+   if ( fAhead ) 
+      pObjMux = Th_Node2MuxAhead_rec( thre_list , tObjSort , pNtkMux , tObjSort->thre , 0 , 
+                                      Vec_IntSize( tObjSort->weights )-1 );
+   else if ( fDynamic ) 
+      pObjMux = Th_Node2MuxDyn_rec( thre_list , tObjSort , pNtkMux , tObjSort->thre , 0 , 
+                                    Vec_IntSize( tObjSort->weights )-1 );
+   else            
+      pObjMux = Th_Node2Mux_rec( thre_list , tObjSort , pNtkMux , tObjSort->thre , 0 );
+   
    delete_sortedNode( tObjSort );
    if ( !pObjMux ) {
       printf( "[Error] convert Th node to mux trees fail.\n" );
@@ -232,8 +242,7 @@ Th_Node2MuxDyn_rec( Vec_Ptr_t * list , Thre_S * tObjSort , Abc_Ntk_t * pNtkMux ,
    if ( curMax <  thre ) return Abc_ObjNot( Abc_AigConst1( pNtkMux ) );
    if ( curMin >= thre ) return Abc_AigConst1( pNtkMux );
    
-   //splitVar = Th_SelectVar( tObjSort , head , tail );
-   splitVar = Th_SelectVar_Ahead( tObjSort , head , tail , thre );
+   splitVar = Th_SelectVar( tObjSort , head , tail );
    assert( splitVar == head || splitVar == tail );
    if ( splitVar == head ) ++head;
    else --tail;
@@ -252,6 +261,33 @@ Th_SelectVar( Thre_S * t , int head , int tail )
    if ( abs( Vec_IntEntry( t->weights , head ) ) > abs( Vec_IntEntry( t->weights , tail ) ) )
       return head;
    else return tail;
+}
+
+Abc_Obj_t*
+Th_Node2MuxAhead_rec( Vec_Ptr_t * list , Thre_S * tObjSort , Abc_Ntk_t * pNtkMux ,
+                      int thre , int head , int tail )
+{
+   assert( head <= tail + 1 );
+   Abc_Obj_t * pObjMux; 
+   Thre_S    * tObjC;
+   int curMax , curMin , curW , splitVar;
+
+   curMax = Th_LocalMax( tObjSort , head , tail );
+   curMin = Th_LocalMin( tObjSort , head , tail );
+
+   if ( curMax <  thre ) return Abc_ObjNot( Abc_AigConst1( pNtkMux ) );
+   if ( curMin >= thre ) return Abc_AigConst1( pNtkMux );
+   
+   splitVar = Th_SelectVar_Ahead( tObjSort , head , tail , thre );
+   assert( splitVar == head || splitVar == tail );
+   if ( splitVar == head ) ++head;
+   else --tail;
+   curW     = Vec_IntEntry( tObjSort->weights , splitVar );
+   tObjC    = Th_GetObjById( list , Vec_IntEntry( tObjSort->Fanins , splitVar ) );
+   pObjMux  = Abc_AigMux( pNtkMux->pManFunc , tObjC->pCopy , 
+                          Th_Node2MuxDyn_rec( list , tObjSort , pNtkMux , thre-curW , head , tail ) ,
+                          Th_Node2MuxDyn_rec( list , tObjSort , pNtkMux , thre      , head , tail ) );
+   return pObjMux;
 }
 
 int
