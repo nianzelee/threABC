@@ -53,6 +53,7 @@ static Abc_Obj_t*   Th_Node2Mux             ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t
 static Abc_Obj_t*   Th_Node2Mux_rec         ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int );
 static Abc_Obj_t*   Th_Node2MuxDyn_rec      ( Vec_Ptr_t * , Thre_S * , Abc_Ntk_t * , int , int , int );
 static int          Th_SelectVar            ( Thre_S * , int , int );
+static int          Th_SelectVar_Ahead      ( Thre_S * , int , int , int );
 static void         Th_Ntk2MuxFinalize      ( Vec_Ptr_t * , Vec_Ptr_t * );
 
 /**Function*************************************************************
@@ -231,7 +232,8 @@ Th_Node2MuxDyn_rec( Vec_Ptr_t * list , Thre_S * tObjSort , Abc_Ntk_t * pNtkMux ,
    if ( curMax <  thre ) return Abc_ObjNot( Abc_AigConst1( pNtkMux ) );
    if ( curMin >= thre ) return Abc_AigConst1( pNtkMux );
    
-   splitVar = Th_SelectVar( tObjSort , head , tail );
+   //splitVar = Th_SelectVar( tObjSort , head , tail );
+   splitVar = Th_SelectVar_Ahead( tObjSort , head , tail , thre );
    assert( splitVar == head || splitVar == tail );
    if ( splitVar == head ) ++head;
    else --tail;
@@ -246,6 +248,30 @@ Th_Node2MuxDyn_rec( Vec_Ptr_t * list , Thre_S * tObjSort , Abc_Ntk_t * pNtkMux ,
 int
 Th_SelectVar( Thre_S * t , int head , int tail )
 {
+   if ( head == tail ) return head;
+   if ( abs( Vec_IntEntry( t->weights , head ) ) > abs( Vec_IntEntry( t->weights , tail ) ) )
+      return head;
+   else return tail;
+}
+
+int
+Th_SelectVar_Ahead( Thre_S * t , int head , int tail , int thre )
+{
+   if ( head == tail ) return head;
+   int curMax , curMin , curW , curTh;
+   // select head
+   curMax = Th_LocalMax   ( t , head+1 , tail );
+   curMin = Th_LocalMin   ( t , head+1 , tail );
+   curW   = Vec_IntEntry  ( t->weights , head );
+   curTh  = thre - curW;
+   if ( curMax < curTh || curMin >= curTh ) return head;
+   // select tail
+   curMax = Th_LocalMax   ( t , head , tail-1 );
+   curMin = Th_LocalMin   ( t , head , tail-1 );
+   curW   = Vec_IntEntry  ( t->weights , tail );
+   curTh  = thre - curW;
+   if ( curMax < curTh || curMin >= curTh ) return tail;
+   // break tie by absolute value
    if ( abs( Vec_IntEntry( t->weights , head ) ) > abs( Vec_IntEntry( t->weights , tail ) ) )
       return head;
    else return tail;
