@@ -300,14 +300,18 @@ Th_SelectVar_Ahead( Thre_S * t , int head , int tail , int thre )
    curMax = Th_LocalMax   ( t , head+1 , tail );
    curMin = Th_LocalMin   ( t , head+1 , tail );
    curW   = Vec_IntEntry  ( t->weights , head );
+   curTh  = thre;
+   if ( curMax < curTh || curMin >= curTh ) ++selHead;
    curTh  = thre - curW;
-   if ( curMax < curTh || curMin >= curTh ) selHead = 1;
+   if ( curMax < curTh || curMin >= curTh ) ++selHead;
    // select tail
    curMax = Th_LocalMax   ( t , head , tail-1 );
    curMin = Th_LocalMin   ( t , head , tail-1 );
    curW   = Vec_IntEntry  ( t->weights , tail );
+   curTh  = thre;
+   if ( curMax < curTh || curMin >= curTh ) ++selTail;
    curTh  = thre - curW;
-   if ( curMax < curTh || curMin >= curTh ) selTail = 1;
+   if ( curMax < curTh || curMin >= curTh ) ++selTail;
 
    if ( selHead > selTail ) return head;
    else if ( selTail > selHead ) return tail;
