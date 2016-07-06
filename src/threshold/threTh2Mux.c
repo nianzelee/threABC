@@ -102,7 +102,11 @@ Th_Ntk2Mux( Vec_Ptr_t * thre_list , int fDynamic , int fAhead )
    Th_Ntk2MuxCreatePio  ( thre_list , pNtkMux , vPi , vPo );
    Th_Ntk2MuxCreateMux  ( thre_list , pNtkMux , vTh , fDynamic , fAhead );
    Th_Ntk2MuxFinalize   ( thre_list , vPo );
-   
+  
+#ifdef PROFILE
+   printf( "  > Ntk2Mux : number of redundancy gates = %d (out of %d)\n" , thProfiler.numRedundancy , Vec_PtrSize( vTh ) );
+#endif
+
 	Vec_PtrFree( vPi );
 	Vec_PtrFree( vPo );
 	Vec_PtrFree( vTh );
@@ -182,10 +186,16 @@ Th_Ntk2MuxCreateMux( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
 #endif
    Vec_PtrForEachEntry( Thre_S * , vTh , tObj , i ) 
    {
+      tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux , fDynamic , fAhead );
 #ifdef PROFILE
+      for ( j = 0 ; j < Vec_IntSize( tObj->Fanins ) ; ++j ) {
+         if ( thProfiler.redund[j] == 0 ) {
+            ++thProfiler.numRedundancy;
+            break;
+         }
+      }
       for ( j = 0 ; j < 50 ; ++j ) thProfiler.redund[j] = 0;
 #endif
-      tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux , fDynamic , fAhead );
    }
 }
 
@@ -252,6 +262,9 @@ Th_Node2MuxDyn_rec( Vec_Ptr_t * list , Thre_S * tObjSort , Abc_Ntk_t * pNtkMux ,
    if ( curMin >= thre ) return Abc_AigConst1( pNtkMux );
    
    splitVar = Th_SelectVar( tObjSort , head , tail );
+#ifdef PROFILE
+   thProfiler.redund[splitVar] = 1;
+#endif
    assert( splitVar == head || splitVar == tail );
    if ( splitVar == head ) ++head;
    else --tail;
