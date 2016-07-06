@@ -167,7 +167,7 @@ alias ft  "profile_th"
 alias mpt "mt; pt"
 
 # For debug
-alias qq  "r c17.bench; a2t; t2m"
+alias qq  "r s15850.blif; thexp; t2m -d"
 alias gg  "r b21.blif; a2t; mt; pt"
 alias zz  "r s13207.blif; a2t; mt; pt; q"
 alias QAQ "rt before.th; OAO;"

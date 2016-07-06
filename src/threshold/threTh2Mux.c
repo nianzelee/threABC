@@ -179,7 +179,7 @@ Th_Ntk2MuxCreateMux( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
             ( fDynamic ) ? "yes" : "no" ,
             ( fAhead )   ? "yes" : "no" ) ;
    Thre_S * tObj;
-   int i , j;
+   int i , j , sum;
 
 #ifdef PROFILE
    thProfiler.numRedundancy = 0;
@@ -188,11 +188,12 @@ Th_Ntk2MuxCreateMux( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
    {
       tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux , fDynamic , fAhead );
 #ifdef PROFILE
-      for ( j = 0 ; j < Vec_IntSize( tObj->Fanins ) ; ++j ) {
-         if ( thProfiler.redund[j] == 0 ) {
-            ++thProfiler.numRedundancy;
-            break;
-         }
+      sum = 0;
+      for ( j = 0 ; j < Vec_IntSize( tObj->Fanins ) ; ++j ) 
+         if ( thProfiler.redund[j] == 0 ) ++sum;
+      if ( sum != 0 ) {
+         ++thProfiler.numRedundancy;
+         printf( "    >  Redundancy  (Id = %d)   fanins detected : %d out of %d\n" , tObj->Id , sum , Vec_IntSize( tObj->Fanins ) );
       }
       for ( j = 0 ; j < 50 ; ++j ) thProfiler.redund[j] = 0;
 #endif
