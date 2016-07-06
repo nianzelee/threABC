@@ -81,6 +81,9 @@ struct Th_Stat_
 	int numTwoFout;
 	int numTwoFoutOk;
 	int numNotThNode;
+   // threshold --> mux redundancy check
+   int numRedundancy;
+   int redund[50];
 };
 
 ////////////////////////////////////////////////////////////////////////

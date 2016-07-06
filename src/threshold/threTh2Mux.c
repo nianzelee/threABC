@@ -33,6 +33,7 @@
 
 //#define DEBUG
 //#define CHECK
+#define PROFILE
 
 ////////////////////////////////////////////////////////////////////////
 ///                        DECLARATIONS                              ///
@@ -174,10 +175,18 @@ Th_Ntk2MuxCreateMux( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
             ( fDynamic ) ? "yes" : "no" ,
             ( fAhead )   ? "yes" : "no" ) ;
    Thre_S * tObj;
-   int i;
+   int i , j;
 
-   Vec_PtrForEachEntry( Thre_S * , vTh , tObj , i )
+#ifdef PROFILE
+   thProfiler.numRedundancy = 0;
+#endif
+   Vec_PtrForEachEntry( Thre_S * , vTh , tObj , i ) 
+   {
+#ifdef PROFILE
+      for ( j = 0 ; j < 50 ; ++j ) thProfiler.redund[j] = 0;
+#endif
       tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux , fDynamic , fAhead );
+   }
 }
 
 Abc_Obj_t*

@@ -44,6 +44,7 @@ void Th_ProfileInit      ();
 void Th_ProfilePrint     ();
 // helper functions
 void Th_ProfilePrint     ();
+int  Th_ProfileCheck     ();
 
 ////////////////////////////////////////////////////////////////////////
 ///                     FUNCTION DEFINITIONS                         ///
@@ -64,6 +65,7 @@ void Th_ProfilePrint     ();
 void
 Th_ProfileInit()
 {
+   int i;
    thProfiler.numTotal           = 0;
 	thProfiler.numSingleFoutIf    = 0;
 	thProfiler.numSingleFoutIff   = 0;
@@ -73,6 +75,9 @@ Th_ProfileInit()
 	thProfiler.numTwoFout         = 0;
 	thProfiler.numTwoFoutOk       = 0;
 	thProfiler.numNotThNode       = 0;
+	// threshold --> mux redundancy test
+   thProfiler.numRedundancy      = 0;
+   for ( i = 0 ; i < 50 ; ++i ) thProfiler.redund[i] = 0;
 }
 
 /**Function*************************************************************
