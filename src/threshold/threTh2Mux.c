@@ -104,7 +104,7 @@ Th_Ntk2Mux( Vec_Ptr_t * thre_list , int fDynamic , int fAhead )
    Th_Ntk2MuxFinalize   ( thre_list , vPo );
   
 #ifdef PROFILE
-   printf( "  > Ntk2Mux : number of redundancy gates = %d (out of %d)\n" , thProfiler.numRedundancy , Vec_PtrSize( vTh ) );
+   if ( fDynamic ) printf( "  > Ntk2Mux : number of redundancy gates = %d (out of %d)\n" , thProfiler.numRedundancy , Vec_PtrSize( vTh ) );
 #endif
 
 	Vec_PtrFree( vPi );
@@ -182,20 +182,22 @@ Th_Ntk2MuxCreateMux( Vec_Ptr_t * thre_list , Abc_Ntk_t * pNtkMux ,
    int i , j , sum;
 
 #ifdef PROFILE
-   thProfiler.numRedundancy = 0;
+   if ( fDynamic ) thProfiler.numRedundancy = 0;
 #endif
    Vec_PtrForEachEntry( Thre_S * , vTh , tObj , i ) 
    {
       tObj->pCopy = Th_Node2Mux( thre_list , tObj , pNtkMux , fDynamic , fAhead );
 #ifdef PROFILE
-      sum = 0;
-      for ( j = 0 ; j < Vec_IntSize( tObj->Fanins ) ; ++j ) 
-         if ( thProfiler.redund[j] == 0 ) ++sum;
-      if ( sum != 0 ) {
-         ++thProfiler.numRedundancy;
-         printf( "    >  Redundancy  (Id = %d)   fanins detected : %d out of %d\n" , tObj->Id , sum , Vec_IntSize( tObj->Fanins ) );
+      if ( fDynamic ) {
+         sum = 0;
+         for ( j = 0 ; j < Vec_IntSize( tObj->Fanins ) ; ++j ) 
+            if ( thProfiler.redund[j] == 0 ) ++sum;
+         if ( sum != 0 ) {
+            ++thProfiler.numRedundancy;
+            printf( "    >  Redundancy  (Id = %d)   fanins detected : %d out of %d\n" , tObj->Id , sum , Vec_IntSize( tObj->Fanins ) );
+         }
+         for ( j = 0 ; j < 50 ; ++j ) thProfiler.redund[j] = 0;
       }
-      for ( j = 0 ; j < 50 ; ++j ) thProfiler.redund[j] = 0;
 #endif
    }
 }
