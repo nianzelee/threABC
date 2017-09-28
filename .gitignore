@@ -31,6 +31,7 @@ bin/*
 abc
 arch_flags
 depends.sh
+tags
 
 # vim temp files
 *.swp

@@ -33,7 +33,7 @@
 
 //#define DEBUG
 //#define CHECK
-#define PROFILE
+//#define PROFILE
 
 ////////////////////////////////////////////////////////////////////////
 ///                        DECLARATIONS                              ///

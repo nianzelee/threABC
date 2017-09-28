@@ -384,7 +384,7 @@ Abc_CommandTh2Mux( Abc_Frame_t * pAbc, int argc, char ** argv )
     int fDynamic , fAhead , c;
 	 abctime clk;
 	 
-    fDynamic = 0;
+    fDynamic = 1;
     fAhead   = 0;
 	 pNtk = Abc_FrameReadNtk(pAbc);
 	 pOut = Abc_FrameReadOut(pAbc);

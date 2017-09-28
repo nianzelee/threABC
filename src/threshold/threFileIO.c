@@ -177,6 +177,7 @@ Vec_Ptr_t* func_readFileOAO(char* fileName)
    // check stats
    // printNodeStats(vTG);
     Vec_IntFree( iCount );
+    Vec_StrFree( moduleName );
     return vTG;
 }
 
