@@ -28,7 +28,6 @@
 *.out
 *.app
 bin/*
-abc
 arch_flags
 depends.sh
 tags

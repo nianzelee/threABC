@@ -9,7 +9,7 @@ $(info $(MSG_PREFIX)Using CC=$(CC))
 $(info $(MSG_PREFIX)Using CXX=$(CXX))
 $(info $(MSG_PREFIX)Using LD=$(LD))
 
-PROG := abc
+PROG := bin/abc
 
 MODULES := \
 	$(wildcard src/ext*) \
