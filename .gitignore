@@ -27,7 +27,6 @@
 *.exe
 *.out
 *.app
-bin/*
 arch_flags
 depends.sh
 tags
