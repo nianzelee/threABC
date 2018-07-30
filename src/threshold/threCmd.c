@@ -42,7 +42,6 @@ static int Abc_CommandWriteThreshold   ( Abc_Frame_t * pAbc, int argc, char ** a
 static int Abc_CommandEC_Threshold     ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandCNF_Threshold    ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandProfileTh        ( Abc_Frame_t * pAbc, int argc, char ** argv );
-
 static void Th_GlobalInit();
 
 ////////////////////////////////////////////////////////////////////////
@@ -60,6 +59,16 @@ static void Th_GlobalInit();
   SeeAlso     []
 
 ***********************************************************************/
+
+void
+Th_GlobalInit()
+{
+	 globalRef = 0;
+    current_TList = NULL;
+    another_TList = NULL;
+    cut_TList     = NULL;
+	 Th_ProfileInit();
+}
 
 void 
 Threshold_Init( Abc_Frame_t *pAbc)
@@ -83,28 +92,9 @@ Threshold_Init( Abc_Frame_t *pAbc)
 void 
 Threshold_End( Abc_Frame_t *pAbc )
 {
-	if ( current_TList ) {
-      //printf( "current_TList = %p\n" , current_TList );
-      DeleteTList( current_TList );
-   }
-	if ( another_TList ) {
-      //printf( "another_TList = %p\n" , another_TList );
-      DeleteTList( another_TList );
-   }
-	if ( cut_TList ) {
-      //printf( "cut_TList = %p\n" , cut_TList );
-      DeleteTList( cut_TList );
-   }
-}
-
-void
-Th_GlobalInit()
-{
-	 globalRef = 0;
-    current_TList = NULL;
-    another_TList = NULL;
-    cut_TList     = NULL;
-	 Th_ProfileInit();
+	if ( current_TList ) DeleteTList( current_TList );
+	if ( another_TList ) DeleteTList( another_TList );
+	if ( cut_TList )     DeleteTList( cut_TList );
 }
 
 /**Function*************************************************************
@@ -142,19 +132,6 @@ int Abc_CommandNZ( Abc_Frame_t * pAbc, int argc, char ** argv )
 }
 
 /**Function*************************************************************
-	 Mapping for threshold cut 
-***********************************************************************/
-/*int Abc_CommandThIf(Abc_Frame_t * pAbc,int argc,char ** argv)
-{   
-    return 1;
-}
-
-int Abc_CommandThreshold( Abc_Frame_t * pAbc, int argc, char ** argv )
-{
-    return 1;
-}*/
-
-/**Function*************************************************************
 
   Synopsis    [Iteratively collapse a threshold network.]
 
@@ -173,11 +150,9 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
 	 int fIterative;
     int c , i , fOutBound;
 	 abctime clk;
-
     pErr = Abc_FrameReadErr(pAbc);
 	 fIterative = 0;
 	 fOutBound  = -1;
-
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "Bih" ) ) != EOF )
     {
@@ -199,39 +174,23 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
              goto usage;
 		 }
     }
-
 	 if ( current_TList == NULL ) {
         fprintf( pErr, "\tEmpty threshold network.\n" );
         return 1;
 	 }
-    
 	 clk = Abc_Clock();
-
-#if 0
-    i = 1;
-	 while ( true ) {
-		 if ( i > Th_NtkMaxFanout( current_TList ) ) break;
-		 else {
-	       Th_CollapseNtk( current_TList , fIterative , i );
-		    ++i;
-		 }
-	 }
-#else
 	 if ( fOutBound == -1 ) Th_CollapseNtk( current_TList , fIterative , fOutBound );
 	 else {
 	    for ( i = 1 ; i <= fOutBound ; ++i )
 	       Th_CollapseNtk( current_TList , fIterative , i );
 	 }
-#endif
     // sort current_TList and clean up NULL objects
     Th_NtkDfs();
 	 Abc_PrintTime( 1 , "collapse time : " , Abc_Clock()-clk );
-    
 	 return 0;
-
 usage:
-    fprintf( pErr, "usage:    merge [-Bih]\n" );
-    fprintf( pErr, "\t        naive merging process for TList.\n");
+    fprintf( pErr, "usage:    merge_th [-B <num>] [-ih]\n" );
+    fprintf( pErr, "\t        merging process for TList.\n");
     fprintf( pErr, "\t-B num   : collapse from single fanout to num fanout\n");
     fprintf( pErr, "\t-i       : toggle iterative collapse\n");
     fprintf( pErr, "\t-h       : print the command usage\n");
@@ -293,7 +252,7 @@ Abc_CommandAig2Th( Abc_Frame_t * pAbc, int argc, char ** argv )
         Abc_FrameReplaceCurrentNetwork( pAbc, pNtkRes );
         pNtk = pNtkRes;
     }
-    if ( current_TList != NULL) {
+    if ( current_TList ) {
 		 fprintf( pErr , "\tOriginal TList destroyed...\n" );
 		 DeleteTList( current_TList );
 	 }
@@ -797,50 +756,6 @@ Abc_CommandProfileTh( Abc_Frame_t * pAbc, int argc, char ** argv )
 int 
 Abc_CommandTestTH( Abc_Frame_t * pAbc, int argc, char ** argv )
 {
-	//extern int Th_subSumSolveDP( Vec_Int_t * , int , int );
-   extern Pair_S* Th_CalKLDP( const Thre_S * , const Thre_S * , int , int , int );
-#if 0
-	Vec_Int_t * p = Vec_IntStart(4);
-	int bound = 0;
-	int fMax  = 1;
-	Vec_IntWriteEntry( p , 0 , 8 );
-	Vec_IntWriteEntry( p , 1 , 6 );
-	Vec_IntWriteEntry( p , 2 , 2 );
-	Vec_IntWriteEntry( p , 3 , 3 );
-	int optValue = Th_subSumSolveDP( p , bound , fMax );
-	printf( "optValue = %d\n" , optValue );
-	Vec_IntFree(p);
-#else
-	/*Thre_S * tObju , * tObjv;
-	Pair_S * pair;
-	tObju = ABC_ALLOC( Thre_S , 1 );
-	tObjv = ABC_ALLOC( Thre_S , 1 );
-	tObju->weights = Vec_IntStart(2);
-	Vec_IntWriteEntry( tObju->weights , 0 , 4 );
-	Vec_IntWriteEntry( tObju->weights , 1 , 3 );
-	tObju->thre = 5;
-	tObjv->weights = Vec_IntStart(2);
-	Vec_IntWriteEntry( tObjv->weights , 0 , 2 );
-	Vec_IntWriteEntry( tObjv->weights , 1 , 1 );
-	tObjv->thre = 3;
-   pair = Th_CalKLDP( tObju , tObjv , 0 , 2 , 0 );
-	Vec_IntFree( tObju->weights );
-	Vec_IntFree( tObjv->weights );
-   ABC_FREE(tObju);
-   ABC_FREE(tObjv);
-	ABC_FREE(pair);
-	return 0;*/
-#endif
-   Thre_S * tObj;
-	int i;
-
-	//Th_NtkDfs();
-	//printf( "current TList ptr = %p , size = %d\n" , current_TList , Vec_PtrSize(current_TList) );
-   Vec_PtrForEachEntry( Thre_S * , current_TList , tObj , i )
-   {
-      if ( tObj == NULL )  printf( " > id = %d , tObj = NULL\n" , i );
-      //Th_DumpObj( tObj );
-   }
    return 0;
 }
 
