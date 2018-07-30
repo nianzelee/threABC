@@ -1,6 +1,6 @@
 # threABC
 - Threshold logic operation within ABC
-- Developed by Nian-Ze Lee (NZ) and Hao-Yuan Kuo (OAO) from NTU
+- Developed by Nian-Ze Lee (NZ) and Hao-Yuan Kuo (OAO) from National Taiwan University
 
 # Commands:
 ## I/O:
