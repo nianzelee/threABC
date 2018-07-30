@@ -334,7 +334,7 @@ void       Recurrsive_TH2(FILE*, Vec_Ptr_t*, Thre_S*, Vec_Str_t*, int, int);
 
 void func_CNF_compareTH( Vec_Ptr_t * tList_1, Vec_Ptr_t * tList_2 )
 {
-    char* fileName = "compTH.cnf";
+    char* fileName = "compTH.dimacs";
     FILE* oFile = fopen(fileName, "w");
     printf("\tchecking Equalivance of current_TList and another_TList...\n");
     printf("\tOutputFile: %s\n", fileName);

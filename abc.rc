@@ -149,19 +149,23 @@ alias bx          "comb; sx;"
 
 # Augusto command
 alias synth1      "&get; &synch2; &if -n -K 8; dsd_filter -t; &get; &synch2; &if -k -K 8; &ps"
-alias synthio     "synth1; &put; comb; print_fanio"
 alias synth2      "&get; &synch2; &if -n -K 8; dsd_filter -s; &get; &synch2; &if -k -K 8; dsd_ps; &ps"
+alias synthio     "synth1; &put; comb; print_fanio"
 
-# THsyn command
+### Threshold logic operation command
+# I/O commands
 alias rt  "read_th"
 alias wt  "write_th"
-alias ec  "EC_th"
-alias ef  "CNF_th"
+alias pt  "print_th"
+# Synthesis commands
 alias a2t "aig2th"
+alias mt  "merge_th"
 alias t2b "th2blif"
 alias t2m "th2mux"
-alias mt  "merge_th"
-alias pt  "print_th"
+# Verification commands
+alias pb  "PB_th"
+alias cnf "CNF_th"
+# misc commands
 alias tt  "test_th"
 alias ft  "profile_th"
 alias mpt "mt; pt"
@@ -177,5 +181,5 @@ alias thexp  "st; ps; synthio; pt; mt -B 100; pt"
 alias thexp1  "comb; fraig; synthio; mt -B 100"
 alias thexp2 "st; ps; synthio; pt; mt; pt"
 alias thexp3 "a2t; pt; mt; pt"
-alias ecexp  "thexp; OAO; NZ;"
+alias ecexp  "thexp; NZ; OAO"
 alias ecexp2 "thexp1; OAO;"
