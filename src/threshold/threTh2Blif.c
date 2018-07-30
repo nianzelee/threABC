@@ -123,7 +123,7 @@ Th_WriteBlifOutput( FILE * out , Vec_Ptr_t * vPo )
 	Vec_PtrForEachEntry( Thre_S * , vPo , tObj , i )
 	{
       if ( Vec_IntEntry( tObj->Fanins , 0 ) == 0 ) {
-			printf( "[Warning] constant output!\n" );
+			//printf( "[Warning] constant output!\n" );
 			fprintf( out , ".names %d\n" , tObj->Id );
 			if ( tObj->thre == 1 ) fprintf( out , " 1\n" );
 			else if ( tObj->thre == 0 )  fprintf( out , " 0\n" );

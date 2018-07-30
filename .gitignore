@@ -4,53 +4,42 @@
 *.o
 *.d
 *.obj
-
 # Precompiled Headers
 *.gch
 *.pch
-
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
 # Fortran module files
 *.mod
-
 # Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-
 # Executables
 *.exe
 *.out
 *.app
-abc
 arch_flags
 depends.sh
 tags
-
 # vim temp files
 *.swp
-
 # log files
 *.log
 *.out
 *.result
 *.opb
 *.cnf
-*.ps
-*.th
 *.dimacs
+*.ps
 expEC/*
 log/*
-
-# matlab files
-*.m
-*.matlab*
-
 # circuit files
 *.aig
-*.paig
+*.blif
+*.bench
+*.th
+benchmarks/*
