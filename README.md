@@ -39,19 +39,18 @@ It has been tested successfully under CentOS 7.3.1611 with GCC\_VERSION=4.8.5
 abc 01> r benchmarks/iscas85/c6288.bench
 abc 02> synth1
 abc 03> merge_th
-abc 04> print_th
 ```
 2. Verify equivalence using mux-based conversion and cec
 (Continued from the above example)
 ```
-abc 05> t2m
-abc 06> cec -n benchmarks/iscas85/c6288.bench
+abc 04> t2m
+abc 05> cec -n benchmarks/iscas85/c6288.bench
 ```
 3. Verify equivalence using PB-based conversion and minisat+
 (Continued from the above example)
 ```
-abc 07> NZ
-abc 08> quit
+abc 06> NZ
+abc 07> quit
 bin/minisat+ compTH.opb
 ```
 You can observe that PB-based equivalence checking takes much longer time.
