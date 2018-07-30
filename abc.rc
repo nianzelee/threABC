@@ -174,7 +174,8 @@ alias QAQ "rt before.th; OAO;"
 
 # For experiment
 alias thexp  "st; ps; synthio; pt; mt -B 100; pt"
+alias thexp1  "comb; fraig; synthio; mt -B 100"
 alias thexp2 "st; ps; synthio; pt; mt; pt"
 alias thexp3 "a2t; pt; mt; pt"
 alias ecexp  "thexp; OAO; NZ;"
-alias ecexp2 "thexp; OAO;"
+alias ecexp2 "thexp1; OAO;"

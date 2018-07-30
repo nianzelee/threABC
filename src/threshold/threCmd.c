@@ -427,8 +427,8 @@ Abc_CommandTh2Mux( Abc_Frame_t * pAbc, int argc, char ** argv )
 usage:
     fprintf( pErr, "usage:    th2mux [-adh]\n" );
     fprintf( pErr, "\t        convert threshold network to mux trees\n");
-    fprintf( pErr, "\t-a    : toggles look-ahead dynamic variable selection [default = %s]\n" , "no" );
-    fprintf( pErr, "\t-d    : toggles dynamic variable selection [default = %s]\n" , "no" );
+    fprintf( pErr, "\t-a    : toggles look-ahead dynamic variable selection [default = %s]\n" , fAhead ? "yes" : "no" );
+    fprintf( pErr, "\t-d    : toggles dynamic variable selection [default = %s]\n" , fDynamic ? "yes" : "no" );
     fprintf( pErr, "\t-h    : print the command usage\n");
     return 1;
 }
