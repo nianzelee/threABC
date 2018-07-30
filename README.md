@@ -23,5 +23,5 @@
 - profile_th: print detailed collapse information
 
 ## Contact:
-Please let us know if you have any problem using the code.
+Please let us know if you have any problem using the code.  
 Nian-Ze Lee: d04943019@ntu.edu.tw, nianzelee@gmail.com
