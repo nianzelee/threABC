@@ -1,12 +1,12 @@
 ### threABC
-Threshold logic operation within ABC
-Developed by Nian-Ze Lee (NZ) and Hao-Yuan Kuo (OAO) from NTU
+- Threshold logic operation within ABC\
+- Developed by Nian-Ze Lee (NZ) and Hao-Yuan Kuo (OAO) from NTU
 
 ### Commands:
 # I/O:
-read_th: read a .th file (PO must be buffered)
-write_th: write current_TList out as a .th file
-print_th: print network statistics of current_TList
+- read_th: read a .th file (PO must be buffered)
+- write_th: write current_TList out as a .th file
+- print_th: print network statistics of current_TList
 # Synthesis:
 aig2th:   convert AIG to TH by replacing an AND gate as a threshold gate [1,1;2]
 merge_th: reduce # of threshold gates by collapsing
