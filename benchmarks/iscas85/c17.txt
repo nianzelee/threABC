@@ -1,0 +1,30 @@
+
+Value of objective function: 796.00000000
+
+Actual values of the variables:
+y                             796
+E0                            100
+E1                            100
+E2                            100
+E3                            100
+E4                            100
+E5                            218
+E8                            218
+E6                            218
+E9                            218
+p0                            557
+p1                            557
+p2                            557
+p3                            557
+p4                            557
+p5                            218
+p6                            218
+p8                            579
+p9                            579
+o0                            796
+o1                            796
+o2                            796
+o3                            796
+o4                            796
+o8                            796
+o9                            896

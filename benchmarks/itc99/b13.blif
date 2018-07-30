@@ -1,0 +1,640 @@
+# Benchmark "itc/b13/b13" written by ABC on Fri Sep 15 12:21:34 2006
+.model itc/b13/b13
+.inputs EOC DATA_IN_7_ DATA_IN_6_ DATA_IN_5_ DATA_IN_4_ DATA_IN_3_ \
+ DATA_IN_2_ DATA_IN_1_ DATA_IN_0_ DSR
+.outputs SOC_REG LOAD_DATO_REG ADD_MPX2_REG CANALE_REG_3_ CANALE_REG_2_ \
+ CANALE_REG_1_ CANALE_REG_0_ MUX_EN_REG ERROR_REG DATA_OUT_REG
+
+.latch CANALE_REG_3__in CANALE_REG_3_  0
+.latch CANALE_REG_2__in CANALE_REG_2_  0
+.latch CANALE_REG_1__in CANALE_REG_1_  0
+.latch CANALE_REG_0__in CANALE_REG_0_  0
+.latch CONTA_TMP_REG_3__in CONTA_TMP_REG_3_  0
+.latch CONTA_TMP_REG_2__in CONTA_TMP_REG_2_  0
+.latch CONTA_TMP_REG_1__in CONTA_TMP_REG_1_  0
+.latch CONTA_TMP_REG_0__in CONTA_TMP_REG_0_  0
+.latch ITFC_STATE_REG_1__in ITFC_STATE_REG_1_  0
+.latch ITFC_STATE_REG_0__in ITFC_STATE_REG_0_  0
+.latch OUT_REG_REG_7__in OUT_REG_REG_7_  0
+.latch OUT_REG_REG_6__in OUT_REG_REG_6_  0
+.latch OUT_REG_REG_5__in OUT_REG_REG_5_  0
+.latch OUT_REG_REG_4__in OUT_REG_REG_4_  0
+.latch OUT_REG_REG_3__in OUT_REG_REG_3_  0
+.latch OUT_REG_REG_2__in OUT_REG_REG_2_  0
+.latch OUT_REG_REG_1__in OUT_REG_REG_1_  0
+.latch OUT_REG_REG_0__in OUT_REG_REG_0_  0
+.latch NEXT_BIT_REG_3__in NEXT_BIT_REG_3_  0
+.latch NEXT_BIT_REG_2__in NEXT_BIT_REG_2_  0
+.latch NEXT_BIT_REG_1__in NEXT_BIT_REG_1_  0
+.latch NEXT_BIT_REG_0__in NEXT_BIT_REG_0_  0
+.latch TX_CONTA_REG_9__in TX_CONTA_REG_9_  0
+.latch TX_CONTA_REG_8__in TX_CONTA_REG_8_  0
+.latch TX_CONTA_REG_7__in TX_CONTA_REG_7_  0
+.latch TX_CONTA_REG_6__in TX_CONTA_REG_6_  0
+.latch TX_CONTA_REG_5__in TX_CONTA_REG_5_  0
+.latch TX_CONTA_REG_4__in TX_CONTA_REG_4_  0
+.latch TX_CONTA_REG_3__in TX_CONTA_REG_3_  0
+.latch TX_CONTA_REG_2__in TX_CONTA_REG_2_  0
+.latch TX_CONTA_REG_1__in TX_CONTA_REG_1_  0
+.latch TX_CONTA_REG_0__in TX_CONTA_REG_0_  0
+.latch LOAD_REG_in   LOAD_REG  0
+.latch SEND_DATA_REG_in SEND_DATA_REG  0
+.latch SEND_EN_REG_in SEND_EN_REG  0
+.latch MUX_EN_REG_in MUX_EN_REG  0
+.latch TRE_REG_in    TRE_REG  0
+.latch LOAD_DATO_REG_in LOAD_DATO_REG  0
+.latch SOC_REG_in    SOC_REG  0
+.latch SEND_REG_in   SEND_REG  0
+.latch MPX_REG_in    MPX_REG  0
+.latch CONFIRM_REG_in CONFIRM_REG  0
+.latch SHOT_REG_in   SHOT_REG  0
+.latch ADD_MPX2_REG_in ADD_MPX2_REG  0
+.latch RDY_REG_in    RDY_REG  0
+.latch ERROR_REG_in  ERROR_REG  0
+.latch S1_REG_2__in  S1_REG_2_  0
+.latch S1_REG_1__in  S1_REG_1_  0
+.latch S1_REG_0__in  S1_REG_0_  0
+.latch S2_REG_1__in  S2_REG_1_  0
+.latch S2_REG_0__in  S2_REG_0_  0
+.latch TX_END_REG_in TX_END_REG  0
+.latch DATA_OUT_REG_in DATA_OUT_REG  0
+
+.names TX_CONTA_REG_4_ [308] [74]
+00 0
+.names TX_CONTA_REG_2_ TX_CONTA_REG_0_ TX_CONTA_REG_1_ [75]
+000 0
+.names TX_CONTA_REG_5_ TX_CONTA_REG_6_ [74] [76]
+111 1
+.names SEND_EN_REG [122] [77]
+11 1
+.names [195] [211] [78]
+11 1
+.names NEXT_BIT_REG_2_ NEXT_BIT_REG_1_ [79]
+11 1
+.names NEXT_BIT_REG_1_ [148] [80]
+11 1
+.names CONTA_TMP_REG_1_ CONTA_TMP_REG_0_ [81]
+11 1
+.names [301] [300] [176] DATA_OUT_REG_in
+111 0
+.names [175] [147] [177] TX_END_REG_in
+111 1
+.names [141] [174] S2_REG_0__in
+11 0
+.names [136] [263] S1_REG_2__in
+11 0
+.names [307] [306] S1_REG_0_ S1_REG_0__in
+111 0
+.names [174] [209] RDY_REG_in
+11 0
+.names [169] ADD_MPX2_REG ADD_MPX2_REG_in
+00 0
+.names [207] [206] SHOT_REG_in
+11 0
+.names [204] [203] CONFIRM_REG_in
+11 0
+.names [168] [201] MPX_REG_in
+11 0
+.names [199] [198] SEND_REG_in
+11 0
+.names [191] [196] LOAD_DATO_REG_in
+11 0
+.names TRE_REG TX_END_REG LOAD_REG TRE_REG_in
+000 0
+.names [193] [192] MUX_EN_REG_in
+11 0
+.names [190] [189] SEND_EN_REG_in
+11 0
+.names [188] [187] SEND_DATA_REG_in
+11 0
+.names [184] [183] LOAD_REG_in
+11 0
+.names [181] [180] TX_CONTA_REG_0__in
+11 0
+.names [179] [178] TX_CONTA_REG_1__in
+11 0
+.names [250] [249] TX_CONTA_REG_2__in
+11 0
+.names [248] [247] TX_CONTA_REG_3__in
+11 0
+.names [246] [245] TX_CONTA_REG_4__in
+11 0
+.names [244] [243] TX_CONTA_REG_5__in
+11 0
+.names [242] [241] TX_CONTA_REG_6__in
+11 0
+.names [240] [239] TX_CONTA_REG_7__in
+11 0
+.names [238] [237] TX_CONTA_REG_8__in
+11 0
+.names [236] [235] TX_CONTA_REG_9__in
+11 0
+.names [231] [230] NEXT_BIT_REG_1__in
+11 0
+.names [295] [294] [150] NEXT_BIT_REG_2__in
+111 0
+.names [228] [227] ITFC_STATE_REG_0__in
+11 0
+.names [146] [224] CONTA_TMP_REG_0__in
+11 0
+.names [170] [223] CONTA_TMP_REG_1__in
+11 0
+.names [171] [221] CONTA_TMP_REG_2__in
+11 0
+.names [146] [218] CANALE_REG_0__in
+11 0
+.names [217] [170] [216] CANALE_REG_1__in
+111 0
+.names [214] [171] [215] CANALE_REG_2__in
+111 0
+.names [213] [212] CANALE_REG_3__in
+11 0
+.names CONTA_TMP_REG_3_ [219] CONTA_TMP_REG_3__in
+11 1
+.names CONTA_TMP_REG_0_ [120]
+0 1
+.names SEND_EN_REG [121]
+0 1
+.names [362] [122]
+0 1
+.names [362] SEND_EN_REG [123]
+11 0
+.names NEXT_BIT_REG_0_ [124]
+0 1
+.names NEXT_BIT_REG_0_ [176] [125]
+11 0
+.names NEXT_BIT_REG_3_ NEXT_BIT_REG_2_ [126]
+00 0
+.names ITFC_STATE_REG_0_ [127]
+0 1
+.names LOAD_REG [128]
+0 1
+.names S1_REG_0_ [129]
+0 1
+.names S1_REG_1_ [130]
+0 1
+.names S1_REG_2_ [131]
+0 1
+.names RDY_REG [132]
+0 1
+.names RDY_REG S1_REG_1_ [133]
+11 0
+.names SEND_REG [134]
+0 1
+.names TRE_REG [135]
+0 1
+.names S1_REG_1_ [129] [136]
+11 0
+.names ITFC_STATE_REG_1_ [137]
+0 1
+.names S2_REG_1_ [138]
+0 1
+.names CONFIRM_REG [139]
+0 1
+.names MPX_REG [140]
+0 1
+.names S2_REG_1_ [143] CONFIRM_REG [141]
+111 0
+.names TX_END_REG [142]
+0 1
+.names S2_REG_0_ [143]
+0 1
+.names CONTA_TMP_REG_1_ [144]
+0 1
+.names [194] S1_REG_2_ [145]
+11 0
+.names [78] [120] [146]
+11 0
+.names NEXT_BIT_REG_1_ [147]
+0 1
+.names NEXT_BIT_REG_2_ [148]
+0 1
+.names NEXT_BIT_REG_3_ [149]
+0 1
+.names NEXT_BIT_REG_2_ [147] [150]
+11 0
+.names EOC [151]
+0 1
+.names [268] [267] SOC_REG_in
+11 0
+.names [273] [272] ERROR_REG_in
+11 0
+.names [275] [274] ITFC_STATE_REG_1__in
+11 0
+.names [277] [276] OUT_REG_REG_7__in
+11 0
+.names [279] [278] OUT_REG_REG_6__in
+11 0
+.names [281] [280] OUT_REG_REG_5__in
+11 0
+.names [283] [282] OUT_REG_REG_4__in
+11 0
+.names [285] [284] OUT_REG_REG_3__in
+11 0
+.names [287] [286] OUT_REG_REG_2__in
+11 0
+.names [289] [288] OUT_REG_REG_1__in
+11 0
+.names [291] [290] OUT_REG_REG_0__in
+11 0
+.names [293] [292] NEXT_BIT_REG_3__in
+11 0
+.names [299] [298] NEXT_BIT_REG_0__in
+11 0
+.names [303] [302] S2_REG_1__in
+11 0
+.names [305] [304] S1_REG_1__in
+11 0
+.names LOAD_REG [135] [167]
+11 0
+.names [200] [140] [168]
+11 0
+.names [168] [169]
+0 1
+.names CONTA_TMP_REG_0_ [144] [78] [170]
+111 0
+.names [78] [81] [171]
+11 0
+.names [146] [172]
+0 1
+.names [150] [173]
+0 1
+.names [143] [138] SEND_DATA_REG [174]
+111 0
+.names [126] [175]
+0 1
+.names [123] [176]
+0 1
+.names [125] [177]
+0 1
+.names [333] [77] [178]
+11 0
+.names TX_CONTA_REG_1_ [121] [179]
+11 0
+.names [309] [77] [180]
+11 0
+.names TX_CONTA_REG_0_ [121] [181]
+11 0
+.names ITFC_STATE_REG_0_ [137] [182]
+11 0
+.names [127] [137] SHOT_REG [183]
+111 0
+.names LOAD_REG [182] [184]
+11 0
+.names [133] [185]
+0 1
+.names [185] S1_REG_0_ [186]
+11 0
+.names S1_REG_1_ S1_REG_0_ S1_REG_2_ [187]
+111 0
+.names SEND_DATA_REG [186] [188]
+11 0
+.names TRE_REG SEND_REG DSR [189]
+111 0
+.names SEND_EN_REG [142] [190]
+11 0
+.names S1_REG_2_ S1_REG_0_ [130] [151] [191]
+1111 0
+.names S1_REG_2_ S1_REG_1_ S1_REG_0_ [192]
+000 0
+.names MUX_EN_REG [191] [193]
+11 0
+.names [136] [194]
+0 1
+.names [145] [195]
+0 1
+.names LOAD_DATO_REG [145] [196]
+11 0
+.names ITFC_STATE_REG_1_ [127] [197]
+11 0
+.names SEND_REG [197] [198]
+11 0
+.names ITFC_STATE_REG_0_ [137] [199]
+11 0
+.names [141] [200]
+0 1
+.names MPX_REG [141] [201]
+11 0
+.names ITFC_STATE_REG_0_ ITFC_STATE_REG_1_ [202]
+00 0
+.names ITFC_STATE_REG_1_ ITFC_STATE_REG_0_ TX_END_REG [203]
+111 0
+.names CONFIRM_REG [202] [204]
+11 0
+.names [143] [139] S2_REG_1_ [205]
+111 0
+.names SHOT_REG [205] [206]
+11 0
+.names S2_REG_0_ [138] [207]
+11 0
+.names [200] MPX_REG [208]
+11 0
+.names RDY_REG [208] [209]
+11 0
+.names DSR TRE_REG [210]
+11 0
+.names [81] CONTA_TMP_REG_2_ [211]
+11 0
+.names CONTA_TMP_REG_3_ [78] [212]
+11 0
+.names CANALE_REG_3_ [145] [213]
+11 0
+.names [78] CONTA_TMP_REG_2_ [214]
+11 0
+.names CANALE_REG_2_ [145] [215]
+11 0
+.names [172] CONTA_TMP_REG_1_ [216]
+11 0
+.names CANALE_REG_1_ [145] [217]
+11 0
+.names CANALE_REG_0_ [145] [218]
+11 0
+.names [81] CONTA_TMP_REG_2_ [195] [219]
+111 0
+.names [195] [81] [220]
+11 0
+.names [220] CONTA_TMP_REG_2_ [221]
+11 0
+.names [195] CONTA_TMP_REG_0_ [222]
+11 0
+.names CONTA_TMP_REG_1_ [222] [223]
+11 0
+.names CONTA_TMP_REG_0_ [145] [224]
+11 0
+.names TX_END_REG ITFC_STATE_REG_1_ [225]
+11 0
+.names TX_END_REG ITFC_STATE_REG_0_ [226]
+11 0
+.names ITFC_STATE_REG_1_ [226] [227]
+11 0
+.names SHOT_REG [127] [228]
+11 0
+.names [167] [229]
+0 1
+.names [297] [296] [176] [230]
+111 0
+.names NEXT_BIT_REG_1_ [125] [231]
+11 0
+.names NEXT_BIT_REG_1_ NEXT_BIT_REG_2_ [232]
+00 0
+.names [232] [124] [233]
+11 0
+.names [149] [233] [234]
+11 0
+.names [325] [77] [235]
+11 0
+.names TX_CONTA_REG_9_ [121] [236]
+11 0
+.names [326] [77] [237]
+11 0
+.names TX_CONTA_REG_8_ [121] [238]
+11 0
+.names [327] [77] [239]
+11 0
+.names TX_CONTA_REG_7_ [121] [240]
+11 0
+.names [328] [77] [241]
+11 0
+.names TX_CONTA_REG_6_ [121] [242]
+11 0
+.names [329] [77] [243]
+11 0
+.names TX_CONTA_REG_5_ [121] [244]
+11 0
+.names [330] [77] [245]
+11 0
+.names TX_CONTA_REG_4_ [121] [246]
+11 0
+.names [331] [77] [247]
+11 0
+.names TX_CONTA_REG_3_ [121] [248]
+11 0
+.names [332] [77] [249]
+11 0
+.names TX_CONTA_REG_2_ [121] [250]
+11 0
+.names [80] OUT_REG_REG_6_ [251]
+11 0
+.names [79] OUT_REG_REG_2_ [252]
+11 0
+.names [175] [147] [253]
+11 0
+.names [173] OUT_REG_REG_4_ [254]
+11 0
+.names NEXT_BIT_REG_3_ OUT_REG_REG_0_ [255]
+11 0
+.names [252] [251] [253] [255] [254] [256]
+11111 0
+.names [80] OUT_REG_REG_7_ [257]
+11 0
+.names [79] OUT_REG_REG_3_ [258]
+11 0
+.names [173] OUT_REG_REG_5_ [259]
+11 0
+.names NEXT_BIT_REG_3_ OUT_REG_REG_1_ [260]
+11 0
+.names [260] [259] [258] [257] [261]
+1111 0
+.names CONFIRM_REG [140] [262]
+11 0
+.names S1_REG_2_ S1_REG_0_ [263]
+11 0
+.names [133] [131] [264]
+11 0
+.names EOC S1_REG_1_ [265]
+00 0
+.names [265] [264] [266]
+11 0
+.names [194] [131] [267]
+11 0
+.names SOC_REG [136] [268]
+11 0
+.names ERROR_REG [128] [269]
+11 0
+.names TRE_REG LOAD_REG [270]
+11 0
+.names [270] [269] [271]
+11 0
+.names SEND_REG [210] [272]
+11 0
+.names [271] [134] [273]
+11 0
+.names ITFC_STATE_REG_1_ [127] [274]
+11 0
+.names ITFC_STATE_REG_0_ [225] [275]
+11 0
+.names OUT_REG_REG_7_ [167] [276]
+11 0
+.names DATA_IN_7_ [229] [277]
+11 0
+.names OUT_REG_REG_6_ [167] [278]
+11 0
+.names DATA_IN_6_ [229] [279]
+11 0
+.names OUT_REG_REG_5_ [167] [280]
+11 0
+.names DATA_IN_5_ [229] [281]
+11 0
+.names OUT_REG_REG_4_ [167] [282]
+11 0
+.names DATA_IN_4_ [229] [283]
+11 0
+.names OUT_REG_REG_3_ [167] [284]
+11 0
+.names DATA_IN_3_ [229] [285]
+11 0
+.names OUT_REG_REG_2_ [167] [286]
+11 0
+.names DATA_IN_2_ [229] [287]
+11 0
+.names OUT_REG_REG_1_ [167] [288]
+11 0
+.names DATA_IN_1_ [229] [289]
+11 0
+.names OUT_REG_REG_0_ [167] [290]
+11 0
+.names DATA_IN_0_ [229] [291]
+11 0
+.names NEXT_BIT_REG_3_ [125] [292]
+11 0
+.names [79] [177] [293]
+11 0
+.names NEXT_BIT_REG_2_ [125] [294]
+11 0
+.names [80] [177] [295]
+11 0
+.names NEXT_BIT_REG_0_ [150] [296]
+11 0
+.names [126] [124] [297]
+11 0
+.names NEXT_BIT_REG_0_ [123] [298]
+11 0
+.names [176] [234] [299]
+11 0
+.names NEXT_BIT_REG_0_ [256] [300]
+11 0
+.names [261] [124] [301]
+11 0
+.names S2_REG_1_ [262] [143] [302]
+111 0
+.names S2_REG_0_ [138] [303]
+11 0
+.names S1_REG_2_ [129] [304]
+11 0
+.names S1_REG_0_ [266] [305]
+11 0
+.names EOC S1_REG_2_ [130] [306]
+111 0
+.names [131] [132] S1_REG_1_ [307]
+111 0
+.names TX_CONTA_REG_3_ [75] [308]
+11 1
+.names TX_CONTA_REG_0_ [309]
+0 1
+.names TX_CONTA_REG_1_ [310]
+0 1
+.names TX_CONTA_REG_1_ TX_CONTA_REG_0_ [311]
+11 0
+.names TX_CONTA_REG_2_ [312]
+0 1
+.names TX_CONTA_REG_2_ [336] [313]
+11 0
+.names TX_CONTA_REG_3_ [314]
+0 1
+.names TX_CONTA_REG_3_ [337] [315]
+11 0
+.names TX_CONTA_REG_4_ [316]
+0 1
+.names TX_CONTA_REG_4_ [338] [317]
+11 0
+.names TX_CONTA_REG_5_ [318]
+0 1
+.names TX_CONTA_REG_5_ [339] [319]
+11 0
+.names TX_CONTA_REG_6_ [320]
+0 1
+.names TX_CONTA_REG_6_ [340] [321]
+11 0
+.names TX_CONTA_REG_7_ [322]
+0 1
+.names TX_CONTA_REG_7_ [341] [323]
+11 0
+.names TX_CONTA_REG_8_ [324]
+0 1
+.names [345] [344] [325]
+11 0
+.names [347] [346] [326]
+11 0
+.names [349] [348] [327]
+11 0
+.names [351] [350] [328]
+11 0
+.names [353] [352] [329]
+11 0
+.names [355] [354] [330]
+11 0
+.names [357] [356] [331]
+11 0
+.names [359] [358] [332]
+11 0
+.names [361] [360] [333]
+11 0
+.names TX_CONTA_REG_9_ [334]
+0 1
+.names TX_CONTA_REG_8_ [342] [335]
+11 0
+.names [311] [336]
+0 1
+.names [313] [337]
+0 1
+.names [315] [338]
+0 1
+.names [317] [339]
+0 1
+.names [319] [340]
+0 1
+.names [321] [341]
+0 1
+.names [323] [342]
+0 1
+.names [335] [343]
+0 1
+.names TX_CONTA_REG_9_ [335] [344]
+11 0
+.names [343] [334] [345]
+11 0
+.names TX_CONTA_REG_8_ [323] [346]
+11 0
+.names [342] [324] [347]
+11 0
+.names TX_CONTA_REG_7_ [321] [348]
+11 0
+.names [341] [322] [349]
+11 0
+.names TX_CONTA_REG_6_ [319] [350]
+11 0
+.names [340] [320] [351]
+11 0
+.names TX_CONTA_REG_5_ [317] [352]
+11 0
+.names [339] [318] [353]
+11 0
+.names TX_CONTA_REG_4_ [315] [354]
+11 0
+.names [338] [316] [355]
+11 0
+.names TX_CONTA_REG_3_ [313] [356]
+11 0
+.names [337] [314] [357]
+11 0
+.names TX_CONTA_REG_2_ [311] [358]
+11 0
+.names [336] [312] [359]
+11 0
+.names TX_CONTA_REG_1_ [309] [360]
+11 0
+.names TX_CONTA_REG_0_ [310] [361]
+11 0
+.names TX_CONTA_REG_7_ TX_CONTA_REG_9_ TX_CONTA_REG_8_ [76] [362]
+0000 0
+.end

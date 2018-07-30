@@ -1,0 +1,30 @@
+.model ../DATA/s27.bench
+.inputs G0
+.inputs G1
+.inputs G2
+.inputs G3
+.outputs G17
+.latch G10 G5 0
+.latch G11 G6 0
+.latch G13 G7 0
+.names G0 G14
+0 1
+.names G11 G17
+0 1
+.names G14 G6 G8
+11 1
+.names G12 G8 G15
+00 0
+.names G3 G8 G16
+00 0
+.names G16 G15 G9
+11 0
+.names G14 G11 G10
+00 1
+.names G5 G9 G11
+00 1
+.names G1 G7 G12
+00 1
+.names G2 G12 G13
+00 1
+.end

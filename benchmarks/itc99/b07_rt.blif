@@ -1,0 +1,914 @@
+# Benchmark "itc/b07/b07" written by ABC on Sat Nov 11 15:33:22 2006
+.model itc/b07/b07
+.inputs START
+.outputs PUNTI_RETTA_REG_7_ PUNTI_RETTA_REG_6_ PUNTI_RETTA_REG_5_ \
+ PUNTI_RETTA_REG_4_ PUNTI_RETTA_REG_3_ PUNTI_RETTA_REG_2_ \
+ PUNTI_RETTA_REG_1_ PUNTI_RETTA_REG_0_
+
+.latch    L000_in       L000  0
+.latch    L001_in       L001  0
+.latch    L002_in       L002  0
+.latch    L003_in       L003  0
+.latch    L004_in       L004  0
+.latch    L005_in       L005  1
+.latch    L006_in       L006  1
+.latch    L007_in       L007  1
+.latch    L008_in       L008  1
+.latch    L009_in       L009  0
+.latch    L010_in       L010  0
+.latch    L011_in       L011  1
+.latch    L012_in       L012  1
+.latch    L013_in       L013  0
+.latch    L014_in       L014  1
+.latch    L015_in       L015  0
+.latch    L016_in       L016  0
+.latch    L017_in       L017  1
+.latch    L018_in       L018  1
+.latch    L019_in       L019  0
+.latch    L020_in       L020  0
+.latch    L021_in       L021  1
+.latch    L022_in       L022  1
+.latch    L023_in       L023  0
+.latch    L024_in       L024  0
+.latch    L025_in       L025  1
+.latch    L026_in       L026  1
+.latch    L027_in       L027  0
+.latch    L028_in       L028  0
+.latch    L029_in       L029  1
+.latch    L030_in       L030  1
+.latch    L031_in       L031  0
+.latch    L032_in       L032  1
+.latch    L033_in       L033  1
+.latch    L034_in       L034  0
+.latch    L035_in       L035  0
+.latch    L036_in       L036  1
+.latch    L037_in       L037  0
+.latch    L038_in       L038  0
+.latch    L039_in       L039  0
+.latch    L040_in       L040  0
+.latch    L041_in       L041  0
+.latch    L042_in       L042  1
+.latch    L043_in       L043  1
+.latch    L044_in       L044  0
+.latch    L045_in       L045  1
+.latch    L046_in       L046  1
+.latch    L047_in       L047  0
+.latch    L048_in       L048  0
+.latch    L049_in       L049  0
+.latch    L050_in       L050  0
+.latch    L051_in       L051  0
+.latch    L052_in       L052  1
+.latch    L053_in       L053  0
+.latch    L054_in       L054  0
+.latch    L055_in       L055  1
+.latch    L056_in       L056  0
+.latch    L057_in       L057  0
+.latch    L058_in       L058  1
+.latch    L059_in       L059  0
+.latch    L060_in       L060  1
+.latch    L061_in       L061  0
+.latch    L062_in       L062  0
+.latch    L063_in       L063  0
+.latch    L064_in       L064  1
+.latch    L065_in       L065  0
+.latch    L066_in       L066  1
+.latch    L067_in       L067  1
+.latch    L068_in       L068  1
+.latch    L069_in       L069  1
+.latch    L070_in       L070  0
+.latch    L071_in       L071  0
+.latch    L072_in       L072  0
+.latch    L073_in       L073  0
+.latch    L074_in       L074  0
+.latch    L075_in       L075  0
+.latch    L076_in       L076  1
+.latch    L077_in       L077  1
+.latch    L078_in       L078  0
+.latch    L079_in       L079  0
+.latch    L080_in       L080  1
+.latch    L081_in       L081  1
+.latch    L082_in       L082  0
+.latch    L083_in       L083  0
+.latch    L084_in       L084  1
+.latch    L085_in       L085  1
+.latch    L086_in       L086  0
+.latch    L087_in       L087  1
+.latch    L088_in       L088  1
+.latch    L089_in       L089  0
+.latch    L090_in       L090  0
+.latch    L091_in       L091  1
+.latch    L092_in       L092  1
+.latch    L093_in       L093  1
+.latch    L094_in       L094  1
+.latch    L095_in       L095  1
+.latch    L096_in       L096  1
+.latch    L097_in       L097  1
+.latch    L098_in       L098  1
+.latch    L099_in       L099  1
+.latch    L100_in       L100  1
+.latch    L101_in       L101  1
+.latch    L102_in       L102  1
+.latch    L103_in       L103  0
+.latch    L104_in       L104  1
+.latch    L105_in       L105  1
+.latch    L106_in       L106  1
+.latch    L107_in       L107  1
+.latch    L108_in       L108  0
+.latch    L109_in       L109  1
+.latch    L110_in       L110  1
+.latch    L111_in       L111  1
+.latch    L112_in       L112  1
+.latch    L113_in       L113  0
+.latch    L114_in       L114  0
+.latch    L115_in       L115  1
+.latch    L116_in       L116  0
+.latch    L117_in       L117  1
+.latch    L118_in       L118  1
+.latch    L119_in       L119  1
+.latch    L120_in       L120  0
+
+.names [27] L060 [10]
+11 0
+.names [123] L001 [11]
+11 1
+.names L001 [86] L065_in
+11 1
+.names [11] [84] [13]
+11 1
+.names [11] [143] L041_in
+11 1
+.names [104] L116_in L089_in
+11 1
+.names [104] L012_in [16]
+11 1
+.names [87] L074 [17]
+11 1
+.names L063 START [18]
+11 1
+.names L078_in L080_in [19]
+11 1
+.names [61] L009 L040_in
+11 1
+.names [250] [249] [21]
+11 0
+.names [252] [251] [22]
+11 0
+.names L017 L018 [23]
+11 0
+.names L021 L022 [24]
+11 0
+.names L025 L026 [25]
+11 0
+.names L029 L030 [26]
+11 0
+.names L032 L033 [27]
+11 0
+.names [227] [228] L036 [28]
+111 0
+.names [230] [231] L014 [29]
+111 0
+.names [233] [234] [232] L019_in
+111 0
+.names [236] [237] [235] L023_in
+111 0
+.names [239] [240] [238] L027_in
+111 0
+.names [242] [243] [241] L031_in
+111 0
+.names [246] [245] [244] [81] L034_in
+1111 0
+.names L068 [133] L001_in
+11 0
+.names [264] [263] L118 L114_in
+111 0
+.names L116 L120 [140] L063_in
+111 0
+.names [125] [225] L035_in
+11 0
+.names [125] [224] L016_in
+11 0
+.names [125] [223] L013_in
+11 0
+.names [125] [222] L020_in
+11 0
+.names L101 L102 [219] [42]
+111 0
+.names L099 L100 [214] L004_in
+111 0
+.names L097 L098 [208] [44]
+111 0
+.names L096 L092 [203] [45]
+111 0
+.names L095 L092 [201] L003_in
+111 0
+.names [200] L092 [199] L002_in
+111 0
+.names L094 L093 [197] [48]
+111 0
+.names L091 L093 [195] [49]
+111 0
+.names L073 [188] L073_in
+11 1
+.names L072 [188] L072_in
+11 1
+.names L071 [188] L071_in
+11 1
+.names L070 [188] L070_in
+11 1
+.names [186] [185] L059_in
+11 0
+.names [184] [183] L056_in
+11 0
+.names [182] [181] L053_in
+11 0
+.names [180] [179] L050_in
+11 0
+.names [178] [177] L048_in
+11 0
+.names [176] [175] L015_in
+11 0
+.names L067 [173] [60]
+11 0
+.names L066 [171] [61]
+11 0
+.names [166] [165] [167] L061_in
+111 0
+.names [163] [164] [162] L057_in
+111 0
+.names [160] [161] [159] L054_in
+111 0
+.names [157] [158] [156] L051_in
+111 0
+.names [154] [155] [153] L049_in
+111 0
+.names [151] [152] [150] L047_in
+111 0
+.names L045 L046 [147] PUNTI_RETTA_REG_6_
+111 0
+.names L042 L043 [144] PUNTI_RETTA_REG_7_
+111 0
+.names L086_in L084_in
+0 1
+.names L083_in L087_in
+0 1
+.names L083_in L086_in [72]
+11 0
+.names L082_in L080_in
+0 1
+.names L082_in L079_in [74]
+11 0
+.names L078_in L076_in
+0 1
+.names [115] L075_in [76]
+11 0
+.names START [77]
+0 1
+.names L114_in L117_in
+0 1
+.names L001_in L012_in
+0 1
+.names L063_in L115_in
+0 1
+.names L001_in L114_in [81]
+11 0
+.names L114_in L001_in L074_in
+00 0
+.names L000 [77] [83]
+11 0
+.names L004 L005 L006 L007 [116] [84]
+11111 0
+.names [126] [76] L069_in
+11 0
+.names [169] [168] [86]
+11 0
+.names L068 [187] L069 [87]
+111 0
+.names L070_in [88]
+0 1
+.names L071_in [89]
+0 1
+.names L072_in [90]
+0 1
+.names L073_in [91]
+0 1
+.names [45] L007_in
+0 1
+.names [44] L006_in
+0 1
+.names [278] [205] [94]
+11 0
+.names [42] L005_in
+0 1
+.names L114_in L063_in L120_in
+00 0
+.names L011_in L001_in [97]
+11 0
+.names L063_in L001_in L118_in
+11 0
+.names [266] [265] L078_in
+11 0
+.names [268] [267] L082_in
+11 0
+.names [270] [269] L086_in
+11 0
+.names [272] [271] L083_in
+11 0
+.names [277] [276] [103]
+11 0
+.names [274] [273] [104]
+11 0
+.names [280] [279] L028_in
+11 0
+.names [282] L104 [106]
+11 0
+.names [284] [283] L010_in
+11 0
+.names [286] L105 [108]
+11 0
+.names [288] L106 [109]
+11 0
+.names [290] L107 [110]
+11 0
+.names [292] L109 [111]
+11 0
+.names [294] L110 [112]
+11 0
+.names L111 L112 [113]
+11 0
+.names [298] [297] L024_in
+11 0
+.names [89] [88] [90] L078_in [91] [115]
+11111 1
+.names [49] [48] L002 L003 [116]
+0000 1
+.names L063_in L001_in L116_in
+00 0
+.names L063_in L114_in L068_in
+11 0
+.names L120_in L011_in
+0 1
+.names L118_in [120]
+0 1
+.names L069_in L062_in
+0 1
+.names [126] L113_in [122]
+11 0
+.names [83] [123]
+0 1
+.names [16] [103] L092_in
+11 0
+.names [221] [103] [125]
+11 0
+.names [81] [126]
+0 1
+.names L068_in L103_in
+0 1
+.names [72] L079_in
+0 1
+.names [74] L075_in
+0 1
+.names [76] L113_in
+0 1
+.names START L113 [131]
+11 0
+.names L114 [131] [132]
+11 0
+.names L001 [132] [133]
+11 0
+.names L116_in [134]
+0 1
+.names L113 [77] [135]
+11 0
+.names [135] L115 [136]
+11 0
+.names L116 [136] [137]
+11 0
+.names L074_in L064_in
+0 1
+.names [122] L074_in L119_in
+11 0
+.names L119 [77] [140]
+11 0
+.names L064_in L063_in [141]
+11 0
+.names [122] [141] L000_in
+11 0
+.names [84] [143]
+0 1
+.names [326] L041 [144]
+11 0
+.names [61] [13] L042_in
+11 0
+.names PUNTI_RETTA_REG_7_ [83] L043_in
+11 0
+.names L044 L041 [147]
+11 0
+.names [60] [13] L045_in
+11 0
+.names PUNTI_RETTA_REG_6_ [83] L046_in
+11 0
+.names [329] L041_in [150]
+11 0
+.names L015 [13] [151]
+11 0
+.names L047 [83] [152]
+11 0
+.names [331] L041_in [153]
+11 0
+.names L048 [13] [154]
+11 0
+.names L049 [83] [155]
+11 0
+.names [333] L041_in [156]
+11 0
+.names L050 [13] [157]
+11 0
+.names L051 [83] [158]
+11 0
+.names [335] L041_in [159]
+11 0
+.names L053 [13] [160]
+11 0
+.names L054 [83] [161]
+11 0
+.names [316] L041_in [162]
+11 0
+.names L056 [13] [163]
+11 0
+.names L057 [83] [164]
+11 0
+.names [317] L041_in [165]
+11 0
+.names L059 [13] [166]
+11 0
+.names L061 [83] [167]
+11 0
+.names L064 [18] [168]
+11 0
+.names L062 [143] [169]
+11 0
+.names [86] [170]
+0 1
+.names L065 [326] [171]
+11 0
+.names [170] [61] L066_in
+11 0
+.names L065 L044 [173]
+11 0
+.names [170] [60] L067_in
+11 0
+.names L065_in [329] [175]
+11 0
+.names [170] L015 [176]
+11 0
+.names L065_in [331] [177]
+11 0
+.names [170] L048 [178]
+11 0
+.names L065_in [333] [179]
+11 0
+.names [170] L050 [180]
+11 0
+.names L065_in [335] [181]
+11 0
+.names [170] L053 [182]
+11 0
+.names L065_in [316] [183]
+11 0
+.names [170] L056 [184]
+11 0
+.names L065_in [317] [185]
+11 0
+.names [170] L059 [186]
+11 0
+.names [18] L012 [187]
+11 0
+.names [87] [188]
+0 1
+.names L074_in [74] L077_in
+11 0
+.names [87] L077 [190]
+11 0
+.names L074_in [72] L081_in
+11 0
+.names [87] L081 [192]
+11 0
+.names L074_in L087_in L085_in
+11 0
+.names [87] L085 [194]
+11 0
+.names L090 [326] [195]
+11 0
+.names [49] L088 L091_in
+11 0
+.names L090 L044 [197]
+11 0
+.names [48] L088 L094_in
+11 0
+.names L089 [329] [199]
+11 0
+.names L002 L088 [200]
+11 0
+.names L089 [331] [201]
+11 0
+.names L003_in L088_in L095_in
+11 0
+.names L089 [333] [203]
+11 0
+.names [45] L088_in L096_in
+11 0
+.names [19] L079_in [205]
+11 0
+.names [94] [206]
+0 1
+.names [16] [94] L098_in
+11 0
+.names L089 [335] [208]
+11 0
+.names [44] L088_in L097_in
+11 0
+.names L083_in L084_in [210]
+11 0
+.names L078_in L075_in [211]
+11 0
+.names [278] [210] [211] [212]
+111 0
+.names [16] [212] L100_in
+11 0
+.names L089 [316] [214]
+11 0
+.names L088_in L004_in L099_in
+11 0
+.names L086_in L082_in L078_in [216]
+000 0
+.names [206] [216] [217]
+11 0
+.names [16] [217] L102_in
+11 0
+.names L089 [317] [219]
+11 0
+.names [42] L088_in L101_in
+11 0
+.names [97] [221]
+0 1
+.names L020 [97] [222]
+11 0
+.names L013 [97] [223]
+11 0
+.names L016 [97] [224]
+11 0
+.names L035 [97] [225]
+11 0
+.names [120] L035 L036_in
+11 0
+.names [111] L011 [227]
+11 0
+.names [48] L012 [228]
+11 0
+.names [120] L013 L014_in
+11 0
+.names L010 L011 [230]
+11 0
+.names L002 L012 [231]
+11 0
+.names [120] L016 [232]
+11 0
+.names [110] L011_in [233]
+11 0
+.names L003_in L012_in [234]
+11 0
+.names [120] L020 [235]
+11 0
+.names [106] L011_in [236]
+11 0
+.names [45] L012_in [237]
+11 0
+.names [120] L024 [238]
+11 0
+.names [112] L011_in [239]
+11 0
+.names [44] L012_in [240]
+11 0
+.names [120] L028 [241]
+11 0
+.names [108] L011_in [242]
+11 0
+.names L004_in L012_in [243]
+11 0
+.names [120] [113] [244]
+11 0
+.names [109] L011_in [245]
+11 0
+.names [42] L012_in [246]
+11 0
+.names L069_in [122] L009_in
+11 0
+.names L001_in L120_in L118_in L008_in
+111 0
+.names [60] L009 [249]
+11 0
+.names [48] L008 [250]
+11 0
+.names L015 L009 [251]
+11 0
+.names L002 L008 [252]
+11 0
+.names L048_in L009_in L018_in
+11 0
+.names L003_in L008_in L017_in
+11 0
+.names L050_in L009_in L022_in
+11 0
+.names [45] L008_in L021_in
+11 0
+.names L053_in L009_in L026_in
+11 0
+.names [44] L008_in L025_in
+11 0
+.names L056_in L009_in L030_in
+11 0
+.names L004_in L008_in L029_in
+11 0
+.names L059_in L009_in L033_in
+11 0
+.names [42] L008_in L032_in
+11 0
+.names [18] L117 [263]
+11 0
+.names L114 [137] [264]
+11 0
+.names L078 [190] [265]
+11 0
+.names [17] L075 L076 [266]
+111 0
+.names L082 [192] [267]
+11 0
+.names [17] L079 L080 [268]
+111 0
+.names L086 [194] [269]
+11 0
+.names [17] L083 L084 [270]
+111 0
+.names [17] L087 [271]
+11 0
+.names [188] L083 [272]
+11 0
+.names L001_in L117_in [273]
+11 0
+.names [134] L114_in [274]
+11 0
+.names [104] L088_in
+0 1
+.names L076_in L080_in L083_in L084_in [276]
+1111 0
+.names [19] L087_in L086_in [277]
+111 0
+.names [103] [278]
+0 1
+.names [221] [212] [279]
+11 0
+.names L028 [97] [280]
+11 0
+.names [106] L068_in L104_in
+11 0
+.names L103 [333] [282]
+11 0
+.names L010 L068 [283]
+11 0
+.names L103 [329] [284]
+11 0
+.names [108] L068_in L105_in
+11 0
+.names L103 [316] [286]
+11 0
+.names [109] L068_in L106_in
+11 0
+.names L103 [317] [288]
+11 0
+.names [110] L068_in L107_in
+11 0
+.names L103 [331] [290]
+11 0
+.names [111] L068 L109_in
+11 0
+.names L108 L044 [292]
+11 0
+.names [112] L068_in L110_in
+11 0
+.names L103 [335] [294]
+11 0
+.names [221] [217] L112_in
+11 0
+.names [113] [97] L111_in
+11 0
+.names [221] [94] [297]
+11 0
+.names L024 [97] [298]
+11 0
+.names L034 [300] [299]
+11 0
+.names [27] [300]
+0 1
+.names L034_in L060_in
+0 1
+.names L034 [27] [302]
+11 0
+.names [26] [303]
+0 1
+.names L031_in L058_in
+0 1
+.names [25] [305]
+0 1
+.names L027_in L055_in
+0 1
+.names [24] [307]
+0 1
+.names L023_in L052_in
+0 1
+.names [23] [309]
+0 1
+.names L019 [310]
+0 1
+.names [22] [311]
+0 1
+.names [29] [312]
+0 1
+.names [355] [354] [313]
+11 0
+.names [28] [314]
+0 1
+.names [21] [315]
+0 1
+.names [392] [391] [316]
+11 0
+.names [10] [299] [317]
+11 0
+.names [364] [363] [318]
+11 0
+.names [369] [368] [319]
+11 0
+.names [374] [373] [320]
+11 0
+.names [379] [378] [321]
+11 0
+.names [384] [383] [322]
+11 0
+.names [389] [388] [323]
+11 0
+.names L040_in L039_in
+0 1
+.names L037 L038 [325]
+11 0
+.names [362] [361] [326]
+11 1
+.names [367] [366] L044_in
+11 1
+.names [351] [350] [328]
+11 0
+.names [372] [371] [329]
+11 1
+.names [347] [346] [330]
+11 0
+.names [377] [376] [331]
+11 1
+.names [343] [342] [332]
+11 0
+.names [382] [381] [333]
+11 1
+.names [339] [338] [334]
+11 0
+.names [387] [386] [335]
+11 1
+.names [302] [336]
+0 1
+.names [26] L031 [337]
+00 0
+.names [336] [337] [338]
+11 0
+.names L031 [26] [339]
+11 0
+.names [334] [340]
+0 1
+.names [25] L027 [341]
+00 0
+.names [341] [334] [342]
+11 0
+.names L027 [25] [343]
+11 0
+.names [332] [344]
+0 1
+.names [24] L023 [345]
+00 0
+.names [345] [332] [346]
+11 0
+.names L023 [24] [347]
+11 0
+.names [330] [348]
+0 1
+.names [23] L019 [349]
+00 0
+.names [349] [330] [350]
+11 0
+.names L019 [23] [351]
+11 0
+.names [328] [352]
+0 1
+.names [22] [29] [353]
+00 0
+.names [353] [328] [354]
+11 0
+.names [29] [22] [355]
+11 0
+.names [313] [356]
+0 1
+.names [356] [315] [357]
+11 0
+.names [28] [357] L038_in
+11 0
+.names [21] [313] L037_in
+11 0
+.names [325] [360]
+0 1
+.names L040 [325] [361]
+11 0
+.names [360] L039 [362]
+11 0
+.names [28] [315] [363]
+11 0
+.names [21] [314] [364]
+11 0
+.names [318] [365]
+0 1
+.names [365] [356] [366]
+11 0
+.names [318] [313] [367]
+11 0
+.names [29] [311] [368]
+11 0
+.names [22] [312] [369]
+11 0
+.names [319] [370]
+0 1
+.names [352] [370] [371]
+11 0
+.names [319] [328] [372]
+11 0
+.names L019 [309] [373]
+11 0
+.names [23] [310] [374]
+11 0
+.names [320] [375]
+0 1
+.names [348] [375] [376]
+11 0
+.names [320] [330] [377]
+11 0
+.names L023 [307] [378]
+11 0
+.names [24] L052 [379]
+11 0
+.names [321] [380]
+0 1
+.names [344] [380] [381]
+11 0
+.names [321] [332] [382]
+11 0
+.names L027 [305] [383]
+11 0
+.names [25] L055 [384]
+11 0
+.names [322] [385]
+0 1
+.names [340] [385] [386]
+11 0
+.names [322] [334] [387]
+11 0
+.names [26] L058 [388]
+11 0
+.names L031 [303] [389]
+11 0
+.names [323] [390]
+0 1
+.names [390] [336] [391]
+11 0
+.names [323] [302] [392]
+11 0
+.names L047 PUNTI_RETTA_REG_5_
+1 1
+.names L049 PUNTI_RETTA_REG_4_
+1 1
+.names L051 PUNTI_RETTA_REG_3_
+1 1
+.names L054 PUNTI_RETTA_REG_2_
+1 1
+.names L057 PUNTI_RETTA_REG_1_
+1 1
+.names L061 PUNTI_RETTA_REG_0_
+1 1
+.names L089 L090_in
+1 1
+.names L092 L093_in
+1 1
+.names L103 L108_in
+1 1
+.end

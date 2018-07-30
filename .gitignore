@@ -44,7 +44,6 @@ tags
 *.ps
 *.th
 *.dimacs
-expProb/*
 expEC/*
 log/*
 
@@ -53,8 +52,5 @@ log/*
 *.matlab*
 
 # circuit files
-*.blif
 *.aig
 *.paig
-*.bench
-benchmarks/*

@@ -1,0 +1,28 @@
+# Benchmark "interpolant" written by ABC on Fri Nov 10 23:17:50 2006
+.model interpolant
+.inputs pi35 pi41 pi47 pi55 pi66 pi72 pi80 pi89 pi99 pi105 pi113 pi122 \
+ pi126 pi147 pi153 pi166 pi177 pi181 pi185 pi186
+.outputs po26
+.names pi153 pi181 [22]
+00 1
+.names pi153 [22] [23]
+01 1
+.names pi99 pi113 [24]
+00 1
+.names pi122 [24] [25]
+00 1
+.names pi153 [25] [26]
+00 1
+.names pi181 [26] [27]
+11 1
+.names pi181 [27] [28]
+11 1
+.names [22] [28] [29]
+00 1
+.names pi186 [29] [30]
+01 1
+.names pi153 [30] [31]
+00 1
+.names [23] [31] po26
+00 1
+.end

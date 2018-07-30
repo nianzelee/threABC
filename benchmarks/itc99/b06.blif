@@ -1,0 +1,97 @@
+# Benchmark "itc/b06/b06" written by ABC on Fri Sep 15 12:19:38 2006
+.model itc/b06/b06
+.inputs EQL CONT_EQL
+.outputs CC_MUX_REG_2_ CC_MUX_REG_1_ USCITE_REG_2_ USCITE_REG_1_ \
+ ENABLE_COUNT_REG ACKOUT_REG
+
+.latch ACKOUT_REG_in ACKOUT_REG  0
+.latch STATE_REG_2__in STATE_REG_2_  0
+.latch STATE_REG_1__in STATE_REG_1_  0
+.latch STATE_REG_0__in STATE_REG_0_  0
+.latch CC_MUX_REG_2__in CC_MUX_REG_2_  0
+.latch CC_MUX_REG_1__in CC_MUX_REG_1_  0
+.latch USCITE_REG_2__in USCITE_REG_2_  0
+.latch USCITE_REG_1__in USCITE_REG_1_  0
+.latch ENABLE_COUNT_REG_in ENABLE_COUNT_REG  0
+
+.names [54] [53] [18]
+11 1
+.names [18] [42] STATE_REG_0__in
+11 0
+.names [46] [45] [36] [30] STATE_REG_1__in
+1111 0
+.names [44] [43] STATE_REG_2__in
+11 0
+.names [52] [33] [56] [55] CC_MUX_REG_1__in
+1111 0
+.names [50] [34] [49] CC_MUX_REG_2__in
+111 0
+.names EQL [40] [18] USCITE_REG_1__in
+111 0
+.names [36] [39] USCITE_REG_2__in
+11 0
+.names [48] [47] ENABLE_COUNT_REG_in
+11 0
+.names STATE_REG_2_ STATE_REG_1_ STATE_REG_0_ [27]
+111 1
+.names STATE_REG_1_ [28]
+0 1
+.names EQL [29]
+0 1
+.names EQL STATE_REG_1_ [30]
+11 0
+.names STATE_REG_2_ [31]
+0 1
+.names STATE_REG_0_ [32]
+0 1
+.names STATE_REG_2_ STATE_REG_0_ [33]
+00 0
+.names [28] [31] STATE_REG_0_ [34]
+111 0
+.names [30] [35]
+0 1
+.names STATE_REG_2_ [32] [28] [29] [36]
+1111 0
+.names [33] [37]
+0 1
+.names [34] [38]
+0 1
+.names STATE_REG_2_ [35] [39]
+11 0
+.names STATE_REG_2_ STATE_REG_1_ [40]
+11 0
+.names STATE_REG_1_ STATE_REG_0_ [41]
+00 0
+.names [29] [41] [42]
+11 0
+.names [38] [29] [43]
+11 0
+.names STATE_REG_2_ [42] [44]
+11 0
+.names EQL [31] STATE_REG_0_ [45]
+111 0
+.names [37] STATE_REG_1_ [46]
+11 0
+.names STATE_REG_1_ [29] [37] [47]
+111 0
+.names CONT_EQL [27] [48]
+00 0
+.names [35] [32] [49]
+11 0
+.names STATE_REG_2_ [42] [50]
+11 0
+.names EQL [32] [51]
+11 0
+.names STATE_REG_0_ STATE_REG_2_ [52]
+11 0
+.names [37] [28] [53]
+11 0
+.names STATE_REG_0_ STATE_REG_1_ [54]
+11 0
+.names EQL [28] [55]
+11 0
+.names STATE_REG_1_ [51] [56]
+11 0
+.names ENABLE_COUNT_REG_in ACKOUT_REG_in
+1 1
+.end

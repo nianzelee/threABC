@@ -1,0 +1,55 @@
+# Benchmark "itc/b02/b02" written by ABC on Fri Sep 15 12:17:19 2006
+.model itc/b02/b02
+.inputs LINEA
+.outputs U_REG
+
+.latch   U_REG_in      U_REG  0
+.latch STATO_REG_2__in STATO_REG_2_  0
+.latch STATO_REG_1__in STATO_REG_1_  0
+.latch STATO_REG_0__in STATO_REG_0_  0
+
+.names [11] [13] STATO_REG_2_ U_REG_in
+111 1
+.names [24] [23] STATO_REG_0__in
+11 0
+.names [18] [17] STATO_REG_2__in
+11 0
+.names STATO_REG_2_ [10]
+0 1
+.names STATO_REG_0_ [11]
+0 1
+.names LINEA [12]
+0 1
+.names STATO_REG_1_ [13]
+0 1
+.names [28] [27] STATO_REG_1__in
+11 0
+.names [26] [25] [11] [15]
+111 0
+.names STATO_REG_2_ LINEA [16]
+00 0
+.names STATO_REG_0_ [16] [17]
+11 0
+.names STATO_REG_1_ [15] [18]
+11 0
+.names LINEA STATO_REG_1_ [19]
+00 0
+.names [10] [19] [20]
+11 0
+.names LINEA [10] [21]
+11 0
+.names STATO_REG_0_ [21] [22]
+11 0
+.names LINEA STATO_REG_0_ STATO_REG_2_ [23]
+000 0
+.names [22] [13] [24]
+11 0
+.names LINEA [10] [25]
+11 0
+.names STATO_REG_2_ [12] [26]
+11 0
+.names STATO_REG_0_ [20] [27]
+11 0
+.names STATO_REG_1_ [10] [11] [28]
+111 0
+.end

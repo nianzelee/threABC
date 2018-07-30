@@ -1,0 +1,1491 @@
+# Benchmark "itc/b11/b11" written by ABC on Fri Sep 15 12:21:17 2006
+.model itc/b11/b11
+.inputs X_IN_5_ X_IN_4_ X_IN_3_ X_IN_2_ X_IN_1_ X_IN_0_ STBI
+.outputs X_OUT_REG_5_ X_OUT_REG_4_ X_OUT_REG_3_ X_OUT_REG_2_ X_OUT_REG_1_ \
+ X_OUT_REG_0_
+
+.latch R_IN_REG_5__in R_IN_REG_5_  0
+.latch R_IN_REG_4__in R_IN_REG_4_  0
+.latch R_IN_REG_3__in R_IN_REG_3_  0
+.latch R_IN_REG_2__in R_IN_REG_2_  0
+.latch R_IN_REG_1__in R_IN_REG_1_  0
+.latch R_IN_REG_0__in R_IN_REG_0_  0
+.latch CONT_REG_5__in CONT_REG_5_  0
+.latch CONT_REG_4__in CONT_REG_4_  0
+.latch CONT_REG_3__in CONT_REG_3_  0
+.latch CONT_REG_2__in CONT_REG_2_  0
+.latch CONT_REG_1__in CONT_REG_1_  0
+.latch CONT_REG_0__in CONT_REG_0_  0
+.latch CONT1_REG_8__in CONT1_REG_8_  0
+.latch CONT1_REG_7__in CONT1_REG_7_  0
+.latch CONT1_REG_6__in CONT1_REG_6_  0
+.latch CONT1_REG_5__in CONT1_REG_5_  0
+.latch CONT1_REG_4__in CONT1_REG_4_  0
+.latch CONT1_REG_3__in CONT1_REG_3_  0
+.latch CONT1_REG_2__in CONT1_REG_2_  0
+.latch CONT1_REG_1__in CONT1_REG_1_  0
+.latch CONT1_REG_0__in CONT1_REG_0_  0
+.latch X_OUT_REG_5__in X_OUT_REG_5_  0
+.latch X_OUT_REG_4__in X_OUT_REG_4_  0
+.latch X_OUT_REG_3__in X_OUT_REG_3_  0
+.latch X_OUT_REG_2__in X_OUT_REG_2_  0
+.latch X_OUT_REG_1__in X_OUT_REG_1_  0
+.latch X_OUT_REG_0__in X_OUT_REG_0_  0
+.latch STATO_REG_3__in STATO_REG_3_  0
+.latch STATO_REG_2__in STATO_REG_2_  0
+.latch STATO_REG_1__in STATO_REG_1_  0
+.latch STATO_REG_0__in STATO_REG_0_  0
+
+.names [720] R_IN_REG_1_ [45]
+11 0
+.names [70] [693] [46]
+11 0
+.names [700] [699] [698] [47]
+111 0
+.names [64] [127] [48]
+11 1
+.names STATO_REG_3_ CONT1_REG_5_ [49]
+11 1
+.names STATO_REG_3_ CONT1_REG_2_ [50]
+11 1
+.names STATO_REG_3_ CONT1_REG_0_ [51]
+11 1
+.names [63] [137] [52]
+11 1
+.names [59] STATO_REG_0_ [53]
+11 1
+.names [137] [125] [54]
+11 1
+.names STATO_REG_3_ [169] [55]
+11 1
+.names [133] STATO_REG_1_ [131] [56]
+111 1
+.names [52] STATO_REG_0_ [57]
+11 1
+.names [54] STATO_REG_0_ [58]
+11 1
+.names [137] [126] [59]
+11 1
+.names [53] R_IN_REG_0_ [60]
+11 1
+.names [53] [130] [61]
+11 1
+.names CONT1_REG_8_ [55] [62]
+11 1
+.names STATO_REG_2_ STATO_REG_1_ [63]
+11 1
+.names STATO_REG_1_ [126] [64]
+11 1
+.names [52] [127] [65]
+11 1
+.names [54] [127] [66]
+11 1
+.names [55] [142] [67]
+11 1
+.names [169] [142] [68]
+11 1
+.names STATO_REG_1_ STATO_REG_2_ [69]
+00 1
+.names R_IN_REG_1_ [70]
+0 1
+.names R_IN_REG_5_ [124] [71]
+11 1
+.names [124] [129] [72]
+11 0
+.names [124] [98] [73]
+11 0
+.names [124] R_IN_REG_2_ [74]
+11 1
+.names [124] R_IN_REG_1_ [75]
+11 1
+.names [124] [130] [76]
+11 0
+.names CONT_REG_5_ [160] [77]
+11 1
+.names [134] [160] [78]
+11 0
+.names [135] [160] [79]
+11 0
+.names CONT_REG_2_ [160] [80]
+11 1
+.names [136] [160] [81]
+11 0
+.names CONT_REG_0_ [160] [82]
+11 1
+.names CONT1_REG_8_ [141] [83]
+11 1
+.names CONT1_REG_7_ [141] [84]
+11 1
+.names CONT1_REG_6_ [141] [85]
+11 1
+.names CONT1_REG_5_ [141] [86]
+11 1
+.names CONT1_REG_4_ [141] [87]
+11 1
+.names CONT1_REG_3_ [141] [88]
+11 1
+.names CONT1_REG_2_ [141] [89]
+11 1
+.names CONT1_REG_1_ [141] [90]
+11 1
+.names CONT1_REG_0_ [141] [91]
+11 1
+.names STATO_REG_3_ [138] [92]
+11 0
+.names STATO_REG_3_ [139] [93]
+11 0
+.names STATO_REG_3_ [140] [94]
+11 0
+.names R_IN_REG_2_ [98] [95]
+11 0
+.names [95] [287] [96]
+11 0
+.names R_IN_REG_2_ [97]
+0 1
+.names R_IN_REG_3_ [98]
+0 1
+.names [162] [161] STATO_REG_3__in
+11 0
+.names [165] [164] STATO_REG_2__in
+11 0
+.names [167] [166] [168] STATO_REG_1__in
+111 0
+.names [172] [171] [170] [132] STATO_REG_0__in
+1111 0
+.names [285] [283] [284] X_OUT_REG_0__in
+111 0
+.names [282] [280] [281] X_OUT_REG_1__in
+111 0
+.names [279] [277] [278] X_OUT_REG_2__in
+111 0
+.names [276] [274] [275] X_OUT_REG_3__in
+111 0
+.names [273] [271] [272] X_OUT_REG_4__in
+111 0
+.names [270] [268] [269] X_OUT_REG_5__in
+111 0
+.names [264] [265] [263] [267] [266] CONT1_REG_0__in
+11111 0
+.names [254] [253] [255] [155] [257] CONT1_REG_1__in
+11111 0
+.names [244] [243] [245] [154] [247] CONT1_REG_2__in
+11111 0
+.names [234] [233] [235] [153] [237] CONT1_REG_3__in
+11111 0
+.names [224] [223] [225] [152] [227] CONT1_REG_4__in
+11111 0
+.names [214] [213] [215] [151] [217] CONT1_REG_5__in
+11111 0
+.names [204] [205] [203] [150] CONT1_REG_6__in
+1111 0
+.names [199] [200] [202] [198] [201] CONT1_REG_7__in
+11111 0
+.names [194] [195] [197] [193] [196] CONT1_REG_8__in
+11111 0
+.names [188] [187] CONT_REG_0__in
+11 0
+.names [186] [185] CONT_REG_1__in
+11 0
+.names [184] [183] CONT_REG_2__in
+11 0
+.names [182] [181] CONT_REG_3__in
+11 0
+.names [180] [179] CONT_REG_4__in
+11 0
+.names [178] [177] CONT_REG_5__in
+11 0
+.names [295] [294] [149] [124]
+111 0
+.names STATO_REG_1_ [125]
+0 1
+.names STATO_REG_2_ [126]
+0 1
+.names STATO_REG_0_ [127]
+0 1
+.names R_IN_REG_5_ [128]
+0 1
+.names R_IN_REG_4_ [129]
+0 1
+.names R_IN_REG_0_ [130]
+0 1
+.names [565] [131]
+0 1
+.names [69] [127] [132]
+11 0
+.names [175] [174] [133]
+11 0
+.names CONT_REG_4_ [134]
+0 1
+.names CONT_REG_3_ [135]
+0 1
+.names CONT_REG_1_ [136]
+0 1
+.names [191] [189] [190] [137]
+111 0
+.names CONT1_REG_4_ [138]
+0 1
+.names CONT1_REG_3_ [139]
+0 1
+.names CONT1_REG_1_ [140]
+0 1
+.names STATO_REG_3_ [141]
+0 1
+.names CONT1_REG_8_ [142]
+0 1
+.names [303] [302] R_IN_REG_5__in
+11 0
+.names [305] [304] R_IN_REG_4__in
+11 0
+.names [307] [306] R_IN_REG_3__in
+11 0
+.names [309] [308] R_IN_REG_2__in
+11 0
+.names [311] [310] R_IN_REG_1__in
+11 0
+.names [313] [312] R_IN_REG_0__in
+11 0
+.names [299] [298] [297] [296] [149]
+1111 1
+.names [208] [206] [207] [150]
+111 1
+.names [218] [216] [151]
+11 1
+.names [228] [226] [152]
+11 1
+.names [238] [236] [153]
+11 1
+.names [248] [246] [154]
+11 1
+.names [258] [256] [155]
+11 1
+.names [69] [141] [156]
+11 0
+.names STBI [157]
+0 1
+.names [563] [158]
+0 1
+.names [558] [159]
+0 1
+.names [124] [160]
+0 1
+.names STATO_REG_0_ [63] [161]
+11 0
+.names [48] [160] [162]
+11 0
+.names STATO_REG_0_ STATO_REG_1_ [163]
+11 0
+.names STATO_REG_2_ [163] [164]
+11 0
+.names [64] STATO_REG_0_ [165]
+11 0
+.names STATO_REG_0_ [157] [69] [166]
+111 0
+.names [301] [300] STATO_REG_2_ [167]
+111 0
+.names [48] [124] [565] [168]
+111 0
+.names [132] [169]
+0 1
+.names [127] [63] [158] [170]
+111 0
+.names [48] [124] [171]
+11 0
+.names [290] [125] [291] [172]
+111 0
+.names [156] [173]
+0 1
+.names [169] [141] [174]
+11 0
+.names [48] [160] [175]
+11 0
+.names [133] [176]
+0 1
+.names [601] [56] [177]
+11 0
+.names CONT_REG_5_ [176] [178]
+11 0
+.names [602] [56] [179]
+11 0
+.names CONT_REG_4_ [176] [180]
+11 0
+.names [603] [56] [181]
+11 0
+.names CONT_REG_3_ [176] [182]
+11 0
+.names [604] [56] [183]
+11 0
+.names CONT_REG_2_ [176] [184]
+11 0
+.names [605] [56] [185]
+11 0
+.names CONT_REG_1_ [176] [186]
+11 0
+.names [593] [56] [187]
+11 0
+.names CONT_REG_0_ [176] [188]
+11 0
+.names [64] [160] [189]
+11 0
+.names STATO_REG_2_ [292] [293] [190]
+111 0
+.names STATO_REG_0_ STATO_REG_1_ [191]
+11 0
+.names [137] [192]
+0 1
+.names [667] [66] [193]
+11 0
+.names [633] [65] [194]
+11 0
+.names [466] [58] [195]
+11 0
+.names [352] [57] [196]
+11 0
+.names CONT1_REG_8_ [192] [197]
+11 0
+.names [668] [66] [198]
+11 0
+.names [634] [65] [199]
+11 0
+.names [467] [58] [200]
+11 0
+.names [353] [57] [201]
+11 0
+.names CONT1_REG_7_ [192] [202]
+11 0
+.names [687] [66] [203]
+11 0
+.names [635] [65] [204]
+11 0
+.names [60] CONT_REG_5_ [205]
+11 0
+.names [468] [58] [206]
+11 0
+.names [354] [57] [207]
+11 0
+.names CONT1_REG_6_ [192] [208]
+11 0
+.names [59] R_IN_REG_5_ [209]
+11 0
+.names [670] [54] [210]
+11 0
+.names [623] [52] [211]
+11 0
+.names [211] [209] [210] [212]
+111 0
+.names [61] CONT_REG_5_ [213]
+11 0
+.names [60] CONT_REG_4_ [214]
+11 0
+.names [469] [58] [215]
+11 0
+.names [355] [57] [216]
+11 0
+.names [212] [127] [217]
+11 0
+.names CONT1_REG_5_ [192] [218]
+11 0
+.names [59] R_IN_REG_4_ [219]
+11 0
+.names [671] [54] [220]
+11 0
+.names [636] [52] [221]
+11 0
+.names [221] [219] [220] [222]
+111 0
+.names [61] CONT_REG_4_ [223]
+11 0
+.names [60] CONT_REG_3_ [224]
+11 0
+.names [470] [58] [225]
+11 0
+.names [339] [57] [226]
+11 0
+.names [222] [127] [227]
+11 0
+.names CONT1_REG_4_ [192] [228]
+11 0
+.names [59] R_IN_REG_3_ [229]
+11 0
+.names [672] [54] [230]
+11 0
+.names [624] [52] [231]
+11 0
+.names [231] [229] [230] [232]
+111 0
+.names [61] CONT_REG_3_ [233]
+11 0
+.names [60] CONT_REG_2_ [234]
+11 0
+.names [471] [58] [235]
+11 0
+.names [358] [57] [236]
+11 0
+.names [232] [127] [237]
+11 0
+.names CONT1_REG_3_ [192] [238]
+11 0
+.names [59] R_IN_REG_2_ [239]
+11 0
+.names [673] [54] [240]
+11 0
+.names [637] [52] [241]
+11 0
+.names [241] [239] [240] [242]
+111 0
+.names [61] CONT_REG_2_ [243]
+11 0
+.names [60] CONT_REG_1_ [244]
+11 0
+.names [472] [58] [245]
+11 0
+.names [340] [57] [246]
+11 0
+.names [242] [127] [247]
+11 0
+.names CONT1_REG_2_ [192] [248]
+11 0
+.names [59] R_IN_REG_1_ [249]
+11 0
+.names [674] [54] [250]
+11 0
+.names [622] [52] [251]
+11 0
+.names [250] [249] [251] [252]
+111 0
+.names [61] CONT_REG_1_ [253]
+11 0
+.names [60] CONT_REG_0_ [254]
+11 0
+.names [473] [58] [255]
+11 0
+.names [360] [57] [256]
+11 0
+.names [252] [127] [257]
+11 0
+.names CONT1_REG_1_ [192] [258]
+11 0
+.names [59] R_IN_REG_0_ [259]
+11 0
+.names [669] [54] [260]
+11 0
+.names CONT1_REG_0_ [52] [261]
+11 0
+.names [260] [259] [261] [262]
+111 0
+.names [61] CONT_REG_0_ [263]
+11 0
+.names [448] [58] [264]
+11 0
+.names [361] [57] [265]
+11 0
+.names [262] [127] [266]
+11 0
+.names CONT1_REG_0_ [192] [267]
+11 0
+.names [49] [68] [268]
+11 0
+.names [62] [469] [269]
+11 0
+.names X_OUT_REG_5_ [132] [270]
+11 0
+.names [67] CONT1_REG_4_ [271]
+11 0
+.names [62] [470] [272]
+11 0
+.names X_OUT_REG_4_ [132] [273]
+11 0
+.names [67] CONT1_REG_3_ [274]
+11 0
+.names [62] [471] [275]
+11 0
+.names X_OUT_REG_3_ [132] [276]
+11 0
+.names [50] [68] [277]
+11 0
+.names [62] [472] [278]
+11 0
+.names X_OUT_REG_2_ [132] [279]
+11 0
+.names [67] CONT1_REG_1_ [280]
+11 0
+.names [62] [473] [281]
+11 0
+.names X_OUT_REG_1_ [132] [282]
+11 0
+.names [51] [68] [283]
+11 0
+.names [62] [448] [284]
+11 0
+.names X_OUT_REG_0_ [132] [285]
+11 0
+.names [95] [286]
+0 1
+.names R_IN_REG_3_ [97] [287]
+11 0
+.names [96] [288]
+0 1
+.names [558] STATO_REG_1_ [289]
+00 0
+.names STBI STATO_REG_2_ [290]
+00 0
+.names R_IN_REG_1_ STATO_REG_0_ [291]
+00 0
+.names STATO_REG_1_ [158] [292]
+11 0
+.names STATO_REG_0_ [159] [293]
+11 0
+.names R_IN_REG_3_ [70] [294]
+11 0
+.names R_IN_REG_1_ [97] [295]
+11 0
+.names R_IN_REG_4_ [128] [296]
+11 0
+.names R_IN_REG_5_ [98] [297]
+11 0
+.names R_IN_REG_0_ [129] [298]
+11 0
+.names R_IN_REG_2_ [130] [299]
+11 0
+.names STATO_REG_0_ [289] [300]
+11 0
+.names R_IN_REG_1_ [125] [127] [301]
+111 0
+.names R_IN_REG_5_ [156] [302]
+11 0
+.names X_IN_5_ [173] [303]
+11 0
+.names R_IN_REG_4_ [156] [304]
+11 0
+.names X_IN_4_ [173] [305]
+11 0
+.names [156] R_IN_REG_3_ [306]
+11 0
+.names X_IN_3_ [173] [307]
+11 0
+.names [156] R_IN_REG_2_ [308]
+11 0
+.names X_IN_2_ [173] [309]
+11 0
+.names [156] R_IN_REG_1_ [310]
+11 0
+.names X_IN_1_ [173] [311]
+11 0
+.names R_IN_REG_0_ [156] [312]
+11 0
+.names X_IN_0_ [173] [313]
+11 0
+.names [725] [692] [314]
+11 0
+.names [704] [703] [702] [315]
+111 0
+.names [724] [691] [316]
+11 0
+.names [708] [707] [706] [317]
+111 0
+.names [723] [690] [318]
+11 0
+.names [712] [711] [710] [319]
+111 0
+.names [722] [689] [320]
+11 0
+.names [716] [715] [714] [321]
+111 0
+.names [721] [688] [322]
+11 0
+.names [98] [323]
+0 1
+.names CONT1_REG_0_ [324]
+0 1
+.names [364] [363] [325]
+11 0
+.names CONT1_REG_1_ [326]
+0 1
+.names CONT1_REG_2_ [327]
+0 1
+.names CONT1_REG_3_ [328]
+0 1
+.names CONT1_REG_4_ [329]
+0 1
+.names [380] [379] [330]
+11 0
+.names CONT1_REG_5_ [331]
+0 1
+.names [384] [383] [332]
+11 0
+.names CONT1_REG_6_ [333]
+0 1
+.names [388] [387] [334]
+11 0
+.names CONT1_REG_7_ [335]
+0 1
+.names [395] [394] [336]
+11 0
+.names [398] [397] [337]
+11 0
+.names [401] [400] [338]
+11 0
+.names [427] [426] [339]
+11 0
+.names [437] [436] [340]
+11 0
+.names [404] [403] [341]
+11 0
+.names [409] [408] [342]
+11 0
+.names [414] [413] [343]
+11 0
+.names [419] [418] [344]
+11 0
+.names [424] [423] [345]
+11 0
+.names [429] [428] [346]
+11 0
+.names [434] [433] [347]
+11 0
+.names [439] [438] [348]
+11 0
+.names [444] [443] [349]
+11 0
+.names CONT1_REG_8_ [350]
+0 1
+.names [392] [391] [351]
+11 0
+.names [407] [406] [352]
+11 1
+.names [412] [411] [353]
+11 1
+.names [417] [416] [354]
+11 1
+.names [422] [421] [355]
+11 1
+.names [376] [375] [356]
+11 0
+.names [372] [371] [357]
+11 0
+.names [432] [431] [358]
+11 1
+.names [368] [367] [359]
+11 0
+.names [442] [441] [360]
+11 1
+.names [447] [446] [361]
+11 1
+.names [337] [324] [362]
+11 0
+.names [98] [362] [363]
+11 0
+.names CONT1_REG_0_ [399] [364]
+11 0
+.names [325] [365]
+0 1
+.names [365] [396] [366]
+11 0
+.names CONT1_REG_1_ [366] [367]
+11 0
+.names [336] [325] [368]
+11 0
+.names [359] [369]
+0 1
+.names [338] [327] [370]
+11 0
+.names [370] [359] [371]
+11 0
+.names CONT1_REG_2_ [402] [372]
+11 0
+.names [357] [373]
+0 1
+.names [399] [328] [374]
+11 0
+.names [374] [357] [375]
+11 0
+.names CONT1_REG_3_ [337] [376]
+11 0
+.names [356] [377]
+0 1
+.names [336] [329] [378]
+11 0
+.names [378] [356] [379]
+11 0
+.names CONT1_REG_4_ [396] [380]
+11 0
+.names [330] [381]
+0 1
+.names [381] [331] [382]
+11 0
+.names [338] [382] [383]
+11 0
+.names CONT1_REG_5_ [330] [384]
+11 0
+.names [332] [385]
+0 1
+.names [385] [333] [386]
+11 0
+.names [98] [386] [387]
+11 0
+.names CONT1_REG_6_ [332] [388]
+11 0
+.names [334] [389]
+0 1
+.names [389] [335] [390]
+11 0
+.names [98] [390] [391]
+11 0
+.names CONT1_REG_7_ [334] [392]
+11 0
+.names [351] [393]
+0 1
+.names [98] [288] [394]
+11 0
+.names [96] [323] [395]
+11 0
+.names [336] [396]
+0 1
+.names [98] [97] [397]
+11 0
+.names R_IN_REG_2_ [323] [398]
+11 0
+.names [337] [399]
+0 1
+.names [98] [95] [400]
+11 0
+.names [286] [323] [401]
+11 0
+.names [338] [402]
+0 1
+.names [98] [350] [403]
+11 0
+.names CONT1_REG_8_ [323] [404]
+11 0
+.names [341] [405]
+0 1
+.names [393] [405] [406]
+11 0
+.names [341] [351] [407]
+11 0
+.names [98] [335] [408]
+11 0
+.names CONT1_REG_7_ [323] [409]
+11 0
+.names [342] [410]
+0 1
+.names [410] [389] [411]
+11 0
+.names [342] [334] [412]
+11 0
+.names [98] [333] [413]
+11 0
+.names CONT1_REG_6_ [323] [414]
+11 0
+.names [343] [415]
+0 1
+.names [415] [385] [416]
+11 0
+.names [343] [332] [417]
+11 0
+.names [402] CONT1_REG_5_ [418]
+11 0
+.names [338] [331] [419]
+11 0
+.names [344] [420]
+0 1
+.names [420] [381] [421]
+11 0
+.names [344] [330] [422]
+11 0
+.names [396] CONT1_REG_4_ [423]
+11 0
+.names [336] [329] [424]
+11 0
+.names [345] [425]
+0 1
+.names [377] [425] [426]
+11 0
+.names [345] [356] [427]
+11 0
+.names [399] CONT1_REG_3_ [428]
+11 0
+.names [337] [328] [429]
+11 0
+.names [346] [430]
+0 1
+.names [373] [430] [431]
+11 0
+.names [346] [357] [432]
+11 0
+.names [402] CONT1_REG_2_ [433]
+11 0
+.names [338] [327] [434]
+11 0
+.names [347] [435]
+0 1
+.names [369] [435] [436]
+11 0
+.names [347] [359] [437]
+11 0
+.names [396] CONT1_REG_1_ [438]
+11 0
+.names [336] [326] [439]
+11 0
+.names [348] [440]
+0 1
+.names [440] [365] [441]
+11 0
+.names [348] [325] [442]
+11 0
+.names [98] [324] [443]
+11 0
+.names CONT1_REG_0_ [323] [444]
+11 0
+.names [349] [445]
+0 1
+.names [337] [445] [446]
+11 0
+.names [349] [399] [447]
+11 0
+.names [487] [517] [448]
+11 0
+.names [51] [449]
+0 1
+.names [94] [450]
+0 1
+.names [90] [451]
+0 1
+.names [491] [490] [452]
+11 0
+.names [50] [453]
+0 1
+.names [89] [454]
+0 1
+.names [93] [455]
+0 1
+.names [88] [456]
+0 1
+.names [499] [498] [457]
+11 0
+.names [92] [458]
+0 1
+.names [87] [459]
+0 1
+.names [49] [460]
+0 1
+.names [86] [461]
+0 1
+.names [85] [462]
+0 1
+.names [511] [510] [463]
+11 0
+.names [84] [464]
+0 1
+.names [91] [465]
+0 1
+.names [522] [521] [466]
+11 0
+.names [527] [526] [467]
+11 0
+.names [532] [531] [468]
+11 0
+.names [537] [536] [469]
+11 0
+.names [542] [541] [470]
+11 0
+.names [547] [546] [471]
+11 0
+.names [552] [551] [472]
+11 0
+.names [557] [556] [473]
+11 0
+.names [519] [518] [474]
+11 0
+.names [524] [523] [475]
+11 0
+.names [529] [528] [476]
+11 0
+.names [534] [533] [477]
+11 0
+.names [539] [538] [478]
+11 0
+.names [544] [543] [479]
+11 0
+.names [549] [548] [480]
+11 0
+.names [554] [553] [481]
+11 0
+.names [83] [482]
+0 1
+.names [515] [514] [483]
+11 0
+.names [507] [506] [484]
+11 0
+.names [503] [502] [485]
+11 0
+.names [495] [494] [486]
+11 0
+.names [51] [465] [487]
+11 0
+.names [487] [488]
+0 1
+.names [94] [451] [489]
+11 0
+.names [489] [487] [490]
+11 0
+.names [90] [450] [491]
+11 0
+.names [452] [492]
+0 1
+.names [50] [492] [493]
+11 0
+.names [89] [493] [494]
+11 0
+.names [452] [453] [495]
+11 0
+.names [486] [496]
+0 1
+.names [93] [456] [497]
+11 0
+.names [497] [486] [498]
+11 0
+.names [88] [455] [499]
+11 0
+.names [457] [500]
+0 1
+.names [92] [500] [501]
+11 0
+.names [87] [501] [502]
+11 0
+.names [457] [458] [503]
+11 0
+.names [485] [504]
+0 1
+.names [49] [461] [505]
+11 0
+.names [505] [485] [506]
+11 0
+.names [86] [460] [507]
+11 0
+.names [484] [508]
+0 1
+.names [49] [462] [509]
+11 0
+.names [509] [484] [510]
+11 0
+.names [85] [460] [511]
+11 0
+.names [463] [512]
+0 1
+.names [512] [49] [513]
+11 0
+.names [84] [513] [514]
+11 0
+.names [463] [460] [515]
+11 0
+.names [483] [516]
+0 1
+.names [91] [449] [517]
+11 0
+.names [83] [460] [518]
+11 0
+.names [49] [482] [519]
+11 0
+.names [474] [520]
+0 1
+.names [516] [520] [521]
+11 0
+.names [474] [483] [522]
+11 0
+.names [84] [460] [523]
+11 0
+.names [49] [464] [524]
+11 0
+.names [475] [525]
+0 1
+.names [525] [512] [526]
+11 0
+.names [475] [463] [527]
+11 0
+.names [85] [460] [528]
+11 0
+.names [49] [462] [529]
+11 0
+.names [476] [530]
+0 1
+.names [508] [530] [531]
+11 0
+.names [476] [484] [532]
+11 0
+.names [86] [460] [533]
+11 0
+.names [49] [461] [534]
+11 0
+.names [477] [535]
+0 1
+.names [504] [535] [536]
+11 0
+.names [477] [485] [537]
+11 0
+.names [87] [458] [538]
+11 0
+.names [92] [459] [539]
+11 0
+.names [478] [540]
+0 1
+.names [540] [500] [541]
+11 0
+.names [478] [457] [542]
+11 0
+.names [88] [455] [543]
+11 0
+.names [93] [456] [544]
+11 0
+.names [479] [545]
+0 1
+.names [496] [545] [546]
+11 0
+.names [479] [486] [547]
+11 0
+.names [89] [453] [548]
+11 0
+.names [50] [454] [549]
+11 0
+.names [480] [550]
+0 1
+.names [550] [492] [551]
+11 0
+.names [480] [452] [552]
+11 0
+.names [90] [450] [553]
+11 0
+.names [94] [451] [554]
+11 0
+.names [481] [555]
+0 1
+.names [488] [555] [556]
+11 0
+.names [481] [487] [557]
+11 0
+.names CONT1_REG_8_ [561] [558]
+00 1
+.names CONT1_REG_0_ CONT1_REG_1_ [559]
+11 1
+.names CONT1_REG_3_ CONT1_REG_4_ [562] [560]
+111 1
+.names [560] CONT1_REG_6_ CONT1_REG_7_ CONT1_REG_5_ [561]
+0000 1
+.names [559] CONT1_REG_2_ [562]
+00 0
+.names CONT1_REG_8_ [564] [563]
+00 1
+.names CONT1_REG_6_ CONT1_REG_7_ [564]
+00 1
+.names [592] [591] [565]
+11 0
+.names [71] [566]
+0 1
+.names [78] [567]
+0 1
+.names [81] [568]
+0 1
+.names [75] [569]
+0 1
+.names [74] [570]
+0 1
+.names [80] [571]
+0 1
+.names [79] [572]
+0 1
+.names [73] [573]
+0 1
+.names [72] [574]
+0 1
+.names [77] [575]
+0 1
+.names [82] [576]
+0 1
+.names [71] [575] [577]
+11 0
+.names [81] [569] [578]
+11 0
+.names [76] [576] [578] [579]
+111 0
+.names [75] [568] [580]
+11 0
+.names [74] [571] [581]
+11 0
+.names [580] [581] [579] [582]
+111 0
+.names [80] [570] [583]
+11 0
+.names [79] [573] [584]
+11 0
+.names [583] [584] [582] [585]
+111 0
+.names [73] [572] [586]
+11 0
+.names [72] [567] [587]
+11 0
+.names [586] [587] [585] [588]
+111 0
+.names [78] [574] [589]
+11 0
+.names [588] [589] [590]
+11 0
+.names [590] [577] [591]
+11 0
+.names [77] [566] [592]
+11 0
+.names CONT_REG_0_ [593]
+0 1
+.names CONT_REG_1_ [594]
+0 1
+.names CONT_REG_1_ CONT_REG_0_ [595]
+11 0
+.names CONT_REG_2_ [596]
+0 1
+.names CONT_REG_2_ [608] [597]
+11 0
+.names CONT_REG_3_ [598]
+0 1
+.names CONT_REG_3_ [609] [599]
+11 0
+.names CONT_REG_4_ [600]
+0 1
+.names [613] [612] [601]
+11 0
+.names [615] [614] [602]
+11 0
+.names [617] [616] [603]
+11 0
+.names [619] [618] [604]
+11 0
+.names [621] [620] [605]
+11 0
+.names CONT_REG_5_ [606]
+0 1
+.names CONT_REG_4_ [610] [607]
+11 0
+.names [595] [608]
+0 1
+.names [597] [609]
+0 1
+.names [599] [610]
+0 1
+.names [607] [611]
+0 1
+.names CONT_REG_5_ [607] [612]
+11 0
+.names [611] [606] [613]
+11 0
+.names CONT_REG_4_ [599] [614]
+11 0
+.names [610] [600] [615]
+11 0
+.names CONT_REG_3_ [597] [616]
+11 0
+.names [609] [598] [617]
+11 0
+.names CONT_REG_2_ [595] [618]
+11 0
+.names [608] [596] [619]
+11 0
+.names CONT_REG_1_ [593] [620]
+11 0
+.names CONT_REG_0_ [594] [621]
+11 0
+.names CONT1_REG_1_ [622]
+0 1
+.names [647] [628] [623]
+11 1
+.names [626] [648] [624]
+11 0
+.names CONT1_REG_2_ [625]
+0 1
+.names [632] [641] [626]
+11 0
+.names CONT1_REG_5_ [627]
+0 1
+.names CONT1_REG_5_ [643] [628]
+11 0
+.names CONT1_REG_6_ [629]
+0 1
+.names CONT1_REG_6_ [644] [630]
+11 0
+.names CONT1_REG_7_ [631]
+0 1
+.names CONT1_REG_3_ [632]
+0 1
+.names [650] [649] [633]
+11 0
+.names [652] [651] [634]
+11 0
+.names [654] [653] [635]
+11 0
+.names [656] [655] [636]
+11 0
+.names [658] [657] [637]
+11 0
+.names CONT1_REG_8_ [638]
+0 1
+.names CONT1_REG_7_ [645] [639]
+11 0
+.names CONT1_REG_4_ [640]
+0 1
+.names CONT1_REG_2_ CONT1_REG_1_ [641]
+11 0
+.names [626] [642]
+0 1
+.names [642] [640] [643]
+11 0
+.names [628] [644]
+0 1
+.names [630] [645]
+0 1
+.names [639] [646]
+0 1
+.names [640] [627] [642] [647]
+111 0
+.names CONT1_REG_2_ CONT1_REG_1_ CONT1_REG_3_ [648]
+111 0
+.names CONT1_REG_8_ [639] [649]
+11 0
+.names [646] [638] [650]
+11 0
+.names CONT1_REG_7_ [630] [651]
+11 0
+.names [645] [631] [652]
+11 0
+.names CONT1_REG_6_ [628] [653]
+11 0
+.names [644] [629] [654]
+11 0
+.names CONT1_REG_4_ [626] [655]
+11 0
+.names [642] [640] [656]
+11 0
+.names CONT1_REG_1_ [625] [657]
+11 0
+.names CONT1_REG_2_ [622] [658]
+11 0
+.names R_IN_REG_0_ [659]
+0 1
+.names R_IN_REG_2_ [660]
+0 1
+.names R_IN_REG_3_ [661]
+0 1
+.names R_IN_REG_4_ [662]
+0 1
+.names R_IN_REG_5_ [663]
+0 1
+.names [666] [686] [664]
+11 0
+.names [727] [726] [665]
+11 0
+.names [760] [759] [666]
+11 0
+.names [766] [765] [667]
+11 0
+.names [768] [767] [668]
+11 0
+.names [45] [46] [669]
+11 0
+.names [321] [322] [670]
+11 0
+.names [319] [320] [671]
+11 0
+.names [317] [318] [672]
+11 0
+.names [315] [316] [673]
+11 0
+.names [47] [314] [674]
+11 0
+.names [763] [762] [675]
+11 0
+.names CONT1_REG_7_ [676]
+0 1
+.names CONT1_REG_0_ [677]
+0 1
+.names CONT1_REG_1_ [678]
+0 1
+.names CONT1_REG_2_ [679]
+0 1
+.names CONT1_REG_3_ [680]
+0 1
+.names CONT1_REG_4_ [681]
+0 1
+.names CONT1_REG_5_ [682]
+0 1
+.names CONT1_REG_6_ [683]
+0 1
+.names CONT1_REG_8_ [684]
+0 1
+.names [694] [665] [685]
+11 0
+.names [716] [717] [686]
+11 0
+.names [770] [769] [687]
+11 1
+.names [712] [713] [688]
+11 0
+.names [708] [709] [689]
+11 0
+.names [704] [705] [690]
+11 0
+.names [700] [701] [691]
+11 0
+.names [696] [697] [692]
+11 0
+.names [695] [696] [693]
+11 0
+.names [664] [694]
+0 1
+.names [730] [729] [659] [695]
+111 0
+.names R_IN_REG_0_ [733] [696]
+11 0
+.names [70] [695] [697]
+11 0
+.names [692] [698]
+0 1
+.names [735] [734] [70] [699]
+111 0
+.names R_IN_REG_1_ [738] [700]
+11 0
+.names [699] [692] [701]
+11 0
+.names [691] [702]
+0 1
+.names [740] [739] [660] [703]
+111 0
+.names R_IN_REG_2_ [743] [704]
+11 0
+.names [703] [691] [705]
+11 0
+.names [690] [706]
+0 1
+.names [745] [744] [661] [707]
+111 0
+.names R_IN_REG_3_ [748] [708]
+11 0
+.names [707] [690] [709]
+11 0
+.names [689] [710]
+0 1
+.names [750] [749] [662] [711]
+111 0
+.names R_IN_REG_4_ [753] [712]
+11 0
+.names [711] [689] [713]
+11 0
+.names [688] [714]
+0 1
+.names [755] [754] [663] [715]
+111 0
+.names R_IN_REG_5_ [758] [716]
+11 0
+.names [715] [688] [717]
+11 0
+.names [686] [718]
+0 1
+.names [685] [719]
+0 1
+.names [693] [720]
+0 1
+.names [716] [715] [721]
+11 0
+.names [712] [711] [722]
+11 0
+.names [708] [707] [723]
+11 0
+.names [704] [703] [724]
+11 0
+.names [700] [699] [725]
+11 0
+.names [70] [676] [726]
+11 0
+.names CONT1_REG_7_ R_IN_REG_1_ [727]
+11 0
+.names [665] [728]
+0 1
+.names [70] [677] [729]
+11 0
+.names CONT1_REG_0_ R_IN_REG_1_ [730]
+11 0
+.names [70] [677] [731]
+11 0
+.names CONT1_REG_0_ R_IN_REG_1_ [732]
+11 0
+.names [732] [731] [733]
+11 0
+.names [70] [678] [734]
+11 0
+.names CONT1_REG_1_ R_IN_REG_1_ [735]
+11 0
+.names [70] [678] [736]
+11 0
+.names CONT1_REG_1_ R_IN_REG_1_ [737]
+11 0
+.names [737] [736] [738]
+11 0
+.names [70] [679] [739]
+11 0
+.names CONT1_REG_2_ R_IN_REG_1_ [740]
+11 0
+.names [70] [679] [741]
+11 0
+.names CONT1_REG_2_ R_IN_REG_1_ [742]
+11 0
+.names [742] [741] [743]
+11 0
+.names [70] [680] [744]
+11 0
+.names CONT1_REG_3_ R_IN_REG_1_ [745]
+11 0
+.names [70] [680] [746]
+11 0
+.names CONT1_REG_3_ R_IN_REG_1_ [747]
+11 0
+.names [747] [746] [748]
+11 0
+.names [70] [681] [749]
+11 0
+.names CONT1_REG_4_ R_IN_REG_1_ [750]
+11 0
+.names [70] [681] [751]
+11 0
+.names CONT1_REG_4_ R_IN_REG_1_ [752]
+11 0
+.names [752] [751] [753]
+11 0
+.names [70] [682] [754]
+11 0
+.names CONT1_REG_5_ R_IN_REG_1_ [755]
+11 0
+.names [70] [682] [756]
+11 0
+.names CONT1_REG_5_ R_IN_REG_1_ [757]
+11 0
+.names [757] [756] [758]
+11 0
+.names [70] [683] [759]
+11 0
+.names CONT1_REG_6_ R_IN_REG_1_ [760]
+11 0
+.names [666] [761]
+0 1
+.names [70] [684] [762]
+11 0
+.names CONT1_REG_8_ R_IN_REG_1_ [763]
+11 0
+.names [675] [764]
+0 1
+.names [719] [764] [765]
+11 0
+.names [675] [685] [766]
+11 0
+.names [728] [694] [767]
+11 0
+.names [665] [664] [768]
+11 0
+.names [718] [761] [769]
+11 0
+.names [666] [686] [770]
+11 0
+.end

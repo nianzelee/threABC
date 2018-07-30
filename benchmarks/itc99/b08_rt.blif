@@ -1,0 +1,366 @@
+# Benchmark "itc/b08/b08" written by ABC on Sat Nov 11 15:33:33 2006
+.model itc/b08/b08
+.inputs START I_7_ I_6_ I_5_ I_4_ I_3_ I_2_ I_1_ I_0_
+.outputs O_REG_3_ O_REG_2_ O_REG_1_ O_REG_0_
+
+.latch     L00_in        L00  0
+.latch     L01_in        L01  0
+.latch     L02_in        L02  0
+.latch     L03_in        L03  0
+.latch     L04_in        L04  0
+.latch     L05_in        L05  0
+.latch     L06_in        L06  1
+.latch     L07_in        L07  1
+.latch     L08_in        L08  1
+.latch     L09_in        L09  1
+.latch     L10_in        L10  1
+.latch     L11_in        L11  1
+.latch     L12_in        L12  1
+.latch     L13_in        L13  1
+.latch     L14_in        L14  0
+.latch     L15_in        L15  1
+.latch     L16_in        L16  1
+.latch     L17_in        L17  1
+.latch     L18_in        L18  1
+.latch     L19_in        L19  1
+.latch     L20_in        L20  1
+.latch     L21_in        L21  1
+.latch     L22_in        L22  1
+.latch     L23_in        L23  1
+.latch     L24_in        L24  1
+.latch     L25_in        L25  1
+.latch     L26_in        L26  1
+.latch     L27_in        L27  1
+.latch     L28_in        L28  0
+.latch     L29_in        L29  1
+.latch     L30_in        L30  0
+.latch     L31_in        L31  1
+.latch     L32_in        L32  1
+.latch     L33_in        L33  0
+.latch     L34_in        L34  0
+.latch     L35_in        L35  1
+.latch     L36_in        L36  0
+.latch     L37_in        L37  0
+.latch     L38_in        L38  1
+.latch     L39_in        L39  0
+.latch     L40_in        L40  0
+.latch     L41_in        L41  1
+.latch     L42_in        L42  1
+.latch     L43_in        L43  0
+.latch     L44_in        L44  1
+.latch     L45_in        L45  0
+.latch     L46_in        L46  0
+.latch     L47_in        L47  0
+.latch     L48_in        L48  1
+.latch     L49_in        L49  0
+.latch     L50_in        L50  0
+.latch     L51_in        L51  0
+.latch     L52_in        L52  0
+
+.names L03 [110] [14]
+11 1
+.names L02_in L03_in [15]
+11 1
+.names L00 [44] [16]
+11 1
+.names [33] [89] [17]
+11 1
+.names [90] [87] [18]
+11 1
+.names [86] [88] [19]
+11 1
+.names [17] L25_in [20]
+11 1
+.names [70] [119] L04_in
+11 0
+.names [117] [70] [118] L49_in
+111 0
+.names [115] [114] L46_in
+11 0
+.names [112] [70] [113] L45_in
+111 0
+.names L09 L10 [25]
+11 0
+.names L07 [78] L02_in
+11 0
+.names L06 L07 [75] L03_in
+111 0
+.names L03_in L44_in
+0 1
+.names L02_in [29]
+0 1
+.names [44] [30]
+0 1
+.names L00_in L11_in
+0 1
+.names [25] [32]
+0 1
+.names [25] [16] [33]
+11 0
+.names START [34]
+0 1
+.names L02_in [76] L08_in
+11 0
+.names [16] [32] [36]
+11 0
+.names [17] [88] L47_in
+11 0
+.names [19] [36] [38]
+11 0
+.names [91] [33] [39]
+11 0
+.names [89] L25_in L43_in
+11 0
+.names [17] [87] [91] [41]
+111 0
+.names L03_in [29] L07_in
+11 0
+.names L01 [34] [43]
+11 0
+.names L12 L13 [44]
+11 0
+.names [124] [123] L00_in
+11 0
+.names [126] L15 [46]
+11 0
+.names [128] L16 [47]
+11 0
+.names [130] L17 [48]
+11 0
+.names [132] L18 [49]
+11 0
+.names [134] L19 [50]
+11 0
+.names [136] L20 [51]
+11 0
+.names [138] L21 L36_in
+11 0
+.names [140] L22 L33_in
+11 0
+.names [156] [155] L50_in
+11 0
+.names [158] [157] L51_in
+11 0
+.names [160] [159] L52_in
+11 0
+.names [162] [161] L05_in
+11 0
+.names L39 L40 [59] [107] [104] [58]
+11111 1
+.names L29 L30 L31 L32 [59]
+1111 1
+.names [46] [60]
+0 1
+.names L02_in L44_in L06_in
+11 0
+.names [47] [62]
+0 1
+.names [48] [63]
+0 1
+.names [49] [64]
+0 1
+.names [50] [65]
+0 1
+.names [51] [66]
+0 1
+.names L36_in [67]
+0 1
+.names L33_in [68]
+0 1
+.names L02 L03 [74] [69]
+111 0
+.names [14] L43 [70]
+11 0
+.names L07_in L39_in
+0 1
+.names L06_in L14_in
+0 1
+.names [33] L01_in
+0 1
+.names [43] [74]
+0 1
+.names L02 [43] [75]
+11 0
+.names L01_in L03_in [76]
+11 0
+.names L08_in [77]
+0 1
+.names START L08 [78]
+11 0
+.names [36] [79]
+0 1
+.names [77] L44_in [80]
+11 0
+.names [25] [80] L10_in
+11 0
+.names [15] [79] L09_in
+11 0
+.names L03_in L11 [83]
+11 0
+.names [77] [83] [84]
+11 0
+.names L00 [44] [25] L28_in
+000 0
+.names L00 [30] [25] [86]
+111 0
+.names [32] [30] L00 [87]
+111 0
+.names [30] L11 [25] [88]
+111 0
+.names [32] L11 [44] [89]
+111 0
+.names L47_in [90]
+0 1
+.names [38] [91]
+0 1
+.names [44] L11 [25] L25_in
+111 0
+.names L43_in [93]
+0 1
+.names [91] L28_in L42_in
+11 0
+.names [18] [36] [95]
+11 0
+.names L23 L24 L25 [96]
+111 0
+.names [41] [97]
+0 1
+.names [20] [19] [98]
+11 0
+.names [87] L28_in [154] [153] L41_in
+1111 0
+.names [39] [100]
+0 1
+.names [18] L25_in [101]
+11 0
+.names L26 L27 L28 [102]
+111 0
+.names [100] L25_in L37_in
+11 0
+.names [146] L38 L28 [104]
+111 0
+.names [100] [87] L34_in
+11 0
+.names [20] [36] [106]
+11 0
+.names L35 [147] L28 [107]
+111 0
+.names [17] [86] [36] [65] L40_in
+1111 0
+.names L41 [96] [102] [58] [109]
+1111 0
+.names L06 [109] [110]
+11 0
+.names L44 [110] [111]
+11 0
+.names [14] L42 [112]
+11 0
+.names L45 [111] [113]
+11 0
+.names [14] L47 [114]
+11 0
+.names L46 [111] [115]
+11 0
+.names [88] [87] L28_in [36] L48_in
+1111 0
+.names [14] L48 [117]
+11 0
+.names L49 [111] [118]
+11 0
+.names L04 [111] [119]
+11 0
+.names [69] [120]
+0 1
+.names [44] [84] L13_in
+11 0
+.names [15] L00 [30] L12_in
+111 0
+.names [15] L11 [123]
+11 0
+.names L00 L08_in [124]
+11 0
+.names [46] L06_in L15_in
+11 0
+.names I_7_ L14 [126]
+11 0
+.names [47] L06_in L16_in
+11 0
+.names I_6_ L14 [128]
+11 0
+.names [48] L06_in L17_in
+11 0
+.names I_5_ L14 [130]
+11 0
+.names [49] L06_in L18_in
+11 0
+.names I_4_ L14 [132]
+11 0
+.names [50] L06_in L19_in
+11 0
+.names I_3_ L14 [134]
+11 0
+.names [51] L06_in L20_in
+11 0
+.names I_2_ L14 [136]
+11 0
+.names L36_in L06_in L21_in
+11 0
+.names I_1_ L14 [138]
+11 0
+.names L33_in L06_in L22_in
+11 0
+.names I_0_ L14 [140]
+11 0
+.names [86] L28_in [18] [60] L32_in
+1111 0
+.names [93] [91] [46] L31_in
+111 0
+.names [20] [91] [63] L30_in
+111 0
+.names [97] L28_in [48] L29_in
+111 0
+.names [41] [67] L38_in
+11 0
+.names L36 L37 [146]
+11 0
+.names L33 L34 [147]
+11 0
+.names [106] [68] L35_in
+11 0
+.names [51] [39] L27_in
+11 0
+.names [101] [66] L26_in
+11 0
+.names [47] L42_in L24_in
+11 0
+.names [95] [62] L23_in
+11 0
+.names [49] [38] [153]
+11 0
+.names [98] [64] [154]
+11 0
+.names L50 [69] [155]
+11 0
+.names [120] L45 [156]
+11 0
+.names L51 [69] [157]
+11 0
+.names [120] L46 [158]
+11 0
+.names L52 [69] [159]
+11 0
+.names [120] L49 [160]
+11 0
+.names L05 [69] [161]
+11 0
+.names [120] L04 [162]
+11 0
+.names L50 O_REG_3_
+1 1
+.names L51 O_REG_2_
+1 1
+.names L52 O_REG_1_
+1 1
+.names L05 O_REG_0_
+1 1
+.end

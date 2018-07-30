@@ -1,0 +1,370 @@
+# Benchmark "itc/b10/b10" written by ABC on Fri Sep 15 12:21:08 2006
+.model itc/b10/b10
+.inputs R_BUTTON G_BUTTON KEY START TEST RTS RTR V_IN_3_ V_IN_2_ V_IN_1_ \
+ V_IN_0_
+.outputs CTS_REG CTR_REG V_OUT_REG_3_ V_OUT_REG_2_ V_OUT_REG_1_ \
+ V_OUT_REG_0_
+
+.latch VOTO0_REG_in  VOTO0_REG  0
+.latch STATO_REG_3__in STATO_REG_3_  0
+.latch STATO_REG_2__in STATO_REG_2_  0
+.latch STATO_REG_1__in STATO_REG_1_  0
+.latch STATO_REG_0__in STATO_REG_0_  0
+.latch V_OUT_REG_3__in V_OUT_REG_3_  0
+.latch V_OUT_REG_2__in V_OUT_REG_2_  0
+.latch V_OUT_REG_1__in V_OUT_REG_1_  0
+.latch V_OUT_REG_0__in V_OUT_REG_0_  0
+.latch SIGN_REG_3__in SIGN_REG_3_  0
+.latch VOTO1_REG_in  VOTO1_REG  0
+.latch CTR_REG_in    CTR_REG  0
+.latch VOTO3_REG_in  VOTO3_REG  0
+.latch LAST_R_REG_in LAST_R_REG  0
+.latch CTS_REG_in    CTS_REG  0
+.latch VOTO2_REG_in  VOTO2_REG  0
+.latch LAST_G_REG_in LAST_G_REG  0
+
+.names STATO_REG_3_ STATO_REG_2_ [35]
+00 1
+.names STATO_REG_2_ [48] [36]
+11 1
+.names START [93] [37]
+11 1
+.names [104] [103] [38]
+11 1
+.names [38] [96] [39]
+11 1
+.names [39] [126] [40]
+11 1
+.names [66] [134] [41]
+11 1
+.names [150] [81] [151] [152] CTS_REG_in
+1111 0
+.names [95] [136] CTR_REG_in
+11 0
+.names [125] [124] SIGN_REG_3__in
+11 0
+.names [167] [53] [176] [175] STATO_REG_1__in
+1111 0
+.names [118] [53] [119] STATO_REG_2__in
+111 0
+.names [115] [114] STATO_REG_3__in
+11 0
+.names STATO_REG_0_ [48]
+0 1
+.names STATO_REG_0_ [52] [49]
+11 0
+.names STATO_REG_2_ [50]
+0 1
+.names RTR [51]
+0 1
+.names STATO_REG_1_ [52]
+0 1
+.names STATO_REG_1_ [36] [53]
+11 0
+.names RTS [54]
+0 1
+.names [35] [48] [55]
+11 0
+.names STATO_REG_3_ [56]
+0 1
+.names START [57]
+0 1
+.names START [35] [58]
+11 0
+.names STATO_REG_1_ STATO_REG_0_ [59]
+11 0
+.names STATO_REG_1_ [56] [60]
+11 0
+.names VOTO1_REG [61]
+0 1
+.names VOTO2_REG [62]
+0 1
+.names VOTO2_REG VOTO1_REG [82] [83] [63]
+1111 0
+.names [81] [95] [107] [79] [38] [64]
+11111 0
+.names SIGN_REG_3_ [65]
+0 1
+.names STATO_REG_1_ [50] [66]
+11 0
+.names KEY [67]
+0 1
+.names [178] [177] STATO_REG_0__in
+11 0
+.names [180] [179] V_OUT_REG_3__in
+11 0
+.names [182] [181] V_OUT_REG_2__in
+11 0
+.names [184] [183] V_OUT_REG_1__in
+11 0
+.names [186] [185] V_OUT_REG_0__in
+11 0
+.names [188] [187] VOTO1_REG_in
+11 0
+.names [198] [197] VOTO3_REG_in
+11 0
+.names [200] [199] LAST_R_REG_in
+11 0
+.names [202] [201] VOTO2_REG_in
+11 0
+.names [204] [203] LAST_G_REG_in
+11 0
+.names [206] [205] VOTO0_REG_in
+11 0
+.names [171] [170] [108] [79]
+111 1
+.names [192] [191] [80]
+11 0
+.names RTR [52] [36] [81]
+111 0
+.names VOTO3_REG [82]
+0 1
+.names VOTO0_REG [83]
+0 1
+.names [127] [98] [40] [84]
+111 0
+.names [40] [139] [85]
+11 0
+.names LAST_R_REG [86]
+0 1
+.names KEY STATO_REG_1_ [37] [87]
+111 0
+.names [153] [98] [40] [88]
+111 0
+.names LAST_G_REG [89]
+0 1
+.names [158] [58] [39] [90]
+111 0
+.names [63] [91]
+0 1
+.names TEST [92]
+0 1
+.names [55] [93]
+0 1
+.names [53] [94]
+0 1
+.names STATO_REG_2_ [54] [99] [95]
+111 0
+.names STATO_REG_3_ [50] [99] [96]
+111 0
+.names [58] [97]
+0 1
+.names [37] [67] [98]
+11 0
+.names [49] [99]
+0 1
+.names [66] [100]
+0 1
+.names [59] [101]
+0 1
+.names [81] [102]
+0 1
+.names RTS [94] [103]
+11 0
+.names [93] [52] [104]
+11 0
+.names RTR STATO_REG_1_ [105]
+00 0
+.names [60] [106]
+0 1
+.names [169] [168] STATO_REG_3_ [107]
+111 0
+.names [97] STATO_REG_0_ [108]
+11 0
+.names [64] [109]
+0 1
+.names [91] [36] [110]
+11 0
+.names [93] [92] [111]
+11 0
+.names [111] [110] [112]
+11 0
+.names [48] [64] [113]
+11 0
+.names [112] [52] [64] [114]
+111 0
+.names STATO_REG_3_ [113] [115]
+11 0
+.names [48] [63] [116]
+11 0
+.names [116] [49] [64] [117]
+111 0
+.names STATO_REG_1_ [174] [118]
+11 0
+.names STATO_REG_2_ [117] [119]
+11 0
+.names [91] [56] [120]
+11 0
+.names [48] [52] [120] [121]
+111 0
+.names [53] [55] [121] [122]
+111 0
+.names [92] [52] [93] [123]
+111 0
+.names SIGN_REG_3_ [123] [124]
+11 0
+.names STATO_REG_3_ STATO_REG_0_ [125]
+11 0
+.names START [50] [99] [126]
+111 0
+.names G_BUTTON [89] [37] [127]
+111 0
+.names [84] [128]
+0 1
+.names [94] [56] [129]
+11 0
+.names [96] [129] [130]
+11 0
+.names KEY [61] [100] [131]
+111 0
+.names V_IN_1_ [130] [132]
+11 0
+.names [132] [131] [133]
+11 0
+.names STATO_REG_2_ [52] [134]
+11 0
+.names [190] [189] [48] [41] [135]
+1111 0
+.names CTR_REG [135] [136]
+11 0
+.names START [67] [137]
+11 0
+.names [59] [137] [138]
+11 0
+.names [35] [138] [139]
+11 0
+.names [85] [140]
+0 1
+.names [101] [196] [141]
+11 0
+.names V_IN_3_ [130] [142]
+11 0
+.names [142] [141] [143]
+11 0
+.names [87] [144]
+0 1
+.names STATO_REG_0_ STATO_REG_3_ [145]
+00 0
+.names RTR [145] [146]
+11 0
+.names STATO_REG_3_ [99] [147]
+11 0
+.names STATO_REG_1_ [48] [148]
+11 0
+.names [41] [148] [147] [146] [149]
+1111 0
+.names STATO_REG_3_ [52] [36] [150]
+111 0
+.names RTR [35] [99] [151]
+111 0
+.names CTS_REG [149] [152]
+11 0
+.names R_BUTTON [86] [37] [153]
+111 0
+.names [88] [154]
+0 1
+.names KEY [62] [100] [155]
+111 0
+.names V_IN_2_ [130] [156]
+11 0
+.names [156] [155] [157]
+11 0
+.names [100] [174] [158]
+11 0
+.names [90] [159]
+0 1
+.names KEY [93] [160]
+11 0
+.names STATO_REG_3_ [65] [161]
+11 0
+.names [161] [160] [162]
+11 0
+.names STATO_REG_1_ [162] [163]
+11 0
+.names V_IN_0_ [130] [164]
+11 0
+.names [164] [163] [165]
+11 0
+.names V_IN_3_ V_IN_2_ V_IN_0_ V_IN_1_ [166]
+1111 0
+.names [109] STATO_REG_1_ [167]
+11 0
+.names STATO_REG_0_ [166] [168]
+11 0
+.names [105] [66] [48] [169]
+111 0
+.names [106] [57] [50] [170]
+111 0
+.names [101] [51] STATO_REG_2_ [171]
+111 0
+.names STATO_REG_3_ [48] [172]
+11 0
+.names STATO_REG_0_ [56] [173]
+11 0
+.names [173] [172] [174]
+11 0
+.names STATO_REG_0_ [64] [60] [175]
+111 0
+.names [106] [48] [176]
+11 0
+.names [109] STATO_REG_0_ [177]
+11 0
+.names [122] [64] [178]
+11 0
+.names V_OUT_REG_3_ [81] [179]
+11 0
+.names VOTO3_REG [102] [180]
+11 0
+.names V_OUT_REG_2_ [81] [181]
+11 0
+.names [102] VOTO2_REG [182]
+11 0
+.names V_OUT_REG_1_ [81] [183]
+11 0
+.names [102] VOTO1_REG [184]
+11 0
+.names V_OUT_REG_0_ [81] [185]
+11 0
+.names VOTO0_REG [102] [186]
+11 0
+.names [128] VOTO1_REG [187]
+11 0
+.names [133] [84] [188]
+11 0
+.names STATO_REG_3_ [52] [189]
+11 0
+.names STATO_REG_1_ [54] [190]
+11 0
+.names VOTO2_REG [83] [191]
+11 0
+.names VOTO0_REG [62] [192]
+11 0
+.names [80] [193]
+0 1
+.names [193] VOTO1_REG [194]
+11 0
+.names [80] [61] [195]
+11 0
+.names [195] [194] [196]
+11 0
+.names [140] VOTO3_REG [197]
+11 0
+.names [143] [85] [198]
+11 0
+.names LAST_R_REG [87] [199]
+11 0
+.names [144] R_BUTTON [200]
+11 0
+.names [154] VOTO2_REG [201]
+11 0
+.names [157] [88] [202]
+11 0
+.names LAST_G_REG [87] [203]
+11 0
+.names [144] G_BUTTON [204]
+11 0
+.names [159] VOTO0_REG [205]
+11 0
+.names [165] [90] [206]
+11 0
+.end

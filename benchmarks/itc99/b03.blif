@@ -1,0 +1,283 @@
+# Benchmark "itc/b03/b03" written by ABC on Fri Sep 15 12:17:40 2006
+.model itc/b03/b03
+.inputs REQUEST1 REQUEST2 REQUEST3 REQUEST4
+.outputs GRANT_O_REG_3_ GRANT_O_REG_2_ GRANT_O_REG_1_ GRANT_O_REG_0_
+
+.latch STATO_REG_0__in STATO_REG_0_  0
+.latch CODA0_REG_2__in CODA0_REG_2_  0
+.latch CODA0_REG_1__in CODA0_REG_1_  0
+.latch CODA0_REG_0__in CODA0_REG_0_  0
+.latch CODA1_REG_2__in CODA1_REG_2_  0
+.latch CODA1_REG_1__in CODA1_REG_1_  0
+.latch CODA1_REG_0__in CODA1_REG_0_  0
+.latch CODA2_REG_2__in CODA2_REG_2_  0
+.latch CODA2_REG_1__in CODA2_REG_1_  0
+.latch CODA2_REG_0__in CODA2_REG_0_  0
+.latch CODA3_REG_2__in CODA3_REG_2_  0
+.latch CODA3_REG_1__in CODA3_REG_1_  0
+.latch CODA3_REG_0__in CODA3_REG_0_  0
+.latch GRANT_REG_3__in GRANT_REG_3_  0
+.latch GRANT_REG_2__in GRANT_REG_2_  0
+.latch GRANT_REG_1__in GRANT_REG_1_  0
+.latch GRANT_REG_0__in GRANT_REG_0_  0
+.latch GRANT_O_REG_3__in GRANT_O_REG_3_  0
+.latch GRANT_O_REG_2__in GRANT_O_REG_2_  0
+.latch GRANT_O_REG_1__in GRANT_O_REG_1_  0
+.latch GRANT_O_REG_0__in GRANT_O_REG_0_  0
+.latch RU3_REG_in    RU3_REG  0
+.latch FU1_REG_in    FU1_REG  0
+.latch FU3_REG_in    FU3_REG  0
+.latch RU1_REG_in    RU1_REG  0
+.latch RU4_REG_in    RU4_REG  0
+.latch FU2_REG_in    FU2_REG  0
+.latch FU4_REG_in    FU4_REG  0
+.latch RU2_REG_in    RU2_REG  0
+.latch STATO_REG_1__in STATO_REG_1_  0
+
+.names [61] [56] [39]
+11 1
+.names STATO_REG_1_ [61] [40]
+11 1
+.names STATO_REG_0_ STATO_REG_0__in
+0 1
+.names [60] [130] RU1_REG_in
+11 0
+.names [60] [129] FU1_REG_in
+11 0
+.names [128] [127] CODA3_REG_0__in
+11 0
+.names [126] [125] CODA3_REG_1__in
+11 0
+.names [124] [123] CODA3_REG_2__in
+11 0
+.names [121] [120] [122] CODA2_REG_0__in
+111 0
+.names [118] [117] [119] CODA2_REG_1__in
+111 0
+.names [115] [114] [116] CODA2_REG_2__in
+111 0
+.names [112] [111] [113] CODA1_REG_0__in
+111 0
+.names [109] [108] [110] CODA1_REG_1__in
+111 0
+.names [106] [105] [107] CODA1_REG_2__in
+111 0
+.names [103] [102] [104] CODA0_REG_0__in
+111 0
+.names [100] [99] [101] CODA0_REG_1__in
+111 0
+.names [97] [96] [98] CODA0_REG_2__in
+111 0
+.names STATO_REG_1_ [56]
+0 1
+.names RU3_REG [57]
+0 1
+.names RU3_REG [81] [58]
+11 0
+.names RU1_REG [59]
+0 1
+.names RU1_REG STATO_REG_0_ [60]
+11 0
+.names [92] [82] [91] [61]
+111 0
+.names CODA0_REG_2_ [62]
+0 1
+.names CODA0_REG_1_ [63]
+0 1
+.names CODA0_REG_0_ [64]
+0 1
+.names FU1_REG [65]
+0 1
+.names FU2_REG [66]
+0 1
+.names [134] [133] GRANT_REG_3__in
+11 0
+.names [136] [135] GRANT_REG_2__in
+11 0
+.names [138] [137] GRANT_REG_1__in
+11 0
+.names [140] [139] GRANT_REG_0__in
+11 0
+.names [142] [141] GRANT_O_REG_3__in
+11 0
+.names [144] [143] GRANT_O_REG_2__in
+11 0
+.names [146] [145] GRANT_O_REG_1__in
+11 0
+.names [148] [147] GRANT_O_REG_0__in
+11 0
+.names [150] [149] RU3_REG_in
+11 0
+.names [152] [151] FU3_REG_in
+11 0
+.names [154] [153] RU4_REG_in
+11 0
+.names [156] [155] FU2_REG_in
+11 0
+.names [158] [157] FU4_REG_in
+11 0
+.names [160] [159] RU2_REG_in
+11 0
+.names RU2_REG [81]
+0 1
+.names STATO_REG_1_ [86] [82]
+11 0
+.names FU3_REG [83]
+0 1
+.names FU4_REG [84]
+0 1
+.names [60] [85]
+0 1
+.names FU3_REG FU2_REG FU1_REG FU4_REG [86]
+0000 0
+.names [82] [87]
+0 1
+.names [58] [88]
+0 1
+.names [88] [83] [89]
+11 0
+.names [132] [131] [89] [90]
+111 0
+.names [59] STATO_REG_0_ [90] [91]
+111 0
+.names [85] [65] [92]
+11 0
+.names [61] [93]
+0 1
+.names RU2_REG RU3_REG [94]
+00 0
+.names [59] [94] [95]
+11 0
+.names [39] [95] [96]
+11 0
+.names CODA1_REG_2_ [40] [97]
+11 0
+.names CODA0_REG_2_ [93] [98]
+11 0
+.names [58] [59] [39] [99]
+111 0
+.names CODA1_REG_1_ [40] [100]
+11 0
+.names CODA0_REG_1_ [93] [101]
+11 0
+.names [59] [81] [39] [102]
+111 0
+.names CODA1_REG_0_ [40] [103]
+11 0
+.names CODA0_REG_0_ [93] [104]
+11 0
+.names CODA2_REG_2_ [40] [105]
+11 0
+.names CODA0_REG_2_ [39] [106]
+11 0
+.names [93] CODA1_REG_2_ [107]
+11 0
+.names CODA2_REG_1_ [40] [108]
+11 0
+.names CODA0_REG_1_ [39] [109]
+11 0
+.names CODA1_REG_1_ [93] [110]
+11 0
+.names CODA2_REG_0_ [40] [111]
+11 0
+.names CODA0_REG_0_ [39] [112]
+11 0
+.names CODA1_REG_0_ [93] [113]
+11 0
+.names CODA3_REG_2_ [40] [114]
+11 0
+.names CODA1_REG_2_ [39] [115]
+11 0
+.names CODA2_REG_2_ [93] [116]
+11 0
+.names CODA3_REG_1_ [40] [117]
+11 0
+.names CODA1_REG_1_ [39] [118]
+11 0
+.names CODA2_REG_1_ [93] [119]
+11 0
+.names CODA3_REG_0_ [40] [120]
+11 0
+.names CODA1_REG_0_ [39] [121]
+11 0
+.names CODA2_REG_0_ [93] [122]
+11 0
+.names CODA2_REG_2_ [39] [123]
+11 0
+.names CODA3_REG_2_ [93] [124]
+11 0
+.names CODA2_REG_1_ [39] [125]
+11 0
+.names CODA3_REG_1_ [93] [126]
+11 0
+.names CODA2_REG_0_ [39] [127]
+11 0
+.names CODA3_REG_0_ [93] [128]
+11 0
+.names FU1_REG STATO_REG_0__in [129]
+11 0
+.names REQUEST1 STATO_REG_0__in [130]
+11 0
+.names RU2_REG [66] [131]
+11 0
+.names [57] [84] RU4_REG [81] [132]
+1111 0
+.names GRANT_REG_3_ [82] [133]
+11 0
+.names [64] [63] CODA0_REG_2_ [87] [134]
+1111 0
+.names GRANT_REG_2_ [82] [135]
+11 0
+.names [64] [62] CODA0_REG_1_ [87] [136]
+1111 0
+.names GRANT_REG_1_ [82] [137]
+11 0
+.names [63] [62] CODA0_REG_0_ [87] [138]
+1111 0
+.names GRANT_REG_0_ [82] [139]
+11 0
+.names CODA0_REG_1_ CODA0_REG_2_ CODA0_REG_0_ [87] [140]
+1111 0
+.names GRANT_O_REG_3_ STATO_REG_0__in [141]
+11 0
+.names GRANT_REG_3_ STATO_REG_0_ [142]
+11 0
+.names GRANT_O_REG_2_ STATO_REG_0__in [143]
+11 0
+.names GRANT_REG_2_ STATO_REG_0_ [144]
+11 0
+.names GRANT_O_REG_1_ STATO_REG_0__in [145]
+11 0
+.names GRANT_REG_1_ STATO_REG_0_ [146]
+11 0
+.names GRANT_O_REG_0_ STATO_REG_0__in [147]
+11 0
+.names GRANT_REG_0_ STATO_REG_0_ [148]
+11 0
+.names REQUEST3 STATO_REG_0__in [149]
+11 0
+.names RU3_REG STATO_REG_0_ [150]
+11 0
+.names FU3_REG STATO_REG_0__in [151]
+11 0
+.names RU3_REG STATO_REG_0_ [152]
+11 0
+.names REQUEST4 STATO_REG_0__in [153]
+11 0
+.names RU4_REG STATO_REG_0_ [154]
+11 0
+.names FU2_REG STATO_REG_0__in [155]
+11 0
+.names RU2_REG STATO_REG_0_ [156]
+11 0
+.names FU4_REG STATO_REG_0__in [157]
+11 0
+.names RU4_REG STATO_REG_0_ [158]
+11 0
+.names REQUEST2 STATO_REG_0__in [159]
+11 0
+.names RU2_REG STATO_REG_0_ [160]
+11 0
+.names STATO_REG_0_ STATO_REG_1__in
+1 1
+.end

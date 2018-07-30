@@ -1,0 +1,409 @@
+# Benchmark "itc/b10/b10" written by ABC on Sat Nov 11 15:34:30 2006
+.model itc/b10/b10
+.inputs R_BUTTON G_BUTTON KEY START TEST RTS RTR V_IN_3_ V_IN_2_ V_IN_1_ \
+ V_IN_0_
+.outputs CTS_REG CTR_REG V_OUT_REG_3_ V_OUT_REG_2_ V_OUT_REG_1_ \
+ V_OUT_REG_0_
+
+.latch     L00_in        L00  1
+.latch     L01_in        L01  0
+.latch     L02_in        L02  1
+.latch     L03_in        L03  0
+.latch     L04_in        L04  0
+.latch     L05_in        L05  1
+.latch     L06_in        L06  0
+.latch     L07_in        L07  1
+.latch     L08_in        L08  1
+.latch     L09_in        L09  1
+.latch     L10_in        L10  1
+.latch     L11_in        L11  1
+.latch     L12_in        L12  1
+.latch     L13_in        L13  0
+.latch     L14_in        L14  0
+.latch     L15_in        L15  1
+.latch     L16_in        L16  0
+.latch     L17_in        L17  0
+.latch     L18_in        L18  1
+.latch     L19_in        L19  0
+.latch     L20_in        L20  0
+.latch     L21_in        L21  1
+.latch     L22_in        L22  1
+.latch     L23_in        L23  0
+.latch     L24_in        L24  0
+.latch     L25_in        L25  0
+.latch     L26_in        L26  0
+.latch     L27_in        L27  0
+.latch     L28_in        L28  0
+.latch     L29_in        L29  1
+.latch     L30_in        L30  1
+.latch     L31_in        L31  1
+.latch     L32_in        L32  1
+.latch     L33_in        L33  1
+.latch     L34_in        L34  0
+.latch     L35_in        L35  1
+.latch     L36_in        L36  1
+.latch     L37_in        L37  1
+.latch     L38_in        L38  0
+.latch     L39_in        L39  0
+.latch     L40_in        L40  1
+.latch     L41_in        L41  0
+.latch     L42_in        L42  1
+.latch     L43_in        L43  0
+
+.names L01_in L14_in L11_in
+00 1
+.names L14_in L15_in L04_in
+11 1
+.names START [76] [20]
+11 1
+.names [87] [86] [21]
+11 1
+.names [21] [79] [22]
+11 1
+.names [22] [109] [23]
+11 1
+.names L08 L32 [24]
+11 1
+.names [133] [64] [134] [135] L41_in
+1111 0
+.names [78] [119] L34_in
+11 0
+.names L29 [107] L28_in
+11 0
+.names [150] [36] [159] [158] L03_in
+1111 0
+.names [101] [36] [102] L14_in
+111 0
+.names [98] [97] L01_in
+11 0
+.names L16_in L15_in
+0 1
+.names L16_in L12_in L00_in
+11 0
+.names L14_in L02_in
+0 1
+.names RTR [34]
+0 1
+.names L03_in L12_in
+0 1
+.names L03 L04 [36]
+11 0
+.names RTS [37]
+0 1
+.names L11_in L15_in L06_in
+11 0
+.names L01_in L05_in
+0 1
+.names START [40]
+0 1
+.names START L11 [41]
+11 0
+.names L03_in L16_in L37_in
+11 0
+.names L03_in L05_in L18_in
+11 0
+.names L20_in L30_in
+0 1
+.names L19_in L35_in
+0 1
+.names L19 L20 L21 L22 [46]
+1111 0
+.names [64] [78] [90] [62] [21] [47]
+11111 0
+.names L28_in [48]
+0 1
+.names L03_in L02_in L08_in
+11 0
+.names KEY [50]
+0 1
+.names [161] [160] L16_in
+11 0
+.names [163] [162] L24_in
+11 0
+.names [165] [164] L25_in
+11 0
+.names [167] [166] L26_in
+11 0
+.names [169] [168] L27_in
+11 0
+.names [171] [170] L20_in
+11 0
+.names [181] [180] L23_in
+11 0
+.names [183] [182] L38_in
+11 0
+.names [185] [184] L19_in
+11 0
+.names [187] [186] L43_in
+11 0
+.names [189] [188] L13_in
+11 0
+.names [154] [153] [91] [62]
+111 1
+.names [175] L36 [63]
+11 0
+.names RTR L12 L04 [64]
+111 0
+.names L23_in L21_in
+0 1
+.names L13_in L22_in
+0 1
+.names [110] [81] [23] [67]
+111 0
+.names [23] [122] [68]
+11 0
+.names L38_in L42_in
+0 1
+.names KEY L03 [20] [70]
+111 0
+.names [136] [81] [23] [71]
+111 0
+.names L43_in L31_in
+0 1
+.names [141] [41] [22] [73]
+111 0
+.names [46] [74]
+0 1
+.names TEST [75]
+0 1
+.names L06 [76]
+0 1
+.names [36] [77]
+0 1
+.names L14 [37] [82] [78]
+111 0
+.names L01 L02 [82] [79]
+111 0
+.names [41] [80]
+0 1
+.names [20] [50] [81]
+11 0
+.names L00 [82]
+0 1
+.names L08 [83]
+0 1
+.names L37_in L17_in
+0 1
+.names [64] [85]
+0 1
+.names RTS [77] [86]
+11 0
+.names [76] L12 [87]
+11 0
+.names RTR L03 [88]
+00 0
+.names L18 [89]
+0 1
+.names [152] [151] L01 [90]
+111 0
+.names [80] L16 [91]
+11 0
+.names [47] [92]
+0 1
+.names [74] L04 [93]
+11 0
+.names [76] [75] [94]
+11 0
+.names [94] [93] [95]
+11 0
+.names L15 [47] [96]
+11 0
+.names [95] L12 [47] [97]
+111 0
+.names L01 [96] [98]
+11 0
+.names L15 [46] [99]
+11 0
+.names [99] L00 [47] [100]
+111 0
+.names L03 [157] [101]
+11 0
+.names L14 [100] [102]
+11 0
+.names [74] L05 [103]
+11 0
+.names L15 L12 [103] [104]
+111 0
+.names [36] L06 [104] [105]
+111 0
+.names [75] L12 [76] [106]
+111 0
+.names L28 [106] [107]
+11 0
+.names L01_in L16_in L29_in
+11 0
+.names START L02 [82] [109]
+111 0
+.names G_BUTTON L31 [20] [110]
+111 0
+.names [67] [111]
+0 1
+.names [77] L05 [112]
+11 0
+.names [79] [112] [113]
+11 0
+.names KEY L30 [83] [114]
+111 0
+.names V_IN_1_ [113] [115]
+11 0
+.names [115] [114] [116]
+11 0
+.names L14_in L12_in L32_in
+11 0
+.names [173] L33 L15 [24] [118]
+1111 0
+.names L34 [118] [119]
+11 0
+.names START [50] [120]
+11 0
+.names L37 [120] [121]
+11 0
+.names L11 [121] [122]
+11 0
+.names [68] [123]
+0 1
+.names L17 [179] [124]
+11 0
+.names V_IN_3_ [113] [125]
+11 0
+.names [125] [124] [126]
+11 0
+.names [70] [127]
+0 1
+.names L16_in L01_in L39_in
+00 0
+.names RTR L39 [129]
+11 0
+.names L01 [82] [130]
+11 0
+.names L03_in L15_in L40_in
+11 0
+.names [24] L40 [130] [129] [132]
+1111 0
+.names L01 L12 L04 [133]
+111 0
+.names RTR L11 [82] [134]
+111 0
+.names L41 [132] [135]
+11 0
+.names R_BUTTON L42 [20] [136]
+111 0
+.names [71] [137]
+0 1
+.names KEY L35 [83] [138]
+111 0
+.names V_IN_2_ [113] [139]
+11 0
+.names [139] [138] [140]
+11 0
+.names [83] [157] [141]
+11 0
+.names [73] [142]
+0 1
+.names KEY [76] [143]
+11 0
+.names L01_in [48] L07_in
+11 0
+.names L07 [143] [145]
+11 0
+.names L03 [145] [146]
+11 0
+.names V_IN_0_ [113] [147]
+11 0
+.names [147] [146] [148]
+11 0
+.names V_IN_3_ V_IN_2_ V_IN_0_ V_IN_1_ [149]
+1111 0
+.names [92] L03 [150]
+11 0
+.names L16 [149] [151]
+11 0
+.names [88] L08 L15 [152]
+111 0
+.names [89] [40] L02 [153]
+111 0
+.names L17 [34] L14 [154]
+111 0
+.names L01_in L15_in L10_in
+11 0
+.names L16_in L05_in L09_in
+11 0
+.names L09 L10 [157]
+11 0
+.names L16 [47] L18 [158]
+111 0
+.names [89] L15 [159]
+11 0
+.names [92] L16 [160]
+11 0
+.names [105] [47] [161]
+11 0
+.names L24 [64] [162]
+11 0
+.names L23 [85] [163]
+11 0
+.names L25 [64] [164]
+11 0
+.names [85] L19 [165]
+11 0
+.names L26 [64] [166]
+11 0
+.names [85] L20 [167]
+11 0
+.names L27 [64] [168]
+11 0
+.names L13 [85] [169]
+11 0
+.names [111] L20 [170]
+11 0
+.names [116] [67] [171]
+11 0
+.names L01_in L12_in L33_in
+11 0
+.names L03 [37] [173]
+11 0
+.names L19_in L22_in L36_in
+11 0
+.names L13 L35 [175]
+11 0
+.names [63] [176]
+0 1
+.names [176] L20 [177]
+11 0
+.names [63] L30 [178]
+11 0
+.names [178] [177] [179]
+11 0
+.names [123] L23 [180]
+11 0
+.names [126] [68] [181]
+11 0
+.names L38 [70] [182]
+11 0
+.names [127] R_BUTTON [183]
+11 0
+.names [137] L19 [184]
+11 0
+.names [140] [71] [185]
+11 0
+.names L43 [70] [186]
+11 0
+.names [127] G_BUTTON [187]
+11 0
+.names [142] L13 [188]
+11 0
+.names [148] [73] [189]
+11 0
+.names L41 CTS_REG
+1 1
+.names L34 CTR_REG
+1 1
+.names L24 V_OUT_REG_3_
+1 1
+.names L25 V_OUT_REG_2_
+1 1
+.names L26 V_OUT_REG_1_
+1 1
+.names L27 V_OUT_REG_0_
+1 1
+.end

@@ -1,0 +1,2020 @@
+# Benchmark "itc/b12/b12" written by ABC on Fri Sep 15 12:21:26 2006
+.model itc/b12/b12
+.inputs START K_3_ K_2_ K_1_ K_0_
+.outputs NLOSS_REG NL_REG_3_ NL_REG_2_ NL_REG_1_ NL_REG_0_ SPEAKER_REG
+
+.latch COUNT_REG_0__in COUNT_REG_0_  0
+.latch MEMORY_REG_31__1__in MEMORY_REG_31__1_  0
+.latch MEMORY_REG_31__0__in MEMORY_REG_31__0_  0
+.latch MEMORY_REG_30__1__in MEMORY_REG_30__1_  0
+.latch MEMORY_REG_30__0__in MEMORY_REG_30__0_  0
+.latch MEMORY_REG_29__1__in MEMORY_REG_29__1_  0
+.latch MEMORY_REG_29__0__in MEMORY_REG_29__0_  0
+.latch MEMORY_REG_28__1__in MEMORY_REG_28__1_  0
+.latch MEMORY_REG_28__0__in MEMORY_REG_28__0_  0
+.latch MEMORY_REG_27__1__in MEMORY_REG_27__1_  0
+.latch MEMORY_REG_27__0__in MEMORY_REG_27__0_  0
+.latch MEMORY_REG_26__1__in MEMORY_REG_26__1_  0
+.latch MEMORY_REG_26__0__in MEMORY_REG_26__0_  0
+.latch MEMORY_REG_25__1__in MEMORY_REG_25__1_  0
+.latch MEMORY_REG_25__0__in MEMORY_REG_25__0_  0
+.latch MEMORY_REG_24__1__in MEMORY_REG_24__1_  0
+.latch MEMORY_REG_24__0__in MEMORY_REG_24__0_  0
+.latch MEMORY_REG_23__1__in MEMORY_REG_23__1_  0
+.latch MEMORY_REG_23__0__in MEMORY_REG_23__0_  0
+.latch MEMORY_REG_22__1__in MEMORY_REG_22__1_  0
+.latch MEMORY_REG_22__0__in MEMORY_REG_22__0_  0
+.latch MEMORY_REG_21__1__in MEMORY_REG_21__1_  0
+.latch MEMORY_REG_21__0__in MEMORY_REG_21__0_  0
+.latch MEMORY_REG_20__1__in MEMORY_REG_20__1_  0
+.latch MEMORY_REG_20__0__in MEMORY_REG_20__0_  0
+.latch MEMORY_REG_19__1__in MEMORY_REG_19__1_  0
+.latch MEMORY_REG_19__0__in MEMORY_REG_19__0_  0
+.latch MEMORY_REG_18__1__in MEMORY_REG_18__1_  0
+.latch MEMORY_REG_18__0__in MEMORY_REG_18__0_  0
+.latch MEMORY_REG_17__1__in MEMORY_REG_17__1_  0
+.latch MEMORY_REG_17__0__in MEMORY_REG_17__0_  0
+.latch MEMORY_REG_16__1__in MEMORY_REG_16__1_  0
+.latch MEMORY_REG_16__0__in MEMORY_REG_16__0_  0
+.latch MEMORY_REG_15__1__in MEMORY_REG_15__1_  0
+.latch MEMORY_REG_15__0__in MEMORY_REG_15__0_  0
+.latch MEMORY_REG_14__1__in MEMORY_REG_14__1_  0
+.latch MEMORY_REG_14__0__in MEMORY_REG_14__0_  0
+.latch MEMORY_REG_13__1__in MEMORY_REG_13__1_  0
+.latch MEMORY_REG_13__0__in MEMORY_REG_13__0_  0
+.latch MEMORY_REG_12__1__in MEMORY_REG_12__1_  0
+.latch MEMORY_REG_12__0__in MEMORY_REG_12__0_  0
+.latch MEMORY_REG_11__1__in MEMORY_REG_11__1_  0
+.latch MEMORY_REG_11__0__in MEMORY_REG_11__0_  0
+.latch MEMORY_REG_10__1__in MEMORY_REG_10__1_  0
+.latch MEMORY_REG_10__0__in MEMORY_REG_10__0_  0
+.latch MEMORY_REG_9__1__in MEMORY_REG_9__1_  0
+.latch MEMORY_REG_9__0__in MEMORY_REG_9__0_  0
+.latch MEMORY_REG_8__1__in MEMORY_REG_8__1_  0
+.latch MEMORY_REG_8__0__in MEMORY_REG_8__0_  0
+.latch MEMORY_REG_7__1__in MEMORY_REG_7__1_  0
+.latch MEMORY_REG_7__0__in MEMORY_REG_7__0_  0
+.latch MEMORY_REG_6__1__in MEMORY_REG_6__1_  0
+.latch MEMORY_REG_6__0__in MEMORY_REG_6__0_  0
+.latch MEMORY_REG_5__1__in MEMORY_REG_5__1_  0
+.latch MEMORY_REG_5__0__in MEMORY_REG_5__0_  0
+.latch MEMORY_REG_4__1__in MEMORY_REG_4__1_  0
+.latch MEMORY_REG_4__0__in MEMORY_REG_4__0_  0
+.latch MEMORY_REG_3__1__in MEMORY_REG_3__1_  0
+.latch MEMORY_REG_3__0__in MEMORY_REG_3__0_  0
+.latch MEMORY_REG_2__1__in MEMORY_REG_2__1_  0
+.latch MEMORY_REG_2__0__in MEMORY_REG_2__0_  0
+.latch MEMORY_REG_1__1__in MEMORY_REG_1__1_  0
+.latch MEMORY_REG_1__0__in MEMORY_REG_1__0_  0
+.latch MEMORY_REG_0__1__in MEMORY_REG_0__1_  0
+.latch MEMORY_REG_0__0__in MEMORY_REG_0__0_  0
+.latch NL_REG_3__in  NL_REG_3_  0
+.latch NL_REG_2__in  NL_REG_2_  0
+.latch NL_REG_1__in  NL_REG_1_  0
+.latch NL_REG_0__in  NL_REG_0_  0
+.latch SCAN_REG_4__in SCAN_REG_4_  0
+.latch SCAN_REG_3__in SCAN_REG_3_  0
+.latch SCAN_REG_2__in SCAN_REG_2_  0
+.latch SCAN_REG_1__in SCAN_REG_1_  0
+.latch SCAN_REG_0__in SCAN_REG_0_  0
+.latch MAX_REG_4__in MAX_REG_4_  0
+.latch MAX_REG_3__in MAX_REG_3_  0
+.latch MAX_REG_2__in MAX_REG_2_  0
+.latch MAX_REG_1__in MAX_REG_1_  0
+.latch MAX_REG_0__in MAX_REG_0_  0
+.latch IND_REG_1__in IND_REG_1_  0
+.latch IND_REG_0__in IND_REG_0_  0
+.latch TIMEBASE_REG_5__in TIMEBASE_REG_5_  0
+.latch TIMEBASE_REG_4__in TIMEBASE_REG_4_  0
+.latch TIMEBASE_REG_3__in TIMEBASE_REG_3_  0
+.latch TIMEBASE_REG_2__in TIMEBASE_REG_2_  0
+.latch TIMEBASE_REG_1__in TIMEBASE_REG_1_  0
+.latch TIMEBASE_REG_0__in TIMEBASE_REG_0_  0
+.latch COUNT_REG2_5__in COUNT_REG2_5_  0
+.latch COUNT_REG2_4__in COUNT_REG2_4_  0
+.latch COUNT_REG2_3__in COUNT_REG2_3_  0
+.latch COUNT_REG2_2__in COUNT_REG2_2_  0
+.latch COUNT_REG2_1__in COUNT_REG2_1_  0
+.latch COUNT_REG2_0__in COUNT_REG2_0_  0
+.latch SOUND_REG_2__in SOUND_REG_2_  0
+.latch SOUND_REG_1__in SOUND_REG_1_  0
+.latch SOUND_REG_0__in SOUND_REG_0_  0
+.latch ADDRESS_REG_4__in ADDRESS_REG_4_  0
+.latch ADDRESS_REG_3__in ADDRESS_REG_3_  0
+.latch ADDRESS_REG_2__in ADDRESS_REG_2_  0
+.latch ADDRESS_REG_1__in ADDRESS_REG_1_  0
+.latch ADDRESS_REG_0__in ADDRESS_REG_0_  0
+.latch DATA_IN_REG_1__in DATA_IN_REG_1_  0
+.latch DATA_IN_REG_0__in DATA_IN_REG_0_  0
+.latch   S_REG_in      S_REG  0
+.latch PLAY_REG_in   PLAY_REG  0
+.latch NLOSS_REG_in  NLOSS_REG  0
+.latch SPEAKER_REG_in SPEAKER_REG  0
+.latch  WR_REG_in     WR_REG  0
+.latch COUNTER_REG_2__in COUNTER_REG_2_  0
+.latch COUNTER_REG_1__in COUNTER_REG_1_  0
+.latch COUNTER_REG_0__in COUNTER_REG_0_  0
+.latch COUNT_REG_1__in COUNT_REG_1_  0
+.latch NUM_REG_1__in NUM_REG_1_  0
+.latch NUM_REG_0__in NUM_REG_0_  0
+.latch DATA_OUT_REG_1__in DATA_OUT_REG_1_  0
+.latch DATA_OUT_REG_0__in DATA_OUT_REG_0_  0
+.latch GAMMA_REG_4__in GAMMA_REG_4_  0
+.latch GAMMA_REG_3__in GAMMA_REG_3_  0
+.latch GAMMA_REG_2__in GAMMA_REG_2_  0
+.latch GAMMA_REG_1__in GAMMA_REG_1_  0
+.latch GAMMA_REG_0__in GAMMA_REG_0_  0
+
+.names SCAN_REG_0_ [1056] [133]
+11 0
+.names [483] [648] [134]
+11 1
+.names [141] [323] [135]
+11 1
+.names DATA_IN_REG_0_ WR_REG [136]
+11 1
+.names DATA_IN_REG_1_ WR_REG [137]
+11 1
+.names [663] [440] [659] [138]
+111 1
+.names [652] [451] [139]
+11 1
+.names PLAY_REG [822] [821] [140]
+111 1
+.names [321] [322] [141]
+11 1
+.names [445] [362] [142]
+11 1
+.names [939] [380] [143]
+11 1
+.names [796] [380] [144]
+11 1
+.names [445] [344] [356] [145]
+111 1
+.names [440] [361] [146]
+11 1
+.names K_0_ K_1_ [147]
+00 1
+.names [351] [659] [148]
+11 1
+.names [443] [329] [149]
+11 1
+.names [445] [325] [150]
+11 1
+.names [755] [370] [151]
+11 1
+.names [760] [370] [152]
+11 1
+.names ADDRESS_REG_3_ ADDRESS_REG_4_ ADDRESS_REG_1_ [153]
+111 1
+.names ADDRESS_REG_0_ ADDRESS_REG_2_ [154]
+11 1
+.names [153] [154] [155]
+11 1
+.names ADDRESS_REG_2_ [320] [156]
+11 1
+.names [156] [153] [157]
+11 1
+.names ADDRESS_REG_4_ [318] ADDRESS_REG_3_ [158]
+111 1
+.names [158] [154] [159]
+11 1
+.names [158] [156] [160]
+11 1
+.names ADDRESS_REG_0_ [319] [161]
+11 1
+.names [161] [153] [162]
+11 1
+.names ADDRESS_REG_2_ ADDRESS_REG_0_ [163]
+00 1
+.names [163] [153] [164]
+11 1
+.names [161] [158] [165]
+11 1
+.names [163] [158] [166]
+11 1
+.names ADDRESS_REG_4_ [317] ADDRESS_REG_1_ [167]
+111 1
+.names [167] [154] [168]
+11 1
+.names [167] [156] [169]
+11 1
+.names [317] [318] ADDRESS_REG_4_ [170]
+111 1
+.names [170] [154] [171]
+11 1
+.names [170] [156] [172]
+11 1
+.names [167] [161] [173]
+11 1
+.names [167] [163] [174]
+11 1
+.names [170] [161] [175]
+11 1
+.names [170] [163] [176]
+11 1
+.names ADDRESS_REG_3_ [316] ADDRESS_REG_1_ [177]
+111 1
+.names [177] [154] [178]
+11 1
+.names [177] [156] [179]
+11 1
+.names [316] [318] ADDRESS_REG_3_ [180]
+111 1
+.names [180] [154] [181]
+11 1
+.names [180] [156] [182]
+11 1
+.names [177] [161] [183]
+11 1
+.names [177] [163] [184]
+11 1
+.names [180] [161] [185]
+11 1
+.names [180] [163] [186]
+11 1
+.names [316] [317] ADDRESS_REG_1_ [187]
+111 1
+.names [187] [154] [188]
+11 1
+.names [187] [156] [189]
+11 1
+.names ADDRESS_REG_1_ ADDRESS_REG_3_ ADDRESS_REG_4_ [190]
+000 1
+.names [190] [154] [191]
+11 1
+.names [190] [156] [192]
+11 1
+.names [187] [161] [193]
+11 1
+.names [187] [163] [194]
+11 1
+.names [190] [161] [195]
+11 1
+.names [190] [163] [196]
+11 1
+.names [378] [651] [197]
+11 1
+.names [363] [696] [198]
+11 1
+.names [473] [725] [199]
+11 1
+.names [357] [324] [741] [200]
+111 1
+.names [780] [429] [477] [473] [201]
+1111 1
+.names [460] [853] [202]
+11 1
+.names [855] [856] [854] [202] [203]
+1111 1
+.names [929] [430] [204]
+11 0
+.names [930] [373] [205]
+11 0
+.names [931] [431] [206]
+11 0
+.names [932] [375] [207]
+11 0
+.names [933] [376] [208]
+11 0
+.names [934] [432] [209]
+11 0
+.names [140] [942] COUNTER_REG_2__in
+11 1
+.names [140] [1004] COUNTER_REG_1__in
+11 1
+.names [140] [382] COUNTER_REG_0__in
+11 1
+.names [847] [466] [321] GAMMA_REG_4__in
+111 0
+.names [851] [850] [409] [941] [940] GAMMA_REG_3__in
+11111 0
+.names [202] [199] [411] GAMMA_REG_2__in
+111 0
+.names [858] [859] [857] [412] [203] GAMMA_REG_1__in
+11111 0
+.names [475] [472] [203] [1001] [1000] GAMMA_REG_0__in
+11111 0
+.names [428] [426] [424] [422] DATA_OUT_REG_0__in
+1111 0
+.names [420] [418] [416] [414] DATA_OUT_REG_1__in
+1111 0
+.names COUNT_REG_0_ NUM_REG_0__in
+0 1
+.names [435] [844] WR_REG_in
+11 0
+.names [487] [842] SPEAKER_REG_in
+11 0
+.names [487] [825] S_REG_in
+11 0
+.names [810] [809] [811] ADDRESS_REG_0__in
+111 0
+.names [807] [806] [808] ADDRESS_REG_1__in
+111 0
+.names [804] [803] [805] ADDRESS_REG_2__in
+111 0
+.names [801] [800] [802] ADDRESS_REG_3__in
+111 0
+.names [798] [797] [799] ADDRESS_REG_4__in
+111 0
+.names [970] [969] [476] COUNT_REG2_0__in
+111 0
+.names [775] [774] [776] COUNT_REG2_1__in
+111 0
+.names [772] [771] [773] COUNT_REG2_2__in
+111 0
+.names [762] [761] [763] COUNT_REG2_4__in
+111 0
+.names [966] [965] [476] COUNT_REG2_5__in
+111 0
+.names [722] [721] TIMEBASE_REG_1__in
+11 0
+.names [720] [719] TIMEBASE_REG_2__in
+11 0
+.names [718] [717] TIMEBASE_REG_3__in
+11 0
+.names [716] [715] TIMEBASE_REG_4__in
+11 0
+.names [710] [709] MAX_REG_0__in
+11 0
+.names [708] [707] MAX_REG_1__in
+11 0
+.names [706] [705] MAX_REG_2__in
+11 0
+.names [704] [703] MAX_REG_3__in
+11 0
+.names [702] [701] MAX_REG_4__in
+11 0
+.names [692] [691] SCAN_REG_0__in
+11 0
+.names [690] [689] SCAN_REG_1__in
+11 0
+.names [688] [687] SCAN_REG_2__in
+11 0
+.names [686] [685] SCAN_REG_3__in
+11 0
+.names [684] [683] SCAN_REG_4__in
+11 0
+.names [679] [678] [677] [468] NL_REG_0__in
+1111 0
+.names [676] [675] [674] [468] NL_REG_1__in
+1111 0
+.names [672] [671] [670] [468] NL_REG_2__in
+1111 0
+.names [669] [668] [667] [468] NL_REG_3__in
+1111 0
+.names [647] [646] MEMORY_REG_0__0__in
+11 0
+.names [645] [644] MEMORY_REG_0__1__in
+11 0
+.names [642] [641] MEMORY_REG_1__0__in
+11 0
+.names [640] [639] MEMORY_REG_1__1__in
+11 0
+.names [637] [636] MEMORY_REG_2__0__in
+11 0
+.names [635] [634] MEMORY_REG_2__1__in
+11 0
+.names [632] [631] MEMORY_REG_3__0__in
+11 0
+.names [630] [629] MEMORY_REG_3__1__in
+11 0
+.names [627] [626] MEMORY_REG_4__0__in
+11 0
+.names [625] [624] MEMORY_REG_4__1__in
+11 0
+.names [622] [621] MEMORY_REG_5__0__in
+11 0
+.names [620] [619] MEMORY_REG_5__1__in
+11 0
+.names [617] [616] MEMORY_REG_6__0__in
+11 0
+.names [615] [614] MEMORY_REG_6__1__in
+11 0
+.names [612] [611] MEMORY_REG_7__0__in
+11 0
+.names [610] [609] MEMORY_REG_7__1__in
+11 0
+.names [607] [606] MEMORY_REG_8__0__in
+11 0
+.names [605] [604] MEMORY_REG_8__1__in
+11 0
+.names [602] [601] MEMORY_REG_9__0__in
+11 0
+.names [600] [599] MEMORY_REG_9__1__in
+11 0
+.names [597] [596] MEMORY_REG_10__0__in
+11 0
+.names [595] [594] MEMORY_REG_10__1__in
+11 0
+.names [592] [591] MEMORY_REG_11__0__in
+11 0
+.names [590] [589] MEMORY_REG_11__1__in
+11 0
+.names [587] [586] MEMORY_REG_12__0__in
+11 0
+.names [585] [584] MEMORY_REG_12__1__in
+11 0
+.names [582] [581] MEMORY_REG_13__0__in
+11 0
+.names [580] [579] MEMORY_REG_13__1__in
+11 0
+.names [577] [576] MEMORY_REG_14__0__in
+11 0
+.names [575] [574] MEMORY_REG_14__1__in
+11 0
+.names [572] [571] MEMORY_REG_15__0__in
+11 0
+.names [570] [569] MEMORY_REG_15__1__in
+11 0
+.names [567] [566] MEMORY_REG_16__0__in
+11 0
+.names [565] [564] MEMORY_REG_16__1__in
+11 0
+.names [562] [561] MEMORY_REG_17__0__in
+11 0
+.names [560] [559] MEMORY_REG_17__1__in
+11 0
+.names [557] [556] MEMORY_REG_18__0__in
+11 0
+.names [555] [554] MEMORY_REG_18__1__in
+11 0
+.names [552] [551] MEMORY_REG_19__0__in
+11 0
+.names [550] [549] MEMORY_REG_19__1__in
+11 0
+.names [547] [546] MEMORY_REG_20__0__in
+11 0
+.names [545] [544] MEMORY_REG_20__1__in
+11 0
+.names [542] [541] MEMORY_REG_21__0__in
+11 0
+.names [540] [539] MEMORY_REG_21__1__in
+11 0
+.names [537] [536] MEMORY_REG_22__0__in
+11 0
+.names [535] [534] MEMORY_REG_22__1__in
+11 0
+.names [532] [531] MEMORY_REG_23__0__in
+11 0
+.names [530] [529] MEMORY_REG_23__1__in
+11 0
+.names [527] [526] MEMORY_REG_24__0__in
+11 0
+.names [525] [524] MEMORY_REG_24__1__in
+11 0
+.names [522] [521] MEMORY_REG_25__0__in
+11 0
+.names [520] [519] MEMORY_REG_25__1__in
+11 0
+.names [517] [516] MEMORY_REG_26__0__in
+11 0
+.names [515] [514] MEMORY_REG_26__1__in
+11 0
+.names [512] [511] MEMORY_REG_27__0__in
+11 0
+.names [510] [509] MEMORY_REG_27__1__in
+11 0
+.names [507] [506] MEMORY_REG_28__0__in
+11 0
+.names [505] [504] MEMORY_REG_28__1__in
+11 0
+.names [502] [501] MEMORY_REG_29__0__in
+11 0
+.names [500] [499] MEMORY_REG_29__1__in
+11 0
+.names [497] [496] MEMORY_REG_30__0__in
+11 0
+.names [495] [494] MEMORY_REG_30__1__in
+11 0
+.names [492] [491] MEMORY_REG_31__0__in
+11 0
+.names [490] [489] MEMORY_REG_31__1__in
+11 0
+.names ADDRESS_REG_4_ [316]
+0 1
+.names ADDRESS_REG_3_ [317]
+0 1
+.names ADDRESS_REG_1_ [318]
+0 1
+.names ADDRESS_REG_2_ [319]
+0 1
+.names ADDRESS_REG_0_ [320]
+0 1
+.names GAMMA_REG_4_ [454] [321]
+11 0
+.names GAMMA_REG_3_ [454] [322]
+11 0
+.names GAMMA_REG_0_ START [323]
+00 0
+.names [440] [443] [324]
+11 0
+.names GAMMA_REG_1_ [454] [325]
+11 0
+.names [447] [323] [326]
+11 0
+.names [484] [443] [327]
+11 0
+.names [329] [322] [328]
+11 0
+.names GAMMA_REG_2_ [454] [329]
+11 0
+.names [376] [375] [432] [407] [330]
+1111 0
+.names [323] [325] [331]
+11 0
+.names [441] [322] [332]
+11 0
+.names [329] [321] [333]
+11 0
+.names SCAN_REG_0_ [334]
+0 1
+.names MAX_REG_0_ [335]
+0 1
+.names SCAN_REG_1_ [336]
+0 1
+.names MAX_REG_1_ [337]
+0 1
+.names SCAN_REG_2_ [338]
+0 1
+.names MAX_REG_2_ [339]
+0 1
+.names SCAN_REG_3_ [340]
+0 1
+.names MAX_REG_3_ [341]
+0 1
+.names SCAN_REG_4_ [342]
+0 1
+.names MAX_REG_4_ [343]
+0 1
+.names [944] [943] [405] [406] [344]
+1111 0
+.names [445] [440] [345]
+11 0
+.names IND_REG_0_ [346]
+0 1
+.names IND_REG_1_ [347]
+0 1
+.names DATA_OUT_REG_1_ [348]
+0 1
+.names DATA_OUT_REG_0_ [349]
+0 1
+.names DATA_OUT_REG_0_ DATA_OUT_REG_1_ [350]
+11 0
+.names [479] [661] [463] [351]
+111 0
+.names DATA_OUT_REG_0_ [348] [352]
+11 0
+.names [483] [441] [353]
+11 0
+.names [141] [648] [354]
+11 0
+.names [445] [447] [135] [355]
+111 0
+.names [435] [681] [470] [356]
+111 0
+.names [441] [443] [357]
+11 0
+.names [481] [445] [358]
+11 0
+.names [447] [648] [359]
+11 0
+.names [648] [325] [360]
+11 0
+.names [467] [694] [361]
+11 0
+.names [695] [699] [362]
+11 0
+.names [440] [329] [448] [363]
+111 0
+.names K_2_ [364]
+0 1
+.names MAX_REG_1_ MAX_REG_0_ MAX_REG_2_ MAX_REG_4_ MAX_REG_3_ [365]
+11111 0
+.names [483] [447] [366]
+11 0
+.names [449] [323] [367]
+11 0
+.names [386] [364] [147] [368]
+111 0
+.names [1016] [369]
+0 1
+.names [734] [733] [199] [408] [370]
+1111 0
+.names [479] [482] [371]
+11 0
+.names [756] [757] [758] [372]
+111 0
+.names COUNT_REG2_4_ [373]
+0 1
+.names [445] [443] [374]
+11 0
+.names COUNT_REG2_2_ [375]
+0 1
+.names COUNT_REG2_1_ [376]
+0 1
+.names [1008] [377]
+0 1
+.names [439] [321] [378]
+11 0
+.names SOUND_REG_1_ [379]
+0 1
+.names [475] [794] [380]
+11 0
+.names COUNTER_REG_2_ [381]
+0 1
+.names COUNTER_REG_0_ [382]
+0 1
+.names COUNTER_REG_1_ [383]
+0 1
+.names [391] [822] [384]
+11 0
+.names S_REG [385]
+0 1
+.names K_3_ [386]
+0 1
+.names K_1_ [387]
+0 1
+.names K_0_ [388]
+0 1
+.names [363] [367] [389]
+11 0
+.names [353] [358] [390]
+11 0
+.names [820] [819] [391]
+11 0
+.names [1006] [1005] NUM_REG_1__in
+11 0
+.names [954] [953] IND_REG_1__in
+11 0
+.names [956] [955] IND_REG_0__in
+11 0
+.names [958] [957] TIMEBASE_REG_5__in
+11 0
+.names [960] [959] TIMEBASE_REG_0__in
+11 0
+.names [968] [967] COUNT_REG2_3__in
+11 0
+.names [972] [971] SOUND_REG_2__in
+11 0
+.names [974] [973] SOUND_REG_1__in
+11 0
+.names [976] [975] SOUND_REG_0__in
+11 0
+.names [978] [977] DATA_IN_REG_1__in
+11 0
+.names [980] [979] DATA_IN_REG_0__in
+11 0
+.names [986] [985] PLAY_REG_in
+11 0
+.names [992] [991] NLOSS_REG_in
+11 0
+.names [948] [947] [946] [945] [405]
+1111 1
+.names [952] [951] [950] [949] [406]
+1111 1
+.names COUNT_REG2_3_ COUNT_REG2_5_ COUNT_REG2_4_ [407]
+000 1
+.names [732] [731] [477] [466] [408]
+1111 1
+.names [324] [470] [460] [458] [409]
+1111 1
+.names [455] [453] [458] [469] [463] [410]
+11111 1
+.names [472] [471] [474] [410] [411]
+1111 1
+.names [463] [455] [467] [378] [473] [412]
+11111 1
+.names [867] [866] [865] [864] [413]
+1111 1
+.names [871] [870] [869] [868] [413] [414]
+11111 1
+.names [875] [874] [873] [872] [415]
+1111 1
+.names [879] [878] [877] [876] [415] [416]
+11111 1
+.names [883] [882] [881] [880] [417]
+1111 1
+.names [887] [886] [885] [884] [417] [418]
+11111 1
+.names [891] [890] [889] [888] [419]
+1111 1
+.names [895] [894] [893] [892] [419] [420]
+11111 1
+.names [899] [898] [897] [896] [421]
+1111 1
+.names [903] [902] [901] [900] [421] [422]
+11111 1
+.names [907] [906] [905] [904] [423]
+1111 1
+.names [911] [910] [909] [908] [423] [424]
+11111 1
+.names [915] [914] [913] [912] [425]
+1111 1
+.names [919] [918] [917] [916] [425] [426]
+11111 1
+.names [923] [922] [921] [920] [427]
+1111 1
+.names [927] [926] [925] [924] [427] [428]
+11111 1
+.names [368] [330] [457] [429]
+111 0
+.names COUNT_REG2_5_ [430]
+0 1
+.names COUNT_REG2_3_ [431]
+0 1
+.names COUNT_REG2_0_ [432]
+0 1
+.names [782] [471] [201] [433]
+111 0
+.names SOUND_REG_0_ [434]
+0 1
+.names [447] [329] [442] [435]
+111 0
+.names [197] [828] [201] [436]
+111 0
+.names [839] [840] [474] [437]
+111 0
+.names COUNT_REG_1_ [438]
+0 1
+.names [332] [439]
+0 1
+.names [322] [440]
+0 1
+.names [331] [441]
+0 1
+.names [354] [442]
+0 1
+.names [321] [443]
+0 1
+.names [328] [444]
+0 1
+.names [329] [445]
+0 1
+.names [327] [446]
+0 1
+.names [325] [447]
+0 1
+.names [359] [448]
+0 1
+.names [366] [449]
+0 1
+.names [333] [450]
+0 1
+.names [330] [451]
+0 1
+.names [480] [323] [452]
+11 0
+.names [485] [464] [453]
+11 0
+.names START [454]
+0 1
+.names [448] [445] [455]
+11 0
+.names [355] [456]
+0 1
+.names [363] [457]
+0 1
+.names [134] [325] [458]
+11 0
+.names [353] [459]
+0 1
+.names [448] [483] [460]
+11 0
+.names [367] [461]
+0 1
+.names [358] [462]
+0 1
+.names [445] [446] [463]
+11 0
+.names [360] [464]
+0 1
+.names [845] [329] [465]
+11 0
+.names [693] [459] [139] [466]
+111 0
+.names [459] [365] [139] [467]
+111 0
+.names [648] [480] [659] [468]
+111 0
+.names [484] [329] [469]
+11 0
+.names [451] [344] [459] [470]
+111 0
+.names [486] [445] [471]
+11 0
+.names [442] [150] [472]
+11 0
+.names [462] [139] [473]
+11 0
+.names [457] [330] [838] [474]
+111 0
+.names [450] [440] [464] [475]
+111 0
+.names [450] [325] [370] [476]
+111 0
+.names [444] [446] [477]
+11 0
+.names [464] [445] [451] [478]
+111 0
+.names [141] [150] [479]
+11 0
+.names [324] [480]
+0 1
+.names [357] [481]
+0 1
+.names [444] [447] [482]
+11 0
+.names [345] [483]
+0 1
+.names [326] [484]
+0 1
+.names [374] [485]
+0 1
+.names [378] [486]
+0 1
+.names PLAY_REG [385] [823] [487]
+111 0
+.names WR_REG [155] [488]
+11 0
+.names MEMORY_REG_31__1_ [488] [489]
+11 0
+.names [137] [155] [490]
+11 0
+.names MEMORY_REG_31__0_ [488] [491]
+11 0
+.names [136] [155] [492]
+11 0
+.names [157] WR_REG [493]
+11 0
+.names MEMORY_REG_30__1_ [493] [494]
+11 0
+.names [157] [137] [495]
+11 0
+.names MEMORY_REG_30__0_ [493] [496]
+11 0
+.names [157] [136] [497]
+11 0
+.names [159] WR_REG [498]
+11 0
+.names MEMORY_REG_29__1_ [498] [499]
+11 0
+.names [159] [137] [500]
+11 0
+.names MEMORY_REG_29__0_ [498] [501]
+11 0
+.names [159] [136] [502]
+11 0
+.names [160] WR_REG [503]
+11 0
+.names MEMORY_REG_28__1_ [503] [504]
+11 0
+.names [160] [137] [505]
+11 0
+.names MEMORY_REG_28__0_ [503] [506]
+11 0
+.names [160] [136] [507]
+11 0
+.names [162] WR_REG [508]
+11 0
+.names MEMORY_REG_27__1_ [508] [509]
+11 0
+.names [162] [137] [510]
+11 0
+.names MEMORY_REG_27__0_ [508] [511]
+11 0
+.names [162] [136] [512]
+11 0
+.names [164] WR_REG [513]
+11 0
+.names MEMORY_REG_26__1_ [513] [514]
+11 0
+.names [164] [137] [515]
+11 0
+.names MEMORY_REG_26__0_ [513] [516]
+11 0
+.names [164] [136] [517]
+11 0
+.names [165] WR_REG [518]
+11 0
+.names MEMORY_REG_25__1_ [518] [519]
+11 0
+.names [165] [137] [520]
+11 0
+.names MEMORY_REG_25__0_ [518] [521]
+11 0
+.names [165] [136] [522]
+11 0
+.names [166] WR_REG [523]
+11 0
+.names MEMORY_REG_24__1_ [523] [524]
+11 0
+.names [166] [137] [525]
+11 0
+.names MEMORY_REG_24__0_ [523] [526]
+11 0
+.names [166] [136] [527]
+11 0
+.names [168] WR_REG [528]
+11 0
+.names MEMORY_REG_23__1_ [528] [529]
+11 0
+.names [168] [137] [530]
+11 0
+.names MEMORY_REG_23__0_ [528] [531]
+11 0
+.names [168] [136] [532]
+11 0
+.names [169] WR_REG [533]
+11 0
+.names MEMORY_REG_22__1_ [533] [534]
+11 0
+.names [169] [137] [535]
+11 0
+.names MEMORY_REG_22__0_ [533] [536]
+11 0
+.names [169] [136] [537]
+11 0
+.names [171] WR_REG [538]
+11 0
+.names MEMORY_REG_21__1_ [538] [539]
+11 0
+.names [171] [137] [540]
+11 0
+.names MEMORY_REG_21__0_ [538] [541]
+11 0
+.names [171] [136] [542]
+11 0
+.names [172] WR_REG [543]
+11 0
+.names MEMORY_REG_20__1_ [543] [544]
+11 0
+.names [172] [137] [545]
+11 0
+.names MEMORY_REG_20__0_ [543] [546]
+11 0
+.names [172] [136] [547]
+11 0
+.names [173] WR_REG [548]
+11 0
+.names MEMORY_REG_19__1_ [548] [549]
+11 0
+.names [173] [137] [550]
+11 0
+.names MEMORY_REG_19__0_ [548] [551]
+11 0
+.names [173] [136] [552]
+11 0
+.names [174] WR_REG [553]
+11 0
+.names MEMORY_REG_18__1_ [553] [554]
+11 0
+.names [174] [137] [555]
+11 0
+.names MEMORY_REG_18__0_ [553] [556]
+11 0
+.names [174] [136] [557]
+11 0
+.names [175] WR_REG [558]
+11 0
+.names MEMORY_REG_17__1_ [558] [559]
+11 0
+.names [175] [137] [560]
+11 0
+.names MEMORY_REG_17__0_ [558] [561]
+11 0
+.names [175] [136] [562]
+11 0
+.names [176] WR_REG [563]
+11 0
+.names MEMORY_REG_16__1_ [563] [564]
+11 0
+.names [176] [137] [565]
+11 0
+.names MEMORY_REG_16__0_ [563] [566]
+11 0
+.names [176] [136] [567]
+11 0
+.names [178] WR_REG [568]
+11 0
+.names MEMORY_REG_15__1_ [568] [569]
+11 0
+.names [178] [137] [570]
+11 0
+.names MEMORY_REG_15__0_ [568] [571]
+11 0
+.names [178] [136] [572]
+11 0
+.names [179] WR_REG [573]
+11 0
+.names MEMORY_REG_14__1_ [573] [574]
+11 0
+.names [179] [137] [575]
+11 0
+.names MEMORY_REG_14__0_ [573] [576]
+11 0
+.names [179] [136] [577]
+11 0
+.names [181] WR_REG [578]
+11 0
+.names MEMORY_REG_13__1_ [578] [579]
+11 0
+.names [181] [137] [580]
+11 0
+.names MEMORY_REG_13__0_ [578] [581]
+11 0
+.names [181] [136] [582]
+11 0
+.names [182] WR_REG [583]
+11 0
+.names MEMORY_REG_12__1_ [583] [584]
+11 0
+.names [182] [137] [585]
+11 0
+.names MEMORY_REG_12__0_ [583] [586]
+11 0
+.names [182] [136] [587]
+11 0
+.names [183] WR_REG [588]
+11 0
+.names MEMORY_REG_11__1_ [588] [589]
+11 0
+.names [183] [137] [590]
+11 0
+.names MEMORY_REG_11__0_ [588] [591]
+11 0
+.names [183] [136] [592]
+11 0
+.names [184] WR_REG [593]
+11 0
+.names MEMORY_REG_10__1_ [593] [594]
+11 0
+.names [184] [137] [595]
+11 0
+.names MEMORY_REG_10__0_ [593] [596]
+11 0
+.names [184] [136] [597]
+11 0
+.names [185] WR_REG [598]
+11 0
+.names MEMORY_REG_9__1_ [598] [599]
+11 0
+.names [185] [137] [600]
+11 0
+.names MEMORY_REG_9__0_ [598] [601]
+11 0
+.names [185] [136] [602]
+11 0
+.names [186] WR_REG [603]
+11 0
+.names MEMORY_REG_8__1_ [603] [604]
+11 0
+.names [186] [137] [605]
+11 0
+.names MEMORY_REG_8__0_ [603] [606]
+11 0
+.names [186] [136] [607]
+11 0
+.names [188] WR_REG [608]
+11 0
+.names MEMORY_REG_7__1_ [608] [609]
+11 0
+.names [188] [137] [610]
+11 0
+.names MEMORY_REG_7__0_ [608] [611]
+11 0
+.names [188] [136] [612]
+11 0
+.names [189] WR_REG [613]
+11 0
+.names MEMORY_REG_6__1_ [613] [614]
+11 0
+.names [189] [137] [615]
+11 0
+.names MEMORY_REG_6__0_ [613] [616]
+11 0
+.names [189] [136] [617]
+11 0
+.names [191] WR_REG [618]
+11 0
+.names MEMORY_REG_5__1_ [618] [619]
+11 0
+.names [191] [137] [620]
+11 0
+.names MEMORY_REG_5__0_ [618] [621]
+11 0
+.names [191] [136] [622]
+11 0
+.names [192] WR_REG [623]
+11 0
+.names MEMORY_REG_4__1_ [623] [624]
+11 0
+.names [192] [137] [625]
+11 0
+.names MEMORY_REG_4__0_ [623] [626]
+11 0
+.names [192] [136] [627]
+11 0
+.names [193] WR_REG [628]
+11 0
+.names MEMORY_REG_3__1_ [628] [629]
+11 0
+.names [193] [137] [630]
+11 0
+.names MEMORY_REG_3__0_ [628] [631]
+11 0
+.names [193] [136] [632]
+11 0
+.names [194] WR_REG [633]
+11 0
+.names MEMORY_REG_2__1_ [633] [634]
+11 0
+.names [194] [137] [635]
+11 0
+.names MEMORY_REG_2__0_ [633] [636]
+11 0
+.names [194] [136] [637]
+11 0
+.names [195] WR_REG [638]
+11 0
+.names MEMORY_REG_1__1_ [638] [639]
+11 0
+.names [195] [137] [640]
+11 0
+.names MEMORY_REG_1__0_ [638] [641]
+11 0
+.names [195] [136] [642]
+11 0
+.names [196] WR_REG [643]
+11 0
+.names MEMORY_REG_0__1_ [643] [644]
+11 0
+.names [196] [137] [645]
+11 0
+.names MEMORY_REG_0__0_ [643] [646]
+11 0
+.names [196] [136] [647]
+11 0
+.names [323] [648]
+0 1
+.names [445] [331] [649]
+11 0
+.names [322] [649] [650]
+11 0
+.names [443] [650] [451] [651]
+111 0
+.names [344] [652]
+0 1
+.names [440] [331] [653]
+11 0
+.names [652] [439] [654]
+11 0
+.names [653] [359] [654] [655]
+111 0
+.names [450] [440] [484] [656]
+111 0
+.names [445] [451] [655] [657]
+111 0
+.names [447] [321] [134] [658]
+111 0
+.names [656] [477] [657] [197] [658] [659]
+11111 0
+.names [332] [328] [660]
+11 0
+.names [443] [660] [661]
+11 0
+.names [351] [662]
+0 1
+.names [359] [333] [663]
+11 0
+.names [440] [663] [664]
+11 0
+.names [664] [662] [659] [665]
+111 0
+.names [350] [666]
+0 1
+.names IND_REG_0_ IND_REG_1_ [138] [667]
+111 0
+.names [148] [666] [668]
+11 0
+.names NL_REG_3_ [665] [669]
+11 0
+.names DATA_OUT_REG_1_ [349] [148] [670]
+111 0
+.names IND_REG_1_ [346] [138] [671]
+111 0
+.names NL_REG_2_ [665] [672]
+11 0
+.names [352] [673]
+0 1
+.names IND_REG_0_ [347] [138] [674]
+111 0
+.names [673] [148] [675]
+11 0
+.names NL_REG_1_ [665] [676]
+11 0
+.names [348] [349] [148] [677]
+111 0
+.names [346] [347] [138] [678]
+111 0
+.names NL_REG_0_ [665] [679]
+11 0
+.names [435] [680]
+0 1
+.names [456] [451] [681]
+11 0
+.names [356] [682]
+0 1
+.names [1061] [145] [683]
+11 0
+.names [682] SCAN_REG_4_ [684]
+11 0
+.names [1062] [145] [685]
+11 0
+.names [682] SCAN_REG_3_ [686]
+11 0
+.names [1063] [145] [687]
+11 0
+.names [682] SCAN_REG_2_ [688]
+11 0
+.names [1064] [145] [689]
+11 0
+.names [682] SCAN_REG_1_ [690]
+11 0
+.names [1055] [145] [691]
+11 0
+.names [682] SCAN_REG_0_ [692]
+11 0
+.names [365] [693]
+0 1
+.names [450] [439] [694]
+11 0
+.names [361] [695]
+0 1
+.names [462] [344] [696]
+11 0
+.names [444] [443] [464] [697]
+111 0
+.names [198] [697] [698]
+11 0
+.names [451] [698] [699]
+11 0
+.names [362] [700]
+0 1
+.names [1038] [142] [701]
+11 0
+.names [700] MAX_REG_4_ [702]
+11 0
+.names [1039] [142] [703]
+11 0
+.names [700] MAX_REG_3_ [704]
+11 0
+.names [1040] [142] [705]
+11 0
+.names [700] MAX_REG_2_ [706]
+11 0
+.names [1041] [142] [707]
+11 0
+.names [700] MAX_REG_1_ [708]
+11 0
+.names [1032] [142] [709]
+11 0
+.names [700] MAX_REG_0_ [710]
+11 0
+.names [368] [711]
+0 1
+.names [429] [712]
+0 1
+.names K_2_ [387] [713]
+11 0
+.names [440] [369] [714]
+11 0
+.names [1017] [146] [715]
+11 0
+.names TIMEBASE_REG_4_ [695] [716]
+11 0
+.names [1009] [146] [717]
+11 0
+.names TIMEBASE_REG_3_ [695] [718]
+11 0
+.names [1007] [146] [719]
+11 0
+.names TIMEBASE_REG_2_ [695] [720]
+11 0
+.names [1010] [146] [721]
+11 0
+.names TIMEBASE_REG_1_ [695] [722]
+11 0
+.names [440] [377] [723]
+11 0
+.names [390] [724]
+0 1
+.names [390] [330] [725]
+11 0
+.names [964] [963] [962] [961] [726]
+1111 0
+.names [648] [329] [330] [727]
+111 0
+.names [149] [325] [728]
+11 0
+.names [464] [321] [729]
+11 0
+.names [728] [729] [727] [730]
+111 0
+.names [149] [464] [731]
+11 0
+.names [440] [730] [732]
+11 0
+.names [445] [726] [733]
+11 0
+.names [461] [321] [734]
+11 0
+.names [370] [735]
+0 1
+.names [354] [366] [736]
+11 0
+.names [141] [325] [737]
+11 0
+.names [451] [736] [738]
+11 0
+.names [450] [368] [739]
+11 0
+.names [482] [737] [478] [739] [738] [740]
+11111 0
+.names [441] [440] [741]
+11 0
+.names [648] [322] [742]
+11 0
+.names [200] [742] [743]
+11 0
+.names [743] [330] [744]
+11 0
+.names [445] [447] [745]
+11 0
+.names [360] [745] [746]
+11 0
+.names [746] [330] [747]
+11 0
+.names [711] [450] [748]
+11 0
+.names [747] [748] [744] [749]
+111 0
+.names [1016] [749] [750]
+11 0
+.names TIMEBASE_REG_5_ [740] [751]
+11 0
+.names [751] [750] [752]
+11 0
+.names [450] [447] [711] [753]
+111 0
+.names [445] [331] [330] [754]
+111 0
+.names [753] [754] [744] [755]
+111 0
+.names [371] [756]
+0 1
+.names [447] [368] [450] [757]
+111 0
+.names [451] [736] [758]
+11 0
+.names [372] [759]
+0 1
+.names [759] [478] [760]
+11 0
+.names [152] TIMEBASE_REG_4_ [761]
+11 0
+.names [151] [1017] [762]
+11 0
+.names COUNT_REG2_4_ [735] [763]
+11 0
+.names TIMEBASE_REG_3_ [445] [764]
+11 0
+.names [485] [447] [765]
+11 0
+.names [765] [764] [200] [766]
+111 0
+.names [451] [766] [767]
+11 0
+.names [1009] [755] [768]
+11 0
+.names TIMEBASE_REG_3_ [372] [769]
+11 0
+.names [769] [767] [768] [770]
+111 0
+.names [152] TIMEBASE_REG_2_ [771]
+11 0
+.names [151] [1007] [772]
+11 0
+.names COUNT_REG2_2_ [735] [773]
+11 0
+.names [152] TIMEBASE_REG_1_ [774]
+11 0
+.names [151] [1010] [775]
+11 0
+.names COUNT_REG2_1_ [735] [776]
+11 0
+.names [1008] [749] [777]
+11 0
+.names TIMEBASE_REG_0_ [740] [778]
+11 0
+.names [778] [777] [779]
+11 0
+.names [441] [445] [693] [139] [780]
+1111 0
+.names [327] [452] [781]
+11 0
+.names [451] [781] [782]
+11 0
+.names [433] [783]
+0 1
+.names [443] [328] [784]
+11 0
+.names [345] [784] [785]
+11 0
+.names [147] [450] [786]
+11 0
+.names DATA_OUT_REG_1_ [371] [787]
+11 0
+.names [787] [786] [788]
+11 0
+.names DATA_OUT_REG_0_ [322] [789]
+11 0
+.names [713] [388] [450] [790]
+111 0
+.names [789] [374] [790] [791]
+111 0
+.names [447] [321] [792]
+11 0
+.names [357] [792] [793]
+11 0
+.names [444] [793] [794]
+11 0
+.names [380] [795]
+0 1
+.names [357] [359] [796]
+11 0
+.names [144] MAX_REG_4_ [797]
+11 0
+.names [143] SCAN_REG_4_ [798]
+11 0
+.names [795] ADDRESS_REG_4_ [799]
+11 0
+.names [144] MAX_REG_3_ [800]
+11 0
+.names [143] SCAN_REG_3_ [801]
+11 0
+.names [795] ADDRESS_REG_3_ [802]
+11 0
+.names [144] MAX_REG_2_ [803]
+11 0
+.names [143] SCAN_REG_2_ [804]
+11 0
+.names [795] ADDRESS_REG_2_ [805]
+11 0
+.names [144] MAX_REG_1_ [806]
+11 0
+.names [143] SCAN_REG_1_ [807]
+11 0
+.names [795] ADDRESS_REG_1_ [808]
+11 0
+.names [144] MAX_REG_0_ [809]
+11 0
+.names [143] SCAN_REG_0_ [810]
+11 0
+.names [795] ADDRESS_REG_0_ [811]
+11 0
+.names SOUND_REG_2_ [434] [812]
+11 0
+.names [812] [379] [813]
+11 0
+.names [381] [813] [814]
+11 0
+.names [982] [981] [379] [815]
+111 0
+.names SOUND_REG_1_ [434] COUNTER_REG_0_ [816]
+111 0
+.names COUNTER_REG_1_ [815] [817]
+11 0
+.names [817] [816] [818]
+11 0
+.names COUNTER_REG_2_ [379] [812] [819]
+111 0
+.names [818] [814] [820]
+11 0
+.names [391] [821]
+0 1
+.names SOUND_REG_1_ SOUND_REG_2_ [822]
+11 0
+.names [384] [823]
+0 1
+.names PLAY_REG [823] [824]
+11 0
+.names S_REG [824] [825]
+11 0
+.names [445] [322] [448] [826]
+111 0
+.names [367] [458] [826] [827]
+111 0
+.names [451] [827] [828]
+11 0
+.names [436] [829]
+0 1
+.names [485] [323] [830]
+11 0
+.names [327] [830] [831]
+11 0
+.names [984] [983] [441] [832]
+111 0
+.names [831] [322] [833]
+11 0
+.names [457] [321] [834]
+11 0
+.names [834] [832] [833] [835]
+111 0
+.names DATA_OUT_REG_1_ DATA_OUT_REG_0_ [836]
+00 0
+.names [988] [987] [147] [837]
+111 0
+.names [990] [989] [837] [838]
+111 0
+.names [457] [451] [839]
+11 0
+.names [450] [439] [840]
+11 0
+.names [437] [841]
+0 1
+.names PLAY_REG SPEAKER_REG [384] [842]
+111 0
+.names [135] [329] [843]
+11 0
+.names WR_REG [843] [844]
+11 0
+.names [331] [360] [845]
+11 0
+.names [389] [846]
+0 1
+.names [451] [389] [847]
+11 0
+.names [465] [469] [848]
+11 0
+.names [846] [353] [849]
+11 0
+.names [440] [848] [850]
+11 0
+.names [139] [456] [851]
+11 0
+.names [355] [367] [852]
+11 0
+.names [852] [330] [853]
+11 0
+.names [456] [344] [854]
+11 0
+.names [448] [444] [855]
+11 0
+.names [443] [329] [448] [856]
+111 0
+.names [457] [330] [857]
+11 0
+.names [450] [441] [858]
+11 0
+.names [439] [329] [859]
+11 0
+.names [149] [464] [860]
+11 0
+.names [455] [453] [458] [860] [198] [861]
+11111 0
+.names [999] [998] [457] [862]
+111 0
+.names [724] [862] [463] [452] [863]
+1111 0
+.names MEMORY_REG_0__1_ [196] [864]
+11 0
+.names MEMORY_REG_1__1_ [195] [865]
+11 0
+.names MEMORY_REG_2__1_ [194] [866]
+11 0
+.names MEMORY_REG_3__1_ [193] [867]
+11 0
+.names MEMORY_REG_4__1_ [192] [868]
+11 0
+.names MEMORY_REG_5__1_ [191] [869]
+11 0
+.names MEMORY_REG_6__1_ [189] [870]
+11 0
+.names MEMORY_REG_7__1_ [188] [871]
+11 0
+.names MEMORY_REG_8__1_ [186] [872]
+11 0
+.names MEMORY_REG_9__1_ [185] [873]
+11 0
+.names MEMORY_REG_10__1_ [184] [874]
+11 0
+.names MEMORY_REG_11__1_ [183] [875]
+11 0
+.names MEMORY_REG_12__1_ [182] [876]
+11 0
+.names MEMORY_REG_13__1_ [181] [877]
+11 0
+.names MEMORY_REG_14__1_ [179] [878]
+11 0
+.names MEMORY_REG_15__1_ [178] [879]
+11 0
+.names MEMORY_REG_16__1_ [176] [880]
+11 0
+.names MEMORY_REG_17__1_ [175] [881]
+11 0
+.names MEMORY_REG_18__1_ [174] [882]
+11 0
+.names MEMORY_REG_19__1_ [173] [883]
+11 0
+.names MEMORY_REG_20__1_ [172] [884]
+11 0
+.names MEMORY_REG_21__1_ [171] [885]
+11 0
+.names MEMORY_REG_22__1_ [169] [886]
+11 0
+.names MEMORY_REG_23__1_ [168] [887]
+11 0
+.names MEMORY_REG_24__1_ [166] [888]
+11 0
+.names MEMORY_REG_25__1_ [165] [889]
+11 0
+.names MEMORY_REG_26__1_ [164] [890]
+11 0
+.names MEMORY_REG_27__1_ [162] [891]
+11 0
+.names MEMORY_REG_28__1_ [160] [892]
+11 0
+.names MEMORY_REG_29__1_ [159] [893]
+11 0
+.names MEMORY_REG_30__1_ [157] [894]
+11 0
+.names MEMORY_REG_31__1_ [155] [895]
+11 0
+.names MEMORY_REG_0__0_ [196] [896]
+11 0
+.names MEMORY_REG_1__0_ [195] [897]
+11 0
+.names MEMORY_REG_2__0_ [194] [898]
+11 0
+.names MEMORY_REG_3__0_ [193] [899]
+11 0
+.names MEMORY_REG_4__0_ [192] [900]
+11 0
+.names MEMORY_REG_5__0_ [191] [901]
+11 0
+.names MEMORY_REG_6__0_ [189] [902]
+11 0
+.names MEMORY_REG_7__0_ [188] [903]
+11 0
+.names MEMORY_REG_8__0_ [186] [904]
+11 0
+.names MEMORY_REG_9__0_ [185] [905]
+11 0
+.names MEMORY_REG_10__0_ [184] [906]
+11 0
+.names MEMORY_REG_11__0_ [183] [907]
+11 0
+.names MEMORY_REG_12__0_ [182] [908]
+11 0
+.names MEMORY_REG_13__0_ [181] [909]
+11 0
+.names MEMORY_REG_14__0_ [179] [910]
+11 0
+.names MEMORY_REG_15__0_ [178] [911]
+11 0
+.names MEMORY_REG_16__0_ [176] [912]
+11 0
+.names MEMORY_REG_17__0_ [175] [913]
+11 0
+.names MEMORY_REG_18__0_ [174] [914]
+11 0
+.names MEMORY_REG_19__0_ [173] [915]
+11 0
+.names MEMORY_REG_20__0_ [172] [916]
+11 0
+.names MEMORY_REG_21__0_ [171] [917]
+11 0
+.names MEMORY_REG_22__0_ [169] [918]
+11 0
+.names MEMORY_REG_23__0_ [168] [919]
+11 0
+.names MEMORY_REG_24__0_ [166] [920]
+11 0
+.names MEMORY_REG_25__0_ [165] [921]
+11 0
+.names MEMORY_REG_26__0_ [164] [922]
+11 0
+.names MEMORY_REG_27__0_ [162] [923]
+11 0
+.names MEMORY_REG_28__0_ [160] [924]
+11 0
+.names MEMORY_REG_29__0_ [159] [925]
+11 0
+.names MEMORY_REG_30__0_ [157] [926]
+11 0
+.names MEMORY_REG_31__0_ [155] [927]
+11 0
+.names COUNTER_REG_1_ COUNTER_REG_0_ [928]
+11 0
+.names TIMEBASE_REG_5_ [451] [929]
+11 0
+.names TIMEBASE_REG_4_ [451] [930]
+11 0
+.names TIMEBASE_REG_3_ [451] [931]
+11 0
+.names TIMEBASE_REG_2_ [451] [932]
+11 0
+.names TIMEBASE_REG_1_ [451] [933]
+11 0
+.names TIMEBASE_REG_0_ [451] [934]
+11 0
+.names K_3_ [350] [935]
+11 0
+.names K_3_ [364] [936]
+11 0
+.names K_1_ [388] [937]
+11 0
+.names [997] [996] [147] [938]
+111 0
+.names [326] [322] [939]
+11 0
+.names [693] [459] [940]
+11 0
+.names [849] [330] [941]
+11 0
+.names [928] [381] [942]
+11 0
+.names SCAN_REG_2_ [339] [943]
+11 0
+.names MAX_REG_2_ [338] [944]
+11 0
+.names SCAN_REG_0_ [335] [945]
+11 0
+.names MAX_REG_0_ [334] [946]
+11 0
+.names SCAN_REG_1_ [337] [947]
+11 0
+.names MAX_REG_1_ [336] [948]
+11 0
+.names SCAN_REG_3_ [341] [949]
+11 0
+.names MAX_REG_3_ [340] [950]
+11 0
+.names SCAN_REG_4_ [343] [951]
+11 0
+.names MAX_REG_4_ [342] [952]
+11 0
+.names IND_REG_1_ [429] [953]
+11 0
+.names [712] [147] [954]
+11 0
+.names IND_REG_0_ [429] [955]
+11 0
+.names [713] [388] [712] [956]
+111 0
+.names TIMEBASE_REG_5_ [695] [957]
+11 0
+.names [714] [361] [958]
+11 0
+.names TIMEBASE_REG_0_ [695] [959]
+11 0
+.names [723] [361] [960]
+11 0
+.names [484] [330] [321] [961]
+111 0
+.names [331] [322] [443] [962]
+111 0
+.names [135] [325] [963]
+11 0
+.names [442] [447] [964]
+11 0
+.names COUNT_REG2_5_ [735] [965]
+11 0
+.names [752] [370] [966]
+11 0
+.names COUNT_REG2_3_ [735] [967]
+11 0
+.names [770] [370] [968]
+11 0
+.names COUNT_REG2_0_ [735] [969]
+11 0
+.names [779] [370] [970]
+11 0
+.names [783] SOUND_REG_2_ [971]
+11 0
+.names [785] [433] [972]
+11 0
+.names [783] SOUND_REG_1_ [973]
+11 0
+.names [788] [433] [974]
+11 0
+.names SOUND_REG_0_ [783] [975]
+11 0
+.names [791] [433] [976]
+11 0
+.names DATA_IN_REG_1_ [435] [977]
+11 0
+.names NUM_REG_1_ [680] [978]
+11 0
+.names DATA_IN_REG_0_ [435] [979]
+11 0
+.names NUM_REG_0_ [680] [980]
+11 0
+.names COUNTER_REG_0_ [434] [981]
+11 0
+.names SOUND_REG_0_ SOUND_REG_2_ [982]
+11 0
+.names [445] [443] [983]
+11 0
+.names [324] [329] [984]
+11 0
+.names [829] PLAY_REG [985]
+11 0
+.names [835] [436] [986]
+11 0
+.names [935] [364] [987]
+11 0
+.names DATA_OUT_REG_1_ [349] K_2_ [988]
+111 0
+.names K_0_ [836] [989]
+11 0
+.names K_1_ [352] [388] [990]
+111 0
+.names NLOSS_REG [841] [991]
+11 0
+.names [440] [437] [992]
+11 0
+.names DATA_OUT_REG_0_ K_0_ [993]
+00 0
+.names DATA_OUT_REG_0_ [937] [994]
+11 0
+.names [994] [993] [995]
+11 0
+.names DATA_OUT_REG_0_ K_2_ [996]
+00 0
+.names DATA_OUT_REG_0_ [936] [997]
+11 0
+.names DATA_OUT_REG_1_ [938] [998]
+11 0
+.names [995] [348] [999]
+11 0
+.names [451] [861] [1000]
+11 0
+.names [863] [330] [1001]
+11 0
+.names COUNTER_REG_1_ [382] [1002]
+11 0
+.names COUNTER_REG_0_ [383] [1003]
+11 0
+.names [1003] [1002] [1004]
+11 0
+.names COUNT_REG_1_ NUM_REG_0__in [1005]
+11 0
+.names COUNT_REG_0_ [438] [1006]
+11 0
+.names [1012] [1026] [1007]
+11 0
+.names [209] [1008]
+0 1
+.names [1013] [1025] [1009]
+11 0
+.names [1011] [1027] [1010]
+11 0
+.names [209] [208] [1011]
+00 0
+.names [1021] [1015] [1012]
+11 0
+.names [1022] [1014] [1013]
+11 0
+.names [206] [1014]
+0 1
+.names [207] [1015]
+0 1
+.names [1029] [1028] [1016]
+11 0
+.names [1031] [1030] [1017]
+11 0
+.names [204] [1018]
+0 1
+.names [1023] [1020] [1019]
+11 0
+.names [205] [1020]
+0 1
+.names [1011] [1021]
+0 1
+.names [1012] [1022]
+0 1
+.names [1013] [1023]
+0 1
+.names [1019] [1024]
+0 1
+.names [206] [1012] [1025]
+11 0
+.names [207] [1011] [1026]
+11 0
+.names [208] [209] [1027]
+11 0
+.names [204] [1019] [1028]
+11 0
+.names [1024] [1018] [1029]
+11 0
+.names [205] [1013] [1030]
+11 0
+.names [1023] [1020] [1031]
+11 0
+.names MAX_REG_0_ [1032]
+0 1
+.names MAX_REG_1_ [1033]
+0 1
+.names MAX_REG_1_ MAX_REG_0_ [1034]
+11 0
+.names MAX_REG_2_ [1035]
+0 1
+.names MAX_REG_2_ [1044] [1036]
+11 0
+.names MAX_REG_3_ [1037]
+0 1
+.names [1048] [1047] [1038]
+11 0
+.names [1050] [1049] [1039]
+11 0
+.names [1052] [1051] [1040]
+11 0
+.names [1054] [1053] [1041]
+11 0
+.names MAX_REG_4_ [1042]
+0 1
+.names MAX_REG_3_ [1045] [1043]
+11 0
+.names [1034] [1044]
+0 1
+.names [1036] [1045]
+0 1
+.names [1043] [1046]
+0 1
+.names MAX_REG_4_ [1043] [1047]
+11 0
+.names [1046] [1042] [1048]
+11 0
+.names MAX_REG_3_ [1036] [1049]
+11 0
+.names [1045] [1037] [1050]
+11 0
+.names MAX_REG_2_ [1034] [1051]
+11 0
+.names [1044] [1035] [1052]
+11 0
+.names MAX_REG_1_ [1032] [1053]
+11 0
+.names MAX_REG_0_ [1033] [1054]
+11 0
+.names SCAN_REG_0_ [1055]
+0 1
+.names SCAN_REG_1_ [1056]
+0 1
+.names SCAN_REG_1_ SCAN_REG_0_ [1057]
+11 0
+.names SCAN_REG_2_ [1058]
+0 1
+.names SCAN_REG_2_ [1067] [1059]
+11 0
+.names SCAN_REG_3_ [1060]
+0 1
+.names [1071] [1070] [1061]
+11 0
+.names [1073] [1072] [1062]
+11 0
+.names [1075] [1074] [1063]
+11 0
+.names [133] [1076] [1064]
+11 0
+.names SCAN_REG_4_ [1065]
+0 1
+.names SCAN_REG_3_ [1068] [1066]
+11 0
+.names [1057] [1067]
+0 1
+.names [1059] [1068]
+0 1
+.names [1066] [1069]
+0 1
+.names SCAN_REG_4_ [1066] [1070]
+11 0
+.names [1069] [1065] [1071]
+11 0
+.names SCAN_REG_3_ [1059] [1072]
+11 0
+.names [1068] [1060] [1073]
+11 0
+.names SCAN_REG_2_ [1057] [1074]
+11 0
+.names [1067] [1058] [1075]
+11 0
+.names SCAN_REG_1_ [1055] [1076]
+11 0
+.names NUM_REG_0__in COUNT_REG_0__in
+1 1
+.names NUM_REG_1__in COUNT_REG_1__in
+1 1
+.end

@@ -1,0 +1,118 @@
+# Benchmark "itc/b06/b06" written by ABC on Sat Nov 11 15:33:11 2006
+.model itc/b06/b06
+.inputs EQL CONT_EQL
+.outputs CC_MUX_REG_2_ CC_MUX_REG_1_ USCITE_REG_2_ USCITE_REG_1_ \
+ ENABLE_COUNT_REG ACKOUT_REG
+
+.latch     L00_in        L00  0
+.latch     L01_in        L01  0
+.latch     L02_in        L02  0
+.latch     L03_in        L03  0
+.latch     L04_in        L04  0
+.latch     L05_in        L05  1
+.latch     L06_in        L06  1
+.latch     L07_in        L07  0
+.latch     L08_in        L08  1
+.latch     L09_in        L09  1
+.latch     L10_in        L10  1
+.latch     L11_in        L11  1
+.latch     L12_in        L12  0
+.latch     L13_in        L13  0
+.latch     L14_in        L14  0
+.latch     L15_in        L15  0
+.latch     L16_in        L16  0
+.latch     L17_in        L17  0
+
+.names L09 [44] [9]
+11 1
+.names [9] [33] L07_in
+11 0
+.names [37] [36] [27] [21] L02_in
+1111 0
+.names [35] [34] L04_in
+11 0
+.names L10 L01 [47] [46] L13_in
+1111 0
+.names [41] [25] [40] L12_in
+111 0
+.names EQL L11 [9] L15_in
+111 0
+.names [27] [30] L14_in
+11 0
+.names [39] [38] L16_in
+11 0
+.names L04_in L02_in L07_in L00_in
+111 1
+.names L02_in L05_in
+0 1
+.names EQL [20]
+0 1
+.names EQL L02 [21]
+11 0
+.names L04_in L06_in
+0 1
+.names L07_in L08_in
+0 1
+.names L04_in L07_in L01_in
+00 0
+.names L05 L06 L07 [25]
+111 0
+.names [21] [26]
+0 1
+.names L04 L08 L05 [20] [27]
+1111 0
+.names L01 [28]
+0 1
+.names [25] [29]
+0 1
+.names L04 [26] [30]
+11 0
+.names L04_in L02_in L11_in
+11 0
+.names L02_in L07_in L03_in
+00 0
+.names [20] L03 [33]
+11 0
+.names [29] [20] [34]
+11 0
+.names L04 [33] [35]
+11 0
+.names EQL L06 L07 [36]
+111 0
+.names [28] L02 [37]
+11 0
+.names L02 [20] [28] [38]
+111 0
+.names CONT_EQL L00 [39]
+00 0
+.names [26] L08 [40]
+11 0
+.names L04 [33] [41]
+11 0
+.names EQL L08 [42]
+11 0
+.names L07_in L04_in L10_in
+11 0
+.names [28] L05 [44]
+11 0
+.names L07_in L02_in L09_in
+11 0
+.names EQL L05 [46]
+11 0
+.names L02 [42] [47]
+11 0
+.names L16_in L17_in
+1 1
+.names L12 CC_MUX_REG_2_
+1 1
+.names L13 CC_MUX_REG_1_
+1 1
+.names L14 USCITE_REG_2_
+1 1
+.names L15 USCITE_REG_1_
+1 1
+.names L16 ENABLE_COUNT_REG
+1 1
+.names L17 ACKOUT_REG
+1 1
+.end

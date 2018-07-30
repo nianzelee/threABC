@@ -1,0 +1,315 @@
+# Benchmark "itc/b09/b09" written by ABC on Fri Sep 15 12:20:19 2006
+.model itc/b09/b09
+.inputs X
+.outputs Y_REG
+
+.latch D_IN_REG_0__in D_IN_REG_0_  0
+.latch D_OUT_REG_7__in D_OUT_REG_7_  0
+.latch D_OUT_REG_6__in D_OUT_REG_6_  0
+.latch D_OUT_REG_5__in D_OUT_REG_5_  0
+.latch D_OUT_REG_4__in D_OUT_REG_4_  0
+.latch D_OUT_REG_3__in D_OUT_REG_3_  0
+.latch D_OUT_REG_2__in D_OUT_REG_2_  0
+.latch D_OUT_REG_1__in D_OUT_REG_1_  0
+.latch D_OUT_REG_0__in D_OUT_REG_0_  0
+.latch OLD_REG_7__in OLD_REG_7_  0
+.latch OLD_REG_6__in OLD_REG_6_  0
+.latch OLD_REG_5__in OLD_REG_5_  0
+.latch OLD_REG_4__in OLD_REG_4_  0
+.latch OLD_REG_3__in OLD_REG_3_  0
+.latch OLD_REG_2__in OLD_REG_2_  0
+.latch OLD_REG_1__in OLD_REG_1_  0
+.latch OLD_REG_0__in OLD_REG_0_  0
+.latch   Y_REG_in      Y_REG  0
+.latch STATO_REG_1__in STATO_REG_1_  0
+.latch STATO_REG_0__in STATO_REG_0_  0
+.latch D_IN_REG_8__in D_IN_REG_8_  0
+.latch D_IN_REG_7__in D_IN_REG_7_  0
+.latch D_IN_REG_6__in D_IN_REG_6_  0
+.latch D_IN_REG_5__in D_IN_REG_5_  0
+.latch D_IN_REG_4__in D_IN_REG_4_  0
+.latch D_IN_REG_3__in D_IN_REG_3_  0
+.latch D_IN_REG_2__in D_IN_REG_2_  0
+.latch D_IN_REG_1__in D_IN_REG_1_  0
+
+.names STATO_REG_1_ STATO_REG_0_ [31]
+11 1
+.names STATO_REG_0_ [84] [32]
+11 1
+.names [93] [84] [33]
+11 1
+.names [85] [145] [34]
+11 1
+.names [168] [167] [97] STATO_REG_0__in
+111 0
+.names [81] [83] STATO_REG_1__in
+11 0
+.names D_IN_REG_1_ [150] D_IN_REG_0__in
+11 1
+.names D_IN_REG_2_ [150] D_IN_REG_1__in
+11 1
+.names D_IN_REG_3_ [150] D_IN_REG_2__in
+11 1
+.names D_IN_REG_4_ [150] D_IN_REG_3__in
+11 1
+.names D_IN_REG_5_ [150] D_IN_REG_4__in
+11 1
+.names D_IN_REG_6_ [150] D_IN_REG_5__in
+11 1
+.names D_IN_REG_7_ [150] D_IN_REG_6__in
+11 1
+.names D_IN_REG_8_ [150] D_IN_REG_7__in
+11 1
+.names [148] [147] D_IN_REG_8__in
+11 0
+.names [141] [142] [94] Y_REG_in
+111 0
+.names [139] [138] OLD_REG_0__in
+11 0
+.names [137] [136] OLD_REG_1__in
+11 0
+.names [135] [134] OLD_REG_2__in
+11 0
+.names [133] [132] OLD_REG_3__in
+11 0
+.names [131] [130] OLD_REG_4__in
+11 0
+.names [129] [128] OLD_REG_5__in
+11 0
+.names [127] [126] OLD_REG_6__in
+11 0
+.names [125] [124] OLD_REG_7__in
+11 0
+.names [120] [119] [121] D_OUT_REG_0__in
+111 0
+.names [117] [116] [118] D_OUT_REG_1__in
+111 0
+.names [114] [113] [115] D_OUT_REG_2__in
+111 0
+.names [111] [110] [112] D_OUT_REG_3__in
+111 0
+.names [108] [107] [109] D_OUT_REG_4__in
+111 0
+.names [105] [104] [106] D_OUT_REG_5__in
+111 0
+.names [102] [101] [103] D_OUT_REG_6__in
+111 0
+.names [100] [99] D_OUT_REG_7__in
+11 0
+.names STATO_REG_0_ [63]
+0 1
+.names D_IN_REG_0_ [64]
+0 1
+.names D_IN_REG_1_ [65]
+0 1
+.names OLD_REG_0_ [66]
+0 1
+.names D_IN_REG_2_ [67]
+0 1
+.names OLD_REG_1_ [68]
+0 1
+.names D_IN_REG_3_ [69]
+0 1
+.names OLD_REG_2_ [70]
+0 1
+.names D_IN_REG_4_ [71]
+0 1
+.names OLD_REG_3_ [72]
+0 1
+.names D_IN_REG_5_ [73]
+0 1
+.names OLD_REG_4_ [74]
+0 1
+.names D_IN_REG_6_ [75]
+0 1
+.names OLD_REG_5_ [76]
+0 1
+.names D_IN_REG_8_ [77]
+0 1
+.names OLD_REG_7_ [78]
+0 1
+.names D_IN_REG_7_ [79]
+0 1
+.names OLD_REG_6_ [80]
+0 1
+.names STATO_REG_1_ [81]
+0 1
+.names [90] [89] [88] [87] [82]
+1111 0
+.names D_IN_REG_0_ STATO_REG_0_ [83]
+11 0
+.names [170] [169] [94] [84]
+111 0
+.names STATO_REG_1_ [63] [85]
+11 0
+.names STATO_REG_0_ [81] [86]
+11 0
+.names [154] [153] [152] [151] [87]
+1111 1
+.names [158] [157] [156] [155] [88]
+1111 1
+.names [162] [161] [160] [159] [89]
+1111 1
+.names [166] [165] [164] [163] [90]
+1111 1
+.names [82] [91]
+0 1
+.names [86] [92]
+0 1
+.names [85] [93]
+0 1
+.names [95] [82] [94]
+11 0
+.names [83] [95]
+0 1
+.names STATO_REG_1_ [64] [96]
+11 0
+.names [91] [31] [97]
+11 0
+.names [84] [98]
+0 1
+.names [32] D_IN_REG_8_ [99]
+11 0
+.names D_OUT_REG_7_ [98] [100]
+11 0
+.names [33] D_OUT_REG_7_ [101]
+11 0
+.names [32] D_IN_REG_7_ [102]
+11 0
+.names D_OUT_REG_6_ [98] [103]
+11 0
+.names D_OUT_REG_6_ [33] [104]
+11 0
+.names [32] D_IN_REG_6_ [105]
+11 0
+.names D_OUT_REG_5_ [98] [106]
+11 0
+.names D_OUT_REG_5_ [33] [107]
+11 0
+.names [32] D_IN_REG_5_ [108]
+11 0
+.names D_OUT_REG_4_ [98] [109]
+11 0
+.names D_OUT_REG_4_ [33] [110]
+11 0
+.names [32] D_IN_REG_4_ [111]
+11 0
+.names D_OUT_REG_3_ [98] [112]
+11 0
+.names D_OUT_REG_3_ [33] [113]
+11 0
+.names [32] D_IN_REG_3_ [114]
+11 0
+.names D_OUT_REG_2_ [98] [115]
+11 0
+.names D_OUT_REG_2_ [33] [116]
+11 0
+.names [32] D_IN_REG_2_ [117]
+11 0
+.names D_OUT_REG_1_ [98] [118]
+11 0
+.names D_OUT_REG_1_ [33] [119]
+11 0
+.names [32] D_IN_REG_1_ [120]
+11 0
+.names D_OUT_REG_0_ [98] [121]
+11 0
+.names STATO_REG_0_ [64] [122]
+11 0
+.names [85] [122] [123]
+11 0
+.names [95] D_IN_REG_8_ [124]
+11 0
+.names OLD_REG_7_ [123] [125]
+11 0
+.names [95] D_IN_REG_7_ [126]
+11 0
+.names OLD_REG_6_ [123] [127]
+11 0
+.names [95] D_IN_REG_6_ [128]
+11 0
+.names OLD_REG_5_ [123] [129]
+11 0
+.names [95] D_IN_REG_5_ [130]
+11 0
+.names OLD_REG_4_ [123] [131]
+11 0
+.names [95] D_IN_REG_4_ [132]
+11 0
+.names OLD_REG_3_ [123] [133]
+11 0
+.names [95] D_IN_REG_3_ [134]
+11 0
+.names OLD_REG_2_ [123] [135]
+11 0
+.names [95] D_IN_REG_2_ [136]
+11 0
+.names OLD_REG_1_ [123] [137]
+11 0
+.names [95] D_IN_REG_1_ [138]
+11 0
+.names OLD_REG_0_ [123] [139]
+11 0
+.names Y_REG D_IN_REG_0_ [140]
+00 0
+.names D_OUT_REG_0_ [64] [93] [141]
+111 0
+.names [92] [140] [142]
+11 0
+.names [31] [82] [143]
+11 0
+.names [86] [143] [144]
+11 0
+.names [31] [64] [145]
+11 0
+.names [34] [86] [146]
+11 0
+.names X [146] [147]
+11 0
+.names D_IN_REG_0_ [144] [148]
+11 0
+.names [92] [64] [149]
+11 0
+.names [34] [149] [150]
+11 0
+.names D_IN_REG_1_ [66] [151]
+11 0
+.names OLD_REG_0_ [65] [152]
+11 0
+.names D_IN_REG_2_ [68] [153]
+11 0
+.names OLD_REG_1_ [67] [154]
+11 0
+.names D_IN_REG_3_ [70] [155]
+11 0
+.names OLD_REG_2_ [69] [156]
+11 0
+.names D_IN_REG_4_ [72] [157]
+11 0
+.names OLD_REG_3_ [71] [158]
+11 0
+.names D_IN_REG_5_ [74] [159]
+11 0
+.names OLD_REG_4_ [73] [160]
+11 0
+.names D_IN_REG_6_ [76] [161]
+11 0
+.names OLD_REG_5_ [75] [162]
+11 0
+.names D_IN_REG_8_ [78] [163]
+11 0
+.names OLD_REG_7_ [77] [164]
+11 0
+.names D_IN_REG_7_ [80] [165]
+11 0
+.names OLD_REG_6_ [79] [166]
+11 0
+.names STATO_REG_0_ [64] [167]
+11 0
+.names [96] [63] [168]
+11 0
+.names D_IN_REG_0_ [81] [169]
+11 0
+.names D_IN_REG_0_ STATO_REG_0_ [170]
+00 0
+.end

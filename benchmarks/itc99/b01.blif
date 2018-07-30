@@ -1,0 +1,92 @@
+# Benchmark "itc/b01/b01" written by ABC on Fri Sep 15 12:16:28 2006
+.model itc/b01/b01
+.inputs LINE1 LINE2
+.outputs OUTP_REG OVERFLW_REG
+
+.latch OVERFLW_REG_in OVERFLW_REG  0
+.latch STATO_REG_2__in STATO_REG_2_  0
+.latch STATO_REG_1__in STATO_REG_1_  0
+.latch STATO_REG_0__in STATO_REG_0_  0
+.latch OUTP_REG_in   OUTP_REG  0
+
+.names STATO_REG_1_ [14] STATO_REG_0_ OVERFLW_REG_in
+111 1
+.names [44] [43] [42] [41] STATO_REG_0__in
+1111 0
+.names [33] [31] [32] STATO_REG_1__in
+111 0
+.names LINE2 LINE1 [13]
+00 0
+.names STATO_REG_2_ [14]
+0 1
+.names STATO_REG_1_ [15]
+0 1
+.names LINE2 [16]
+0 1
+.names LINE1 [17]
+0 1
+.names STATO_REG_0_ [18]
+0 1
+.names STATO_REG_1_ [18] [19]
+11 0
+.names [49] [48] OUTP_REG_in
+11 0
+.names [36] [35] STATO_REG_2__in
+11 0
+.names [46] [45] [22]
+11 0
+.names LINE1 LINE2 [23]
+11 0
+.names STATO_REG_2_ [19] [24]
+11 0
+.names [13] [25]
+0 1
+.names [25] [18] [26]
+11 0
+.names [23] [27]
+0 1
+.names [19] [28]
+0 1
+.names [23] [19] [29]
+11 0
+.names STATO_REG_2_ [23] [30]
+11 0
+.names STATO_REG_0_ [15] [23] [31]
+111 0
+.names [28] [30] [32]
+11 0
+.names [38] [37] STATO_REG_2_ [33]
+111 0
+.names [24] [34]
+0 1
+.names [29] [14] [35]
+11 0
+.names [26] [15] STATO_REG_2_ [36]
+111 0
+.names STATO_REG_1_ [25] [37]
+11 0
+.names [13] [18] [38]
+11 0
+.names STATO_REG_0_ [23] [39]
+11 0
+.names [27] [18] [40]
+11 0
+.names [40] [39] [15] [14] [41]
+1111 0
+.names [19] [13] STATO_REG_2_ [42]
+111 0
+.names OVERFLW_REG_in [23] [43]
+11 0
+.names [27] [28] [44]
+11 0
+.names LINE1 [16] [45]
+11 0
+.names LINE2 [17] [46]
+11 0
+.names [22] [47]
+0 1
+.names [34] [47] [48]
+11 0
+.names [22] [24] [49]
+11 0
+.end
