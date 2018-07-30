@@ -43,6 +43,7 @@ tags
 *.cnf
 *.ps
 *.th
+*.dimacs
 expProb/*
 expEC/*
 log/*

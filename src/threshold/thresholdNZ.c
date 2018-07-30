@@ -23,7 +23,7 @@ void func_EC_compareTH( Vec_Ptr_t * tList_1, Vec_Ptr_t * tList_2 )
 {
     char* fileName = "compTH.opb";
     FILE* oFile = fopen(fileName, "w");
-    printf("\tchecking Equalivance of current_TList and another_TList...\n");
+    printf("\tchecking Equalivance of cut_TList and current_TList...\n");
     printf("\tOutputFile: %s\n", fileName);
     fprintf(oFile, "min: -1*Z;\n");
     Vec_Ptr_t* thPO_1  = thre1_PB(oFile, tList_1);
@@ -336,7 +336,7 @@ void func_CNF_compareTH( Vec_Ptr_t * tList_1, Vec_Ptr_t * tList_2 )
 {
     char* fileName = "compTH.dimacs";
     FILE* oFile = fopen(fileName, "w");
-    printf("\tchecking Equalivance of current_TList and another_TList...\n");
+    printf("\tchecking Equalivance of cut_TList and current_TList...\n");
     printf("\tOutputFile: %s\n", fileName);
     fprintf(oFile, "c CNF file for th<->th equiv checking\n");
     Vec_Ptr_t* thPO_1  = thre1_CNF(oFile, tList_1);

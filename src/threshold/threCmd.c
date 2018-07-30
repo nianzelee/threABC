@@ -124,7 +124,11 @@ Abc_CommandReadThreshold( Abc_Frame_t * pAbc, int argc, char ** argv )
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
     pArgvNew = argv + globalUtilOptind;
     nArgcNew = argc - globalUtilOptind;
@@ -186,7 +190,11 @@ Abc_CommandWriteThreshold( Abc_Frame_t * pAbc,int argc, char ** argv )
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
     pArgvNew = argv + globalUtilOptind;
     nArgcNew = argc - globalUtilOptind;
@@ -235,7 +243,11 @@ Abc_CommandPrintThreshold( Abc_Frame_t * pAbc, int argc, char ** argv )
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
 
     if ( current_TList == NULL )
@@ -283,7 +295,11 @@ Abc_CommandAig2Th( Abc_Frame_t * pAbc, int argc, char ** argv )
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
 
     if ( pNtk == NULL )
@@ -417,9 +433,12 @@ Abc_CommandTh2Blif( Abc_Frame_t * pAbc, int argc, char ** argv )
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
-
     pArgvNew = argv + globalUtilOptind;
     nArgcNew = argc - globalUtilOptind;
     if ( nArgcNew != 1 ) {
@@ -428,7 +447,6 @@ Abc_CommandTh2Blif( Abc_Frame_t * pAbc, int argc, char ** argv )
     }
     // get the output file name
     FileName = pArgvNew[0];
-
     if ( !current_TList ) {
 		 fprintf( pErr , "Empty threshold network.\n" );
 		 return 1;
@@ -437,7 +455,6 @@ Abc_CommandTh2Blif( Abc_Frame_t * pAbc, int argc, char ** argv )
     Th_WriteBlif( current_TList , FileName );
 	 Abc_PrintTime( 1 , "blif gen time " , Abc_Clock()-clk );
 	 fprintf( pErr , "File %s is written.\n" , FileName );
-
     return 0;
 usage:
     fprintf( pErr, "usage:    th2blif [-h] <file>\n" );
@@ -547,7 +564,11 @@ int Abc_CommandPB_Threshold( Abc_Frame_t * pAbc, int argc, char ** argv )
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
     pArgvNew = argv + globalUtilOptind;
     nArgcNew = argc - globalUtilOptind;
@@ -625,7 +646,11 @@ Abc_CommandCNF_Threshold( Abc_Frame_t * pAbc, int argc, char ** argv )
     Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
     pArgvNew = argv + globalUtilOptind;
     nArgcNew = argc - globalUtilOptind;
@@ -689,9 +714,14 @@ Abc_CommandNZ( Abc_Frame_t * pAbc, int argc, char ** argv )
 {
     int c;
     abctime clk;
+    Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
     if ( !cut_TList ) {
         Abc_Print( -1, "cut_TList is empty!\n" );
@@ -717,9 +747,14 @@ Abc_CommandOAO( Abc_Frame_t * pAbc, int argc, char ** argv )
 {
     int c;
     abctime clk;
+    Extra_UtilGetoptReset();
     while ( ( c = Extra_UtilGetopt( argc, argv, "h" ) ) != EOF )
     {
-        goto usage;
+       switch(c)
+       {
+          case 'h':
+             goto usage;
+       }
     }
     if ( !cut_TList ) {
         Abc_Print( -1, "cut_TList is empty!\n" );
