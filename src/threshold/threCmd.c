@@ -790,6 +790,9 @@ usage:
 int 
 Abc_CommandTestTH( Abc_Frame_t * pAbc, int argc, char ** argv )
 {
+   current_TList = func_readFileOAO("sym_256.th");
+   cut_TList = func_readFileOAO("sym_256.th");
+   func_EC_compareTH( current_TList, cut_TList );
    return 0;
 }
 
