@@ -433,7 +433,8 @@ Vec_Ptr_t* thre1_CNF(FILE* oFile, Vec_Ptr_t* TList )
         
 
         // construst a sorted version of this THnode
-        tObj = slow_sortByWeights( tObj_unsort );
+        //tObj = slow_sortByWeights( tObj_unsort );
+        tObj = slow_sortByAbsWeights( tObj_unsort );
         Vec_StrClear(sCNF);
         //printf("--- ID = %d ---\n", tObj->Id);
         
@@ -523,7 +524,8 @@ Vec_Ptr_t* thre2_CNF(FILE* oFile, Vec_Ptr_t* TList )
         
 
         // construst a sorted version of this THnode
-        tObj = slow_sortByWeights( tObj_unsort );
+        //tObj = slow_sortByWeights( tObj_unsort );
+        tObj = slow_sortByAbsWeights( tObj_unsort );
         Vec_StrClear(sCNF);
         //printf("--- ID = %d ---\n", tObj->Id);
         

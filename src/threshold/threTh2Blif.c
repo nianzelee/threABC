@@ -40,6 +40,7 @@
 
 // extern functions
 extern Thre_S * slow_sortByWeights         ( Thre_S * );
+extern Thre_S * slow_sortByAbsWeights      ( Thre_S * );
 extern void     delete_sortedNode          ( Thre_S * );
 extern int      Thre_LocalMax              (Thre_S * , int );
 extern int      Thre_LocalMin              (Thre_S * , int );
@@ -168,7 +169,8 @@ Th_WriteBlifOneName( FILE * out , Thre_S * tObj )
 	int Entry , i;
 
 	Sop      = Vec_StrAlloc( 10 );
-   tObjSort = slow_sortByWeights( tObj );
+   //tObjSort = slow_sortByWeights( tObj );
+   tObjSort = slow_sortByAbsWeights( tObj );
 
 	fprintf( out , ".names" );
    Vec_IntForEachEntry( tObjSort->Fanins , Entry , i ) fprintf( out , " %d" , Entry );

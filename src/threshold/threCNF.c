@@ -1,5 +1,6 @@
-#include "base/abc/abc.h"
 #include <stdio.h>
+#include <math.h>
+#include "base/abc/abc.h"
 #include "threshold.h"
 
 extern void func_EC_writeCNF(Abc_Ntk_t*, Vec_Ptr_t*, char*);
@@ -260,8 +261,37 @@ Thre_S* slow_sortByWeights( Thre_S* tObj )
             }
         }
     }
+    return newNode;
+}
 
-
+Thre_S* slow_sortByAbsWeights( Thre_S* tObj )
+{
+    Thre_S* newNode = ABC_ALLOC( Thre_S, 1 );
+    newNode-> Fanouts = NULL;
+    newNode-> Fanins  = Vec_IntDup(tObj->Fanins);
+    newNode-> weights = Vec_IntDup(tObj->weights); 
+    newNode-> Id      = tObj->Id;
+    newNode-> Type    = tObj->Type;
+    newNode-> thre    = tObj->thre;
+    
+    // newNode: bubble sort by weights
+    int i, j;
+    int size = Vec_IntSize(newNode->Fanins);
+    for( i = 0; i < size -1; ++i) {
+        for( j = i+1; j < size; ++j ){
+            Vec_Int_t * w = newNode->weights;
+            Vec_Int_t * f = newNode->Fanins;
+            if( abs(Vec_IntEntry(w, i)) < abs(Vec_IntEntry(w, j)) ){
+                // swap ( w[i], w[j] ) and ( f[i], f[j] )
+                int tmpW = Vec_IntEntry( w, i );
+                Vec_IntWriteEntry(w, i, Vec_IntEntry(w, j));
+                Vec_IntWriteEntry(w, j, tmpW);
+                int tmpF = Vec_IntEntry( f, i );
+                Vec_IntWriteEntry(f, i, Vec_IntEntry(f, j));
+                Vec_IntWriteEntry(f, j, tmpF);
+            }
+        }
+    }
     return newNode;
 }
 
