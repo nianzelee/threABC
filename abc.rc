@@ -165,6 +165,7 @@ alias t2m "th2mux"
 ## Verification commands
 alias pb  "PB_th"
 alias cnf "CNF_th"
+alias tvr "thverify"
 ## misc commands
 alias tt  "test_th"
 alias ft  "profile_th"

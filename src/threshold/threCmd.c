@@ -41,6 +41,7 @@ static int Abc_CommandTh2Blif          ( Abc_Frame_t * pAbc, int argc, char ** a
 // Verification commands
 static int Abc_CommandPB_Threshold     ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandCNF_Threshold    ( Abc_Frame_t * pAbc, int argc, char ** argv );
+static int Abc_CommandThVerify         ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandNZ               ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandOAO              ( Abc_Frame_t * pAbc, int argc, char ** argv );
 // misc commands
@@ -87,6 +88,7 @@ Threshold_Init( Abc_Frame_t *pAbc)
     Cmd_CommandAdd( pAbc, "z Alcom", "th2mux"      , Abc_CommandTh2Mux,         1 );
     Cmd_CommandAdd( pAbc, "z Alcom", "PB_th"       , Abc_CommandPB_Threshold,   0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "CNF_th"      , Abc_CommandCNF_Threshold,  0 );
+    Cmd_CommandAdd( pAbc, "z Alcom", "thverify"    , Abc_CommandThVerify,       0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "NZ"          , Abc_CommandNZ,             1 );
     Cmd_CommandAdd( pAbc, "z Alcom", "OAO"         , Abc_CommandOAO,            0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "test_th"     , Abc_CommandTestTH,         1 );
@@ -96,9 +98,9 @@ Threshold_Init( Abc_Frame_t *pAbc)
 void 
 Threshold_End( Abc_Frame_t *pAbc )
 {
-	if ( current_TList ) DeleteTList( current_TList );
-	if ( another_TList ) DeleteTList( another_TList );
-	if ( cut_TList )     DeleteTList( cut_TList );
+	if ( current_TList ) { DeleteTList( current_TList ); current_TList = NULL; }
+	if ( another_TList ) { DeleteTList( another_TList ); another_TList = NULL; }
+	if ( cut_TList )     { DeleteTList( cut_TList ); cut_TList = NULL; }
 }
 
 /**Function*************************************************************
@@ -694,6 +696,77 @@ usage:
     fprintf( pErr, "usage:  CNF_th [-h] <fileName>\n" );
     fprintf( pErr, "\t       given strashNtk and thresholdNtk, print out CNF for minisat to solve EC.\n");
     fprintf( pErr, "\t-h    : print the command usage\n");
+    return 1;
+}
+
+/**Function*************************************************************
+
+  Synopsis    [Threshold logic verification.]
+
+  Description [Generate a CNF/PB formula for eq checking for 2 TH ntks.]
+               
+  SideEffects []
+
+  SeeAlso     []
+
+***********************************************************************/
+
+int 
+Abc_CommandThVerify( Abc_Frame_t * pAbc, int argc, char ** argv )
+{
+   char ** pArgvNew;
+   int nArgcNew, fVer, c;
+   fVer = 0;
+   Extra_UtilGetoptReset();
+   while ( ( c = Extra_UtilGetopt( argc , argv , "Vh" ) ) != EOF )
+   {
+       switch ( c )
+       {
+       case 'V':
+          if ( globalUtilOptind >= argc ) {
+              Abc_Print( -1 , "Command line switch \"-V\" should be followed by a positive integer.\n" );
+              goto usage;
+          }
+          fVer = atoi( argv[globalUtilOptind] );
+          globalUtilOptind++;
+          if ( fVer < 0 || fVer > 2 ) goto usage;
+          break;
+       case 'h':
+       default:
+           goto usage;
+       }
+   }
+   pArgvNew = argv + globalUtilOptind;
+   nArgcNew = argc - globalUtilOptind;
+   if ( nArgcNew != 2 ) {
+      Abc_Print( -1, "Extra/missing files are given: expected %d, received %d!\n" , 2 , nArgcNew );
+      goto usage;
+   }
+   if ( current_TList ) {
+      Abc_Print( 0, "Original current_TList destroyed.\n" );
+	   DeleteTList( current_TList ); 
+      current_TList = NULL;
+   }
+   current_TList = func_readFileOAO( pArgvNew[0] );
+   if ( !current_TList ) goto usage;
+   if ( cut_TList ) {
+      Abc_Print( 0, "Original cut_TList destroyed.\n" );
+	   DeleteTList( cut_TList ); 
+      cut_TList = NULL;
+   }
+   cut_TList = func_readFileOAO( pArgvNew[1] );
+   if ( !cut_TList ) { DeleteTList(current_TList); goto usage; }
+   if ( fVer == 0 ) func_EC_compareTH( current_TList, cut_TList );
+   else if ( fVer == 1 ) func_CNF_compareTH( current_TList, cut_TList );
+   else assert(0);
+   return 0;
+usage:
+    Abc_Print( -2, "usage:  thverify [-V <num>] [-h] <file1> <file2>\n" );
+    Abc_Print( -2, "\t          eq check between file1 and file2 PB/CNF (output file name: compTH.opb/dimacs)\n");
+    Abc_Print( -2, "\t-V <num> :toggling verification methods (0: PB; 1: CNF), default = %d\n", fVer );
+    Abc_Print( -2, "\t<file1>  :the first TH file to be verified\n");
+    Abc_Print( -2, "\t<file2>  :the second TH file to be verified\n");
+    Abc_Print( -2, "\t-h       :print the command usage\n");
     return 1;
 }
 
