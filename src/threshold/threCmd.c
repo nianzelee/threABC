@@ -208,7 +208,7 @@ Abc_CommandWriteThreshold( Abc_Frame_t * pAbc,int argc, char ** argv )
 
     // get the input file name
     FileName = pArgvNew[0];
-    if ( !current_TList) {
+    if ( !current_TList ) {
        printf("[Error] current threshold gateList is empty!!\n");
        return 1;
     }
@@ -863,10 +863,8 @@ usage:
 int 
 Abc_CommandTestTH( Abc_Frame_t * pAbc, int argc, char ** argv )
 {
-   current_TList = func_readFileOAO("sym_16.th");
-   cut_TList = func_readFileOAO("sym_16.th");
-   //func_EC_compareTH( current_TList, cut_TList );
-   func_CNF_compareTH( current_TList, cut_TList );
+   dumpTh2FileNZ( cut_TList , "compTH_1.th" );
+   dumpTh2FileNZ( current_TList , "compTH_2.th" );
    return 0;
 }
 
