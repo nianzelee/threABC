@@ -91,7 +91,7 @@ struct Th_Stat_
 ////////////////////////////////////////////////////////////////////////
 
 Vec_Ptr_t * current_TList;
-Vec_Ptr_t * another_TList;
+//Vec_Ptr_t * another_TList;
 Vec_Ptr_t * cut_TList;
 int         globalRef; // for iterative collapse
 Th_Stat     thProfiler;

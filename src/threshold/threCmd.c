@@ -70,7 +70,7 @@ Th_GlobalInit()
 {
 	 globalRef = 0;
     current_TList = NULL;
-    another_TList = NULL;
+    //another_TList = NULL;
     cut_TList     = NULL;
 	 Th_ProfileInit();
 }
@@ -99,7 +99,7 @@ void
 Threshold_End( Abc_Frame_t *pAbc )
 {
 	if ( current_TList ) { DeleteTList( current_TList ); current_TList = NULL; }
-	if ( another_TList ) { DeleteTList( another_TList ); another_TList = NULL; }
+	//if ( another_TList ) { DeleteTList( another_TList ); another_TList = NULL; }
 	if ( cut_TList )     { DeleteTList( cut_TList ); cut_TList = NULL; }
 }
 
@@ -142,8 +142,7 @@ Abc_CommandReadThreshold( Abc_Frame_t * pAbc, int argc, char ** argv )
 
     // get the input file name
     FileName = pArgvNew[0];
-    if ( (pFile = fopen( FileName, "r" )) == NULL )
-    {
+    if ( (pFile = fopen( FileName, "r" )) == NULL ) {
         Abc_Print( -1, "Cannot open input file \"%s\". ", FileName );
         if ( (FileName = Extra_FileGetSimilarName( FileName, ".blif", NULL, NULL, NULL, NULL )) )
             Abc_Print( 1, "Did you mean \"%s\"?", FileName );
@@ -151,14 +150,14 @@ Abc_CommandReadThreshold( Abc_Frame_t * pAbc, int argc, char ** argv )
         return 1;
     }
     fclose( pFile );
-    if (current_TList != NULL){
-       // DeleteTList(current_TList);
-        if (another_TList != NULL)
-            DeleteTList(another_TList);
-        another_TList = func_readFileOAO(FileName);
+    if (current_TList != NULL) {
+       DeleteTList(current_TList);
+       current_TList = NULL;
+       Abc_Print( 0, "Original current_TList destroyed.\n" );
+       //if (another_TList != NULL) DeleteTList(another_TList);
+       //another_TList = func_readFileOAO(FileName);
     }
-    else
-        current_TList = func_readFileOAO(FileName);
+    current_TList = func_readFileOAO(FileName);
     return 0;
 
 usage:
@@ -328,7 +327,7 @@ Abc_CommandAig2Th( Abc_Frame_t * pAbc, int argc, char ** argv )
         pNtk = pNtkRes;
     }
     if ( current_TList ) {
-		 fprintf( pErr , "\tOriginal TList destroyed...\n" );
+		 fprintf( pErr , "\tOriginal current_TList destroyed.\n" );
 		 DeleteTList( current_TList );
 	 }
     current_TList = aig2Th( pNtk );
@@ -762,7 +761,7 @@ Abc_CommandThVerify( Abc_Frame_t * pAbc, int argc, char ** argv )
    return 0;
 usage:
     Abc_Print( -2, "usage:  thverify [-V <num>] [-h] <file1> <file2>\n" );
-    Abc_Print( -2, "\t          eq check between file1 and file2 PB/CNF (output file name: compTH.opb/dimacs)\n");
+    Abc_Print( -2, "\t          eq check between file1 and file2 via PB/CNF (output file name: compTH.opb/dimacs)\n");
     Abc_Print( -2, "\t-V <num> :toggling verification methods (0: PB; 1: CNF), default = %d\n", fVer );
     Abc_Print( -2, "\t<file1>  :the first TH file to be verified\n");
     Abc_Print( -2, "\t<file2>  :the second TH file to be verified\n");
