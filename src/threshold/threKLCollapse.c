@@ -110,29 +110,14 @@ Th_DumpObj( const Thre_S * tObj )
 	int Entry , i;
 
 	printf( "\tDump object %d... \n" , tObj->Id );
-	
 	printf( "\tDump fanouts...\n" );
-
-	Vec_IntForEachEntry( tObj->Fanouts , Entry , i )
-	{
-		printf( "%d " , Entry );
-	}
-	
+	Vec_IntForEachEntry( tObj->Fanouts , Entry , i ) printf( "%d " , Entry );
 	printf( "\n\tDump fanins...\n" );
-
-	Vec_IntForEachEntry( tObj->Fanins , Entry , i )
-	{
-		printf( "%d " , Entry );
-	}
-	
+	Vec_IntForEachEntry( tObj->Fanins , Entry , i ) printf( "%d " , Entry );
 	printf( "\n\tDump weights and threshold...\n" );
-	
-	Vec_IntForEachEntry( tObj->weights , Entry , i )
-	{
-		printf( "%d " , Entry );
-	}
+	Vec_IntForEachEntry( tObj->weights , Entry , i ) printf( "%d " , Entry );
 	printf( "%d\n" , tObj->thre );
-	
+   fflush(stdout);
 }
 
 /**Function*************************************************************
@@ -280,11 +265,16 @@ Th_CopyObj( const Thre_S * tObj )
 	tObjCopy->nId        = tObj->nId;
 	tObjCopy->cost       = tObj->cost;
 	tObjCopy->level      = tObj->level;
-	tObjCopy->pName      = tObj->pName;
-	tObjCopy->weights    = Vec_IntAlloc(16);
+	// copy pName (type: char*)
+   tObjCopy->pName = NULL;
+   if ( tObj->pName && strlen(tObj->pName) ) {
+      tObjCopy->pName = malloc(strlen(tObj->pName) + 1);
+      strcpy(tObjCopy->pName, tObj->pName);
+   }
+	// copy weights, fanins, and fanouts
+   tObjCopy->weights    = Vec_IntAlloc(16);
 	tObjCopy->Fanins     = Vec_IntAlloc(16);
 	tObjCopy->Fanouts    = Vec_IntAlloc(16);
-	
 	Vec_IntForEachEntry( tObj->weights , Entry , i )
 	{
 		Vec_IntPush( tObjCopy->weights , Entry );
@@ -308,9 +298,7 @@ Th_InvertObj( const Thre_S * tObj )
    
 	// invert weights
 	Vec_IntForEachEntry( tObjInvert->weights , Entry , i )
-	{
 		Vec_IntWriteEntry( tObjInvert->weights , i , -Entry );
-	}
 	// invert threshold
 	tObjInvert->thre = 1 - tObjInvert->thre;
    return tObjInvert;
@@ -323,9 +311,7 @@ MaxF(Vec_Int_t * weights , int nFanin )
 	sum = 0;
 
    Vec_IntForEachEntry( weights , Entry , i )
-	{
       if ( i != nFanin && Entry > 0 ) sum += Entry;
-	}
 	return sum;
 }
 
@@ -336,9 +322,7 @@ MinF(Vec_Int_t * weights , int nFanin )
 	sum = 0;
 
    Vec_IntForEachEntry( weights , Entry , i )
-	{
       if ( i != nFanin && Entry < 0 ) sum += Entry;
-	}
 	return sum;
 }
 
