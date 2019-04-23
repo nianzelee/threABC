@@ -44,3 +44,4 @@ log/*
 *.bench
 *.th
 benchmarks/*
+bin/*
