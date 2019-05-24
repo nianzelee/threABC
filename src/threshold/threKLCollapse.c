@@ -608,8 +608,8 @@ Th_CollapsePair( const Thre_S * tObj1 , const Thre_S * tObj2 , int nFanin )
 		w           *= -1;
       fInvert      = 1;
 	}
-	pair = Th_CalKLIf( tObj1 , tObj2 , nFanin , w , fInvert );
-	//pair = Th_CalKLDP( tObj1 , tObj2 , nFanin , w , fInvert );
+	//pair = Th_CalKLIf( tObj1 , tObj2 , nFanin , w , fInvert );
+	pair = Th_CalKLDP( tObj1 , tObj2 , nFanin , w , fInvert );
    
 	assert( pair->IntK > 0 && pair->IntL > 0 );
 	tObjMerge = Th_KLCollapse( tObj1 , tObj2 , pair , w , fInvert );
