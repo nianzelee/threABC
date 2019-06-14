@@ -39,8 +39,6 @@
 ///                        DECLARATIONS                              ///
 ////////////////////////////////////////////////////////////////////////
 
-// extern functions
-
 // main function
 void Th_PBPGEncoding(Vec_Ptr_t*, int);
 // helper functions
@@ -93,11 +91,15 @@ Th_PGEncoding_rec(FILE *out, Vec_Ptr_t *current_TList, Thre_S *tObj, int phase)
    int Entry, i, w;
 
    if (tObj->Type == Th_Pi) return;
+   if (tObj->Type == Th_CONST1) {
+      Abc_Print(-2, "CONST1 appears in the network!\n");
+      assert(0);
+   }
    if (phase == 1 && tObj->pos == 1) return;
    if (phase == 0 && tObj->neg == 1) return;
 
    Th_PGWriteNode(out, tObj, phase);
-	Vec_IntForEachEntry( tObj->Fanins , Entry , i )
+	Vec_IntForEachEntry(tObj->Fanins, Entry, i )
 	{
       w = Vec_IntEntry(tObj->weights, i);
       tObjFin = Th_GetObjById(current_TList, Entry);
