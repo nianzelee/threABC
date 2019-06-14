@@ -73,7 +73,7 @@ Th_PBPGEncoding(Vec_Ptr_t * current_TList, int fPG)
    {
       if (tObj->Type == Th_Po) {
          tObjPo = tObj;
-         fprintf(out, "min: -1*x%d;\n", tObj->Id);
+         fprintf(out, "min: -1*x_%d;\n", tObj->Id);
          break;
       }
    }
