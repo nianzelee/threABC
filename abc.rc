@@ -174,6 +174,8 @@ alias mpt "mt; pt"
 # For debug
 alias qq  "rt c17.th; thpg"
 alias zz  "rt c17.th; thpg -p"
+alias aa  "comb; fraig; andpos; dsat; a2t; mt; thpg; thpg -p"
+alias oo  "comb; fraig; orpos; dsat; a2t; mt; thpg; thpg -p"
 
 # For experiment
 alias thexp  "st; ps; synthio; pt; mt -B 100; pt"
