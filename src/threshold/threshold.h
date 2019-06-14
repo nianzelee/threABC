@@ -57,6 +57,9 @@ struct Thre_S_
    int         nId;
 	int         cost;
 	int         level;
+   // for PG encoding
+   int         pos;
+   int         neg;
    char      * pName;
    Vec_Int_t * weights;
    Vec_Int_t * Fanins;
@@ -187,6 +190,10 @@ extern void       Th_WriteBlif           ( Vec_Ptr_t * thre_list , const char * 
 //===threTh2Mux.c====================================//
 
 extern Abc_Ntk_t* Th_Ntk2Mux             ( Vec_Ptr_t * , int , int );
+
+//===threThPG.c====================================//
+
+extern void Th_PBPGEncoding              ( Vec_Ptr_t * , int );
 
 #endif
 

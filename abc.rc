@@ -172,10 +172,8 @@ alias ft  "profile_th"
 alias mpt "mt; pt"
 
 # For debug
-alias qq  "rt c432_2.th; mt"
-alias gg  "r b21.blif; a2t; mt; pt"
-alias zz  "r s13207.blif; a2t; mt; pt; q"
-alias QAQ "rt before.th; OAO;"
+alias qq  "rt c17.th; thpg"
+alias zz  "rt c17.th; thpg -p"
 
 # For experiment
 alias thexp  "st; ps; synthio; pt; mt -B 100; pt"

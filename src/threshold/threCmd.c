@@ -42,6 +42,7 @@ static int Abc_CommandTh2Blif          ( Abc_Frame_t * pAbc, int argc, char ** a
 static int Abc_CommandPB_Threshold     ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandCNF_Threshold    ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandThVerify         ( Abc_Frame_t * pAbc, int argc, char ** argv );
+static int Abc_CommandThPGEncode       ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandNZ               ( Abc_Frame_t * pAbc, int argc, char ** argv );
 static int Abc_CommandOAO              ( Abc_Frame_t * pAbc, int argc, char ** argv );
 // misc commands
@@ -89,6 +90,7 @@ Threshold_Init( Abc_Frame_t *pAbc)
     Cmd_CommandAdd( pAbc, "z Alcom", "PB_th"       , Abc_CommandPB_Threshold,   0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "CNF_th"      , Abc_CommandCNF_Threshold,  0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "thverify"    , Abc_CommandThVerify,       0 );
+    Cmd_CommandAdd( pAbc, "z Alcom", "thpg"        , Abc_CommandThPGEncode,     0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "NZ"          , Abc_CommandNZ,             1 );
     Cmd_CommandAdd( pAbc, "z Alcom", "OAO"         , Abc_CommandOAO,            0 );
     Cmd_CommandAdd( pAbc, "z Alcom", "test_th"     , Abc_CommandTestTH,         1 );
@@ -765,6 +767,53 @@ usage:
     Abc_Print( -2, "\t-V <num> :toggling verification methods (0: PB; 1: CNF), default = %d\n", fVer );
     Abc_Print( -2, "\t<file1>  :the first TH file to be verified\n");
     Abc_Print( -2, "\t<file2>  :the second TH file to be verified\n");
+    Abc_Print( -2, "\t-h       :print the command usage\n");
+    return 1;
+}
+
+/**Function*************************************************************
+
+  Synopsis    [Threshold logic verification.]
+
+  Description [Generate a PB formula with/without PG encoding.]
+               
+  SideEffects []
+
+  SeeAlso     []
+
+***********************************************************************/
+
+int 
+Abc_CommandThPGEncode( Abc_Frame_t * pAbc, int argc, char ** argv )
+{
+   char ** pArgvNew;
+   int nArgcNew, fPG, c;
+   fPG = 0;
+   Extra_UtilGetoptReset();
+   while ( ( c = Extra_UtilGetopt( argc , argv , "ph" ) ) != EOF )
+   {
+       switch ( c )
+       {
+       case 'p':
+          fPG ^= 1;
+          break;
+       case 'h':
+       default:
+           goto usage;
+       }
+   }
+   pArgvNew = argv + globalUtilOptind;
+   nArgcNew = argc - globalUtilOptind;
+   if ( !current_TList ) {
+      Abc_Print(-1, "current_TList is empty!\n");
+      goto usage;
+   }
+   Th_PBPGEncoding(current_TList, fPG);
+   return 0;
+usage:
+    Abc_Print( -2, "usage:  thpg [-ph]\n" );
+    Abc_Print( -2, "\t          generate a PB formula with/without PG encoding (output file name: pg.opb/no_pg.opb)\n");
+    Abc_Print( -2, "\t-p       :toggling using PG encoding [default = %s]\n" , fPG ? "yes" : "no" );
     Abc_Print( -2, "\t-h       :print the command usage\n");
     return 1;
 }

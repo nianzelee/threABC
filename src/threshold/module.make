@@ -12,4 +12,5 @@ SRC += src/threshold/threCmd.c \
 	 src/threshold/threMultiFout.c \
 	 src/threshold/threKLCollapse.c \
 	 src/threshold/threTh2Blif.c \
-	 src/threshold/threTh2Mux.c
+	 src/threshold/threTh2Mux.c \
+	 src/threshold/threThPG.c
