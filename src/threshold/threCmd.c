@@ -515,7 +515,7 @@ Abc_CommandTh2Mux( Abc_Frame_t * pAbc, int argc, char ** argv )
 		 fprintf( pErr , "Empty threshold network.\n" );
 		 return 1;
 	 }
-
+    Th_NtkDfs();
 	 clk     = Abc_Clock();
     pNtkRes = Th_Ntk2Mux( current_TList , fDynamic , fAhead );
     if ( !pNtkRes ) {
