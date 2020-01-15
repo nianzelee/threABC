@@ -391,10 +391,13 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
         return 1;
 	 }
 	 clk = Abc_Clock();
-	 if ( fOutBound == -1 ) Th_CollapseNtk( current_TList , fIterative , fOutBound );
+	 if ( fOutBound == -1 ) 
+       //Th_CollapseNtk( current_TList , fIterative , fOutBound );
+       Th_CollapseNtk_new( current_TList , fIterative , fOutBound );
 	 else {
 	    for ( i = 1 ; i <= fOutBound ; ++i )
-	       Th_CollapseNtk( current_TList , fIterative , i );
+	       //Th_CollapseNtk( current_TList , fIterative , i );
+	       Th_CollapseNtk_new( current_TList , fIterative , i );
 	 }
     // sort current_TList and clean up NULL objects
     Th_NtkDfs();

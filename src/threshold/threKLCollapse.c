@@ -632,6 +632,51 @@ Th_CollapsePair( const Thre_S * tObj1 , const Thre_S * tObj2 , int nFanin )
 ***********************************************************************/
 
 void
+Th_CollapseNtk_new( Vec_Ptr_t * TList , int fIterative , int fOutBound )
+{
+   Thre_S * tObj;
+	int i , sizeBeforeIter , sizeBeforeCollapse;
+   do {
+	   Th_UnmarkAllNode();
+      sizeBeforeIter = Vec_PtrSize( TList );
+      while ( 1 ) {
+         sizeBeforeCollapse = Vec_PtrSize( TList );
+         Vec_PtrForEachEntry( Thre_S* , TList , tObj , i ) 
+			{
+            if ( !tObj )                    continue; // NULL  node
+            if ( tObj->Type != Th_Node )    continue; // PI/PO/CONST
+            if ( tObj->nId == globalRef )   continue; // black node : those who have nId = 1
+			   if ( !Th_ObjNormalCheck(tObj) ) continue; // Abnormal node : const or 0-weight, collect and clean
+	         if ( Th_CheckMultiFoutCollapse( tObj , fOutBound ) ) {
+               Th_CalKLCollapse( tObj );
+               Th_DeleteClpObj_new( tObj );
+            }
+            else
+               tObj->nId = globalRef;
+         } 
+         if ( sizeBeforeCollapse == Vec_PtrSize(TList) ) break;
+      }
+	} while ( fIterative && Vec_PtrSize( TList ) > sizeBeforeIter );
+}
+
+void
+Th_DeleteClpObj_new( Thre_S * tObj )
+{
+	// delete tObj and all its fanouts
+	Thre_S * tObjFout;
+	int Entry , i;
+
+	assert( tObj );
+	Vec_IntForEachEntry( tObj->Fanouts , Entry , i )
+	{
+      tObjFout = Th_GetObjById( current_TList , Entry );
+		assert( tObjFout && tObjFout->Type == Th_Node );
+		Th_DeleteNode( tObjFout );
+	}
+   Th_DeleteNode( tObj );
+}
+
+void
 Th_CollapseNtk( Vec_Ptr_t * TList , int fIterative , int fOutBound )
 {
    Thre_S * tObj;
