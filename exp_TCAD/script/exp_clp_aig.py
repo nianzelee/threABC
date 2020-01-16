@@ -8,6 +8,7 @@ Date        [16.01.2020]
 *******************************************************************'''
 
 import os
+import glob
 import argparse
 import subprocess as sp
 parser = argparse.ArgumentParser( description = "Parsing collapsing AIG circuits experimental settings ..." )
@@ -20,10 +21,9 @@ syn  = "aig_syn; mt" + opt1 + opt2 + "; pt; q"
 suf1 = "_i" if args.ite else ""
 suf2 = "_t" if args.tcad else ""
 suf  = suf1 + suf2
-#cur_path = os.getcwd()
-benchmarks = ["b14"]
-for name in benchmarks:
-   log = ("exp_TCAD/log/%s_aig%s.log" % (name, suf))
-   tcl = "r exp_TCAD/benchmark/" + name + ".blif; " + syn
-   cmd = "bin/abc -c \"" + tcl + "\" &> " + log
+for bch in glob.glob("exp_TCAD/iscas_itc/*.blif"):
+   name = os.path.basename(bch)
+   log  = ("exp_TCAD/log/%s_aig%s.log" % (name, suf))
+   tcl  = "r " + bch + "; " + syn
+   cmd  = "bin/abc -c \"" + tcl + "\" &> " + log
    sp.run(cmd, shell=True)
