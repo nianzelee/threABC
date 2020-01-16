@@ -632,7 +632,7 @@ Th_CollapsePair( const Thre_S * tObj1 , const Thre_S * tObj2 , int nFanin )
 ***********************************************************************/
 
 void
-Th_CollapseNtk_new( Vec_Ptr_t * TList , int fIterative , int fOutBound )
+Th_CollapseNtk_tcad( Vec_Ptr_t * TList , int fIterative , int fOutBound )
 {
    Thre_S * tObj;
 	int i , sizeBeforeIter , sizeBeforeCollapse;
@@ -649,7 +649,7 @@ Th_CollapseNtk_new( Vec_Ptr_t * TList , int fIterative , int fOutBound )
 			   if ( !Th_ObjNormalCheck(tObj) ) continue; // Abnormal node : const or 0-weight, collect and clean
 	         if ( Th_CheckMultiFoutCollapse( tObj , fOutBound ) ) {
                Th_CalKLCollapse( tObj );
-               Th_DeleteClpObj_new( tObj );
+               Th_DeleteClpObj_tcad( tObj );
             }
             else
                tObj->nId = globalRef;
@@ -660,7 +660,7 @@ Th_CollapseNtk_new( Vec_Ptr_t * TList , int fIterative , int fOutBound )
 }
 
 void
-Th_DeleteClpObj_new( Thre_S * tObj )
+Th_DeleteClpObj_tcad( Thre_S * tObj )
 {
 	// delete tObj and all its fanouts
 	Thre_S * tObjFout;
@@ -682,8 +682,8 @@ Th_CollapseNtk( Vec_Ptr_t * TList , int fIterative , int fOutBound )
    Thre_S * tObj;
 	int i , j , FinId , sizeBeforeIter , sizeBeforeCollapse;
 	
-	//printf( "Th_CollapseNtk() : fIterative = %d\n" , fIterative );
-	//printf( "Th_CollapseNtk() : fOutBound  = %d\n" , fOutBound  );
+	printf( "Th_CollapseNtk() : fIterative = %d\n" , fIterative );
+	printf( "Th_CollapseNtk() : fOutBound  = %d\n" , fOutBound  );
    do {
 	   Th_UnmarkAllNode();
       sizeBeforeIter = Vec_PtrSize( TList );

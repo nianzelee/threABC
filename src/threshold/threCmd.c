@@ -360,13 +360,14 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
 {
     FILE * pErr;
 	 int fIterative;
-    int c , i , fOutBound;
+    int c, i, fOutBound, fTCAD;
 	 abctime clk;
     pErr = Abc_FrameReadErr(pAbc);
 	 fIterative = 0;
 	 fOutBound  = -1;
+    fTCAD      = 0;
     Extra_UtilGetoptReset();
-    while ( ( c = Extra_UtilGetopt( argc, argv, "Bih" ) ) != EOF )
+    while ( ( c = Extra_UtilGetopt( argc, argv, "Bith" ) ) != EOF )
     {
        switch ( c )
 		 {
@@ -382,6 +383,9 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
 		    case 'i':
 			    fIterative ^= 1;
 			    break;
+		    case 't':
+			    fTCAD ^= 1;
+			    break;
 		    default:
              goto usage;
 		 }
@@ -391,13 +395,14 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
         return 1;
 	 }
 	 clk = Abc_Clock();
-	 if ( fOutBound == -1 ) 
-       //Th_CollapseNtk( current_TList , fIterative , fOutBound );
-       Th_CollapseNtk_new( current_TList , fIterative , fOutBound );
+	 if ( fOutBound == -1 ) {
+       fTCAD ? Th_CollapseNtk_tcad( current_TList , fIterative , fOutBound ):
+               Th_CollapseNtk( current_TList , fIterative , fOutBound );
+    }
 	 else {
 	    for ( i = 1 ; i <= fOutBound ; ++i )
-	       //Th_CollapseNtk( current_TList , fIterative , i );
-	       Th_CollapseNtk_new( current_TList , fIterative , i );
+          fTCAD ? Th_CollapseNtk_tcad( current_TList , fIterative , fOutBound ):
+                  Th_CollapseNtk( current_TList , fIterative , fOutBound );
 	 }
     // sort current_TList and clean up NULL objects
     Th_NtkDfs();
@@ -406,8 +411,9 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
 usage:
     fprintf( pErr, "usage:    merge_th [-B <num>] [-ih]\n" );
     fprintf( pErr, "\t        merging process for TList.\n");
-    fprintf( pErr, "\t-B num   : collapse from single fanout to num fanout\n");
-    fprintf( pErr, "\t-i       : toggle iterative collapse\n");
+    fprintf( pErr, "\t-B num   : collapse from single fanout to num fanout [default=%d]\n", fOutBound);
+    fprintf( pErr, "\t-i       : toggle iterative collapse [default=%d]\n", fIterative);
+    fprintf( pErr, "\t-t       : collapse to fanouts (suggested by TCAD reviewer) [default=%d]\n", fTCAD);
     fprintf( pErr, "\t-h       : print the command usage\n");
 	 return 1;
 }

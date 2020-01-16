@@ -181,7 +181,7 @@ extern void       func_CNF_compareTH    ( Vec_Ptr_t * , Vec_Ptr_t * );
 //===threKLCollapse.c================================//
 
 extern void       Th_CollapseNtk         ( Vec_Ptr_t * , int , int );
-extern void       Th_CollapseNtk_new     ( Vec_Ptr_t * , int , int );
+extern void       Th_CollapseNtk_tcad    ( Vec_Ptr_t * , int , int );
 extern void       Th_NtkDfs              ();
 
 //===threTh2Blif.c===================================//
