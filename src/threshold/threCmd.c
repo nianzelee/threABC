@@ -400,9 +400,10 @@ Abc_CommandMerge( Abc_Frame_t * pAbc, int argc, char ** argv )
                Th_CollapseNtk( current_TList , fIterative , fOutBound );
     }
 	 else {
-	    for ( i = 1 ; i <= fOutBound ; ++i )
-          fTCAD ? Th_CollapseNtk_tcad( current_TList , fIterative , fOutBound ):
-                  Th_CollapseNtk( current_TList , fIterative , fOutBound );
+	    for ( i = 1 ; i <= fOutBound ; ++i ) {
+          fTCAD ? Th_CollapseNtk_tcad( current_TList , fIterative , i ):
+                  Th_CollapseNtk( current_TList , fIterative , i );
+       }
 	 }
     // sort current_TList and clean up NULL objects
     Th_NtkDfs();

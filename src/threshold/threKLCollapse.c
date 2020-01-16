@@ -682,8 +682,8 @@ Th_CollapseNtk( Vec_Ptr_t * TList , int fIterative , int fOutBound )
    Thre_S * tObj;
 	int i , j , FinId , sizeBeforeIter , sizeBeforeCollapse;
 	
-	printf( "Th_CollapseNtk() : fIterative = %d\n" , fIterative );
-	printf( "Th_CollapseNtk() : fOutBound  = %d\n" , fOutBound  );
+	//printf( "Th_CollapseNtk() : fIterative = %d\n" , fIterative );
+	//printf( "Th_CollapseNtk() : fOutBound  = %d\n" , fOutBound  );
    do {
 	   Th_UnmarkAllNode();
       sizeBeforeIter = Vec_PtrSize( TList );
