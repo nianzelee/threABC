@@ -21,7 +21,7 @@ syn  = "aig_syn; mt" + opt1 + opt2 + "; pt; q"
 suf1 = "_i" if args.ite else ""
 suf2 = "_t" if args.tcad else ""
 suf  = suf1 + suf2
-for bch in glob.glob("exp_TCAD/iscas_itc/*.blif"):
+for bch in glob.glob("exp_TCAD/benchmark/iscas_itc/*.blif"):
    name = os.path.basename(bch)
    log  = ("exp_TCAD/log/%s_aig%s.log" % (name, suf))
    tcl  = "r " + bch + "; " + syn
