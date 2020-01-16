@@ -186,3 +186,7 @@ alias ecexp  "comb; fraig; synth1; t2b compTH_1.blif; t2m; w compTH.aig; mt; NZ;
 alias ecexp1 "comb; fraig; synth1; t2b compTH_1.blif; t2m; w compTH.aig; mt -B 100; NZ; OAO; t2m; time; cec -n compTH.aig; t2b compTH_2.blif; time; cec -n compTH_1.blif compTH_2.blif; time"
 alias ecexp2 "thexp1; NZ; OAO"
 alias ecexp3 "thexp1; OAO;"
+
+# For TCAD experiments
+alias aig_syn "comb; fraig; a2t; pt"
+alias tl_syn "comb; fraig; synth1; pt"
