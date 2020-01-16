@@ -188,5 +188,5 @@ alias ecexp2 "thexp1; NZ; OAO"
 alias ecexp3 "thexp1; OAO;"
 
 # For TCAD experiments
-alias aig_syn "comb; fraig; a2t; pt"
-alias tl_syn "comb; fraig; synth1; pt"
+alias aig_syn "comb; fraig; time; a2t; pt"
+alias tl_syn "comb; fraig; time; synth1; time; pt"
