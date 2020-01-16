@@ -17,10 +17,13 @@ args = parser.parse_args()
 opt1 = " -B 100" if args.ite else ""
 opt2 = " -t" if args.tcad else ""
 syn  = "aig_syn; mt" + opt1 + opt2 + "; pt; q"
+suf1 = "_i" if args.ite else ""
+suf2 = "_t" if args.tcad else ""
+suf  = suf1 + suf2
 #cur_path = os.getcwd()
 benchmarks = ["b14"]
 for name in benchmarks:
-   log = ("exp_TCAD/log/%s_aig_i.log" % name)
+   log = ("exp_TCAD/log/%s_aig%s.log" % (name, suf))
    tcl = "r exp_TCAD/benchmark/" + name + ".blif; " + syn
    cmd = "bin/abc -c \"" + tcl + "\" &> " + log
    sp.run(cmd, shell=True)
