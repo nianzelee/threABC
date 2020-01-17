@@ -1,0 +1,709 @@
+c Parsing PB file...
+c Converting 1009 PB-constraints to clauses...
+c   -- Unit propagations: (none)
+c   -- Detecting intervals from adjacent constraints: #################################################################################################
+c   -- Clauses(.)/Splits(s): .................................................................................................................................................................................................................................................
+c ---[1007]---> BDD-cost:    1
+c ---[1005]---> BDD-cost:    1
+c ---[1003]---> BDD-cost:    1
+c ---[1001]---> BDD-cost:    1
+c ---[ 999]---> BDD-cost:    1
+c ---[ 997]---> BDD-cost:    1
+c ---[ 995]---> BDD-cost:    1
+c ---[ 993]---> BDD-cost:    1
+c ---[ 991]---> BDD-cost:    1
+c ---[ 989]---> BDD-cost:    1
+c ---[ 987]---> BDD-cost:    1
+c ---[ 985]---> BDD-cost:    1
+c ---[ 983]---> BDD-cost:    1
+c ---[ 981]---> BDD-cost:    1
+c ---[ 979]---> BDD-cost:    1
+c ---[ 977]---> BDD-cost:    1
+c ---[ 975]---> BDD-cost:    1
+c ---[ 973]---> BDD-cost:    1
+c ---[ 971]---> BDD-cost:    1
+c ---[ 969]---> BDD-cost:    1
+c ---[ 967]---> BDD-cost:    1
+c ---[ 965]---> BDD-cost:    1
+c ---[ 963]---> BDD-cost:    1
+c ---[ 961]---> BDD-cost:    1
+c ---[ 959]---> BDD-cost:    1
+c ---[ 957]---> BDD-cost:    1
+c ---[ 955]---> BDD-cost:    1
+c ---[ 953]---> BDD-cost:    1
+c ---[ 951]---> BDD-cost:    1
+c ---[ 949]---> BDD-cost:    1
+c ---[ 947]---> BDD-cost:    1
+c ---[ 945]---> BDD-cost:    1
+c ---[ 943]---> BDD-cost:    1
+c ---[ 941]---> BDD-cost:    1
+c ---[ 939]---> BDD-cost:    1
+c ---[ 937]---> BDD-cost:    1
+c ---[ 935]---> BDD-cost:    1
+c ---[ 933]---> BDD-cost:    1
+c ---[ 931]---> BDD-cost:    1
+c ---[ 929]---> BDD-cost:    1
+c ---[ 927]---> BDD-cost:    1
+c ---[ 925]---> BDD-cost:    1
+c ---[ 923]---> BDD-cost:    1
+c ---[ 921]---> BDD-cost:    1
+c ---[ 919]---> BDD-cost:    1
+c ---[ 917]---> BDD-cost:    1
+c ---[ 915]---> BDD-cost:    1
+c ---[ 913]---> BDD-cost:    1
+c ---[ 912]---> Adder-cost: 377   maxlim: 3505   bits: 13/12
+c ---[ 911]---> Adder-cost: 214   maxlim: 3613   bits: 13/12
+c ---[ 910]---> Adder-cost: 388   maxlim: 3132   bits: 13/12
+c ---[ 909]---> Adder-cost: 243   maxlim: 3431   bits: 13/12
+c ---[ 908]---> Adder-cost: 387   maxlim: 3301   bits: 13/12
+c ---[ 907]---> Adder-cost: 241   maxlim: 3890   bits: 13/12
+c ---[ 906]---> Adder-cost: 395   maxlim: 3490   bits: 13/12
+c ---[ 905]---> Adder-cost: 229   maxlim: 3991   bits: 13/12
+c ---[ 904]---> Adder-cost: 370   maxlim: 2183   bits: 13/12
+c ---[ 903]---> Adder-cost: 252   maxlim: 4190   bits: 14/13
+c ---[ 902]---> Adder-cost: 403   maxlim: 3400   bits: 13/12
+c ---[ 901]---> Adder-cost: 256   maxlim: 3804   bits: 13/12
+c ---[ 900]---> Adder-cost: 376   maxlim: 3304   bits: 13/12
+c ---[ 899]---> Adder-cost: 239   maxlim: 3771   bits: 13/12
+c ---[ 898]---> Adder-cost: 391   maxlim: 3155   bits: 13/12
+c ---[ 897]---> Adder-cost: 199   maxlim: 3674   bits: 13/12
+c ---[ 896]---> Adder-cost: 387   maxlim: 2878   bits: 13/12
+c ---[ 895]---> Adder-cost: 230   maxlim: 3336   bits: 13/12
+c ---[ 894]---> Adder-cost: 371   maxlim: 3208   bits: 13/12
+c ---[ 893]---> Adder-cost: 195   maxlim: 3201   bits: 13/12
+c ---[ 892]---> Adder-cost: 420   maxlim: 4029   bits: 13/12
+c ---[ 891]---> Adder-cost: 167   maxlim: 3514   bits: 13/12
+c ---[ 890]---> Adder-cost: 391   maxlim: 3316   bits: 13/12
+c ---[ 889]---> Adder-cost: 229   maxlim: 4093   bits: 13/12
+c ---[ 888]---> Adder-cost: 359   maxlim: 3484   bits: 13/12
+c ---[ 887]---> Adder-cost: 236   maxlim: 2754   bits: 13/12
+c ---[ 886]---> Adder-cost: 422   maxlim: 4085   bits: 13/12
+c ---[ 885]---> Adder-cost: 236   maxlim: 3497   bits: 13/12
+c ---[ 884]---> Adder-cost: 363   maxlim: 3225   bits: 13/12
+c ---[ 883]---> Adder-cost: 238   maxlim: 4192   bits: 14/13
+c ---[ 882]---> Adder-cost: 386   maxlim: 2880   bits: 13/12
+c ---[ 881]---> Adder-cost: 247   maxlim: 4250   bits: 14/13
+c ---[ 880]---> Adder-cost: 356   maxlim: 2929   bits: 13/12
+c ---[ 879]---> Adder-cost: 233   maxlim: 3735   bits: 13/12
+c ---[ 878]---> Adder-cost: 370   maxlim: 2489   bits: 13/12
+c ---[ 877]---> Adder-cost: 232   maxlim: 5019   bits: 14/13
+c ---[ 876]---> Adder-cost: 404   maxlim: 3291   bits: 13/12
+c ---[ 875]---> Adder-cost: 214   maxlim: 3891   bits: 13/12
+c ---[ 874]---> Adder-cost: 394   maxlim: 3032   bits: 13/12
+c ---[ 873]---> Adder-cost: 221   maxlim: 4164   bits: 14/13
+c ---[ 872]---> Adder-cost: 412   maxlim: 3619   bits: 13/12
+c ---[ 871]---> Adder-cost: 277   maxlim: 3578   bits: 13/12
+c ---[ 870]---> Adder-cost: 400   maxlim: 3062   bits: 13/12
+c ---[ 869]---> Adder-cost: 242   maxlim: 3644   bits: 13/12
+c ---[ 868]---> Adder-cost: 379   maxlim: 3049   bits: 13/12
+c ---[ 867]---> Adder-cost: 227   maxlim: 3875   bits: 13/12
+c ---[ 866]---> Adder-cost: 388   maxlim: 3926   bits: 13/12
+c ---[ 865]---> Adder-cost: 227   maxlim: 3283   bits: 13/12
+c ---[ 864]---> Adder-cost: 375   maxlim: 3091   bits: 13/12
+c ---[ 863]---> Adder-cost: 241   maxlim: 3798   bits: 13/12
+c ---[ 862]---> Adder-cost: 380   maxlim: 4156   bits: 14/13
+c ---[ 861]---> Adder-cost: 208   maxlim: 2866   bits: 13/12
+c ---[ 860]---> Adder-cost: 385   maxlim: 3099   bits: 13/12
+c ---[ 859]---> Adder-cost: 227   maxlim: 3949   bits: 13/12
+c ---[ 858]---> Adder-cost: 378   maxlim: 3012   bits: 13/12
+c ---[ 857]---> Adder-cost: 181   maxlim: 3427   bits: 13/12
+c ---[ 856]---> Adder-cost: 370   maxlim: 4067   bits: 13/12
+c ---[ 855]---> Adder-cost: 223   maxlim: 3149   bits: 13/12
+c ---[ 854]---> Adder-cost: 398   maxlim: 3140   bits: 13/12
+c ---[ 853]---> Adder-cost: 252   maxlim: 4080   bits: 13/12
+c ---[ 852]---> Adder-cost: 410   maxlim: 2865   bits: 13/12
+c ---[ 851]---> Adder-cost: 210   maxlim: 4073   bits: 13/12
+c ---[ 850]---> Adder-cost: 376   maxlim: 3677   bits: 13/12
+c ---[ 849]---> Adder-cost: 199   maxlim: 3406   bits: 13/12
+c ---[ 848]---> Adder-cost: 370   maxlim: 4110   bits: 14/13
+c ---[ 847]---> Adder-cost: 243   maxlim: 2969   bits: 13/12
+c ---[ 846]---> Adder-cost: 389   maxlim: 3534   bits: 13/12
+c ---[ 845]---> Adder-cost: 246   maxlim: 2904   bits: 13/12
+c ---[ 844]---> Adder-cost: 380   maxlim: 4611   bits: 14/13
+c ---[ 843]---> Adder-cost: 110   maxlim: 2051   bits: 13/12
+c ---[ 842]---> Adder-cost: 386   maxlim: 3412   bits: 13/12
+c ---[ 841]---> Adder-cost: 210   maxlim: 4040   bits: 13/12
+c ---[ 840]---> Adder-cost: 377   maxlim: 3797   bits: 13/12
+c ---[ 839]---> Adder-cost: 226   maxlim: 3609   bits: 13/12
+c ---[ 838]---> Adder-cost: 384   maxlim: 3902   bits: 13/12
+c ---[ 837]---> Adder-cost: 232   maxlim: 2724   bits: 13/12
+c ---[ 836]---> Adder-cost: 364   maxlim: 3777   bits: 13/12
+c ---[ 835]---> Adder-cost: 229   maxlim: 3220   bits: 13/12
+c ---[ 834]---> Adder-cost: 396   maxlim: 4081   bits: 13/12
+c ---[ 833]---> Adder-cost: 171   maxlim: 3311   bits: 13/12
+c ---[ 832]---> Adder-cost: 372   maxlim: 3478   bits: 13/12
+c ---[ 831]---> Adder-cost: 246   maxlim: 3324   bits: 13/12
+c ---[ 830]---> Adder-cost: 367   maxlim: 3149   bits: 13/12
+c ---[ 829]---> Adder-cost: 206   maxlim: 3369   bits: 13/12
+c ---[ 828]---> Adder-cost: 387   maxlim: 3476   bits: 13/12
+c ---[ 827]---> Adder-cost: 249   maxlim: 3789   bits: 13/12
+c ---[ 826]---> Adder-cost: 363   maxlim: 3155   bits: 13/12
+c ---[ 825]---> Adder-cost: 157   maxlim: 3924   bits: 13/12
+c ---[ 824]---> Adder-cost: 382   maxlim: 3963   bits: 13/12
+c ---[ 823]---> Adder-cost: 251   maxlim: 2761   bits: 13/12
+c ---[ 822]---> Adder-cost: 402   maxlim: 3054   bits: 13/12
+c ---[ 821]---> Adder-cost: 229   maxlim: 4200   bits: 14/13
+c ---[ 820]---> Adder-cost: 370   maxlim: 2909   bits: 13/12
+c ---[ 819]---> Adder-cost: 242   maxlim: 4100   bits: 14/13
+c ---[ 818]---> Adder-cost: 376   maxlim: 3958   bits: 13/12
+c ---[ 817]---> Adder-cost: 241   maxlim: 3367   bits: 13/12
+c ---[ 816]---> Adder-cost: 408   maxlim: 4403   bits: 14/13
+c ---[ 815]---> Adder-cost: 211   maxlim: 2959   bits: 13/12
+c ---[ 814]---> Adder-cost: 385   maxlim: 3634   bits: 13/12
+c ---[ 813]---> Adder-cost: 216   maxlim: 4627   bits: 14/13
+c ---[ 812]---> Adder-cost: 389   maxlim: 3132   bits: 13/12
+c ---[ 811]---> Adder-cost: 208   maxlim: 4603   bits: 14/13
+c ---[ 810]---> Adder-cost: 393   maxlim: 2923   bits: 13/12
+c ---[ 809]---> Adder-cost: 247   maxlim: 3712   bits: 13/12
+c ---[ 808]---> Adder-cost: 403   maxlim: 3006   bits: 13/12
+c ---[ 807]---> Adder-cost: 217   maxlim: 4248   bits: 14/13
+c ---[ 806]---> Adder-cost: 403   maxlim: 2658   bits: 13/12
+c ---[ 805]---> Adder-cost: 243   maxlim: 4684   bits: 14/13
+c ---[ 804]---> Adder-cost: 379   maxlim: 3324   bits: 13/12
+c ---[ 803]---> Adder-cost: 226   maxlim: 3870   bits: 13/12
+c ---[ 802]---> Adder-cost: 345   maxlim: 2791   bits: 13/12
+c ---[ 801]---> Adder-cost: 227   maxlim: 3406   bits: 13/12
+c ---[ 800]---> Adder-cost: 402   maxlim: 3990   bits: 13/12
+c ---[ 799]---> Adder-cost: 251   maxlim: 3371   bits: 13/12
+c ---[ 798]---> Adder-cost: 382   maxlim: 3735   bits: 13/12
+c ---[ 797]---> Adder-cost: 215   maxlim: 3067   bits: 13/12
+c ---[ 796]---> Adder-cost: 376   maxlim: 3848   bits: 13/12
+c ---[ 795]---> Adder-cost: 213   maxlim: 2837   bits: 13/12
+c ---[ 794]---> Adder-cost: 376   maxlim: 3467   bits: 13/12
+c ---[ 793]---> Adder-cost: 232   maxlim: 4196   bits: 14/13
+c ---[ 792]---> Adder-cost: 360   maxlim: 3126   bits: 13/12
+c ---[ 791]---> Adder-cost: 253   maxlim: 4041   bits: 13/12
+c ---[ 790]---> Adder-cost: 347   maxlim: 2397   bits: 13/12
+c ---[ 789]---> Adder-cost: 198   maxlim: 4828   bits: 14/13
+c ---[ 788]---> Adder-cost: 351   maxlim: 2687   bits: 13/12
+c ---[ 787]---> Adder-cost: 230   maxlim: 4118   bits: 14/13
+c ---[ 786]---> Adder-cost: 382   maxlim: 2981   bits: 13/12
+c ---[ 785]---> Adder-cost: 189   maxlim: 4137   bits: 14/13
+c ---[ 784]---> Adder-cost: 365   maxlim: 2916   bits: 13/12
+c ---[ 783]---> Adder-cost: 215   maxlim: 4330   bits: 14/13
+c ---[ 782]---> Adder-cost: 367   maxlim: 4929   bits: 14/13
+c ---[ 781]---> Adder-cost: 235   maxlim: 2420   bits: 13/12
+c ---[ 780]---> Adder-cost: 398   maxlim: 4607   bits: 14/13
+c ---[ 779]---> Adder-cost: 243   maxlim: 2644   bits: 13/12
+c ---[ 778]---> Adder-cost: 397   maxlim: 2974   bits: 13/12
+c ---[ 777]---> Adder-cost: 234   maxlim: 4082   bits: 13/12
+c ---[ 776]---> Adder-cost: 391   maxlim: 4301   bits: 14/13
+c ---[ 775]---> Adder-cost: 237   maxlim: 3515   bits: 13/12
+c ---[ 774]---> Adder-cost: 369   maxlim: 3490   bits: 13/12
+c ---[ 773]---> Adder-cost: 228   maxlim: 3824   bits: 13/12
+c ---[ 772]---> Adder-cost: 390   maxlim: 3507   bits: 13/12
+c ---[ 771]---> Adder-cost: 235   maxlim: 3703   bits: 13/12
+c ---[ 770]---> Adder-cost: 377   maxlim: 4467   bits: 14/13
+c ---[ 769]---> Adder-cost: 219   maxlim: 2588   bits: 13/12
+c ---[ 768]---> Adder-cost: 365   maxlim: 2819   bits: 13/12
+c ---[ 767]---> Adder-cost: 211   maxlim: 4045   bits: 13/12
+c ---[ 766]---> Adder-cost: 373   maxlim: 3614   bits: 13/12
+c ---[ 765]---> Adder-cost: 207   maxlim: 3351   bits: 13/12
+c ---[ 764]---> Adder-cost: 370   maxlim: 3701   bits: 13/12
+c ---[ 763]---> Adder-cost: 249   maxlim: 3719   bits: 13/12
+c ---[ 762]---> Adder-cost: 421   maxlim: 3710   bits: 13/12
+c ---[ 761]---> Adder-cost: 218   maxlim: 4473   bits: 14/13
+c ---[ 760]---> Adder-cost: 397   maxlim: 3446   bits: 13/12
+c ---[ 759]---> Adder-cost: 204   maxlim: 3422   bits: 13/12
+c ---[ 758]---> Adder-cost: 394   maxlim: 3552   bits: 13/12
+c ---[ 757]---> Adder-cost: 245   maxlim: 4142   bits: 14/13
+c ---[ 756]---> Adder-cost: 370   maxlim: 3752   bits: 13/12
+c ---[ 755]---> Adder-cost: 225   maxlim: 3473   bits: 13/12
+c ---[ 754]---> Adder-cost: 335   maxlim: 4228   bits: 14/13
+c ---[ 753]---> Adder-cost: 225   maxlim: 2927   bits: 13/12
+c ---[ 752]---> Adder-cost: 379   maxlim: 2590   bits: 13/12
+c ---[ 751]---> Adder-cost: 180   maxlim: 4253   bits: 14/13
+c ---[ 750]---> Adder-cost: 383   maxlim: 4139   bits: 14/13
+c ---[ 749]---> Adder-cost: 221   maxlim: 3096   bits: 13/12
+c ---[ 748]---> Adder-cost: 391   maxlim: 3687   bits: 13/12
+c ---[ 747]---> Adder-cost: 148   maxlim: 3783   bits: 13/12
+c ---[ 746]---> Adder-cost: 369   maxlim: 2853   bits: 13/12
+c ---[ 745]---> Adder-cost: 211   maxlim: 4689   bits: 14/13
+c ---[ 744]---> Adder-cost: 377   maxlim: 3801   bits: 13/12
+c ---[ 743]---> Adder-cost: 168   maxlim: 3721   bits: 13/12
+c ---[ 742]---> Adder-cost: 375   maxlim: 3521   bits: 13/12
+c ---[ 741]---> Adder-cost: 267   maxlim: 3640   bits: 13/12
+c ---[ 740]---> Adder-cost: 399   maxlim: 3914   bits: 13/12
+c ---[ 739]---> Adder-cost: 255   maxlim: 3379   bits: 13/12
+c ---[ 738]---> Adder-cost: 370   maxlim: 3337   bits: 13/12
+c ---[ 737]---> Adder-cost: 235   maxlim: 3742   bits: 13/12
+c ---[ 736]---> Adder-cost: 365   maxlim: 3179   bits: 13/12
+c ---[ 735]---> Adder-cost: 227   maxlim: 4024   bits: 13/12
+c ---[ 734]---> Adder-cost: 389   maxlim: 3946   bits: 13/12
+c ---[ 733]---> Adder-cost: 232   maxlim: 3282   bits: 13/12
+c ---[ 732]---> Adder-cost: 387   maxlim: 3044   bits: 13/12
+c ---[ 731]---> Adder-cost: 240   maxlim: 4151   bits: 14/13
+c ---[ 730]---> Adder-cost: 387   maxlim: 3632   bits: 13/12
+c ---[ 729]---> Adder-cost: 226   maxlim: 4131   bits: 14/13
+c ---[ 728]---> Adder-cost: 369   maxlim: 2865   bits: 13/12
+c ---[ 727]---> Adder-cost: 252   maxlim: 5056   bits: 14/13
+c ---[ 726]---> Adder-cost: 378   maxlim: 3035   bits: 13/12
+c ---[ 725]---> Adder-cost: 226   maxlim: 4582   bits: 14/13
+c ---[ 724]---> Adder-cost: 352   maxlim: 4385   bits: 14/13
+c ---[ 723]---> Adder-cost: 188   maxlim: 2449   bits: 13/12
+c ---[ 722]---> Adder-cost: 370   maxlim: 3668   bits: 13/12
+c ---[ 721]---> Adder-cost: 227   maxlim: 3249   bits: 13/12
+c ---[ 720]---> Adder-cost: 399   maxlim: 3850   bits: 13/12
+c ---[ 719]---> Adder-cost: 216   maxlim: 3148   bits: 13/12
+c ---[ 718]---> Adder-cost: 375   maxlim: 2583   bits: 13/12
+c ---[ 717]---> Adder-cost: 233   maxlim: 3969   bits: 13/12
+c ---[ 716]---> Adder-cost: 399   maxlim: 3551   bits: 13/12
+c ---[ 715]---> Adder-cost: 282   maxlim: 4118   bits: 14/13
+c ---[ 714]---> Adder-cost: 379   maxlim: 3929   bits: 13/12
+c ---[ 713]---> Adder-cost: 211   maxlim: 3542   bits: 13/12
+c ---[ 712]---> Adder-cost: 405   maxlim: 3871   bits: 13/12
+c ---[ 711]---> Adder-cost: 169   maxlim: 3695   bits: 13/12
+c ---[ 710]---> Adder-cost: 393   maxlim: 3632   bits: 13/12
+c ---[ 709]---> Adder-cost: 254   maxlim: 3438   bits: 13/12
+c ---[ 708]---> Adder-cost: 391   maxlim: 3293   bits: 13/12
+c ---[ 707]---> Adder-cost: 207   maxlim: 3707   bits: 13/12
+c ---[ 706]---> Adder-cost: 377   maxlim: 4326   bits: 14/13
+c ---[ 705]---> Adder-cost: 239   maxlim: 3357   bits: 13/12
+c ---[ 704]---> Adder-cost: 387   maxlim: 3185   bits: 13/12
+c ---[ 703]---> Adder-cost: 257   maxlim: 3854   bits: 13/12
+c ---[ 702]---> Adder-cost: 390   maxlim: 3282   bits: 13/12
+c ---[ 701]---> Adder-cost: 193   maxlim: 3809   bits: 13/12
+c ---[ 700]---> Adder-cost: 382   maxlim: 3548   bits: 13/12
+c ---[ 699]---> Adder-cost: 226   maxlim: 3136   bits: 13/12
+c ---[ 698]---> Adder-cost: 407   maxlim: 3473   bits: 13/12
+c ---[ 697]---> Adder-cost: 235   maxlim: 4014   bits: 13/12
+c ---[ 696]---> Adder-cost: 396   maxlim: 3520   bits: 13/12
+c ---[ 695]---> Adder-cost: 213   maxlim: 3457   bits: 13/12
+c ---[ 694]---> Adder-cost: 383   maxlim: 3619   bits: 13/12
+c ---[ 693]---> Adder-cost: 198   maxlim: 4152   bits: 14/13
+c ---[ 692]---> Adder-cost: 385   maxlim: 3206   bits: 13/12
+c ---[ 691]---> Adder-cost: 260   maxlim: 3816   bits: 13/12
+c ---[ 690]---> Adder-cost: 385   maxlim: 3719   bits: 13/12
+c ---[ 689]---> Adder-cost: 245   maxlim: 3910   bits: 13/12
+c ---[ 688]---> Adder-cost: 388   maxlim: 3759   bits: 13/12
+c ---[ 687]---> Adder-cost: 223   maxlim: 3516   bits: 13/12
+c ---[ 686]---> Adder-cost: 381   maxlim: 3838   bits: 13/12
+c ---[ 685]---> Adder-cost: 263   maxlim: 3583   bits: 13/12
+c ---[ 684]---> Adder-cost: 395   maxlim: 4323   bits: 14/13
+c ---[ 683]---> Adder-cost: 142   maxlim: 3427   bits: 13/12
+c ---[ 682]---> Adder-cost: 407   maxlim: 3677   bits: 13/12
+c ---[ 681]---> Adder-cost: 253   maxlim: 3586   bits: 13/12
+c ---[ 680]---> Adder-cost: 378   maxlim: 3874   bits: 13/12
+c ---[ 679]---> Adder-cost: 204   maxlim: 3352   bits: 13/12
+c ---[ 678]---> Adder-cost: 388   maxlim: 3894   bits: 13/12
+c ---[ 677]---> Adder-cost: 247   maxlim: 3551   bits: 13/12
+c ---[ 676]---> Adder-cost: 375   maxlim: 2987   bits: 13/12
+c ---[ 675]---> Adder-cost: 209   maxlim: 3558   bits: 13/12
+c ---[ 674]---> Adder-cost: 372   maxlim: 3229   bits: 13/12
+c ---[ 673]---> Adder-cost: 198   maxlim: 3673   bits: 13/12
+c ---[ 672]---> Adder-cost: 394   maxlim: 3286   bits: 13/12
+c ---[ 671]---> Adder-cost: 182   maxlim: 3990   bits: 13/12
+c ---[ 670]---> Adder-cost: 369   maxlim: 3322   bits: 13/12
+c ---[ 669]---> Adder-cost: 239   maxlim: 3663   bits: 13/12
+c ---[ 668]---> Adder-cost: 393   maxlim: 3561   bits: 13/12
+c ---[ 667]---> Adder-cost: 199   maxlim: 3688   bits: 13/12
+c ---[ 666]---> Adder-cost: 395   maxlim: 3454   bits: 13/12
+c ---[ 665]---> Adder-cost: 245   maxlim: 4065   bits: 13/12
+c ---[ 664]---> Adder-cost: 359   maxlim: 3368   bits: 13/12
+c ---[ 663]---> Adder-cost: 233   maxlim: 3613   bits: 13/12
+c ---[ 662]---> Adder-cost: 367   maxlim: 4134   bits: 14/13
+c ---[ 661]---> Adder-cost: 215   maxlim: 3071   bits: 13/12
+c ---[ 660]---> Adder-cost: 400   maxlim: 3777   bits: 13/12
+c ---[ 659]---> Adder-cost: 216   maxlim: 3917   bits: 13/12
+c ---[ 658]---> Adder-cost: 387   maxlim: 3654   bits: 13/12
+c ---[ 657]---> Adder-cost: 228   maxlim: 3476   bits: 13/12
+c ---[ 656]---> Adder-cost: 381   maxlim: 3820   bits: 13/12
+c ---[ 655]---> Adder-cost: 198   maxlim: 3294   bits: 13/12
+c ---[ 654]---> Adder-cost: 372   maxlim: 4178   bits: 14/13
+c ---[ 653]---> Adder-cost: 214   maxlim: 3348   bits: 13/12
+c ---[ 652]---> Adder-cost: 402   maxlim: 3967   bits: 13/12
+c ---[ 651]---> Adder-cost: 211   maxlim: 3469   bits: 13/12
+c ---[ 650]---> Adder-cost: 381   maxlim: 4023   bits: 13/12
+c ---[ 649]---> Adder-cost: 239   maxlim: 3298   bits: 13/12
+c ---[ 648]---> Adder-cost: 378   maxlim: 3805   bits: 13/12
+c ---[ 647]---> Adder-cost: 207   maxlim: 3775   bits: 13/12
+c ---[ 646]---> Adder-cost: 367   maxlim: 4123   bits: 14/13
+c ---[ 645]---> Adder-cost: 251   maxlim: 3890   bits: 13/12
+c ---[ 644]---> Adder-cost: 419   maxlim: 3714   bits: 13/12
+c ---[ 643]---> Adder-cost: 260   maxlim: 3836   bits: 13/12
+c ---[ 642]---> Adder-cost: 356   maxlim: 3603   bits: 13/12
+c ---[ 641]---> Adder-cost: 231   maxlim: 3968   bits: 13/12
+c ---[ 640]---> Adder-cost: 393   maxlim: 3318   bits: 13/12
+c ---[ 639]---> Adder-cost: 230   maxlim: 3918   bits: 13/12
+c ---[ 638]---> Adder-cost: 392   maxlim: 4043   bits: 13/12
+c ---[ 637]---> Adder-cost: 199   maxlim: 3597   bits: 13/12
+c ---[ 636]---> Adder-cost: 392   maxlim: 3541   bits: 13/12
+c ---[ 635]---> Adder-cost: 200   maxlim: 3481   bits: 13/12
+c ---[ 634]---> Adder-cost: 393   maxlim: 3745   bits: 13/12
+c ---[ 633]---> Adder-cost: 253   maxlim: 3568   bits: 13/12
+c ---[ 632]---> Adder-cost: 382   maxlim: 4060   bits: 13/12
+c ---[ 631]---> Adder-cost: 236   maxlim: 3200   bits: 13/12
+c ---[ 630]---> Adder-cost: 397   maxlim: 3645   bits: 13/12
+c ---[ 629]---> Adder-cost: 241   maxlim: 3503   bits: 13/12
+c ---[ 628]---> Adder-cost: 386   maxlim: 4174   bits: 14/13
+c ---[ 627]---> Adder-cost: 222   maxlim: 3350   bits: 13/12
+c ---[ 626]---> Adder-cost: 388   maxlim: 3378   bits: 13/12
+c ---[ 625]---> Adder-cost: 206   maxlim: 3354   bits: 13/12
+c ---[ 623]---> BDD-cost:    1
+c ---[ 621]---> BDD-cost:    1
+c ---[ 619]---> BDD-cost:    1
+c ---[ 617]---> BDD-cost:    1
+c ---[ 615]---> BDD-cost:    1
+c ---[ 613]---> BDD-cost:    1
+c ---[ 611]---> BDD-cost:    1
+c ---[ 609]---> BDD-cost:    1
+c ---[ 607]---> BDD-cost:    1
+c ---[ 605]---> BDD-cost:    1
+c ---[ 603]---> BDD-cost:    1
+c ---[ 601]---> BDD-cost:    1
+c ---[ 599]---> BDD-cost:    1
+c ---[ 597]---> BDD-cost:    1
+c ---[ 595]---> BDD-cost:    1
+c ---[ 593]---> BDD-cost:    1
+c ---[ 591]---> BDD-cost:    1
+c ---[ 589]---> BDD-cost:    1
+c ---[ 587]---> BDD-cost:    1
+c ---[ 585]---> BDD-cost:    1
+c ---[ 583]---> BDD-cost:    1
+c ---[ 581]---> BDD-cost:    1
+c ---[ 579]---> BDD-cost:    1
+c ---[ 577]---> BDD-cost:    1
+c ---[ 575]---> BDD-cost:    1
+c ---[ 573]---> BDD-cost:    1
+c ---[ 571]---> BDD-cost:    1
+c ---[ 569]---> BDD-cost:    1
+c ---[ 567]---> BDD-cost:    1
+c ---[ 565]---> BDD-cost:    1
+c ---[ 563]---> BDD-cost:    1
+c ---[ 561]---> BDD-cost:    1
+c ---[ 559]---> BDD-cost:    1
+c ---[ 557]---> BDD-cost:    1
+c ---[ 555]---> BDD-cost:    1
+c ---[ 553]---> BDD-cost:    1
+c ---[ 551]---> BDD-cost:    1
+c ---[ 549]---> BDD-cost:    1
+c ---[ 547]---> BDD-cost:    1
+c ---[ 545]---> BDD-cost:    1
+c ---[ 543]---> BDD-cost:    1
+c ---[ 541]---> BDD-cost:    1
+c ---[ 539]---> BDD-cost:    1
+c ---[ 537]---> BDD-cost:    1
+c ---[ 535]---> BDD-cost:    1
+c ---[ 533]---> BDD-cost:    1
+c ---[ 531]---> BDD-cost:    1
+c ---[ 529]---> BDD-cost:    1
+c ---[ 528]---> Adder-cost: 173   maxlim: 195   bits: 9/8
+c ---[ 527]---> Adder-cost: 73   maxlim: 196   bits: 9/8
+c ---[ 526]---> Adder-cost: 155   maxlim: 175   bits: 9/8
+c ---[ 525]---> Adder-cost: 107   maxlim: 189   bits: 9/8
+c ---[ 524]---> Adder-cost: 180   maxlim: 178   bits: 9/8
+c ---[ 523]---> Adder-cost: 117   maxlim: 221   bits: 9/8
+c ---[ 522]---> Adder-cost: 196   maxlim: 190   bits: 9/8
+c ---[ 521]---> Adder-cost: 135   maxlim: 227   bits: 9/8
+c ---[ 520]---> Adder-cost: 164   maxlim: 118   bits: 8/7
+c ---[ 519]---> Sorter-cost: 1904     Base: 2 3 13
+c ---[ 518]---> Adder-cost: 188   maxlim: 192   bits: 9/8
+c ---[ 517]---> Adder-cost: 102   maxlim: 210   bits: 9/8
+c ---[ 516]---> Adder-cost: 161   maxlim: 182   bits: 9/8
+c ---[ 515]---> Adder-cost: 99   maxlim: 209   bits: 9/8
+c ---[ 514]---> Adder-cost: 179   maxlim: 178   bits: 9/8
+c ---[ 513]---> Adder-cost: 120   maxlim: 200   bits: 9/8
+c ---[ 512]---> Adder-cost: 156   maxlim: 162   bits: 9/8
+c ---[ 511]---> Adder-cost: 113   maxlim: 179   bits: 9/8
+c ---[ 510]---> Adder-cost: 178   maxlim: 176   bits: 9/8
+c ---[ 509]---> Adder-cost: 90   maxlim: 178   bits: 9/8
+c ---[ 508]---> Adder-cost: 178   maxlim: 226   bits: 9/8
+c ---[ 507]---> Adder-cost: 105   maxlim: 195   bits: 9/8
+c ---[ 506]---> Adder-cost: 178   maxlim: 177   bits: 9/8
+c ---[ 505]---> Adder-cost: 92   maxlim: 233   bits: 9/8
+c ---[ 504]---> Adder-cost: 165   maxlim: 189   bits: 9/8
+c ---[ 503]---> Adder-cost: 75   maxlim: 153   bits: 9/8
+c ---[ 502]---> Adder-cost: 167   maxlim: 235   bits: 9/8
+c ---[ 501]---> Adder-cost: 62   maxlim: 187   bits: 9/8
+c ---[ 500]---> Adder-cost: 171   maxlim: 179   bits: 9/8
+c ---[ 499]---> Adder-cost: 113   maxlim: 236   bits: 9/8
+c ---[ 498]---> Adder-cost: 183   maxlim: 150   bits: 9/8
+c ---[ 497]---> Adder-cost: 101   maxlim: 243   bits: 9/8
+c ---[ 496]---> Adder-cost: 165   maxlim: 153   bits: 9/8
+c ---[ 495]---> Adder-cost: 85   maxlim: 215   bits: 9/8
+c ---[ 494]---> Adder-cost: 182   maxlim: 134   bits: 9/8
+c ---[ 493]---> Adder-cost: 101   maxlim: 286   bits: 10/9
+c ---[ 492]---> Adder-cost: 197   maxlim: 185   bits: 9/8
+c ---[ 491]---> Adder-cost: 91   maxlim: 215   bits: 9/8
+c ---[ 490]---> Adder-cost: 186   maxlim: 170   bits: 9/8
+c ---[ 489]---> Adder-cost: 123   maxlim: 227   bits: 9/8
+c ---[ 488]---> Adder-cost: 163   maxlim: 199   bits: 9/8
+c ---[ 487]---> Adder-cost: 95   maxlim: 202   bits: 9/8
+c ---[ 486]---> Adder-cost: 153   maxlim: 170   bits: 9/8
+c ---[ 485]---> Adder-cost: 76   maxlim: 200   bits: 9/8
+c ---[ 484]---> Adder-cost: 178   maxlim: 173   bits: 9/8
+c ---[ 483]---> Adder-cost: 119   maxlim: 212   bits: 9/8
+c ---[ 482]---> Adder-cost: 167   maxlim: 222   bits: 9/8
+c ---[ 481]---> Adder-cost: 112   maxlim: 180   bits: 9/8
+c ---[ 480]---> Sorter-cost: 1922     Base: 2 3 2
+c ---[ 479]---> Sorter-cost: 1257     Base: 2 3 2 17
+c ---[ 478]---> Adder-cost: 174   maxlim: 233   bits: 9/8
+c ---[ 477]---> Adder-cost: 94   maxlim: 157   bits: 9/8
+c ---[ 476]---> Adder-cost: 191   maxlim: 168   bits: 9/8
+c ---[ 475]---> Adder-cost: 133   maxlim: 221   bits: 9/8
+c ---[ 474]---> Adder-cost: 150   maxlim: 164   bits: 9/8
+c ---[ 473]---> Adder-cost: 91   maxlim: 193   bits: 9/8
+c ---[ 472]---> Adder-cost: 181   maxlim: 234   bits: 9/8
+c ---[ 471]---> Adder-cost: 82   maxlim: 168   bits: 9/8
+c ---[ 470]---> Adder-cost: 167   maxlim: 175   bits: 9/8
+c ---[ 469]---> Adder-cost: 99   maxlim: 225   bits: 9/8
+c ---[ 468]---> Adder-cost: 173   maxlim: 160   bits: 9/8
+c ---[ 467]---> Adder-cost: 62   maxlim: 224   bits: 9/8
+c ---[ 466]---> Adder-cost: 173   maxlim: 211   bits: 9/8
+c ---[ 465]---> Adder-cost: 87   maxlim: 181   bits: 9/8
+c ---[ 464]---> Adder-cost: 197   maxlim: 234   bits: 9/8
+c ---[ 463]---> Adder-cost: 123   maxlim: 157   bits: 9/8
+c ---[ 462]---> Adder-cost: 147   maxlim: 202   bits: 9/8
+c ---[ 461]---> Adder-cost: 80   maxlim: 154   bits: 9/8
+c ---[ 460]---> Adder-cost: 169   maxlim: 263   bits: 10/9
+c ---[ 459]---> Adder-cost: 82   maxlim: 105   bits: 8/7
+c ---[ 458]---> Adder-cost: 193   maxlim: 190   bits: 9/8
+c ---[ 457]---> Adder-cost: 70   maxlim: 222   bits: 9/8
+c ---[ 456]---> Adder-cost: 172   maxlim: 210   bits: 9/8
+c ---[ 455]---> Adder-cost: 100   maxlim: 202   bits: 9/8
+c ---[ 454]---> Adder-cost: 181   maxlim: 214   bits: 9/8
+c ---[ 453]---> Adder-cost: 133   maxlim: 151   bits: 9/8
+c ---[ 452]---> Adder-cost: 159   maxlim: 211   bits: 9/8
+c ---[ 451]---> Adder-cost: 77   maxlim: 175   bits: 9/8
+c ---[ 450]---> Sorter-cost: 1937     Base: 2 2 3 17
+c ---[ 449]---> Sorter-cost: 1361     Base: 2 2 3
+c ---[ 448]---> Adder-cost: 170   maxlim: 186   bits: 9/8
+c ---[ 447]---> Adder-cost: 104   maxlim: 192   bits: 9/8
+c ---[ 446]---> Adder-cost: 151   maxlim: 173   bits: 9/8
+c ---[ 445]---> Adder-cost: 85   maxlim: 190   bits: 9/8
+c ---[ 444]---> Adder-cost: 172   maxlim: 197   bits: 9/8
+c ---[ 443]---> Adder-cost: 125   maxlim: 208   bits: 9/8
+c ---[ 442]---> Adder-cost: 176   maxlim: 169   bits: 9/8
+c ---[ 441]---> Adder-cost: 74   maxlim: 225   bits: 9/8
+c ---[ 440]---> Adder-cost: 161   maxlim: 225   bits: 9/8
+c ---[ 439]---> Adder-cost: 105   maxlim: 150   bits: 9/8
+c ---[ 438]---> Adder-cost: 178   maxlim: 165   bits: 9/8
+c ---[ 437]---> Adder-cost: 98   maxlim: 233   bits: 9/8
+c ---[ 436]---> Adder-cost: 164   maxlim: 161   bits: 9/8
+c ---[ 435]---> Adder-cost: 101   maxlim: 227   bits: 9/8
+c ---[ 434]---> Adder-cost: 177   maxlim: 219   bits: 9/8
+c ---[ 433]---> Adder-cost: 79   maxlim: 188   bits: 9/8
+c ---[ 432]---> Adder-cost: 211   maxlim: 249   bits: 9/8
+c ---[ 431]---> Adder-cost: 107   maxlim: 162   bits: 9/8
+c ---[ 430]---> Adder-cost: 207   maxlim: 198   bits: 9/8
+c ---[ 429]---> Adder-cost: 127   maxlim: 264   bits: 10/9
+c ---[ 428]---> Adder-cost: 209   maxlim: 175   bits: 9/8
+c ---[ 427]---> Adder-cost: 104   maxlim: 257   bits: 10/9
+c ---[ 426]---> Adder-cost: 183   maxlim: 163   bits: 9/8
+c ---[ 425]---> Adder-cost: 97   maxlim: 204   bits: 9/8
+c ---[ 424]---> Adder-cost: 185   maxlim: 164   bits: 9/8
+c ---[ 423]---> Adder-cost: 123   maxlim: 237   bits: 9/8
+c ---[ 422]---> Adder-cost: 199   maxlim: 139   bits: 9/8
+c ---[ 421]---> Adder-cost: 72   maxlim: 268   bits: 10/9
+c ---[ 420]---> Adder-cost: 203   maxlim: 178   bits: 9/8
+c ---[ 419]---> Adder-cost: 125   maxlim: 221   bits: 9/8
+c ---[ 418]---> Adder-cost: 156   maxlim: 149   bits: 9/8
+c ---[ 417]---> Adder-cost: 93   maxlim: 190   bits: 9/8
+c ---[ 416]---> Adder-cost: 183   maxlim: 224   bits: 9/8
+c ---[ 415]---> Adder-cost: 131   maxlim: 185   bits: 9/8
+c ---[ 414]---> Sorter-cost: 1750     Base: 2 3 2 17
+c ---[ 413]---> Sorter-cost: 1293     Base: 2 3 2
+c ---[ 412]---> Adder-cost: 199   maxlim: 218   bits: 9/8
+c ---[ 411]---> Adder-cost: 103   maxlim: 151   bits: 9/8
+c ---[ 410]---> Adder-cost: 178   maxlim: 195   bits: 9/8
+c ---[ 409]---> Adder-cost: 109   maxlim: 225   bits: 9/8
+c ---[ 408]---> Adder-cost: 191   maxlim: 170   bits: 9/8
+c ---[ 407]---> Adder-cost: 118   maxlim: 228   bits: 9/8
+c ---[ 406]---> Adder-cost: 197   maxlim: 125   bits: 8/7
+c ---[ 405]---> Adder-cost: 102   maxlim: 278   bits: 10/9
+c ---[ 404]---> Adder-cost: 182   maxlim: 146   bits: 9/8
+c ---[ 403]---> Adder-cost: 105   maxlim: 233   bits: 9/8
+c ---[ 402]---> Adder-cost: 179   maxlim: 163   bits: 9/8
+c ---[ 401]---> Sorter-cost: 1949     Base: 2 2 3 17
+c ---[ 400]---> Adder-cost: 173   maxlim: 161   bits: 9/8
+c ---[ 399]---> Adder-cost: 117   maxlim: 243   bits: 9/8
+c ---[ 398]---> Adder-cost: 190   maxlim: 279   bits: 10/9
+c ---[ 397]---> Adder-cost: 103   maxlim: 131   bits: 9/8
+c ---[ 396]---> Adder-cost: 173   maxlim: 267   bits: 10/9
+c ---[ 395]---> Adder-cost: 40   maxlim: 139   bits: 9/8
+c ---[ 394]---> Adder-cost: 186   maxlim: 163   bits: 9/8
+c ---[ 393]---> Adder-cost: 111   maxlim: 230   bits: 9/8
+c ---[ 392]---> Adder-cost: 200   maxlim: 249   bits: 9/8
+c ---[ 391]---> Adder-cost: 101   maxlim: 184   bits: 9/8
+c ---[ 390]---> Adder-cost: 195   maxlim: 193   bits: 9/8
+c ---[ 389]---> Adder-cost: 123   maxlim: 212   bits: 9/8
+c ---[ 388]---> Adder-cost: 197   maxlim: 200   bits: 9/8
+c ---[ 387]---> Adder-cost: 115   maxlim: 203   bits: 9/8
+c ---[ 386]---> Adder-cost: 174   maxlim: 255   bits: 9/8
+c ---[ 385]---> Adder-cost: 109   maxlim: 140   bits: 9/8
+c ---[ 384]---> Adder-cost: 171   maxlim: 153   bits: 9/8
+c ---[ 383]---> Adder-cost: 115   maxlim: 228   bits: 9/8
+c ---[ 382]---> Adder-cost: 172   maxlim: 203   bits: 9/8
+c ---[ 381]---> Adder-cost: 115   maxlim: 182   bits: 9/8
+c ---[ 380]---> Adder-cost: 190   maxlim: 203   bits: 9/8
+c ---[ 379]---> Adder-cost: 111   maxlim: 212   bits: 9/8
+c ---[ 378]---> Adder-cost: 199   maxlim: 205   bits: 9/8
+c ---[ 377]---> Sorter-cost: 2169     Base: 2 2 3 7
+c ---[ 376]---> Adder-cost: 181   maxlim: 188   bits: 9/8
+c ---[ 375]---> Adder-cost: 86   maxlim: 190   bits: 9/8
+c ---[ 374]---> Adder-cost: 186   maxlim: 199   bits: 9/8
+c ---[ 373]---> Adder-cost: 131   maxlim: 226   bits: 9/8
+c ---[ 372]---> Adder-cost: 195   maxlim: 212   bits: 9/8
+c ---[ 371]---> Adder-cost: 114   maxlim: 190   bits: 9/8
+c ---[ 370]---> Sorter-cost: 2019     Base: 2 2 3 17
+c ---[ 369]---> Sorter-cost: 1394     Base: 2 2 3
+c ---[ 368]---> Adder-cost: 185   maxlim: 133   bits: 9/8
+c ---[ 367]---> Adder-cost: 119   maxlim: 247   bits: 9/8
+c ---[ 366]---> Adder-cost: 195   maxlim: 237   bits: 9/8
+c ---[ 365]---> Adder-cost: 105   maxlim: 163   bits: 9/8
+c ---[ 364]---> Adder-cost: 202   maxlim: 202   bits: 9/8
+c ---[ 363]---> Adder-cost: 95   maxlim: 217   bits: 9/8
+c ---[ 362]---> Adder-cost: 213   maxlim: 160   bits: 9/8
+c ---[ 361]---> Adder-cost: 111   maxlim: 262   bits: 10/9
+c ---[ 360]---> Adder-cost: 173   maxlim: 215   bits: 9/8
+c ---[ 359]---> Adder-cost: 115   maxlim: 205   bits: 9/8
+c ---[ 358]---> Adder-cost: 172   maxlim: 193   bits: 9/8
+c ---[ 357]---> Adder-cost: 115   maxlim: 203   bits: 9/8
+c ---[ 356]---> Adder-cost: 199   maxlim: 218   bits: 9/8
+c ---[ 355]---> Adder-cost: 115   maxlim: 187   bits: 9/8
+c ---[ 354]---> Adder-cost: 183   maxlim: 180   bits: 9/8
+c ---[ 353]---> Adder-cost: 81   maxlim: 211   bits: 9/8
+c ---[ 352]---> Adder-cost: 190   maxlim: 175   bits: 9/8
+c ---[ 351]---> Adder-cost: 99   maxlim: 225   bits: 9/8
+c ---[ 350]---> Adder-cost: 189   maxlim: 226   bits: 9/8
+c ---[ 349]---> Adder-cost: 84   maxlim: 178   bits: 9/8
+c ---[ 348]---> Adder-cost: 189   maxlim: 168   bits: 9/8
+c ---[ 347]---> Adder-cost: 60   maxlim: 232   bits: 9/8
+c ---[ 346]---> Adder-cost: 194   maxlim: 202   bits: 9/8
+c ---[ 345]---> Adder-cost: 101   maxlim: 231   bits: 9/8
+c ---[ 344]---> Adder-cost: 193   maxlim: 153   bits: 9/8
+c ---[ 343]---> Adder-cost: 94   maxlim: 286   bits: 10/9
+c ---[ 342]---> Adder-cost: 189   maxlim: 167   bits: 9/8
+c ---[ 341]---> Adder-cost: 108   maxlim: 261   bits: 10/9
+c ---[ 340]---> Adder-cost: 173   maxlim: 249   bits: 9/8
+c ---[ 339]---> Adder-cost: 100   maxlim: 133   bits: 9/8
+c ---[ 338]---> Sorter-cost: 1609     Base: 2 2 3 17
+c ---[ 337]---> Sorter-cost: 1430     Base: 2 2 3
+c ---[ 336]---> Adder-cost: 187   maxlim: 216   bits: 9/8
+c ---[ 335]---> Adder-cost: 131   maxlim: 173   bits: 9/8
+c ---[ 334]---> Adder-cost: 158   maxlim: 144   bits: 9/8
+c ---[ 333]---> Adder-cost: 117   maxlim: 221   bits: 9/8
+c ---[ 332]---> Adder-cost: 191   maxlim: 198   bits: 9/8
+c ---[ 331]---> Adder-cost: 87   maxlim: 229   bits: 9/8
+c ---[ 330]---> Adder-cost: 181   maxlim: 215   bits: 9/8
+c ---[ 329]---> Adder-cost: 91   maxlim: 201   bits: 9/8
+c ---[ 328]---> Adder-cost: 203   maxlim: 222   bits: 9/8
+c ---[ 327]---> Adder-cost: 115   maxlim: 201   bits: 9/8
+c ---[ 326]---> Adder-cost: 191   maxlim: 207   bits: 9/8
+c ---[ 325]---> Adder-cost: 127   maxlim: 189   bits: 9/8
+c ---[ 324]---> Adder-cost: 187   maxlim: 179   bits: 9/8
+c ---[ 323]---> Adder-cost: 107   maxlim: 209   bits: 9/8
+c ---[ 322]---> Adder-cost: 193   maxlim: 237   bits: 9/8
+c ---[ 321]---> Adder-cost: 127   maxlim: 188   bits: 9/8
+c ---[ 320]---> Adder-cost: 182   maxlim: 176   bits: 9/8
+c ---[ 319]---> Adder-cost: 107   maxlim: 211   bits: 9/8
+c ---[ 318]---> Adder-cost: 189   maxlim: 179   bits: 9/8
+c ---[ 317]---> Adder-cost: 40   maxlim: 211   bits: 9/8
+c ---[ 316]---> Adder-cost: 167   maxlim: 199   bits: 9/8
+c ---[ 315]---> Adder-cost: 77   maxlim: 175   bits: 9/8
+c ---[ 314]---> Adder-cost: 198   maxlim: 202   bits: 9/8
+c ---[ 313]---> Adder-cost: 113   maxlim: 215   bits: 9/8
+c ---[ 312]---> Adder-cost: 181   maxlim: 197   bits: 9/8
+c ---[ 311]---> Adder-cost: 78   maxlim: 193   bits: 9/8
+c ---[ 310]---> Adder-cost: 200   maxlim: 203   bits: 9/8
+c ---[ 309]---> Adder-cost: 113   maxlim: 229   bits: 9/8
+c ---[ 308]---> Adder-cost: 198   maxlim: 177   bits: 9/8
+c ---[ 307]---> Adder-cost: 84   maxlim: 213   bits: 9/8
+c ---[ 306]---> Adder-cost: 195   maxlim: 207   bits: 9/8
+c ---[ 305]---> Adder-cost: 107   maxlim: 219   bits: 9/8
+c ---[ 304]---> Adder-cost: 175   maxlim: 209   bits: 9/8
+c ---[ 303]---> Adder-cost: 99   maxlim: 198   bits: 9/8
+c ---[ 302]---> Adder-cost: 201   maxlim: 214   bits: 9/8
+c ---[ 301]---> Adder-cost: 80   maxlim: 198   bits: 9/8
+c ---[ 300]---> Adder-cost: 203   maxlim: 245   bits: 9/8
+c ---[ 299]---> Adder-cost: 123   maxlim: 186   bits: 9/8
+c ---[ 298]---> Adder-cost: 183   maxlim: 210   bits: 9/8
+c ---[ 297]---> Adder-cost: 91   maxlim: 193   bits: 9/8
+c ---[ 296]---> Adder-cost: 176   maxlim: 215   bits: 9/8
+c ---[ 295]---> Adder-cost: 75   maxlim: 187   bits: 9/8
+c ---[ 294]---> Adder-cost: 185   maxlim: 219   bits: 9/8
+c ---[ 293]---> Adder-cost: 113   maxlim: 197   bits: 9/8
+c ---[ 292]---> Adder-cost: 165   maxlim: 156   bits: 9/8
+c ---[ 291]---> Adder-cost: 84   maxlim: 206   bits: 9/8
+c ---[ 290]---> Adder-cost: 184   maxlim: 176   bits: 9/8
+c ---[ 289]---> Adder-cost: 75   maxlim: 207   bits: 9/8
+c ---[ 288]---> Adder-cost: 193   maxlim: 180   bits: 9/8
+c ---[ 287]---> Adder-cost: 87   maxlim: 227   bits: 9/8
+c ---[ 286]---> Adder-cost: 186   maxlim: 185   bits: 9/8
+c ---[ 285]---> Adder-cost: 117   maxlim: 204   bits: 9/8
+c ---[ 284]---> Adder-cost: 187   maxlim: 198   bits: 9/8
+c ---[ 283]---> Adder-cost: 125   maxlim: 207   bits: 9/8
+c ---[ 282]---> Adder-cost: 195   maxlim: 199   bits: 9/8
+c ---[ 281]---> Adder-cost: 141   maxlim: 222   bits: 9/8
+c ---[ 280]---> Adder-cost: 180   maxlim: 188   bits: 9/8
+c ---[ 279]---> Adder-cost: 123   maxlim: 197   bits: 9/8
+c ---[ 278]---> Adder-cost: 191   maxlim: 232   bits: 9/8
+c ---[ 277]---> Adder-cost: 113   maxlim: 171   bits: 9/8
+c ---[ 276]---> Adder-cost: 213   maxlim: 208   bits: 9/8
+c ---[ 275]---> Adder-cost: 127   maxlim: 225   bits: 9/8
+c ---[ 274]---> Adder-cost: 187   maxlim: 202   bits: 9/8
+c ---[ 273]---> Adder-cost: 97   maxlim: 199   bits: 9/8
+c ---[ 272]---> Adder-cost: 180   maxlim: 212   bits: 9/8
+c ---[ 271]---> Adder-cost: 104   maxlim: 184   bits: 9/8
+c ---[ 270]---> Adder-cost: 181   maxlim: 239   bits: 9/8
+c ---[ 269]---> Adder-cost: 111   maxlim: 184   bits: 9/8
+c ---[ 268]---> Adder-cost: 189   maxlim: 223   bits: 9/8
+c ---[ 267]---> Adder-cost: 109   maxlim: 187   bits: 9/8
+c ---[ 266]---> Adder-cost: 189   maxlim: 230   bits: 9/8
+c ---[ 265]---> Adder-cost: 127   maxlim: 175   bits: 9/8
+c ---[ 264]---> Sorter-cost: 2018     Base: 2 3 2 17
+c ---[ 263]---> Sorter-cost: 1739     Base: 3 2 2 17
+c ---[ 262]---> Adder-cost: 201   maxlim: 232   bits: 9/8
+c ---[ 261]---> Adder-cost: 88   maxlim: 216   bits: 9/8
+c ---[ 260]---> Adder-cost: 184   maxlim: 208   bits: 9/8
+c ---[ 259]---> Adder-cost: 111   maxlim: 215   bits: 9/8
+c ---[ 258]---> Adder-cost: 186   maxlim: 202   bits: 9/8
+c ---[ 257]---> Adder-cost: 121   maxlim: 223   bits: 9/8
+c ---[ 256]---> Adder-cost: 205   maxlim: 189   bits: 9/8
+c ---[ 255]---> Adder-cost: 82   maxlim: 213   bits: 9/8
+c ---[ 254]---> Sorter-cost: 1998     Base: 2 2 3 17
+c ---[ 253]---> Sorter-cost: 1660     Base: 2 2 3
+c ---[ 252]---> Adder-cost: 189   maxlim: 203   bits: 9/8
+c ---[ 251]---> Adder-cost: 123   maxlim: 186   bits: 9/8
+c ---[ 250]---> Adder-cost: 189   maxlim: 202   bits: 9/8
+c ---[ 249]---> Sorter-cost: 1942     Base: 2 3 2 17
+c ---[ 248]---> Adder-cost: 190   maxlim: 229   bits: 9/8
+c ---[ 247]---> Adder-cost: 111   maxlim: 174   bits: 9/8
+c ---[ 246]---> Adder-cost: 194   maxlim: 199   bits: 9/8
+c ---[ 245]---> Adder-cost: 119   maxlim: 196   bits: 9/8
+c ---[ 244]---> Adder-cost: 202   maxlim: 233   bits: 9/8
+c ---[ 243]---> Adder-cost: 123   maxlim: 188   bits: 9/8
+c ---[ 241]---> Adder-cost: 187   maxlim: 377   bits: 10/9
+c ==================================[MINISAT+]==================================
+c | Conflicts | Original         | Learnt                           | Progress |
+c |           | Clauses Literals |     Max Clauses Literals     LPC |          |
+c ==============================================================================
+c |         0 |  920570  3194369 |  306856       0        0    -nan |  0.000 % |
+c |       100 |  920570  3194369 |  337541     100      595     6.0 |  2.126 % |
+c |       250 |  920570  3194369 |  371295     250     1852     7.4 |  2.126 % |
+c |       475 |  920570  3194369 |  408425     475     3603     7.6 |  2.126 % |
+c |       812 |  920570  3194369 |  449267     812     9707    12.0 |  2.126 % |
+c |      1319 |  920570  3194369 |  494194    1319    19183    14.5 |  2.126 % |
+c |      2079 |  920570  3194369 |  543614    2079    49976    24.0 |  2.126 % |
+c |      3219 |  920570  3194369 |  597975    3219    76390    23.7 |  2.126 % |
+c |      4929 |  920570  3194369 |  657773    4929   124356    25.2 |  2.126 % |
+c |      7491 |  920570  3194369 |  723550    7491   215658    28.8 |  2.126 % |
+c |     11335 |  920570  3194369 |  795905   11335   306360    27.0 |  2.126 % |
+c |     17104 |  920570  3194369 |  875495   17104   435903    25.5 |  2.126 % |
+c |     25753 |  920570  3194369 |  963045   25753   674845    26.2 |  2.126 % |
+c |     38727 |  920570  3194369 | 1059350   38727  1321549    34.1 |  2.126 % |
+c |     58189 |  920570  3194369 | 1165285   58189  2227347    38.3 |  2.126 % |
+c ==============================================================================
+c [1mFound solution: -1[0m
+c [1mOptimal solution: -1[0m
+s OPTIMUM FOUND
+v Z O1_49 t1_193 O1_50 t1_194 O1_51 t1_195 O1_52 t1_196 O1_53 t1_197 O1_54 t1_198 O1_55 t1_199 -O1_56 -t1_200 -O1_57 -t1_201 O1_58 t1_202 -O1_59 -t1_203 O1_60 t1_204 O1_61 t1_205 -O1_62 -t1_206 -O1_63 -t1_207 O1_64 t1_208 O1_65 t1_209 -O1_66 -t1_210 O1_67 t1_211 O1_68 t1_212 O1_69 t1_213 O1_70 t1_214 O1_71 t1_215 -O1_72 -t1_216 O1_73 t1_217 -O1_74 -t1_218 -O1_75 -t1_219 O1_76 t1_220 -O1_77 -t1_221 O1_78 t1_222 -O1_79 -t1_223 -O1_80 -t1_224 O1_81 t1_225 O1_82 t1_226 O1_83 t1_227 O1_84 t1_228 -O1_85 -t1_229 O1_86 t1_230 O1_87 t1_231 O1_88 t1_232 O1_89 t1_233 -O1_90 -t1_234 O1_91 t1_235 -O1_92 -t1_236 -O1_93 -t1_237 O1_94 t1_238 -O1_95 -t1_239 -O1_96 -t1_240 t1_97 -I_1 I_2 -I_3 -I_4 -I_5 -I_6 -I_7 -I_8 -I_9 I_10 I_11 -I_12 -I_13 -I_14 -I_15 -I_16 -I_17 I_18 -I_19 -I_20 I_21 I_22 I_23 -I_24 -I_25 -I_26 I_27 -I_28 -I_29 -I_30 -I_31 -I_32 -I_33 -I_34 -I_35 -I_36 -I_37 -I_38 -I_39 -I_40 -I_41 -I_42 I_43 -I_44 I_45 I_46 -I_47 I_48 -t1_98 -t1_99 -t1_100 -t1_101 t1_102 -t1_103 t1_104 t1_105 -t1_106 t1_107 -t1_108 t1_109 t1_110 -t1_111 -t1_112 -t1_113 -t1_114 -t1_115 -t1_116 t1_117 t1_118 t1_119 t1_120 -t1_121 t1_122 -t1_123 -t1_124 -t1_125 t1_126 t1_127 t1_128 -t1_129 t1_130 t1_131 t1_132 t1_133 t1_134 -t1_135 t1_136 t1_137 -t1_138 t1_139 -t1_140 t1_141 -t1_142 -t1_143 t1_144 t1_145 -t1_146 -t1_147 -t1_148 -t1_149 -t1_150 -t1_151 t1_152 t1_153 t1_154 t1_155 -t1_156 -t1_157 -t1_158 -t1_159 -t1_160 -t1_161 t1_162 t1_163 t1_164 -t1_165 -t1_166 -t1_167 t1_168 -t1_169 -t1_170 t1_171 -t1_172 -t1_173 -t1_174 t1_175 t1_176 -t1_177 t1_178 t1_179 -t1_180 -t1_181 -t1_182 t1_183 t1_184 -t1_185 -t1_186 -t1_187 -t1_188 -t1_189 -t1_190 t1_191 -t1_192 O2_49 t2_193 -O2_50 -t2_194 O2_51 t2_195 O2_52 t2_196 O2_53 t2_197 O2_54 t2_198 -O2_55 -t2_199 -O2_56 -t2_200 O2_57 t2_201 -O2_58 -t2_202 -O2_59 -t2_203 O2_60 t2_204 -O2_61 -t2_205 -O2_62 -t2_206 O2_63 t2_207 O2_64 t2_208 O2_65 t2_209 O2_66 t2_210 O2_67 t2_211 O2_68 t2_212 O2_69 t2_213 O2_70 t2_214 O2_71 t2_215 -O2_72 -t2_216 O2_73 t2_217 -O2_74 -t2_218 -O2_75 -t2_219 O2_76 t2_220 -O2_77 -t2_221 O2_78 t2_222 -O2_79 -t2_223 -O2_80 -t2_224 O2_81 t2_225 O2_82 t2_226 O2_83 t2_227 O2_84 t2_228 -O2_85 -t2_229 O2_86 t2_230 -O2_87 -t2_231 O2_88 t2_232 O2_89 t2_233 -O2_90 -t2_234 O2_91 t2_235 -O2_92 -t2_236 -O2_93 -t2_237 -O2_94 -t2_238 -O2_95 -t2_239 -O2_96 -t2_240 t2_97 -t2_98 -t2_99 -t2_100 -t2_101 t2_102 -t2_103 t2_104 t2_105 -t2_106 t2_107 -t2_108 t2_109 t2_110 -t2_111 -t2_112 -t2_113 -t2_114 -t2_115 -t2_116 t2_117 t2_118 t2_119 t2_120 -t2_121 t2_122 -t2_123 -t2_124 -t2_125 t2_126 t2_127 t2_128 -t2_129 t2_130 t2_131 t2_132 t2_133 t2_134 -t2_135 t2_136 -t2_137 -t2_138 t2_139 -t2_140 t2_141 -t2_142 -t2_143 t2_144 t2_145 -t2_146 -t2_147 -t2_148 -t2_149 -t2_150 -t2_151 -t2_152 t2_153 t2_154 -t2_155 -t2_156 -t2_157 -t2_158 -t2_159 -t2_160 -t2_161 t2_162 t2_163 t2_164 -t2_165 -t2_166 t2_167 t2_168 -t2_169 -t2_170 t2_171 -t2_172 -t2_173 t2_174 t2_175 t2_176 -t2_177 t2_178 t2_179 -t2_180 -t2_181 -t2_182 t2_183 t2_184 -t2_185 -t2_186 -t2_187 -t2_188 -t2_189 -t2_190 t2_191 -t2_192 -M_0 M_1 -M_2 -M_3 -M_4 -M_5 M_6 -M_7 M_8 M_9 -M_10 -M_11 M_12 -M_13 M_14 -M_15 -M_16 M_17 -M_18 -M_19 -M_20 -M_21 -M_22 -M_23 -M_24 -M_25 -M_26 -M_27 -M_28 -M_29 -M_30 -M_31 -M_32 -M_33 -M_34 -M_35 -M_36 -M_37 M_38 -M_39 -M_40 -M_41 -M_42 -M_43 -M_44 M_45 -M_46 -M_47
+c _______________________________________________________________________________
+c 
+c restarts              : 15
+c conflicts             : 67007          (647 /sec)
+c decisions             : 197794         (1908 /sec)
+c propagations          : 0              (0 /sec)
+c inspects              : 0              (0 /sec)
+c CPU time              : 103.64 s
+c _______________________________________________________________________________
