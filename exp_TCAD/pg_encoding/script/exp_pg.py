@@ -25,6 +25,7 @@ df    = pd.DataFrame(np.zeros(shape=(len(bench), len(col))), index=bench, column
 for bch in bench:
    read_path = 'exp_TCAD/pg_encoding/benchmark/%s.blif' % bch
    cmd = './bin/abc -c \"r ' + read_path + '; ' + pg + "; q\""
+   print(cmd)
    sp.run(cmd, shell=True)
    df.at[bch, 'c_npg'] = sum(1 for line in open('no_pg.opb'))-1
    df.at[bch, 'c_pg']  = sum(1 for line in open('pg.opb'))-1
