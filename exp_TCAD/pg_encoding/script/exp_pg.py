@@ -28,7 +28,8 @@ args  = parser.parse_args()
 pg    = "pg_and" if args.conj else "pg_or"
 suf   = "andpos" if args.conj else "orpos"
 csv   = "exp_TCAD/pg_encoding/csv/" + suf + ".csv"
-bench = ['b14', 'b15', 'b17', 'b18', 'b19', 'b20', 'b21', 'b22']
+bench = ['b14']
+#bench = ['b14', 'b15', 'b17', 'b18', 'b19', 'b20', 'b21', 'b22']
 col   = ['c_npg', 'c_pg', 's_npg', 's_pg', 't_npg', 't_pg']
 df    = pd.DataFrame(np.zeros(shape=(len(bench), len(col))), index=bench, columns=col)
 
@@ -36,22 +37,26 @@ for bch in bench:
    read_path = 'exp_TCAD/pg_encoding/benchmark/%s.blif' % bch
    cmd = './bin/abc -c \"r ' + read_path + '; ' + pg + "; q\""
    sp.run(cmd, shell=True)
-   df.at[bch, 'c_npg'] = sum(1 for line in open('no_pg.opb'))-1
-   df.at[bch, 'c_pg']  = sum(1 for line in open('pg.opb'))-1
-   df.at[bch, 's_npg'] = os.path.getsize('./no_pg.opb')
-   df.at[bch, 's_pg']  = os.path.getsize('./pg.opb')
-   log = "exp_TCAD/pg_encoding/log/" + bch + "_no_pg_" + suf + ".log"
-   cmd = './bin/minisat+ no_pg.opb &> ' + log
-   sp.run(cmd, shell=True)
-   df.at[bch, 't_npg'] = pb_get_time(log)
-   log = "exp_TCAD/pg_encoding/log/" + bch + "_pg_" + suf + ".log"
-   cmd = './bin/minisat+ pg.opb &>' + log
-   sp.run(cmd, shell=True)
-   df.at[bch, 't_pg'] = pb_get_time(log)
+   # no_pg
    opb = "exp_TCAD/pg_encoding/opb/" + bch + "_no_pg_" + suf + ".opb"
    cmd = "mv no_pg.opb " + opb
+   sp.run(cmd, shell=True) 
+   df.at[bch, 'c_npg'] = sum(1 for line in open(opb))-1
+   df.at[bch, 's_npg'] = os.path.getsize(opb)
+   log = "exp_TCAD/pg_encoding/log/" + bch + "_no_pg_" + suf + ".log"
+   cmd = './bin/minisat+ ' + opb + " &> " + log
    sp.run(cmd, shell=True)
+   #df.at[bch, 't_npg'] = pb_get_time(log)
+   df.at[bch, 't_npg'] = 0
+   # pg
    opb = "exp_TCAD/pg_encoding/opb/" + bch + "_pg_" + suf + ".opb"
    cmd = "mv pg.opb " + opb
+   sp.run(cmd, shell=True) 
+   df.at[bch, 'c_pg'] = sum(1 for line in open(opb))-1
+   df.at[bch, 's_pg'] = os.path.getsize(opb)
+   log = "exp_TCAD/pg_encoding/log/" + bch + "_pg_" + suf + ".log"
+   cmd = './bin/minisat+ ' + opb + " &> " + log
    sp.run(cmd, shell=True)
+   #df.at[bch, 't_pg'] = pb_get_time(log)
+   df.at[bch, 't_pg'] = 0
 df.to_csv(csv)
