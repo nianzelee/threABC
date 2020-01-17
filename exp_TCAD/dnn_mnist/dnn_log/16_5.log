@@ -1,0 +1,380 @@
+c Parsing PB file...
+c Converting 465 PB-constraints to clauses...
+c   -- Unit propagations: (none)
+c   -- Detecting intervals from adjacent constraints: #################################
+c   -- Clauses(.)/Splits(s): .................................................................................
+c ---[ 463]---> BDD-cost:    1
+c ---[ 461]---> BDD-cost:    1
+c ---[ 459]---> BDD-cost:    1
+c ---[ 457]---> BDD-cost:    1
+c ---[ 455]---> BDD-cost:    1
+c ---[ 453]---> BDD-cost:    1
+c ---[ 451]---> BDD-cost:    1
+c ---[ 449]---> BDD-cost:    1
+c ---[ 447]---> BDD-cost:    1
+c ---[ 445]---> BDD-cost:    1
+c ---[ 443]---> BDD-cost:    1
+c ---[ 441]---> BDD-cost:    1
+c ---[ 439]---> BDD-cost:    1
+c ---[ 437]---> BDD-cost:    1
+c ---[ 435]---> BDD-cost:    1
+c ---[ 433]---> BDD-cost:    1
+c ---[ 432]---> Sorter-cost: 1022     Base: 3 5 5 3
+c ---[ 431]---> Sorter-cost:  824     Base: 3 3 2 3 3 7
+c ---[ 430]---> Sorter-cost:  908     Base: 3 2 2 3 5
+c ---[ 429]---> Sorter-cost:  702     Base: 3 2 2 3 5
+c ---[ 428]---> Sorter-cost: 1154     Base: 3 3 2 2 5
+c ---[ 427]---> Sorter-cost:  834     Base: 3 2 2 3 5
+c ---[ 426]---> Sorter-cost: 1247     Base: 2 2 2 13 2
+c ---[ 425]---> Sorter-cost: 1122     Base: 3 5 7 2
+c ---[ 424]---> Sorter-cost: 1043     Base: 2 7 2 2 2 13
+c ---[ 423]---> Sorter-cost:  792     Base: 2 2 2 2 2 2 3
+c ---[ 422]---> Sorter-cost:  898     Base: 2 2 3 3 3 2
+c ---[ 421]---> Sorter-cost:  708     Base: 2 2 3 3 2 3
+c ---[ 420]---> Sorter-cost:  980     Base: 2 3 2 2 3 3
+c ---[ 419]---> Sorter-cost:  897     Base: 2 3 5 2 3
+c ---[ 418]---> Sorter-cost: 1311     Base: 3 7 3 3
+c ---[ 417]---> Sorter-cost: 1096     Base: 3 2 3 3 3 5
+c ---[ 416]---> Sorter-cost: 1256     Base: 3 3 3 3 3
+c ---[ 415]---> Sorter-cost:  972     Base: 3 3 5 2 2
+c ---[ 414]---> Sorter-cost: 1121     Base: 3 5 5 3
+c ---[ 413]---> Sorter-cost: 1133     Base: 7 3 2 5
+c ---[ 412]---> Sorter-cost: 1050     Base: 3 3 3 3 2 5
+c ---[ 411]---> Sorter-cost:  836     Base: 3 2 2 2 2 2 2
+c ---[ 410]---> Sorter-cost: 1068     Base: 2 2 2 5 2 2
+c ---[ 409]---> Sorter-cost:  935     Base: 2 2 2 2 2 3 2
+c ---[ 408]---> Sorter-cost: 1017     Base: 5 5 2 2 11
+c ---[ 407]---> Sorter-cost:  802     Base: 5 5 2 3
+c ---[ 406]---> Sorter-cost:  862     Base: 2 2 5 3 3 7
+c ---[ 405]---> Sorter-cost:  837     Base: 2 2 2 3 3 3
+c ---[ 404]---> Sorter-cost: 1027     Base: 3 2 3 2 5
+c ---[ 403]---> Sorter-cost:  916     Base: 3 5 2 2 3 3
+c ---[ 402]---> Sorter-cost:  759     Base: 3 2 3 3 3 7
+c ---[ 401]---> Sorter-cost:  708     Base: 3 2 3 3 3
+c ---[ 400]---> Sorter-cost:  989     Base: 3 2 2 3 3 2
+c ---[ 399]---> Sorter-cost:  776     Base: 3 2 2 3 3 2
+c ---[ 398]---> Sorter-cost: 1017     Base: 2 2 2 3 2 2 2
+c ---[ 397]---> Sorter-cost:  700     Base: 2 2 2 3 2 2 13
+c ---[ 396]---> Sorter-cost:  975     Base: 2 2 2 5 5 7
+c ---[ 395]---> Sorter-cost: 1020     Base: 3 3 3 3 2
+c ---[ 394]---> Sorter-cost:  913     Base: 3 5 2 2 2 2
+c ---[ 393]---> Sorter-cost:  968     Base: 2 2 3 5 2 11
+c ---[ 392]---> Sorter-cost: 1135     Base: 5 5 2 2 2
+c ---[ 391]---> Sorter-cost: 1330     Base: 2 7 5 3
+c ---[ 390]---> Sorter-cost:  735     Base: 2 2 3 2 2 2 2
+c ---[ 389]---> Sorter-cost:  458     Base: 2 2 3 2 2 2 2
+c ---[ 388]---> Sorter-cost: 1340     Base: 3 3 3 3 2
+c ---[ 387]---> Sorter-cost:  928     Base: 3 3 3 3 2
+c ---[ 386]---> Sorter-cost:  889     Base: 2 3 2 5 2 2
+c ---[ 385]---> Sorter-cost:  694     Base: 2 2 3 5 2 2
+c ---[ 384]---> Sorter-cost:  866     Base: 3 3 3 2 2 13
+c ---[ 383]---> Sorter-cost: 1005     Base: 3 5 3 3
+c ---[ 382]---> Sorter-cost:  828     Base: 3 3 2 2 2 2 7
+c ---[ 381]---> Sorter-cost:  711     Base: 3 3 2 2 2 2 3
+c ---[ 380]---> Sorter-cost:  888     Base: 3 5 2 2 3
+c ---[ 379]---> Sorter-cost:  779     Base: 3 5 2 2 3
+c ---[ 378]---> Sorter-cost: 1040     Base: 2 5 2 3 2 2
+c ---[ 377]---> Sorter-cost:  861     Base: 2 5 2 3 3
+c ---[ 376]---> Sorter-cost:  954     Base: 3 2 2 5 3 7
+c ---[ 375]---> Sorter-cost:  894     Base: 3 2 2 5 3
+c ---[ 374]---> Sorter-cost:  845     Base: 3 2 2 3 3 2
+c ---[ 373]---> Sorter-cost:  660     Base: 3 2 2 3 3 2
+c ---[ 372]---> Sorter-cost:  916     Base: 3 2 2 2 2 2 2 7
+c ---[ 371]---> Sorter-cost: 1266     Base: 3 3 3 7 7
+c ---[ 370]---> Sorter-cost: 1277     Base: 5 5 3 3
+c ---[ 369]---> Sorter-cost:  881     Base: 2 2 2 3 3 3
+c ---[ 368]---> Sorter-cost: 1190     Base: 2 2 3 5 2 11
+c ---[ 367]---> Sorter-cost: 1103     Base: 2 2 3 5 2 2
+c ---[ 366]---> Sorter-cost: 1005     Base: 3 2 3 3 3 7
+c ---[ 365]---> Sorter-cost:  669     Base: 3 2 3 3 3 7
+c ---[ 364]---> Sorter-cost: 1311     Base: 2 2 2 5 5
+c ---[ 363]---> Sorter-cost:  949     Base: 2 2 2 5 5
+c ---[ 362]---> Sorter-cost:  996     Base: 2 2 2 2 3 2 2 7
+c ---[ 361]---> Sorter-cost:  890     Base: 2 2 2 2 3 2 2
+c ---[ 360]---> Sorter-cost: 1245     Base: 3 5 2 2 3
+c ---[ 359]---> Sorter-cost:  983     Base: 3 2 5 3 2 7
+c ---[ 358]---> Sorter-cost: 1169     Base: 3 3 3 3 2
+c ---[ 357]---> Sorter-cost:  901     Base: 3 3 3 3 2
+c ---[ 356]---> Sorter-cost: 1199     Base: 3 3 2 2 3 11
+c ---[ 355]---> Sorter-cost: 1282     Base: 2 5 3 2 2 11
+c ---[ 354]---> Sorter-cost: 1113     Base: 2 3 2 2 2 3
+c ---[ 353]---> Sorter-cost:  988     Base: 2 2 2 2 3 2 13
+c ---[ 352]---> Sorter-cost: 1435     Base: 2 2 5 5 2
+c ---[ 351]---> Sorter-cost: 1284     Base: 2 2 2 5 5
+c ---[ 350]---> Sorter-cost: 1277     Base: 2 2 2 5 3 5
+c ---[ 349]---> Sorter-cost: 1082     Base: 2 2 3 2 2 2 2
+c ---[ 348]---> Sorter-cost:  804     Base: 3 5 2 2 3 7
+c ---[ 347]---> Sorter-cost:  883     Base: 2 3 5 2 3
+c ---[ 346]---> Sorter-cost: 1152     Base: 2 3 3 2 2 3
+c ---[ 345]---> Sorter-cost:  906     Base: 2 3 3 2 2 3
+c ---[ 344]---> Sorter-cost:  962     Base: 5 2 2 3 2 2
+c ---[ 343]---> Sorter-cost:  916     Base: 5 3 2 2 3
+c ---[ 342]---> Sorter-cost: 1238     Base: 3 2 3 2 5
+c ---[ 341]---> Sorter-cost: 1066     Base: 3 2 5 2 3
+c ---[ 340]---> Sorter-cost:  866     Base: 2 3 2 2 2 2 2
+c ---[ 339]---> Sorter-cost:  671     Base: 2 3 2 2 2 2 2
+c ---[ 338]---> Sorter-cost:  791     Base: 3 2 2 2 2 2 2
+c ---[ 337]---> Sorter-cost:  909     Base: 3 3 3 3 2
+c ---[ 336]---> Sorter-cost:  948     Base: 3 3 3 7
+c ---[ 335]---> Sorter-cost:  649     Base: 3 3 3 7 7
+c ---[ 334]---> Sorter-cost:  947     Base: 2 3 2 3 2 3
+c ---[ 333]---> Sorter-cost:  994     Base: 2 3 2 2 3 3
+c ---[ 332]---> Sorter-cost: 1164     Base: 7 3 2 5
+c ---[ 331]---> Sorter-cost:  979     Base: 3 3 3 2 3
+c ---[ 330]---> Sorter-cost: 1053     Base: 3 3 2 2 2 3
+c ---[ 329]---> Sorter-cost:  868     Base: 3 3 2 2 3 11
+c ---[ 328]---> Sorter-cost: 1453     Base: 3 3 5 5
+c ---[ 327]---> Sorter-cost: 1355     Base: 2 5 2 2 5
+c ---[ 326]---> Sorter-cost:  828     Base: 3 2 3 2 5 7
+c ---[ 325]---> Sorter-cost:  640     Base: 3 2 3 2 5
+c ---[ 324]---> Sorter-cost: 1041     Base: 3 2 2 2 2 3 5
+c ---[ 323]---> Sorter-cost: 1083     Base: 2 2 2 3 3 2
+c ---[ 322]---> Sorter-cost:  939     Base: 2 2 2 3 2 3 11
+c ---[ 321]---> Sorter-cost:  885     Base: 2 2 2 3 2 3
+c ---[ 320]---> Sorter-cost:  991     Base: 2 3 3 2 5 7
+c ---[ 319]---> Sorter-cost:  903     Base: 3 3 2 2 5
+c ---[ 318]---> Sorter-cost: 1019     Base: 2 2 3 2 2 3
+c ---[ 317]---> Sorter-cost:  653     Base: 2 2 3 2 2 3
+c ---[ 316]---> Sorter-cost: 1358     Base: 2 3 7 5
+c ---[ 315]---> Sorter-cost: 1028     Base: 2 3 5 3 2
+c ---[ 314]---> Sorter-cost:  893     Base: 2 3 3 2 3 2
+c ---[ 313]---> Sorter-cost:  730     Base: 2 3 3 2 3 2
+c ---[ 312]---> Sorter-cost: 1234     Base: 2 3 2 7 2
+c ---[ 311]---> Sorter-cost: 1031     Base: 2 3 3 3 3
+c ---[ 310]---> Sorter-cost:  963     Base: 3 2 2 5 3
+c ---[ 309]---> Sorter-cost:  717     Base: 3 2 2 5 2 13
+c ---[ 308]---> Sorter-cost: 1166     Base: 3 3 3 3 3
+c ---[ 307]---> Sorter-cost: 1301     Base: 5 5 3 3
+c ---[ 306]---> Sorter-cost:  806     Base: 2 2 2 2 5 2 7
+c ---[ 305]---> Sorter-cost:  640     Base: 2 2 2 2 5 2
+c ---[ 304]---> Sorter-cost:  923     Base: 2 3 3 2 5 7
+c ---[ 303]---> Sorter-cost:  837     Base: 2 3 2 3 3 2
+c ---[ 302]---> Sorter-cost:  931     Base: 3 2 5 2 2 2
+c ---[ 301]---> Sorter-cost: 1050     Base: 7 3 5 2
+c ---[ 300]---> Sorter-cost: 1303     Base: 2 11 3 3 7
+c ---[ 299]---> Sorter-cost:  858     Base: 2 11 3 3
+c ---[ 298]---> Sorter-cost: 1112     Base: 3 2 3 11 3
+c ---[ 297]---> Sorter-cost:  743     Base: 3 2 3 11 3
+c ---[ 296]---> Sorter-cost: 1049     Base: 2 2 5 2 3
+c ---[ 295]---> Sorter-cost: 1027     Base: 2 2 7 2 2 2
+c ---[ 294]---> Sorter-cost: 1302     Base: 5 3 3 3 5
+c ---[ 293]---> Sorter-cost: 1191     Base: 3 3 2 2 3 2
+c ---[ 292]---> Sorter-cost:  905     Base: 2 3 3 2 5
+c ---[ 291]---> Sorter-cost:  671     Base: 2 2 3 3 5
+c ---[ 290]---> Sorter-cost:  885     Base: 5 2 2 3 3 5
+c ---[ 289]---> Sorter-cost:  859     Base: 3 3 3 7 5
+c ---[ 288]---> Sorter-cost: 1020     Base: 3 2 2 2 5 11
+c ---[ 287]---> Sorter-cost:  882     Base: 3 2 2 2 3 2
+c ---[ 286]---> Sorter-cost:  970     Base: 2 3 2 3 3 2
+c ---[ 285]---> Sorter-cost:  723     Base: 2 3 2 3 3 2
+c ---[ 284]---> Sorter-cost: 1177     Base: 3 3 3 3 3
+c ---[ 283]---> Sorter-cost:  989     Base: 2 2 2 2 3 2 2
+c ---[ 282]---> Sorter-cost:  980     Base: 3 5 2 2 2 2
+c ---[ 281]---> Sorter-cost:  666     Base: 3 5 2 2 2 11
+c ---[ 280]---> Sorter-cost: 1309     Base: 2 3 3 3 3
+c ---[ 279]---> Sorter-cost: 1087     Base: 3 2 3 3 3
+c ---[ 278]---> Sorter-cost: 1047     Base: 2 2 2 2 2 3 2
+c ---[ 277]---> Sorter-cost:  938     Base: 2 2 2 3 2 2 2
+c ---[ 276]---> Sorter-cost: 1043     Base: 2 7 2 2 2 2
+c ---[ 275]---> Sorter-cost:  824     Base: 2 3 3 2 3 2
+c ---[ 274]---> Sorter-cost:  602     Base: 3 3 2 2 2 3
+c ---[ 273]---> Sorter-cost:  590     Base: 3 3 2 3 3
+c ---[ 271]---> BDD-cost:    1
+c ---[ 269]---> BDD-cost:    1
+c ---[ 267]---> BDD-cost:    1
+c ---[ 265]---> BDD-cost:    1
+c ---[ 263]---> BDD-cost:    1
+c ---[ 261]---> BDD-cost:    1
+c ---[ 259]---> BDD-cost:    1
+c ---[ 257]---> BDD-cost:    1
+c ---[ 255]---> BDD-cost:    1
+c ---[ 253]---> BDD-cost:    1
+c ---[ 251]---> BDD-cost:    1
+c ---[ 249]---> BDD-cost:    1
+c ---[ 247]---> BDD-cost:    1
+c ---[ 245]---> BDD-cost:    1
+c ---[ 243]---> BDD-cost:    1
+c ---[ 241]---> BDD-cost:    1
+c ---[ 240]---> Sorter-cost:  408     Base: 2 2 3
+c ---[ 239]---> Sorter-cost:  305     Base: 2 2 3
+c ---[ 238]---> Sorter-cost:  432     Base: 2 5
+c ---[ 237]---> Sorter-cost:  234     Base: 2 5
+c ---[ 236]---> Sorter-cost:  577     Base: 2 5
+c ---[ 235]---> Sorter-cost:  325     Base: 2 5
+c ---[ 234]---> Sorter-cost:  337     Base: 2 3 2
+c ---[ 233]---> Sorter-cost:  268     Base: 2 3 2
+c ---[ 232]---> Sorter-cost:  419     Base: 3 2 2
+c ---[ 231]---> Sorter-cost:  292     Base: 3 2 2
+c ---[ 230]---> BDD-cost:  126
+c ---[ 229]---> BDD-cost:    1
+c ---[ 228]---> Sorter-cost:  498     Base: 3 3 11
+c ---[ 227]---> Sorter-cost:  365     Base: 3 2 2
+c ---[ 226]---> Sorter-cost:  498     Base: 2 2 3
+c ---[ 225]---> Sorter-cost:  413     Base: 2 2 2 11
+c ---[ 224]---> Sorter-cost:  503     Base: 2 3 11
+c ---[ 223]---> Sorter-cost:  418     Base: 2 3 2
+c ---[ 222]---> Sorter-cost:  502     Base: 3 3
+c ---[ 221]---> Sorter-cost:  348     Base: 3 3
+c ---[ 220]---> Sorter-cost:  447     Base: 2 3 2
+c ---[ 219]---> Sorter-cost:  330     Base: 2 3 2
+c ---[ 218]---> Sorter-cost:  542     Base: 5 2
+c ---[ 217]---> Sorter-cost:  380     Base: 5 2
+c ---[ 216]---> Sorter-cost:  484     Base: 3 3
+c ---[ 215]---> Sorter-cost:  336     Base: 3 3
+c ---[ 214]---> Sorter-cost:  309     Base: 2 2 3
+c ---[ 213]---> Sorter-cost:  226     Base: 2 2 3
+c ---[ 212]---> Sorter-cost:  508     Base: 2 2 3
+c ---[ 211]---> Sorter-cost:  478     Base: 2 2 3
+c ---[ 210]---> Sorter-cost:  333     Base: 3 3 7
+c ---[ 209]---> Sorter-cost:  396     Base: 3 3
+c ---[ 208]---> Sorter-cost:  416     Base: 2 3 2
+c ---[ 207]---> BDD-cost:  117
+c ---[ 206]---> Sorter-cost:  449     Base: 2 3 2
+c ---[ 205]---> Sorter-cost:  413     Base: 2 3 11
+c ---[ 204]---> Sorter-cost:  350     Base: 2 2 3
+c ---[ 203]---> Sorter-cost:  261     Base: 2 2 3
+c ---[ 202]---> Sorter-cost:  520     Base: 2 3 2
+c ---[ 201]---> Sorter-cost:  393     Base: 2 3 2
+c ---[ 200]---> Sorter-cost:  349     Base: 3 2 2
+c ---[ 199]---> Sorter-cost:  248     Base: 3 2 2
+c ---[ 198]---> Sorter-cost:  390     Base: 2 5 7
+c ---[ 197]---> Sorter-cost:  286     Base: 2 5
+c ---[ 196]---> Sorter-cost:  460     Base: 2 2 3
+c ---[ 195]---> Sorter-cost:  250     Base: 2 2 3 7
+c ---[ 194]---> Sorter-cost:  501     Base: 2 2 3
+c ---[ 193]---> Sorter-cost:  481     Base: 2 5
+c ---[ 192]---> Sorter-cost:  509     Base: 2 3 13
+c ---[ 191]---> Sorter-cost:  418     Base: 2 2 2
+c ---[ 190]---> Sorter-cost:  339     Base: 3 3 7
+c ---[ 189]---> Sorter-cost:  260     Base: 3 3 3
+c ---[ 188]---> Sorter-cost:  571     Base: 2 5
+c ---[ 187]---> Sorter-cost:  298     Base: 2 5 7
+c ---[ 186]---> Sorter-cost:  545     Base: 2 3 2
+c ---[ 185]---> Sorter-cost:  417     Base: 2 2 3
+c ---[ 184]---> Sorter-cost:  459     Base: 2 2 3
+c ---[ 183]---> Sorter-cost:  333     Base: 2 2 3
+c ---[ 182]---> Sorter-cost:  570     Base: 2 3 2
+c ---[ 181]---> Sorter-cost:  485     Base: 2 3 2
+c ---[ 180]---> Sorter-cost:  545     Base: 2 2 3
+c ---[ 179]---> Sorter-cost:  405     Base: 2 2 3
+c ---[ 178]---> Sorter-cost:  425     Base: 2 2 3
+c ---[ 177]---> Sorter-cost:  330     Base: 2 2 3
+c ---[ 176]---> Sorter-cost:  547     Base: 2 2 3
+c ---[ 175]---> Sorter-cost:  390     Base: 2 2 3
+c ---[ 174]---> Sorter-cost:  422     Base: 2 5 7
+c ---[ 173]---> Sorter-cost:  427     Base: 3 3 7
+c ---[ 172]---> Sorter-cost:  396     Base: 2 2 3
+c ---[ 171]---> Sorter-cost:  225     Base: 2 3 2 5
+c ---[ 170]---> Sorter-cost:  603     Base: 3 3
+c ---[ 169]---> Sorter-cost:  404     Base: 3 2 2
+c ---[ 168]---> Sorter-cost:  588     Base: 2 3 2
+c ---[ 167]---> Sorter-cost:  486     Base: 2 2 3
+c ---[ 166]---> Sorter-cost:  554     Base: 2 3 2
+c ---[ 165]---> Sorter-cost:  600     Base: 3 3
+c ---[ 164]---> Sorter-cost:  499     Base: 3 2 2
+c ---[ 163]---> Sorter-cost:  367     Base: 3 2 2
+c ---[ 162]---> Sorter-cost:  514     Base: 2 2 2
+c ---[ 161]---> Sorter-cost:  306     Base: 2 2 2
+c ---[ 160]---> Sorter-cost:  394     Base: 2 2 3 7
+c ---[ 159]---> Sorter-cost:  345     Base: 2 3 2
+c ---[ 158]---> Sorter-cost:  417     Base: 2 3 2
+c ---[ 157]---> Sorter-cost:  388     Base: 2 3 2
+c ---[ 156]---> Sorter-cost:  500     Base: 2 3 13
+c ---[ 155]---> Sorter-cost:  390     Base: 2 3 2
+c ---[ 154]---> Sorter-cost:  547     Base: 2 2 3
+c ---[ 153]---> Sorter-cost:  383     Base: 2 2 3
+c ---[ 152]---> Sorter-cost:  440     Base: 2 2 3
+c ---[ 151]---> Sorter-cost:  333     Base: 2 2 3
+c ---[ 150]---> Sorter-cost:  512     Base: 3 3
+c ---[ 149]---> Sorter-cost:  287     Base: 3 3 7
+c ---[ 148]---> Sorter-cost:  546     Base: 2 3 2
+c ---[ 147]---> Sorter-cost:  438     Base: 3 3 5
+c ---[ 145]---> Sorter-cost:  279     Base: 2 3 2
+c ---[ 144]---> BDD-cost:   80
+c ---[ 143]---> BDD-cost:    1
+c ---[ 142]---> Sorter-cost:  345     Base: 2 2 3
+c ---[ 141]---> Sorter-cost:  305     Base: 2 2 3
+c ---[ 140]---> Sorter-cost:  482     Base: 3 2 2
+c ---[ 139]---> Sorter-cost:  378     Base: 3 2 2
+c ---[ 138]---> Sorter-cost:  345     Base: 3 2 2
+c ---[ 137]---> Sorter-cost:  254     Base: 3 2 2
+c ---[ 136]---> Sorter-cost:  464     Base: 2 2 3
+c ---[ 135]---> Sorter-cost:  298     Base: 2 2 3
+c ---[ 134]---> Sorter-cost:  396     Base: 2 3 2
+c ---[ 133]---> Sorter-cost:  224     Base: 2 3 2
+c ---[ 132]---> Sorter-cost:  655     Base: 7 11
+c ---[ 131]---> Sorter-cost:  529     Base: 3 3 7
+c ---[ 130]---> Sorter-cost:  517     Base: 3 3 11
+c ---[ 129]---> Sorter-cost:  440     Base: 3 3
+c ---[ 128]---> Sorter-cost:  375     Base: 3 2 2
+c ---[ 127]---> Sorter-cost:  298     Base: 3 2 2
+c ---[ 126]---> Sorter-cost:  381     Base: 3 3 3
+c ---[ 125]---> Sorter-cost:  338     Base: 3 3
+c ---[ 124]---> Sorter-cost:  457     Base: 2 2 3
+c ---[ 123]---> Sorter-cost:  282     Base: 2 2 3
+c ---[ 122]---> Sorter-cost:  511     Base: 2 3 2
+c ---[ 121]---> Sorter-cost:  310     Base: 2 3 2
+c ---[ 120]---> Sorter-cost:  530     Base: 2 3 2
+c ---[ 119]---> Sorter-cost:  339     Base: 2 3 2
+c ---[ 118]---> Sorter-cost:  530     Base: 3 2 2
+c ---[ 117]---> Sorter-cost:  384     Base: 3 2 2
+c ---[ 116]---> Sorter-cost:  549     Base: 3 2 2
+c ---[ 115]---> Sorter-cost:  372     Base: 3 2 2
+c ---[ 114]---> Sorter-cost:  444     Base: 3 3 7
+c ---[ 113]---> Sorter-cost:  225     Base: 3 3
+c ---[ 112]---> Sorter-cost:  404     Base: 2 2 3
+c ---[ 111]---> Sorter-cost:  289     Base: 2 2 3
+c ---[ 110]---> BDD-cost:  125
+c ---[ 109]---> BDD-cost:    1
+c ---[ 108]---> Sorter-cost:  501     Base: 2 2 3
+c ---[ 107]---> Sorter-cost:  304     Base: 2 2 3
+c ---[ 106]---> Sorter-cost:  245     Base: 2 2 3 5
+c ---[ 105]---> Sorter-cost:  198     Base: 2 3 2 5
+c ---[ 104]---> Sorter-cost:  417     Base: 2 2 2
+c ---[ 103]---> Sorter-cost:  383     Base: 2 3 2
+c ---[ 102]---> Sorter-cost:  504     Base: 2 3 2
+c ---[ 101]---> Sorter-cost:  562     Base: 7 2
+c ---[ 100]---> Sorter-cost:  329     Base: 3 3 7
+c ---[  99]---> Sorter-cost:  233     Base: 3 3 7
+c ---[  98]---> BDD-cost:   94
+c ---[  97]---> BDD-cost:    1
+c ---[  96]---> Sorter-cost:  678     Base: 5 2
+c ---[  95]---> Sorter-cost:  376     Base: 5 2
+c ---[  94]---> Sorter-cost:  338     Base: 3 2 2
+c ---[  93]---> Sorter-cost:  244     Base: 3 2 2
+c ---[  92]---> Sorter-cost:  517     Base: 2 3 2
+c ---[  91]---> Sorter-cost:  393     Base: 2 3 2
+c ---[  90]---> Sorter-cost:  415     Base: 2 2 3
+c ---[  89]---> Sorter-cost:  345     Base: 2 2 3
+c ---[  88]---> Sorter-cost:  485     Base: 3 2 13
+c ---[  87]---> Sorter-cost:  495     Base: 2 3 2
+c ---[  86]---> Sorter-cost:  450     Base: 3 2 2
+c ---[  85]---> Sorter-cost:  401     Base: 3 2 2
+c ---[  84]---> Sorter-cost:  343     Base: 2 3 2
+c ---[  83]---> Sorter-cost:  255     Base: 2 3 2
+c ---[  82]---> Sorter-cost:  322     Base: 2 2 3
+c ---[  81]---> Sorter-cost:  239     Base: 2 2 3
+c ==================================[MINISAT+]==================================
+c | Conflicts | Original         | Learnt                           | Progress |
+c |           | Clauses Literals |     Max Clauses Literals     LPC |          |
+c ==============================================================================
+c |         0 |  462868  1087858 |  154289       0        0    -nan |  0.000 % |
+c |       101 |  462868  1087858 |  169717     101      725     7.2 |  0.211 % |
+c |       251 |  462868  1087858 |  186689     251     2595    10.3 |  0.211 % |
+c |       477 |  462868  1087858 |  205358     477     7147    15.0 |  0.211 % |
+c |       814 |  462868  1087858 |  225894     814    13144    16.1 |  0.211 % |
+c |      1322 |  462868  1087858 |  248483    1322    26442    20.0 |  0.211 % |
+c ==============================================================================
+c [1mFound solution: -1[0m
+c [1mOptimal solution: -1[0m
+s OPTIMUM FOUND
+v Z -O1_17 -t1_97 O1_18 t1_98 O1_19 t1_99 -O1_20 -t1_100 -O1_21 -t1_101 -O1_22 -t1_102 O1_23 t1_103 O1_24 t1_104 -O1_25 -t1_105 -O1_26 -t1_106 O1_27 t1_107 O1_28 t1_108 O1_29 t1_109 -O1_30 -t1_110 O1_31 t1_111 -O1_32 -t1_112 -t1_33 -I_1 I_2 -I_3 -I_4 -I_5 -I_6 I_7 -I_8 I_9 -I_10 I_11 -I_12 I_13 -I_14 I_15 I_16 -t1_34 -t1_35 -t1_36 -t1_37 -t1_38 -t1_39 t1_40 t1_41 -t1_42 -t1_43 -t1_44 t1_45 -t1_46 -t1_47 -t1_48 -t1_49 t1_50 -t1_51 -t1_52 -t1_53 t1_54 t1_55 t1_56 -t1_57 -t1_58 -t1_59 t1_60 t1_61 -t1_62 -t1_63 t1_64 t1_65 t1_66 -t1_67 t1_68 t1_69 t1_70 -t1_71 -t1_72 t1_73 -t1_74 -t1_75 t1_76 t1_77 -t1_78 -t1_79 t1_80 -t1_81 -t1_82 -t1_83 t1_84 -t1_85 t1_86 t1_87 t1_88 t1_89 -t1_90 t1_91 -t1_92 -t1_93 t1_94 -t1_95 t1_96 -O2_17 -t2_97 O2_18 t2_98 -O2_19 -t2_99 O2_20 t2_100 -O2_21 -t2_101 -O2_22 -t2_102 O2_23 t2_103 -O2_24 -t2_104 -O2_25 -t2_105 O2_26 t2_106 -O2_27 -t2_107 O2_28 t2_108 -O2_29 -t2_109 -O2_30 -t2_110 -O2_31 -t2_111 -O2_32 -t2_112 -t2_33 -t2_34 -t2_35 -t2_36 -t2_37 -t2_38 t2_39 t2_40 t2_41 -t2_42 t2_43 -t2_44 t2_45 -t2_46 -t2_47 -t2_48 -t2_49 t2_50 -t2_51 -t2_52 -t2_53 t2_54 -t2_55 t2_56 t2_57 -t2_58 -t2_59 t2_60 t2_61 -t2_62 -t2_63 t2_64 -t2_65 t2_66 -t2_67 t2_68 t2_69 t2_70 -t2_71 -t2_72 t2_73 -t2_74 -t2_75 t2_76 -t2_77 t2_78 -t2_79 t2_80 -t2_81 -t2_82 -t2_83 t2_84 -t2_85 -t2_86 t2_87 t2_88 -t2_89 t2_90 t2_91 t2_92 t2_93 t2_94 -t2_95 t2_96 -M_0 -M_1 M_2 M_3 -M_4 -M_5 -M_6 M_7 -M_8 M_9 M_10 -M_11 M_12 -M_13 M_14 -M_15
+c _______________________________________________________________________________
+c 
+c restarts              : 6
+c conflicts             : 2018           (505 /sec)
+c decisions             : 75702          (18954 /sec)
+c propagations          : 0              (0 /sec)
+c inspects              : 0              (0 /sec)
+c CPU time              : 3.99389 s
+c _______________________________________________________________________________

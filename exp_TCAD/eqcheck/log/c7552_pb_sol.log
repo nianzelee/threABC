@@ -1,0 +1,2930 @@
+c Parsing PB file...
+c Converting 4305 PB-constraints to clauses...
+c   -- Unit propagations: (none)
+c   -- Detecting intervals from adjacent constraints: #################################################################################################################################################################################################################################
+c   -- Clauses(.)/Splits(s): ................s.s.s...s..s..s..s...s..s...s..s.......s....s..s..s..s....s..s....s..s.........s..s...s..s.ss.s.s.s.......s......s..s..s..s..ss...ss.sss....ss........s.................ss..s............s......s...s..............................s....ssssss......s..........s....ss.......s.....................................s....s.s........................s.s...............s.........ss........s..............s.s.....s.................s....ss.s...............s.s.....s.s..s...........sss.......s................ssss..........sss....s.ss.....sssss...ss...sss..ss...s.......s.s.s...s.ss.ss....s.........s..ss.s.s...........ss.s.s...ss.s.s.ss.ss.s....s.s.s.s.s.s.s.ss.s.s....s.s.s.s.s..ss.s.ss......s........s...s.s.ss....ss....s...s.s..s.s.ss..s.ss..s.s.s..s.....s.s.ssssss....s.ss....s...s.s....sssss..ssssss.s.ss.sss.....ss..s.sssss.sssssssssss.s....sss......s.sss..sss.ss.sssss..ss...ss.sssssssss.sssss.s.sss...ss..ssssss.s.sssssss.sss...ssssss.s..ssss.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+c ---[4603]---> BDD-cost:    1
+c ---[4601]---> BDD-cost:    1
+c ---[4599]---> BDD-cost:    1
+c ---[4597]---> BDD-cost:    1
+c ---[4595]---> BDD-cost:    1
+c ---[4593]---> BDD-cost:    1
+c ---[4591]---> BDD-cost:    1
+c ---[4589]---> BDD-cost:    1
+c ---[4587]---> BDD-cost:    1
+c ---[4585]---> BDD-cost:    1
+c ---[4583]---> BDD-cost:    1
+c ---[4581]---> BDD-cost:    1
+c ---[4579]---> BDD-cost:    1
+c ---[4577]---> BDD-cost:    1
+c ---[4575]---> BDD-cost:    1
+c ---[4573]---> BDD-cost:    1
+c ---[4571]---> BDD-cost:    1
+c ---[4569]---> BDD-cost:    1
+c ---[4567]---> BDD-cost:    1
+c ---[4565]---> BDD-cost:    1
+c ---[4563]---> BDD-cost:    1
+c ---[4561]---> BDD-cost:    1
+c ---[4559]---> BDD-cost:    1
+c ---[4557]---> BDD-cost:    1
+c ---[4555]---> BDD-cost:    1
+c ---[4553]---> BDD-cost:    1
+c ---[4551]---> BDD-cost:    1
+c ---[4549]---> BDD-cost:    1
+c ---[4547]---> BDD-cost:    1
+c ---[4545]---> BDD-cost:    1
+c ---[4543]---> BDD-cost:    1
+c ---[4541]---> BDD-cost:    1
+c ---[4539]---> BDD-cost:    1
+c ---[4537]---> BDD-cost:    1
+c ---[4535]---> BDD-cost:    1
+c ---[4533]---> BDD-cost:    1
+c ---[4531]---> BDD-cost:    1
+c ---[4529]---> BDD-cost:    1
+c ---[4527]---> BDD-cost:    1
+c ---[4525]---> BDD-cost:    1
+c ---[4523]---> BDD-cost:    1
+c ---[4521]---> BDD-cost:    1
+c ---[4519]---> BDD-cost:    1
+c ---[4517]---> BDD-cost:    1
+c ---[4515]---> BDD-cost:    1
+c ---[4513]---> BDD-cost:    1
+c ---[4511]---> BDD-cost:    1
+c ---[4509]---> BDD-cost:    1
+c ---[4507]---> BDD-cost:    1
+c ---[4505]---> BDD-cost:    1
+c ---[4503]---> BDD-cost:    1
+c ---[4501]---> BDD-cost:    1
+c ---[4499]---> BDD-cost:    1
+c ---[4497]---> BDD-cost:    1
+c ---[4495]---> BDD-cost:    1
+c ---[4493]---> BDD-cost:    1
+c ---[4491]---> BDD-cost:    1
+c ---[4489]---> BDD-cost:    1
+c ---[4487]---> BDD-cost:    1
+c ---[4485]---> BDD-cost:    1
+c ---[4483]---> BDD-cost:    1
+c ---[4481]---> BDD-cost:    1
+c ---[4479]---> BDD-cost:    1
+c ---[4477]---> BDD-cost:    1
+c ---[4475]---> BDD-cost:    1
+c ---[4473]---> BDD-cost:    1
+c ---[4471]---> BDD-cost:    1
+c ---[4469]---> BDD-cost:    1
+c ---[4467]---> BDD-cost:    1
+c ---[4465]---> BDD-cost:    1
+c ---[4463]---> BDD-cost:    1
+c ---[4461]---> BDD-cost:    1
+c ---[4459]---> BDD-cost:    1
+c ---[4457]---> BDD-cost:    1
+c ---[4455]---> BDD-cost:    1
+c ---[4453]---> BDD-cost:    1
+c ---[4451]---> BDD-cost:    1
+c ---[4449]---> BDD-cost:    1
+c ---[4447]---> BDD-cost:    1
+c ---[4445]---> BDD-cost:    1
+c ---[4443]---> BDD-cost:    1
+c ---[4441]---> BDD-cost:    1
+c ---[4439]---> BDD-cost:    1
+c ---[4437]---> BDD-cost:    1
+c ---[4435]---> BDD-cost:    1
+c ---[4433]---> BDD-cost:    1
+c ---[4431]---> BDD-cost:    1
+c ---[4429]---> BDD-cost:    1
+c ---[4427]---> BDD-cost:    1
+c ---[4425]---> BDD-cost:    1
+c ---[4423]---> BDD-cost:    1
+c ---[4421]---> BDD-cost:    1
+c ---[4419]---> BDD-cost:    1
+c ---[4417]---> BDD-cost:    1
+c ---[4415]---> BDD-cost:    1
+c ---[4413]---> BDD-cost:    1
+c ---[4411]---> BDD-cost:    1
+c ---[4409]---> BDD-cost:    1
+c ---[4407]---> BDD-cost:    1
+c ---[4405]---> BDD-cost:    1
+c ---[4403]---> BDD-cost:    1
+c ---[4401]---> BDD-cost:    1
+c ---[4399]---> BDD-cost:    1
+c ---[4397]---> BDD-cost:    1
+c ---[4395]---> BDD-cost:    1
+c ---[4393]---> BDD-cost:    1
+c ---[4391]---> BDD-cost:    1
+c ---[4389]---> BDD-cost:    1
+c ---[4387]---> BDD-cost:    2
+c ---[4385]---> BDD-cost:    4
+c ---[4383]---> BDD-cost:    4
+c ---[4381]---> BDD-cost:    4
+c ---[4379]---> BDD-cost:    4
+c ---[4377]---> BDD-cost:    2
+c ---[4375]---> BDD-cost:    3
+c ---[4373]---> BDD-cost:    2
+c ---[4371]---> BDD-cost:    2
+c ---[4369]---> BDD-cost:    2
+c ---[4368]---> BDD-cost:    3
+c ---[4367]---> BDD-cost:    2
+c ---[4365]---> BDD-cost:    2
+c ---[4363]---> BDD-cost:    2
+c ---[4361]---> BDD-cost:    2
+c ---[4360]---> BDD-cost:    3
+c ---[4359]---> BDD-cost:    2
+c ---[4357]---> BDD-cost:    3
+c ---[4356]---> BDD-cost:    2
+c ---[4353]---> BDD-cost:    2
+c ---[4351]---> BDD-cost:    4
+c ---[4350]---> BDD-cost:    3
+c ---[4349]---> BDD-cost:    1
+c ---[4347]---> BDD-cost:    2
+c ---[4346]---> BDD-cost:    3
+c ---[4345]---> BDD-cost:    1
+c ---[4343]---> BDD-cost:    3
+c ---[4342]---> BDD-cost:    2
+c ---[4341]---> BDD-cost:    1
+c ---[4339]---> BDD-cost:    2
+c ---[4337]---> BDD-cost:    4
+c ---[4335]---> BDD-cost:    2
+c ---[4334]---> BDD-cost:    3
+c ---[4333]---> BDD-cost:    1
+c ---[4331]---> BDD-cost:    3
+c ---[4329]---> BDD-cost:    2
+c ---[4328]---> BDD-cost:    4
+c ---[4327]---> BDD-cost:    1
+c ---[4325]---> BDD-cost:    3
+c ---[4323]---> BDD-cost:    2
+c ---[4322]---> BDD-cost:    5
+c ---[4321]---> BDD-cost:    1
+c ---[4320]---> BDD-cost:    5
+c ---[4319]---> BDD-cost:    1
+c ---[4317]---> BDD-cost:    2
+c ---[4316]---> BDD-cost:    3
+c ---[4315]---> BDD-cost:    1
+c ---[4314]---> BDD-cost:    2
+c ---[4313]---> BDD-cost:    1
+c ---[4311]---> BDD-cost:    3
+c ---[4309]---> BDD-cost:    2
+c ---[4307]---> BDD-cost:    2
+c ---[4306]---> BDD-cost:    3
+c ---[4305]---> BDD-cost:    1
+c ---[4304]---> BDD-cost:    2
+c ---[4303]---> BDD-cost:    1
+c ---[4301]---> BDD-cost:    3
+c ---[4299]---> BDD-cost:    2
+c ---[4297]---> BDD-cost:    2
+c ---[4296]---> BDD-cost:    3
+c ---[4295]---> BDD-cost:    1
+c ---[4294]---> BDD-cost:    2
+c ---[4293]---> BDD-cost:    1
+c ---[4291]---> BDD-cost:    3
+c ---[4289]---> BDD-cost:    2
+c ---[4287]---> BDD-cost:    3
+c ---[4285]---> BDD-cost:    2
+c ---[4284]---> BDD-cost:    3
+c ---[4283]---> BDD-cost:    1
+c ---[4282]---> BDD-cost:    2
+c ---[4281]---> BDD-cost:    1
+c ---[4279]---> BDD-cost:    3
+c ---[4277]---> BDD-cost:    2
+c ---[4275]---> BDD-cost:    2
+c ---[4274]---> BDD-cost:    3
+c ---[4273]---> BDD-cost:    1
+c ---[4272]---> BDD-cost:    2
+c ---[4271]---> BDD-cost:    1
+c ---[4269]---> BDD-cost:    3
+c ---[4267]---> BDD-cost:    2
+c ---[4265]---> BDD-cost:    3
+c ---[4263]---> BDD-cost:    2
+c ---[4262]---> BDD-cost:    3
+c ---[4261]---> BDD-cost:    1
+c ---[4260]---> BDD-cost:    2
+c ---[4259]---> BDD-cost:    1
+c ---[4257]---> BDD-cost:    3
+c ---[4255]---> BDD-cost:    2
+c ---[4253]---> BDD-cost:    2
+c ---[4252]---> BDD-cost:    3
+c ---[4251]---> BDD-cost:    1
+c ---[4250]---> BDD-cost:    2
+c ---[4249]---> BDD-cost:    1
+c ---[4247]---> BDD-cost:    3
+c ---[4245]---> BDD-cost:    2
+c ---[4243]---> BDD-cost:    2
+c ---[4241]---> BDD-cost:    2
+c ---[4239]---> BDD-cost:    2
+c ---[4238]---> BDD-cost:    2
+c ---[4237]---> BDD-cost:    1
+c ---[4235]---> BDD-cost:    3
+c ---[4233]---> BDD-cost:    2
+c ---[4231]---> BDD-cost:    2
+c ---[4230]---> BDD-cost:    3
+c ---[4229]---> BDD-cost:    1
+c ---[4228]---> BDD-cost:    2
+c ---[4227]---> BDD-cost:    1
+c ---[4225]---> BDD-cost:    3
+c ---[4223]---> BDD-cost:    2
+c ---[4221]---> BDD-cost:    3
+c ---[4219]---> BDD-cost:    4
+c ---[4217]---> BDD-cost:    2
+c ---[4216]---> BDD-cost:    3
+c ---[4215]---> BDD-cost:    1
+c ---[4214]---> BDD-cost:    2
+c ---[4213]---> BDD-cost:    1
+c ---[4211]---> BDD-cost:    3
+c ---[4209]---> BDD-cost:    2
+c ---[4207]---> BDD-cost:    2
+c ---[4206]---> BDD-cost:    3
+c ---[4205]---> BDD-cost:    1
+c ---[4204]---> BDD-cost:    2
+c ---[4203]---> BDD-cost:    1
+c ---[4201]---> BDD-cost:    3
+c ---[4199]---> BDD-cost:    2
+c ---[4197]---> BDD-cost:    2
+c ---[4196]---> BDD-cost:    3
+c ---[4195]---> BDD-cost:    1
+c ---[4194]---> BDD-cost:    2
+c ---[4193]---> BDD-cost:    1
+c ---[4191]---> BDD-cost:    3
+c ---[4189]---> BDD-cost:    2
+c ---[4187]---> BDD-cost:    2
+c ---[4186]---> BDD-cost:    3
+c ---[4185]---> BDD-cost:    1
+c ---[4184]---> BDD-cost:    2
+c ---[4183]---> BDD-cost:    1
+c ---[4181]---> BDD-cost:    3
+c ---[4179]---> BDD-cost:    2
+c ---[4177]---> BDD-cost:    3
+c ---[4175]---> BDD-cost:    4
+c ---[4173]---> BDD-cost:    2
+c ---[4172]---> BDD-cost:    3
+c ---[4171]---> BDD-cost:    1
+c ---[4170]---> BDD-cost:    2
+c ---[4169]---> BDD-cost:    1
+c ---[4167]---> BDD-cost:    3
+c ---[4165]---> BDD-cost:    2
+c ---[4163]---> BDD-cost:    2
+c ---[4162]---> BDD-cost:    3
+c ---[4161]---> BDD-cost:    1
+c ---[4160]---> BDD-cost:    2
+c ---[4159]---> BDD-cost:    1
+c ---[4157]---> BDD-cost:    3
+c ---[4155]---> BDD-cost:    2
+c ---[4153]---> BDD-cost:    2
+c ---[4151]---> BDD-cost:    3
+c ---[4149]---> BDD-cost:    2
+c ---[4148]---> BDD-cost:    3
+c ---[4147]---> BDD-cost:    1
+c ---[4146]---> BDD-cost:    2
+c ---[4145]---> BDD-cost:    1
+c ---[4143]---> BDD-cost:    3
+c ---[4141]---> BDD-cost:    2
+c ---[4139]---> BDD-cost:    2
+c ---[4138]---> BDD-cost:    3
+c ---[4137]---> BDD-cost:    1
+c ---[4136]---> BDD-cost:    2
+c ---[4135]---> BDD-cost:    1
+c ---[4133]---> BDD-cost:    3
+c ---[4131]---> BDD-cost:    2
+c ---[4129]---> BDD-cost:    7
+c ---[4128]---> BDD-cost:    3
+c ---[4127]---> BDD-cost:    1
+c ---[4125]---> BDD-cost:    2
+c ---[4123]---> BDD-cost:    3
+c ---[4121]---> BDD-cost:    2
+c ---[4120]---> BDD-cost:    3
+c ---[4119]---> BDD-cost:    1
+c ---[4117]---> BDD-cost:    2
+c ---[4115]---> BDD-cost:    2
+c ---[4113]---> BDD-cost:    2
+c ---[4111]---> BDD-cost:    2
+c ---[4110]---> BDD-cost:    3
+c ---[4109]---> BDD-cost:    1
+c ---[4108]---> BDD-cost:    2
+c ---[4107]---> BDD-cost:    1
+c ---[4105]---> BDD-cost:    3
+c ---[4103]---> BDD-cost:    2
+c ---[4101]---> BDD-cost:    2
+c ---[4100]---> BDD-cost:    3
+c ---[4099]---> BDD-cost:    1
+c ---[4098]---> BDD-cost:    2
+c ---[4097]---> BDD-cost:    1
+c ---[4095]---> BDD-cost:    3
+c ---[4093]---> BDD-cost:    2
+c ---[4091]---> BDD-cost:    2
+c ---[4089]---> BDD-cost:    2
+c ---[4088]---> BDD-cost:    4
+c ---[4087]---> BDD-cost:    1
+c ---[4085]---> BDD-cost:    3
+c ---[4083]---> BDD-cost:    2
+c ---[4081]---> BDD-cost:    2
+c ---[4080]---> BDD-cost:    3
+c ---[4079]---> BDD-cost:    1
+c ---[4078]---> BDD-cost:    2
+c ---[4077]---> BDD-cost:    1
+c ---[4075]---> BDD-cost:    3
+c ---[4073]---> BDD-cost:    2
+c ---[4071]---> BDD-cost:    3
+c ---[4070]---> BDD-cost:    4
+c ---[4069]---> BDD-cost:    1
+c ---[4067]---> BDD-cost:    3
+c ---[4065]---> BDD-cost:    2
+c ---[4063]---> BDD-cost:    4
+c ---[4062]---> BDD-cost:    3
+c ---[4061]---> BDD-cost:    1
+c ---[4059]---> BDD-cost:    2
+c ---[4058]---> BDD-cost:    4
+c ---[4057]---> BDD-cost:    1
+c ---[4055]---> BDD-cost:    3
+c ---[4053]---> BDD-cost:    2
+c ---[4051]---> BDD-cost:    4
+c ---[4050]---> BDD-cost:    3
+c ---[4049]---> BDD-cost:    1
+c ---[4047]---> BDD-cost:    2
+c ---[4045]---> BDD-cost:    3
+c ---[4043]---> BDD-cost:    4
+c ---[4042]---> BDD-cost:    4
+c ---[4041]---> BDD-cost:    1
+c ---[4040]---> BDD-cost:    4
+c ---[4039]---> BDD-cost:    1
+c ---[4037]---> BDD-cost:    2
+c ---[4036]---> BDD-cost:    5
+c ---[4035]---> BDD-cost:    1
+c ---[4034]---> BDD-cost:    3
+c ---[4033]---> BDD-cost:    1
+c ---[4032]---> BDD-cost:    5
+c ---[4031]---> BDD-cost:    1
+c ---[4030]---> BDD-cost:    6
+c ---[4029]---> BDD-cost:    1
+c ---[4028]---> BDD-cost:    5
+c ---[4027]---> BDD-cost:    1
+c ---[4025]---> BDD-cost:    2
+c ---[4024]---> BDD-cost:    7
+c ---[4023]---> BDD-cost:    1
+c ---[4022]---> BDD-cost:    5
+c ---[4021]---> BDD-cost:    1
+c ---[4019]---> BDD-cost:    2
+c ---[4018]---> BDD-cost:    2
+c ---[4017]---> BDD-cost:    1
+c ---[4016]---> BDD-cost:    4
+c ---[4015]---> BDD-cost:    1
+c ---[4014]---> BDD-cost:    3
+c ---[4013]---> BDD-cost:    1
+c ---[4012]---> BDD-cost:    4
+c ---[4011]---> BDD-cost:    1
+c ---[4010]---> BDD-cost:    5
+c ---[4009]---> BDD-cost:    1
+c ---[4007]---> BDD-cost:    2
+c ---[4006]---> BDD-cost:    5
+c ---[4005]---> BDD-cost:    1
+c ---[4004]---> BDD-cost:    4
+c ---[4003]---> BDD-cost:    1
+c ---[4002]---> BDD-cost:    4
+c ---[4001]---> BDD-cost:    1
+c ---[4000]---> BDD-cost:    5
+c ---[3999]---> BDD-cost:    1
+c ---[3997]---> BDD-cost:    4
+c ---[3996]---> BDD-cost:    5
+c ---[3995]---> BDD-cost:    1
+c ---[3994]---> BDD-cost:    4
+c ---[3993]---> BDD-cost:    1
+c ---[3992]---> BDD-cost:    7
+c ---[3991]---> BDD-cost:    1
+c ---[3989]---> BDD-cost:    2
+c ---[3988]---> BDD-cost:    3
+c ---[3987]---> BDD-cost:    1
+c ---[3986]---> BDD-cost:    5
+c ---[3985]---> BDD-cost:    1
+c ---[3984]---> BDD-cost:    8
+c ---[3983]---> BDD-cost:    1
+c ---[3981]---> BDD-cost:    2
+c ---[3980]---> BDD-cost:    3
+c ---[3979]---> BDD-cost:    1
+c ---[3977]---> BDD-cost:    2
+c ---[3976]---> BDD-cost:    3
+c ---[3975]---> BDD-cost:    1
+c ---[3973]---> BDD-cost:    2
+c ---[3971]---> BDD-cost:    2
+c ---[3970]---> BDD-cost:    6
+c ---[3969]---> BDD-cost:    1
+c ---[3967]---> BDD-cost:    2
+c ---[3966]---> BDD-cost:    4
+c ---[3965]---> BDD-cost:    1
+c ---[3964]---> BDD-cost:    4
+c ---[3963]---> BDD-cost:    1
+c ---[3961]---> BDD-cost:    4
+c ---[3960]---> BDD-cost:    2
+c ---[3959]---> BDD-cost:    1
+c ---[3958]---> BDD-cost:    3
+c ---[3957]---> BDD-cost:    1
+c ---[3955]---> BDD-cost:    2
+c ---[3954]---> BDD-cost:    3
+c ---[3953]---> BDD-cost:    1
+c ---[3952]---> BDD-cost:    6
+c ---[3951]---> BDD-cost:    1
+c ---[3950]---> BDD-cost:    4
+c ---[3949]---> BDD-cost:    1
+c ---[3948]---> BDD-cost:    3
+c ---[3947]---> BDD-cost:    1
+c ---[3946]---> BDD-cost:    4
+c ---[3945]---> BDD-cost:    1
+c ---[3943]---> BDD-cost:    2
+c ---[3942]---> BDD-cost:    3
+c ---[3941]---> BDD-cost:    1
+c ---[3939]---> BDD-cost:    4
+c ---[3938]---> BDD-cost:    2
+c ---[3937]---> BDD-cost:    1
+c ---[3936]---> BDD-cost:    2
+c ---[3933]---> BDD-cost:    2
+c ---[3932]---> BDD-cost:    3
+c ---[3931]---> BDD-cost:    1
+c ---[3929]---> BDD-cost:    2
+c ---[3928]---> BDD-cost:    6
+c ---[3927]---> BDD-cost:    1
+c ---[3926]---> BDD-cost:    4
+c ---[3925]---> BDD-cost:    1
+c ---[3923]---> BDD-cost:    4
+c ---[3922]---> BDD-cost:    6
+c ---[3921]---> BDD-cost:    1
+c ---[3919]---> BDD-cost:    2
+c ---[3918]---> BDD-cost:    5
+c ---[3917]---> BDD-cost:    1
+c ---[3915]---> BDD-cost:    5
+c ---[3913]---> BDD-cost:    2
+c ---[3911]---> BDD-cost:    2
+c ---[3910]---> BDD-cost:    3
+c ---[3909]---> BDD-cost:    1
+c ---[3908]---> BDD-cost:    7
+c ---[3907]---> BDD-cost:    1
+c ---[3906]---> BDD-cost:    3
+c ---[3905]---> BDD-cost:    1
+c ---[3903]---> BDD-cost:    4
+c ---[3902]---> BDD-cost:    2
+c ---[3901]---> BDD-cost:    1
+c ---[3900]---> BDD-cost:    3
+c ---[3899]---> BDD-cost:    1
+c ---[3897]---> BDD-cost:    2
+c ---[3895]---> BDD-cost:    2
+c ---[3894]---> BDD-cost:    3
+c ---[3893]---> BDD-cost:    1
+c ---[3891]---> BDD-cost:    2
+c ---[3890]---> BDD-cost:    3
+c ---[3889]---> BDD-cost:    1
+c ---[3887]---> BDD-cost:    2
+c ---[3886]---> BDD-cost:    3
+c ---[3885]---> BDD-cost:    1
+c ---[3883]---> BDD-cost:    6
+c ---[3882]---> BDD-cost:    6
+c ---[3881]---> BDD-cost:    1
+c ---[3879]---> BDD-cost:    2
+c ---[3878]---> BDD-cost:    2
+c ---[3877]---> BDD-cost:    1
+c ---[3875]---> BDD-cost:    2
+c ---[3873]---> BDD-cost:    6
+c ---[3871]---> BDD-cost:    4
+c ---[3870]---> BDD-cost:    2
+c ---[3869]---> BDD-cost:    1
+c ---[3867]---> BDD-cost:    4
+c ---[3865]---> BDD-cost:    2
+c ---[3864]---> BDD-cost:    3
+c ---[3863]---> BDD-cost:    1
+c ---[3862]---> BDD-cost:    3
+c ---[3861]---> BDD-cost:    1
+c ---[3860]---> BDD-cost:    2
+c ---[3858]---> BDD-cost:    5
+c ---[3857]---> BDD-cost:    1
+c ---[3855]---> BDD-cost:    2
+c ---[3854]---> BDD-cost:    3
+c ---[3853]---> BDD-cost:    1
+c ---[3851]---> BDD-cost:    2
+c ---[3849]---> BDD-cost:    4
+c ---[3847]---> BDD-cost:    5
+c ---[3845]---> BDD-cost:    2
+c ---[3843]---> BDD-cost:    2
+c ---[3842]---> BDD-cost:    3
+c ---[3841]---> BDD-cost:    1
+c ---[3839]---> BDD-cost:    2
+c ---[3838]---> BDD-cost:    3
+c ---[3837]---> BDD-cost:    1
+c ---[3836]---> BDD-cost:    3
+c ---[3835]---> BDD-cost:    1
+c ---[3833]---> BDD-cost:    2
+c ---[3831]---> BDD-cost:    2
+c ---[3829]---> BDD-cost:    2
+c ---[3828]---> BDD-cost:    3
+c ---[3827]---> BDD-cost:    1
+c ---[3826]---> BDD-cost:    3
+c ---[3825]---> BDD-cost:    1
+c ---[3823]---> BDD-cost:    2
+c ---[3821]---> BDD-cost:    2
+c ---[3819]---> BDD-cost:    5
+c ---[3817]---> BDD-cost:    2
+c ---[3816]---> BDD-cost:    3
+c ---[3815]---> BDD-cost:    1
+c ---[3814]---> BDD-cost:    3
+c ---[3813]---> BDD-cost:    1
+c ---[3812]---> BDD-cost:    6
+c ---[3811]---> BDD-cost:    1
+c ---[3809]---> BDD-cost:    2
+c ---[3808]---> BDD-cost:    5
+c ---[3807]---> BDD-cost:    1
+c ---[3805]---> BDD-cost:    2
+c ---[3803]---> BDD-cost:    2
+c ---[3801]---> BDD-cost:    2
+c ---[3800]---> BDD-cost:    3
+c ---[3799]---> BDD-cost:    1
+c ---[3798]---> BDD-cost:    3
+c ---[3797]---> BDD-cost:    1
+c ---[3795]---> BDD-cost:    2
+c ---[3794]---> BDD-cost:    3
+c ---[3793]---> BDD-cost:    1
+c ---[3792]---> BDD-cost:    3
+c ---[3791]---> BDD-cost:    1
+c ---[3789]---> BDD-cost:    2
+c ---[3787]---> BDD-cost:    2
+c ---[3786]---> BDD-cost:    2
+c ---[3783]---> BDD-cost:    3
+c ---[3781]---> BDD-cost:    2
+c ---[3779]---> BDD-cost:    2
+c ---[3778]---> BDD-cost:    2
+c ---[3775]---> BDD-cost:    2
+c ---[3774]---> BDD-cost:    3
+c ---[3773]---> BDD-cost:    1
+c ---[3772]---> BDD-cost:    3
+c ---[3771]---> BDD-cost:    1
+c ---[3769]---> BDD-cost:    2
+c ---[3767]---> BDD-cost:    2
+c ---[3765]---> BDD-cost:    2
+c ---[3764]---> BDD-cost:    3
+c ---[3763]---> BDD-cost:    1
+c ---[3762]---> BDD-cost:    3
+c ---[3761]---> BDD-cost:    1
+c ---[3759]---> BDD-cost:    7
+c ---[3757]---> BDD-cost:    4
+c ---[3755]---> BDD-cost:    2
+c ---[3753]---> BDD-cost:    2
+c ---[3751]---> BDD-cost:    6
+c ---[3749]---> BDD-cost:    2
+c ---[3748]---> BDD-cost:    3
+c ---[3747]---> BDD-cost:    1
+c ---[3746]---> BDD-cost:    3
+c ---[3745]---> BDD-cost:    1
+c ---[3743]---> BDD-cost:    2
+c ---[3742]---> BDD-cost:    3
+c ---[3741]---> BDD-cost:    1
+c ---[3740]---> BDD-cost:    3
+c ---[3739]---> BDD-cost:    1
+c ---[3737]---> BDD-cost:    2
+c ---[3735]---> BDD-cost:    2
+c ---[3734]---> BDD-cost:    2
+c ---[3731]---> BDD-cost:    3
+c ---[3729]---> BDD-cost:    2
+c ---[3727]---> BDD-cost:    2
+c ---[3726]---> BDD-cost:    2
+c ---[3723]---> BDD-cost:    2
+c ---[3722]---> BDD-cost:    3
+c ---[3721]---> BDD-cost:    1
+c ---[3720]---> BDD-cost:    3
+c ---[3719]---> BDD-cost:    1
+c ---[3717]---> BDD-cost:    2
+c ---[3715]---> BDD-cost:    2
+c ---[3713]---> BDD-cost:    4
+c ---[3711]---> BDD-cost:    2
+c ---[3710]---> BDD-cost:    3
+c ---[3709]---> BDD-cost:    1
+c ---[3708]---> BDD-cost:    3
+c ---[3707]---> BDD-cost:    1
+c ---[3706]---> BDD-cost:    2
+c ---[3703]---> BDD-cost:    2
+c ---[3701]---> BDD-cost:    2
+c ---[3699]---> BDD-cost:    2
+c ---[3697]---> BDD-cost:    2
+c ---[3696]---> BDD-cost:    3
+c ---[3695]---> BDD-cost:    1
+c ---[3694]---> BDD-cost:    3
+c ---[3693]---> BDD-cost:    1
+c ---[3692]---> BDD-cost:    5
+c ---[3691]---> BDD-cost:    1
+c ---[3690]---> BDD-cost:    5
+c ---[3689]---> BDD-cost:    1
+c ---[3687]---> BDD-cost:    4
+c ---[3686]---> BDD-cost:    7
+c ---[3685]---> BDD-cost:    1
+c ---[3683]---> BDD-cost:    2
+c ---[3681]---> BDD-cost:    2
+c ---[3679]---> BDD-cost:    2
+c ---[3677]---> BDD-cost:    4
+c ---[3675]---> BDD-cost:    2
+c ---[3674]---> BDD-cost:    3
+c ---[3673]---> BDD-cost:    1
+c ---[3672]---> BDD-cost:    3
+c ---[3671]---> BDD-cost:    1
+c ---[3669]---> BDD-cost:    2
+c ---[3668]---> BDD-cost:    3
+c ---[3667]---> BDD-cost:    1
+c ---[3666]---> BDD-cost:    3
+c ---[3665]---> BDD-cost:    1
+c ---[3663]---> BDD-cost:    2
+c ---[3661]---> BDD-cost:    2
+c ---[3660]---> BDD-cost:    2
+c ---[3657]---> BDD-cost:    3
+c ---[3655]---> BDD-cost:    2
+c ---[3653]---> BDD-cost:    2
+c ---[3652]---> BDD-cost:    3
+c ---[3651]---> BDD-cost:    1
+c ---[3649]---> BDD-cost:    2
+c ---[3648]---> BDD-cost:    3
+c ---[3647]---> BDD-cost:    1
+c ---[3646]---> BDD-cost:    3
+c ---[3645]---> BDD-cost:    1
+c ---[3643]---> BDD-cost:    2
+c ---[3641]---> BDD-cost:    2
+c ---[3639]---> BDD-cost:    2
+c ---[3638]---> BDD-cost:    3
+c ---[3637]---> BDD-cost:    1
+c ---[3636]---> BDD-cost:    3
+c ---[3635]---> BDD-cost:    1
+c ---[3633]---> BDD-cost:    2
+c ---[3631]---> BDD-cost:    2
+c ---[3629]---> BDD-cost:    2
+c ---[3628]---> BDD-cost:    3
+c ---[3627]---> BDD-cost:    1
+c ---[3626]---> BDD-cost:    3
+c ---[3625]---> BDD-cost:    1
+c ---[3623]---> BDD-cost:    2
+c ---[3622]---> BDD-cost:    3
+c ---[3621]---> BDD-cost:    1
+c ---[3620]---> BDD-cost:    3
+c ---[3619]---> BDD-cost:    1
+c ---[3617]---> BDD-cost:    2
+c ---[3615]---> BDD-cost:    2
+c ---[3614]---> BDD-cost:    2
+c ---[3611]---> BDD-cost:    3
+c ---[3609]---> BDD-cost:    2
+c ---[3607]---> BDD-cost:    2
+c ---[3605]---> BDD-cost:    2
+c ---[3604]---> BDD-cost:    3
+c ---[3603]---> BDD-cost:    1
+c ---[3602]---> BDD-cost:    3
+c ---[3601]---> BDD-cost:    1
+c ---[3599]---> BDD-cost:    2
+c ---[3597]---> BDD-cost:    2
+c ---[3595]---> BDD-cost:    2
+c ---[3593]---> BDD-cost:    2
+c ---[3591]---> BDD-cost:    2
+c ---[3589]---> BDD-cost:    2
+c ---[3587]---> BDD-cost:    2
+c ---[3585]---> BDD-cost:    4
+c ---[3583]---> BDD-cost:    2
+c ---[3581]---> BDD-cost:    2
+c ---[3579]---> BDD-cost:    2
+c ---[3578]---> BDD-cost:    3
+c ---[3577]---> BDD-cost:    1
+c ---[3576]---> BDD-cost:    3
+c ---[3575]---> BDD-cost:    1
+c ---[3573]---> BDD-cost:    2
+c ---[3572]---> BDD-cost:    5
+c ---[3571]---> BDD-cost:    2
+c ---[3570]---> BDD-cost:    6
+c ---[3569]---> BDD-cost:    1
+c ---[3567]---> BDD-cost:    4
+c ---[3566]---> BDD-cost:    3
+c ---[3565]---> BDD-cost:    1
+c ---[3564]---> BDD-cost:    3
+c ---[3563]---> BDD-cost:    1
+c ---[3561]---> BDD-cost:    4
+c ---[3560]---> BDD-cost:    6
+c ---[3559]---> BDD-cost:    1
+c ---[3557]---> BDD-cost:    4
+c ---[3555]---> BDD-cost:    5
+c ---[3554]---> BDD-cost:    7
+c ---[3553]---> BDD-cost:    1
+c ---[3551]---> BDD-cost:    5
+c ---[3549]---> BDD-cost:    7
+c ---[3547]---> BDD-cost:    3
+c ---[3546]---> BDD-cost:    4
+c ---[3545]---> BDD-cost:    1
+c ---[3543]---> BDD-cost:    2
+c ---[3541]---> BDD-cost:    2
+c ---[3539]---> BDD-cost:    2
+c ---[3538]---> BDD-cost:    2
+c ---[3537]---> BDD-cost:    1
+c ---[3535]---> BDD-cost:    2
+c ---[3533]---> BDD-cost:    2
+c ---[3531]---> BDD-cost:    2
+c ---[3530]---> BDD-cost:    5
+c ---[3529]---> BDD-cost:    1
+c ---[3528]---> BDD-cost:    4
+c ---[3527]---> BDD-cost:    1
+c ---[3526]---> BDD-cost:    5
+c ---[3525]---> BDD-cost:    2
+c ---[3524]---> BDD-cost:    3
+c ---[3523]---> BDD-cost:    1
+c ---[3522]---> BDD-cost:    4
+c ---[3521]---> BDD-cost:    2
+c ---[3519]---> BDD-cost:    4
+c ---[3518]---> BDD-cost:    5
+c ---[3517]---> BDD-cost:    1
+c ---[3516]---> BDD-cost:    4
+c ---[3515]---> BDD-cost:    1
+c ---[3513]---> BDD-cost:    3
+c ---[3511]---> BDD-cost:    2
+c ---[3509]---> BDD-cost:    2
+c ---[3508]---> BDD-cost:    7
+c ---[3507]---> BDD-cost:    1
+c ---[3506]---> BDD-cost:    2
+c ---[3505]---> BDD-cost:    1
+c ---[3503]---> BDD-cost:    2
+c ---[3502]---> BDD-cost:    2
+c ---[3501]---> BDD-cost:    1
+c ---[3500]---> BDD-cost:    2
+c ---[3499]---> BDD-cost:    1
+c ---[3497]---> BDD-cost:    2
+c ---[3495]---> BDD-cost:    2
+c ---[3493]---> BDD-cost:    2
+c ---[3491]---> BDD-cost:    2
+c ---[3489]---> BDD-cost:    2
+c ---[3487]---> BDD-cost:    2
+c ---[3485]---> BDD-cost:    3
+c ---[3484]---> BDD-cost:    3
+c ---[3483]---> BDD-cost:    1
+c ---[3481]---> BDD-cost:    4
+c ---[3479]---> BDD-cost:    2
+c ---[3477]---> BDD-cost:    2
+c ---[3475]---> BDD-cost:    2
+c ---[3473]---> BDD-cost:    2
+c ---[3471]---> BDD-cost:    4
+c ---[3469]---> BDD-cost:    4
+c ---[3467]---> BDD-cost:    2
+c ---[3466]---> BDD-cost:    4
+c ---[3465]---> BDD-cost:    1
+c ---[3464]---> BDD-cost:    4
+c ---[3463]---> BDD-cost:    1
+c ---[3462]---> BDD-cost:    2
+c ---[3461]---> BDD-cost:    1
+c ---[3460]---> BDD-cost:    6
+c ---[3459]---> BDD-cost:    1
+c ---[3457]---> BDD-cost:    2
+c ---[3456]---> BDD-cost:    3
+c ---[3455]---> BDD-cost:    1
+c ---[3453]---> BDD-cost:    2
+c ---[3452]---> BDD-cost:    3
+c ---[3451]---> BDD-cost:    1
+c ---[3449]---> BDD-cost:    4
+c ---[3447]---> BDD-cost:    3
+c ---[3445]---> BDD-cost:    3
+c ---[3443]---> BDD-cost:    3
+c ---[3441]---> BDD-cost:    4
+c ---[3440]---> BDD-cost:    5
+c ---[3439]---> BDD-cost:    1
+c ---[3437]---> BDD-cost:    2
+c ---[3435]---> BDD-cost:    2
+c ---[3433]---> BDD-cost:    3
+c ---[3432]---> BDD-cost:    4
+c ---[3431]---> BDD-cost:    1
+c ---[3429]---> BDD-cost:    2
+c ---[3428]---> BDD-cost:    3
+c ---[3427]---> BDD-cost:    1
+c ---[3425]---> BDD-cost:    2
+c ---[3424]---> BDD-cost:    4
+c ---[3423]---> BDD-cost:    1
+c ---[3421]---> BDD-cost:    2
+c ---[3419]---> BDD-cost:    2
+c ---[3418]---> BDD-cost:    3
+c ---[3417]---> BDD-cost:    1
+c ---[3415]---> BDD-cost:    2
+c ---[3413]---> BDD-cost:    2
+c ---[3412]---> BDD-cost:    4
+c ---[3411]---> BDD-cost:    1
+c ---[3409]---> BDD-cost:    2
+c ---[3407]---> BDD-cost:    2
+c ---[3406]---> BDD-cost:    2
+c ---[3403]---> BDD-cost:    2
+c ---[3402]---> BDD-cost:    3
+c ---[3401]---> BDD-cost:    1
+c ---[3399]---> BDD-cost:    2
+c ---[3398]---> BDD-cost:    3
+c ---[3397]---> BDD-cost:    1
+c ---[3395]---> BDD-cost:    2
+c ---[3394]---> BDD-cost:    3
+c ---[3393]---> BDD-cost:    1
+c ---[3391]---> BDD-cost:    2
+c ---[3390]---> BDD-cost:    3
+c ---[3389]---> BDD-cost:    1
+c ---[3387]---> BDD-cost:    3
+c ---[3386]---> BDD-cost:    4
+c ---[3385]---> BDD-cost:    1
+c ---[3383]---> BDD-cost:    3
+c ---[3382]---> BDD-cost:    4
+c ---[3381]---> BDD-cost:    1
+c ---[3379]---> BDD-cost:    2
+c ---[3377]---> BDD-cost:    2
+c ---[3375]---> BDD-cost:    2
+c ---[3373]---> BDD-cost:    2
+c ---[3372]---> BDD-cost:    3
+c ---[3371]---> BDD-cost:    1
+c ---[3369]---> BDD-cost:    2
+c ---[3367]---> BDD-cost:    2
+c ---[3366]---> BDD-cost:    4
+c ---[3365]---> BDD-cost:    1
+c ---[3363]---> BDD-cost:    2
+c ---[3362]---> BDD-cost:    4
+c ---[3361]---> BDD-cost:    1
+c ---[3359]---> BDD-cost:    2
+c ---[3358]---> BDD-cost:    3
+c ---[3357]---> BDD-cost:    1
+c ---[3355]---> BDD-cost:    2
+c ---[3354]---> BDD-cost:    3
+c ---[3353]---> BDD-cost:    1
+c ---[3351]---> BDD-cost:    2
+c ---[3350]---> BDD-cost:    3
+c ---[3349]---> BDD-cost:    1
+c ---[3347]---> BDD-cost:    2
+c ---[3346]---> BDD-cost:    3
+c ---[3345]---> BDD-cost:    1
+c ---[3343]---> BDD-cost:    3
+c ---[3341]---> BDD-cost:    3
+c ---[3339]---> BDD-cost:    3
+c ---[3337]---> BDD-cost:    3
+c ---[3335]---> BDD-cost:    4
+c ---[3333]---> BDD-cost:    2
+c ---[3331]---> BDD-cost:    2
+c ---[3329]---> BDD-cost:    2
+c ---[3327]---> BDD-cost:    5
+c ---[3325]---> BDD-cost:    2
+c ---[3323]---> BDD-cost:    2
+c ---[3321]---> BDD-cost:    2
+c ---[3319]---> BDD-cost:    2
+c ---[3317]---> BDD-cost:    4
+c ---[3316]---> BDD-cost:    5
+c ---[3315]---> BDD-cost:    1
+c ---[3313]---> BDD-cost:    2
+c ---[3312]---> BDD-cost:    3
+c ---[3311]---> BDD-cost:    1
+c ---[3309]---> BDD-cost:    4
+c ---[3308]---> BDD-cost:    3
+c ---[3307]---> BDD-cost:    1
+c ---[3305]---> BDD-cost:    2
+c ---[3303]---> BDD-cost:    2
+c ---[3301]---> BDD-cost:    2
+c ---[3299]---> BDD-cost:    2
+c ---[3297]---> BDD-cost:    2
+c ---[3295]---> BDD-cost:    2
+c ---[3293]---> BDD-cost:    3
+c ---[3291]---> BDD-cost:    3
+c ---[3289]---> BDD-cost:    3
+c ---[3287]---> BDD-cost:    3
+c ---[3286]---> BDD-cost:    4
+c ---[3283]---> BDD-cost:    2
+c ---[3281]---> BDD-cost:    2
+c ---[3280]---> BDD-cost:    3
+c ---[3279]---> BDD-cost:    1
+c ---[3277]---> BDD-cost:    2
+c ---[3276]---> BDD-cost:    4
+c ---[3275]---> BDD-cost:    1
+c ---[3274]---> BDD-cost:    4
+c ---[3273]---> BDD-cost:    1
+c ---[3271]---> BDD-cost:    2
+c ---[3269]---> BDD-cost:    2
+c ---[3267]---> BDD-cost:    2
+c ---[3265]---> BDD-cost:    2
+c ---[3263]---> BDD-cost:    2
+c ---[3262]---> BDD-cost:    3
+c ---[3261]---> BDD-cost:    1
+c ---[3260]---> BDD-cost:    4
+c ---[3259]---> BDD-cost:    1
+c ---[3258]---> BDD-cost:    3
+c ---[3257]---> BDD-cost:    1
+c ---[3255]---> BDD-cost:    2
+c ---[3253]---> BDD-cost:    2
+c ---[3251]---> BDD-cost:    2
+c ---[3250]---> BDD-cost:    3
+c ---[3249]---> BDD-cost:    1
+c ---[3247]---> BDD-cost:    2
+c ---[3245]---> BDD-cost:    2
+c ---[3243]---> BDD-cost:    5
+c ---[3241]---> BDD-cost:    2
+c ---[3239]---> BDD-cost:    4
+c ---[3238]---> BDD-cost:    4
+c ---[3237]---> BDD-cost:    1
+c ---[3235]---> BDD-cost:    2
+c ---[3233]---> BDD-cost:    2
+c ---[3231]---> BDD-cost:    2
+c ---[3229]---> BDD-cost:    2
+c ---[3227]---> BDD-cost:    2
+c ---[3225]---> BDD-cost:    2
+c ---[3223]---> BDD-cost:    3
+c ---[3221]---> BDD-cost:    3
+c ---[3219]---> BDD-cost:    3
+c ---[3217]---> BDD-cost:    3
+c ---[3216]---> BDD-cost:    4
+c ---[3213]---> BDD-cost:    2
+c ---[3211]---> BDD-cost:    2
+c ---[3209]---> BDD-cost:    2
+c ---[3207]---> BDD-cost:    2
+c ---[3205]---> BDD-cost:    4
+c ---[3204]---> BDD-cost:    5
+c ---[3203]---> BDD-cost:    1
+c ---[3201]---> BDD-cost:    2
+c ---[3200]---> BDD-cost:    3
+c ---[3199]---> BDD-cost:    1
+c ---[3197]---> BDD-cost:    2
+c ---[3195]---> BDD-cost:    2
+c ---[3193]---> BDD-cost:    2
+c ---[3191]---> BDD-cost:    2
+c ---[3189]---> BDD-cost:    2
+c ---[3187]---> BDD-cost:    2
+c ---[3185]---> BDD-cost:    2
+c ---[3183]---> BDD-cost:    2
+c ---[3181]---> BDD-cost:    4
+c ---[3180]---> BDD-cost:    4
+c ---[3179]---> BDD-cost:    1
+c ---[3177]---> BDD-cost:    4
+c ---[3176]---> BDD-cost:    2
+c ---[3175]---> BDD-cost:    1
+c ---[3173]---> BDD-cost:    2
+c ---[3171]---> BDD-cost:    2
+c ---[3169]---> BDD-cost:    2
+c ---[3167]---> BDD-cost:    2
+c ---[3165]---> BDD-cost:    2
+c ---[3163]---> BDD-cost:    2
+c ---[3161]---> BDD-cost:    2
+c ---[3160]---> BDD-cost:    3
+c ---[3159]---> BDD-cost:    1
+c ---[3158]---> BDD-cost:    3
+c ---[3157]---> BDD-cost:    1
+c ---[3155]---> BDD-cost:    2
+c ---[3153]---> BDD-cost:    4
+c ---[3151]---> BDD-cost:    2
+c ---[3149]---> BDD-cost:    2
+c ---[3148]---> BDD-cost:    4
+c ---[3147]---> BDD-cost:    1
+c ---[3145]---> BDD-cost:    2
+c ---[3144]---> BDD-cost:    3
+c ---[3143]---> BDD-cost:    1
+c ---[3141]---> BDD-cost:    2
+c ---[3139]---> BDD-cost:    2
+c ---[3138]---> BDD-cost:    2
+c ---[3135]---> BDD-cost:    2
+c ---[3133]---> BDD-cost:    2
+c ---[3131]---> BDD-cost:    2
+c ---[3129]---> BDD-cost:    2
+c ---[3128]---> BDD-cost:    3
+c ---[3127]---> BDD-cost:    1
+c ---[3125]---> BDD-cost:    2
+c ---[3123]---> BDD-cost:    2
+c ---[3122]---> BDD-cost:    3
+c ---[3121]---> BDD-cost:    1
+c ---[3120]---> BDD-cost:    4
+c ---[3119]---> BDD-cost:    1
+c ---[3118]---> BDD-cost:    3
+c ---[3117]---> BDD-cost:    1
+c ---[3115]---> BDD-cost:    2
+c ---[3113]---> BDD-cost:    2
+c ---[3112]---> BDD-cost:    2
+c ---[3111]---> BDD-cost:    1
+c ---[3109]---> BDD-cost:    2
+c ---[3108]---> BDD-cost:    2
+c ---[3106]---> BDD-cost:    4
+c ---[3105]---> BDD-cost:    1
+c ---[3103]---> BDD-cost:    3
+c ---[3102]---> BDD-cost:    2
+c ---[3099]---> BDD-cost:    3
+c ---[3097]---> BDD-cost:    3
+c ---[3095]---> BDD-cost:    3
+c ---[3093]---> BDD-cost:    3
+c ---[3091]---> BDD-cost:    4
+c ---[3090]---> BDD-cost:    5
+c ---[3089]---> BDD-cost:    1
+c ---[3087]---> BDD-cost:    2
+c ---[3086]---> BDD-cost:    3
+c ---[3085]---> BDD-cost:    1
+c ---[3083]---> BDD-cost:    2
+c ---[3081]---> BDD-cost:    2
+c ---[3079]---> BDD-cost:    3
+c ---[3078]---> BDD-cost:    5
+c ---[3077]---> BDD-cost:    1
+c ---[3076]---> BDD-cost:    4
+c ---[3075]---> BDD-cost:    1
+c ---[3073]---> BDD-cost:    2
+c ---[3071]---> BDD-cost:    2
+c ---[3070]---> BDD-cost:    3
+c ---[3069]---> BDD-cost:    1
+c ---[3068]---> BDD-cost:    4
+c ---[3067]---> BDD-cost:    1
+c ---[3066]---> BDD-cost:    3
+c ---[3065]---> BDD-cost:    1
+c ---[3063]---> BDD-cost:    2
+c ---[3061]---> BDD-cost:    2
+c ---[3060]---> BDD-cost:    4
+c ---[3059]---> BDD-cost:    1
+c ---[3057]---> BDD-cost:    2
+c ---[3056]---> BDD-cost:    3
+c ---[3055]---> BDD-cost:    1
+c ---[3053]---> BDD-cost:    2
+c ---[3052]---> BDD-cost:    3
+c ---[3051]---> BDD-cost:    1
+c ---[3049]---> BDD-cost:    2
+c ---[3047]---> BDD-cost:    2
+c ---[3046]---> BDD-cost:    3
+c ---[3045]---> BDD-cost:    1
+c ---[3044]---> BDD-cost:    4
+c ---[3043]---> BDD-cost:    1
+c ---[3041]---> BDD-cost:    2
+c ---[3039]---> BDD-cost:    2
+c ---[3037]---> BDD-cost:    2
+c ---[3035]---> BDD-cost:    2
+c ---[3033]---> BDD-cost:    3
+c ---[3032]---> BDD-cost:    3
+c ---[3031]---> BDD-cost:    1
+c ---[3029]---> BDD-cost:    4
+c ---[3027]---> BDD-cost:    2
+c ---[3025]---> BDD-cost:    2
+c ---[3023]---> BDD-cost:    2
+c ---[3021]---> BDD-cost:    2
+c ---[3019]---> BDD-cost:    4
+c ---[3017]---> BDD-cost:    4
+c ---[3015]---> BDD-cost:    2
+c ---[3014]---> BDD-cost:    4
+c ---[3013]---> BDD-cost:    1
+c ---[3012]---> BDD-cost:    4
+c ---[3011]---> BDD-cost:    1
+c ---[3010]---> BDD-cost:    3
+c ---[3009]---> BDD-cost:    1
+c ---[3007]---> BDD-cost:    4
+c ---[3005]---> BDD-cost:    2
+c ---[3003]---> BDD-cost:    2
+c ---[3001]---> BDD-cost:    2
+c ---[2999]---> BDD-cost:    2
+c ---[2997]---> BDD-cost:    2
+c ---[2995]---> BDD-cost:    2
+c ---[2994]---> BDD-cost:    2
+c ---[2993]---> BDD-cost:    1
+c ---[2991]---> BDD-cost:    2
+c ---[2990]---> BDD-cost:    6
+c ---[2989]---> BDD-cost:    1
+c ---[2987]---> BDD-cost:    2
+c ---[2985]---> BDD-cost:    2
+c ---[2983]---> BDD-cost:    2
+c ---[2982]---> BDD-cost:    1
+c ---[2981]---> BDD-cost:    1
+c ---[2979]---> BDD-cost:    2
+c ---[2977]---> BDD-cost:    2
+c ---[2975]---> BDD-cost:    2
+c ---[2973]---> BDD-cost:    2
+c ---[2972]---> BDD-cost:    4
+c ---[2971]---> BDD-cost:    1
+c ---[2970]---> BDD-cost:    3
+c ---[2969]---> BDD-cost:    2
+c ---[2967]---> BDD-cost:    2
+c ---[2966]---> BDD-cost:    3
+c ---[2965]---> BDD-cost:    2
+c ---[2963]---> BDD-cost:    4
+c ---[2962]---> BDD-cost:    6
+c ---[2961]---> BDD-cost:    1
+c ---[2959]---> BDD-cost:    3
+c ---[2957]---> BDD-cost:    2
+c ---[2956]---> BDD-cost:    4
+c ---[2955]---> BDD-cost:    1
+c ---[2953]---> BDD-cost:    3
+c ---[2951]---> BDD-cost:    2
+c ---[2950]---> BDD-cost:    4
+c ---[2949]---> BDD-cost:    1
+c ---[2947]---> BDD-cost:    2
+c ---[2945]---> BDD-cost:    2
+c ---[2943]---> BDD-cost:    2
+c ---[2942]---> BDD-cost:    3
+c ---[2941]---> BDD-cost:    1
+c ---[2940]---> BDD-cost:    4
+c ---[2939]---> BDD-cost:    2
+c ---[2937]---> BDD-cost:    4
+c ---[2935]---> BDD-cost:    6
+c ---[2933]---> BDD-cost:    2
+c ---[2932]---> BDD-cost:    4
+c ---[2931]---> BDD-cost:    1
+c ---[2930]---> BDD-cost:    4
+c ---[2929]---> BDD-cost:    1
+c ---[2927]---> BDD-cost:    3
+c ---[2925]---> BDD-cost:    3
+c ---[2923]---> BDD-cost:    2
+c ---[2922]---> BDD-cost:    3
+c ---[2921]---> BDD-cost:    1
+c ---[2920]---> BDD-cost:    4
+c ---[2919]---> BDD-cost:    1
+c ---[2917]---> BDD-cost:    2
+c ---[2915]---> BDD-cost:    2
+c ---[2913]---> BDD-cost:    2
+c ---[2911]---> BDD-cost:    2
+c ---[2909]---> BDD-cost:    2
+c ---[2907]---> BDD-cost:    2
+c ---[2905]---> BDD-cost:    2
+c ---[2903]---> BDD-cost:    2
+c ---[2902]---> BDD-cost:    3
+c ---[2901]---> BDD-cost:    1
+c ---[2899]---> BDD-cost:    2
+c ---[2897]---> BDD-cost:    2
+c ---[2895]---> BDD-cost:    2
+c ---[2893]---> BDD-cost:    4
+c ---[2891]---> BDD-cost:    3
+c ---[2889]---> BDD-cost:    4
+c ---[2887]---> BDD-cost:    4
+c ---[2886]---> BDD-cost:    2
+c ---[2883]---> BDD-cost:    2
+c ---[2881]---> BDD-cost:    2
+c ---[2879]---> BDD-cost:    2
+c ---[2878]---> BDD-cost:    6
+c ---[2877]---> BDD-cost:    1
+c ---[2875]---> BDD-cost:    2
+c ---[2873]---> BDD-cost:    2
+c ---[2871]---> BDD-cost:    2
+c ---[2870]---> BDD-cost:    2
+c ---[2869]---> BDD-cost:    1
+c ---[2867]---> BDD-cost:    3
+c ---[2865]---> BDD-cost:    2
+c ---[2863]---> BDD-cost:    3
+c ---[2861]---> BDD-cost:    3
+c ---[2859]---> BDD-cost:    2
+c ---[2857]---> BDD-cost:    2
+c ---[2855]---> BDD-cost:    2
+c ---[2853]---> BDD-cost:    2
+c ---[2852]---> BDD-cost:    3
+c ---[2851]---> BDD-cost:    2
+c ---[2849]---> BDD-cost:    3
+c ---[2848]---> BDD-cost:    3
+c ---[2847]---> BDD-cost:    1
+c ---[2845]---> BDD-cost:    2
+c ---[2844]---> BDD-cost:    3
+c ---[2843]---> BDD-cost:    1
+c ---[2841]---> BDD-cost:    2
+c ---[2839]---> BDD-cost:    2
+c ---[2837]---> BDD-cost:    2
+c ---[2835]---> BDD-cost:    3
+c ---[2833]---> BDD-cost:    4
+c ---[2831]---> BDD-cost:    2
+c ---[2829]---> BDD-cost:    2
+c ---[2827]---> BDD-cost:    2
+c ---[2825]---> BDD-cost:    2
+c ---[2824]---> BDD-cost:    3
+c ---[2823]---> BDD-cost:    2
+c ---[2821]---> BDD-cost:    2
+c ---[2819]---> BDD-cost:    2
+c ---[2817]---> BDD-cost:    2
+c ---[2815]---> BDD-cost:    3
+c ---[2813]---> BDD-cost:    4
+c ---[2812]---> BDD-cost:    3
+c ---[2811]---> BDD-cost:    1
+c ---[2809]---> BDD-cost:    2
+c ---[2807]---> BDD-cost:    2
+c ---[2805]---> BDD-cost:    2
+c ---[2804]---> BDD-cost:    3
+c ---[2803]---> BDD-cost:    1
+c ---[2801]---> BDD-cost:    2
+c ---[2800]---> BDD-cost:    3
+c ---[2799]---> BDD-cost:    1
+c ---[2797]---> BDD-cost:    3
+c ---[2795]---> BDD-cost:    2
+c ---[2794]---> BDD-cost:    3
+c ---[2793]---> BDD-cost:    1
+c ---[2791]---> BDD-cost:    2
+c ---[2790]---> BDD-cost:    2
+c ---[2789]---> BDD-cost:    1
+c ---[2788]---> BDD-cost:    3
+c ---[2787]---> BDD-cost:    1
+c ---[2785]---> BDD-cost:    3
+c ---[2784]---> BDD-cost:    3
+c ---[2783]---> BDD-cost:    1
+c ---[2782]---> BDD-cost:    3
+c ---[2781]---> BDD-cost:    1
+c ---[2779]---> BDD-cost:    2
+c ---[2777]---> BDD-cost:    2
+c ---[2775]---> BDD-cost:    2
+c ---[2773]---> BDD-cost:    2
+c ---[2772]---> BDD-cost:    3
+c ---[2771]---> BDD-cost:    1
+c ---[2770]---> BDD-cost:    5
+c ---[2769]---> BDD-cost:    1
+c ---[2767]---> BDD-cost:    2
+c ---[2765]---> BDD-cost:    4
+c ---[2763]---> BDD-cost:    3
+c ---[2761]---> BDD-cost:    2
+c ---[2759]---> BDD-cost:    4
+c ---[2758]---> BDD-cost:    3
+c ---[2757]---> BDD-cost:    1
+c ---[2756]---> BDD-cost:    2
+c ---[2755]---> BDD-cost:    1
+c ---[2753]---> BDD-cost:    2
+c ---[2751]---> BDD-cost:    3
+c ---[2749]---> BDD-cost:    4
+c ---[2747]---> BDD-cost:    4
+c ---[2746]---> BDD-cost:    6
+c ---[2745]---> BDD-cost:    1
+c ---[2743]---> BDD-cost:    4
+c ---[2742]---> BDD-cost:    2
+c ---[2741]---> BDD-cost:    1
+c ---[2739]---> BDD-cost:    5
+c ---[2738]---> BDD-cost:    6
+c ---[2737]---> BDD-cost:    1
+c ---[2735]---> BDD-cost:    3
+c ---[2734]---> BDD-cost:    3
+c ---[2733]---> BDD-cost:    2
+c ---[2732]---> BDD-cost:    2
+c ---[2731]---> BDD-cost:    1
+c ---[2729]---> BDD-cost:    2
+c ---[2727]---> BDD-cost:    2
+c ---[2725]---> BDD-cost:    2
+c ---[2723]---> BDD-cost:    3
+c ---[2722]---> BDD-cost:    4
+c ---[2721]---> BDD-cost:    1
+c ---[2719]---> BDD-cost:    3
+c ---[2718]---> BDD-cost:    4
+c ---[2717]---> BDD-cost:    1
+c ---[2715]---> BDD-cost:    3
+c ---[2713]---> BDD-cost:    3
+c ---[2711]---> BDD-cost:    5
+c ---[2709]---> BDD-cost:    4
+c ---[2707]---> BDD-cost:    2
+c ---[2706]---> BDD-cost:    3
+c ---[2705]---> BDD-cost:    1
+c ---[2703]---> BDD-cost:    2
+c ---[2701]---> BDD-cost:    2
+c ---[2699]---> BDD-cost:    4
+c ---[2697]---> BDD-cost:    5
+c ---[2695]---> BDD-cost:    5
+c ---[2693]---> BDD-cost:    3
+c ---[2692]---> BDD-cost:    4
+c ---[2691]---> BDD-cost:    1
+c ---[2689]---> BDD-cost:    2
+c ---[2687]---> BDD-cost:    5
+c ---[2686]---> BDD-cost:    3
+c ---[2685]---> BDD-cost:    1
+c ---[2683]---> BDD-cost:    3
+c ---[2682]---> BDD-cost:    2
+c ---[2681]---> BDD-cost:    1
+c ---[2680]---> BDD-cost:    3
+c ---[2679]---> BDD-cost:    1
+c ---[2677]---> BDD-cost:    5
+c ---[2676]---> BDD-cost:    3
+c ---[2675]---> BDD-cost:    1
+c ---[2674]---> BDD-cost:    3
+c ---[2673]---> BDD-cost:    1
+c ---[2671]---> BDD-cost:    3
+c ---[2670]---> BDD-cost:    2
+c ---[2669]---> BDD-cost:    1
+c ---[2667]---> BDD-cost:    2
+c ---[2665]---> BDD-cost:    3
+c ---[2663]---> BDD-cost:    3
+c ---[2661]---> BDD-cost:    3
+c ---[2660]---> BDD-cost:    3
+c ---[2659]---> BDD-cost:    1
+c ---[2657]---> BDD-cost:    4
+c ---[2656]---> BDD-cost:    3
+c ---[2655]---> BDD-cost:    1
+c ---[2654]---> BDD-cost:    3
+c ---[2653]---> BDD-cost:    1
+c ---[2651]---> BDD-cost:    2
+c ---[2650]---> BDD-cost:    3
+c ---[2649]---> BDD-cost:    1
+c ---[2648]---> BDD-cost:    4
+c ---[2647]---> BDD-cost:    1
+c ---[2645]---> BDD-cost:    3
+c ---[2644]---> BDD-cost:    6
+c ---[2643]---> BDD-cost:    1
+c ---[2641]---> BDD-cost:    2
+c ---[2640]---> BDD-cost:    2
+c ---[2639]---> BDD-cost:    1
+c ---[2637]---> BDD-cost:    3
+c ---[2636]---> BDD-cost:    3
+c ---[2635]---> BDD-cost:    1
+c ---[2634]---> BDD-cost:    3
+c ---[2633]---> BDD-cost:    1
+c ---[2631]---> BDD-cost:    2
+c ---[2630]---> BDD-cost:    3
+c ---[2629]---> BDD-cost:    1
+c ---[2627]---> BDD-cost:    2
+c ---[2625]---> BDD-cost:    2
+c ---[2623]---> BDD-cost:    2
+c ---[2621]---> BDD-cost:    2
+c ---[2620]---> BDD-cost:    3
+c ---[2619]---> BDD-cost:    1
+c ---[2618]---> BDD-cost:    4
+c ---[2617]---> BDD-cost:    1
+c ---[2615]---> BDD-cost:    2
+c ---[2613]---> BDD-cost:    2
+c ---[2611]---> BDD-cost:    3
+c ---[2609]---> BDD-cost:    4
+c ---[2608]---> BDD-cost:    3
+c ---[2607]---> BDD-cost:    1
+c ---[2606]---> BDD-cost:    3
+c ---[2605]---> BDD-cost:    1
+c ---[2603]---> BDD-cost:    2
+c ---[2601]---> BDD-cost:    3
+c ---[2599]---> BDD-cost:    3
+c ---[2597]---> BDD-cost:    4
+c ---[2595]---> BDD-cost:    3
+c ---[2593]---> BDD-cost:    2
+c ---[2592]---> BDD-cost:    5
+c ---[2591]---> BDD-cost:    1
+c ---[2589]---> BDD-cost:    2
+c ---[2587]---> BDD-cost:    5
+c ---[2586]---> BDD-cost:    3
+c ---[2585]---> BDD-cost:    1
+c ---[2584]---> BDD-cost:    4
+c ---[2583]---> BDD-cost:    1
+c ---[2581]---> BDD-cost:    3
+c ---[2580]---> BDD-cost:    3
+c ---[2579]---> BDD-cost:    2
+c ---[2577]---> BDD-cost:    3
+c ---[2575]---> BDD-cost:    3
+c ---[2573]---> BDD-cost:    3
+c ---[2572]---> BDD-cost:    3
+c ---[2571]---> BDD-cost:    1
+c ---[2569]---> BDD-cost:    2
+c ---[2568]---> BDD-cost:    5
+c ---[2567]---> BDD-cost:    1
+c ---[2566]---> BDD-cost:    3
+c ---[2565]---> BDD-cost:    1
+c ---[2563]---> BDD-cost:    2
+c ---[2562]---> BDD-cost:    3
+c ---[2561]---> BDD-cost:    1
+c ---[2559]---> BDD-cost:    3
+c ---[2557]---> BDD-cost:    3
+c ---[2556]---> BDD-cost:    6
+c ---[2555]---> BDD-cost:    1
+c ---[2553]---> BDD-cost:    2
+c ---[2552]---> BDD-cost:    2
+c ---[2551]---> BDD-cost:    1
+c ---[2549]---> BDD-cost:    3
+c ---[2548]---> BDD-cost:    3
+c ---[2547]---> BDD-cost:    1
+c ---[2546]---> BDD-cost:    3
+c ---[2545]---> BDD-cost:    1
+c ---[2543]---> BDD-cost:    2
+c ---[2541]---> BDD-cost:    2
+c ---[2539]---> BDD-cost:    2
+c ---[2537]---> BDD-cost:    2
+c ---[2535]---> BDD-cost:    2
+c ---[2533]---> BDD-cost:    2
+c ---[2531]---> BDD-cost:    2
+c ---[2530]---> BDD-cost:    3
+c ---[2529]---> BDD-cost:    1
+c ---[2528]---> BDD-cost:    5
+c ---[2527]---> BDD-cost:    1
+c ---[2525]---> BDD-cost:    2
+c ---[2523]---> BDD-cost:    2
+c ---[2521]---> BDD-cost:    2
+c ---[2519]---> BDD-cost:    7
+c ---[2517]---> BDD-cost:    4
+c ---[2516]---> BDD-cost:    3
+c ---[2515]---> BDD-cost:    1
+c ---[2513]---> BDD-cost:    2
+c ---[2511]---> BDD-cost:    3
+c ---[2510]---> BDD-cost:    4
+c ---[2509]---> BDD-cost:    1
+c ---[2507]---> BDD-cost:    4
+c ---[2506]---> BDD-cost:    5
+c ---[2505]---> BDD-cost:    1
+c ---[2504]---> BDD-cost:    5
+c ---[2503]---> BDD-cost:    1
+c ---[2502]---> BDD-cost:    2
+c ---[2501]---> BDD-cost:    1
+c ---[2499]---> BDD-cost:    5
+c ---[2498]---> BDD-cost:    3
+c ---[2497]---> BDD-cost:    1
+c ---[2496]---> BDD-cost:    5
+c ---[2495]---> BDD-cost:    1
+c ---[2494]---> BDD-cost:    6
+c ---[2493]---> BDD-cost:    1
+c ---[2492]---> BDD-cost:    3
+c ---[2491]---> BDD-cost:    1
+c ---[2490]---> BDD-cost:    3
+c ---[2489]---> BDD-cost:    2
+c ---[2487]---> BDD-cost:    1
+c ---[2485]---> BDD-cost:    1
+c ---[2483]---> BDD-cost:    1
+c ---[2481]---> BDD-cost:    1
+c ---[2479]---> BDD-cost:    1
+c ---[2477]---> BDD-cost:    1
+c ---[2475]---> BDD-cost:    1
+c ---[2473]---> BDD-cost:    1
+c ---[2471]---> BDD-cost:    1
+c ---[2469]---> BDD-cost:    1
+c ---[2467]---> BDD-cost:    1
+c ---[2465]---> BDD-cost:    1
+c ---[2463]---> BDD-cost:    1
+c ---[2461]---> BDD-cost:    1
+c ---[2459]---> BDD-cost:    1
+c ---[2457]---> BDD-cost:    1
+c ---[2455]---> BDD-cost:    1
+c ---[2453]---> BDD-cost:    1
+c ---[2451]---> BDD-cost:    1
+c ---[2449]---> BDD-cost:    1
+c ---[2447]---> BDD-cost:    1
+c ---[2445]---> BDD-cost:    1
+c ---[2443]---> BDD-cost:    1
+c ---[2441]---> BDD-cost:    1
+c ---[2439]---> BDD-cost:    1
+c ---[2437]---> BDD-cost:    1
+c ---[2435]---> BDD-cost:    1
+c ---[2433]---> BDD-cost:    1
+c ---[2431]---> BDD-cost:    1
+c ---[2429]---> BDD-cost:    1
+c ---[2427]---> BDD-cost:    1
+c ---[2425]---> BDD-cost:    1
+c ---[2423]---> BDD-cost:    1
+c ---[2421]---> BDD-cost:    1
+c ---[2419]---> BDD-cost:    1
+c ---[2417]---> BDD-cost:    1
+c ---[2415]---> BDD-cost:    1
+c ---[2413]---> BDD-cost:    1
+c ---[2411]---> BDD-cost:    1
+c ---[2409]---> BDD-cost:    1
+c ---[2407]---> BDD-cost:    1
+c ---[2405]---> BDD-cost:    1
+c ---[2403]---> BDD-cost:    1
+c ---[2401]---> BDD-cost:    1
+c ---[2399]---> BDD-cost:    1
+c ---[2397]---> BDD-cost:    1
+c ---[2395]---> BDD-cost:    1
+c ---[2393]---> BDD-cost:    1
+c ---[2391]---> BDD-cost:    1
+c ---[2389]---> BDD-cost:    1
+c ---[2387]---> BDD-cost:    1
+c ---[2385]---> BDD-cost:    1
+c ---[2383]---> BDD-cost:    1
+c ---[2381]---> BDD-cost:    1
+c ---[2379]---> BDD-cost:    1
+c ---[2377]---> BDD-cost:    1
+c ---[2375]---> BDD-cost:    1
+c ---[2373]---> BDD-cost:    1
+c ---[2371]---> BDD-cost:    1
+c ---[2369]---> BDD-cost:    1
+c ---[2367]---> BDD-cost:    1
+c ---[2365]---> BDD-cost:    1
+c ---[2363]---> BDD-cost:    1
+c ---[2361]---> BDD-cost:    1
+c ---[2359]---> BDD-cost:    1
+c ---[2357]---> BDD-cost:    1
+c ---[2355]---> BDD-cost:    1
+c ---[2353]---> BDD-cost:    1
+c ---[2351]---> BDD-cost:    1
+c ---[2349]---> BDD-cost:    1
+c ---[2347]---> BDD-cost:    1
+c ---[2345]---> BDD-cost:    1
+c ---[2343]---> BDD-cost:    1
+c ---[2341]---> BDD-cost:    1
+c ---[2339]---> BDD-cost:    1
+c ---[2337]---> BDD-cost:    1
+c ---[2335]---> BDD-cost:    1
+c ---[2333]---> BDD-cost:    1
+c ---[2331]---> BDD-cost:    1
+c ---[2329]---> BDD-cost:    1
+c ---[2327]---> BDD-cost:    1
+c ---[2325]---> BDD-cost:    1
+c ---[2323]---> BDD-cost:    1
+c ---[2321]---> BDD-cost:    1
+c ---[2319]---> BDD-cost:    1
+c ---[2317]---> BDD-cost:    1
+c ---[2315]---> BDD-cost:    1
+c ---[2313]---> BDD-cost:    1
+c ---[2311]---> BDD-cost:    1
+c ---[2309]---> BDD-cost:    1
+c ---[2307]---> BDD-cost:    1
+c ---[2305]---> BDD-cost:    1
+c ---[2303]---> BDD-cost:    1
+c ---[2301]---> BDD-cost:    1
+c ---[2299]---> BDD-cost:    1
+c ---[2297]---> BDD-cost:    1
+c ---[2295]---> BDD-cost:    1
+c ---[2293]---> BDD-cost:    1
+c ---[2291]---> BDD-cost:    1
+c ---[2289]---> BDD-cost:    1
+c ---[2287]---> BDD-cost:    1
+c ---[2285]---> BDD-cost:    1
+c ---[2283]---> BDD-cost:    1
+c ---[2281]---> BDD-cost:    1
+c ---[2279]---> BDD-cost:    1
+c ---[2277]---> BDD-cost:    1
+c ---[2275]---> BDD-cost:    1
+c ---[2273]---> BDD-cost:    1
+c ---[2271]---> BDD-cost:    1
+c ---[2269]---> BDD-cost:    1
+c ---[2267]---> BDD-cost:    1
+c ---[2265]---> BDD-cost:    1
+c ---[2263]---> BDD-cost:    1
+c ---[2261]---> BDD-cost:    1
+c ---[2259]---> BDD-cost:    1
+c ---[2257]---> BDD-cost:    1
+c ---[2255]---> BDD-cost:    1
+c ---[2254]---> BDD-cost:    3
+c ---[2253]---> BDD-cost:    2
+c ---[2251]---> BDD-cost:    2
+c ---[2250]---> BDD-cost:    3
+c ---[2249]---> BDD-cost:    2
+c ---[2247]---> BDD-cost:    1
+c ---[2245]---> BDD-cost:    2
+c ---[2244]---> BDD-cost:    3
+c ---[2243]---> BDD-cost:    1
+c ---[2241]---> BDD-cost:    2
+c ---[2240]---> BDD-cost:    4
+c ---[2239]---> BDD-cost:    1
+c ---[2237]---> BDD-cost:    1
+c ---[2235]---> BDD-cost:    2
+c ---[2234]---> BDD-cost:    3
+c ---[2233]---> BDD-cost:    1
+c ---[2231]---> BDD-cost:    3
+c ---[2229]---> BDD-cost:    2
+c ---[2228]---> BDD-cost:    7
+c ---[2227]---> BDD-cost:    2
+c ---[2226]---> BDD-cost:    5
+c ---[2225]---> BDD-cost:    1
+c ---[2223]---> BDD-cost:    2
+c ---[2222]---> BDD-cost:    2
+c ---[2221]---> BDD-cost:    1
+c ---[2219]---> BDD-cost:    2
+c ---[2218]---> BDD-cost:    4
+c ---[2217]---> BDD-cost:    1
+c ---[2215]---> BDD-cost:    3
+c ---[2213]---> BDD-cost:    2
+c ---[2212]---> BDD-cost:    3
+c ---[2211]---> BDD-cost:    1
+c ---[2209]---> BDD-cost:    2
+c ---[2207]---> BDD-cost:    2
+c ---[2205]---> BDD-cost:    2
+c ---[2204]---> BDD-cost:    3
+c ---[2203]---> BDD-cost:    1
+c ---[2201]---> BDD-cost:    2
+c ---[2199]---> BDD-cost:    2
+c ---[2198]---> BDD-cost:    3
+c ---[2197]---> BDD-cost:    1
+c ---[2196]---> BDD-cost:    6
+c ---[2195]---> BDD-cost:    1
+c ---[2193]---> BDD-cost:    1
+c ---[2191]---> BDD-cost:    2
+c ---[2189]---> BDD-cost:    2
+c ---[2188]---> BDD-cost:    3
+c ---[2187]---> BDD-cost:    1
+c ---[2185]---> BDD-cost:    1
+c ---[2184]---> BDD-cost:    2
+c ---[2183]---> BDD-cost:    1
+c ---[2182]---> BDD-cost:    4
+c ---[2181]---> BDD-cost:    1
+c ---[2179]---> BDD-cost:    2
+c ---[2177]---> BDD-cost:    5
+c ---[2175]---> BDD-cost:    1
+c ---[2174]---> BDD-cost:    2
+c ---[2173]---> BDD-cost:    1
+c ---[2172]---> BDD-cost:    2
+c ---[2171]---> BDD-cost:    1
+c ---[2170]---> BDD-cost:    5
+c ---[2169]---> BDD-cost:    1
+c ---[2167]---> BDD-cost:    2
+c ---[2166]---> BDD-cost:    3
+c ---[2165]---> BDD-cost:    1
+c ---[2163]---> BDD-cost:    1
+c ---[2162]---> BDD-cost:    2
+c ---[2161]---> BDD-cost:    1
+c ---[2159]---> BDD-cost:    2
+c ---[2158]---> BDD-cost:    8
+c ---[2157]---> BDD-cost:    2
+c ---[2156]---> BDD-cost:    9
+c ---[2155]---> BDD-cost:    1
+c ---[2153]---> BDD-cost:    2
+c ---[2152]---> BDD-cost:    3
+c ---[2151]---> BDD-cost:    1
+c ---[2150]---> BDD-cost:    1
+c ---[2149]---> BDD-cost:    1
+c ---[2147]---> BDD-cost:    2
+c ---[2145]---> BDD-cost:    5
+c ---[2143]---> BDD-cost:    1
+c ---[2141]---> BDD-cost:    2
+c ---[2140]---> BDD-cost:    4
+c ---[2139]---> BDD-cost:    1
+c ---[2137]---> BDD-cost:    1
+c ---[2135]---> BDD-cost:    2
+c ---[2134]---> BDD-cost:    4
+c ---[2133]---> BDD-cost:    1
+c ---[2131]---> BDD-cost:    1
+c ---[2129]---> BDD-cost:    2
+c ---[2127]---> BDD-cost:    1
+c ---[2125]---> BDD-cost:    2
+c ---[2124]---> BDD-cost:    4
+c ---[2123]---> BDD-cost:    1
+c ---[2121]---> BDD-cost:    1
+c ---[2119]---> BDD-cost:    2
+c ---[2118]---> BDD-cost:    4
+c ---[2117]---> BDD-cost:    1
+c ---[2115]---> BDD-cost:    1
+c ---[2113]---> BDD-cost:    2
+c ---[2112]---> BDD-cost:    4
+c ---[2111]---> BDD-cost:    1
+c ---[2109]---> BDD-cost:    1
+c ---[2107]---> BDD-cost:    2
+c ---[2106]---> BDD-cost:    4
+c ---[2105]---> BDD-cost:    1
+c ---[2103]---> BDD-cost:    8
+c ---[2101]---> BDD-cost:    1
+c ---[2100]---> BDD-cost:    3
+c ---[2099]---> BDD-cost:    1
+c ---[2097]---> BDD-cost:    2
+c ---[2095]---> BDD-cost:    1
+c ---[2093]---> BDD-cost:    2
+c ---[2092]---> BDD-cost:    4
+c ---[2091]---> BDD-cost:    1
+c ---[2089]---> BDD-cost:    1
+c ---[2087]---> BDD-cost:    1
+c ---[2085]---> BDD-cost:    3
+c ---[2084]---> BDD-cost:    4
+c ---[2083]---> BDD-cost:    1
+c ---[2081]---> BDD-cost:    1
+c ---[2080]---> BDD-cost:    3
+c ---[2079]---> BDD-cost:    1
+c ---[2077]---> BDD-cost:    2
+c ---[2075]---> BDD-cost:    2
+c ---[2073]---> BDD-cost:    5
+c ---[2071]---> BDD-cost:    1
+c ---[2070]---> BDD-cost:    3
+c ---[2069]---> BDD-cost:    1
+c ---[2067]---> BDD-cost:    2
+c ---[2065]---> BDD-cost:    1
+c ---[2063]---> BDD-cost:    2
+c ---[2062]---> BDD-cost:    4
+c ---[2061]---> BDD-cost:    1
+c ---[2059]---> BDD-cost:    1
+c ---[2058]---> BDD-cost:    3
+c ---[2057]---> BDD-cost:    1
+c ---[2055]---> BDD-cost:    2
+c ---[2053]---> BDD-cost:    2
+c ---[2051]---> BDD-cost:    1
+c ---[2049]---> BDD-cost:    2
+c ---[2048]---> BDD-cost:    4
+c ---[2047]---> BDD-cost:    1
+c ---[2045]---> BDD-cost:    5
+c ---[2043]---> BDD-cost:    1
+c ---[2041]---> BDD-cost:    2
+c ---[2040]---> BDD-cost:    4
+c ---[2039]---> BDD-cost:    1
+c ---[2037]---> BDD-cost:    1
+c ---[2035]---> BDD-cost:    2
+c ---[2034]---> BDD-cost:    4
+c ---[2033]---> BDD-cost:    1
+c ---[2032]---> BDD-cost:    1
+c ---[2031]---> BDD-cost:    1
+c ---[2030]---> BDD-cost:    5
+c ---[2029]---> BDD-cost:    1
+c ---[2027]---> BDD-cost:    4
+c ---[2026]---> BDD-cost:    1
+c ---[2025]---> BDD-cost:    1
+c ---[2023]---> BDD-cost:    1
+c ---[2022]---> BDD-cost:    5
+c ---[2021]---> BDD-cost:    1
+c ---[2020]---> BDD-cost:    4
+c ---[2019]---> BDD-cost:    1
+c ---[2018]---> BDD-cost:    1
+c ---[2017]---> BDD-cost:    1
+c ---[2016]---> BDD-cost:    1
+c ---[2015]---> BDD-cost:    1
+c ---[2014]---> BDD-cost:    5
+c ---[2013]---> BDD-cost:    1
+c ---[2012]---> BDD-cost:    1
+c ---[2011]---> BDD-cost:    1
+c ---[2010]---> BDD-cost:    1
+c ---[2009]---> BDD-cost:    1
+c ---[2008]---> BDD-cost:    5
+c ---[2007]---> BDD-cost:    1
+c ---[2006]---> BDD-cost:    2
+c ---[2005]---> BDD-cost:    1
+c ---[2004]---> BDD-cost:    7
+c ---[2003]---> BDD-cost:    2
+c ---[2002]---> BDD-cost:    1
+c ---[2001]---> BDD-cost:    1
+c ---[2000]---> BDD-cost:    1
+c ---[1999]---> BDD-cost:    1
+c ---[1998]---> BDD-cost:    5
+c ---[1997]---> BDD-cost:    1
+c ---[1996]---> BDD-cost:    1
+c ---[1995]---> BDD-cost:    1
+c ---[1994]---> BDD-cost:    8
+c ---[1993]---> BDD-cost:    1
+c ---[1992]---> BDD-cost:    1
+c ---[1991]---> BDD-cost:    1
+c ---[1990]---> BDD-cost:    5
+c ---[1989]---> BDD-cost:    1
+c ---[1988]---> BDD-cost:    2
+c ---[1987]---> BDD-cost:    1
+c ---[1986]---> BDD-cost:    1
+c ---[1985]---> BDD-cost:    1
+c ---[1984]---> BDD-cost:    4
+c ---[1983]---> BDD-cost:    1
+c ---[1982]---> BDD-cost:    7
+c ---[1981]---> BDD-cost:    1
+c ---[1980]---> BDD-cost:    7
+c ---[1979]---> BDD-cost:    1
+c ---[1978]---> BDD-cost:    9
+c ---[1977]---> BDD-cost:    1
+c ---[1976]---> BDD-cost:    7
+c ---[1975]---> BDD-cost:    1
+c ---[1974]---> BDD-cost:    4
+c ---[1973]---> BDD-cost:    1
+c ---[1971]---> BDD-cost:    1
+c ---[1969]---> BDD-cost:    1
+c ---[1968]---> BDD-cost:    2
+c ---[1967]---> BDD-cost:    1
+c ---[1966]---> BDD-cost:    2
+c ---[1965]---> BDD-cost:    1
+c ---[1964]---> BDD-cost:    2
+c ---[1963]---> BDD-cost:    1
+c ---[1962]---> BDD-cost:    3
+c ---[1961]---> BDD-cost:    1
+c ---[1960]---> BDD-cost:    3
+c ---[1959]---> BDD-cost:    1
+c ---[1957]---> BDD-cost:    3
+c ---[1955]---> BDD-cost:    1
+c ---[1954]---> BDD-cost:    2
+c ---[1953]---> BDD-cost:    1
+c ---[1951]---> BDD-cost:    2
+c ---[1950]---> BDD-cost:    3
+c ---[1949]---> BDD-cost:    1
+c ---[1948]---> BDD-cost:    3
+c ---[1947]---> BDD-cost:    1
+c ---[1945]---> BDD-cost:    5
+c ---[1943]---> BDD-cost:    1
+c ---[1942]---> BDD-cost:    2
+c ---[1941]---> BDD-cost:    1
+c ---[1940]---> BDD-cost:    2
+c ---[1939]---> BDD-cost:    1
+c ---[1938]---> BDD-cost:    2
+c ---[1935]---> BDD-cost:    2
+c ---[1934]---> BDD-cost:    3
+c ---[1933]---> BDD-cost:    1
+c ---[1931]---> BDD-cost:    1
+c ---[1930]---> BDD-cost:    2
+c ---[1929]---> BDD-cost:    1
+c ---[1928]---> BDD-cost:    6
+c ---[1927]---> BDD-cost:    1
+c ---[1926]---> BDD-cost:    5
+c ---[1925]---> BDD-cost:    2
+c ---[1923]---> BDD-cost:    1
+c ---[1922]---> BDD-cost:    2
+c ---[1921]---> BDD-cost:    1
+c ---[1919]---> BDD-cost:    1
+c ---[1918]---> BDD-cost:    2
+c ---[1917]---> BDD-cost:    1
+c ---[1916]---> BDD-cost:    3
+c ---[1915]---> BDD-cost:    1
+c ---[1914]---> BDD-cost:    6
+c ---[1913]---> BDD-cost:    1
+c ---[1912]---> BDD-cost:    3
+c ---[1911]---> BDD-cost:    1
+c ---[1910]---> BDD-cost:    4
+c ---[1909]---> BDD-cost:    1
+c ---[1908]---> BDD-cost:    3
+c ---[1907]---> BDD-cost:    1
+c ---[1906]---> BDD-cost:    4
+c ---[1905]---> BDD-cost:    2
+c ---[1903]---> BDD-cost:    1
+c ---[1902]---> BDD-cost:    2
+c ---[1901]---> BDD-cost:    1
+c ---[1900]---> BDD-cost:    5
+c ---[1899]---> BDD-cost:    1
+c ---[1898]---> BDD-cost:    3
+c ---[1897]---> BDD-cost:    1
+c ---[1896]---> BDD-cost:    5
+c ---[1895]---> BDD-cost:    2
+c ---[1893]---> BDD-cost:    1
+c ---[1892]---> BDD-cost:    2
+c ---[1891]---> BDD-cost:    1
+c ---[1889]---> BDD-cost:    3
+c ---[1888]---> BDD-cost:    2
+c ---[1887]---> BDD-cost:    1
+c ---[1886]---> BDD-cost:    3
+c ---[1885]---> BDD-cost:    1
+c ---[1883]---> BDD-cost:    1
+c ---[1882]---> BDD-cost:    2
+c ---[1881]---> BDD-cost:    1
+c ---[1880]---> BDD-cost:    6
+c ---[1879]---> BDD-cost:    1
+c ---[1878]---> BDD-cost:    4
+c ---[1877]---> BDD-cost:    1
+c ---[1875]---> BDD-cost:    1
+c ---[1873]---> BDD-cost:    1
+c ---[1872]---> BDD-cost:    2
+c ---[1871]---> BDD-cost:    1
+c ---[1870]---> BDD-cost:    6
+c ---[1869]---> BDD-cost:    1
+c ---[1868]---> BDD-cost:    2
+c ---[1867]---> BDD-cost:    1
+c ---[1865]---> BDD-cost:    3
+c ---[1864]---> BDD-cost:    3
+c ---[1863]---> BDD-cost:    1
+c ---[1862]---> BDD-cost:    3
+c ---[1861]---> BDD-cost:    1
+c ---[1860]---> BDD-cost:    4
+c ---[1859]---> BDD-cost:    2
+c ---[1857]---> BDD-cost:    1
+c ---[1856]---> BDD-cost:    2
+c ---[1855]---> BDD-cost:    1
+c ---[1853]---> BDD-cost:    3
+c ---[1851]---> BDD-cost:    1
+c ---[1850]---> BDD-cost:    2
+c ---[1849]---> BDD-cost:    1
+c ---[1848]---> BDD-cost:    5
+c ---[1847]---> BDD-cost:    1
+c ---[1845]---> BDD-cost:    4
+c ---[1844]---> BDD-cost:    2
+c ---[1843]---> BDD-cost:    1
+c ---[1842]---> BDD-cost:    3
+c ---[1841]---> BDD-cost:    1
+c ---[1840]---> BDD-cost:    3
+c ---[1839]---> BDD-cost:    1
+c ---[1837]---> BDD-cost:    5
+c ---[1835]---> BDD-cost:    1
+c ---[1834]---> BDD-cost:    2
+c ---[1833]---> BDD-cost:    1
+c ---[1832]---> BDD-cost:    3
+c ---[1831]---> BDD-cost:    1
+c ---[1830]---> BDD-cost:    5
+c ---[1829]---> BDD-cost:    1
+c ---[1827]---> BDD-cost:    1
+c ---[1825]---> BDD-cost:    1
+c ---[1824]---> BDD-cost:    2
+c ---[1823]---> BDD-cost:    1
+c ---[1821]---> BDD-cost:    2
+c ---[1819]---> BDD-cost:    3
+c ---[1817]---> BDD-cost:    3
+c ---[1816]---> BDD-cost:    2
+c ---[1815]---> BDD-cost:    1
+c ---[1814]---> BDD-cost:    4
+c ---[1813]---> BDD-cost:    2
+c ---[1811]---> BDD-cost:    1
+c ---[1810]---> BDD-cost:    2
+c ---[1809]---> BDD-cost:    1
+c ---[1808]---> BDD-cost:    2
+c ---[1807]---> BDD-cost:    1
+c ---[1806]---> BDD-cost:    2
+c ---[1805]---> BDD-cost:    1
+c ---[1804]---> BDD-cost:    7
+c ---[1803]---> BDD-cost:    1
+c ---[1801]---> BDD-cost:    2
+c ---[1800]---> BDD-cost:    5
+c ---[1799]---> BDD-cost:    1
+c ---[1797]---> BDD-cost:    2
+c ---[1795]---> BDD-cost:    2
+c ---[1794]---> BDD-cost:    2
+c ---[1793]---> BDD-cost:    1
+c ---[1791]---> BDD-cost:    6
+c ---[1789]---> BDD-cost:    1
+c ---[1788]---> BDD-cost:    2
+c ---[1787]---> BDD-cost:    1
+c ---[1786]---> BDD-cost:    2
+c ---[1785]---> BDD-cost:    1
+c ---[1783]---> BDD-cost:    2
+c ---[1782]---> BDD-cost:    3
+c ---[1781]---> BDD-cost:    1
+c ---[1779]---> BDD-cost:    1
+c ---[1777]---> BDD-cost:    5
+c ---[1776]---> BDD-cost:    8
+c ---[1775]---> BDD-cost:    1
+c ---[1773]---> BDD-cost:    2
+c ---[1771]---> BDD-cost:    6
+c ---[1769]---> BDD-cost:    1
+c ---[1767]---> BDD-cost:    1
+c ---[1766]---> BDD-cost:    2
+c ---[1765]---> BDD-cost:    1
+c ---[1764]---> BDD-cost:    2
+c ---[1763]---> BDD-cost:    1
+c ---[1762]---> BDD-cost:    3
+c ---[1761]---> BDD-cost:    1
+c ---[1760]---> BDD-cost:    3
+c ---[1759]---> BDD-cost:    1
+c ---[1757]---> BDD-cost:    4
+c ---[1755]---> BDD-cost:    1
+c ---[1753]---> BDD-cost:    2
+c ---[1752]---> BDD-cost:    3
+c ---[1751]---> BDD-cost:    1
+c ---[1749]---> BDD-cost:    1
+c ---[1748]---> BDD-cost:    2
+c ---[1747]---> BDD-cost:    1
+c ---[1746]---> BDD-cost:    2
+c ---[1745]---> BDD-cost:    1
+c ---[1744]---> BDD-cost:    2
+c ---[1743]---> BDD-cost:    1
+c ---[1741]---> BDD-cost:    8
+c ---[1739]---> BDD-cost:    4
+c ---[1737]---> BDD-cost:    2
+c ---[1735]---> BDD-cost:    2
+c ---[1734]---> BDD-cost:    2
+c ---[1733]---> BDD-cost:    1
+c ---[1731]---> BDD-cost:    7
+c ---[1729]---> BDD-cost:    1
+c ---[1727]---> BDD-cost:    2
+c ---[1725]---> BDD-cost:    5
+c ---[1723]---> BDD-cost:    1
+c ---[1721]---> BDD-cost:    1
+c ---[1720]---> BDD-cost:    2
+c ---[1719]---> BDD-cost:    1
+c ---[1718]---> BDD-cost:    2
+c ---[1717]---> BDD-cost:    1
+c ---[1716]---> BDD-cost:    3
+c ---[1715]---> BDD-cost:    1
+c ---[1714]---> BDD-cost:    3
+c ---[1713]---> BDD-cost:    1
+c ---[1711]---> BDD-cost:    4
+c ---[1709]---> BDD-cost:    1
+c ---[1707]---> BDD-cost:    2
+c ---[1706]---> BDD-cost:    4
+c ---[1705]---> BDD-cost:    2
+c ---[1703]---> BDD-cost:    1
+c ---[1702]---> BDD-cost:    2
+c ---[1701]---> BDD-cost:    1
+c ---[1700]---> BDD-cost:    2
+c ---[1699]---> BDD-cost:    1
+c ---[1698]---> BDD-cost:    2
+c ---[1697]---> BDD-cost:    1
+c ---[1696]---> BDD-cost:    7
+c ---[1695]---> BDD-cost:    1
+c ---[1693]---> BDD-cost:    4
+c ---[1691]---> BDD-cost:    2
+c ---[1689]---> BDD-cost:    2
+c ---[1688]---> BDD-cost:    2
+c ---[1687]---> BDD-cost:    1
+c ---[1685]---> BDD-cost:    6
+c ---[1683]---> BDD-cost:    1
+c ---[1682]---> BDD-cost:    2
+c ---[1681]---> BDD-cost:    1
+c ---[1680]---> BDD-cost:    2
+c ---[1679]---> BDD-cost:    1
+c ---[1678]---> BDD-cost:    2
+c ---[1677]---> BDD-cost:    1
+c ---[1676]---> BDD-cost:    3
+c ---[1675]---> BDD-cost:    1
+c ---[1674]---> BDD-cost:    3
+c ---[1673]---> BDD-cost:    1
+c ---[1671]---> BDD-cost:    3
+c ---[1669]---> BDD-cost:    1
+c ---[1668]---> BDD-cost:    2
+c ---[1667]---> BDD-cost:    1
+c ---[1665]---> BDD-cost:    1
+c ---[1664]---> BDD-cost:    2
+c ---[1663]---> BDD-cost:    1
+c ---[1661]---> BDD-cost:    1
+c ---[1659]---> BDD-cost:    4
+c ---[1657]---> BDD-cost:    1
+c ---[1656]---> BDD-cost:    5
+c ---[1655]---> BDD-cost:    1
+c ---[1654]---> BDD-cost:    1
+c ---[1653]---> BDD-cost:    1
+c ---[1651]---> BDD-cost:    4
+c ---[1650]---> BDD-cost:    3
+c ---[1649]---> BDD-cost:    1
+c ---[1648]---> BDD-cost:    4
+c ---[1647]---> BDD-cost:    2
+c ---[1646]---> BDD-cost:    3
+c ---[1645]---> BDD-cost:    2
+c ---[1643]---> BDD-cost:    2
+c ---[1641]---> BDD-cost:    5
+c ---[1640]---> BDD-cost:    7
+c ---[1639]---> BDD-cost:    1
+c ---[1637]---> BDD-cost:   10
+c ---[1636]---> BDD-cost:    1
+c ---[1635]---> BDD-cost:    1
+c ---[1634]---> BDD-cost:    3
+c ---[1633]---> BDD-cost:    1
+c ---[1631]---> BDD-cost:    6
+c ---[1630]---> BDD-cost:    4
+c ---[1629]---> BDD-cost:    2
+c ---[1627]---> BDD-cost:    3
+c ---[1626]---> BDD-cost:    4
+c ---[1625]---> BDD-cost:    2
+c ---[1624]---> BDD-cost:    2
+c ---[1623]---> BDD-cost:    1
+c ---[1622]---> BDD-cost:    4
+c ---[1621]---> BDD-cost:    1
+c ---[1620]---> BDD-cost:    4
+c ---[1619]---> BDD-cost:    2
+c ---[1618]---> BDD-cost:    3
+c ---[1617]---> BDD-cost:    2
+c ---[1616]---> BDD-cost:    3
+c ---[1615]---> BDD-cost:    2
+c ---[1614]---> BDD-cost:    4
+c ---[1613]---> BDD-cost:    1
+c ---[1612]---> BDD-cost:    7
+c ---[1611]---> BDD-cost:    1
+c ---[1609]---> BDD-cost:    6
+c ---[1608]---> BDD-cost:    4
+c ---[1607]---> BDD-cost:    2
+c ---[1606]---> BDD-cost:    7
+c ---[1605]---> BDD-cost:    1
+c ---[1604]---> BDD-cost:    3
+c ---[1603]---> BDD-cost:    2
+c ---[1602]---> BDD-cost:    2
+c ---[1601]---> BDD-cost:    1
+c ---[1600]---> BDD-cost:    3
+c ---[1599]---> BDD-cost:    2
+c ---[1598]---> BDD-cost:    2
+c ---[1597]---> BDD-cost:    1
+c ---[1596]---> BDD-cost:    3
+c ---[1595]---> BDD-cost:    2
+c ---[1593]---> BDD-cost:    2
+c ---[1591]---> BDD-cost:    2
+c ---[1590]---> BDD-cost:    3
+c ---[1589]---> BDD-cost:    1
+c ---[1588]---> BDD-cost:    4
+c ---[1587]---> BDD-cost:    1
+c ---[1586]---> BDD-cost:    2
+c ---[1585]---> BDD-cost:    1
+c ---[1583]---> BDD-cost:    2
+c ---[1582]---> BDD-cost:    3
+c ---[1581]---> BDD-cost:    1
+c ---[1580]---> BDD-cost:    5
+c ---[1579]---> BDD-cost:    1
+c ---[1577]---> BDD-cost:    1
+c ---[1575]---> BDD-cost:    1
+c ---[1574]---> BDD-cost:    3
+c ---[1573]---> BDD-cost:    2
+c ---[1571]---> BDD-cost:    6
+c ---[1569]---> BDD-cost:    1
+c ---[1567]---> BDD-cost:    4
+c ---[1565]---> BDD-cost:    5
+c ---[1564]---> BDD-cost:    6
+c ---[1563]---> BDD-cost:    1
+c ---[1562]---> BDD-cost:    4
+c ---[1561]---> BDD-cost:    1
+c ---[1559]---> BDD-cost:    3
+c ---[1557]---> BDD-cost:    4
+c ---[1555]---> BDD-cost:    3
+c ---[1553]---> BDD-cost:    4
+c ---[1551]---> BDD-cost:    4
+c ---[1549]---> BDD-cost:    1
+c ---[1547]---> BDD-cost:    1
+c ---[1545]---> BDD-cost:    3
+c ---[1544]---> BDD-cost:    4
+c ---[1543]---> BDD-cost:    1
+c ---[1541]---> BDD-cost:    6
+c ---[1540]---> BDD-cost:    3
+c ---[1539]---> BDD-cost:    2
+c ---[1538]---> BDD-cost:    4
+c ---[1537]---> BDD-cost:    1
+c ---[1536]---> BDD-cost:    4
+c ---[1535]---> BDD-cost:    2
+c ---[1533]---> BDD-cost:    2
+c ---[1531]---> BDD-cost:    2
+c ---[1530]---> BDD-cost:    3
+c ---[1529]---> BDD-cost:    1
+c ---[1528]---> BDD-cost:    5
+c ---[1527]---> BDD-cost:    1
+c ---[1525]---> BDD-cost:    1
+c ---[1524]---> BDD-cost:    3
+c ---[1523]---> BDD-cost:    2
+c ---[1521]---> BDD-cost:    1
+c ---[1519]---> BDD-cost:    2
+c ---[1518]---> BDD-cost:    3
+c ---[1517]---> BDD-cost:    1
+c ---[1515]---> BDD-cost:    2
+c ---[1514]---> BDD-cost:    3
+c ---[1513]---> BDD-cost:    1
+c ---[1511]---> BDD-cost:    6
+c ---[1509]---> BDD-cost:    3
+c ---[1507]---> BDD-cost:    3
+c ---[1505]---> BDD-cost:    6
+c ---[1503]---> BDD-cost:    4
+c ---[1502]---> BDD-cost:    3
+c ---[1501]---> BDD-cost:    1
+c ---[1499]---> BDD-cost:    1
+c ---[1498]---> BDD-cost:    3
+c ---[1497]---> BDD-cost:    2
+c ---[1495]---> BDD-cost:    1
+c ---[1494]---> BDD-cost:    2
+c ---[1493]---> BDD-cost:    1
+c ---[1492]---> BDD-cost:    3
+c ---[1491]---> BDD-cost:    1
+c ---[1489]---> BDD-cost:    2
+c ---[1488]---> BDD-cost:    3
+c ---[1487]---> BDD-cost:    1
+c ---[1485]---> BDD-cost:    6
+c ---[1483]---> BDD-cost:    3
+c ---[1482]---> BDD-cost:    4
+c ---[1481]---> BDD-cost:    1
+c ---[1479]---> BDD-cost:    5
+c ---[1478]---> BDD-cost:    4
+c ---[1477]---> BDD-cost:    1
+c ---[1475]---> BDD-cost:    5
+c ---[1473]---> BDD-cost:    2
+c ---[1471]---> BDD-cost:    2
+c ---[1470]---> BDD-cost:    3
+c ---[1469]---> BDD-cost:    1
+c ---[1467]---> BDD-cost:    4
+c ---[1465]---> BDD-cost:    1
+c ---[1463]---> BDD-cost:    3
+c ---[1462]---> BDD-cost:    4
+c ---[1461]---> BDD-cost:    1
+c ---[1459]---> BDD-cost:    3
+c ---[1457]---> BDD-cost:    2
+c ---[1456]---> BDD-cost:    3
+c ---[1455]---> BDD-cost:    1
+c ---[1454]---> BDD-cost:    4
+c ---[1453]---> BDD-cost:    1
+c ---[1452]---> BDD-cost:    3
+c ---[1451]---> BDD-cost:    1
+c ---[1450]---> BDD-cost:    4
+c ---[1449]---> BDD-cost:    1
+c ---[1447]---> BDD-cost:    2
+c ---[1446]---> BDD-cost:    2
+c ---[1445]---> BDD-cost:    1
+c ---[1444]---> BDD-cost:    2
+c ---[1443]---> BDD-cost:    1
+c ---[1441]---> BDD-cost:    2
+c ---[1439]---> BDD-cost:    4
+c ---[1437]---> BDD-cost:    2
+c ---[1435]---> BDD-cost:    1
+c ---[1434]---> BDD-cost:    3
+c ---[1433]---> BDD-cost:    1
+c ---[1432]---> BDD-cost:    4
+c ---[1431]---> BDD-cost:    1
+c ---[1430]---> BDD-cost:    4
+c ---[1429]---> BDD-cost:    1
+c ---[1427]---> BDD-cost:    1
+c ---[1426]---> BDD-cost:    2
+c ---[1425]---> BDD-cost:    1
+c ---[1423]---> BDD-cost:    1
+c ---[1422]---> BDD-cost:    3
+c ---[1421]---> BDD-cost:    1
+c ---[1419]---> BDD-cost:    2
+c ---[1418]---> BDD-cost:    2
+c ---[1417]---> BDD-cost:    1
+c ---[1415]---> BDD-cost:    5
+c ---[1414]---> BDD-cost:    3
+c ---[1413]---> BDD-cost:    2
+c ---[1411]---> BDD-cost:    4
+c ---[1410]---> BDD-cost:    2
+c ---[1409]---> BDD-cost:    1
+c ---[1407]---> BDD-cost:    1
+c ---[1405]---> BDD-cost:    1
+c ---[1404]---> BDD-cost:    2
+c ---[1403]---> BDD-cost:    1
+c ---[1401]---> BDD-cost:    3
+c ---[1400]---> BDD-cost:    2
+c ---[1399]---> BDD-cost:    1
+c ---[1398]---> BDD-cost:    3
+c ---[1397]---> BDD-cost:    1
+c ---[1395]---> BDD-cost:    1
+c ---[1394]---> BDD-cost:    2
+c ---[1393]---> BDD-cost:    1
+c ---[1392]---> BDD-cost:    2
+c ---[1391]---> BDD-cost:    1
+c ---[1390]---> BDD-cost:    3
+c ---[1389]---> BDD-cost:    1
+c ---[1387]---> BDD-cost:    5
+c ---[1385]---> BDD-cost:    3
+c ---[1383]---> BDD-cost:    3
+c ---[1382]---> BDD-cost:    6
+c ---[1380]---> BDD-cost:    6
+c ---[1379]---> BDD-cost:    1
+c ---[1377]---> BDD-cost:    5
+c ---[1375]---> BDD-cost:    1
+c ---[1373]---> BDD-cost:    3
+c ---[1372]---> BDD-cost:    2
+c ---[1371]---> BDD-cost:    1
+c ---[1370]---> BDD-cost:    3
+c ---[1369]---> BDD-cost:    1
+c ---[1368]---> BDD-cost:    2
+c ---[1367]---> BDD-cost:    1
+c ---[1366]---> BDD-cost:    3
+c ---[1365]---> BDD-cost:    1
+c ---[1363]---> BDD-cost:    6
+c ---[1361]---> BDD-cost:    3
+c ---[1359]---> BDD-cost:    3
+c ---[1357]---> BDD-cost:    2
+c ---[1356]---> BDD-cost:    2
+c ---[1355]---> BDD-cost:    1
+c ---[1354]---> BDD-cost:    2
+c ---[1353]---> BDD-cost:    1
+c ---[1351]---> BDD-cost:    2
+c ---[1349]---> BDD-cost:    4
+c ---[1348]---> BDD-cost:    5
+c ---[1347]---> BDD-cost:    1
+c ---[1345]---> BDD-cost:    7
+c ---[1344]---> BDD-cost:    3
+c ---[1343]---> BDD-cost:    2
+c ---[1341]---> BDD-cost:    4
+c ---[1339]---> BDD-cost:    6
+c ---[1337]---> BDD-cost:    3
+c ---[1335]---> BDD-cost:    2
+c ---[1334]---> BDD-cost:    3
+c ---[1333]---> BDD-cost:    1
+c ---[1331]---> BDD-cost:    2
+c ---[1330]---> BDD-cost:    3
+c ---[1329]---> BDD-cost:    1
+c ---[1327]---> BDD-cost:    3
+c ---[1325]---> BDD-cost:    4
+c ---[1323]---> BDD-cost:    4
+c ---[1321]---> BDD-cost:    3
+c ---[1319]---> BDD-cost:    4
+c ---[1318]---> BDD-cost:    5
+c ---[1317]---> BDD-cost:    1
+c ---[1316]---> BDD-cost:    5
+c ---[1315]---> BDD-cost:    1
+c ---[1313]---> BDD-cost:    4
+c ---[1312]---> BDD-cost:    5
+c ---[1311]---> BDD-cost:    2
+c ---[1310]---> BDD-cost:    4
+c ---[1309]---> BDD-cost:    2
+c ---[1307]---> BDD-cost:    2
+c ---[1306]---> BDD-cost:    3
+c ---[1305]---> BDD-cost:    1
+c ---[1303]---> BDD-cost:    2
+c ---[1302]---> BDD-cost:    4
+c ---[1301]---> BDD-cost:    1
+c ---[1299]---> BDD-cost:    2
+c ---[1297]---> BDD-cost:    2
+c ---[1296]---> BDD-cost:    3
+c ---[1295]---> BDD-cost:    1
+c ---[1293]---> BDD-cost:    1
+c ---[1292]---> BDD-cost:    4
+c ---[1291]---> BDD-cost:    1
+c ---[1290]---> BDD-cost:    4
+c ---[1289]---> BDD-cost:    1
+c ---[1288]---> BDD-cost:    4
+c ---[1287]---> BDD-cost:    2
+c ---[1286]---> BDD-cost:    4
+c ---[1285]---> BDD-cost:    2
+c ---[1283]---> BDD-cost:    1
+c ---[1281]---> BDD-cost:    1
+c ---[1280]---> BDD-cost:    3
+c ---[1279]---> BDD-cost:    2
+c ---[1277]---> BDD-cost:    6
+c ---[1275]---> BDD-cost:    1
+c ---[1273]---> BDD-cost:    4
+c ---[1271]---> BDD-cost:    5
+c ---[1270]---> BDD-cost:    6
+c ---[1269]---> BDD-cost:    1
+c ---[1268]---> BDD-cost:    4
+c ---[1267]---> BDD-cost:    1
+c ---[1265]---> BDD-cost:    5
+c ---[1264]---> BDD-cost:    4
+c ---[1263]---> BDD-cost:    2
+c ---[1261]---> BDD-cost:    1
+c ---[1259]---> BDD-cost:    2
+c ---[1257]---> BDD-cost:    3
+c ---[1256]---> BDD-cost:    3
+c ---[1255]---> BDD-cost:    1
+c ---[1254]---> BDD-cost:    4
+c ---[1253]---> BDD-cost:    1
+c ---[1252]---> BDD-cost:    3
+c ---[1251]---> BDD-cost:    1
+c ---[1249]---> BDD-cost:    5
+c ---[1247]---> BDD-cost:    2
+c ---[1246]---> BDD-cost:    3
+c ---[1245]---> BDD-cost:    1
+c ---[1243]---> BDD-cost:    2
+c ---[1242]---> BDD-cost:    4
+c ---[1241]---> BDD-cost:    1
+c ---[1240]---> BDD-cost:    4
+c ---[1239]---> BDD-cost:    1
+c ---[1238]---> BDD-cost:    4
+c ---[1237]---> BDD-cost:    1
+c ---[1235]---> BDD-cost:    3
+c ---[1233]---> BDD-cost:    4
+c ---[1231]---> BDD-cost:    2
+c ---[1230]---> BDD-cost:    3
+c ---[1229]---> BDD-cost:    2
+c ---[1228]---> BDD-cost:    2
+c ---[1227]---> BDD-cost:    1
+c ---[1226]---> BDD-cost:    4
+c ---[1225]---> BDD-cost:    2
+c ---[1224]---> BDD-cost:    2
+c ---[1223]---> BDD-cost:    1
+c ---[1222]---> BDD-cost:    3
+c ---[1221]---> BDD-cost:    1
+c ---[1220]---> BDD-cost:    7
+c ---[1219]---> BDD-cost:    1
+c ---[1218]---> BDD-cost:    3
+c ---[1217]---> BDD-cost:    1
+c ---[1216]---> BDD-cost:    3
+c ---[1215]---> BDD-cost:    2
+c ---[1214]---> BDD-cost:    1
+c ---[1213]---> BDD-cost:    1
+c ---[1211]---> BDD-cost:    2
+c ---[1210]---> BDD-cost:    3
+c ---[1209]---> BDD-cost:    2
+c ---[1208]---> BDD-cost:    2
+c ---[1207]---> BDD-cost:    1
+c ---[1206]---> BDD-cost:    4
+c ---[1205]---> BDD-cost:    1
+c ---[1204]---> BDD-cost:    3
+c ---[1203]---> BDD-cost:    2
+c ---[1201]---> BDD-cost:    2
+c ---[1200]---> BDD-cost:    3
+c ---[1199]---> BDD-cost:    2
+c ---[1198]---> BDD-cost:    1
+c ---[1197]---> BDD-cost:    1
+c ---[1195]---> BDD-cost:    4
+c ---[1193]---> BDD-cost:    6
+c ---[1192]---> BDD-cost:    4
+c ---[1191]---> BDD-cost:    2
+c ---[1189]---> BDD-cost:    4
+c ---[1188]---> BDD-cost:    4
+c ---[1187]---> BDD-cost:    2
+c ---[1186]---> BDD-cost:    5
+c ---[1185]---> BDD-cost:    1
+c ---[1184]---> BDD-cost:    4
+c ---[1183]---> BDD-cost:    2
+c ---[1182]---> BDD-cost:    3
+c ---[1181]---> BDD-cost:    1
+c ---[1180]---> BDD-cost:    4
+c ---[1179]---> BDD-cost:    2
+c ---[1177]---> BDD-cost:    9
+c ---[1175]---> BDD-cost:    2
+c ---[1173]---> BDD-cost:    2
+c ---[1172]---> BDD-cost:    4
+c ---[1171]---> BDD-cost:    1
+c ---[1169]---> BDD-cost:    4
+c ---[1168]---> BDD-cost:    4
+c ---[1167]---> BDD-cost:    2
+c ---[1166]---> BDD-cost:    3
+c ---[1165]---> BDD-cost:    1
+c ---[1163]---> BDD-cost:    4
+c ---[1162]---> BDD-cost:    3
+c ---[1161]---> BDD-cost:    2
+c ---[1160]---> BDD-cost:    2
+c ---[1159]---> BDD-cost:    1
+c ---[1158]---> BDD-cost:    3
+c ---[1157]---> BDD-cost:    2
+c ---[1155]---> BDD-cost:    2
+c ---[1154]---> BDD-cost:    3
+c ---[1153]---> BDD-cost:    2
+c ---[1152]---> BDD-cost:    3
+c ---[1151]---> BDD-cost:    1
+c ---[1149]---> BDD-cost:    2
+c ---[1148]---> BDD-cost:    3
+c ---[1147]---> BDD-cost:    2
+c ---[1145]---> BDD-cost:    2
+c ---[1143]---> BDD-cost:    2
+c ---[1141]---> BDD-cost:    4
+c ---[1140]---> BDD-cost:    4
+c ---[1139]---> BDD-cost:    2
+c ---[1137]---> BDD-cost:    1
+c ---[1135]---> BDD-cost:    3
+c ---[1134]---> BDD-cost:    4
+c ---[1133]---> BDD-cost:    2
+c ---[1132]---> BDD-cost:    2
+c ---[1131]---> BDD-cost:    1
+c ---[1129]---> BDD-cost:    1
+c ---[1128]---> BDD-cost:    7
+c ---[1127]---> BDD-cost:    1
+c ---[1126]---> BDD-cost:    3
+c ---[1125]---> BDD-cost:    2
+c ---[1123]---> BDD-cost:    3
+c ---[1122]---> BDD-cost:    3
+c ---[1121]---> BDD-cost:    2
+c ---[1120]---> BDD-cost:    3
+c ---[1119]---> BDD-cost:    1
+c ---[1118]---> BDD-cost:    4
+c ---[1117]---> BDD-cost:    1
+c ---[1116]---> BDD-cost:    3
+c ---[1115]---> BDD-cost:    2
+c ---[1113]---> BDD-cost:    2
+c ---[1112]---> BDD-cost:    3
+c ---[1111]---> BDD-cost:    2
+c ---[1110]---> BDD-cost:    3
+c ---[1109]---> BDD-cost:    1
+c ---[1108]---> BDD-cost:    3
+c ---[1107]---> BDD-cost:    1
+c ---[1105]---> BDD-cost:    6
+c ---[1104]---> BDD-cost:    4
+c ---[1103]---> BDD-cost:    2
+c ---[1102]---> BDD-cost:    7
+c ---[1101]---> BDD-cost:    1
+c ---[1100]---> BDD-cost:    3
+c ---[1099]---> BDD-cost:    2
+c ---[1098]---> BDD-cost:    2
+c ---[1097]---> BDD-cost:    1
+c ---[1096]---> BDD-cost:    3
+c ---[1095]---> BDD-cost:    2
+c ---[1094]---> BDD-cost:    2
+c ---[1093]---> BDD-cost:    1
+c ---[1092]---> BDD-cost:    3
+c ---[1091]---> BDD-cost:    2
+c ---[1089]---> BDD-cost:    3
+c ---[1087]---> BDD-cost:    2
+c ---[1086]---> BDD-cost:    3
+c ---[1085]---> BDD-cost:    1
+c ---[1084]---> BDD-cost:    4
+c ---[1083]---> BDD-cost:    1
+c ---[1081]---> BDD-cost:    5
+c ---[1080]---> BDD-cost:    2
+c ---[1079]---> BDD-cost:    1
+c ---[1078]---> BDD-cost:    3
+c ---[1077]---> BDD-cost:    1
+c ---[1075]---> BDD-cost:    4
+c ---[1074]---> BDD-cost:    4
+c ---[1073]---> BDD-cost:    2
+c ---[1071]---> BDD-cost:    2
+c ---[1070]---> BDD-cost:    3
+c ---[1069]---> BDD-cost:    1
+c ---[1067]---> BDD-cost:    3
+c ---[1066]---> BDD-cost:    3
+c ---[1065]---> BDD-cost:    2
+c ---[1063]---> BDD-cost:    4
+c ---[1062]---> BDD-cost:    5
+c ---[1061]---> BDD-cost:    2
+c ---[1059]---> BDD-cost:    4
+c ---[1058]---> BDD-cost:    7
+c ---[1057]---> BDD-cost:    1
+c ---[1055]---> BDD-cost:    3
+c ---[1053]---> BDD-cost:    4
+c ---[1051]---> BDD-cost:    3
+c ---[1050]---> BDD-cost:    5
+c ---[1049]---> BDD-cost:    1
+c ---[1047]---> BDD-cost:    3
+c ---[1046]---> BDD-cost:    5
+c ---[1045]---> BDD-cost:    1
+c ---[1043]---> BDD-cost:    3
+c ---[1042]---> BDD-cost:    3
+c ---[1041]---> BDD-cost:    1
+c ---[1040]---> BDD-cost:    2
+c ---[1039]---> BDD-cost:    2
+c ---[1037]---> BDD-cost:    2
+c ---[1035]---> BDD-cost:    3
+c ---[1034]---> BDD-cost:    4
+c ---[1033]---> BDD-cost:    1
+c ---[1031]---> BDD-cost:    6
+c ---[1030]---> BDD-cost:    6
+c ---[1029]---> BDD-cost:    1
+c ---[1027]---> BDD-cost:    3
+c ---[1026]---> BDD-cost:    3
+c ---[1025]---> BDD-cost:    2
+c ---[1023]---> BDD-cost:    2
+c ---[1021]---> BDD-cost:    4
+c ---[1020]---> BDD-cost:    8
+c ---[1019]---> BDD-cost:    1
+c ---[1018]---> BDD-cost:    2
+c ---[1017]---> BDD-cost:    1
+c ---[1015]---> BDD-cost:    3
+c ---[1013]---> BDD-cost:    7
+c ---[1012]---> BDD-cost:    3
+c ---[1011]---> BDD-cost:    1
+c ---[1010]---> BDD-cost:    2
+c ---[1009]---> BDD-cost:    1
+c ---[1007]---> BDD-cost:    2
+c ---[1005]---> BDD-cost:    2
+c ---[1003]---> BDD-cost:    4
+c ---[1001]---> BDD-cost:    6
+c ---[1000]---> BDD-cost:    1
+c ---[ 999]---> BDD-cost:    1
+c ---[ 998]---> BDD-cost:    4
+c ---[ 997]---> BDD-cost:    1
+c ---[ 995]---> BDD-cost:    3
+c ---[ 994]---> BDD-cost:    4
+c ---[ 993]---> BDD-cost:    1
+c ---[ 991]---> BDD-cost:    3
+c ---[ 990]---> BDD-cost:    3
+c ---[ 989]---> BDD-cost:    1
+c ---[ 987]---> BDD-cost:    4
+c ---[ 986]---> BDD-cost:    4
+c ---[ 985]---> BDD-cost:    2
+c ---[ 984]---> BDD-cost:    7
+c ---[ 983]---> BDD-cost:    1
+c ---[ 982]---> BDD-cost:    2
+c ---[ 981]---> BDD-cost:    1
+c ---[ 980]---> BDD-cost:    5
+c ---[ 979]---> BDD-cost:    2
+c ---[ 978]---> BDD-cost:    3
+c ---[ 977]---> BDD-cost:    2
+c ---[ 975]---> BDD-cost:    3
+c ---[ 973]---> BDD-cost:    3
+c ---[ 972]---> BDD-cost:    3
+c ---[ 971]---> BDD-cost:    1
+c ---[ 970]---> BDD-cost:    5
+c ---[ 969]---> BDD-cost:    2
+c ---[ 968]---> BDD-cost:    5
+c ---[ 967]---> BDD-cost:    2
+c ---[ 965]---> BDD-cost:    3
+c ---[ 964]---> BDD-cost:    3
+c ---[ 963]---> BDD-cost:    1
+c ---[ 961]---> BDD-cost:    2
+c ---[ 960]---> BDD-cost:    2
+c ---[ 959]---> BDD-cost:    1
+c ---[ 958]---> BDD-cost:    3
+c ---[ 957]---> BDD-cost:    1
+c ---[ 955]---> BDD-cost:    4
+c ---[ 954]---> BDD-cost:    3
+c ---[ 953]---> BDD-cost:    2
+c ---[ 951]---> BDD-cost:    3
+c ---[ 950]---> BDD-cost:    4
+c ---[ 949]---> BDD-cost:    1
+c ---[ 948]---> BDD-cost:    2
+c ---[ 947]---> BDD-cost:    1
+c ---[ 946]---> BDD-cost:    2
+c ---[ 945]---> BDD-cost:    2
+c ---[ 944]---> BDD-cost:    4
+c ---[ 943]---> BDD-cost:    2
+c ---[ 942]---> BDD-cost:    5
+c ---[ 941]---> BDD-cost:    2
+c ---[ 940]---> BDD-cost:    7
+c ---[ 939]---> BDD-cost:    2
+c ---[ 937]---> BDD-cost:    3
+c ---[ 935]---> BDD-cost:    4
+c ---[ 934]---> BDD-cost:    3
+c ---[ 933]---> BDD-cost:    1
+c ---[ 931]---> BDD-cost:    3
+c ---[ 929]---> BDD-cost:    4
+c ---[ 927]---> BDD-cost:    3
+c ---[ 926]---> BDD-cost:    6
+c ---[ 925]---> BDD-cost:    1
+c ---[ 923]---> BDD-cost:    3
+c ---[ 921]---> BDD-cost:    5
+c ---[ 919]---> BDD-cost:    4
+c ---[ 917]---> BDD-cost:    7
+c ---[ 916]---> BDD-cost:    6
+c ---[ 915]---> BDD-cost:    1
+c ---[ 913]---> BDD-cost:    3
+c ---[ 912]---> BDD-cost:    3
+c ---[ 911]---> BDD-cost:    2
+c ---[ 909]---> BDD-cost:    2
+c ---[ 907]---> BDD-cost:    2
+c ---[ 906]---> BDD-cost:    3
+c ---[ 905]---> BDD-cost:    1
+c ---[ 903]---> BDD-cost:    4
+c ---[ 902]---> BDD-cost:    3
+c ---[ 901]---> BDD-cost:    2
+c ---[ 899]---> BDD-cost:    3
+c ---[ 898]---> BDD-cost:    5
+c ---[ 897]---> BDD-cost:    2
+c ---[ 895]---> BDD-cost:    3
+c ---[ 894]---> BDD-cost:    4
+c ---[ 893]---> BDD-cost:    1
+c ---[ 892]---> BDD-cost:    2
+c ---[ 891]---> BDD-cost:    1
+c ---[ 890]---> BDD-cost:    5
+c ---[ 889]---> BDD-cost:    2
+c ---[ 888]---> BDD-cost:    4
+c ---[ 887]---> BDD-cost:    2
+c ---[ 886]---> BDD-cost:    5
+c ---[ 885]---> BDD-cost:    2
+c ---[ 883]---> BDD-cost:    2
+c ---[ 882]---> BDD-cost:    3
+c ---[ 881]---> BDD-cost:    2
+c ---[ 879]---> BDD-cost:    2
+c ---[ 878]---> BDD-cost:    4
+c ---[ 877]---> BDD-cost:    2
+c ---[ 875]---> BDD-cost:    3
+c ---[ 873]---> BDD-cost:    1
+c ---[ 872]---> BDD-cost:    5
+c ---[ 871]---> BDD-cost:    2
+c ---[ 870]---> BDD-cost:    3
+c ---[ 869]---> BDD-cost:    1
+c ---[ 867]---> BDD-cost:    4
+c ---[ 865]---> BDD-cost:    2
+c ---[ 863]---> BDD-cost:    2
+c ---[ 861]---> BDD-cost:    4
+c ---[ 859]---> BDD-cost:    4
+c ---[ 858]---> BDD-cost:    3
+c ---[ 857]---> BDD-cost:    1
+c ---[ 855]---> BDD-cost:    3
+c ---[ 854]---> BDD-cost:    5
+c ---[ 853]---> BDD-cost:    1
+c ---[ 852]---> BDD-cost:    5
+c ---[ 851]---> BDD-cost:    2
+c ---[ 850]---> BDD-cost:    5
+c ---[ 849]---> BDD-cost:    1
+c ---[ 848]---> BDD-cost:   10
+c ---[ 847]---> BDD-cost:    2
+c ---[ 845]---> BDD-cost:    5
+c ---[ 844]---> BDD-cost:    5
+c ---[ 843]---> BDD-cost:    2
+c ---[ 842]---> BDD-cost:    4
+c ---[ 841]---> BDD-cost:    2
+c ---[ 299]---> BDD-cost:    1
+c ---[ 298]---> BDD-cost:    1
+c ---[ 297]---> BDD-cost:    1
+c ---[ 296]---> BDD-cost:    1
+c ---[ 295]---> BDD-cost:    1
+c ---[ 294]---> BDD-cost:    1
+c ---[ 293]---> BDD-cost:    1
+c ---[ 292]---> BDD-cost:    1
+c ---[ 291]---> BDD-cost:    1
+c ---[ 290]---> BDD-cost:    1
+c ---[ 289]---> BDD-cost:    1
+c ---[ 288]---> BDD-cost:    1
+c ---[ 287]---> BDD-cost:    1
+c ---[ 286]---> BDD-cost:    1
+c ---[ 285]---> BDD-cost:    1
+c ---[ 284]---> BDD-cost:    1
+c ---[ 283]---> BDD-cost:    1
+c ---[ 282]---> BDD-cost:    1
+c ---[ 281]---> BDD-cost:    1
+c ---[ 280]---> BDD-cost:    1
+c ---[ 279]---> BDD-cost:    1
+c ---[ 278]---> BDD-cost:    1
+c ---[ 277]---> BDD-cost:    1
+c ---[ 276]---> BDD-cost:    1
+c ---[ 275]---> BDD-cost:    1
+c ---[ 274]---> BDD-cost:    1
+c ---[ 273]---> BDD-cost:    1
+c ---[ 272]---> BDD-cost:    1
+c ---[ 271]---> BDD-cost:    1
+c ---[ 270]---> BDD-cost:    1
+c ---[ 269]---> BDD-cost:    1
+c ---[ 268]---> BDD-cost:    1
+c ---[ 267]---> BDD-cost:    1
+c ---[ 266]---> BDD-cost:    1
+c ---[ 265]---> BDD-cost:    1
+c ---[ 264]---> BDD-cost:    1
+c ---[ 263]---> BDD-cost:    1
+c ---[ 262]---> BDD-cost:    1
+c ---[ 261]---> BDD-cost:    1
+c ---[ 260]---> BDD-cost:    1
+c ---[ 259]---> BDD-cost:    1
+c ---[ 258]---> BDD-cost:    1
+c ---[ 257]---> BDD-cost:    1
+c ---[ 256]---> BDD-cost:    1
+c ---[ 255]---> BDD-cost:    1
+c ---[ 254]---> BDD-cost:    1
+c ---[ 253]---> BDD-cost:    1
+c ---[ 252]---> BDD-cost:    1
+c ---[ 251]---> BDD-cost:    1
+c ---[ 250]---> BDD-cost:    1
+c ---[ 249]---> BDD-cost:    1
+c ---[ 248]---> BDD-cost:    1
+c ---[ 247]---> BDD-cost:    1
+c ---[ 246]---> BDD-cost:    1
+c ---[ 245]---> BDD-cost:    1
+c ---[ 244]---> BDD-cost:    1
+c ---[ 243]---> BDD-cost:    1
+c ---[ 242]---> BDD-cost:    1
+c ---[ 241]---> BDD-cost:    1
+c ---[ 240]---> BDD-cost:    1
+c ---[ 239]---> BDD-cost:    1
+c ---[ 238]---> BDD-cost:    1
+c ---[ 237]---> BDD-cost:    1
+c ---[ 236]---> BDD-cost:    1
+c ---[ 235]---> BDD-cost:    1
+c ---[ 234]---> BDD-cost:    1
+c ---[ 233]---> BDD-cost:    1
+c ---[ 232]---> BDD-cost:    1
+c ---[ 231]---> BDD-cost:    1
+c ---[ 230]---> BDD-cost:    1
+c ---[ 229]---> BDD-cost:    1
+c ---[ 228]---> BDD-cost:    1
+c ---[ 227]---> BDD-cost:    1
+c ---[ 226]---> BDD-cost:    1
+c ---[ 225]---> BDD-cost:    1
+c ---[ 224]---> BDD-cost:    1
+c ---[ 223]---> BDD-cost:    1
+c ---[ 222]---> BDD-cost:    1
+c ---[ 221]---> BDD-cost:    1
+c ---[ 220]---> BDD-cost:    1
+c ---[ 219]---> BDD-cost:    1
+c ---[ 218]---> BDD-cost:    1
+c ---[ 217]---> BDD-cost:    1
+c ---[ 216]---> BDD-cost:    1
+c ---[ 215]---> BDD-cost:    1
+c ---[ 214]---> BDD-cost:    1
+c ---[ 213]---> BDD-cost:    1
+c ---[ 212]---> BDD-cost:    1
+c ---[ 211]---> BDD-cost:    1
+c ---[ 210]---> BDD-cost:    1
+c ---[ 209]---> BDD-cost:    1
+c ---[ 208]---> BDD-cost:    1
+c ---[ 207]---> BDD-cost:    1
+c ---[ 206]---> BDD-cost:    1
+c ---[ 205]---> BDD-cost:    1
+c ---[ 204]---> BDD-cost:    1
+c ---[ 203]---> BDD-cost:    1
+c ---[ 202]---> BDD-cost:    1
+c ---[ 201]---> BDD-cost:    1
+c ---[ 200]---> BDD-cost:    1
+c ---[ 199]---> BDD-cost:    1
+c ---[ 198]---> BDD-cost:    1
+c ---[ 197]---> BDD-cost:    1
+c ---[ 196]---> BDD-cost:    1
+c ---[ 195]---> BDD-cost:    1
+c ---[ 194]---> BDD-cost:    1
+c ---[ 193]---> BDD-cost:    1
+c ---[ 192]---> BDD-cost:    1
+c ---[ 191]---> BDD-cost:    1
+c ---[ 190]---> BDD-cost:    1
+c ---[ 189]---> BDD-cost:    1
+c ---[ 188]---> BDD-cost:    1
+c ---[ 187]---> BDD-cost:    1
+c ---[ 186]---> BDD-cost:    1
+c ---[ 185]---> BDD-cost:    1
+c ---[ 184]---> BDD-cost:    1
+c ---[ 183]---> BDD-cost:    1
+c ---[ 182]---> BDD-cost:    1
+c ---[ 181]---> BDD-cost:    1
+c ---[ 180]---> BDD-cost:    1
+c ---[ 179]---> BDD-cost:    1
+c ---[ 178]---> BDD-cost:    1
+c ---[ 177]---> BDD-cost:    1
+c ---[ 176]---> BDD-cost:    1
+c ---[ 175]---> BDD-cost:    1
+c ---[ 174]---> BDD-cost:    1
+c ---[ 173]---> BDD-cost:    1
+c ---[ 172]---> BDD-cost:    1
+c ---[ 171]---> BDD-cost:    1
+c ---[ 170]---> BDD-cost:    1
+c ---[ 169]---> BDD-cost:    1
+c ---[ 168]---> BDD-cost:    1
+c ---[ 167]---> BDD-cost:    1
+c ---[ 166]---> BDD-cost:    1
+c ---[ 165]---> BDD-cost:    1
+c ---[ 164]---> BDD-cost:    1
+c ---[ 163]---> BDD-cost:    1
+c ---[ 162]---> BDD-cost:    1
+c ---[ 161]---> BDD-cost:    1
+c ---[ 160]---> BDD-cost:    1
+c ---[ 159]---> BDD-cost:    1
+c ---[ 158]---> BDD-cost:    1
+c ---[ 157]---> BDD-cost:    1
+c ---[ 156]---> BDD-cost:    1
+c ---[ 155]---> BDD-cost:    1
+c ---[ 154]---> BDD-cost:    1
+c ---[ 153]---> BDD-cost:    1
+c ---[ 152]---> BDD-cost:    1
+c ---[ 151]---> BDD-cost:    1
+c ---[ 150]---> BDD-cost:    1
+c ---[ 149]---> BDD-cost:    1
+c ---[ 148]---> BDD-cost:    1
+c ---[ 147]---> BDD-cost:    1
+c ---[ 146]---> BDD-cost:    1
+c ---[ 145]---> BDD-cost:    1
+c ---[ 144]---> BDD-cost:    1
+c ---[ 143]---> BDD-cost:    1
+c ---[ 142]---> BDD-cost:    1
+c ---[ 141]---> BDD-cost:    1
+c ---[ 140]---> BDD-cost:    1
+c ---[ 139]---> BDD-cost:    1
+c ---[ 138]---> BDD-cost:    1
+c ---[ 137]---> BDD-cost:    1
+c ---[ 136]---> BDD-cost:    1
+c ---[ 135]---> BDD-cost:    1
+c ---[ 134]---> BDD-cost:    1
+c ---[ 133]---> BDD-cost:    1
+c ---[ 132]---> BDD-cost:    1
+c ---[ 131]---> BDD-cost:    1
+c ---[ 130]---> BDD-cost:    1
+c ---[ 129]---> BDD-cost:    1
+c ---[ 128]---> BDD-cost:    1
+c ---[ 127]---> BDD-cost:    1
+c ---[ 126]---> BDD-cost:    1
+c ---[ 125]---> BDD-cost:    1
+c ---[ 124]---> BDD-cost:    1
+c ---[ 123]---> BDD-cost:    1
+c ---[ 122]---> BDD-cost:    1
+c ---[ 121]---> BDD-cost:    1
+c ---[ 120]---> BDD-cost:    1
+c ---[ 119]---> BDD-cost:    1
+c ---[ 118]---> BDD-cost:    1
+c ---[ 117]---> BDD-cost:    1
+c ---[ 116]---> BDD-cost:    1
+c ---[ 115]---> BDD-cost:    1
+c ---[ 114]---> BDD-cost:    1
+c ---[ 113]---> BDD-cost:    1
+c ---[ 112]---> BDD-cost:    1
+c ---[ 111]---> BDD-cost:    1
+c ---[ 110]---> BDD-cost:    1
+c ---[ 109]---> BDD-cost:    1
+c ---[ 108]---> BDD-cost:    1
+c ---[ 107]---> BDD-cost:    1
+c ---[ 106]---> BDD-cost:    1
+c ---[ 105]---> BDD-cost:    1
+c ---[ 104]---> BDD-cost:    1
+c ---[ 103]---> BDD-cost:    1
+c ---[ 102]---> BDD-cost:    1
+c ---[ 101]---> BDD-cost:    1
+c ---[ 100]---> BDD-cost:    1
+c ---[  99]---> BDD-cost:    1
+c ---[  98]---> BDD-cost:    1
+c ---[  97]---> BDD-cost:    1
+c ---[  96]---> BDD-cost:    1
+c ---[  95]---> BDD-cost:    1
+c ---[  94]---> BDD-cost:    1
+c ---[  93]---> BDD-cost:    1
+c ---[  92]---> BDD-cost:    1
+c ---[  91]---> BDD-cost:    1
+c ---[  90]---> BDD-cost:    1
+c ---[  89]---> BDD-cost:    1
+c ---[  88]---> BDD-cost:    1
+c ---[  87]---> BDD-cost:    1
+c ---[  86]---> BDD-cost:    1
+c ---[  85]---> BDD-cost:    1
+c ---[  84]---> BDD-cost:    1
+c ---[  83]---> BDD-cost:    1
+c ---[  82]---> BDD-cost:    1
+c ---[  81]---> BDD-cost:    1
+c ---[  80]---> BDD-cost:    1
+c ---[  79]---> BDD-cost:    1
+c ---[  78]---> BDD-cost:    1
+c ---[  77]---> BDD-cost:    1
+c ---[  76]---> BDD-cost:    1
+c ---[  75]---> BDD-cost:    1
+c ---[  74]---> BDD-cost:    1
+c ---[  73]---> BDD-cost:    1
+c ---[  72]---> BDD-cost:    1
+c ---[  71]---> BDD-cost:    1
+c ---[  70]---> BDD-cost:    1
+c ---[  69]---> BDD-cost:    1
+c ---[  68]---> BDD-cost:    1
+c ---[  67]---> BDD-cost:    1
+c ---[  66]---> BDD-cost:    1
+c ---[  65]---> BDD-cost:    1
+c ---[  64]---> BDD-cost:    1
+c ---[  63]---> BDD-cost:    1
+c ---[  62]---> BDD-cost:    1
+c ---[  61]---> BDD-cost:    1
+c ---[  60]---> BDD-cost:    1
+c ---[  59]---> BDD-cost:    1
+c ---[  58]---> BDD-cost:    1
+c ---[  57]---> BDD-cost:    1
+c ---[  56]---> BDD-cost:    1
+c ---[  55]---> BDD-cost:    1
+c ---[  54]---> BDD-cost:    1
+c ---[  53]---> BDD-cost:    1
+c ---[  52]---> BDD-cost:    1
+c ---[  51]---> BDD-cost:    1
+c ---[  50]---> BDD-cost:    1
+c ---[  49]---> BDD-cost:    1
+c ---[  48]---> BDD-cost:    1
+c ---[  47]---> BDD-cost:    1
+c ---[  46]---> BDD-cost:    1
+c ---[  45]---> BDD-cost:    1
+c ---[  44]---> BDD-cost:    1
+c ---[  43]---> BDD-cost:    1
+c ---[  42]---> BDD-cost:    1
+c ---[  41]---> BDD-cost:    1
+c ---[  40]---> BDD-cost:    1
+c ---[  39]---> BDD-cost:    1
+c ---[  38]---> BDD-cost:    1
+c ---[  37]---> BDD-cost:    1
+c ---[  36]---> BDD-cost:    1
+c ---[  35]---> BDD-cost:    1
+c ---[  34]---> BDD-cost:    1
+c ---[  33]---> BDD-cost:    1
+c ---[  32]---> BDD-cost:    1
+c ---[  31]---> BDD-cost:    1
+c ---[  30]---> BDD-cost:    1
+c ---[  29]---> BDD-cost:    1
+c ---[  28]---> BDD-cost:    1
+c ---[  27]---> BDD-cost:    1
+c ---[  26]---> BDD-cost:    1
+c ---[  25]---> BDD-cost:    1
+c ---[  24]---> BDD-cost:    1
+c ---[  23]---> BDD-cost:    1
+c ---[  22]---> BDD-cost:    1
+c ---[  21]---> BDD-cost:    1
+c ---[  20]---> BDD-cost:    1
+c ---[  19]---> BDD-cost:    1
+c ---[  18]---> BDD-cost:    1
+c ---[  17]---> BDD-cost:    1
+c ---[  16]---> BDD-cost:    1
+c ---[  15]---> BDD-cost:    1
+c ---[  14]---> BDD-cost:    1
+c ---[  13]---> BDD-cost:    1
+c ---[  12]---> BDD-cost:    1
+c ---[  11]---> BDD-cost:    1
+c ---[  10]---> BDD-cost:    1
+c ---[   9]---> BDD-cost:    1
+c ---[   8]---> BDD-cost:    1
+c ---[   7]---> BDD-cost:    1
+c ---[   6]---> BDD-cost:    1
+c ---[   5]---> BDD-cost:    1
+c ---[   4]---> BDD-cost:    1
+c ---[   3]---> BDD-cost:    1
+c ---[   2]---> BDD-cost:    1
+c ---[   1]---> BDD-cost:    1
+c ---[   0]---> BDD-cost:    1
+c ==================================[MINISAT+]==================================
+c | Conflicts | Original         | Learnt                           | Progress |
+c |           | Clauses Literals |     Max Clauses Literals     LPC |          |
+c ==============================================================================
+c |         0 |   12623    32785 |    4207       0        0    -nan |  0.000 % |
+c ==============================================================================
+c [1mFound solution: 0[0m
+c ==================================[MINISAT+]==================================
+c | Conflicts | Original         | Learnt                           | Progress |
+c |           | Clauses Literals |     Max Clauses Literals     LPC |          |
+c ==============================================================================
+c |        81 |   12509    32551 |    4169      75      310     4.1 |  0.000 % |
+c |       183 |   12507    32545 |    4585     175     1555     8.9 | 35.507 % |
+c |       333 |   12501    32527 |    5044     319     2624     8.2 | 35.544 % |
+c |       560 |   12469    32431 |    5548     514     4247     8.3 | 35.740 % |
+c |       897 |   12463    32413 |    6103     845     9317    11.0 | 35.777 % |
+c |      1404 |   12423    32293 |    6714    1312    15879    12.1 | 36.022 % |
+c |      2163 |   12415    32269 |    7385    2063    33367    16.2 | 36.072 % |
+c |      3302 |   12415    32269 |    8124    3202    55903    17.5 | 36.072 % |
+c |      5010 |   12415    32269 |    8936    4910    99868    20.3 | 36.072 % |
+c |      7573 |   12415    32269 |    9830    7473   156293    20.9 | 36.071 % |
+c |     11418 |   12415    32269 |   10813   11318   248965    22.0 | 36.072 % |
+c |     17185 |   12415    32269 |   11894    9986   194374    19.5 | 36.072 % |
+c |     25835 |   11509    30147 |   13084    7277   127582    17.5 | 38.871 % |
+c |     38809 |   11501    30123 |   14392   11381   183804    16.2 | 38.920 % |
+c ==============================================================================
+c [1mOptimal solution: 0[0m
+s OPTIMUM FOUND
+v -Z -O1_208 -I_165 -O1_209 -I_1 -O1_210 -O1_211 -I_168 O1_212 I_170 -O1_213 -I_171 O1_214 I_172 -O1_215 -I_173 -O1_216 -I_174 -O1_217 -I_176 O1_218 I_178 O1_219 I_179 O1_220 I_180 -O1_221 -I_181 O1_222 I_182 -O1_223 -I_183 -O1_224 -I_184 O1_225 I_185 -O1_226 -I_186 O1_227 I_187 -O1_228 -I_188 -O1_229 -I_189 O1_230 I_190 -O1_231 -I_191 O1_232 I_192 O1_233 I_193 O1_234 I_194 O1_235 I_195 -O1_236 -I_196 -O1_237 -I_198 -O1_238 -I_199 -O1_239 -I_200 -O1_240 -I_201 O1_241 I_202 -O1_242 -I_203 -O1_243 -I_204 -O1_244 -I_205 -O1_245 I_5 O1_246 I_169 O1_247 I_177 -O1_248 -I_197 O1_249 -t1_316 -O1_250 t1_317 O1_251 -t1_318 O1_252 -t1_319 O1_253 -t1_320 -O1_254 O1_255 I_54 O1_256 -t1_321 -O1_257 O1_258 O1_259 -t1_322 -O1_260 O1_261 -O1_262 -O1_263 -t1_323 -O1_264 -t1_329 O1_265 -t1_518 O1_266 -t1_735 O1_267 O1_268 O1_269 -t1_740 -O1_270 t1_744 O1_271 -t1_747 -O1_272 t1_749 O1_273 -t1_755 O1_274 t1_758 O1_275 t1_761 O1_276 -t1_764 O1_277 -t1_846 O1_278 -t1_933 O1_279 -t1_1006 O1_280 -O1_281 t1_1009 -O1_282 -t1_1012 -O1_283 t1_1013 O1_284 -O1_285 -t1_1018 O1_286 -t1_1022 O1_287 t1_1025 -O1_288 t1_1027 -O1_289 -t1_1031 O1_290 t1_1034 -O1_291 t1_1038 -O1_292 -t1_1040 O1_293 -t1_1042 O1_294 -O1_295 -t1_1048 O1_296 t1_1052 O1_297 t1_1055 -O1_298 -t1_1058 O1_299 -t1_1062 O1_300 t1_1067 O1_301 O1_302 -t1_1070 O1_303 -O1_304 t1_1074 O1_305 -t1_1077 O1_306 t1_1082 O1_307 -t1_1084 -O1_308 t1_1091 -O1_309 t1_1096 -O1_310 -t1_1098 O1_311 -t1_1101 O1_312 -t1_1143 -O1_313 -t1_1176 -O1_314 -t1_1220 O1_315 -t1_1265 -I_2 I_21 I_74 I_108 I_152 I_164 -I_76 -I_134 -I_142 -I_154 -I_106 -I_107 -I_109 -I_110 -I_86 -I_96 -I_112 -I_123 -I_166 -I_67 -I_68 -I_87 -t1_324 -I_13 t1_325 t1_326 -I_6 -t1_327 -I_206 t1_328 t1_330 I_12 -I_207 -t1_331 t1_332 -t1_333 -I_3 -I_4 -t1_334 -I_137 -t1_335 t1_336 t1_337 I_138 t1_338 -t1_339 -t1_340 -t1_341 -I_133 -t1_342 I_140 -t1_343 -t1_344 t1_345 -t1_346 -I_139 -t1_347 t1_348 t1_349 -t1_350 -t1_351 -I_62 t1_352 I_141 -t1_353 t1_354 -t1_355 -t1_356 -I_51 t1_357 -I_150 -t1_358 t1_359 -t1_360 -t1_361 -I_50 t1_362 -I_149 -t1_363 t1_364 -t1_365 t1_366 t1_367 I_15 -t1_368 -I_147 -t1_369 -t1_370 t1_371 -t1_372 -I_63 t1_373 -I_148 -t1_374 t1_375 -t1_376 -t1_377 -t1_378 -I_30 t1_379 -I_143 -t1_380 t1_381 -t1_382 -t1_383 -I_11 t1_384 -I_146 -t1_385 -t1_386 t1_387 t1_388 I_10 -t1_389 -I_145 -t1_390 -t1_391 -t1_392 t1_393 -t1_394 -I_16 t1_395 -I_144 -t1_396 t1_397 -t1_398 -t1_399 -t1_400 t1_401 I_52 -t1_402 -I_155 t1_403 -t1_404 -t1_405 t1_406 I_64 -t1_407 -I_156 t1_408 -t1_409 -t1_410 t1_411 I_65 -t1_412 -I_157 t1_413 -t1_414 -t1_415 -t1_416 -I_66 t1_417 -I_158 -t1_418 -t1_419 t1_420 -t1_421 -t1_422 t1_423 I_9 -t1_424 -I_162 -t1_425 -t1_426 t1_427 t1_428 I_8 -t1_429 -I_161 -t1_430 -t1_431 t1_432 -t1_433 -t1_434 t1_435 I_53 -t1_436 -I_159 -t1_437 -t1_438 t1_439 t1_440 I_7 -t1_441 -I_160 t1_442 -t1_443 -t1_444 -t1_445 -t1_446 t1_447 t1_448 t1_449 I_73 -t1_450 -I_75 t1_451 -t1_452 -t1_453 t1_454 I_70 -t1_455 -I_84 t1_456 -t1_457 -t1_458 -t1_459 -I_72 t1_460 -I_83 -t1_461 -t1_462 t1_463 -t1_464 -t1_465 -t1_466 -I_81 t1_467 -t1_468 t1_469 I_69 -t1_470 -I_82 t1_471 -t1_472 -t1_473 -t1_474 -t1_475 -I_77 -t1_476 t1_477 t1_478 -I_79 -t1_479 -t1_480 -t1_481 -I_78 t1_482 -t1_483 -t1_484 -I_80 -t1_485 t1_486 -t1_487 -t1_488 -t1_489 t1_490 -t1_491 t1_492 t1_493 -t1_494 -t1_495 -t1_496 -t1_497 t1_498 t1_499 -t1_500 t1_501 -t1_502 -t1_503 -t1_504 t1_505 -t1_506 t1_507 t1_508 -t1_509 -t1_510 -t1_511 -t1_512 -t1_513 -t1_514 -t1_515 -t1_516 -t1_517 t1_519 -I_48 -t1_520 -t1_521 -I_58 t1_522 t1_523 -t1_524 t1_525 -I_90 -I_91 -t1_526 t1_527 -t1_528 t1_529 -t1_530 t1_531 t1_532 I_47 -t1_533 t1_534 I_92 -t1_535 t1_536 -t1_537 -t1_538 -I_57 t1_539 t1_540 -I_93 -t1_541 t1_542 t1_543 -I_59 t1_544 -t1_545 -t1_546 -t1_547 I_167 -I_175 -t1_548 t1_549 t1_550 -t1_551 -t1_552 -t1_553 t1_554 I_55 -t1_555 -t1_556 I_97 -I_98 -t1_557 I_56 -t1_558 -t1_559 -t1_560 -t1_561 t1_562 -t1_563 -t1_564 -I_46 t1_565 t1_566 I_27 -t1_567 t1_568 -I_100 -I_99 -t1_569 t1_570 -t1_571 -t1_572 -t1_573 -t1_574 -t1_575 -t1_576 -t1_577 t1_578 -I_45 -t1_579 -I_102 t1_580 t1_581 I_28 -t1_582 t1_583 -t1_584 -t1_585 -I_101 t1_586 t1_587 -t1_588 -t1_589 t1_590 I_44 -t1_591 t1_592 -I_103 -t1_593 -t1_594 -t1_595 -t1_596 I_43 -t1_597 -I_104 -t1_598 -t1_599 -t1_600 -t1_601 -t1_602 I_29 -t1_603 -I_95 -t1_604 -t1_605 t1_606 -t1_607 -t1_608 t1_609 I_25 -t1_610 t1_611 -I_114 -t1_612 -I_26 t1_613 t1_614 -I_113 -t1_615 -t1_616 -t1_617 -t1_618 -t1_619 t1_620 t1_621 -t1_622 -I_24 t1_623 -t1_624 -I_115 -t1_625 -t1_626 -t1_627 -I_39 t1_628 t1_629 -I_116 -t1_630 t1_631 -t1_632 -t1_633 -t1_634 t1_635 I_41 -t1_636 t1_637 -I_118 t1_638 I_40 -t1_639 -t1_640 -I_117 -t1_641 -t1_642 -t1_643 -t1_644 -t1_645 t1_646 t1_647 t1_648 I_23 -t1_649 t1_650 -I_119 -t1_651 t1_652 -t1_653 -t1_654 -I_38 t1_655 t1_656 -I_120 t1_657 -t1_658 -t1_659 t1_660 -t1_661 -I_37 t1_662 t1_663 -I_111 -t1_664 t1_665 -t1_666 -t1_667 -t1_668 -t1_669 -t1_670 -t1_671 t1_672 I_19 -t1_673 -t1_674 -I_125 t1_675 I_20 -t1_676 -t1_677 -I_124 -t1_678 -t1_679 -t1_680 -t1_681 -t1_682 -t1_683 t1_684 -t1_685 -I_18 t1_686 -t1_687 -I_126 -t1_688 -t1_689 -t1_690 -I_17 t1_691 t1_692 -I_127 -t1_693 -t1_694 -t1_695 -I_35 t1_696 -t1_697 -I_129 t1_698 I_33 -t1_699 -t1_700 -I_128 -t1_701 -t1_702 -t1_703 -t1_704 t1_705 -t1_706 -t1_707 -I_36 t1_708 -t1_709 -I_130 t1_710 -t1_711 -t1_712 I_34 -t1_713 -t1_714 I_32 t1_715 -t1_716 -t1_717 -t1_718 -I_131 -t1_719 t1_720 -t1_721 -t1_722 t1_723 -t1_724 -I_49 t1_725 -t1_726 t1_727 -t1_728 -t1_729 -t1_730 -t1_731 -t1_732 -t1_733 -t1_734 -t1_736 -t1_737 t1_738 -t1_739 -t1_741 -t1_742 -t1_743 t1_745 t1_746 -t1_748 -t1_750 -t1_751 -t1_752 t1_753 t1_754 -t1_756 -t1_757 -t1_759 -t1_760 t1_762 -t1_763 -t1_765 t1_766 -t1_767 -t1_768 -t1_769 t1_770 I_135 -I_136 -t1_771 -t1_772 t1_773 -t1_774 -t1_775 -t1_776 -t1_777 -t1_778 -t1_779 -t1_780 t1_781 -t1_782 -t1_783 t1_784 -t1_785 -t1_786 -t1_787 -t1_788 -t1_789 -t1_790 -t1_791 -I_71 -t1_792 -I_85 t1_793 t1_794 t1_795 -t1_796 -t1_797 -t1_798 -t1_799 I_14 -t1_800 -t1_801 t1_802 -I_153 -I_163 -t1_803 t1_804 -t1_805 -t1_806 -t1_807 -t1_808 t1_809 t1_810 -t1_811 -t1_812 t1_813 t1_814 -t1_815 t1_816 -t1_817 -t1_818 t1_819 -t1_820 -t1_821 -t1_822 I_61 -t1_823 -t1_824 -t1_825 I_151 t1_826 t1_827 t1_828 -t1_829 -t1_830 t1_831 -t1_832 t1_833 t1_834 -t1_835 t1_836 -t1_837 -t1_838 -t1_839 -t1_840 -t1_841 t1_842 t1_843 -t1_844 -t1_845 -t1_847 -t1_848 -t1_849 -t1_850 -t1_851 t1_852 t1_853 I_31 -t1_854 -t1_855 t1_856 -t1_857 t1_858 -t1_859 t1_860 -t1_861 -t1_862 -t1_863 -t1_864 -t1_865 -t1_866 -t1_867 -t1_868 t1_869 -t1_870 -t1_871 t1_872 I_60 -t1_873 -t1_874 -t1_875 t1_876 -t1_877 -t1_878 t1_879 t1_880 -t1_881 -t1_882 -t1_883 -t1_884 t1_885 -t1_886 -t1_887 -t1_888 -t1_889 -t1_890 -I_22 t1_891 -t1_892 -t1_893 t1_894 -t1_895 t1_896 -t1_897 -t1_898 -t1_899 t1_900 -t1_901 t1_902 -t1_903 -t1_904 t1_905 -t1_906 -t1_907 -t1_908 -t1_909 t1_910 -t1_911 t1_912 -t1_913 t1_914 -t1_915 -t1_916 -t1_917 -t1_918 -I_42 t1_919 -t1_920 t1_921 -t1_922 -t1_923 -t1_924 t1_925 -t1_926 -t1_927 t1_928 -t1_929 -t1_930 t1_931 -t1_932 t1_934 -I_122 -I_132 -t1_935 t1_936 -t1_937 t1_938 -t1_939 -t1_940 -t1_941 -t1_942 -t1_943 t1_944 -t1_945 t1_946 t1_947 -t1_948 t1_949 t1_950 -t1_951 -t1_952 -t1_953 -t1_954 -t1_955 -t1_956 -t1_957 -I_105 t1_958 t1_959 -t1_960 -t1_961 -t1_962 -t1_963 -t1_964 -t1_965 t1_966 -t1_967 -t1_968 t1_969 -t1_970 -t1_971 t1_972 t1_973 -t1_974 t1_975 t1_976 -t1_977 t1_978 -I_121 -t1_979 t1_980 t1_981 -t1_982 -t1_983 t1_984 -t1_985 t1_986 t1_987 -t1_988 t1_989 -t1_990 -t1_991 I_94 t1_992 -t1_993 -t1_994 -t1_995 -t1_996 -I_88 I_89 t1_997 t1_998 -t1_999 -t1_1000 -t1_1001 -t1_1002 -t1_1003 -t1_1004 t1_1005 -t1_1007 -t1_1008 t1_1010 -t1_1011 t1_1014 t1_1015 -t1_1016 t1_1017 t1_1019 -t1_1020 t1_1021 -t1_1023 -t1_1024 -t1_1026 -t1_1028 t1_1029 -t1_1030 -t1_1032 -t1_1033 t1_1035 -t1_1036 -t1_1037 t1_1039 -t1_1041 -t1_1043 -t1_1044 t1_1045 -t1_1046 -t1_1047 -t1_1049 -t1_1050 -t1_1051 -t1_1053 -t1_1054 t1_1056 -t1_1057 t1_1059 -t1_1060 t1_1061 -t1_1063 -t1_1064 t1_1065 -t1_1066 t1_1068 -t1_1069 t1_1071 -t1_1072 -t1_1073 -t1_1075 t1_1076 t1_1078 -t1_1079 -t1_1080 -t1_1081 -t1_1083 t1_1085 -t1_1086 -t1_1087 -t1_1088 -t1_1089 -t1_1090 t1_1092 t1_1093 -t1_1094 -t1_1095 t1_1097 t1_1099 -t1_1100 -t1_1102 -t1_1103 -t1_1104 -t1_1105 -t1_1106 t1_1107 -t1_1108 -t1_1109 -t1_1110 -t1_1111 t1_1112 -t1_1113 t1_1114 -t1_1115 t1_1116 -t1_1117 t1_1118 t1_1119 -t1_1120 t1_1121 -t1_1122 t1_1123 -t1_1124 t1_1125 -t1_1126 -t1_1127 -t1_1128 t1_1129 -t1_1130 t1_1131 -t1_1132 t1_1133 -t1_1134 -t1_1135 -t1_1136 t1_1137 -t1_1138 t1_1139 -t1_1140 t1_1141 -t1_1142 -t1_1144 -t1_1145 -t1_1146 -t1_1147 -t1_1148 t1_1149 -t1_1150 -t1_1151 t1_1152 -t1_1153 -t1_1154 -t1_1155 t1_1156 -t1_1157 -t1_1158 t1_1159 -t1_1160 -t1_1161 -t1_1162 -t1_1163 t1_1164 t1_1165 -t1_1166 -t1_1167 t1_1168 -t1_1169 -t1_1170 t1_1171 -t1_1172 -t1_1173 -t1_1174 t1_1175 t1_1177 -t1_1178 -t1_1179 t1_1180 -t1_1181 t1_1182 t1_1183 -t1_1184 -t1_1185 t1_1186 -t1_1187 t1_1188 -t1_1189 t1_1190 -t1_1191 -t1_1192 -t1_1193 t1_1194 -t1_1195 -t1_1196 -t1_1197 t1_1198 -t1_1199 -t1_1200 -t1_1201 -t1_1202 -t1_1203 -t1_1204 -t1_1205 t1_1206 -t1_1207 t1_1208 -t1_1209 -t1_1210 -t1_1211 -t1_1212 t1_1213 -t1_1214 t1_1215 t1_1216 -t1_1217 -t1_1218 t1_1219 -t1_1221 t1_1222 -t1_1223 t1_1224 -t1_1225 t1_1226 t1_1227 -t1_1228 t1_1229 -t1_1230 -t1_1231 t1_1232 -t1_1233 t1_1234 -t1_1235 t1_1236 t1_1237 t1_1238 -t1_1239 -t1_1240 -t1_1241 -t1_1242 t1_1243 -t1_1244 -t1_1245 t1_1246 -t1_1247 -t1_1248 -t1_1249 -t1_1250 -t1_1251 -t1_1252 t1_1253 -t1_1254 -t1_1255 t1_1256 t1_1257 -t1_1258 -t1_1259 -t1_1260 t1_1261 -t1_1262 t1_1263 t1_1264 -O2_208 -O2_209 -O2_210 -O2_211 O2_212 -O2_213 O2_214 -O2_215 -O2_216 -O2_217 O2_218 O2_219 O2_220 -O2_221 O2_222 -O2_223 -O2_224 O2_225 -O2_226 O2_227 -O2_228 -O2_229 O2_230 -O2_231 O2_232 O2_233 O2_234 O2_235 -O2_236 -O2_237 -O2_238 -O2_239 -O2_240 O2_241 -O2_242 -O2_243 -O2_244 -O2_245 O2_246 O2_247 -O2_248 O2_249 -t2_316 -O2_250 t2_317 O2_251 -t2_318 O2_252 -t2_319 O2_253 -t2_320 -O2_254 O2_255 O2_256 -t2_321 -O2_257 O2_258 O2_259 -t2_322 -O2_260 O2_261 -O2_262 -O2_263 -t2_323 -O2_264 -t2_327 O2_265 -t2_465 O2_266 -t2_633 O2_267 O2_268 O2_269 -t2_637 -O2_270 t2_639 O2_271 -t2_642 -O2_272 t2_644 O2_273 -t2_648 O2_274 t2_650 O2_275 t2_652 O2_276 -t2_654 O2_277 -t2_714 O2_278 -t2_782 O2_279 -t2_835 O2_280 -O2_281 t2_837 -O2_282 -t2_839 -O2_283 t2_840 O2_284 -O2_285 -t2_844 O2_286 -t2_847 O2_287 t2_850 -O2_288 t2_852 -O2_289 -t2_856 O2_290 t2_858 -O2_291 t2_860 -O2_292 -t2_862 O2_293 -t2_863 O2_294 -O2_295 -t2_868 O2_296 t2_871 O2_297 t2_873 -O2_298 -t2_875 O2_299 -t2_878 O2_300 t2_882 O2_301 O2_302 -t2_885 O2_303 -O2_304 t2_889 O2_305 -t2_891 O2_306 t2_894 O2_307 -t2_896 -O2_308 t2_900 -O2_309 t2_902 -O2_310 -t2_904 O2_311 -t2_906 O2_312 -t2_939 -O2_313 -t2_963 -O2_314 -t2_996 O2_315 -t2_1031 t2_324 t2_325 -t2_326 -t2_328 -t2_329 -t2_330 t2_331 -t2_332 -t2_333 -t2_334 -t2_335 -t2_336 -t2_337 t2_338 -t2_339 t2_340 t2_341 t2_342 t2_343 t2_344 t2_345 -t2_346 t2_347 -t2_348 -t2_349 -t2_350 t2_351 -t2_352 -t2_353 -t2_354 t2_355 -t2_356 t2_357 -t2_358 t2_359 -t2_360 t2_361 -t2_362 -t2_363 -t2_364 t2_365 -t2_366 t2_367 -t2_368 t2_369 t2_370 -t2_371 -t2_372 -t2_373 -t2_374 -t2_375 -t2_376 -t2_377 t2_378 -t2_379 t2_380 -t2_381 t2_382 t2_383 -t2_384 t2_385 -t2_386 t2_387 -t2_388 t2_389 -t2_390 -t2_391 t2_392 -t2_393 t2_394 -t2_395 t2_396 -t2_397 t2_398 -t2_399 -t2_400 -t2_401 -t2_402 -t2_403 -t2_404 t2_405 -t2_406 t2_407 -t2_408 -t2_409 t2_410 -t2_411 -t2_412 t2_413 -t2_414 -t2_415 -t2_416 -t2_417 -t2_418 t2_419 -t2_420 -t2_421 t2_422 t2_423 -t2_424 -t2_425 t2_426 -t2_427 -t2_428 -t2_429 t2_430 -t2_431 t2_432 t2_433 -t2_434 -t2_435 t2_436 -t2_437 -t2_438 t2_439 -t2_440 -t2_441 -t2_442 -t2_443 t2_444 t2_445 t2_446 t2_447 t2_448 -t2_449 -t2_450 -t2_451 -t2_452 -t2_453 -t2_454 t2_455 -t2_456 t2_457 t2_458 -t2_459 -t2_460 -t2_461 -t2_462 -t2_463 -t2_464 t2_466 t2_467 -t2_468 t2_469 -t2_470 -t2_471 -t2_472 -t2_473 t2_474 t2_475 t2_476 t2_477 t2_478 -t2_479 -t2_480 t2_481 t2_482 t2_483 -t2_484 t2_485 -t2_486 t2_487 -t2_488 t2_489 t2_490 -t2_491 -t2_492 t2_493 -t2_494 t2_495 t2_496 -t2_497 -t2_498 t2_499 t2_500 -t2_501 t2_502 t2_503 -t2_504 -t2_505 t2_506 -t2_507 -t2_508 t2_509 t2_510 t2_511 -t2_512 t2_513 -t2_514 t2_515 -t2_516 -t2_517 -t2_518 -t2_519 t2_520 -t2_521 -t2_522 t2_523 -t2_524 t2_525 -t2_526 t2_527 -t2_528 -t2_529 -t2_530 -t2_531 -t2_532 -t2_533 -t2_534 -t2_535 t2_536 t2_537 -t2_538 -t2_539 t2_540 -t2_541 -t2_542 t2_543 -t2_544 -t2_545 t2_546 -t2_547 t2_548 -t2_549 -t2_550 -t2_551 t2_552 -t2_553 -t2_554 -t2_555 -t2_556 -t2_557 -t2_558 -t2_559 t2_560 -t2_561 -t2_562 -t2_563 -t2_564 -t2_565 -t2_566 -t2_567 t2_568 -t2_569 t2_570 -t2_571 -t2_572 -t2_573 -t2_574 t2_575 t2_576 -t2_577 t2_578 -t2_579 t2_580 -t2_581 t2_582 -t2_583 -t2_584 -t2_585 -t2_586 t2_587 -t2_588 -t2_589 t2_590 t2_591 -t2_592 -t2_593 -t2_594 -t2_595 -t2_596 -t2_597 -t2_598 t2_599 -t2_600 t2_601 -t2_602 t2_603 -t2_604 -t2_605 -t2_606 -t2_607 -t2_608 -t2_609 -t2_610 t2_611 -t2_612 -t2_613 -t2_614 -t2_615 -t2_616 -t2_617 -t2_618 t2_619 -t2_620 -t2_621 -t2_622 -t2_623 -t2_624 t2_625 -t2_626 -t2_627 t2_628 -t2_629 -t2_630 -t2_631 -t2_632 -t2_634 -t2_635 -t2_636 -t2_638 t2_640 t2_641 -t2_643 -t2_645 -t2_646 t2_647 -t2_649 -t2_651 -t2_653 t2_655 -t2_656 t2_657 t2_658 -t2_659 t2_660 -t2_661 -t2_662 -t2_663 t2_664 -t2_665 -t2_666 t2_667 -t2_668 -t2_669 -t2_670 -t2_671 -t2_672 -t2_673 -t2_674 -t2_675 -t2_676 -t2_677 -t2_678 t2_679 t2_680 t2_681 -t2_682 -t2_683 -t2_684 t2_685 -t2_686 t2_687 t2_688 -t2_689 -t2_690 t2_691 -t2_692 t2_693 t2_694 -t2_695 -t2_696 -t2_697 -t2_698 t2_699 -t2_700 -t2_701 -t2_702 -t2_703 -t2_704 -t2_705 -t2_706 -t2_707 t2_708 t2_709 -t2_710 t2_711 -t2_712 -t2_713 t2_715 -t2_716 -t2_717 -t2_718 -t2_719 t2_720 -t2_721 -t2_722 -t2_723 t2_724 -t2_725 -t2_726 -t2_727 -t2_728 -t2_729 -t2_730 -t2_731 -t2_732 t2_733 -t2_734 t2_735 -t2_736 -t2_737 -t2_738 t2_739 -t2_740 t2_741 -t2_742 -t2_743 -t2_744 t2_745 -t2_746 -t2_747 t2_748 t2_749 -t2_750 -t2_751 t2_752 -t2_753 t2_754 -t2_755 -t2_756 -t2_757 -t2_758 -t2_759 -t2_760 -t2_761 -t2_762 -t2_763 -t2_764 -t2_765 -t2_766 t2_767 t2_768 -t2_769 -t2_770 t2_771 -t2_772 t2_773 -t2_774 -t2_775 -t2_776 -t2_777 -t2_778 -t2_779 t2_780 -t2_781 t2_783 t2_784 -t2_785 -t2_786 -t2_787 -t2_788 -t2_789 -t2_790 -t2_791 -t2_792 -t2_793 t2_794 -t2_795 -t2_796 t2_797 -t2_798 t2_799 t2_800 t2_801 t2_802 -t2_803 t2_804 -t2_805 t2_806 t2_807 t2_808 -t2_809 t2_810 t2_811 -t2_812 -t2_813 -t2_814 -t2_815 -t2_816 -t2_817 -t2_818 -t2_819 t2_820 -t2_821 -t2_822 -t2_823 -t2_824 -t2_825 t2_826 -t2_827 -t2_828 t2_829 t2_830 t2_831 -t2_832 -t2_833 -t2_834 -t2_836 t2_838 t2_841 t2_842 t2_843 -t2_845 t2_846 -t2_848 -t2_849 -t2_851 t2_853 -t2_854 -t2_855 -t2_857 -t2_859 t2_861 -t2_864 -t2_865 -t2_866 -t2_867 -t2_869 -t2_870 -t2_872 -t2_874 t2_876 t2_877 -t2_879 -t2_880 -t2_881 -t2_883 -t2_884 t2_886 t2_887 -t2_888 t2_890 t2_892 -t2_893 -t2_895 t2_897 -t2_898 -t2_899 -t2_901 t2_903 -t2_905 -t2_907 -t2_908 t2_909 -t2_910 -t2_911 t2_912 -t2_913 t2_914 -t2_915 t2_916 -t2_917 -t2_918 -t2_919 -t2_920 t2_921 -t2_922 t2_923 -t2_924 -t2_925 -t2_926 t2_927 -t2_928 t2_929 -t2_930 t2_931 -t2_932 t2_933 -t2_934 t2_935 -t2_936 t2_937 -t2_938 -t2_940 -t2_941 t2_942 t2_943 -t2_944 -t2_945 -t2_946 -t2_947 -t2_948 -t2_949 -t2_950 -t2_951 t2_952 -t2_953 -t2_954 t2_955 -t2_956 t2_957 -t2_958 -t2_959 -t2_960 -t2_961 t2_962 -t2_964 -t2_965 t2_966 t2_967 t2_968 -t2_969 -t2_970 t2_971 -t2_972 t2_973 -t2_974 -t2_975 -t2_976 t2_977 -t2_978 t2_979 -t2_980 -t2_981 -t2_982 -t2_983 -t2_984 t2_985 -t2_986 t2_987 -t2_988 t2_989 -t2_990 -t2_991 t2_992 t2_993 -t2_994 t2_995 -t2_997 -t2_998 t2_999 -t2_1000 -t2_1001 t2_1002 t2_1003 -t2_1004 t2_1005 t2_1006 t2_1007 t2_1008 t2_1009 -t2_1010 t2_1011 -t2_1012 t2_1013 -t2_1014 t2_1015 t2_1016 -t2_1017 -t2_1018 -t2_1019 -t2_1020 -t2_1021 -t2_1022 -t2_1023 -t2_1024 -t2_1025 -t2_1026 t2_1027 t2_1028 -t2_1029 t2_1030 -M_0 -M_1 -M_2 -M_3 -M_4 -M_5 -M_6 -M_7 -M_8 -M_9 -M_10 -M_11 -M_12 -M_13 -M_14 -M_15 -M_16 -M_17 -M_18 -M_19 -M_20 -M_21 -M_22 -M_23 -M_24 -M_25 -M_26 -M_27 -M_28 -M_29 -M_30 -M_31 -M_32 -M_33 -M_34 -M_35 -M_36 -M_37 -M_38 -M_39 -M_40 -M_41 -M_42 -M_43 -M_44 -M_45 -M_46 -M_47 -M_48 -M_49 -M_50 -M_51 -M_52 -M_53 -M_54 -M_55 -M_56 -M_57 -M_58 -M_59 -M_60 -M_61 -M_62 -M_63 -M_64 -M_65 -M_66 -M_67 -M_68 -M_69 -M_70 -M_71 -M_72 -M_73 -M_74 -M_75 -M_76 -M_77 -M_78 -M_79 -M_80 -M_81 -M_82 -M_83 -M_84 -M_85 -M_86 -M_87 -M_88 -M_89 -M_90 -M_91 -M_92 -M_93 -M_94 -M_95 -M_96 -M_97 -M_98 -M_99 -M_100 -M_101 -M_102 -M_103 -M_104 -M_105 -M_106 -M_107
+c _______________________________________________________________________________
+c 
+c restarts              : 15
+c conflicts             : 44222          (23380 /sec)
+c decisions             : 112607         (59535 /sec)
+c propagations          : 0              (0 /sec)
+c inspects              : 0              (0 /sec)
+c CPU time              : 1.89146 s
+c _______________________________________________________________________________

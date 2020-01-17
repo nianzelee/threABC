@@ -1,0 +1,20 @@
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of clauses.
+WARNING: for repeatability, setting FPU to use double precision
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:          8242                                         |
+|  Number of clauses:             483                                         |
+|  Parse time:                   0.00 s                                       |
+|                                                                             |
+===============================================================================
+Solved by unit propagation
+restarts              : 0
+conflicts             : 0              (0 /sec)
+decisions             : 0              (-nan % random) (0 /sec)
+propagations          : 0              (0 /sec)
+conflict literals     : 0              (-nan % deleted)
+Memory used           : 7.00 MB
+CPU time              : 0.002835 s
+
+UNSATISFIABLE

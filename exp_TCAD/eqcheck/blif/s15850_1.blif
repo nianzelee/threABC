@@ -1,0 +1,7083 @@
+.model compTH_1.blif
+.inputs 1
+.inputs 2
+.inputs 3
+.inputs 4
+.inputs 5
+.inputs 6
+.inputs 7
+.inputs 8
+.inputs 9
+.inputs 10
+.inputs 11
+.inputs 12
+.inputs 13
+.inputs 14
+.inputs 15
+.inputs 16
+.inputs 17
+.inputs 18
+.inputs 19
+.inputs 20
+.inputs 21
+.inputs 22
+.inputs 23
+.inputs 24
+.inputs 25
+.inputs 26
+.inputs 27
+.inputs 28
+.inputs 29
+.inputs 30
+.inputs 31
+.inputs 32
+.inputs 33
+.inputs 34
+.inputs 35
+.inputs 36
+.inputs 37
+.inputs 38
+.inputs 39
+.inputs 40
+.inputs 41
+.inputs 42
+.inputs 43
+.inputs 44
+.inputs 45
+.inputs 46
+.inputs 47
+.inputs 48
+.inputs 49
+.inputs 50
+.inputs 51
+.inputs 52
+.inputs 53
+.inputs 54
+.inputs 55
+.inputs 56
+.inputs 57
+.inputs 58
+.inputs 59
+.inputs 60
+.inputs 61
+.inputs 62
+.inputs 63
+.inputs 64
+.inputs 65
+.inputs 66
+.inputs 67
+.inputs 68
+.inputs 69
+.inputs 70
+.inputs 71
+.inputs 72
+.inputs 73
+.inputs 74
+.inputs 75
+.inputs 76
+.inputs 77
+.inputs 78
+.inputs 79
+.inputs 80
+.inputs 81
+.inputs 82
+.inputs 83
+.inputs 84
+.inputs 85
+.inputs 86
+.inputs 87
+.inputs 88
+.inputs 89
+.inputs 90
+.inputs 91
+.inputs 92
+.inputs 93
+.inputs 94
+.inputs 95
+.inputs 96
+.inputs 97
+.inputs 98
+.inputs 99
+.inputs 100
+.inputs 101
+.inputs 102
+.inputs 103
+.inputs 104
+.inputs 105
+.inputs 106
+.inputs 107
+.inputs 108
+.inputs 109
+.inputs 110
+.inputs 111
+.inputs 112
+.inputs 113
+.inputs 114
+.inputs 115
+.inputs 116
+.inputs 117
+.inputs 118
+.inputs 119
+.inputs 120
+.inputs 121
+.inputs 122
+.inputs 123
+.inputs 124
+.inputs 125
+.inputs 126
+.inputs 127
+.inputs 128
+.inputs 129
+.inputs 130
+.inputs 131
+.inputs 132
+.inputs 133
+.inputs 134
+.inputs 135
+.inputs 136
+.inputs 137
+.inputs 138
+.inputs 139
+.inputs 140
+.inputs 141
+.inputs 142
+.inputs 143
+.inputs 144
+.inputs 145
+.inputs 146
+.inputs 147
+.inputs 148
+.inputs 149
+.inputs 150
+.inputs 151
+.inputs 152
+.inputs 153
+.inputs 154
+.inputs 155
+.inputs 156
+.inputs 157
+.inputs 158
+.inputs 159
+.inputs 160
+.inputs 161
+.inputs 162
+.inputs 163
+.inputs 164
+.inputs 165
+.inputs 166
+.inputs 167
+.inputs 168
+.inputs 169
+.inputs 170
+.inputs 171
+.inputs 172
+.inputs 173
+.inputs 174
+.inputs 175
+.inputs 176
+.inputs 177
+.inputs 178
+.inputs 179
+.inputs 180
+.inputs 181
+.inputs 182
+.inputs 183
+.inputs 184
+.inputs 185
+.inputs 186
+.inputs 187
+.inputs 188
+.inputs 189
+.inputs 190
+.inputs 191
+.inputs 192
+.inputs 193
+.inputs 194
+.inputs 195
+.inputs 196
+.inputs 197
+.inputs 198
+.inputs 199
+.inputs 200
+.inputs 201
+.inputs 202
+.inputs 203
+.inputs 204
+.inputs 205
+.inputs 206
+.inputs 207
+.inputs 208
+.inputs 209
+.inputs 210
+.inputs 211
+.inputs 212
+.inputs 213
+.inputs 214
+.inputs 215
+.inputs 216
+.inputs 217
+.inputs 218
+.inputs 219
+.inputs 220
+.inputs 221
+.inputs 222
+.inputs 223
+.inputs 224
+.inputs 225
+.inputs 226
+.inputs 227
+.inputs 228
+.inputs 229
+.inputs 230
+.inputs 231
+.inputs 232
+.inputs 233
+.inputs 234
+.inputs 235
+.inputs 236
+.inputs 237
+.inputs 238
+.inputs 239
+.inputs 240
+.inputs 241
+.inputs 242
+.inputs 243
+.inputs 244
+.inputs 245
+.inputs 246
+.inputs 247
+.inputs 248
+.inputs 249
+.inputs 250
+.inputs 251
+.inputs 252
+.inputs 253
+.inputs 254
+.inputs 255
+.inputs 256
+.inputs 257
+.inputs 258
+.inputs 259
+.inputs 260
+.inputs 261
+.inputs 262
+.inputs 263
+.inputs 264
+.inputs 265
+.inputs 266
+.inputs 267
+.inputs 268
+.inputs 269
+.inputs 270
+.inputs 271
+.inputs 272
+.inputs 273
+.inputs 274
+.inputs 275
+.inputs 276
+.inputs 277
+.inputs 278
+.inputs 279
+.inputs 280
+.inputs 281
+.inputs 282
+.inputs 283
+.inputs 284
+.inputs 285
+.inputs 286
+.inputs 287
+.inputs 288
+.inputs 289
+.inputs 290
+.inputs 291
+.inputs 292
+.inputs 293
+.inputs 294
+.inputs 295
+.inputs 296
+.inputs 297
+.inputs 298
+.inputs 299
+.inputs 300
+.inputs 301
+.inputs 302
+.inputs 303
+.inputs 304
+.inputs 305
+.inputs 306
+.inputs 307
+.inputs 308
+.inputs 309
+.inputs 310
+.inputs 311
+.inputs 312
+.inputs 313
+.inputs 314
+.inputs 315
+.inputs 316
+.inputs 317
+.inputs 318
+.inputs 319
+.inputs 320
+.inputs 321
+.inputs 322
+.inputs 323
+.inputs 324
+.inputs 325
+.inputs 326
+.inputs 327
+.inputs 328
+.inputs 329
+.inputs 330
+.inputs 331
+.inputs 332
+.inputs 333
+.inputs 334
+.inputs 335
+.inputs 336
+.inputs 337
+.inputs 338
+.inputs 339
+.inputs 340
+.inputs 341
+.inputs 342
+.inputs 343
+.inputs 344
+.inputs 345
+.inputs 346
+.inputs 347
+.inputs 348
+.inputs 349
+.inputs 350
+.inputs 351
+.inputs 352
+.inputs 353
+.inputs 354
+.inputs 355
+.inputs 356
+.inputs 357
+.inputs 358
+.inputs 359
+.inputs 360
+.inputs 361
+.inputs 362
+.inputs 363
+.inputs 364
+.inputs 365
+.inputs 366
+.inputs 367
+.inputs 368
+.inputs 369
+.inputs 370
+.inputs 371
+.inputs 372
+.inputs 373
+.inputs 374
+.inputs 375
+.inputs 376
+.inputs 377
+.inputs 378
+.inputs 379
+.inputs 380
+.inputs 381
+.inputs 382
+.inputs 383
+.inputs 384
+.inputs 385
+.inputs 386
+.inputs 387
+.inputs 388
+.inputs 389
+.inputs 390
+.inputs 391
+.inputs 392
+.inputs 393
+.inputs 394
+.inputs 395
+.inputs 396
+.inputs 397
+.inputs 398
+.inputs 399
+.inputs 400
+.inputs 401
+.inputs 402
+.inputs 403
+.inputs 404
+.inputs 405
+.inputs 406
+.inputs 407
+.inputs 408
+.inputs 409
+.inputs 410
+.inputs 411
+.inputs 412
+.inputs 413
+.inputs 414
+.inputs 415
+.inputs 416
+.inputs 417
+.inputs 418
+.inputs 419
+.inputs 420
+.inputs 421
+.inputs 422
+.inputs 423
+.inputs 424
+.inputs 425
+.inputs 426
+.inputs 427
+.inputs 428
+.inputs 429
+.inputs 430
+.inputs 431
+.inputs 432
+.inputs 433
+.inputs 434
+.inputs 435
+.inputs 436
+.inputs 437
+.inputs 438
+.inputs 439
+.inputs 440
+.inputs 441
+.inputs 442
+.inputs 443
+.inputs 444
+.inputs 445
+.inputs 446
+.inputs 447
+.inputs 448
+.inputs 449
+.inputs 450
+.inputs 451
+.inputs 452
+.inputs 453
+.inputs 454
+.inputs 455
+.inputs 456
+.inputs 457
+.inputs 458
+.inputs 459
+.inputs 460
+.inputs 461
+.inputs 462
+.inputs 463
+.inputs 464
+.inputs 465
+.inputs 466
+.inputs 467
+.inputs 468
+.inputs 469
+.inputs 470
+.inputs 471
+.inputs 472
+.inputs 473
+.inputs 474
+.inputs 475
+.inputs 476
+.inputs 477
+.inputs 478
+.inputs 479
+.inputs 480
+.inputs 481
+.inputs 482
+.inputs 483
+.inputs 484
+.inputs 485
+.inputs 486
+.inputs 487
+.inputs 488
+.inputs 489
+.inputs 490
+.inputs 491
+.inputs 492
+.inputs 493
+.inputs 494
+.inputs 495
+.inputs 496
+.inputs 497
+.inputs 498
+.inputs 499
+.inputs 500
+.inputs 501
+.inputs 502
+.inputs 503
+.inputs 504
+.inputs 505
+.inputs 506
+.inputs 507
+.inputs 508
+.inputs 509
+.inputs 510
+.inputs 511
+.inputs 512
+.inputs 513
+.inputs 514
+.inputs 515
+.inputs 516
+.inputs 517
+.inputs 518
+.inputs 519
+.inputs 520
+.inputs 521
+.inputs 522
+.inputs 523
+.inputs 524
+.inputs 525
+.inputs 526
+.inputs 527
+.inputs 528
+.inputs 529
+.inputs 530
+.inputs 531
+.inputs 532
+.inputs 533
+.inputs 534
+.inputs 535
+.inputs 536
+.inputs 537
+.inputs 538
+.inputs 539
+.inputs 540
+.inputs 541
+.inputs 542
+.inputs 543
+.inputs 544
+.inputs 545
+.inputs 546
+.inputs 547
+.inputs 548
+.inputs 549
+.inputs 550
+.inputs 551
+.inputs 552
+.inputs 553
+.inputs 554
+.inputs 555
+.inputs 556
+.inputs 557
+.inputs 558
+.inputs 559
+.inputs 560
+.inputs 561
+.inputs 562
+.inputs 563
+.inputs 564
+.inputs 565
+.inputs 566
+.inputs 567
+.inputs 568
+.inputs 569
+.inputs 570
+.inputs 571
+.inputs 572
+.inputs 573
+.inputs 574
+.inputs 575
+.inputs 576
+.inputs 577
+.inputs 578
+.inputs 579
+.inputs 580
+.inputs 581
+.inputs 582
+.inputs 583
+.inputs 584
+.inputs 585
+.inputs 586
+.inputs 587
+.inputs 588
+.inputs 589
+.inputs 590
+.inputs 591
+.inputs 592
+.inputs 593
+.inputs 594
+.inputs 595
+.inputs 596
+.inputs 597
+.inputs 598
+.inputs 599
+.inputs 600
+.inputs 601
+.inputs 602
+.inputs 603
+.inputs 604
+.inputs 605
+.inputs 606
+.inputs 607
+.inputs 608
+.inputs 609
+.inputs 610
+.inputs 611
+.outputs 612
+.outputs 613
+.outputs 614
+.outputs 615
+.outputs 616
+.outputs 617
+.outputs 618
+.outputs 619
+.outputs 620
+.outputs 621
+.outputs 622
+.outputs 623
+.outputs 624
+.outputs 625
+.outputs 626
+.outputs 627
+.outputs 628
+.outputs 629
+.outputs 630
+.outputs 631
+.outputs 632
+.outputs 633
+.outputs 634
+.outputs 635
+.outputs 636
+.outputs 637
+.outputs 638
+.outputs 639
+.outputs 640
+.outputs 641
+.outputs 642
+.outputs 643
+.outputs 644
+.outputs 645
+.outputs 646
+.outputs 647
+.outputs 648
+.outputs 649
+.outputs 650
+.outputs 651
+.outputs 652
+.outputs 653
+.outputs 654
+.outputs 655
+.outputs 656
+.outputs 657
+.outputs 658
+.outputs 659
+.outputs 660
+.outputs 661
+.outputs 662
+.outputs 663
+.outputs 664
+.outputs 665
+.outputs 666
+.outputs 667
+.outputs 668
+.outputs 669
+.outputs 670
+.outputs 671
+.outputs 672
+.outputs 673
+.outputs 674
+.outputs 675
+.outputs 676
+.outputs 677
+.outputs 678
+.outputs 679
+.outputs 680
+.outputs 681
+.outputs 682
+.outputs 683
+.outputs 684
+.outputs 685
+.outputs 686
+.outputs 687
+.outputs 688
+.outputs 689
+.outputs 690
+.outputs 691
+.outputs 692
+.outputs 693
+.outputs 694
+.outputs 695
+.outputs 696
+.outputs 697
+.outputs 698
+.outputs 699
+.outputs 700
+.outputs 701
+.outputs 702
+.outputs 703
+.outputs 704
+.outputs 705
+.outputs 706
+.outputs 707
+.outputs 708
+.outputs 709
+.outputs 710
+.outputs 711
+.outputs 712
+.outputs 713
+.outputs 714
+.outputs 715
+.outputs 716
+.outputs 717
+.outputs 718
+.outputs 719
+.outputs 720
+.outputs 721
+.outputs 722
+.outputs 723
+.outputs 724
+.outputs 725
+.outputs 726
+.outputs 727
+.outputs 728
+.outputs 729
+.outputs 730
+.outputs 731
+.outputs 732
+.outputs 733
+.outputs 734
+.outputs 735
+.outputs 736
+.outputs 737
+.outputs 738
+.outputs 739
+.outputs 740
+.outputs 741
+.outputs 742
+.outputs 743
+.outputs 744
+.outputs 745
+.outputs 746
+.outputs 747
+.outputs 748
+.outputs 749
+.outputs 750
+.outputs 751
+.outputs 752
+.outputs 753
+.outputs 754
+.outputs 755
+.outputs 756
+.outputs 757
+.outputs 758
+.outputs 759
+.outputs 760
+.outputs 761
+.outputs 762
+.outputs 763
+.outputs 764
+.outputs 765
+.outputs 766
+.outputs 767
+.outputs 768
+.outputs 769
+.outputs 770
+.outputs 771
+.outputs 772
+.outputs 773
+.outputs 774
+.outputs 775
+.outputs 776
+.outputs 777
+.outputs 778
+.outputs 779
+.outputs 780
+.outputs 781
+.outputs 782
+.outputs 783
+.outputs 784
+.outputs 785
+.outputs 786
+.outputs 787
+.outputs 788
+.outputs 789
+.outputs 790
+.outputs 791
+.outputs 792
+.outputs 793
+.outputs 794
+.outputs 795
+.outputs 796
+.outputs 797
+.outputs 798
+.outputs 799
+.outputs 800
+.outputs 801
+.outputs 802
+.outputs 803
+.outputs 804
+.outputs 805
+.outputs 806
+.outputs 807
+.outputs 808
+.outputs 809
+.outputs 810
+.outputs 811
+.outputs 812
+.outputs 813
+.outputs 814
+.outputs 815
+.outputs 816
+.outputs 817
+.outputs 818
+.outputs 819
+.outputs 820
+.outputs 821
+.outputs 822
+.outputs 823
+.outputs 824
+.outputs 825
+.outputs 826
+.outputs 827
+.outputs 828
+.outputs 829
+.outputs 830
+.outputs 831
+.outputs 832
+.outputs 833
+.outputs 834
+.outputs 835
+.outputs 836
+.outputs 837
+.outputs 838
+.outputs 839
+.outputs 840
+.outputs 841
+.outputs 842
+.outputs 843
+.outputs 844
+.outputs 845
+.outputs 846
+.outputs 847
+.outputs 848
+.outputs 849
+.outputs 850
+.outputs 851
+.outputs 852
+.outputs 853
+.outputs 854
+.outputs 855
+.outputs 856
+.outputs 857
+.outputs 858
+.outputs 859
+.outputs 860
+.outputs 861
+.outputs 862
+.outputs 863
+.outputs 864
+.outputs 865
+.outputs 866
+.outputs 867
+.outputs 868
+.outputs 869
+.outputs 870
+.outputs 871
+.outputs 872
+.outputs 873
+.outputs 874
+.outputs 875
+.outputs 876
+.outputs 877
+.outputs 878
+.outputs 879
+.outputs 880
+.outputs 881
+.outputs 882
+.outputs 883
+.outputs 884
+.outputs 885
+.outputs 886
+.outputs 887
+.outputs 888
+.outputs 889
+.outputs 890
+.outputs 891
+.outputs 892
+.outputs 893
+.outputs 894
+.outputs 895
+.outputs 896
+.outputs 897
+.outputs 898
+.outputs 899
+.outputs 900
+.outputs 901
+.outputs 902
+.outputs 903
+.outputs 904
+.outputs 905
+.outputs 906
+.outputs 907
+.outputs 908
+.outputs 909
+.outputs 910
+.outputs 911
+.outputs 912
+.outputs 913
+.outputs 914
+.outputs 915
+.outputs 916
+.outputs 917
+.outputs 918
+.outputs 919
+.outputs 920
+.outputs 921
+.outputs 922
+.outputs 923
+.outputs 924
+.outputs 925
+.outputs 926
+.outputs 927
+.outputs 928
+.outputs 929
+.outputs 930
+.outputs 931
+.outputs 932
+.outputs 933
+.outputs 934
+.outputs 935
+.outputs 936
+.outputs 937
+.outputs 938
+.outputs 939
+.outputs 940
+.outputs 941
+.outputs 942
+.outputs 943
+.outputs 944
+.outputs 945
+.outputs 946
+.outputs 947
+.outputs 948
+.outputs 949
+.outputs 950
+.outputs 951
+.outputs 952
+.outputs 953
+.outputs 954
+.outputs 955
+.outputs 956
+.outputs 957
+.outputs 958
+.outputs 959
+.outputs 960
+.outputs 961
+.outputs 962
+.outputs 963
+.outputs 964
+.outputs 965
+.outputs 966
+.outputs 967
+.outputs 968
+.outputs 969
+.outputs 970
+.outputs 971
+.outputs 972
+.outputs 973
+.outputs 974
+.outputs 975
+.outputs 976
+.outputs 977
+.outputs 978
+.outputs 979
+.outputs 980
+.outputs 981
+.outputs 982
+.outputs 983
+.outputs 984
+.outputs 985
+.outputs 986
+.outputs 987
+.outputs 988
+.outputs 989
+.outputs 990
+.outputs 991
+.outputs 992
+.outputs 993
+.outputs 994
+.outputs 995
+.outputs 996
+.outputs 997
+.outputs 998
+.outputs 999
+.outputs 1000
+.outputs 1001
+.outputs 1002
+.outputs 1003
+.outputs 1004
+.outputs 1005
+.outputs 1006
+.outputs 1007
+.outputs 1008
+.outputs 1009
+.outputs 1010
+.outputs 1011
+.outputs 1012
+.outputs 1013
+.outputs 1014
+.outputs 1015
+.outputs 1016
+.outputs 1017
+.outputs 1018
+.outputs 1019
+.outputs 1020
+.outputs 1021
+.outputs 1022
+.outputs 1023
+.outputs 1024
+.outputs 1025
+.outputs 1026
+.outputs 1027
+.outputs 1028
+.outputs 1029
+.outputs 1030
+.outputs 1031
+.outputs 1032
+.outputs 1033
+.outputs 1034
+.outputs 1035
+.outputs 1036
+.outputs 1037
+.outputs 1038
+.outputs 1039
+.outputs 1040
+.outputs 1041
+.outputs 1042
+.outputs 1043
+.outputs 1044
+.outputs 1045
+.outputs 1046
+.outputs 1047
+.outputs 1048
+.outputs 1049
+.outputs 1050
+.outputs 1051
+.outputs 1052
+.outputs 1053
+.outputs 1054
+.outputs 1055
+.outputs 1056
+.outputs 1057
+.outputs 1058
+.outputs 1059
+.outputs 1060
+.outputs 1061
+.outputs 1062
+.outputs 1063
+.outputs 1064
+.outputs 1065
+.outputs 1066
+.outputs 1067
+.outputs 1068
+.outputs 1069
+.outputs 1070
+.outputs 1071
+.outputs 1072
+.outputs 1073
+.outputs 1074
+.outputs 1075
+.outputs 1076
+.outputs 1077
+.outputs 1078
+.outputs 1079
+.outputs 1080
+.outputs 1081
+.outputs 1082
+.outputs 1083
+.outputs 1084
+.outputs 1085
+.outputs 1086
+.outputs 1087
+.outputs 1088
+.outputs 1089
+.outputs 1090
+.outputs 1091
+.outputs 1092
+.outputs 1093
+.outputs 1094
+.outputs 1095
+.outputs 1096
+.outputs 1097
+.outputs 1098
+.outputs 1099
+.outputs 1100
+.outputs 1101
+.outputs 1102
+.outputs 1103
+.outputs 1104
+.outputs 1105
+.outputs 1106
+.outputs 1107
+.outputs 1108
+.outputs 1109
+.outputs 1110
+.outputs 1111
+.outputs 1112
+.outputs 1113
+.outputs 1114
+.outputs 1115
+.outputs 1116
+.outputs 1117
+.outputs 1118
+.outputs 1119
+.outputs 1120
+.outputs 1121
+.outputs 1122
+.outputs 1123
+.outputs 1124
+.outputs 1125
+.outputs 1126
+.outputs 1127
+.outputs 1128
+.outputs 1129
+.outputs 1130
+.outputs 1131
+.outputs 1132
+.outputs 1133
+.outputs 1134
+.outputs 1135
+.outputs 1136
+.outputs 1137
+.outputs 1138
+.outputs 1139
+.outputs 1140
+.outputs 1141
+.outputs 1142
+.outputs 1143
+.outputs 1144
+.outputs 1145
+.outputs 1146
+.outputs 1147
+.outputs 1148
+.outputs 1149
+.outputs 1150
+.outputs 1151
+.outputs 1152
+.outputs 1153
+.outputs 1154
+.outputs 1155
+.outputs 1156
+.outputs 1157
+.outputs 1158
+.outputs 1159
+.outputs 1160
+.outputs 1161
+.outputs 1162
+.outputs 1163
+.outputs 1164
+.outputs 1165
+.outputs 1166
+.outputs 1167
+.outputs 1168
+.outputs 1169
+.outputs 1170
+.outputs 1171
+.outputs 1172
+.outputs 1173
+.outputs 1174
+.outputs 1175
+.outputs 1176
+.outputs 1177
+.outputs 1178
+.outputs 1179
+.outputs 1180
+.outputs 1181
+.outputs 1182
+.outputs 1183
+.outputs 1184
+.outputs 1185
+.outputs 1186
+.outputs 1187
+.outputs 1188
+.outputs 1189
+.outputs 1190
+.outputs 1191
+.outputs 1192
+.outputs 1193
+.outputs 1194
+.outputs 1195
+.outputs 1196
+.outputs 1197
+.outputs 1198
+.outputs 1199
+.outputs 1200
+.outputs 1201
+.outputs 1202
+.outputs 1203
+.outputs 1204
+.outputs 1205
+.outputs 1206
+.outputs 1207
+.outputs 1208
+.outputs 1209
+.outputs 1210
+.outputs 1211
+.outputs 1212
+.outputs 1213
+.outputs 1214
+.outputs 1215
+.outputs 1216
+.outputs 1217
+.outputs 1218
+.outputs 1219
+.outputs 1220
+.outputs 1221
+.outputs 1222
+.outputs 1223
+.outputs 1224
+.outputs 1225
+.outputs 1226
+.outputs 1227
+.outputs 1228
+.outputs 1229
+.outputs 1230
+.outputs 1231
+.outputs 1232
+.outputs 1233
+.outputs 1234
+.outputs 1235
+.outputs 1236
+.outputs 1237
+.outputs 1238
+.outputs 1239
+.outputs 1240
+.outputs 1241
+.outputs 1242
+.outputs 1243
+.outputs 1244
+.outputs 1245
+.outputs 1246
+.outputs 1247
+.outputs 1248
+.outputs 1249
+.outputs 1250
+.outputs 1251
+.outputs 1252
+.outputs 1253
+.outputs 1254
+.outputs 1255
+.outputs 1256
+.outputs 1257
+.outputs 1258
+.outputs 1259
+.outputs 1260
+.outputs 1261
+.outputs 1262
+.outputs 1263
+.outputs 1264
+.outputs 1265
+.outputs 1266
+.outputs 1267
+.outputs 1268
+.outputs 1269
+.outputs 1270
+.outputs 1271
+.outputs 1272
+.outputs 1273
+.outputs 1274
+.outputs 1275
+.outputs 1276
+.outputs 1277
+.outputs 1278
+.outputs 1279
+.outputs 1280
+.outputs 1281
+.outputs 1282
+.outputs 1283
+.outputs 1284
+.outputs 1285
+.outputs 1286
+.outputs 1287
+.outputs 1288
+.outputs 1289
+.outputs 1290
+.outputs 1291
+.outputs 1292
+.outputs 1293
+.outputs 1294
+.outputs 1295
+.names 1 612
+1 1
+.names 138 613
+1 1
+.names 135 614
+1 1
+.names 136 615
+1 1
+.names 137 616
+1 1
+.names 139 617
+1 1
+.names 140 618
+1 1
+.names 141 619
+1 1
+.names 142 620
+1 1
+.names 143 621
+1 1
+.names 132 622
+1 1
+.names 133 623
+1 1
+.names 134 624
+1 1
+.names 108 625
+1 1
+.names 88 626
+1 1
+.names 90 627
+1 1
+.names 394 628
+1 1
+.names 98 629
+1 1
+.names 99 630
+1 1
+.names 100 631
+1 1
+.names 101 632
+1 1
+.names 102 633
+1 1
+.names 103 634
+1 1
+.names 104 635
+1 1
+.names 105 636
+1 1
+.names 106 637
+1 1
+.names 107 638
+1 1
+.names 14 639
+1 1
+.names 13 640
+1 1
+.names 8 641
+1 1
+.names 9 642
+1 1
+.names 1296 643
+1 1
+.names 1297 644
+1 1
+.names 372 645
+0 1
+.names 1299 646
+0 1
+.names 1301 647
+0 1
+.names 1303 648
+0 1
+.names 1305 649
+0 1
+.names 1307 650
+0 1
+.names 1309 651
+0 1
+.names 2 652
+1 1
+.names 8 653
+1 1
+.names 9 654
+1 1
+.names 372 655
+0 1
+.names 1310 656
+0 1
+.names 1311 657
+0 1
+.names 1312 658
+0 1
+.names 1313 659
+0 1
+.names 1314 660
+0 1
+.names 1315 661
+0 1
+.names 1316 662
+0 1
+.names 1317 663
+0 1
+.names 1318 664
+0 1
+.names 1319 665
+0 1
+.names 1320 666
+0 1
+.names 1299 667
+0 1
+.names 1301 668
+0 1
+.names 1303 669
+0 1
+.names 1305 670
+0 1
+.names 1307 671
+0 1
+.names 1309 672
+0 1
+.names 281 673
+1 1
+.names 282 674
+1 1
+.names 283 675
+1 1
+.names 284 676
+1 1
+.names 285 677
+1 1
+.names 286 678
+1 1
+.names 287 679
+1 1
+.names 288 680
+1 1
+.names 289 681
+1 1
+.names 290 682
+1 1
+.names 291 683
+1 1
+.names 1323 684
+0 1
+.names 1323 685
+0 1
+.names 1379 686
+0 1
+.names 1393 687
+0 1
+.names 1425 688
+0 1
+.names 1450 689
+0 1
+.names 1476 690
+0 1
+.names 1503 691
+0 1
+.names 1522 692
+0 1
+.names 1538 693
+0 1
+.names 1548 694
+1 1
+.names 1570 695
+0 1
+.names 1581 696
+1 1
+.names 1582 697
+1 1
+.names 698
+ 0
+.names 15 699
+1 1
+.names 16 700
+1 1
+.names 1569 701
+1 1
+.names 1424 702
+0 1
+.names 1449 703
+0 1
+.names 1475 704
+0 1
+.names 1502 705
+0 1
+.names 1521 706
+0 1
+.names 1537 707
+0 1
+.names 1378 708
+0 1
+.names 1392 709
+0 1
+.names 26 710
+1 1
+.names 27 711
+1 1
+.names 28 712
+1 1
+.names 29 713
+1 1
+.names 30 714
+1 1
+.names 31 715
+1 1
+.names 32 716
+1 1
+.names 33 717
+1 1
+.names 34 718
+1 1
+.names 35 719
+1 1
+.names 36 720
+1 1
+.names 37 721
+1 1
+.names 38 722
+1 1
+.names 39 723
+1 1
+.names 40 724
+1 1
+.names 41 725
+1 1
+.names 42 726
+1 1
+.names 43 727
+1 1
+.names 44 728
+1 1
+.names 45 729
+1 1
+.names 46 730
+1 1
+.names 47 731
+1 1
+.names 48 732
+1 1
+.names 49 733
+1 1
+.names 50 734
+1 1
+.names 51 735
+1 1
+.names 52 736
+1 1
+.names 53 737
+1 1
+.names 54 738
+1 1
+.names 55 739
+1 1
+.names 56 740
+1 1
+.names 57 741
+1 1
+.names 58 742
+1 1
+.names 59 743
+1 1
+.names 60 744
+1 1
+.names 61 745
+1 1
+.names 62 746
+1 1
+.names 63 747
+1 1
+.names 64 748
+1 1
+.names 65 749
+1 1
+.names 66 750
+1 1
+.names 1643 751
+1 1
+.names 1646 752
+1 1
+.names 1649 753
+1 1
+.names 1653 754
+1 1
+.names 1656 755
+0 1
+.names 1658 756
+0 1
+.names 1660 757
+0 1
+.names 1662 758
+0 1
+.names 1664 759
+0 1
+.names 1666 760
+0 1
+.names 1668 761
+0 1
+.names 1670 762
+0 1
+.names 1672 763
+0 1
+.names 80 764
+1 1
+.names 81 765
+1 1
+.names 82 766
+1 1
+.names 83 767
+1 1
+.names 1674 768
+1 1
+.names 1675 769
+1 1
+.names 1676 770
+1 1
+.names 1677 771
+1 1
+.names 1678 772
+1 1
+.names 88 773
+1 1
+.names 1650 774
+1 1
+.names 90 775
+1 1
+.names 1640 776
+1 1
+.names 35 777
+1 1
+.names 93 778
+1 1
+.names 96 779
+1 1
+.names 94 780
+1 1
+.names 1679 781
+1 1
+.names 1682 782
+1 1
+.names 1683 783
+1 1
+.names 1686 784
+1 1
+.names 1689 785
+1 1
+.names 1692 786
+1 1
+.names 1695 787
+1 1
+.names 1698 788
+1 1
+.names 1701 789
+1 1
+.names 1704 790
+1 1
+.names 1707 791
+1 1
+.names 1710 792
+0 1
+.names 1711 793
+0 1
+.names 1714 794
+0 1
+.names 1717 795
+1 1
+.names 1721 796
+1 1
+.names 1724 797
+1 1
+.names 1727 798
+1 1
+.names 1730 799
+1 1
+.names 1733 800
+1 1
+.names 1736 801
+1 1
+.names 109 802
+1 1
+.names 110 803
+1 1
+.names 111 804
+1 1
+.names 112 805
+1 1
+.names 113 806
+1 1
+.names 114 807
+1 1
+.names 115 808
+1 1
+.names 116 809
+1 1
+.names 117 810
+1 1
+.names 1737 811
+0 1
+.names 127 812
+1 1
+.names 1738 813
+0 1
+.names 129 814
+1 1
+.names 301 815
+1 1
+.names 51 816
+1 1
+.names 52 817
+1 1
+.names 53 818
+1 1
+.names 54 819
+1 1
+.names 55 820
+1 1
+.names 56 821
+1 1
+.names 51 822
+1 1
+.names 52 823
+1 1
+.names 53 824
+1 1
+.names 54 825
+1 1
+.names 55 826
+1 1
+.names 56 827
+1 1
+.names 1740 828
+0 1
+.names 1742 829
+0 1
+.names 1744 830
+0 1
+.names 1746 831
+0 1
+.names 1748 832
+0 1
+.names 1750 833
+0 1
+.names 1752 834
+0 1
+.names 1754 835
+0 1
+.names 1756 836
+0 1
+.names 1758 837
+0 1
+.names 1765 838
+1 1
+.names 1766 839
+1 1
+.names 1769 840
+1 1
+.names 1772 841
+1 1
+.names 1775 842
+1 1
+.names 1778 843
+1 1
+.names 1781 844
+1 1
+.names 1784 845
+1 1
+.names 1787 846
+1 1
+.names 1790 847
+1 1
+.names 1793 848
+1 1
+.names 1796 849
+1 1
+.names 1797 850
+1 1
+.names 1798 851
+1 1
+.names 852
+ 0
+.names 1800 853
+0 1
+.names 1802 854
+0 1
+.names 1804 855
+0 1
+.names 1806 856
+0 1
+.names 1808 857
+0 1
+.names 1810 858
+0 1
+.names 1812 859
+0 1
+.names 1814 860
+0 1
+.names 1816 861
+0 1
+.names 1818 862
+0 1
+.names 1820 863
+0 1
+.names 1822 864
+0 1
+.names 1824 865
+0 1
+.names 1826 866
+0 1
+.names 1829 867
+1 1
+.names 1830 868
+1 1
+.names 1851 869
+1 1
+.names 1854 870
+1 1
+.names 1856 871
+1 1
+.names 1858 872
+1 1
+.names 1863 873
+1 1
+.names 1865 874
+0 1
+.names 1866 875
+1 1
+.names 1867 876
+1 1
+.names 1868 877
+1 1
+.names 1869 878
+1 1
+.names 1880 879
+0 1
+.names 1882 880
+0 1
+.names 1884 881
+1 1
+.names 1886 882
+0 1
+.names 1888 883
+1 1
+.names 1890 884
+1 1
+.names 1892 885
+0 1
+.names 1899 886
+0 1
+.names 1906 887
+0 1
+.names 1912 888
+0 1
+.names 1918 889
+0 1
+.names 1923 890
+0 1
+.names 1929 891
+0 1
+.names 1934 892
+0 1
+.names 1940 893
+0 1
+.names 1945 894
+0 1
+.names 1946 895
+0 1
+.names 1948 896
+0 1
+.names 1950 897
+0 1
+.names 1952 898
+0 1
+.names 1954 899
+0 1
+.names 1956 900
+0 1
+.names 1958 901
+0 1
+.names 1960 902
+0 1
+.names 1962 903
+0 1
+.names 195 904
+1 1
+.names 1864 905
+0 1
+.names 1968 906
+0 1
+.names 1970 907
+0 1
+.names 1972 908
+0 1
+.names 1974 909
+0 1
+.names 1976 910
+0 1
+.names 1978 911
+0 1
+.names 1980 912
+0 1
+.names 1982 913
+0 1
+.names 1984 914
+0 1
+.names 1986 915
+0 1
+.names 1988 916
+0 1
+.names 1990 917
+0 1
+.names 1992 918
+0 1
+.names 1994 919
+0 1
+.names 1996 920
+0 1
+.names 1998 921
+1 1
+.names 2000 922
+1 1
+.names 2002 923
+1 1
+.names 2003 924
+1 1
+.names 144 925
+1 1
+.names 145 926
+1 1
+.names 146 927
+1 1
+.names 147 928
+1 1
+.names 148 929
+1 1
+.names 149 930
+1 1
+.names 150 931
+1 1
+.names 151 932
+1 1
+.names 152 933
+1 1
+.names 153 934
+1 1
+.names 2005 935
+1 1
+.names 2007 936
+0 1
+.names 2009 937
+0 1
+.names 2011 938
+0 1
+.names 2013 939
+0 1
+.names 2015 940
+0 1
+.names 2017 941
+0 1
+.names 2019 942
+0 1
+.names 2021 943
+0 1
+.names 2023 944
+0 1
+.names 2025 945
+0 1
+.names 2027 946
+0 1
+.names 2029 947
+0 1
+.names 2031 948
+0 1
+.names 2033 949
+0 1
+.names 2036 950
+1 1
+.names 2038 951
+1 1
+.names 2040 952
+1 1
+.names 2041 953
+1 1
+.names 2127 954
+1 1
+.names 2129 955
+0 1
+.names 2131 956
+0 1
+.names 2133 957
+0 1
+.names 2135 958
+0 1
+.names 2137 959
+0 1
+.names 2139 960
+0 1
+.names 2141 961
+0 1
+.names 2143 962
+0 1
+.names 2145 963
+0 1
+.names 2149 964
+0 1
+.names 2150 965
+0 1
+.names 2151 966
+1 1
+.names 2152 967
+0 1
+.names 2153 968
+1 1
+.names 2154 969
+0 1
+.names 2155 970
+1 1
+.names 2156 971
+0 1
+.names 2157 972
+1 1
+.names 2158 973
+0 1
+.names 2159 974
+1 1
+.names 2160 975
+1 1
+.names 1673 976
+0 1
+.names 292 977
+1 1
+.names 35 978
+1 1
+.names 294 979
+1 1
+.names 295 980
+1 1
+.names 296 981
+1 1
+.names 2162 982
+1 1
+.names 2165 983
+1 1
+.names 2161 984
+0 1
+.names 2168 985
+0 1
+.names 2170 986
+0 1
+.names 2173 987
+0 1
+.names 2177 988
+1 1
+.names 2180 989
+1 1
+.names 2183 990
+1 1
+.names 2186 991
+1 1
+.names 2189 992
+1 1
+.names 2192 993
+1 1
+.names 2195 994
+1 1
+.names 2199 995
+1 1
+.names 2201 996
+0 1
+.names 2216 997
+1 1
+.names 2219 998
+1 1
+.names 2221 999
+1 1
+.names 2223 1000
+1 1
+.names 2227 1001
+1 1
+.names 2229 1002
+0 1
+.names 2230 1003
+1 1
+.names 2231 1004
+1 1
+.names 2232 1005
+1 1
+.names 2233 1006
+1 1
+.names 2245 1007
+0 1
+.names 2251 1008
+1 1
+.names 2253 1009
+1 1
+.names 2255 1010
+1 1
+.names 2257 1011
+0 1
+.names 2264 1012
+0 1
+.names 2271 1013
+0 1
+.names 2277 1014
+0 1
+.names 2283 1015
+0 1
+.names 2289 1016
+0 1
+.names 2295 1017
+0 1
+.names 2300 1018
+0 1
+.names 2306 1019
+0 1
+.names 2311 1020
+0 1
+.names 2312 1021
+0 1
+.names 2314 1022
+0 1
+.names 2316 1023
+0 1
+.names 2318 1024
+0 1
+.names 2320 1025
+0 1
+.names 2322 1026
+0 1
+.names 2324 1027
+0 1
+.names 2326 1028
+0 1
+.names 2328 1029
+0 1
+.names 2228 1030
+1 1
+.names 323 1031
+1 1
+.names 1574 1032
+1 1
+.names 348 1033
+1 1
+.names 2329 1034
+1 1
+.names 2330 1035
+1 1
+.names 2331 1036
+1 1
+.names 2332 1037
+1 1
+.names 2333 1038
+1 1
+.names 2334 1039
+1 1
+.names 2337 1040
+0 1
+.names 2339 1041
+0 1
+.names 2341 1042
+0 1
+.names 2343 1043
+0 1
+.names 2345 1044
+0 1
+.names 2347 1045
+0 1
+.names 2349 1046
+0 1
+.names 2351 1047
+0 1
+.names 2353 1048
+0 1
+.names 2355 1049
+0 1
+.names 2357 1050
+0 1
+.names 2359 1051
+0 1
+.names 2361 1052
+0 1
+.names 2363 1053
+0 1
+.names 2365 1054
+0 1
+.names 2367 1055
+1 1
+.names 371 1056
+1 1
+.names 297 1057
+0 1
+.names 2368 1058
+1 1
+.names 2371 1059
+1 1
+.names 376 1060
+1 1
+.names 377 1061
+1 1
+.names 378 1062
+1 1
+.names 379 1063
+1 1
+.names 380 1064
+1 1
+.names 381 1065
+1 1
+.names 382 1066
+1 1
+.names 383 1067
+1 1
+.names 384 1068
+1 1
+.names 385 1069
+1 1
+.names 386 1070
+1 1
+.names 387 1071
+1 1
+.names 2372 1072
+0 1
+.names 2404 1073
+1 1
+.names 2409 1074
+1 1
+.names 2414 1075
+1 1
+.names 2419 1076
+1 1
+.names 2424 1077
+1 1
+.names 2420 1078
+1 1
+.names 394 1079
+1 1
+.names 2425 1080
+0 1
+.names 396 1081
+1 1
+.names 2426 1082
+0 1
+.names 398 1083
+1 1
+.names 2450 1084
+0 1
+.names 2452 1085
+0 1
+.names 2453 1086
+1 1
+.names 2454 1087
+0 1
+.names 2456 1088
+0 1
+.names 2458 1089
+0 1
+.names 2460 1090
+0 1
+.names 2462 1091
+0 1
+.names 2464 1092
+0 1
+.names 2466 1093
+0 1
+.names 2468 1094
+0 1
+.names 2470 1095
+0 1
+.names 2472 1096
+0 1
+.names 2474 1097
+0 1
+.names 2476 1098
+0 1
+.names 2478 1099
+0 1
+.names 2480 1100
+0 1
+.names 2482 1101
+0 1
+.names 2484 1102
+0 1
+.names 2486 1103
+1 1
+.names 2488 1104
+1 1
+.names 2490 1105
+1 1
+.names 2491 1106
+1 1
+.names 2405 1107
+0 1
+.names 423 1108
+1 1
+.names 2494 1109
+0 1
+.names 2496 1110
+0 1
+.names 2498 1111
+0 1
+.names 2500 1112
+0 1
+.names 2502 1113
+0 1
+.names 2504 1114
+0 1
+.names 2506 1115
+0 1
+.names 2508 1116
+0 1
+.names 2510 1117
+0 1
+.names 2512 1118
+0 1
+.names 2514 1119
+0 1
+.names 2516 1120
+0 1
+.names 2518 1121
+0 1
+.names 2520 1122
+0 1
+.names 2522 1123
+0 1
+.names 2524 1124
+0 1
+.names 2526 1125
+0 1
+.names 2528 1126
+0 1
+.names 2530 1127
+0 1
+.names 2532 1128
+0 1
+.names 2534 1129
+0 1
+.names 2536 1130
+0 1
+.names 2538 1131
+0 1
+.names 2540 1132
+0 1
+.names 2542 1133
+0 1
+.names 2544 1134
+0 1
+.names 2546 1135
+0 1
+.names 2548 1136
+0 1
+.names 2550 1137
+0 1
+.names 2552 1138
+0 1
+.names 2554 1139
+0 1
+.names 2556 1140
+0 1
+.names 2558 1141
+0 1
+.names 2560 1142
+0 1
+.names 2562 1143
+0 1
+.names 2564 1144
+0 1
+.names 2566 1145
+0 1
+.names 2568 1146
+0 1
+.names 2570 1147
+0 1
+.names 2572 1148
+0 1
+.names 2574 1149
+0 1
+.names 2576 1150
+0 1
+.names 2600 1151
+0 1
+.names 2601 1152
+1 1
+.names 2602 1153
+1 1
+.names 2603 1154
+1 1
+.names 2604 1155
+1 1
+.names 2605 1156
+1 1
+.names 2606 1157
+1 1
+.names 2607 1158
+1 1
+.names 2608 1159
+1 1
+.names 2609 1160
+1 1
+.names 2610 1161
+1 1
+.names 2611 1162
+1 1
+.names 2612 1163
+1 1
+.names 2613 1164
+1 1
+.names 2614 1165
+1 1
+.names 2615 1166
+1 1
+.names 2616 1167
+1 1
+.names 2617 1168
+1 1
+.names 2618 1169
+1 1
+.names 2619 1170
+1 1
+.names 2635 1171
+0 1
+.names 2640 1172
+0 1
+.names 2645 1173
+0 1
+.names 2650 1174
+0 1
+.names 2655 1175
+0 1
+.names 2660 1176
+0 1
+.names 2665 1177
+0 1
+.names 2670 1178
+0 1
+.names 2674 1179
+0 1
+.names 2678 1180
+0 1
+.names 2687 1181
+1 1
+.names 2690 1182
+1 1
+.names 2693 1183
+1 1
+.names 2696 1184
+1 1
+.names 2699 1185
+1 1
+.names 2702 1186
+1 1
+.names 2705 1187
+1 1
+.names 2708 1188
+1 1
+.names 2709 1189
+1 1
+.names 2710 1190
+1 1
+.names 2711 1191
+1 1
+.names 2712 1192
+1 1
+.names 2713 1193
+1 1
+.names 2714 1194
+1 1
+.names 2721 1195
+1 1
+.names 2722 1196
+1 1
+.names 2726 1197
+1 1
+.names 2730 1198
+1 1
+.names 2734 1199
+1 1
+.names 2738 1200
+1 1
+.names 2742 1201
+1 1
+.names 2746 1202
+1 1
+.names 2750 1203
+1 1
+.names 2754 1204
+1 1
+.names 2758 1205
+1 1
+.names 2762 1206
+1 1
+.names 2763 1207
+1 1
+.names 2764 1208
+1 1
+.names 2771 1209
+1 1
+.names 2772 1210
+1 1
+.names 2773 1211
+1 1
+.names 2779 1212
+1 1
+.names 2770 1213
+1 1
+.names 2780 1214
+1 1
+.names 2781 1215
+1 1
+.names 2782 1216
+1 1
+.names 2783 1217
+1 1
+.names 2784 1218
+1 1
+.names 2785 1219
+1 1
+.names 2786 1220
+1 1
+.names 2787 1221
+1 1
+.names 2788 1222
+1 1
+.names 2789 1223
+1 1
+.names 2790 1224
+1 1
+.names 2791 1225
+1 1
+.names 2792 1226
+1 1
+.names 2793 1227
+1 1
+.names 2794 1228
+1 1
+.names 2795 1229
+1 1
+.names 2796 1230
+1 1
+.names 2797 1231
+1 1
+.names 2798 1232
+1 1
+.names 2799 1233
+1 1
+.names 2800 1234
+1 1
+.names 2801 1235
+1 1
+.names 2804 1236
+1 1
+.names 2805 1237
+1 1
+.names 2808 1238
+1 1
+.names 2809 1239
+1 1
+.names 1240
+ 0
+.names 2811 1241
+0 1
+.names 2813 1242
+0 1
+.names 2815 1243
+0 1
+.names 2817 1244
+0 1
+.names 2819 1245
+0 1
+.names 2821 1246
+0 1
+.names 2823 1247
+0 1
+.names 2825 1248
+0 1
+.names 2827 1249
+0 1
+.names 2829 1250
+0 1
+.names 2831 1251
+0 1
+.names 2833 1252
+0 1
+.names 2835 1253
+0 1
+.names 2837 1254
+0 1
+.names 1255
+ 0
+.names 2839 1256
+0 1
+.names 2841 1257
+0 1
+.names 2843 1258
+0 1
+.names 2845 1259
+0 1
+.names 2847 1260
+0 1
+.names 2849 1261
+0 1
+.names 2851 1262
+0 1
+.names 2853 1263
+0 1
+.names 2855 1264
+0 1
+.names 2857 1265
+0 1
+.names 2859 1266
+0 1
+.names 2861 1267
+0 1
+.names 2863 1268
+0 1
+.names 2865 1269
+0 1
+.names 2869 1270
+0 1
+.names 2873 1271
+0 1
+.names 2877 1272
+0 1
+.names 2881 1273
+0 1
+.names 2883 1274
+0 1
+.names 2886 1275
+0 1
+.names 2889 1276
+0 1
+.names 2892 1277
+1 1
+.names 2895 1278
+0 1
+.names 2898 1279
+0 1
+.names 2901 1280
+0 1
+.names 2904 1281
+0 1
+.names 2905 1282
+0 1
+.names 2906 1283
+1 1
+.names 2907 1284
+0 1
+.names 2908 1285
+0 1
+.names 2909 1286
+0 1
+.names 2910 1287
+0 1
+.names 2912 1288
+0 1
+.names 2914 1289
+0 1
+.names 2916 1290
+0 1
+.names 2918 1291
+0 1
+.names 2920 1292
+0 1
+.names 2922 1293
+0 1
+.names 610 1294
+0 1
+.names 2925 1295
+0 1
+.names 3 4 5 1296
+111 1
+.names 3 6 7 1297
+111 1
+.names 375 586 1298
+01 1
+.names 1298 375 592 1299
+010 1
+00- 1
+.names 375 587 1300
+01 1
+.names 1300 375 593 1301
+010 1
+00- 1
+.names 375 588 1302
+01 1
+.names 1302 375 594 1303
+010 1
+00- 1
+.names 375 589 1304
+01 1
+.names 1304 375 595 1305
+010 1
+00- 1
+.names 375 590 1306
+01 1
+.names 1306 375 596 1307
+010 1
+00- 1
+.names 375 591 1308
+01 1
+.names 1308 375 597 1309
+010 1
+00- 1
+.names 34 282 1310
+00 1
+.names 34 283 1311
+00 1
+.names 34 284 1312
+00 1
+.names 34 285 1313
+00 1
+.names 34 286 1314
+00 1
+.names 34 287 1315
+00 1
+.names 34 288 1316
+00 1
+.names 34 289 1317
+00 1
+.names 34 281 1318
+00 1
+.names 34 290 1319
+00 1
+.names 34 291 1320
+00 1
+.names 15 33 1321
+10 1
+.names 16 33 1322
+11 1
+.names 15 16 26 1323
+000 1
+.names 31 32 1324
+01 1
+.names 26 31 32 1325
+001 1
+.names 1321 1322 1325 1326
+001 1
+.names 26 27 1327
+00 1
+.names 28 29 30 33 1328
+0011 1
+.names 26 27 28 29 30 33 1329
+000011 1
+.names 26 27 1330
+01 1
+.names 28 29 30 33 1331
+1101 1
+.names 26 27 28 29 30 1332
+01110 1
+.names 1321 1322 1325 1329 1330 1331 1333
+0011-- 1
+001011 1
+.names 31 32 1334
+00 1
+.names 26 31 32 1335
+000 1
+.names 1321 1322 1335 1336
+001 1
+.names 26 27 28 29 30 33 1337
+010011 1
+.names 26 1321 1322 1328 1335 1338
+00011 1
+.names 29 30 1339
+11 1
+.names 16 26 28 33 1325 1339 1340
+001111 1
+.names 16 26 27 28 33 1325 1339 1341
+0011111 1
+.names 1327 1331 1342
+11 1
+.names 26 27 28 29 30 1343
+00110 1
+.names 26 1321 1322 1331 1335 1344
+00011 1
+.names 28 29 30 1345
+111 1
+.names 16 26 27 33 1325 1345 1346
+000111 1
+.names 1338 1336 1342 33 1332 1347
+01010 1
+0100- 1
+00--- 1
+.names 1333 1338 1341 1344 1346 1348
+00000 1
+.names 26 31 32 1349
+010 1
+.names 1321 1322 1349 1350
+001 1
+.names 26 27 28 29 30 33 1351
+010111 1
+.names 26 27 28 29 30 33 1352
+011011 1
+.names 1321 1322 1349 1328 1331 1351 1352 1353
+1------ 1
+01----- 1
+0010000 1
+000---- 1
+.names 26 27 28 29 30 32 33 1354
+0011011 1
+.names 28 29 30 1355
+010 1
+.names 26 28 29 30 31 32 1356
+001000 1
+.names 26 28 29 30 33 1357
+00101 1
+.names 1321 1322 1335 1357 1358
+0011 1
+.names 16 26 31 32 33 1343 1359
+001111 1
+.names 16 33 1356 26 31 1354 1360
+0101-- 1
+010010 1
+01000- 1
+.names 1353 1360 1361
+11 1
+.names 1321 1322 1325 1337 1362
+0011 1
+.names 1333 1338 1341 1344 1346 1353 1360 1362 1363
+00000110 1
+.names 26 27 28 29 30 33 382 1364
+0111011 1
+.names 26 27 28 29 30 33 432 1365
+0100111 1
+.names 1321 1322 1325 1364 1365 431 1329 1366
+0011--- 1
+00101-- 1
+0010011 1
+.names 26 31 1321 1322 1354 32 79 1329 1367
+01001--- 1
+01000011 1
+.names 1366 1367 63 1330 1331 1350 1368
+001110 1
+00110- 1
+0010-- 1
+000--- 1
+.names 578 1321 1322 1335 1337 1369
+10011 1
+.names 24 16 33 1370
+11- 1
+100 1
+.names 26 27 28 29 30 33 71 1371
+0100111 1
+.names 1370 1321 1322 1349 1371 1372
+01--- 1
+001-- 1
+00010 1
+0000- 1
+.names 1369 1372 563 1344 1336 1342 1373
+011111 1
+0110-- 1
+010--- 1
+.names 16 26 27 33 370 1325 1345 1374
+0001111 1
+.names 27 175 1321 1322 1335 1357 1375
+110011 1
+.names 1374 1375 362 1341 1376
+0010 1
+000- 1
+.names 26 27 33 1326 1345 1377
+01111 1
+.names 1363 1368 1373 1376 1378
+0111 1
+.names 15 16 26 33 1378 1379
+00011 1
+.names 1362 33 1326 1332 1380
+0110 1
+010- 1
+00-- 1
+.names 1347 1361 1377 1380 1381
+1101 1
+.names 31 32 433 1382
+011 1
+.names 26 1321 1322 1337 1382 31 32 72 1383
+00011--- 1
+00010101 1
+.names 16 26 27 28 33 363 1324 1339 1384
+00111111 1
+.names 564 1321 1322 1330 1331 1335 1385
+100111 1
+.names 26 27 33 176 1322 1335 1355 1386
+0111011 1
+.names 25 16 33 1387
+11- 1
+100 1
+.names 64 1321 1322 1330 1331 1349 1388
+100111 1
+.names 16 33 383 1325 1332 1389
+01111 1
+.names 579 1321 1322 1335 1337 1390
+10011 1
+.names 1383 1384 1385 1386 1387 1388 1389 1390 1391
+00000000 1
+.names 1381 1391 1392
+01 1
+.names 15 16 26 33 1392 1393
+00011 1
+.names 26 28 29 30 33 1394
+01001 1
+.names 1321 1322 1335 1394 1395
+0011 1
+.names 27 1321 1322 1335 1394 1396
+00011 1
+.names 1353 1360 1395 1397
+110 1
+.names 26 1321 1322 1325 1328 1331 1398
+00011- 1
+000101 1
+.names 1338 1341 1344 1346 1353 1360 1395 1398 1399
+00001100 1
+.names 27 177 1400
+01 1
+.names 1321 1322 1335 1357 1400 27 169 1401
+00111-- 1
+0011011 1
+.names 18 16 33 1402
+11- 1
+100 1
+.names 27 183 1321 1322 1335 1394 1403
+110011 1
+.names 16 26 27 33 364 1325 1345 1404
+0001111 1
+.names 26 27 28 29 30 33 565 1405
+0011011 1
+.names 26 27 28 29 30 33 557 1406
+0111011 1
+.names 26 27 28 29 30 33 580 1407
+0000111 1
+.names 26 27 28 29 30 33 572 1408
+0100111 1
+.names 1321 1322 1335 1405 1406 1407 1408 1409
+0011--- 1
+00101-- 1
+001001- 1
+0010001 1
+.names 26 27 28 29 30 33 57 1410
+0111011 1
+.names 1410 80 1352 1411
+010 1
+00- 1
+.names 26 27 28 29 30 33 84 1412
+0101111 1
+.names 1412 65 1327 1331 1413
+0110 1
+010- 1
+00-- 1
+.names 67 1337 1414
+11 1
+.names 1350 1411 1413 1414 73 1329 1415
+1111-- 1
+111011 1
+110--- 1
+10---- 1
+.names 26 27 28 29 30 33 425 1416
+0000111 1
+.names 26 27 28 29 30 33 384 1417
+0011011 1
+.names 26 27 28 29 30 33 390 1418
+0100111 1
+.names 26 27 28 29 30 33 376 1419
+0111011 1
+.names 1416 1417 1321 1322 1325 1418 1419 1420
+001---- 1
+0001--- 1
+0000100 1
+00000-- 1
+.names 1359 1401 1402 1403 184 1396 1421
+000010 1
+00000- 1
+.names 16 26 27 33 357 1325 1345 1422
+0011111 1
+.names 1404 1409 1422 1398 1420 1423
+00011 1
+0000- 1
+.names 1399 1415 1421 1423 1424
+0011 1
+.names 15 16 26 33 1424 1425
+00011 1
+.names 26 27 28 29 30 33 391 1426
+0100111 1
+.names 26 27 28 29 30 33 377 1427
+0111011 1
+.names 26 27 28 29 30 33 426 1428
+0000111 1
+.names 26 27 28 29 30 33 385 1429
+0011011 1
+.names 1321 1322 1325 1426 1427 1428 1429 1430
+0011--- 1
+00101-- 1
+001001- 1
+0010001 1
+.names 26 27 28 29 30 33 58 1431
+0111011 1
+.names 1431 81 1352 1432
+010 1
+00- 1
+.names 68 1337 1433
+11 1
+.names 26 27 28 29 30 33 85 1434
+0101111 1
+.names 1434 66 1327 1331 1435
+0110 1
+010- 1
+00-- 1
+.names 1430 1350 1432 1433 1435 74 1329 1436
+0110110 1
+011010- 1
+00----- 1
+.names 581 1329 1437
+11 1
+.names 573 1337 1438
+11 1
+.names 566 1327 1331 1439
+111 1
+.names 558 1330 1331 1440
+111 1
+.names 27 552 1321 1322 1335 1394 1441
+110011 1
+.names 27 178 1442
+01 1
+.names 1321 1322 1335 1357 1442 27 170 1443
+00111-- 1
+0011011 1
+.names 19 16 33 1444
+11- 1
+100 1
+.names 1441 1443 1444 1336 1437 1438 1439 1440 1445
+00010000 1
+0000---- 1
+.names 27 553 1321 1322 1335 1394 1446
+010011 1
+.names 16 26 27 33 365 1325 1345 1447
+0001111 1
+.names 1446 1447 358 1341 1448
+0010 1
+000- 1
+.names 1399 1436 1445 1448 1449
+0111 1
+.names 15 16 26 33 1449 1450
+00011 1
+.names 26 27 28 29 30 33 82 1451
+0110111 1
+.names 26 27 28 29 30 33 59 1452
+0111011 1
+.names 26 27 28 29 30 33 75 1453
+0000111 1
+.names 26 27 28 29 30 33 69 1454
+0100111 1
+.names 1321 1322 1349 1451 1452 86 1351 1455
+1------ 1
+01----- 1
+0010010 1
+001000- 1
+000---- 1
+.names 1321 1322 1349 1453 1454 1456
+0011- 1
+00101 1
+.names 26 27 28 29 30 33 427 1457
+0000111 1
+.names 26 27 28 29 30 33 386 1458
+0011011 1
+.names 26 27 28 29 30 33 392 1459
+0100111 1
+.names 26 27 28 29 30 33 378 1460
+0111011 1
+.names 1457 1458 1321 1322 1325 1459 1460 1461
+001---- 1
+0001--- 1
+0000100 1
+00000-- 1
+.names 1455 1456 1398 1461 1462
+1011 1
+100- 1
+.names 26 27 28 29 30 33 582 1463
+0000111 1
+.names 26 27 28 29 30 33 574 1464
+0100111 1
+.names 26 27 28 29 30 33 567 1465
+0011011 1
+.names 26 27 28 29 30 33 559 1466
+0111011 1
+.names 1321 1322 1335 1463 1464 1465 1466 1467
+0011--- 1
+00101-- 1
+001001- 1
+0010001 1
+.names 27 554 1321 1322 1335 1394 1468
+110011 1
+.names 20 16 33 1469
+11- 1
+100 1
+.names 27 179 1470
+01 1
+.names 1467 1468 1469 1358 1470 27 171 1471
+0001010 1
+000100- 1
+0000--- 1
+.names 27 555 1321 1322 1335 1394 1472
+010011 1
+.names 16 26 27 33 366 1325 1345 1473
+0001111 1
+.names 1472 1473 359 1341 1474
+0010 1
+000- 1
+.names 1399 1462 1471 1474 1475
+0111 1
+.names 15 16 26 33 1475 1476
+00011 1
+.names 26 27 28 29 30 33 83 1477
+0110111 1
+.names 26 27 28 29 30 33 60 1478
+0111011 1
+.names 26 27 28 29 30 33 76 1479
+0000111 1
+.names 26 27 28 29 30 33 70 1480
+0100111 1
+.names 1321 1322 1349 1477 1478 87 1351 1481
+1------ 1
+01----- 1
+0010010 1
+001000- 1
+000---- 1
+.names 1321 1322 1349 1479 1480 1482
+0011- 1
+00101 1
+.names 26 27 28 29 30 33 428 1483
+0000111 1
+.names 26 27 28 29 30 33 387 1484
+0011011 1
+.names 26 27 28 29 30 33 393 1485
+0100111 1
+.names 26 27 28 29 30 33 379 1486
+0111011 1
+.names 1483 1484 1321 1322 1325 1485 1486 1487
+001---- 1
+0001--- 1
+0000100 1
+00000-- 1
+.names 1481 1482 1398 1487 1488
+1011 1
+100- 1
+.names 27 220 1321 1322 1335 1394 1489
+110011 1
+.names 27 172 1490
+11 1
+.names 27 180 1491
+01 1
+.names 21 16 33 1492
+11- 1
+100 1
+.names 1492 1321 1322 1335 1357 1490 1491 1493
+01----- 1
+001---- 1
+0001100 1
+00010-- 1
+0000--- 1
+.names 26 27 28 29 30 33 575 1494
+0100111 1
+.names 1494 583 1329 1495
+010 1
+00- 1
+.names 27 568 1496
+01 1
+.names 26 1331 1496 27 560 1497
+011-- 1
+01011 1
+.names 27 221 1321 1322 1335 1394 1498
+010011 1
+.names 16 26 27 33 367 1325 1345 1499
+0001111 1
+.names 16 26 27 28 33 360 1324 1339 1500
+00111111 1
+.names 1489 1493 1498 1499 1500 1336 1495 1497 1501
+01000110 1
+010000-- 1
+.names 1399 1488 1501 1502
+011 1
+.names 15 16 26 33 1502 1503
+00011 1
+.names 61 1321 1322 1330 1331 1349 1504
+100111 1
+.names 27 181 1505
+01 1
+.names 26 27 28 29 30 33 429 1506
+0000111 1
+.names 26 27 28 29 30 33 380 1507
+0111011 1
+.names 1321 1322 1325 1506 1507 1508
+0011- 1
+00101 1
+.names 22 16 33 1509
+11- 1
+100 1
+.names 1509 77 1321 1322 1329 1349 1510
+011--- 1
+0101-- 1
+010010 1
+01000- 1
+00---- 1
+.names 1504 1508 1510 1358 1505 27 173 1511
+0011010 1
+001100- 1
+0010--- 1
+.names 26 27 28 29 30 33 569 1512
+0011011 1
+.names 26 27 28 29 30 33 561 1513
+0111011 1
+.names 26 27 28 29 30 33 584 1514
+0000111 1
+.names 26 27 28 29 30 33 576 1515
+0100111 1
+.names 1321 1322 1335 1512 1513 1514 1515 1516
+0011--- 1
+00101-- 1
+001001- 1
+0010001 1
+.names 27 347 1517
+11 1
+.names 1321 1322 1335 1394 1517 27 346 1518
+00111-- 1
+0011001 1
+.names 27 368 1519
+01 1
+.names 1516 1518 1340 1519 27 361 1520
+001010 1
+00100- 1
+000--- 1
+.names 1511 1520 1348 1397 1521
+1110 1
+110- 1
+.names 15 16 26 33 1521 1522
+00011 1
+.names 1333 1338 1341 1344 1346 1353 1360 1523
+0000011 1
+.names 23 16 33 1524
+11- 1
+100 1
+.names 1524 62 1321 1322 1330 1331 1349 1525
+011---- 1
+0101--- 1
+0100110 1
+010010- 1
+01000-- 1
+00----- 1
+.names 16 33 381 1325 1332 1526
+01111 1
+.names 27 182 1527
+01 1
+.names 16 26 33 1334 1355 1527 27 174 1528
+001111-- 1
+00111011 1
+.names 577 1329 1529
+10 1
+.names 1525 1526 1528 1338 1529 585 1329 1530
+1001010 1
+100100- 1
+1000--- 1
+.names 78 1321 1322 1349 1531
+1001 1
+.names 16 26 27 33 369 1325 1345 1532
+0001111 1
+.names 26 27 28 29 30 33 570 1533
+0011011 1
+.names 26 27 28 29 30 33 562 1534
+0111011 1
+.names 1321 1322 1335 1533 1534 1535
+0011- 1
+00101 1
+.names 1532 1535 1329 1531 430 1326 1536
+001010 1
+00100- 1
+000--- 1
+.names 1523 1530 1536 1537
+011 1
+.names 15 16 26 33 1537 1538
+00011 1
+.names 3 1475 1539
+10 1
+.names 90 91 1521 1540
+100 1
+.names 11 1449 1541
+10 1
+.names 1541 92 1502 1542
+011 1
+00- 1
+.names 3 1540 1542 10 1424 1543
+11--- 1
+10110 1
+100-- 1
+.names 3 1521 1544
+10 1
+.names 3 1502 1545
+10 1
+.names 3 1449 1546
+10 1
+.names 3 1424 1547
+10 1
+.names 1543 88 89 1539 1548
+011- 1
+0100 1
+00-- 1
+.names 1424 1449 1549
+10 1
+.names 1424 1449 1550
+01 1
+.names 1549 1550 1551
+00 1
+.names 1475 1502 1552
+00 1
+.names 1475 1502 1553
+01 1
+.names 1551 1553 1502 1552 1554
+001- 1
+0001 1
+.names 1551 1553 1502 1552 1555
+11-- 1
+1000 1
+.names 1554 1555 1556
+00 1
+.names 17 16 33 1557
+01- 1
+000 1
+.names 1521 1537 1558
+00 1
+.names 1521 1537 1559
+10 1
+.names 1521 1537 1560
+01 1
+.names 1557 1381 1391 1561
+11- 1
+100 1
+.names 1381 1391 1557 1562
+010 1
+.names 1378 1561 1562 1563
+000 1
+.names 1378 1561 1562 1564
+11- 1
+101 1
+.names 1563 1564 1559 1560 1565
+001- 1
+0001 1
+.names 1559 1560 1563 1564 1566
+001- 1
+0001 1
+.names 1565 1566 1567
+1- 1
+01 1
+.names 1554 1555 1565 1566 1568
+0000 1
+.names 1568 1556 1567 1569
+01- 1
+000 1
+.names 15 16 26 33 1569 1570
+00010 1
+.names 389 1545 1571
+11 1
+.names 467 1537 1572
+00 1
+.names 1572 108 1392 1573
+011 1
+00- 1
+.names 3 354 355 1574
+111 1
+.names 3 1378 1575
+10 1
+.names 1378 1574 1576
+01 1
+.names 3 1537 1577
+10 1
+.names 3 1392 1578
+10 1
+.names 1571 3 1573 1576 394 395 1521 1579
+011011- 1
+0110101 1
+01100-- 1
+00----- 1
+.names 1568 1579 1556 1567 1580
+011- 1
+0100 1
+.names 1580 1569 1579 1581
+01- 1
+001 1
+.names 1548 1579 1582
+11 1
+.names 3 92 130 90 91 1583
+11--- 1
+10110 1
+100-- 1
+.names 3 126 1399 1415 1421 1423 1584
+101--- 1
+1001-- 1
+100010 1
+10000- 1
+.names 1584 126 3 1424 1585
+0110 1
+00-- 1
+.names 120 3 1399 1462 1471 1474 1586
+110111 1
+10---- 1
+.names 3 121 1399 1488 1501 1587
+111-- 1
+11010 1
+1100- 1
+.names 121 3 1399 1488 1501 1588
+01011 1
+00--- 1
+.names 123 3 1523 1530 1536 1589
+11011 1
+10--- 1
+.names 3 123 1523 1530 1536 1590
+101-- 1
+10010 1
+1000- 1
+.names 125 3 1391 1347 1361 1377 1380 1591
+111111- 1
+1111100 1
+11110-- 1
+1110--- 1
+10----- 1
+.names 3 125 1391 1347 1361 1377 1380 1592
+1011101 1
+100---- 1
+.names 1585 1586 1589 1590 1591 1592 1587 1588 1593
+1000001- 1
+10000001 1
+.names 3 118 1399 1415 1421 1423 1594
+111--- 1
+1101-- 1
+110010 1
+11000- 1
+.names 118 3 1399 1415 1421 1423 1595
+010011 1
+00---- 1
+.names 1594 1595 1596
+00 1
+.names 3 122 1511 1520 1348 1397 1597
+111111 1
+1110-- 1
+110--- 1
+.names 122 3 1511 1520 1348 1397 1598
+011110 1
+01110- 1
+00---- 1
+.names 1597 1598 1599
+00 1
+.names 3 124 1363 1368 1373 1376 1600
+111--- 1
+110110 1
+11010- 1
+1100-- 1
+.names 124 3 1363 1368 1373 1376 1601
+010111 1
+00---- 1
+.names 1600 1601 1602
+00 1
+.names 3 119 1399 1436 1445 1448 1603
+111--- 1
+110110 1
+11010- 1
+1100-- 1
+.names 119 3 1399 1436 1445 1448 1604
+010111 1
+00---- 1
+.names 1603 1604 1605
+00 1
+.names 3 120 1399 1462 1471 1474 1606
+101--- 1
+100110 1
+10010- 1
+1000-- 1
+.names 1605 1606 1607
+00 1
+.names 1589 1590 1591 1592 1600 1601 1608
+00001- 1
+000001 1
+.names 1586 1606 1587 1588 1609
+001- 1
+0001 1
+.names 118 122 123 124 125 126 1610
+000000 1
+.names 119 120 121 1610 1611
+0001 1
+.names 1611 1593 1596 1599 1602 1607 1612
+111--- 1
+1101-- 1
+11001- 1
+110000 1
+10---- 1
+.names 266 267 268 269 1613
+1111 1
+.names 248 257 1614
+01 1
+.names 248 257 1615
+10 1
+.names 249 258 1616
+11 1
+.names 249 258 1617
+00 1
+.names 245 254 1618
+01 1
+.names 245 254 1619
+10 1
+.names 1614 1615 1618 1619 1616 1617 1620
+00001- 1
+000001 1
+.names 244 253 1621
+01 1
+.names 244 253 1622
+10 1
+.names 243 252 1623
+01 1
+.names 1621 1622 1623 250 259 1624
+00011 1
+0000- 1
+.names 247 256 1625
+01 1
+.names 247 256 1626
+10 1
+.names 242 251 1627
+01 1
+.names 1625 1626 1627 250 259 1628
+0001- 1
+00000 1
+.names 243 252 1629
+10 1
+.names 242 251 1630
+10 1
+.names 1629 246 255 1631
+01- 1
+000 1
+.names 1630 1631 246 255 1632
+0111 1
+010- 1
+.names 256 258 259 260 261 262 263 265 1633
+00000000 1
+.names 251 252 253 254 255 257 1633 1634
+0000001 1
+.names 264 265 1634 1635
+000 1
+.names 1613 1635 264 265 1636
+1010 1
+100- 1
+.names 1636 241 1613 1637
+011 1
+00- 1
+.names 241 1637 1638
+10 1
+.names 241 1636 1639
+00 1
+.names 1612 1613 1620 1624 1628 1632 1638 1639 1640
+01111100 1
+011110-- 1
+01110--- 1
+0110---- 1
+010----- 1
+.names 67 1640 1641
+10 1
+.names 67 1640 1642
+01 1
+.names 1583 1641 1642 1643
+11- 1
+101 1
+.names 68 67 1640 1644
+110 1
+10- 1
+.names 67 68 1640 1645
+101 1
+.names 1583 1644 1645 1646
+11- 1
+101 1
+.names 69 67 68 1640 1647
+1110 1
+110- 1
+10-- 1
+.names 67 68 69 1640 1648
+1101 1
+.names 1583 1647 1648 1649
+11- 1
+101 1
+.names 67 68 69 70 1650
+1111 1
+.names 67 68 69 70 1651
+1110 1
+.names 1640 1651 70 1650 1652
+11-- 1
+1010 1
+.names 1583 1652 70 1640 1653
+11-- 1
+1010 1
+.names 1640 3 92 90 91 1654
+11011 1
+1100- 1
+10--- 1
+.names 71 1640 3 92 90 91 1655
+1111-- 1
+111010 1
+10---- 1
+.names 1655 118 1654 1656
+010 1
+00- 1
+.names 119 1640 3 92 90 91 1657
+111011 1
+11100- 1
+110--- 1
+.names 1657 72 1654 1658
+011 1
+00- 1
+.names 120 1640 3 92 90 91 1659
+111011 1
+11100- 1
+110--- 1
+.names 1659 73 1654 1660
+011 1
+00- 1
+.names 121 1640 3 92 90 91 1661
+111011 1
+11100- 1
+110--- 1
+.names 1661 74 1654 1662
+011 1
+00- 1
+.names 75 1640 3 92 90 91 1663
+1111-- 1
+111010 1
+10---- 1
+.names 1663 122 1654 1664
+010 1
+00- 1
+.names 76 1640 3 92 90 91 1665
+1111-- 1
+111010 1
+10---- 1
+.names 1665 123 1654 1666
+010 1
+00- 1
+.names 77 1640 3 92 90 91 1667
+1111-- 1
+111010 1
+10---- 1
+.names 1667 124 1654 1668
+010 1
+00- 1
+.names 78 1640 3 92 90 91 1669
+1111-- 1
+111010 1
+10---- 1
+.names 1669 125 1654 1670
+010 1
+00- 1
+.names 79 1640 3 92 90 91 1671
+1111-- 1
+111010 1
+10---- 1
+.names 1671 126 1654 1672
+010 1
+00- 1
+.names 3 11 88 89 1673
+11-- 1
+1010 1
+.names 3 84 293 1673 1674
+111- 1
+1101 1
+.names 3 85 293 1673 1675
+111- 1
+1101 1
+.names 3 86 293 1673 1676
+111- 1
+1101 1
+.names 3 87 293 1673 1677
+111- 1
+1101 1
+.names 84 85 86 87 1678
+1111 1
+.names 96 97 1679
+10 1
+.names 97 98 1680
+10 1
+.names 97 98 1681
+01 1
+.names 96 1680 1681 1682
+11- 1
+101 1
+.names 3 99 131 1683
+100 1
+.names 99 100 1684
+10 1
+.names 99 100 1685
+01 1
+.names 3 131 1684 1685 1686
+101- 1
+1001 1
+.names 99 100 101 1687
+111 1
+.names 99 100 101 1688
+110 1
+.names 3 131 1688 101 1687 1689
+101-- 1
+10010 1
+.names 102 1687 1690
+10 1
+.names 102 1687 1691
+01 1
+.names 3 131 1690 1691 1692
+101- 1
+1001 1
+.names 103 102 1687 1693
+110 1
+10- 1
+.names 102 103 1687 1694
+101 1
+.names 3 131 1693 1694 1695
+101- 1
+1001 1
+.names 104 102 103 1687 1696
+1110 1
+110- 1
+10-- 1
+.names 102 103 104 1687 1697
+1101 1
+.names 3 131 1696 1697 1698
+101- 1
+1001 1
+.names 105 102 103 104 1687 1699
+11110 1
+1110- 1
+110-- 1
+10--- 1
+.names 102 103 104 105 1687 1700
+11101 1
+.names 3 131 1699 1700 1701
+101- 1
+1001 1
+.names 102 103 104 105 106 1687 1702
+111111 1
+.names 102 103 104 105 106 1687 1703
+111101 1
+.names 3 131 1703 106 1702 1704
+101-- 1
+10010 1
+.names 107 1702 1705
+10 1
+.names 107 1702 1706
+01 1
+.names 3 131 1705 1706 1707
+101- 1
+1001 1
+.names 107 131 1702 1708
+101 1
+.names 131 107 1702 1709
+110 1
+10- 1
+.names 1708 1709 1710
+00 1
+.names 3 95 96 109 1711
+1111 1
+.names 109 110 1712
+11 1
+.names 109 110 1713
+00 1
+.names 3 95 96 1712 1713 1714
+1111- 1
+11101 1
+.names 111 1712 1715
+10 1
+.names 111 1712 1716
+01 1
+.names 3 95 96 1715 1716 1717
+1111- 1
+11101 1
+.names 111 112 1718
+11 1
+.names 1712 1718 1719
+11 1
+.names 111 112 1712 1720
+101 1
+.names 3 95 96 1720 112 1719 1721
+1111-- 1
+111010 1
+.names 113 1719 1722
+10 1
+.names 113 1719 1723
+01 1
+.names 3 95 96 1722 1723 1724
+1111- 1
+11101 1
+.names 113 114 1719 1725
+111 1
+.names 113 114 1719 1726
+101 1
+.names 3 95 96 1726 114 1725 1727
+1111-- 1
+111010 1
+.names 115 1725 1728
+11 1
+.names 115 1725 1729
+01 1
+.names 3 95 96 1729 115 1728 1730
+1111-- 1
+111010 1
+.names 116 1728 1731
+10 1
+.names 1731 109 110 113 114 115 116 1718 1732
+0111111- 1
+01111100 1
+011110-- 1
+01110--- 1
+0110---- 1
+010----- 1
+00------ 1
+.names 3 95 96 1732 1733
+1110 1
+.names 115 116 1734
+11 1
+.names 117 1725 1734 1735
+011 1
+.names 3 95 96 1735 117 116 1728 1736
+1111--- 1
+1110110 1
+111010- 1
+.names 28 29 30 33 1327 1350 1737
+000011 1
+.names 28 29 30 33 1330 1350 1738
+000011 1
+.names 1 550 1739
+11 1
+.names 1739 1 598 1740
+01- 1
+000 1
+.names 1 548 1741
+11 1
+.names 1741 1 599 1742
+01- 1
+000 1
+.names 1 546 1743
+11 1
+.names 1743 1 600 1744
+01- 1
+000 1
+.names 1 544 1745
+11 1
+.names 1745 1 601 1746
+01- 1
+000 1
+.names 1 542 1747
+11 1
+.names 1747 1 602 1748
+01- 1
+000 1
+.names 1 540 1749
+11 1
+.names 1749 1 603 1750
+01- 1
+000 1
+.names 1 538 1751
+11 1
+.names 1751 1 604 1752
+01- 1
+000 1
+.names 1 536 1753
+11 1
+.names 1753 1 605 1754
+01- 1
+000 1
+.names 1 534 1755
+11 1
+.names 1755 1 606 1756
+01- 1
+000 1
+.names 1 532 1757
+11 1
+.names 1757 1 607 1758
+01- 1
+000 1
+.names 164 165 1759
+10 1
+.names 164 165 1760
+01 1
+.names 154 167 1761
+01 1
+.names 154 167 1762
+10 1
+.names 1759 1760 1761 1762 1763
+001- 1
+0001 1
+.names 1761 1762 1759 1760 1764
+001- 1
+0001 1
+.names 3 1763 1764 1765
+11- 1
+101 1
+.names 3 154 1766
+11 1
+.names 155 1758 1767
+10 1
+.names 155 1758 1768
+01 1
+.names 3 1767 1768 1769
+100 1
+.names 156 1756 1770
+10 1
+.names 156 1756 1771
+01 1
+.names 3 1770 1771 1772
+100 1
+.names 157 1754 1773
+10 1
+.names 157 1754 1774
+01 1
+.names 3 1773 1774 1775
+100 1
+.names 158 1752 1776
+10 1
+.names 158 1752 1777
+01 1
+.names 3 1776 1777 1778
+100 1
+.names 159 1750 1779
+10 1
+.names 159 1750 1780
+01 1
+.names 3 1779 1780 1781
+100 1
+.names 160 1748 1782
+10 1
+.names 160 1748 1783
+01 1
+.names 3 1782 1783 1784
+100 1
+.names 161 1746 1785
+10 1
+.names 161 1746 1786
+01 1
+.names 3 1785 1786 1787
+100 1
+.names 162 1744 1788
+10 1
+.names 162 1744 1789
+01 1
+.names 3 1788 1789 1790
+100 1
+.names 163 1742 1791
+10 1
+.names 163 1742 1792
+01 1
+.names 3 1791 1792 1793
+100 1
+.names 164 1740 1794
+10 1
+.names 164 1740 1795
+01 1
+.names 3 1794 1795 1796
+100 1
+.names 3 165 1797
+11 1
+.names 3 166 1798
+11 1
+.names 167 3 168 1 184 527 1799
+111--- 1
+110101 1
+10---- 1
+.names 1799 3 168 169 1 184 527 1800
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 166 3 168 1 184 527 1801
+111--- 1
+110101 1
+10---- 1
+.names 1801 3 168 170 1 184 527 1802
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 165 3 168 1 184 527 1803
+111--- 1
+110101 1
+10---- 1
+.names 1803 3 168 171 1 184 527 1804
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 164 3 168 1 184 527 1805
+111--- 1
+110101 1
+10---- 1
+.names 1805 3 168 172 1 184 527 1806
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 163 3 168 1 184 527 1807
+111--- 1
+110101 1
+10---- 1
+.names 1807 3 168 173 1 184 527 1808
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 162 3 168 1 184 527 1809
+111--- 1
+110101 1
+10---- 1
+.names 1809 3 168 174 1 184 527 1810
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 161 3 168 1 184 527 1811
+111--- 1
+110101 1
+10---- 1
+.names 1811 3 168 175 1 184 527 1812
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 160 3 168 1 184 527 1813
+111--- 1
+110101 1
+10---- 1
+.names 1813 3 168 176 1 184 527 1814
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 159 3 168 1 184 527 1815
+111--- 1
+110101 1
+10---- 1
+.names 1815 3 168 177 1 184 527 1816
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 158 3 168 1 184 527 1817
+111--- 1
+110101 1
+10---- 1
+.names 1817 3 168 178 1 184 527 1818
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 157 3 168 1 184 527 1819
+111--- 1
+110101 1
+10---- 1
+.names 1819 3 168 179 1 184 527 1820
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 156 3 168 1 184 527 1821
+111--- 1
+110101 1
+10---- 1
+.names 1821 3 168 180 1 184 527 1822
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 155 3 168 1 184 527 1823
+111--- 1
+110101 1
+10---- 1
+.names 1823 3 168 181 1 184 527 1824
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 154 3 168 1 184 527 1825
+111--- 1
+110101 1
+10---- 1
+.names 1825 3 168 182 1 184 527 1826
+011---- 1
+0101101 1
+0100--- 1
+00----- 1
+.names 154 155 156 157 158 159 160 161 1827
+01000011 1
+.names 162 163 164 165 166 167 1827 1828
+0000111 1
+.names 3 183 1 184 527 1828 1829
+11---- 1
+101011 1
+.names 3 184 1 527 1830
+11-- 1
+1011 1
+.names 194 198 1831
+10 1
+.names 199 1831 1832
+01 1
+.names 200 1832 1833
+01 1
+.names 201 1833 1834
+01 1
+.names 187 188 1835
+10 1
+.names 187 188 1836
+01 1
+.names 187 188 189 1837
+001 1
+.names 1835 1837 189 1836 1838
+1--- 1
+01-- 1
+0001 1
+.names 202 203 204 205 1838 1839
+00000 1
+.names 206 207 1839 1840
+001 1
+.names 208 209 1840 1841
+001 1
+.names 208 209 210 1840 1842
+0001 1
+.names 202 203 1843
+11 1
+.names 204 205 206 207 1838 1843 1844
+111111 1
+.names 185 186 187 1845
+101 1
+.names 1834 1845 196 188 189 1846
+10100 1
+100-- 1
+0---- 1
+.names 1846 1842 208 209 210 1844 1847
+01---- 1
+001111 1
+.names 197 1845 1847 1848
+011 1
+.names 1834 186 1845 197 1847 1849
+11--- 1
+10110 1
+1010- 1
+.names 185 1849 1850
+01 1
+.names 1 1850 185 1849 1851
+11-- 1
+1010 1
+.names 219 1850 1852
+11 1
+.names 185 186 187 188 189 1834 1853
+001001 1
+.names 1 1853 186 1852 1854
+11-- 1
+1010 1
+.names 1 1847 1845 188 189 1855
+1101- 1
+11000 1
+10--- 1
+.names 1855 187 188 1847 1856
+11-- 1
+1011 1
+.names 188 1847 1857
+10 1
+.names 1 1857 189 1847 1858
+11-- 1
+1011 1
+.names 185 187 188 189 1859
+0000 1
+.names 189 1835 1836 1860
+100 1
+.names 1847 1860 189 1836 1861
+11-- 1
+1001 1
+.names 189 1848 1859 1861 1862
+01-- 1
+001- 1
+0001 1
+.names 1 1862 189 1848 1861 1863
+11--- 1
+10100 1
+.names 1859 185 187 1864
+011 1
+00- 1
+.names 194 1864 1865
+01 1
+.names 190 1864 1866
+11 1
+.names 191 1864 1867
+11 1
+.names 192 1864 1868
+11 1
+.names 193 1864 1869
+11 1
+.names 1734 113 114 1870
+010 1
+00- 1
+.names 1859 117 1870 1712 1718 1871
+111-- 1
+11000 1
+10--- 1
+.names 185 186 1872
+11 1
+.names 196 1845 1872 187 189 1873
+01--- 1
+001-- 1
+00011 1
+.names 1873 196 1836 1874
+010 1
+00- 1
+.names 188 1872 187 186 189 1875
+00110 1
+000-- 1
+.names 153 197 1874 1876
+111 1
+.names 1874 153 197 1877
+010 1
+00- 1
+.names 1864 197 1837 1878
+11- 1
+100 1
+.names 195 192 1875 1878 1876 1877 1879
+111--- 1
+110100 1
+1100-- 1
+10---- 1
+.names 1871 1859 1879 195 197 1837 1880
+01---- 1
+0001-- 1
+00001- 1
+000000 1
+.names 196 1834 188 189 1881
+011- 1
+0101 1
+.names 1859 1881 196 1834 1882
+0011 1
+000- 1
+.names 197 1845 1847 1883
+110 1
+10- 1
+.names 1859 1848 1883 1884
+01- 1
+001 1
+.names 194 198 1885
+01 1
+.names 1831 1859 1885 1886
+000 1
+.names 199 1831 1887
+10 1
+.names 1834 1859 1832 1887 1888
+001- 1
+0001 1
+.names 200 1832 1889
+10 1
+.names 1834 1859 1833 1889 1890
+001- 1
+0001 1
+.names 201 1833 1891
+10 1
+.names 1834 1859 1891 1892
+000 1
+.names 1847 1859 1893
+00 1
+.names 1853 186 1834 1894
+1-- 1
+011 1
+.names 1846 1894 1895
+10 1
+.names 202 1895 211 1894 1896
+11-- 1
+1001 1
+.names 202 1895 211 1894 1897
+001- 1
+0000 1
+.names 1837 1845 1847 1859 188 189 1898
+001011 1
+00100- 1
+.names 1898 1893 1896 1897 1899
+0100 1
+00-- 1
+.names 202 1838 1900
+11 1
+.names 202 1838 1901
+00 1
+.names 1894 1900 1901 1902
+01- 1
+001 1
+.names 1895 1902 212 1894 1903
+01-- 1
+0011 1
+.names 203 1903 1904
+10 1
+.names 203 1903 1905
+01 1
+.names 1898 1893 1904 1905 1906
+0100 1
+00-- 1
+.names 202 203 1838 1907
+000 1
+.names 1894 1907 1838 1843 1908
+01-- 1
+0011 1
+.names 1895 1908 213 1894 1909
+01-- 1
+0011 1
+.names 204 1909 1910
+10 1
+.names 204 1909 1911
+01 1
+.names 1898 1893 1910 1911 1912
+0100 1
+00-- 1
+.names 202 203 204 1838 1913
+0000 1
+.names 1894 1913 204 1838 1843 1914
+01--- 1
+00111 1
+.names 1895 1914 214 1894 1915
+01-- 1
+0011 1
+.names 205 1915 1916
+10 1
+.names 205 1915 1917
+01 1
+.names 1898 1893 1916 1917 1918
+0100 1
+00-- 1
+.names 1839 1894 204 205 1838 1843 1919
+001110 1
+00110- 1
+0010-- 1
+000--- 1
+.names 1919 215 1894 1920
+1-- 1
+001 1
+.names 206 1895 1920 1921
+11- 1
+101 1
+.names 206 1895 1920 1922
+000 1
+.names 1898 1893 1921 1922 1923
+0100 1
+00-- 1
+.names 202 203 204 205 206 1838 1924
+000000 1
+.names 1894 1924 204 205 206 1838 1843 1925
+01----- 1
+0011111 1
+.names 1895 1925 216 1894 1926
+01-- 1
+0011 1
+.names 207 1926 1927
+10 1
+.names 207 1926 1928
+01 1
+.names 1898 1893 1927 1928 1929
+0100 1
+00-- 1
+.names 1894 1840 1844 1930
+01- 1
+001 1
+.names 1930 217 1894 1931
+010 1
+00- 1
+.names 208 1895 1931 1932
+11- 1
+101 1
+.names 208 1895 1931 1933
+000 1
+.names 1898 1893 1932 1933 1934
+0100 1
+00-- 1
+.names 208 1844 1935
+11 1
+.names 1894 1935 208 1840 1936
+01-- 1
+0001 1
+.names 1895 1936 218 1894 1937
+01-- 1
+0011 1
+.names 209 1937 1938
+10 1
+.names 209 1937 1939
+01 1
+.names 1898 1893 1938 1939 1940
+0100 1
+00-- 1
+.names 1841 1894 208 209 1844 1941
+00110 1
+0010- 1
+000-- 1
+.names 1895 1941 219 1894 1942
+001- 1
+0000 1
+.names 210 1942 1943
+10 1
+.names 210 1942 1944
+01 1
+.names 1898 1893 1943 1944 1945
+0100 1
+00-- 1
+.names 1852 1859 211 1850 1946
+0011 1
+000- 1
+.names 212 1850 1859 1947
+100 1
+.names 1947 211 1850 1948
+010 1
+00- 1
+.names 213 1850 1859 1949
+100 1
+.names 1949 212 1850 1950
+010 1
+00- 1
+.names 214 1850 1859 1951
+100 1
+.names 1951 213 1850 1952
+010 1
+00- 1
+.names 215 1850 1859 1953
+100 1
+.names 1953 214 1850 1954
+010 1
+00- 1
+.names 216 1850 1859 1955
+100 1
+.names 1955 215 1850 1956
+010 1
+00- 1
+.names 217 1850 1859 1957
+100 1
+.names 1957 216 1850 1958
+010 1
+00- 1
+.names 218 1850 1859 1959
+100 1
+.names 1959 217 1850 1960
+010 1
+00- 1
+.names 219 1850 1859 1961
+100 1
+.names 1961 218 1850 1962
+010 1
+00- 1
+.names 223 224 225 226 1963
+0000 1
+.names 227 229 230 231 232 233 234 236 1964
+00000000 1
+.names 235 236 222 228 1963 1964 1965
+001--- 1
+0001-- 1
+000010 1
+00000- 1
+.names 1965 235 236 1966
+010 1
+00- 1
+.names 3 222 1612 1967
+111 1
+.names 1967 1612 1966 1968
+01- 1
+000 1
+.names 3 223 1612 1969
+111 1
+.names 1969 222 1612 1970
+011 1
+00- 1
+.names 3 224 1612 1971
+111 1
+.names 1971 223 1612 1972
+011 1
+00- 1
+.names 3 225 1612 1973
+111 1
+.names 1973 224 1612 1974
+011 1
+00- 1
+.names 3 226 1612 1975
+111 1
+.names 1975 225 1612 1976
+011 1
+00- 1
+.names 3 227 1612 1977
+111 1
+.names 1977 226 1612 1978
+011 1
+00- 1
+.names 3 228 1612 1979
+111 1
+.names 1979 227 1612 1980
+011 1
+00- 1
+.names 3 229 1612 1981
+111 1
+.names 1981 228 1612 1982
+011 1
+00- 1
+.names 3 230 1612 1983
+111 1
+.names 1983 229 1612 1984
+011 1
+00- 1
+.names 3 231 1612 1985
+111 1
+.names 1985 230 1612 1986
+011 1
+00- 1
+.names 3 232 1612 1987
+111 1
+.names 1987 231 1612 1988
+011 1
+00- 1
+.names 3 233 1612 1989
+111 1
+.names 1989 232 1612 1990
+011 1
+00- 1
+.names 3 234 1612 1991
+111 1
+.names 1991 233 1612 1992
+011 1
+00- 1
+.names 3 235 1612 1993
+111 1
+.names 1993 234 1612 1994
+011 1
+00- 1
+.names 3 236 1612 1995
+111 1
+.names 1995 235 1612 1996
+011 1
+00- 1
+.names 237 1612 238 239 240 1997
+11--- 1
+10111 1
+.names 3 128 1997 237 1612 1998
+101-- 1
+10000 1
+.names 237 238 1612 239 240 1999
+11010 1
+1100- 1
+.names 3 128 1999 238 237 1612 2000
+1001-- 1
+100010 1
+.names 237 238 1612 239 240 2001
+11011 1
+1100- 1
+.names 3 128 2001 239 237 238 1612 2002
+101---- 1
+1001111 1
+100110- 1
+10010-- 1
+.names 3 128 240 237 238 239 1612 2003
+101---- 1
+1001110 1
+.names 1612 3 251 2004
+110 1
+10- 1
+.names 2004 1612 1637 2005
+01- 1
+000 1
+.names 3 252 1612 2006
+111 1
+.names 2006 251 1612 2007
+011 1
+00- 1
+.names 3 253 1612 2008
+111 1
+.names 2008 252 1612 2009
+011 1
+00- 1
+.names 3 254 1612 2010
+111 1
+.names 2010 253 1612 2011
+011 1
+00- 1
+.names 3 255 1612 2012
+111 1
+.names 2012 254 1612 2013
+011 1
+00- 1
+.names 3 256 1612 2014
+111 1
+.names 2014 255 1612 2015
+011 1
+00- 1
+.names 3 257 1612 2016
+111 1
+.names 2016 256 1612 2017
+011 1
+00- 1
+.names 3 258 1612 2018
+111 1
+.names 2018 257 1612 2019
+011 1
+00- 1
+.names 3 259 1612 2020
+111 1
+.names 2020 258 1612 2021
+011 1
+00- 1
+.names 3 260 1612 2022
+111 1
+.names 2022 259 1612 2023
+011 1
+00- 1
+.names 3 261 1612 2024
+111 1
+.names 2024 260 1612 2025
+011 1
+00- 1
+.names 3 262 1612 2026
+111 1
+.names 2026 261 1612 2027
+011 1
+00- 1
+.names 3 263 1612 2028
+111 1
+.names 2028 262 1612 2029
+011 1
+00- 1
+.names 3 264 1612 2030
+111 1
+.names 2030 263 1612 2031
+011 1
+00- 1
+.names 3 265 1612 2032
+111 1
+.names 2032 264 1612 2033
+011 1
+00- 1
+.names 1612 1613 2034
+00 1
+.names 266 2034 2035
+10 1
+.names 3 130 2035 266 1612 2036
+101-- 1
+10000 1
+.names 267 266 2034 2037
+110 1
+10- 1
+.names 3 130 2037 266 267 1612 2038
+101--- 1
+100100 1
+.names 268 266 267 2034 2039
+1110 1
+110- 1
+10-- 1
+.names 3 130 2039 266 267 268 1612 2040
+101---- 1
+1001100 1
+.names 3 130 269 266 267 268 1612 2041
+101---- 1
+1001110 1
+.names 1378 28 29 30 33 1330 1336 2042
+11----- 1
+101---- 1
+1001--- 1
+10001-- 1
+1000010 1
+100000- 1
+.names 244 245 2043
+10 1
+.names 244 245 2044
+01 1
+.names 2043 2044 2045
+00 1
+.names 1611 2045 1585 1596 1599 1605 1608 1609 2046
+1011---- 1
+10101--- 1
+101001-- 1
+10100010 1
+1010000- 1
+100----- 1
+.names 225 237 238 239 240 2047
+111-- 1
+11011 1
+1100- 1
+10--- 1
+.names 225 237 238 239 240 2048
+01010 1
+.names 2047 2048 2049
+00 1
+.names 224 237 238 239 240 2050
+11--- 1
+101-- 1
+10011 1
+1000- 1
+.names 224 237 238 239 240 2051
+00010 1
+.names 2050 2051 2052
+00 1
+.names 2049 2052 2053
+01 1
+.names 2049 2052 2054
+10 1
+.names 2053 2054 2055
+00 1
+.names 2055 1611 1585 1596 1599 1605 1608 1609 2056
+01100011 1
+00------ 1
+.names 1612 2049 2057
+00 1
+.names 1612 2052 2058
+00 1
+.names 242 243 2059
+10 1
+.names 242 243 2060
+01 1
+.names 2059 2060 2061
+00 1
+.names 1611 2061 1585 1596 1599 1605 1608 1609 2062
+1011---- 1
+10101--- 1
+101001-- 1
+10100010 1
+1010000- 1
+100----- 1
+.names 223 237 238 239 240 2063
+1111- 1
+11101 1
+110-- 1
+10--- 1
+.names 223 237 238 239 240 2064
+01100 1
+.names 2063 2064 2065
+00 1
+.names 222 237 238 239 240 2066
+11--- 1
+1011- 1
+10101 1
+100-- 1
+.names 222 237 238 239 240 2067
+00100 1
+.names 2066 2067 2068
+00 1
+.names 2065 2068 2069
+01 1
+.names 2065 2068 2070
+10 1
+.names 2069 2070 2071
+00 1
+.names 2071 1611 1585 1596 1599 1605 1608 1609 2072
+01100011 1
+00------ 1
+.names 1612 2065 2073
+00 1
+.names 1612 2068 2074
+00 1
+.names 2062 2072 2046 2056 2075
+001- 1
+0001 1
+.names 2046 2056 2062 2072 2076
+001- 1
+0001 1
+.names 250 1611 1585 1596 1599 1605 1608 1609 2077
+1111---- 1
+11101--- 1
+111001-- 1
+11100010 1
+1110000- 1
+110----- 1
+.names 230 237 238 239 240 2078
+11--- 1
+1011- 1
+10100 1
+100-- 1
+.names 230 237 238 239 240 2079
+00101 1
+.names 2078 2079 2080
+00 1
+.names 2080 1611 1585 1596 1599 1605 1608 1609 2081
+01100011 1
+00------ 1
+.names 250 1611 1585 1596 1599 1605 1608 1609 2082
+0111---- 1
+01101--- 1
+011001-- 1
+01100010 1
+0110000- 1
+010----- 1
+.names 2080 1611 1585 1596 1599 1605 1608 1609 2083
+11100011 1
+10------ 1
+.names 227 237 238 239 240 2084
+11111 1
+1110- 1
+110-- 1
+10--- 1
+.names 227 237 238 239 240 2085
+01110 1
+.names 2084 2085 2086
+00 1
+.names 226 237 238 239 240 2087
+10110 1
+.names 226 237 238 239 240 2088
+00110 1
+.names 2088 226 2087 2089
+011 1
+00- 1
+.names 2084 2085 2088 226 2087 2090
+001-- 1
+00010 1
+.names 2090 2086 2089 2091
+01- 1
+000 1
+.names 229 237 238 239 240 2092
+111-- 1
+1101- 1
+11000 1
+10--- 1
+.names 229 237 238 239 240 2093
+01001 1
+.names 2092 2093 2094
+00 1
+.names 228 237 238 239 240 2095
+11--- 1
+101-- 1
+1001- 1
+10000 1
+.names 228 237 238 239 240 2096
+00001 1
+.names 2095 2096 2097
+00 1
+.names 2094 2097 2098
+01 1
+.names 2094 2097 2099
+10 1
+.names 2091 2098 2099 2100
+000 1
+.names 2100 2091 2098 2099 2101
+0100 1
+00-- 1
+.names 2101 1611 1585 1596 1599 1605 1608 1609 2102
+01100011 1
+00------ 1
+.names 246 247 2103
+10 1
+.names 246 247 2104
+01 1
+.names 2103 2104 2105
+00 1
+.names 248 249 2106
+10 1
+.names 248 249 2107
+01 1
+.names 2106 2107 2108
+00 1
+.names 2105 2108 2109
+10 1
+.names 2109 2105 2108 2110
+01- 1
+000 1
+.names 1611 2110 1585 1596 1599 1605 1608 1609 2111
+1011---- 1
+10101--- 1
+101001-- 1
+10100010 1
+1010000- 1
+100----- 1
+.names 1612 2086 2112
+00 1
+.names 1612 2089 2113
+00 1
+.names 1612 2094 2114
+00 1
+.names 1612 2097 2115
+00 1
+.names 2082 2083 2102 2111 2116
+001- 1
+0001 1
+.names 2077 2081 2102 2111 2117
+0000 1
+.names 2116 2117 2075 2076 2118
+001- 1
+0001 1
+.names 2075 2076 2116 2117 2119
+001- 1
+0001 1
+.names 237 238 239 240 1966 2120
+10000 1
+.names 1966 237 238 239 240 2121
+111-- 1
+1101- 1
+11001 1
+10--- 1
+.names 2120 2121 2122
+00 1
+.names 2122 1611 1593 1596 1599 1602 1607 2123
+0110001 1
+00----- 1
+.names 2123 241 1612 2124
+010 1
+00- 1
+.names 2042 2124 2125
+11 1
+.names 270 1680 2126
+00 1
+.names 2126 1680 2125 2042 2118 2119 2127
+011--- 1
+010000 1
+00---- 1
+.names 1680 2074 242 1612 2128
+11-- 1
+1011 1
+.names 2128 271 1680 2129
+011 1
+00- 1
+.names 1680 2073 243 1612 2130
+11-- 1
+1011 1
+.names 2130 272 1680 2131
+011 1
+00- 1
+.names 1680 2058 244 1612 2132
+11-- 1
+1011 1
+.names 2132 273 1680 2133
+011 1
+00- 1
+.names 1680 2057 245 1612 2134
+11-- 1
+1011 1
+.names 2134 274 1680 2135
+011 1
+00- 1
+.names 1680 2113 246 1612 2136
+11-- 1
+1011 1
+.names 2136 275 1680 2137
+011 1
+00- 1
+.names 1680 2112 247 1612 2138
+11-- 1
+1011 1
+.names 2138 276 1680 2139
+011 1
+00- 1
+.names 1680 2115 248 1612 2140
+11-- 1
+1011 1
+.names 2140 277 1680 2141
+011 1
+00- 1
+.names 1680 2114 249 1612 2142
+11-- 1
+1011 1
+.names 2142 278 1680 2143
+011 1
+00- 1
+.names 1680 2077 2081 2144
+11- 1
+101 1
+.names 2144 279 1680 2145
+011 1
+00- 1
+.names 280 1680 2146
+10 1
+.names 2124 2118 2119 2147
+01- 1
+001 1
+.names 2118 2119 2124 2148
+001 1
+.names 2146 1680 2147 2148 2149
+011- 1
+0101 1
+00-- 1
+.names 281 1680 2150
+00 1
+.names 282 1680 2151
+10 1
+.names 283 1680 2152
+00 1
+.names 284 1680 2153
+10 1
+.names 285 1680 2154
+00 1
+.names 286 1680 2155
+10 1
+.names 287 1680 2156
+00 1
+.names 288 1680 2157
+10 1
+.names 289 1680 2158
+00 1
+.names 290 1680 2159
+10 1
+.names 291 1680 2160
+10 1
+.names 297 373 2161
+10 1
+.names 298 2161 2162
+01 1
+.names 298 299 2163
+01 1
+.names 298 299 2164
+10 1
+.names 2161 2163 2164 2165
+11- 1
+101 1
+.names 298 299 2166
+00 1
+.names 301 2166 2167
+10 1
+.names 2167 300 2166 2168
+010 1
+00- 1
+.names 302 2166 2169
+10 1
+.names 2169 301 2166 2170
+010 1
+00- 1
+.names 303 2164 2171
+11 1
+.names 303 2164 2172
+00 1
+.names 301 2171 2172 2173
+01- 1
+001 1
+.names 304 2171 2174
+10 1
+.names 304 2171 2175
+01 1
+.names 303 304 2176
+11 1
+.names 301 2174 2175 2177
+01- 1
+001 1
+.names 305 2164 2176 2178
+110 1
+10- 1
+.names 305 2164 2176 2179
+011 1
+.names 301 2178 2179 2180
+01- 1
+001 1
+.names 306 305 2164 2176 2181
+1110 1
+110- 1
+10-- 1
+.names 305 306 2164 2176 2182
+1011 1
+.names 301 2181 2182 2183
+01- 1
+001 1
+.names 307 305 306 2164 2176 2184
+11110 1
+1110- 1
+110-- 1
+10--- 1
+.names 305 306 307 2164 2176 2185
+11011 1
+.names 301 2184 2185 2186
+01- 1
+001 1
+.names 308 305 306 307 2164 2176 2187
+111110 1
+11110- 1
+1110-- 1
+110--- 1
+10---- 1
+.names 305 306 307 308 2164 2176 2188
+111011 1
+.names 301 2187 2188 2189
+01- 1
+001 1
+.names 305 306 307 308 2164 2176 2190
+111111 1
+.names 309 2190 2191
+01 1
+.names 301 2191 309 2190 2192
+01-- 1
+0010 1
+.names 309 2190 2193
+11 1
+.names 310 2193 2194
+01 1
+.names 301 2194 310 2193 2195
+01-- 1
+0010 1
+.names 309 310 2196
+11 1
+.names 311 2190 2196 2197
+110 1
+10- 1
+.names 311 2190 2196 2198
+011 1
+.names 301 2197 2198 2199
+01- 1
+001 1
+.names 312 2166 2200
+10 1
+.names 2200 12 2166 2201
+010 1
+00- 1
+.names 322 325 2202
+10 1
+.names 326 2202 2203
+01 1
+.names 327 2203 2204
+01 1
+.names 313 314 315 2205
+101 1
+.names 315 316 317 2206
+010 1
+.names 315 316 317 2207
+001 1
+.names 2206 2207 315 316 2208
+1--- 1
+01-- 1
+0010 1
+.names 328 329 2209
+00 1
+.names 330 331 332 333 334 335 2208 2209 2210
+00000001 1
+.names 328 329 330 331 332 333 2208 2211
+1111111 1
+.names 334 335 336 2211 2212
+1111 1
+.names 2204 2205 324 316 317 2213
+10100 1
+100-- 1
+0---- 1
+.names 2213 2212 336 2210 2214
+01-- 1
+0001 1
+.names 313 2204 314 315 2214 2215
+11011 1
+1100- 1
+10--- 1
+.names 1 2215 313 314 2204 2216
+11--- 1
+10011 1
+.names 313 314 345 2204 2217
+0111 1
+.names 314 2217 2218
+10 1
+.names 1 2218 313 314 315 316 317 2204 2219
+11------ 1
+10001001 1
+.names 1 2214 2205 316 317 2220
+1101- 1
+11000 1
+10--- 1
+.names 2220 315 316 2214 2221
+11-- 1
+1011 1
+.names 316 2214 2222
+10 1
+.names 1 2222 317 2214 2223
+11-- 1
+1011 1
+.names 313 316 2214 2224
+000 1
+.names 317 2214 315 316 2225
+1110 1
+10-- 1
+.names 313 315 316 317 2226
+0000 1
+.names 1 2225 315 2224 316 2214 2227
+11---- 1
+1001-- 1
+100011 1
+.names 2226 313 315 2228
+1-- 1
+010 1
+.names 322 2228 2229
+00 1
+.names 318 2228 2230
+10 1
+.names 319 2228 2231
+10 1
+.names 320 2228 2232
+10 1
+.names 321 2228 2233
+10 1
+.names 3 1521 2234
+11 1
+.names 313 314 315 2235
+11- 1
+101 1
+.names 324 2235 315 317 2236
+0010 1
+000- 1
+.names 2236 324 315 316 2237
+0101 1
+00-- 1
+.names 2234 2237 2238
+00 1
+.names 2234 2237 2239
+11 1
+.names 315 313 314 317 2240
+11-- 1
+1011 1
+100- 1
+.names 320 2240 313 316 2241
+11-- 1
+1001 1
+.names 323 2207 2242
+01 1
+.names 2226 2242 323 2241 2238 2239 2243
+01---- 1
+001100 1
+0010-- 1
+.names 311 375 2244
+00 1
+.names 2243 2226 2244 375 1424 2245
+01010 1
+0100- 1
+00--- 1
+.names 375 1558 1378 1392 2246
+101- 1
+1001 1
+.names 375 2176 305 306 2247
+0010 1
+000- 1
+.names 2247 375 1552 1424 1449 2248
+011-- 1
+01000 1
+00--- 1
+.names 2226 2246 2248 375 2196 307 308 2249
+1011--- 1
+10101-- 1
+1010011 1
+.names 324 2204 316 317 2250
+011- 1
+0101 1
+.names 2249 2226 2250 324 2204 2251
+01--- 1
+001-- 1
+00010 1
+.names 322 325 2252
+01 1
+.names 2204 2226 2202 2252 2253
+001- 1
+0001 1
+.names 326 2202 2254
+10 1
+.names 2204 2226 2203 2254 2255
+001- 1
+0001 1
+.names 327 2203 2256
+10 1
+.names 2204 2226 2256 2257
+000 1
+.names 2214 2226 2258
+00 1
+.names 2204 314 313 315 316 317 2259
+11---- 1
+100100 1
+.names 2213 2259 2260
+10 1
+.names 328 2260 337 2259 2261
+11-- 1
+1001 1
+.names 328 2260 337 2259 2262
+001- 1
+0000 1
+.names 2205 2207 2214 2226 316 317 2263
+001011 1
+00100- 1
+.names 2263 2258 2261 2262 2264
+0100 1
+00-- 1
+.names 328 2208 2265
+11 1
+.names 328 2208 2266
+00 1
+.names 2213 2259 2265 2266 2267
+001- 1
+0001 1
+.names 2267 338 2259 2268
+010 1
+00- 1
+.names 329 2268 2269
+11 1
+.names 329 2268 2270
+00 1
+.names 2263 2258 2269 2270 2271
+0100 1
+00-- 1
+.names 328 329 2208 2272
+111 1
+.names 2259 2272 2208 2209 2273
+001- 1
+0000 1
+.names 2273 339 2259 2274
+01- 1
+000 1
+.names 330 2260 2274 2275
+11- 1
+100 1
+.names 330 2260 2274 2276
+001 1
+.names 2263 2258 2275 2276 2277
+0100 1
+00-- 1
+.names 328 329 330 2208 2278
+1111 1
+.names 2259 2278 330 2208 2209 2279
+01--- 1
+00001 1
+.names 2260 2279 340 2259 2280
+01-- 1
+0011 1
+.names 331 2280 2281
+10 1
+.names 331 2280 2282
+01 1
+.names 2263 2258 2281 2282 2283
+0100 1
+00-- 1
+.names 328 329 330 331 2208 2284
+11111 1
+.names 2259 2284 330 331 2208 2209 2285
+01---- 1
+000001 1
+.names 2260 2285 341 2259 2286
+01-- 1
+0011 1
+.names 332 2286 2287
+10 1
+.names 332 2286 2288
+01 1
+.names 2263 2258 2287 2288 2289
+0100 1
+00-- 1
+.names 328 329 330 331 332 2208 2290
+111111 1
+.names 2259 2290 330 331 332 2208 2209 2291
+01----- 1
+0000001 1
+.names 2260 2291 342 2259 2292
+01-- 1
+0011 1
+.names 333 2292 2293
+10 1
+.names 333 2292 2294
+01 1
+.names 2263 2258 2293 2294 2295
+0100 1
+00-- 1
+.names 2259 2211 330 331 332 333 2208 2209 2296
+01------ 1
+00000001 1
+.names 2296 343 2259 2297
+010 1
+00- 1
+.names 334 2260 2297 2298
+11- 1
+101 1
+.names 334 2260 2297 2299
+000 1
+.names 2263 2258 2298 2299 2300
+0100 1
+00-- 1
+.names 330 331 332 333 334 2208 2209 2301
+0000001 1
+.names 2259 2301 334 2211 2302
+01-- 1
+0011 1
+.names 2260 2302 344 2259 2303
+01-- 1
+0011 1
+.names 335 2303 2304
+10 1
+.names 335 2303 2305
+01 1
+.names 2263 2258 2304 2305 2306
+0100 1
+00-- 1
+.names 2259 2210 334 335 2211 2307
+01--- 1
+00111 1
+.names 2307 345 2259 2308
+010 1
+00- 1
+.names 336 2260 2308 2309
+11- 1
+101 1
+.names 336 2260 2308 2310
+000 1
+.names 2263 2258 2309 2310 2311
+0100 1
+00-- 1
+.names 2217 2226 337 313 314 2204 2312
+001011 1
+000--- 1
+.names 338 2226 313 314 2204 2313
+101-- 1
+10010 1
+1000- 1
+.names 2313 313 314 337 2204 2314
+01--- 1
+00110 1
+0010- 1
+000-- 1
+.names 339 2226 313 314 2204 2315
+101-- 1
+10010 1
+1000- 1
+.names 2315 313 314 338 2204 2316
+01--- 1
+00110 1
+0010- 1
+000-- 1
+.names 340 2226 313 314 2204 2317
+101-- 1
+10010 1
+1000- 1
+.names 2317 313 314 339 2204 2318
+01--- 1
+00110 1
+0010- 1
+000-- 1
+.names 341 2226 313 314 2204 2319
+101-- 1
+10010 1
+1000- 1
+.names 2319 313 314 340 2204 2320
+01--- 1
+00110 1
+0010- 1
+000-- 1
+.names 342 2226 313 314 2204 2321
+101-- 1
+10010 1
+1000- 1
+.names 2321 313 314 341 2204 2322
+01--- 1
+00110 1
+0010- 1
+000-- 1
+.names 343 2226 313 314 2204 2323
+101-- 1
+10010 1
+1000- 1
+.names 2323 313 314 342 2204 2324
+01--- 1
+00110 1
+0010- 1
+000-- 1
+.names 344 2226 313 314 2204 2325
+101-- 1
+10010 1
+1000- 1
+.names 2325 313 314 343 2204 2326
+01--- 1
+00110 1
+0010- 1
+000-- 1
+.names 345 2226 313 314 2204 2327
+101-- 1
+10010 1
+1000- 1
+.names 2327 313 314 344 2204 2328
+01--- 1
+00110 1
+0010- 1
+000-- 1
+.names 350 2164 2329
+10 1
+.names 351 2164 2330
+10 1
+.names 352 2164 2331
+10 1
+.names 353 2164 2332
+10 1
+.names 354 2164 2333
+10 1
+.names 349 354 2334
+00 1
+.names 2234 28 29 30 33 1330 1336 2335
+11----- 1
+101---- 1
+1001--- 1
+10001-- 1
+1000010 1
+100000- 1
+.names 2164 1539 1545 1546 1547 2335 2336
+11---- 1
+1011-- 1
+10101- 1
+101000 1
+100--- 1
+.names 2336 356 2164 2337
+011 1
+00- 1
+.names 357 298 299 2338
+110 1
+10- 1
+.names 2338 298 299 1547 2339
+0110 1
+010- 1
+00-- 1
+.names 358 298 299 2340
+110 1
+10- 1
+.names 2340 298 299 1546 2341
+0110 1
+010- 1
+00-- 1
+.names 359 298 299 2342
+110 1
+10- 1
+.names 2342 298 299 1539 2343
+0110 1
+010- 1
+00-- 1
+.names 360 298 299 2344
+110 1
+10- 1
+.names 2344 298 299 1545 2345
+0110 1
+010- 1
+00-- 1
+.names 361 298 299 2346
+110 1
+10- 1
+.names 2346 298 299 2234 2347
+0111 1
+010- 1
+00-- 1
+.names 362 354 355 2348
+110 1
+10- 1
+.names 2348 303 354 355 2349
+0110 1
+010- 1
+00-- 1
+.names 363 354 355 2350
+110 1
+10- 1
+.names 2350 304 354 355 2351
+0110 1
+010- 1
+00-- 1
+.names 364 354 355 2352
+110 1
+10- 1
+.names 2352 305 354 355 2353
+0110 1
+010- 1
+00-- 1
+.names 365 354 355 2354
+110 1
+10- 1
+.names 2354 306 354 355 2355
+0110 1
+010- 1
+00-- 1
+.names 366 354 355 2356
+110 1
+10- 1
+.names 2356 307 354 355 2357
+0110 1
+010- 1
+00-- 1
+.names 367 354 355 2358
+110 1
+10- 1
+.names 2358 308 354 355 2359
+0110 1
+010- 1
+00-- 1
+.names 368 354 355 2360
+110 1
+10- 1
+.names 2360 309 354 355 2361
+0110 1
+010- 1
+00-- 1
+.names 369 354 355 2362
+110 1
+10- 1
+.names 2362 310 354 355 2363
+0110 1
+010- 1
+00-- 1
+.names 370 354 355 2364
+110 1
+10- 1
+.names 2364 311 354 355 2365
+0110 1
+010- 1
+00-- 1
+.names 306 311 374 375 2196 2366
+01111 1
+.names 305 307 308 2176 2366 2367
+11111 1
+.names 297 374 2368
+10 1
+.names 374 375 2369
+01 1
+.names 374 375 2370
+10 1
+.names 297 2369 2370 2371
+11- 1
+101 1
+.names 388 2166 2372
+00 1
+.names 410 463 2373
+01 1
+.names 410 463 2374
+10 1
+.names 411 464 2375
+11 1
+.names 411 464 2376
+00 1
+.names 407 460 2377
+01 1
+.names 407 460 2378
+10 1
+.names 2373 2374 2377 2378 2375 2376 2379
+00001- 1
+000001 1
+.names 406 459 2380
+01 1
+.names 406 459 2381
+10 1
+.names 405 458 2382
+10 1
+.names 2379 2380 2381 2382 412 465 2383
+10001- 1
+100000 1
+.names 409 462 2384
+10 1
+.names 409 462 2385
+01 1
+.names 404 457 2386
+10 1
+.names 2384 2385 2386 412 465 2387
+00011 1
+0000- 1
+.names 405 458 2388
+01 1
+.names 404 457 2389
+01 1
+.names 2388 408 461 2390
+011 1
+00- 1
+.names 2383 2387 2389 2390 408 461 2391
+11011- 1
+110100 1
+.names 456 466 2042 2392
+111 1
+10- 1
+.names 456 466 2042 2393
+010 1
+.names 2392 2393 2394
+00 1
+.names 405 406 407 408 2395
+0000 1
+.names 409 411 412 413 414 415 416 418 2396
+00000000 1
+.names 417 418 404 410 2395 2396 2397
+001--- 1
+0001-- 1
+000010 1
+00000- 1
+.names 2397 417 418 2398
+010 1
+00- 1
+.names 2394 2398 2399
+01 1
+.names 2394 2398 2400
+10 1
+.names 301 403 2166 2401
+011 1
+.names 419 420 421 422 2402
+1111 1
+.names 2398 2402 2403
+11 1
+.names 2401 2402 2391 2399 2400 2404
+11100 1
+110-- 1
+.names 3 389 394 395 2405
+11-- 1
+1010 1
+.names 3 399 2405 2406
+111 1
+10- 1
+.names 390 2401 2402 2391 2399 2400 2407
+11111- 1
+111101 1
+110--- 1
+10---- 1
+.names 390 2401 2402 2391 2399 2400 2408
+011100 1
+0110-- 1
+.names 2406 2407 2408 2409
+11- 1
+101 1
+.names 390 391 2410
+10 1
+.names 390 391 2411
+01 1
+.names 2410 2411 2412
+00 1
+.names 2401 2402 2412 2391 2399 2400 2413
+110100 1
+1100-- 1
+.names 2406 2413 391 2404 2414
+11-- 1
+1010 1
+.names 390 391 392 2415
+110 1
+.names 392 390 391 2416
+110 1
+10- 1
+.names 2415 2416 2417
+00 1
+.names 2401 2402 2417 2391 2399 2400 2418
+110100 1
+1100-- 1
+.names 2406 2418 392 2404 2419
+11-- 1
+1010 1
+.names 390 391 392 393 2420
+1111 1
+.names 390 391 392 393 2421
+1110 1
+.names 2421 393 2420 2422
+011 1
+00- 1
+.names 2401 2402 2422 2391 2399 2400 2423
+110100 1
+1100-- 1
+.names 2406 2423 393 2404 2424
+11-- 1
+1010 1
+.names 28 29 30 33 1326 1327 2425
+000011 1
+.names 28 29 30 33 1326 1330 2426
+000011 1
+.names 304 1546 2427
+01 1
+.names 2427 305 1539 2428
+011 1
+00- 1
+.names 308 1577 2429
+11 1
+.names 308 1577 2430
+00 1
+.names 303 1547 2431
+01 1
+.names 303 1547 2432
+10 1
+.names 306 1545 2433
+11 1
+.names 306 1545 2434
+00 1
+.names 2431 2432 2433 2434 2435
+001- 1
+0001 1
+.names 2435 2429 2430 2436
+11- 1
+101 1
+.names 310 1578 2437
+01 1
+.names 310 1578 2438
+10 1
+.names 309 1575 2439
+11 1
+.names 309 1575 2440
+00 1
+.names 304 1546 2441
+10 1
+.names 2437 2438 2441 2439 2440 2442
+0001- 1
+00001 1
+.names 311 1547 2443
+11 1
+.names 311 1547 2444
+00 1
+.names 307 1544 2445
+11 1
+.names 307 1544 2446
+00 1
+.names 2445 2446 2447
+00 1
+.names 2442 2447 2443 2444 2448
+101- 1
+1001 1
+.names 400 2166 2449
+10 1
+.names 2449 2166 2428 2436 2448 305 1539 2450
+0111101 1
+01110-- 1
+0110--- 1
+010---- 1
+00----- 1
+.names 401 2166 2451
+10 1
+.names 2451 400 2166 2452
+010 1
+00- 1
+.names 402 2166 2453
+10 1
+.names 399 403 2454
+00 1
+.names 2401 2403 2394 2402 2455
+11-- 1
+1000 1
+.names 2455 3 404 2401 2456
+0111 1
+010- 1
+00-- 1
+.names 3 405 2401 2457
+110 1
+.names 2457 404 2401 2458
+010 1
+00- 1
+.names 3 406 2401 2459
+110 1
+.names 2459 405 2401 2460
+010 1
+00- 1
+.names 3 407 2401 2461
+110 1
+.names 2461 406 2401 2462
+010 1
+00- 1
+.names 3 408 2401 2463
+110 1
+.names 2463 407 2401 2464
+010 1
+00- 1
+.names 3 409 2401 2465
+110 1
+.names 2465 408 2401 2466
+010 1
+00- 1
+.names 3 410 2401 2467
+110 1
+.names 2467 409 2401 2468
+010 1
+00- 1
+.names 3 411 2401 2469
+110 1
+.names 2469 410 2401 2470
+010 1
+00- 1
+.names 3 412 2401 2471
+110 1
+.names 2471 411 2401 2472
+010 1
+00- 1
+.names 3 413 2401 2473
+110 1
+.names 2473 412 2401 2474
+010 1
+00- 1
+.names 3 414 2401 2475
+110 1
+.names 2475 413 2401 2476
+010 1
+00- 1
+.names 3 415 2401 2477
+110 1
+.names 2477 414 2401 2478
+010 1
+00- 1
+.names 3 416 2401 2479
+110 1
+.names 2479 415 2401 2480
+010 1
+00- 1
+.names 3 417 2401 2481
+110 1
+.names 2481 416 2401 2482
+010 1
+00- 1
+.names 3 418 2401 2483
+110 1
+.names 2483 417 2401 2484
+010 1
+00- 1
+.names 419 2401 2402 2485
+111 1
+10- 1
+.names 3 399 2485 419 2401 2486
+101-- 1
+10001 1
+.names 420 419 2401 2402 2487
+1111 1
+110- 1
+10-- 1
+.names 3 399 2487 419 420 2401 2488
+101--- 1
+100101 1
+.names 421 419 420 2401 2402 2489
+11111 1
+1110- 1
+110-- 1
+10--- 1
+.names 3 399 2489 419 420 421 2401 2490
+101---- 1
+1001101 1
+.names 3 399 422 419 420 421 2401 2491
+101---- 1
+1001111 1
+.names 424 2166 2401 2402 2391 2399 2400 2492
+1111100 1
+11110-- 1
+.names 305 424 2166 2401 2402 2391 2399 2400 2493
+11111100 1
+111110-- 1
+.names 2493 425 2492 2494
+011 1
+00- 1
+.names 306 424 2166 2401 2402 2391 2399 2400 2495
+11111100 1
+111110-- 1
+.names 2495 426 2492 2496
+011 1
+00- 1
+.names 307 424 2166 2401 2402 2391 2399 2400 2497
+11111100 1
+111110-- 1
+.names 2497 427 2492 2498
+011 1
+00- 1
+.names 308 424 2166 2401 2402 2391 2399 2400 2499
+11111100 1
+111110-- 1
+.names 2499 428 2492 2500
+011 1
+00- 1
+.names 309 424 2166 2401 2402 2391 2399 2400 2501
+11111100 1
+111110-- 1
+.names 2501 429 2492 2502
+011 1
+00- 1
+.names 310 424 2166 2401 2402 2391 2399 2400 2503
+11111100 1
+111110-- 1
+.names 2503 430 2492 2504
+011 1
+00- 1
+.names 311 424 2166 2401 2402 2391 2399 2400 2505
+11111100 1
+111110-- 1
+.names 2505 431 2492 2506
+011 1
+00- 1
+.names 303 424 2166 2401 2402 2391 2399 2400 2507
+11111100 1
+111110-- 1
+.names 2507 432 2492 2508
+011 1
+00- 1
+.names 304 424 2166 2401 2402 2391 2399 2400 2509
+11111100 1
+111110-- 1
+.names 2509 433 2492 2510
+011 1
+00- 1
+.names 37 38 2511
+01 1
+.names 2511 37 434 2512
+010 1
+00- 1
+.names 37 39 2513
+01 1
+.names 2513 37 435 2514
+010 1
+00- 1
+.names 37 40 2515
+01 1
+.names 2515 37 436 2516
+010 1
+00- 1
+.names 37 41 2517
+01 1
+.names 2517 37 437 2518
+010 1
+00- 1
+.names 37 42 2519
+01 1
+.names 2519 37 438 2520
+010 1
+00- 1
+.names 37 43 2521
+01 1
+.names 2521 37 439 2522
+010 1
+00- 1
+.names 37 44 2523
+01 1
+.names 2523 37 440 2524
+010 1
+00- 1
+.names 37 45 2525
+01 1
+.names 2525 37 441 2526
+010 1
+00- 1
+.names 37 46 2527
+01 1
+.names 2527 37 442 2528
+010 1
+00- 1
+.names 37 47 2529
+01 1
+.names 2529 37 443 2530
+010 1
+00- 1
+.names 37 48 2531
+01 1
+.names 2531 37 444 2532
+010 1
+00- 1
+.names 445 2163 2533
+10 1
+.names 2533 270 2163 2534
+010 1
+00- 1
+.names 446 2163 2535
+10 1
+.names 2535 271 2163 2536
+010 1
+00- 1
+.names 447 2163 2537
+10 1
+.names 2537 272 2163 2538
+010 1
+00- 1
+.names 448 2163 2539
+10 1
+.names 2539 273 2163 2540
+010 1
+00- 1
+.names 449 2163 2541
+10 1
+.names 2541 274 2163 2542
+010 1
+00- 1
+.names 450 2163 2543
+10 1
+.names 2543 275 2163 2544
+010 1
+00- 1
+.names 451 2163 2545
+10 1
+.names 2545 276 2163 2546
+010 1
+00- 1
+.names 452 2163 2547
+10 1
+.names 2547 277 2163 2548
+010 1
+00- 1
+.names 453 2163 2549
+10 1
+.names 2549 278 2163 2550
+010 1
+00- 1
+.names 454 2163 2551
+10 1
+.names 2551 279 2163 2552
+010 1
+00- 1
+.names 455 2163 2553
+10 1
+.names 2553 280 2163 2554
+010 1
+00- 1
+.names 456 2166 2555
+10 1
+.names 2555 445 2166 2556
+010 1
+00- 1
+.names 457 2166 2557
+10 1
+.names 2557 446 2166 2558
+010 1
+00- 1
+.names 458 2166 2559
+10 1
+.names 2559 447 2166 2560
+010 1
+00- 1
+.names 459 2166 2561
+10 1
+.names 2561 448 2166 2562
+010 1
+00- 1
+.names 460 2166 2563
+10 1
+.names 2563 449 2166 2564
+010 1
+00- 1
+.names 461 2166 2565
+10 1
+.names 2565 450 2166 2566
+010 1
+00- 1
+.names 462 2166 2567
+10 1
+.names 2567 451 2166 2568
+010 1
+00- 1
+.names 463 2166 2569
+10 1
+.names 2569 452 2166 2570
+010 1
+00- 1
+.names 464 2166 2571
+10 1
+.names 2571 453 2166 2572
+010 1
+00- 1
+.names 465 2166 2573
+10 1
+.names 2573 454 2166 2574
+010 1
+00- 1
+.names 466 2166 2575
+10 1
+.names 2575 455 2166 2576
+010 1
+00- 1
+.names 460 461 2577
+10 1
+.names 460 461 2578
+01 1
+.names 2577 2578 2579
+00 1
+.names 464 465 2580
+10 1
+.names 464 465 2581
+01 1
+.names 2580 2581 2582
+00 1
+.names 462 463 2583
+10 1
+.names 462 463 2584
+01 1
+.names 2583 2584 2585
+00 1
+.names 2582 2585 2586
+10 1
+.names 2586 2582 2585 2587
+01- 1
+000 1
+.names 2579 2587 2588
+01 1
+.names 2588 2579 2587 2589
+011 1
+00- 1
+.names 458 459 2590
+10 1
+.names 458 459 2591
+01 1
+.names 2590 2591 2592
+00 1
+.names 456 457 2593
+10 1
+.names 456 457 2594
+01 1
+.names 2593 2594 2595
+00 1
+.names 2592 2595 2596
+10 1
+.names 2596 2592 2595 2597
+01- 1
+000 1
+.names 2589 2597 2598
+00 1
+.names 467 2166 2599
+10 1
+.names 2599 2166 2042 2598 2589 2597 2600
+0101-- 1
+010011 1
+00---- 1
+.names 3 468 2601
+11 1
+.names 3 469 2602
+11 1
+.names 3 470 2603
+11 1
+.names 3 471 2604
+11 1
+.names 3 472 2605
+11 1
+.names 3 473 2606
+11 1
+.names 3 474 2607
+11 1
+.names 3 475 2608
+11 1
+.names 3 476 2609
+11 1
+.names 3 477 2610
+11 1
+.names 3 478 2611
+11 1
+.names 3 479 2612
+11 1
+.names 3 480 2613
+11 1
+.names 3 481 2614
+11 1
+.names 3 482 2615
+11 1
+.names 3 397 483 2616
+101 1
+.names 3 397 484 2617
+101 1
+.names 3 397 485 2618
+101 1
+.names 3 397 486 2619
+101 1
+.names 1 528 2620
+10 1
+.names 1537 28 29 30 33 1330 1336 2621
+11----- 1
+101---- 1
+1001--- 1
+10001-- 1
+1000010 1
+100000- 1
+.names 350 351 352 353 356 2622
+00001 1
+.names 2622 2621 350 351 352 353 2623
+010000 1
+00---- 1
+.names 469 470 471 472 2624
+0000 1
+.names 473 475 476 477 478 479 480 482 2625
+00000000 1
+.names 481 482 468 474 2624 2625 2626
+001--- 1
+0001-- 1
+000010 1
+00000- 1
+.names 2626 481 482 2627
+010 1
+00- 1
+.names 354 483 484 485 486 2628
+111-- 1
+1101- 1
+11001 1
+10--- 1
+.names 354 483 484 485 486 2629
+01000 1
+.names 2628 2629 2630
+00 1
+.names 2627 2630 2631
+11 1
+.names 2631 2627 2630 2632
+01- 1
+001 1
+.names 2620 2632 1 2623 2633
+001- 1
+0001 1
+.names 2166 2633 2632 2620 1 2623 2634
+10101- 1
+101001 1
+100--- 1
+.names 2634 487 2166 2635
+011 1
+00- 1
+.names 484 486 2636
+10 1
+.names 469 483 485 2636 2637
+0101 1
+.names 1739 1 2637 469 483 485 2636 2638
+01----- 1
+0001101 1
+0000--- 1
+.names 488 2166 2639
+10 1
+.names 2639 2166 2638 2640
+011 1
+00- 1
+.names 470 483 484 485 486 2641
+11--- 1
+101-- 1
+10011 1
+1000- 1
+.names 470 483 484 485 486 2642
+00010 1
+.names 1741 1 2641 2642 2643
+01-- 1
+0000 1
+.names 489 2166 2644
+10 1
+.names 2644 2166 2643 2645
+011 1
+00- 1
+.names 471 483 484 485 486 2646
+111-- 1
+11011 1
+1100- 1
+10--- 1
+.names 471 483 484 485 486 2647
+01010 1
+.names 1743 1 2646 2647 2648
+01-- 1
+0000 1
+.names 490 2166 2649
+10 1
+.names 2649 2166 2648 2650
+011 1
+00- 1
+.names 472 483 485 2636 2651
+1011 1
+.names 472 483 485 2636 2652
+0011 1
+.names 1745 1 2652 472 2651 2653
+01--- 1
+00011 1
+0000- 1
+.names 491 2166 2654
+10 1
+.names 2654 2166 2653 2655
+011 1
+00- 1
+.names 473 483 485 2636 2656
+1111 1
+.names 473 483 485 2636 2657
+0111 1
+.names 1747 1 2657 473 2656 2658
+01--- 1
+00011 1
+0000- 1
+.names 492 2166 2659
+10 1
+.names 2659 2166 2658 2660
+011 1
+00- 1
+.names 474 483 484 485 486 2661
+11--- 1
+101-- 1
+1001- 1
+10000 1
+.names 474 483 484 485 486 2662
+00001 1
+.names 1749 1 2661 2662 2663
+01-- 1
+0000 1
+.names 493 2166 2664
+10 1
+.names 2664 2166 2663 2665
+011 1
+00- 1
+.names 475 483 484 485 486 2666
+111-- 1
+1101- 1
+11000 1
+10--- 1
+.names 475 483 484 485 486 2667
+01001 1
+.names 1751 1 2666 2667 2668
+01-- 1
+0000 1
+.names 494 2166 2669
+10 1
+.names 2669 2166 2668 2670
+011 1
+00- 1
+.names 468 483 485 2636 2671
+11-- 1
+101- 1
+1000 1
+.names 468 483 485 2636 2672
+0001 1
+.names 2166 2671 2672 2673
+11- 1
+101 1
+.names 2673 495 2166 2674
+011 1
+00- 1
+.names 476 483 484 485 486 2675
+11--- 1
+1011- 1
+10100 1
+100-- 1
+.names 476 483 484 485 486 2676
+00101 1
+.names 2166 2675 2676 2677
+11- 1
+101 1
+.names 2677 496 2166 2678
+011 1
+00- 1
+.names 508 510 2679
+10 1
+.names 508 510 2680
+01 1
+.names 2679 2680 2681
+00 1
+.names 497 507 2682
+10 1
+.names 497 507 2683
+01 1
+.names 2681 2682 2683 2684
+11- 1
+101 1
+.names 2684 2681 2682 2683 2685
+01-- 1
+001- 1
+0001 1
+.names 2685 2620 1 2623 2686
+01-- 1
+0000 1
+.names 3 2686 2620 2685 1 2623 2687
+11---- 1
+10011- 1
+100101 1
+.names 497 2668 2688
+11 1
+.names 497 2668 2689
+00 1
+.names 3 2688 2689 2690
+11- 1
+101 1
+.names 498 2663 2691
+11 1
+.names 498 2663 2692
+00 1
+.names 3 2691 2692 2693
+11- 1
+101 1
+.names 499 2658 2694
+11 1
+.names 499 2658 2695
+00 1
+.names 3 2694 2695 2696
+11- 1
+101 1
+.names 500 2653 2697
+11 1
+.names 500 2653 2698
+00 1
+.names 3 2697 2698 2699
+11- 1
+101 1
+.names 501 2648 2700
+11 1
+.names 501 2648 2701
+00 1
+.names 3 2700 2701 2702
+11- 1
+101 1
+.names 502 2643 2703
+11 1
+.names 502 2643 2704
+00 1
+.names 3 2703 2704 2705
+11- 1
+101 1
+.names 503 2638 2706
+11 1
+.names 503 2638 2707
+00 1
+.names 3 2706 2707 2708
+11- 1
+101 1
+.names 3 504 2709
+11 1
+.names 3 505 2710
+11 1
+.names 3 506 2711
+11 1
+.names 3 507 2712
+11 1
+.names 3 508 2713
+11 1
+.names 3 509 2714
+11 1
+.names 521 522 2715
+10 1
+.names 521 522 2716
+01 1
+.names 511 524 2717
+01 1
+.names 511 524 2718
+10 1
+.names 2715 2716 2717 2718 2719
+001- 1
+0001 1
+.names 2717 2718 2715 2716 2720
+001- 1
+0001 1
+.names 3 2719 2720 2721
+11- 1
+101 1
+.names 3 511 2722
+11 1
+.names 1757 1 496 2723
+01- 1
+000 1
+.names 512 2723 2724
+10 1
+.names 512 2723 2725
+01 1
+.names 3 2724 2725 2726
+100 1
+.names 1755 1 494 2727
+01- 1
+000 1
+.names 513 2727 2728
+10 1
+.names 513 2727 2729
+01 1
+.names 3 2728 2729 2730
+100 1
+.names 1753 1 493 2731
+01- 1
+000 1
+.names 514 2731 2732
+10 1
+.names 514 2731 2733
+01 1
+.names 3 2732 2733 2734
+100 1
+.names 1751 1 492 2735
+01- 1
+000 1
+.names 515 2735 2736
+10 1
+.names 515 2735 2737
+01 1
+.names 3 2736 2737 2738
+100 1
+.names 1749 1 491 2739
+01- 1
+000 1
+.names 516 2739 2740
+10 1
+.names 516 2739 2741
+01 1
+.names 3 2740 2741 2742
+100 1
+.names 1747 1 490 2743
+01- 1
+000 1
+.names 517 2743 2744
+10 1
+.names 517 2743 2745
+01 1
+.names 3 2744 2745 2746
+100 1
+.names 1745 1 489 2747
+01- 1
+000 1
+.names 518 2747 2748
+10 1
+.names 518 2747 2749
+01 1
+.names 3 2748 2749 2750
+100 1
+.names 1743 1 488 2751
+01- 1
+000 1
+.names 519 2751 2752
+10 1
+.names 519 2751 2753
+01 1
+.names 3 2752 2753 2754
+100 1
+.names 1741 1 495 2755
+01- 1
+000 1
+.names 520 2755 2756
+10 1
+.names 520 2755 2757
+01 1
+.names 3 2756 2757 2758
+100 1
+.names 1739 1 487 2759
+01- 1
+000 1
+.names 521 2759 2760
+10 1
+.names 521 2759 2761
+01 1
+.names 3 2760 2761 2762
+100 1
+.names 3 522 2763
+11 1
+.names 3 523 2764
+11 1
+.names 531 551 2765
+00 1
+.names 540 541 542 543 544 545 547 2766
+0000000 1
+.names 529 530 546 548 549 550 2765 2766 2767
+00000011 1
+.names 532 533 534 535 536 537 538 539 2768
+00000000 1
+.names 2767 2768 2769
+11 1
+.names 3 528 2770
+11 1
+.names 2769 2770 2771
+11 1
+.names 3 527 525 526 2772
+101- 1
+1001 1
+.names 526 2771 2773
+11 1
+.names 531 551 2774
+11 1
+.names 530 2765 2774 2775
+100 1
+.names 530 2765 2774 2776
+01- 1
+001 1
+.names 2775 2776 2777
+00 1
+.names 528 2769 2777 2778
+000 1
+.names 3 2778 528 2777 2779
+1010 1
+100- 1
+.names 3 529 2780
+11 1
+.names 3 530 2781
+11 1
+.names 3 531 2782
+11 1
+.names 3 532 2783
+11 1
+.names 3 533 2784
+11 1
+.names 3 534 2785
+11 1
+.names 3 535 2786
+11 1
+.names 3 536 2787
+11 1
+.names 3 537 2788
+11 1
+.names 3 538 2789
+11 1
+.names 3 539 2790
+11 1
+.names 3 540 2791
+11 1
+.names 3 541 2792
+11 1
+.names 3 542 2793
+11 1
+.names 3 543 2794
+11 1
+.names 3 544 2795
+11 1
+.names 3 545 2796
+11 1
+.names 3 546 2797
+11 1
+.names 3 547 2798
+11 1
+.names 3 548 2799
+11 1
+.names 3 549 2800
+11 1
+.names 3 550 2801
+11 1
+.names 512 513 514 515 516 518 2802
+010110 1
+.names 1 511 517 519 520 527 553 2803
+1110110 1
+.names 3 552 523 524 2715 2802 2803 2804
+11----- 1
+1011111 1
+.names 3 553 1 527 2805
+11-- 1
+1011 1
+.names 497 498 499 500 501 503 505 507 2806
+11111111 1
+.names 502 504 506 508 509 510 2806 2807
+0001101 1
+.names 3 554 1 527 553 2807 2808
+11---- 1
+101101 1
+.names 3 555 1 527 2809
+11-- 1
+1011 1
+.names 524 3 556 1 527 553 2810
+111--- 1
+110110 1
+10---- 1
+.names 2810 3 556 557 1 527 553 2811
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 523 3 556 1 527 553 2812
+111--- 1
+110110 1
+10---- 1
+.names 2812 3 556 558 1 527 553 2813
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 522 3 556 1 527 553 2814
+111--- 1
+110110 1
+10---- 1
+.names 2814 3 556 559 1 527 553 2815
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 521 3 556 1 527 553 2816
+111--- 1
+110110 1
+10---- 1
+.names 2816 3 556 560 1 527 553 2817
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 520 3 556 1 527 553 2818
+111--- 1
+110110 1
+10---- 1
+.names 2818 3 556 561 1 527 553 2819
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 519 3 556 1 527 553 2820
+111--- 1
+110110 1
+10---- 1
+.names 2820 3 556 562 1 527 553 2821
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 518 3 556 1 527 553 2822
+111--- 1
+110110 1
+10---- 1
+.names 2822 3 556 563 1 527 553 2823
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 517 3 556 1 527 553 2824
+111--- 1
+110110 1
+10---- 1
+.names 2824 3 556 564 1 527 553 2825
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 516 3 556 1 527 553 2826
+111--- 1
+110110 1
+10---- 1
+.names 2826 3 556 565 1 527 553 2827
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 515 3 556 1 527 553 2828
+111--- 1
+110110 1
+10---- 1
+.names 2828 3 556 566 1 527 553 2829
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 514 3 556 1 527 553 2830
+111--- 1
+110110 1
+10---- 1
+.names 2830 3 556 567 1 527 553 2831
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 513 3 556 1 527 553 2832
+111--- 1
+110110 1
+10---- 1
+.names 2832 3 556 568 1 527 553 2833
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 512 3 556 1 527 553 2834
+111--- 1
+110110 1
+10---- 1
+.names 2834 3 556 569 1 527 553 2835
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 511 3 556 1 527 553 2836
+111--- 1
+110110 1
+10---- 1
+.names 2836 3 556 570 1 527 553 2837
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 510 3 571 1 527 553 2838
+111--- 1
+110110 1
+10---- 1
+.names 2838 3 571 572 1 527 553 2839
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 509 3 571 1 527 553 2840
+111--- 1
+110110 1
+10---- 1
+.names 2840 3 571 573 1 527 553 2841
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 508 3 571 1 527 553 2842
+111--- 1
+110110 1
+10---- 1
+.names 2842 3 571 574 1 527 553 2843
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 507 3 571 1 527 553 2844
+111--- 1
+110110 1
+10---- 1
+.names 2844 3 571 575 1 527 553 2845
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 506 3 571 1 527 553 2846
+111--- 1
+110110 1
+10---- 1
+.names 2846 3 571 576 1 527 553 2847
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 505 3 571 1 527 553 2848
+111--- 1
+110110 1
+10---- 1
+.names 2848 3 571 577 1 527 553 2849
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 504 3 571 1 527 553 2850
+111--- 1
+110110 1
+10---- 1
+.names 2850 3 571 578 1 527 553 2851
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 503 3 571 1 527 553 2852
+111--- 1
+110110 1
+10---- 1
+.names 2852 3 571 579 1 527 553 2853
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 502 3 571 1 527 553 2854
+111--- 1
+110110 1
+10---- 1
+.names 2854 3 571 580 1 527 553 2855
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 501 3 571 1 527 553 2856
+111--- 1
+110110 1
+10---- 1
+.names 2856 3 571 581 1 527 553 2857
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 500 3 571 1 527 553 2858
+111--- 1
+110110 1
+10---- 1
+.names 2858 3 571 582 1 527 553 2859
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 499 3 571 1 527 553 2860
+111--- 1
+110110 1
+10---- 1
+.names 2860 3 571 583 1 527 553 2861
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 498 3 571 1 527 553 2862
+111--- 1
+110110 1
+10---- 1
+.names 2862 3 571 584 1 527 553 2863
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 497 3 571 1 527 553 2864
+111--- 1
+110110 1
+10---- 1
+.names 2864 3 571 585 1 527 553 2865
+011---- 1
+0101110 1
+0100--- 1
+00----- 1
+.names 402 3 1378 2866
+110 1
+10- 1
+.names 302 2866 402 2735 2867
+01-- 1
+0000 1
+.names 586 2163 2868
+10 1
+.names 2868 2163 2867 2869
+010 1
+00- 1
+.names 402 2731 2870
+01 1
+.names 302 2870 402 1578 2871
+01-- 1
+0010 1
+.names 587 2163 2872
+10 1
+.names 2872 2163 2871 2873
+011 1
+00- 1
+.names 3 402 1424 2874
+111 1
+.names 302 2874 402 2727 2875
+01-- 1
+0001 1
+.names 588 2163 2876
+10 1
+.names 2876 2163 2875 2877
+011 1
+00- 1
+.names 402 2723 2878
+01 1
+.names 302 2878 402 1546 2879
+01-- 1
+0010 1
+.names 589 2163 2880
+10 1
+.names 2880 2163 2879 2881
+011 1
+00- 1
+.names 2163 302 402 1539 2882
+11-- 1
+1011 1
+.names 2882 590 2163 2883
+011 1
+00- 1
+.names 302 402 3 1502 2884
+0110 1
+010- 1
+.names 591 2163 2885
+10 1
+.names 2885 2163 2884 2886
+010 1
+00- 1
+.names 402 2759 2887
+00 1
+.names 302 2166 2887 402 1547 2888
+011-- 1
+01011 1
+.names 2888 592 2166 2889
+011 1
+00- 1
+.names 3 402 1449 2890
+111 1
+.names 302 2166 2890 402 2755 2891
+011-- 1
+01001 1
+.names 2891 593 2166 2892
+01- 1
+001 1
+.names 402 2751 2893
+00 1
+.names 302 2166 2893 402 1539 2894
+011-- 1
+01011 1
+.names 2894 594 2166 2895
+011 1
+00- 1
+.names 402 2747 2896
+00 1
+.names 302 2166 2896 402 1545 2897
+011-- 1
+01011 1
+.names 2897 595 2166 2898
+011 1
+00- 1
+.names 402 2743 2899
+00 1
+.names 302 2166 2899 402 2234 2900
+011-- 1
+01010 1
+.names 2900 596 2166 2901
+011 1
+00- 1
+.names 402 2739 2902
+00 1
+.names 302 2166 2902 402 3 1537 2903
+011--- 1
+010110 1
+01010- 1
+.names 2903 597 2166 2904
+011 1
+00- 1
+.names 2888 598 2166 2905
+011 1
+00- 1
+.names 2891 599 2166 2906
+01- 1
+001 1
+.names 2894 600 2166 2907
+011 1
+00- 1
+.names 2897 601 2166 2908
+011 1
+00- 1
+.names 2900 602 2166 2909
+011 1
+00- 1
+.names 2903 603 2166 2910
+011 1
+00- 1
+.names 604 2166 2911
+10 1
+.names 2911 2166 2867 2912
+010 1
+00- 1
+.names 605 2166 2913
+10 1
+.names 2913 2166 2871 2914
+011 1
+00- 1
+.names 606 2166 2915
+10 1
+.names 2915 2166 2875 2916
+011 1
+00- 1
+.names 607 2166 2917
+10 1
+.names 2917 2166 2879 2918
+011 1
+00- 1
+.names 2166 302 402 1539 2919
+11-- 1
+1011 1
+.names 2919 608 2166 2920
+011 1
+00- 1
+.names 609 2166 2921
+10 1
+.names 2921 2166 2884 2922
+010 1
+00- 1
+.names 610 611 2923
+10 1
+.names 610 611 2924
+01 1
+.names 2923 2924 2925
+00 1
+.end

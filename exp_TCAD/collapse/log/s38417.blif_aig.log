@@ -1,0 +1,62 @@
+ABC command line: "r exp_TCAD/benchmark/iscas_itc/s38417.blif; aig_syn; mt; pt; q".
+
+	TList constructed from AIG.
+elapse: 0.12 seconds, total: 0.12 seconds
+	PI     : 1664
+	PO     : 1742
+	Node   : 9062
+	Level  : 30
+----------------------------------------
+	Fanin numbers
+	#2        : 9062
+Maximum fanin number: 2
+----------------------------------------
+	Fanout numbers
+	#1        : 7505
+	#2        : 741
+	#3        : 387
+	#4        : 102
+	#5        : 50
+	#6        : 51
+	#7        : 10
+	#8        : 47
+	#9        : 40
+	#10-19    : 96
+	#20-29    : 33
+Maximum fanout number: 28
+collapse time :  =     0.02 sec
+	PI     : 1664
+	PO     : 1742
+	Node   : 4747
+	Level  : 21
+----------------------------------------
+	Fanin numbers
+	#2        : 814
+	#3        : 1385
+	#4        : 768
+	#5        : 463
+	#6        : 362
+	#7        : 216
+	#8        : 269
+	#9        : 76
+	#10-19    : 386
+	#20-29    : 8
+Maximum fanin number: 20
+----------------------------------------
+	Fanout numbers
+	#1        : 3565
+	#2        : 378
+	#3        : 308
+	#4        : 79
+	#5        : 107
+	#6        : 47
+	#7        : 25
+	#8        : 21
+	#9        : 16
+	#10-19    : 143
+	#20-29    : 37
+	#30-39    : 11
+	#40-49    : 8
+	#60-69    : 1
+	#100-199  : 1
+Maximum fanout number: 100

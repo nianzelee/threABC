@@ -1,0 +1,26 @@
+ABC command line: "r /home/users/nianze/threslogic/threABC/exp/benchmark/b20.blif; source /home/users/nianze/threslogic/threABC/exp/tcl/exp_aig.tcl".
+
+[INFO] Make circuit combinational 
+[INFO] Perform fraig 
+[INFO] Synthesize threshold logic circuit by tech map 
+Finished matching 40874 functions. Time =     5.49 sec
+[1;37mitc/b20/b20[0m : i/o =    522/    512  [1;36mand =   15181[0m  [1;35mlev =   73[0m [1;35m(36.23)[0m  mem = 0.19 MB
+Mapping (K=8)  :  [1;33mlut =   5660[0m  [1;32medge =   19657[0m  [1;31mlev =   15[0m [1;31m(11.59)[0m  mem = 0.18 MB
+[INFO] Write out synthesized circuit as an AIG file 
+  > Ntk2Mux : create pio ...
+  > Ntk2Mux : create mux (dynamic = yes , ahead = no) ...
+  > Ntk2Mux : connect Po ...
+Current network is replaced
+mux convert time  =     0.01 sec
+[INFO] Collapse the synthesized circuit 
+collapse time :  =     0.01 sec
+[INFO] Write out collapsed circuit as an AIG file 
+  > Ntk2Mux : create pio ...
+  > Ntk2Mux : create mux (dynamic = yes , ahead = no) ...
+  > Ntk2Mux : connect Po ...
+Current network is replaced
+mux convert time  =     0.01 sec
+[INFO] Perform cec over two AIG files 
+elapse: 16.01 seconds, total: 16.01 seconds
+Networks are equivalent.
+elapse: 1.78 seconds, total: 17.79 seconds

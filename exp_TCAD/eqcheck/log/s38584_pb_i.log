@@ -1,0 +1,15 @@
+ABC command line: "r /home/users/nianze/threslogic/threABC/exp/benchmark/s38584.blif; source /home/users/nianze/threslogic/threABC/exp/tcl/exp_pb_i.tcl".
+
+[INFO] Make circuit combinational 
+[INFO] Perform fraig 
+[INFO] Synthesize threshold logic circuit by tech map 
+Finished matching 7877 functions. Time =     1.49 sec
+[1;37m../DATA/s38584.bench[0m : i/o =   1464/   1730  [1;36mand =   13792[0m  [1;35mlev =   29[0m [1;35m(7.07)[0m  mem = 0.21 MB
+Mapping (K=8)  :  [1;33mlut =   4391[0m  [1;32medge =   18167[0m  [1;31mlev =    8[0m [1;31m(3.39)[0m  mem = 0.17 MB
+[INFO] Iteratively collapse the synthesized circuit 
+collapse time :  =     0.16 sec
+[INFO] Write out PB equivalence checking file 
+	checking Equalivance of cut_TList and current_TList...
+	OutputFile: compTH.opb
+	done
+PB translation time :  =     0.01 sec

@@ -1,0 +1,22 @@
+ABC command line: "r /home/users/nianze/threslogic/threABC/exp/benchmark/b22.blif; source /home/users/nianze/threslogic/threABC/exp/tcl/exp_blif_i.tcl".
+
+[INFO] Make circuit combinational 
+[INFO] Perform fraig 
+[INFO] Synthesize threshold logic circuit by tech map 
+Finished matching 48787 functions. Time =     5.90 sec
+[1;37mitc/b22/b22[0m : i/o =    767/    757  [1;36mand =   21362[0m  [1;35mlev =   78[0m [1;35m(38.17)[0m  mem = 0.27 MB
+Mapping (K=8)  :  [1;33mlut =   8429[0m  [1;32medge =   27774[0m  [1;31mlev =   16[0m [1;31m(12.65)[0m  mem = 0.26 MB
+[INFO] Write out synthesized circuit as a blif file 
+File compTH_1.blif is written.
+Write out threshold network as blif file...
+blif gen time  =     0.01 sec
+[INFO] Iteratively collapse the synthesized circuit 
+collapse time :  =     0.48 sec
+[INFO] Write out collapsed circuit as a blif file 
+File compTH_2.blif is written.
+Write out threshold network as blif file...
+blif gen time  =     0.02 sec
+[INFO] Perform cec over two blif files 
+elapse: 19.04 seconds, total: 19.04 seconds
+Networks are equivalent.
+elapse: 2.72 seconds, total: 21.77 seconds

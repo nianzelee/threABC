@@ -1,0 +1,9 @@
+Threshold logic gate list written by NZ.
+.model rand_16.th
+.input 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+.output 17
+.threshold 18 17
+1 1
+.threshold 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 18
+-17 -49 250 -135 -105 86 117 127 -180 -127 -75 -222 -228 -4 51 11 143 
+.end

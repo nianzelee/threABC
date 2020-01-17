@@ -1,0 +1,15 @@
+ABC command line: "r /home/users/nianze/threslogic/threABC/exp/benchmark/b20.blif; source /home/users/nianze/threslogic/threABC/exp/tcl/exp_cnf_i.tcl".
+
+[INFO] Make circuit combinational 
+[INFO] Perform fraig 
+[INFO] Synthesize threshold logic circuit by tech map 
+Finished matching 40874 functions. Time =     5.43 sec
+[1;37mitc/b20/b20[0m : i/o =    522/    512  [1;36mand =   15181[0m  [1;35mlev =   73[0m [1;35m(36.23)[0m  mem = 0.19 MB
+Mapping (K=8)  :  [1;33mlut =   5660[0m  [1;32medge =   19657[0m  [1;31mlev =   15[0m [1;31m(11.59)[0m  mem = 0.18 MB
+[INFO] Iteratively collapse the synthesized circuit 
+collapse time :  =     0.36 sec
+[INFO] Write out CNF equivalence checking file 
+	checking Equalivance of cut_TList and current_TList...
+	OutputFile: compTH.dimacs
+	done
+CNF translation time :  =     0.03 sec

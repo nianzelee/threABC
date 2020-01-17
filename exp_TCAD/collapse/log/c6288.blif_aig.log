@@ -1,0 +1,47 @@
+ABC command line: "r exp_TCAD/benchmark/iscas_itc/c6288.blif; aig_syn; mt; pt; q".
+
+	TList constructed from AIG.
+Error: The network is already combinational.
+elapse: 0.01 seconds, total: 0.01 seconds
+	PI     : 32
+	PO     : 32
+	Node   : 2334
+	Level  : 120
+----------------------------------------
+	Fanin numbers
+	#2        : 2334
+Maximum fanin number: 2
+----------------------------------------
+	Fanout numbers
+	#1        : 942
+	#2        : 930
+	#3        : 462
+Maximum fanout number: 3
+collapse time :  =     0.01 sec
+	PI     : 32
+	PO     : 32
+	Node   : 1407
+	Level  : 93
+----------------------------------------
+	Fanin numbers
+	#2        : 764
+	#3        : 127
+	#4        : 128
+	#5        : 20
+	#6        : 66
+	#7        : 18
+	#8        : 61
+	#9        : 19
+	#10-19    : 204
+Maximum fanin number: 13
+----------------------------------------
+	Fanout numbers
+	#1        : 122
+	#2        : 464
+	#3        : 131
+	#4        : 178
+	#5        : 182
+	#6        : 143
+	#7        : 122
+	#8        : 65
+Maximum fanout number: 8

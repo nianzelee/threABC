@@ -1,0 +1,64 @@
+ABC command line: "r exp_TCAD/benchmark/iscas_itc/c6288.blif; tl_syn; mt -B 100 -t; pt; q".
+
+Error: The network is already combinational.
+elapse: 0.01 seconds, total: 0.01 seconds
+Finished matching 9415 functions. Time =     2.31 sec
+[1;37mbenchmarks/iscas85/c6288[0m : i/o =     32/     32  [1;36mand =    4158[0m  [1;35mlev =   88[0m [1;35m(51.72)[0m  mem = 0.05 MB
+Mapping (K=8)  :  [1;33mlut =   1424[0m  [1;32medge =    4848[0m  [1;31mlev =   29[0m [1;31m(21.00)[0m  mem = 0.05 MB
+elapse: 4.32 seconds, total: 4.33 seconds
+	PI     : 32
+	PO     : 32
+	Node   : 1424
+	Level  : 29
+----------------------------------------
+	Fanin numbers
+	#2        : 409
+	#3        : 440
+	#4        : 300
+	#5        : 179
+	#6        : 59
+	#7        : 35
+	#8        : 2
+Maximum fanin number: 8
+----------------------------------------
+	Fanout numbers
+	#1        : 379
+	#2        : 391
+	#3        : 348
+	#4        : 130
+	#5        : 133
+	#6        : 29
+	#7        : 9
+	#8        : 2
+	#10-19    : 3
+Maximum fanout number: 16
+collapse time :  =     0.05 sec
+	PI     : 32
+	PO     : 32
+	Node   : 1140
+	Level  : 28
+----------------------------------------
+	Fanin numbers
+	#2        : 221
+	#3        : 141
+	#4        : 179
+	#5        : 211
+	#6        : 163
+	#7        : 96
+	#8        : 73
+	#9        : 27
+	#10-19    : 29
+Maximum fanin number: 13
+----------------------------------------
+	Fanout numbers
+	#1        : 269
+	#2        : 220
+	#3        : 189
+	#4        : 147
+	#5        : 101
+	#6        : 94
+	#7        : 46
+	#8        : 21
+	#9        : 15
+	#10-19    : 38
+Maximum fanout number: 18

@@ -1,0 +1,35 @@
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of clauses.
+WARNING: for repeatability, setting FPU to use double precision
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:          3796                                         |
+|  Number of clauses:            9488                                         |
+|  Parse time:                   0.00 s                                       |
+|                                                                             |
+============================[ Search Statistics ]==============================
+| Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+|           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+===============================================================================
+|       100 |    3795     9380    38803 |     3439      100      6 |  0.026 % |
+|       250 |    3789     9368    38767 |     3783      237      7 |  0.185 % |
+|       475 |    3788     9368    38767 |     4161      461      7 |  0.212 % |
+|       812 |    3780     9362    38749 |     4577      787      8 |  0.422 % |
+|      1318 |    3761     9318    38617 |     5035     1252      8 |  0.923 % |
+|      2077 |    3755     9310    38593 |     5539     2001      9 |  1.081 % |
+|      3216 |    3747     9284    38515 |     6092     3119     11 |  1.292 % |
+|      4924 |    3746     9282    38509 |     6702     4825     11 |  1.318 % |
+|      7486 |    3746     9282    38509 |     7372     7387     12 |  1.318 % |
+|     11330 |    3746     9282    38509 |     8109     7269     11 |  1.318 % |
+|     17096 |    3746     9282    38509 |     8920     4660     12 |  1.318 % |
+|     25745 |    3746     9282    38509 |     9812     8704     12 |  1.318 % |
+===============================================================================
+restarts              : 126
+conflicts             : 35786          (63345 /sec)
+decisions             : 132539         (0.00 % random) (234607 /sec)
+propagations          : 2808502        (4971319 /sec)
+conflict literals     : 434678         (28.83 % deleted)
+Memory used           : 8.00 MB
+CPU time              : 0.564941 s
+
+UNSATISFIABLE

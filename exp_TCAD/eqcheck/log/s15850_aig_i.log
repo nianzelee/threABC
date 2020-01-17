@@ -1,0 +1,26 @@
+ABC command line: "r /home/users/nianze/threslogic/threABC/exp/benchmark/s15850.blif; source /home/users/nianze/threslogic/threABC/exp/tcl/exp_aig_i.tcl".
+
+[INFO] Make circuit combinational 
+[INFO] Perform fraig 
+[INFO] Synthesize threshold logic circuit by tech map 
+Finished matching 6392 functions. Time =     1.25 sec
+[1;37m../DATA/s15850.bench[0m : i/o =    611/    684  [1;36mand =    4467[0m  [1;35mlev =   36[0m [1;35m(7.84)[0m  mem = 0.07 MB
+Mapping (K=8)  :  [1;33mlut =   1630[0m  [1;32medge =    6097[0m  [1;31mlev =   10[0m [1;31m(3.37)[0m  mem = 0.06 MB
+[INFO] Write out synthesized circuit as an AIG file 
+  > Ntk2Mux : create pio ...
+  > Ntk2Mux : create mux (dynamic = yes , ahead = no) ...
+  > Ntk2Mux : connect Po ...
+Current network is replaced
+mux convert time  =     0.00 sec
+[INFO] Iteratively collapse the synthesized circuit 
+collapse time :  =     0.06 sec
+[INFO] Write out collapsed circuit as an AIG file 
+  > Ntk2Mux : create pio ...
+  > Ntk2Mux : create mux (dynamic = yes , ahead = no) ...
+  > Ntk2Mux : connect Po ...
+Current network is replaced
+mux convert time  =     0.00 sec
+[INFO] Perform cec over two AIG files 
+elapse: 2.73 seconds, total: 2.73 seconds
+Networks are equivalent.
+elapse: 0.21 seconds, total: 2.94 seconds

@@ -1,0 +1,613 @@
+c Parsing PB file...
+c Converting 801 PB-constraints to clauses...
+c   -- Unit propagations: (none)
+c   -- Detecting intervals from adjacent constraints: ##################################################################
+c   -- Clauses(.)/Splits(s): .................................................................................................................................................................
+c ---[ 799]---> BDD-cost:    1
+c ---[ 797]---> BDD-cost:    1
+c ---[ 795]---> BDD-cost:    1
+c ---[ 793]---> BDD-cost:    1
+c ---[ 791]---> BDD-cost:    1
+c ---[ 789]---> BDD-cost:    1
+c ---[ 787]---> BDD-cost:    1
+c ---[ 785]---> BDD-cost:    1
+c ---[ 783]---> BDD-cost:    1
+c ---[ 781]---> BDD-cost:    1
+c ---[ 779]---> BDD-cost:    1
+c ---[ 777]---> BDD-cost:    1
+c ---[ 775]---> BDD-cost:    1
+c ---[ 773]---> BDD-cost:    1
+c ---[ 771]---> BDD-cost:    1
+c ---[ 769]---> BDD-cost:    1
+c ---[ 767]---> BDD-cost:    1
+c ---[ 765]---> BDD-cost:    1
+c ---[ 763]---> BDD-cost:    1
+c ---[ 761]---> BDD-cost:    1
+c ---[ 759]---> BDD-cost:    1
+c ---[ 757]---> BDD-cost:    1
+c ---[ 755]---> BDD-cost:    1
+c ---[ 753]---> BDD-cost:    1
+c ---[ 751]---> BDD-cost:    1
+c ---[ 749]---> BDD-cost:    1
+c ---[ 747]---> BDD-cost:    1
+c ---[ 745]---> BDD-cost:    1
+c ---[ 743]---> BDD-cost:    1
+c ---[ 741]---> BDD-cost:    1
+c ---[ 739]---> BDD-cost:    1
+c ---[ 737]---> BDD-cost:    1
+c ---[ 736]---> Sorter-cost: 2841     Base: 2 5 3 2 3 5
+c ---[ 735]---> Sorter-cost: 2585     Base: 5 2 3 2 3
+c ---[ 734]---> Adder-cost: 251   maxlim: 1479   bits: 12/11
+c ---[ 733]---> Adder-cost: 140   maxlim: 3059   bits: 13/12
+c ---[ 732]---> Sorter-cost: 2859     Base: 3 3 2 2 2 3
+c ---[ 731]---> Sorter-cost: 1854     Base: 3 3 2 2 2 3
+c ---[ 730]---> Adder-cost: 260   maxlim: 2652   bits: 13/12
+c ---[ 729]---> Adder-cost: 159   maxlim: 1990   bits: 12/11
+c ---[ 728]---> Adder-cost: 266   maxlim: 2471   bits: 13/12
+c ---[ 727]---> Adder-cost: 162   maxlim: 2809   bits: 13/12
+c ---[ 726]---> Adder-cost: 258   maxlim: 2920   bits: 13/12
+c ---[ 725]---> Adder-cost: 145   maxlim: 1509   bits: 12/11
+c ---[ 724]---> Adder-cost: 262   maxlim: 2283   bits: 13/12
+c ---[ 723]---> Adder-cost: 166   maxlim: 2178   bits: 13/12
+c ---[ 722]---> Adder-cost: 263   maxlim: 2266   bits: 13/12
+c ---[ 721]---> Adder-cost: 149   maxlim: 2570   bits: 13/12
+c ---[ 720]---> Sorter-cost: 2794     Base: 2 2 2 3 3 3
+c ---[ 719]---> Sorter-cost: 2253     Base: 2 2 2 3 3 3
+c ---[ 718]---> Adder-cost: 269   maxlim: 2556   bits: 13/12
+c ---[ 717]---> Adder-cost: 157   maxlim: 2190   bits: 13/12
+c ---[ 716]---> Adder-cost: 263   maxlim: 3125   bits: 13/12
+c ---[ 715]---> Adder-cost: 142   maxlim: 1839   bits: 12/11
+c ---[ 714]---> Adder-cost: 260   maxlim: 2874   bits: 13/12
+c ---[ 713]---> Adder-cost: 141   maxlim: 1930   bits: 12/11
+c ---[ 712]---> Adder-cost: 255   maxlim: 2918   bits: 13/12
+c ---[ 711]---> Adder-cost: 141   maxlim: 2116   bits: 13/12
+c ---[ 710]---> Adder-cost: 263   maxlim: 2941   bits: 13/12
+c ---[ 709]---> Adder-cost: 158   maxlim: 1836   bits: 12/11
+c ---[ 708]---> Sorter-cost: 2864     Base: 3 3 2 3 3 17
+c ---[ 707]---> Sorter-cost: 2134     Base: 3 3 2 3 3
+c ---[ 706]---> Adder-cost: 250   maxlim: 3020   bits: 13/12
+c ---[ 705]---> Adder-cost: 119   maxlim: 1772   bits: 12/11
+c ---[ 704]---> Adder-cost: 267   maxlim: 2765   bits: 13/12
+c ---[ 703]---> Adder-cost: 160   maxlim: 2235   bits: 13/12
+c ---[ 702]---> Adder-cost: 227   maxlim: 2630   bits: 13/12
+c ---[ 701]---> Adder-cost: 118   maxlim: 2133   bits: 13/12
+c ---[ 700]---> Adder-cost: 235   maxlim: 2693   bits: 13/12
+c ---[ 699]---> Adder-cost: 119   maxlim: 1829   bits: 12/11
+c ---[ 698]---> Adder-cost: 257   maxlim: 1544   bits: 12/11
+c ---[ 697]---> Adder-cost: 168   maxlim: 2543   bits: 13/12
+c ---[ 696]---> Adder-cost: 245   maxlim: 1897   bits: 12/11
+c ---[ 695]---> Adder-cost: 140   maxlim: 2479   bits: 13/12
+c ---[ 694]---> Sorter-cost: 2705     Base: 3 2 2 2 3 2 17
+c ---[ 693]---> Sorter-cost: 2240     Base: 3 2 2 2 3 3
+c ---[ 692]---> Adder-cost: 260   maxlim: 2917   bits: 13/12
+c ---[ 691]---> Adder-cost: 160   maxlim: 1924   bits: 12/11
+c ---[ 690]---> Adder-cost: 270   maxlim: 2437   bits: 13/12
+c ---[ 689]---> Adder-cost: 166   maxlim: 2292   bits: 13/12
+c ---[ 688]---> Adder-cost: 286   maxlim: 2060   bits: 13/12
+c ---[ 687]---> Sorter-cost: 3164     Base: 3 3 3 3 2 17
+c ---[ 686]---> Adder-cost: 235   maxlim: 2479   bits: 13/12
+c ---[ 685]---> Adder-cost: 126   maxlim: 2151   bits: 13/12
+c ---[ 684]---> Adder-cost: 233   maxlim: 2052   bits: 13/12
+c ---[ 683]---> Adder-cost: 157   maxlim: 2670   bits: 13/12
+c ---[ 682]---> Adder-cost: 261   maxlim: 2956   bits: 13/12
+c ---[ 681]---> Adder-cost: 167   maxlim: 1640   bits: 12/11
+c ---[ 680]---> Adder-cost: 257   maxlim: 2641   bits: 13/12
+c ---[ 679]---> Adder-cost: 149   maxlim: 2061   bits: 13/12
+c ---[ 678]---> Adder-cost: 256   maxlim: 2786   bits: 13/12
+c ---[ 677]---> Adder-cost: 139   maxlim: 1898   bits: 12/11
+c ---[ 676]---> Adder-cost: 250   maxlim: 2251   bits: 13/12
+c ---[ 675]---> Adder-cost: 170   maxlim: 2386   bits: 13/12
+c ---[ 674]---> Adder-cost: 278   maxlim: 2996   bits: 13/12
+c ---[ 673]---> Adder-cost: 165   maxlim: 2584   bits: 13/12
+c ---[ 672]---> Adder-cost: 258   maxlim: 2631   bits: 13/12
+c ---[ 671]---> Adder-cost: 154   maxlim: 2305   bits: 13/12
+c ---[ 670]---> Adder-cost: 236   maxlim: 2319   bits: 13/12
+c ---[ 669]---> Adder-cost: 142   maxlim: 2404   bits: 13/12
+c ---[ 668]---> Adder-cost: 278   maxlim: 2463   bits: 13/12
+c ---[ 667]---> Adder-cost: 152   maxlim: 2576   bits: 13/12
+c ---[ 666]---> Adder-cost: 248   maxlim: 2960   bits: 13/12
+c ---[ 665]---> Adder-cost: 162   maxlim: 1995   bits: 12/11
+c ---[ 664]---> Adder-cost: 239   maxlim: 2135   bits: 13/12
+c ---[ 663]---> Adder-cost: 150   maxlim: 2848   bits: 13/12
+c ---[ 662]---> Adder-cost: 246   maxlim: 1987   bits: 12/11
+c ---[ 661]---> Adder-cost: 150   maxlim: 2921   bits: 13/12
+c ---[ 660]---> Sorter-cost: 2824     Base: 2 3 2 2 3 3
+c ---[ 659]---> Sorter-cost: 2117     Base: 2 3 2 2 3 3
+c ---[ 658]---> Adder-cost: 251   maxlim: 2673   bits: 13/12
+c ---[ 657]---> Adder-cost: 140   maxlim: 2171   bits: 13/12
+c ---[ 656]---> Adder-cost: 243   maxlim: 2586   bits: 13/12
+c ---[ 655]---> Adder-cost: 156   maxlim: 2655   bits: 13/12
+c ---[ 654]---> Adder-cost: 271   maxlim: 2365   bits: 13/12
+c ---[ 653]---> Adder-cost: 166   maxlim: 2542   bits: 13/12
+c ---[ 652]---> Sorter-cost: 2949     Base: 2 2 3 2 3 3
+c ---[ 651]---> Sorter-cost: 2210     Base: 2 2 3 2 3 3
+c ---[ 650]---> Adder-cost: 257   maxlim: 2722   bits: 13/12
+c ---[ 649]---> Adder-cost: 158   maxlim: 2659   bits: 13/12
+c ---[ 648]---> Adder-cost: 251   maxlim: 2159   bits: 13/12
+c ---[ 647]---> Adder-cost: 152   maxlim: 2712   bits: 13/12
+c ---[ 646]---> Adder-cost: 246   maxlim: 2591   bits: 13/12
+c ---[ 645]---> Adder-cost: 106   maxlim: 2575   bits: 13/12
+c ---[ 644]---> Adder-cost: 260   maxlim: 2272   bits: 13/12
+c ---[ 643]---> Adder-cost: 166   maxlim: 2235   bits: 13/12
+c ---[ 642]---> Sorter-cost: 3154     Base: 2 3 2 5 3 7
+c ---[ 641]---> Sorter-cost: 2784     Base: 2 3 2 3 5 7
+c ---[ 640]---> Sorter-cost: 2778     Base: 2 2 2 3 3 3
+c ---[ 639]---> Sorter-cost: 1746     Base: 2 2 2 3 3 3
+c ---[ 638]---> Adder-cost: 277   maxlim: 2115   bits: 13/12
+c ---[ 637]---> Adder-cost: 179   maxlim: 3362   bits: 13/12
+c ---[ 636]---> Adder-cost: 252   maxlim: 2534   bits: 13/12
+c ---[ 635]---> Adder-cost: 176   maxlim: 2071   bits: 13/12
+c ---[ 634]---> Adder-cost: 269   maxlim: 1969   bits: 12/11
+c ---[ 633]---> Adder-cost: 140   maxlim: 3265   bits: 13/12
+c ---[ 632]---> Adder-cost: 279   maxlim: 2539   bits: 13/12
+c ---[ 631]---> Adder-cost: 152   maxlim: 2492   bits: 13/12
+c ---[ 630]---> Adder-cost: 259   maxlim: 2641   bits: 13/12
+c ---[ 629]---> Adder-cost: 149   maxlim: 1753   bits: 12/11
+c ---[ 628]---> Adder-cost: 236   maxlim: 2623   bits: 13/12
+c ---[ 627]---> Adder-cost: 152   maxlim: 2316   bits: 13/12
+c ---[ 626]---> Sorter-cost: 2914     Base: 3 3 3 2 2 2 13
+c ---[ 625]---> Sorter-cost: 2229     Base: 3 3 3 2 2 2
+c ---[ 624]---> Sorter-cost: 2808     Base: 3 3 3 2 2 2
+c ---[ 623]---> Sorter-cost: 1952     Base: 3 3 3 2 2 2 13
+c ---[ 622]---> Sorter-cost: 2657     Base: 2 2 2 2 2 2 3 17
+c ---[ 621]---> Sorter-cost: 2222     Base: 2 2 2 2 2 2 3
+c ---[ 620]---> Adder-cost: 258   maxlim: 3030   bits: 13/12
+c ---[ 619]---> Adder-cost: 134   maxlim: 2011   bits: 12/11
+c ---[ 618]---> Adder-cost: 282   maxlim: 3526   bits: 13/12
+c ---[ 617]---> Sorter-cost: 3064     Base: 2 3 3 3 2 2
+c ---[ 616]---> Adder-cost: 254   maxlim: 2174   bits: 13/12
+c ---[ 615]---> Adder-cost: 155   maxlim: 2840   bits: 13/12
+c ---[ 614]---> Adder-cost: 253   maxlim: 1478   bits: 12/11
+c ---[ 613]---> Adder-cost: 163   maxlim: 3515   bits: 13/12
+c ---[ 612]---> Adder-cost: 274   maxlim: 2724   bits: 13/12
+c ---[ 611]---> Adder-cost: 175   maxlim: 2478   bits: 13/12
+c ---[ 610]---> Adder-cost: 260   maxlim: 2905   bits: 13/12
+c ---[ 609]---> Adder-cost: 143   maxlim: 2613   bits: 13/12
+c ---[ 608]---> Adder-cost: 248   maxlim: 2407   bits: 13/12
+c ---[ 607]---> Adder-cost: 148   maxlim: 2304   bits: 13/12
+c ---[ 606]---> Sorter-cost: 3120     Base: 3 3 2 2 3 2
+c ---[ 605]---> Sorter-cost: 2543     Base: 3 3 3 2 2 13
+c ---[ 604]---> Adder-cost: 270   maxlim: 2696   bits: 13/12
+c ---[ 603]---> Sorter-cost: 3027     Base: 2 3 2 3 3 2
+c ---[ 602]---> Adder-cost: 236   maxlim: 2483   bits: 13/12
+c ---[ 601]---> Adder-cost: 130   maxlim: 2575   bits: 13/12
+c ---[ 600]---> Adder-cost: 262   maxlim: 2848   bits: 13/12
+c ---[ 599]---> Adder-cost: 162   maxlim: 1875   bits: 12/11
+c ---[ 598]---> Adder-cost: 256   maxlim: 2217   bits: 13/12
+c ---[ 597]---> Adder-cost: 139   maxlim: 2669   bits: 13/12
+c ---[ 596]---> Sorter-cost: 2894     Base: 3 2 2 3 5 7
+c ---[ 595]---> Sorter-cost: 2808     Base: 3 2 2 5 3 13
+c ---[ 594]---> Sorter-cost: 2724     Base: 3 3 2 2 2 3
+c ---[ 593]---> Sorter-cost: 2081     Base: 3 3 2 2 2 3
+c ---[ 592]---> Adder-cost: 261   maxlim: 2859   bits: 13/12
+c ---[ 591]---> Sorter-cost: 2803     Base: 2 2 2 2 3 2 2
+c ---[ 590]---> Sorter-cost: 3174     Base: 3 3 5 2 2 5
+c ---[ 589]---> Sorter-cost: 3030     Base: 2 2 3 3 5 7
+c ---[ 588]---> Sorter-cost: 2807     Base: 3 3 2 2 2 3
+c ---[ 587]---> Sorter-cost: 2198     Base: 3 3 2 2 2 3
+c ---[ 586]---> Sorter-cost: 2712     Base: 2 2 5 2 2 2 17
+c ---[ 585]---> Sorter-cost: 2612     Base: 2 2 5 3 3
+c ---[ 584]---> Sorter-cost: 2992     Base: 3 2 2 2 3 3
+c ---[ 583]---> Sorter-cost: 2253     Base: 3 2 2 2 3 3
+c ---[ 582]---> Sorter-cost: 2989     Base: 2 3 2 2 2 2 2
+c ---[ 581]---> Sorter-cost: 2077     Base: 2 3 2 2 2 2 2 13
+c ---[ 580]---> Adder-cost: 270   maxlim: 2373   bits: 13/12
+c ---[ 579]---> Adder-cost: 174   maxlim: 2447   bits: 13/12
+c ---[ 578]---> Sorter-cost: 2603     Base: 2 2 3 3 5 5
+c ---[ 577]---> Sorter-cost: 1620     Base: 2 2 3 3 5 11
+c ---[ 576]---> Adder-cost: 274   maxlim: 2050   bits: 13/12
+c ---[ 575]---> Adder-cost: 179   maxlim: 2510   bits: 13/12
+c ---[ 574]---> Adder-cost: 276   maxlim: 2569   bits: 13/12
+c ---[ 573]---> Adder-cost: 176   maxlim: 2652   bits: 13/12
+c ---[ 572]---> Adder-cost: 279   maxlim: 2130   bits: 13/12
+c ---[ 571]---> Adder-cost: 168   maxlim: 3214   bits: 13/12
+c ---[ 570]---> Adder-cost: 272   maxlim: 2251   bits: 13/12
+c ---[ 569]---> Adder-cost: 134   maxlim: 2893   bits: 13/12
+c ---[ 568]---> Adder-cost: 266   maxlim: 2324   bits: 13/12
+c ---[ 567]---> Sorter-cost: 3044     Base: 2 5 5 3 17
+c ---[ 566]---> Adder-cost: 277   maxlim: 2492   bits: 13/12
+c ---[ 565]---> Adder-cost: 171   maxlim: 2638   bits: 13/12
+c ---[ 564]---> Adder-cost: 262   maxlim: 2282   bits: 13/12
+c ---[ 563]---> Adder-cost: 164   maxlim: 2879   bits: 13/12
+c ---[ 562]---> Sorter-cost: 2947     Base: 2 3 3 2 3 2
+c ---[ 561]---> Sorter-cost: 2269     Base: 2 3 3 2 3 7
+c ---[ 560]---> Adder-cost: 262   maxlim: 2455   bits: 13/12
+c ---[ 559]---> Sorter-cost: 2967     Base: 5 3 2 2 3 5
+c ---[ 558]---> Adder-cost: 255   maxlim: 2718   bits: 13/12
+c ---[ 557]---> Adder-cost: 141   maxlim: 2184   bits: 13/12
+c ---[ 556]---> Adder-cost: 259   maxlim: 2715   bits: 13/12
+c ---[ 555]---> Adder-cost: 152   maxlim: 2569   bits: 13/12
+c ---[ 554]---> Sorter-cost: 2601     Base: 2 2 3 2 2 2 2
+c ---[ 553]---> Sorter-cost: 2679     Base: 2 2 3 2 3 3
+c ---[ 552]---> Adder-cost: 252   maxlim: 2184   bits: 13/12
+c ---[ 551]---> Sorter-cost: 2916     Base: 5 3 2 2 3 13
+c ---[ 550]---> Adder-cost: 259   maxlim: 2848   bits: 13/12
+c ---[ 549]---> Sorter-cost: 2803     Base: 3 3 2 2 3 2
+c ---[ 548]---> Adder-cost: 238   maxlim: 2251   bits: 13/12
+c ---[ 547]---> Adder-cost: 135   maxlim: 3085   bits: 13/12
+c ---[ 546]---> Adder-cost: 234   maxlim: 2242   bits: 13/12
+c ---[ 545]---> Adder-cost: 150   maxlim: 2545   bits: 13/12
+c ---[ 544]---> Adder-cost: 248   maxlim: 2251   bits: 13/12
+c ---[ 543]---> Adder-cost: 120   maxlim: 2248   bits: 13/12
+c ---[ 542]---> Sorter-cost: 2421     Base: 2 3 3 2 3 2
+c ---[ 541]---> Sorter-cost: 1691     Base: 2 3 3 2 3 2 13
+c ---[ 540]---> Adder-cost: 264   maxlim: 2481   bits: 13/12
+c ---[ 539]---> Adder-cost: 156   maxlim: 2542   bits: 13/12
+c ---[ 538]---> Adder-cost: 256   maxlim: 2510   bits: 13/12
+c ---[ 537]---> Adder-cost: 151   maxlim: 2202   bits: 13/12
+c ---[ 536]---> Adder-cost: 252   maxlim: 2445   bits: 13/12
+c ---[ 535]---> Adder-cost: 160   maxlim: 1858   bits: 12/11
+c ---[ 534]---> Adder-cost: 284   maxlim: 2758   bits: 13/12
+c ---[ 533]---> Adder-cost: 172   maxlim: 2419   bits: 13/12
+c ---[ 532]---> Adder-cost: 284   maxlim: 2454   bits: 13/12
+c ---[ 531]---> Adder-cost: 181   maxlim: 2684   bits: 13/12
+c ---[ 530]---> Adder-cost: 271   maxlim: 2534   bits: 13/12
+c ---[ 529]---> Sorter-cost: 2852     Base: 3 3 3 2 3 17
+c ---[ 528]---> Adder-cost: 243   maxlim: 2509   bits: 13/12
+c ---[ 527]---> Adder-cost: 109   maxlim: 2125   bits: 13/12
+c ---[ 526]---> Sorter-cost: 2885     Base: 3 2 2 2 3 3
+c ---[ 525]---> Adder-cost: 273   maxlim: 2272   bits: 13/12
+c ---[ 524]---> Adder-cost: 268   maxlim: 2269   bits: 13/12
+c ---[ 523]---> Adder-cost: 127   maxlim: 2893   bits: 13/12
+c ---[ 522]---> Adder-cost: 256   maxlim: 2698   bits: 13/12
+c ---[ 521]---> Adder-cost: 130   maxlim: 2457   bits: 13/12
+c ---[ 520]---> Adder-cost: 260   maxlim: 2697   bits: 13/12
+c ---[ 519]---> Sorter-cost: 2855     Base: 3 3 3 2 3 13
+c ---[ 518]---> Adder-cost: 263   maxlim: 2370   bits: 13/12
+c ---[ 517]---> Adder-cost: 165   maxlim: 2452   bits: 13/12
+c ---[ 516]---> Adder-cost: 241   maxlim: 2120   bits: 13/12
+c ---[ 515]---> Adder-cost: 139   maxlim: 2552   bits: 13/12
+c ---[ 514]---> Sorter-cost: 2767     Base: 2 3 2 5 3 13
+c ---[ 513]---> Sorter-cost: 1964     Base: 2 3 2 5 3
+c ---[ 512]---> Adder-cost: 249   maxlim: 2356   bits: 13/12
+c ---[ 511]---> Adder-cost: 155   maxlim: 2626   bits: 13/12
+c ---[ 510]---> Adder-cost: 271   maxlim: 2202   bits: 13/12
+c ---[ 509]---> Adder-cost: 154   maxlim: 2681   bits: 13/12
+c ---[ 508]---> Adder-cost: 261   maxlim: 2577   bits: 13/12
+c ---[ 507]---> Adder-cost: 184   maxlim: 2475   bits: 13/12
+c ---[ 506]---> Adder-cost: 280   maxlim: 2902   bits: 13/12
+c ---[ 505]---> Adder-cost: 161   maxlim: 2570   bits: 13/12
+c ---[ 504]---> Adder-cost: 262   maxlim: 2462   bits: 13/12
+c ---[ 503]---> Adder-cost: 163   maxlim: 2336   bits: 13/12
+c ---[ 502]---> Adder-cost: 228   maxlim: 2180   bits: 13/12
+c ---[ 501]---> Adder-cost: 123   maxlim: 2588   bits: 13/12
+c ---[ 500]---> Adder-cost: 249   maxlim: 2308   bits: 13/12
+c ---[ 499]---> Adder-cost: 128   maxlim: 2883   bits: 13/12
+c ---[ 498]---> Sorter-cost: 2532     Base: 3 2 3 2 3 2
+c ---[ 497]---> Sorter-cost: 1947     Base: 3 2 3 2 3 2
+c ---[ 496]---> Adder-cost: 250   maxlim: 2841   bits: 13/12
+c ---[ 495]---> Adder-cost: 160   maxlim: 2232   bits: 13/12
+c ---[ 494]---> Adder-cost: 263   maxlim: 2363   bits: 13/12
+c ---[ 493]---> Adder-cost: 135   maxlim: 2547   bits: 13/12
+c ---[ 492]---> Adder-cost: 255   maxlim: 2421   bits: 13/12
+c ---[ 491]---> Adder-cost: 144   maxlim: 2350   bits: 13/12
+c ---[ 490]---> Adder-cost: 235   maxlim: 2364   bits: 13/12
+c ---[ 489]---> Adder-cost: 147   maxlim: 2432   bits: 13/12
+c ---[ 488]---> Adder-cost: 234   maxlim: 2482   bits: 13/12
+c ---[ 487]---> Adder-cost: 139   maxlim: 2456   bits: 13/12
+c ---[ 486]---> Sorter-cost: 2935     Base: 2 2 3 3 5 13
+c ---[ 485]---> Sorter-cost: 2261     Base: 2 2 3 3 5
+c ---[ 484]---> Adder-cost: 247   maxlim: 2113   bits: 13/12
+c ---[ 483]---> Adder-cost: 166   maxlim: 2856   bits: 13/12
+c ---[ 482]---> Adder-cost: 243   maxlim: 2061   bits: 13/12
+c ---[ 481]---> Adder-cost: 159   maxlim: 2913   bits: 13/12
+c ---[ 479]---> BDD-cost:    1
+c ---[ 477]---> BDD-cost:    1
+c ---[ 475]---> BDD-cost:    1
+c ---[ 473]---> BDD-cost:    1
+c ---[ 471]---> BDD-cost:    1
+c ---[ 469]---> BDD-cost:    1
+c ---[ 467]---> BDD-cost:    1
+c ---[ 465]---> BDD-cost:    1
+c ---[ 463]---> BDD-cost:    1
+c ---[ 461]---> BDD-cost:    1
+c ---[ 459]---> BDD-cost:    1
+c ---[ 457]---> BDD-cost:    1
+c ---[ 455]---> BDD-cost:    1
+c ---[ 453]---> BDD-cost:    1
+c ---[ 451]---> BDD-cost:    1
+c ---[ 449]---> BDD-cost:    1
+c ---[ 447]---> BDD-cost:    1
+c ---[ 445]---> BDD-cost:    1
+c ---[ 443]---> BDD-cost:    1
+c ---[ 441]---> BDD-cost:    1
+c ---[ 439]---> BDD-cost:    1
+c ---[ 437]---> BDD-cost:    1
+c ---[ 435]---> BDD-cost:    1
+c ---[ 433]---> BDD-cost:    1
+c ---[ 431]---> BDD-cost:    1
+c ---[ 429]---> BDD-cost:    1
+c ---[ 427]---> BDD-cost:    1
+c ---[ 425]---> BDD-cost:    1
+c ---[ 423]---> BDD-cost:    1
+c ---[ 421]---> BDD-cost:    1
+c ---[ 419]---> BDD-cost:    1
+c ---[ 417]---> BDD-cost:    1
+c ---[ 416]---> Sorter-cost: 1193     Base: 2 2 3 13
+c ---[ 415]---> Sorter-cost:  935     Base: 2 2 3
+c ---[ 414]---> Sorter-cost: 1096     Base: 2 3 2
+c ---[ 413]---> Sorter-cost: 1035     Base: 2 3 7
+c ---[ 412]---> Sorter-cost: 1083     Base: 3 2 2 11
+c ---[ 411]---> Sorter-cost:  907     Base: 3 2 2
+c ---[ 410]---> Sorter-cost: 1109     Base: 2 2 2 17
+c ---[ 409]---> Sorter-cost: 1053     Base: 2 2 3
+c ---[ 408]---> Adder-cost: 112   maxlim: 141   bits: 9/8
+c ---[ 407]---> Sorter-cost: 1444     Base: 3 3 17
+c ---[ 406]---> Adder-cost: 105   maxlim: 163   bits: 9/8
+c ---[ 405]---> Adder-cost: 36   maxlim: 83   bits: 8/7
+c ---[ 404]---> Sorter-cost: 1304     Base: 5 2 13
+c ---[ 403]---> Sorter-cost:  794     Base: 5 2 11
+c ---[ 402]---> Sorter-cost: 1369     Base: 2 2 3
+c ---[ 401]---> Sorter-cost: 1066     Base: 2 2 3
+c ---[ 400]---> Sorter-cost: 1034     Base: 2 3 2
+c ---[ 399]---> Sorter-cost: 1108     Base: 2 5 7
+c ---[ 398]---> Sorter-cost: 1224     Base: 2 2 2 17
+c ---[ 397]---> Sorter-cost: 1218     Base: 2 3 2
+c ---[ 396]---> Sorter-cost: 1211     Base: 2 2 2 11
+c ---[ 395]---> Sorter-cost: 1050     Base: 2 2 2
+c ---[ 394]---> Adder-cost: 119   maxlim: 162   bits: 9/8
+c ---[ 393]---> Sorter-cost: 1452     Base: 2 2 3
+c ---[ 392]---> Adder-cost: 132   maxlim: 164   bits: 9/8
+c ---[ 391]---> Adder-cost: 75   maxlim: 118   bits: 8/7
+c ---[ 390]---> Sorter-cost: 1280     Base: 2 5 17
+c ---[ 389]---> Sorter-cost:  959     Base: 2 5
+c ---[ 388]---> Sorter-cost: 1221     Base: 2 5 5
+c ---[ 387]---> Sorter-cost:  904     Base: 2 5
+c ---[ 386]---> Adder-cost: 120   maxlim: 174   bits: 9/8
+c ---[ 385]---> Sorter-cost: 1359     Base: 2 2 2
+c ---[ 384]---> Sorter-cost: 1077     Base: 2 3 2 13
+c ---[ 383]---> Sorter-cost: 1215     Base: 2 2 3
+c ---[ 382]---> Sorter-cost: 1121     Base: 2 3 2
+c ---[ 381]---> Sorter-cost:  904     Base: 2 2 3
+c ---[ 380]---> Sorter-cost: 1171     Base: 2 2 3
+c ---[ 379]---> Sorter-cost:  668     Base: 2 2 3
+c ---[ 378]---> Adder-cost: 111   maxlim: 81   bits: 8/7
+c ---[ 377]---> Sorter-cost: 1260     Base: 2 2 3
+c ---[ 376]---> Sorter-cost: 1411     Base: 3 3
+c ---[ 375]---> Sorter-cost:  848     Base: 3 3 7
+c ---[ 374]---> Sorter-cost: 1036     Base: 3 3 5
+c ---[ 373]---> Sorter-cost: 1100     Base: 2 2 3
+c ---[ 372]---> Adder-cost: 123   maxlim: 164   bits: 9/8
+c ---[ 371]---> Adder-cost: 78   maxlim: 106   bits: 8/7
+c ---[ 370]---> Sorter-cost: 1366     Base: 2 2 3
+c ---[ 369]---> Sorter-cost:  950     Base: 2 2 3
+c ---[ 368]---> Sorter-cost: 1448     Base: 2 3 2
+c ---[ 367]---> Sorter-cost: 1243     Base: 2 3 2
+c ---[ 366]---> Sorter-cost: 1193     Base: 2 2 2 17
+c ---[ 365]---> Adder-cost: 113   maxlim: 121   bits: 8/7
+c ---[ 364]---> Adder-cost: 121   maxlim: 115   bits: 8/7
+c ---[ 363]---> Sorter-cost: 1365     Base: 2 2 2 17
+c ---[ 362]---> Adder-cost: 110   maxlim: 164   bits: 9/8
+c ---[ 361]---> Sorter-cost: 1366     Base: 2 2 3
+c ---[ 360]---> Adder-cost: 109   maxlim: 147   bits: 9/8
+c ---[ 359]---> Sorter-cost: 1363     Base: 2 2 3
+c ---[ 358]---> Sorter-cost: 1270     Base: 2 5 5
+c ---[ 357]---> Sorter-cost:  858     Base: 2 5
+c ---[ 356]---> Adder-cost: 110   maxlim: 128   bits: 9/8
+c ---[ 355]---> Adder-cost: 63   maxlim: 130   bits: 9/8
+c ---[ 354]---> Adder-cost: 124   maxlim: 171   bits: 9/8
+c ---[ 353]---> Adder-cost: 62   maxlim: 141   bits: 9/8
+c ---[ 352]---> Sorter-cost: 1311     Base: 2 3 2
+c ---[ 351]---> Sorter-cost:  772     Base: 2 3 2
+c ---[ 350]---> Sorter-cost: 1028     Base: 2 3 2
+c ---[ 349]---> Sorter-cost:  676     Base: 2 3 2 11
+c ---[ 348]---> Sorter-cost: 1257     Base: 2 5 13
+c ---[ 347]---> Sorter-cost:  674     Base: 2 5 7
+c ---[ 346]---> Adder-cost: 130   maxlim: 169   bits: 9/8
+c ---[ 345]---> Sorter-cost: 1402     Base: 2 3 2
+c ---[ 344]---> Sorter-cost: 1405     Base: 3 3
+c ---[ 343]---> Sorter-cost:  775     Base: 3 3 17
+c ---[ 342]---> Sorter-cost: 1260     Base: 2 2 3
+c ---[ 341]---> Sorter-cost: 1037     Base: 2 2 3
+c ---[ 340]---> Sorter-cost:  980     Base: 2 2 3 13
+c ---[ 339]---> Sorter-cost:  953     Base: 2 2 3
+c ---[ 338]---> Sorter-cost: 1351     Base: 3 3 17
+c ---[ 337]---> Sorter-cost: 1379     Base: 2 2 3
+c ---[ 335]---> Adder-cost: 128   maxlim: 293   bits: 9/9
+c ---[ 334]---> Adder-cost: 122   maxlim: 131   bits: 9/8
+c ---[ 333]---> Sorter-cost: 1428     Base: 2 5 7
+c ---[ 332]---> Sorter-cost: 1129     Base: 3 2 2
+c ---[ 331]---> Sorter-cost: 1021     Base: 3 2 13
+c ---[ 330]---> Adder-cost: 122   maxlim: 159   bits: 9/8
+c ---[ 329]---> Sorter-cost: 1577     Base: 2 3 2
+c ---[ 328]---> Adder-cost: 132   maxlim: 120   bits: 8/7
+c ---[ 327]---> Adder-cost: 49   maxlim: 152   bits: 9/8
+c ---[ 326]---> Sorter-cost: 1282     Base: 2 5 7
+c ---[ 325]---> Sorter-cost: 1254     Base: 2 2 3
+c ---[ 324]---> Adder-cost: 123   maxlim: 125   bits: 8/7
+c ---[ 323]---> Adder-cost: 67   maxlim: 124   bits: 8/7
+c ---[ 322]---> Sorter-cost: 1288     Base: 2 5 5
+c ---[ 321]---> Sorter-cost:  796     Base: 2 5 7
+c ---[ 320]---> Sorter-cost: 1375     Base: 2 3 2
+c ---[ 319]---> Sorter-cost:  921     Base: 2 3 2
+c ---[ 318]---> Sorter-cost: 1538     Base: 2 3 2
+c ---[ 317]---> Sorter-cost: 1237     Base: 2 3 2
+c ---[ 316]---> Adder-cost: 132   maxlim: 147   bits: 9/8
+c ---[ 315]---> Sorter-cost: 1401     Base: 2 3 2
+c ---[ 314]---> Sorter-cost: 1319     Base: 2 3 2
+c ---[ 313]---> Sorter-cost: 1033     Base: 2 2 3 5
+c ---[ 312]---> Sorter-cost: 1419     Base: 2 5 7
+c ---[ 311]---> Sorter-cost:  824     Base: 2 5 7
+c ---[ 310]---> Sorter-cost: 1200     Base: 2 3 2
+c ---[ 309]---> Sorter-cost:  701     Base: 2 3 2
+c ---[ 308]---> Sorter-cost: 1319     Base: 2 2 3
+c ---[ 307]---> Sorter-cost: 1012     Base: 2 2 3
+c ---[ 306]---> Sorter-cost: 1038     Base: 2 3 2 13
+c ---[ 305]---> Sorter-cost:  835     Base: 2 3 2
+c ---[ 304]---> Sorter-cost: 1076     Base: 2 3 2
+c ---[ 303]---> Sorter-cost:  858     Base: 2 2 3 13
+c ---[ 302]---> Adder-cost: 138   maxlim: 202   bits: 9/8
+c ---[ 301]---> Sorter-cost: 1353     Base: 2 2 3
+c ---[ 300]---> Sorter-cost: 1224     Base: 3 3 17
+c ---[ 299]---> Sorter-cost:  730     Base: 3 3 11
+c ---[ 298]---> Sorter-cost: 1073     Base: 3 2 2 17
+c ---[ 297]---> Sorter-cost:  919     Base: 3 2 2
+c ---[ 296]---> Sorter-cost: 1306     Base: 2 3 2
+c ---[ 295]---> Sorter-cost:  757     Base: 2 3 2 13
+c ---[ 294]---> Sorter-cost: 1340     Base: 2 2 3
+c ---[ 293]---> Sorter-cost: 1433     Base: 2 3 11
+c ---[ 292]---> Adder-cost: 138   maxlim: 157   bits: 9/8
+c ---[ 291]---> Adder-cost: 78   maxlim: 134   bits: 9/8
+c ---[ 290]---> Adder-cost: 140   maxlim: 166   bits: 9/8
+c ---[ 289]---> Adder-cost: 84   maxlim: 145   bits: 9/8
+c ---[ 288]---> Sorter-cost: 1220     Base: 2 2 2 17
+c ---[ 287]---> Sorter-cost: 1227     Base: 2 2 3
+c ---[ 286]---> Adder-cost: 132   maxlim: 141   bits: 9/8
+c ---[ 285]---> Sorter-cost: 1394     Base: 2 3 2
+c ---[ 284]---> Adder-cost: 136   maxlim: 151   bits: 9/8
+c ---[ 283]---> Adder-cost: 86   maxlim: 158   bits: 9/8
+c ---[ 282]---> Sorter-cost: 1319     Base: 3 3 5
+c ---[ 281]---> Sorter-cost:  912     Base: 3 3 5
+c ---[ 280]---> Sorter-cost: 1157     Base: 2 3 2 13
+c ---[ 279]---> Sorter-cost:  805     Base: 2 3 2
+c ---[ 278]---> Adder-cost: 134   maxlim: 124   bits: 8/7
+c ---[ 277]---> Adder-cost: 81   maxlim: 146   bits: 9/8
+c ---[ 276]---> Adder-cost: 132   maxlim: 141   bits: 9/8
+c ---[ 275]---> Adder-cost: 66   maxlim: 140   bits: 9/8
+c ---[ 274]---> Sorter-cost: 1230     Base: 2 2 3
+c ---[ 273]---> Sorter-cost: 1033     Base: 2 2 3
+c ---[ 272]---> Adder-cost: 142   maxlim: 160   bits: 9/8
+c ---[ 271]---> Adder-cost: 90   maxlim: 139   bits: 9/8
+c ---[ 270]---> Sorter-cost: 1296     Base: 2 2 3 13
+c ---[ 269]---> Sorter-cost: 1177     Base: 2 2 3
+c ---[ 268]---> Adder-cost: 119   maxlim: 91   bits: 8/7
+c ---[ 267]---> Sorter-cost: 1108     Base: 2 2 2 7
+c ---[ 266]---> Adder-cost: 122   maxlim: 161   bits: 9/8
+c ---[ 265]---> Sorter-cost: 1381     Base: 2 2 3
+c ---[ 264]---> Sorter-cost: 1032     Base: 2 3 2 7
+c ---[ 263]---> Sorter-cost:  924     Base: 2 3 2
+c ---[ 262]---> Sorter-cost:  998     Base: 2 3 2 13
+c ---[ 261]---> Sorter-cost:  961     Base: 2 3 2
+c ---[ 260]---> Sorter-cost: 1409     Base: 3 2 2
+c ---[ 259]---> Sorter-cost: 1037     Base: 3 2 2
+c ---[ 258]---> Sorter-cost: 1316     Base: 2 5 5
+c ---[ 257]---> Sorter-cost:  675     Base: 2 5 11
+c ---[ 256]---> Sorter-cost: 1202     Base: 2 2 3
+c ---[ 255]---> Sorter-cost:  775     Base: 2 2 3 11
+c ---[ 254]---> Sorter-cost: 1312     Base: 3 3 5
+c ---[ 253]---> Sorter-cost:  883     Base: 3 3 5
+c ---[ 252]---> Sorter-cost: 1173     Base: 2 3 2
+c ---[ 251]---> Sorter-cost:  850     Base: 2 3 2
+c ---[ 250]---> Sorter-cost: 1405     Base: 2 2 3
+c ---[ 249]---> Sorter-cost: 1103     Base: 2 2 3
+c ---[ 248]---> Sorter-cost: 1129     Base: 3 3 7
+c ---[ 247]---> Sorter-cost:  773     Base: 3 3 5
+c ---[ 246]---> Adder-cost: 141   maxlim: 145   bits: 9/8
+c ---[ 245]---> Adder-cost: 62   maxlim: 143   bits: 9/8
+c ---[ 244]---> Sorter-cost: 1283     Base: 2 2 2 5
+c ---[ 243]---> Sorter-cost:  933     Base: 2 2 2 17
+c ---[ 242]---> Sorter-cost: 1409     Base: 2 3 2
+c ---[ 241]---> Sorter-cost: 1029     Base: 2 3 2
+c ---[ 240]---> Sorter-cost: 1542     Base: 2 3 2
+c ---[ 239]---> Sorter-cost: 1110     Base: 2 3 2
+c ---[ 238]---> Adder-cost: 134   maxlim: 151   bits: 9/8
+c ---[ 237]---> Sorter-cost: 1440     Base: 2 3 2
+c ---[ 236]---> Sorter-cost: 1318     Base: 3 3 5
+c ---[ 235]---> Sorter-cost:  880     Base: 3 3 5
+c ---[ 233]---> Sorter-cost: 1418     Base: 2 3 2
+c ---[ 232]---> Adder-cost: 128   maxlim: 122   bits: 8/7
+c ---[ 231]---> Sorter-cost: 1221     Base: 3 3 5
+c ---[ 230]---> Sorter-cost: 1205     Base: 2 3 2 13
+c ---[ 229]---> Sorter-cost: 1050     Base: 3 2 2
+c ---[ 228]---> Adder-cost: 140   maxlim: 120   bits: 8/7
+c ---[ 227]---> Sorter-cost: 1447     Base: 2 2 2 11
+c ---[ 226]---> Adder-cost: 144   maxlim: 124   bits: 8/7
+c ---[ 225]---> Adder-cost: 57   maxlim: 140   bits: 9/8
+c ---[ 224]---> Adder-cost: 129   maxlim: 125   bits: 8/7
+c ---[ 223]---> Adder-cost: 67   maxlim: 122   bits: 8/7
+c ---[ 222]---> Sorter-cost: 1463     Base: 2 3 2
+c ---[ 221]---> Sorter-cost:  782     Base: 2 3 2 13
+c ---[ 220]---> Sorter-cost: 1367     Base: 3 2 2
+c ---[ 219]---> Sorter-cost: 1101     Base: 3 2 2
+c ---[ 218]---> Adder-cost: 130   maxlim: 143   bits: 9/8
+c ---[ 217]---> Adder-cost: 79   maxlim: 118   bits: 8/7
+c ---[ 216]---> Adder-cost: 114   maxlim: 141   bits: 9/8
+c ---[ 215]---> Adder-cost: 75   maxlim: 98   bits: 8/7
+c ---[ 214]---> Sorter-cost: 1537     Base: 2 3 2
+c ---[ 213]---> Sorter-cost: 1140     Base: 2 3 2
+c ---[ 212]---> Adder-cost: 124   maxlim: 136   bits: 9/8
+c ---[ 211]---> Adder-cost: 66   maxlim: 151   bits: 9/8
+c ---[ 210]---> Sorter-cost: 1257     Base: 3 3 5
+c ---[ 209]---> Sorter-cost:  829     Base: 3 3 17
+c ---[ 208]---> Adder-cost: 132   maxlim: 142   bits: 9/8
+c ---[ 207]---> Sorter-cost: 1404     Base: 2 2 3
+c ---[ 206]---> Sorter-cost: 1164     Base: 3 3 7
+c ---[ 205]---> Sorter-cost: 1030     Base: 3 3 13
+c ---[ 204]---> Sorter-cost: 1294     Base: 2 5 13
+c ---[ 203]---> Sorter-cost:  881     Base: 2 5 5
+c ---[ 202]---> Sorter-cost: 1340     Base: 2 2 2 17
+c ---[ 201]---> Sorter-cost:  888     Base: 2 2 2 17
+c ---[ 200]---> Adder-cost: 122   maxlim: 151   bits: 9/8
+c ---[ 199]---> Sorter-cost: 1193     Base: 3 3 13
+c ---[ 198]---> Adder-cost: 123   maxlim: 127   bits: 8/7
+c ---[ 197]---> Sorter-cost: 1384     Base: 2 5 7
+c ---[ 196]---> Sorter-cost: 1388     Base: 2 2 3
+c ---[ 195]---> Sorter-cost: 1063     Base: 2 2 3
+c ---[ 194]---> Sorter-cost: 1240     Base: 2 5 7
+c ---[ 193]---> Sorter-cost:  675     Base: 2 5 11
+c ---[ 192]---> Adder-cost: 121   maxlim: 132   bits: 9/8
+c ---[ 191]---> Adder-cost: 66   maxlim: 147   bits: 9/8
+c ---[ 190]---> Sorter-cost: 1233     Base: 2 3 2
+c ---[ 189]---> Sorter-cost:  917     Base: 2 3 2
+c ---[ 188]---> Sorter-cost: 1207     Base: 2 3 2
+c ---[ 187]---> Sorter-cost:  786     Base: 2 3 2
+c ---[ 186]---> Adder-cost: 135   maxlim: 168   bits: 9/8
+c ---[ 185]---> Adder-cost: 76   maxlim: 137   bits: 9/8
+c ---[ 184]---> Sorter-cost: 1322     Base: 3 3 5
+c ---[ 183]---> Sorter-cost: 1140     Base: 3 3
+c ---[ 182]---> Sorter-cost: 1405     Base: 2 2 3
+c ---[ 181]---> Sorter-cost: 1230     Base: 2 3 2
+c ---[ 180]---> Sorter-cost: 1111     Base: 2 2 3
+c ---[ 179]---> Sorter-cost:  745     Base: 2 2 3 13
+c ---[ 178]---> Sorter-cost: 1008     Base: 2 3 2 11
+c ---[ 177]---> Sorter-cost:  695     Base: 2 3 2 11
+c ---[ 176]---> Sorter-cost:  974     Base: 2 3 2 13
+c ---[ 175]---> Sorter-cost: 1059     Base: 2 2 3
+c ---[ 174]---> Adder-cost: 134   maxlim: 134   bits: 9/8
+c ---[ 173]---> Adder-cost: 80   maxlim: 139   bits: 9/8
+c ---[ 172]---> Sorter-cost: 1250     Base: 2 3 2
+c ---[ 171]---> Sorter-cost:  884     Base: 2 3 2
+c ---[ 170]---> Sorter-cost:  911     Base: 2 2 3 11
+c ---[ 169]---> Sorter-cost:  689     Base: 2 2 3 11
+c ---[ 168]---> Adder-cost: 123   maxlim: 136   bits: 9/8
+c ---[ 167]---> Adder-cost: 74   maxlim: 139   bits: 9/8
+c ---[ 166]---> Sorter-cost: 1217     Base: 2 5 13
+c ---[ 165]---> Sorter-cost:  705     Base: 2 5 11
+c ---[ 164]---> Sorter-cost: 1134     Base: 2 2 3
+c ---[ 163]---> Sorter-cost:  730     Base: 2 2 3 13
+c ---[ 162]---> Adder-cost: 139   maxlim: 110   bits: 8/7
+c ---[ 161]---> Adder-cost: 80   maxlim: 167   bits: 9/8
+c ==================================[MINISAT+]==================================
+c | Conflicts | Original         | Learnt                           | Progress |
+c |           | Clauses Literals |     Max Clauses Literals     LPC |          |
+c ==============================================================================
+c |         0 | 1160236  3105224 |  386745       0        0    -nan |  0.000 % |
+c |       101 | 1160236  3105224 |  425419     101     1123    11.1 |  0.488 % |
+c |       253 | 1160236  3105224 |  467961     253     4331    17.1 |  0.488 % |
+c |       479 | 1160236  3105224 |  514757     479     8085    16.9 |  0.488 % |
+c |       816 | 1160236  3105224 |  566233     816    13354    16.4 |  0.488 % |
+c |      1323 | 1160236  3105224 |  622856    1323    37465    28.3 |  0.488 % |
+c |      2082 | 1160236  3105224 |  685142    2082    66242    31.8 |  0.488 % |
+c |      3222 | 1160236  3105224 |  753656    3222   124421    38.6 |  0.488 % |
+c |      4930 | 1160236  3105224 |  829022    4930   201728    40.9 |  0.488 % |
+c |      7493 | 1160236  3105224 |  911924    7493   280121    37.4 |  0.488 % |
+c |     11338 | 1160236  3105224 | 1003116   11338   461067    40.7 |  0.488 % |
+c |     17105 | 1160236  3105224 | 1103428   17105   622903    36.4 |  0.488 % |
+c |     25755 | 1160236  3105224 | 1213771   25755   911764    35.4 |  0.488 % |
+c |     38731 | 1160236  3105224 | 1335148   38731  1431178    37.0 |  0.488 % |
+c |     58193 | 1160236  3105224 | 1468663   58193  2049567    35.2 |  0.488 % |
+c |     87385 | 1160236  3105224 | 1615529   87385  3328411    38.1 |  0.488 % |
+c ==============================================================================
+c [1mFound solution: -1[0m
+c [1mOptimal solution: -1[0m
+s OPTIMUM FOUND
+v Z O1_33 t1_161 -O1_34 -t1_162 -O1_35 -t1_163 O1_36 t1_164 O1_37 t1_165 O1_38 t1_166 -O1_39 -t1_167 -O1_40 -t1_168 -O1_41 -t1_169 -O1_42 -t1_170 O1_43 t1_171 -O1_44 -t1_172 -O1_45 -t1_173 -O1_46 -t1_174 -O1_47 -t1_175 O1_48 t1_176 -O1_49 -t1_177 -O1_50 -t1_178 O1_51 t1_179 O1_52 t1_180 O1_53 t1_181 O1_54 t1_182 -O1_55 -t1_183 -O1_56 -t1_184 -O1_57 -t1_185 O1_58 t1_186 O1_59 t1_187 O1_60 t1_188 -O1_61 -t1_189 O1_62 t1_190 -O1_63 -t1_191 -O1_64 -t1_192 -t1_65 I_1 -I_2 I_3 -I_4 -I_5 -I_6 -I_7 -I_8 -I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 -I_19 I_20 -I_21 I_22 I_23 -I_24 -I_25 -I_26 -I_27 I_28 I_29 -I_30 -I_31 I_32 -t1_66 t1_67 -t1_68 t1_69 t1_70 t1_71 -t1_72 t1_73 t1_74 -t1_75 t1_76 t1_77 t1_78 -t1_79 t1_80 t1_81 t1_82 -t1_83 t1_84 t1_85 -t1_86 t1_87 t1_88 -t1_89 -t1_90 -t1_91 t1_92 t1_93 t1_94 -t1_95 -t1_96 -t1_97 -t1_98 t1_99 -t1_100 t1_101 -t1_102 t1_103 -t1_104 -t1_105 t1_106 -t1_107 -t1_108 -t1_109 t1_110 t1_111 -t1_112 t1_113 -t1_114 -t1_115 -t1_116 t1_117 t1_118 -t1_119 t1_120 -t1_121 t1_122 -t1_123 t1_124 -t1_125 -t1_126 -t1_127 t1_128 t1_129 -t1_130 t1_131 -t1_132 -t1_133 -t1_134 -t1_135 -t1_136 t1_137 t1_138 t1_139 t1_140 t1_141 -t1_142 -t1_143 -t1_144 t1_145 t1_146 -t1_147 -t1_148 t1_149 t1_150 -t1_151 -t1_152 t1_153 t1_154 t1_155 -t1_156 t1_157 t1_158 -t1_159 -t1_160 O2_33 t2_161 -O2_34 -t2_162 -O2_35 -t2_163 O2_36 t2_164 O2_37 t2_165 O2_38 t2_166 -O2_39 -t2_167 -O2_40 -t2_168 O2_41 t2_169 -O2_42 -t2_170 O2_43 t2_171 -O2_44 -t2_172 O2_45 t2_173 -O2_46 -t2_174 -O2_47 -t2_175 O2_48 t2_176 -O2_49 -t2_177 -O2_50 -t2_178 O2_51 t2_179 O2_52 t2_180 O2_53 t2_181 O2_54 t2_182 -O2_55 -t2_183 -O2_56 -t2_184 -O2_57 -t2_185 O2_58 t2_186 O2_59 t2_187 O2_60 t2_188 -O2_61 -t2_189 O2_62 t2_190 -O2_63 -t2_191 -O2_64 -t2_192 -t2_65 -t2_66 t2_67 -t2_68 t2_69 t2_70 t2_71 -t2_72 t2_73 t2_74 -t2_75 t2_76 t2_77 t2_78 -t2_79 t2_80 t2_81 t2_82 -t2_83 t2_84 t2_85 -t2_86 t2_87 t2_88 -t2_89 -t2_90 -t2_91 t2_92 t2_93 t2_94 -t2_95 -t2_96 -t2_97 -t2_98 t2_99 -t2_100 t2_101 -t2_102 t2_103 -t2_104 -t2_105 t2_106 -t2_107 -t2_108 -t2_109 t2_110 t2_111 -t2_112 t2_113 -t2_114 -t2_115 -t2_116 t2_117 t2_118 -t2_119 t2_120 -t2_121 t2_122 -t2_123 t2_124 -t2_125 -t2_126 -t2_127 t2_128 t2_129 -t2_130 t2_131 -t2_132 -t2_133 -t2_134 -t2_135 -t2_136 t2_137 t2_138 t2_139 t2_140 t2_141 -t2_142 -t2_143 t2_144 t2_145 t2_146 -t2_147 -t2_148 t2_149 t2_150 -t2_151 -t2_152 t2_153 t2_154 t2_155 -t2_156 t2_157 t2_158 -t2_159 -t2_160 -M_0 -M_1 -M_2 -M_3 -M_4 -M_5 -M_6 -M_7 M_8 -M_9 -M_10 -M_11 M_12 -M_13 -M_14 -M_15 -M_16 -M_17 -M_18 -M_19 -M_20 -M_21 -M_22 -M_23 -M_24 -M_25 -M_26 -M_27 -M_28 -M_29 -M_30 -M_31
+c _______________________________________________________________________________
+c 
+c restarts              : 16
+c conflicts             : 91641          (474 /sec)
+c decisions             : 322834         (1670 /sec)
+c propagations          : 0              (0 /sec)
+c inspects              : 0              (0 /sec)
+c CPU time              : 193.339 s
+c _______________________________________________________________________________

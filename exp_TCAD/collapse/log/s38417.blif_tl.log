@@ -1,0 +1,73 @@
+ABC command line: "r exp_TCAD/benchmark/iscas_itc/s38417.blif; tl_syn; mt; pt; q".
+
+elapse: 0.11 seconds, total: 0.11 seconds
+Finished matching 6953 functions. Time =     0.83 sec
+[1;37m../DATA/s38417.bench[0m : i/o =   1664/   1742  [1;36mand =   11318[0m  [1;35mlev =   26[0m [1;35m(6.71)[0m  mem = 0.18 MB
+Mapping (K=8)  :  [1;33mlut =   4857[0m  [1;32medge =   16143[0m  [1;31mlev =    8[0m [1;31m(3.36)[0m  mem = 0.15 MB
+elapse: 4.43 seconds, total: 4.54 seconds
+	PI     : 1664
+	PO     : 1742
+	Node   : 4857
+	Level  : 8
+----------------------------------------
+	Fanin numbers
+	#2        : 1917
+	#3        : 1352
+	#4        : 586
+	#5        : 403
+	#6        : 360
+	#7        : 178
+	#8        : 61
+Maximum fanin number: 8
+----------------------------------------
+	Fanout numbers
+	#1        : 3740
+	#2        : 322
+	#3        : 340
+	#4        : 85
+	#5        : 81
+	#6        : 37
+	#7        : 14
+	#8        : 62
+	#9        : 28
+	#10-19    : 125
+	#20-29    : 21
+	#30-39    : 1
+	#40-49    : 1
+Maximum fanout number: 40
+collapse time :  =     0.01 sec
+	PI     : 1664
+	PO     : 1742
+	Node   : 4248
+	Level  : 8
+----------------------------------------
+	Fanin numbers
+	#2        : 1209
+	#3        : 944
+	#4        : 623
+	#5        : 411
+	#6        : 349
+	#7        : 172
+	#8        : 115
+	#9        : 111
+	#10-19    : 314
+Maximum fanin number: 16
+----------------------------------------
+	Fanout numbers
+	#1        : 3193
+	#2        : 274
+	#3        : 297
+	#4        : 67
+	#5        : 94
+	#6        : 45
+	#7        : 36
+	#8        : 26
+	#9        : 21
+	#10-19    : 128
+	#20-29    : 46
+	#30-39    : 10
+	#40-49    : 8
+	#50-59    : 1
+	#90-99    : 1
+	#100-199  : 1
+Maximum fanout number: 100
