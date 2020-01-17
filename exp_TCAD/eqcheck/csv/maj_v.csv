@@ -1,0 +1,7 @@
+benchmark,s_pb(B),t_pb(sec),s_cnf(MB),t_cnf(sec)
+maj_63,2702,TO,1024.0,TO
+maj_127,5269,TO,1024.0,TO
+maj_255,11161,TO,1024.0,TO
+maj_511,23450,TO,1024.0,TO
+maj_1023,47121,TO,1024.0,TO
+maj_2047,102421,TO,1024.0,TO
