@@ -35,9 +35,6 @@ tags
 *.cnf
 *.dimacs
 *.ps
-expEC/*
-exp/*
-exp_old/*
 log/*
 # circuit files
 *.aig
