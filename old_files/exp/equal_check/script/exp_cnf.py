@@ -14,21 +14,21 @@ parser = argparse.ArgumentParser( description = "Parsing collapsing option ..." 
 parser.add_argument( "-i", action="store_true", dest="ite", default=False, help="enabling iterative collapsing (default=False)" )
 args = parser.parse_args()
 cur_path = os.getcwd()
-f = open( cur_path + "/exp_TCAD/eqcheck/benchmark/bench_list" )
+f = open( cur_path + "/exp/benchmark/bench_list" )
 content = f.readlines()
 bench_list = [x.strip() for x in content]
 for name in bench_list:
-   bch = cur_path + ('/exp_TCAD/eqcheck/benchmark/%s.blif' % name)
+   bch = cur_path + ('/exp/benchmark/%s.blif' % name)
    if args.ite:
-      log  = cur_path + ('/exp_TCAD/eqcheck/log/%s_cnf_i.log' % name)
-      log2 = cur_path + ('/exp_TCAD/eqcheck/log/%s_cnf_sol_i.log' % name)
-      tcl  = cur_path + ('/exp_TCAD/eqcheck/tcl/exp_cnf_i.tcl')
-      cnf  = cur_path + ('/exp_TCAD/eqcheck/dimacs/%s_i.dimacs' % name)
+      log  = cur_path + ('/exp/log/%s_cnf_i.log' % name)
+      log2 = cur_path + ('/exp/log/%s_cnf_sol_i.log' % name)
+      tcl  = cur_path + ('/exp/tcl/exp_cnf_i.tcl')
+      cnf  = cur_path + ('/exp/dimacs/%s_i.dimacs' % name)
    else:
-      log  = cur_path + ('/exp_TCAD/eqcheck/log/%s_cnf.log' % name)
-      log2 = cur_path + ('/exp_TCAD/eqcheck/log/%s_cnf_sol.log' % name)
-      tcl  = cur_path + ('/exp_TCAD/eqcheck/tcl/exp_cnf.tcl')
-      cnf  = cur_path + ('/exp_TCAD/eqcheck/dimacs/%s.dimacs' % name) 
+      log  = cur_path + ('/exp/log/%s_cnf.log' % name)
+      log2 = cur_path + ('/exp/log/%s_cnf_sol.log' % name)
+      tcl  = cur_path + ('/exp/tcl/exp_cnf.tcl')
+      cnf  = cur_path + ('/exp/dimacs/%s.dimacs' % name) 
    cmd = cur_path + '/bin/abc -c \"r ' + bch + '; source ' + tcl + '\" &> ' + log
    sp.run(cmd, shell=True)
    cmd = 'mv compTH.dimacs ' + cnf

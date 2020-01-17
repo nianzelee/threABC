@@ -20,27 +20,27 @@ args = parser.parse_args()
 cur_path = os.getcwd()
 if args.ite:
    if args.aig:
-      cmd = 'python ' + cur_path + '/exp_TCAD/eqcheck/script/exp_aig.py -i &'
+      cmd = 'python ' + cur_path + '/exp/script/exp_aig.py -i &'
       sp.run(cmd, shell=True)
    if args.blif:
-      cmd = 'python ' + cur_path + '/exp_TCAD/eqcheck/script/exp_blif.py -i &'
+      cmd = 'python ' + cur_path + '/exp/script/exp_blif.py -i &'
       sp.run(cmd, shell=True)
    if args.cnf:
-      cmd = 'python ' + cur_path + '/exp_TCAD/eqcheck/script/exp_cnf.py -i &'
+      cmd = 'python ' + cur_path + '/exp/script/exp_cnf.py -i &'
       sp.run(cmd, shell=True)
    if args.pb:
-      cmd = 'python ' + cur_path + '/exp_TCAD/eqcheck/script/exp_pb.py -i &'
+      cmd = 'python ' + cur_path + '/exp/script/exp_pb.py -i &'
       sp.run(cmd, shell=True)
 else:
    if args.aig:
-      cmd = 'python ' + cur_path + '/exp_TCAD/eqcheck/script/exp_aig.py &'
+      cmd = 'python ' + cur_path + '/exp/script/exp_aig.py &'
       sp.run(cmd, shell=True)
    if args.blif:
-      cmd = 'python ' + cur_path + '/exp_TCAD/eqcheck/script/exp_blif.py &'
+      cmd = 'python ' + cur_path + '/exp/script/exp_blif.py &'
       sp.run(cmd, shell=True)
    if args.cnf:
-      cmd = 'python ' + cur_path + '/exp_TCAD/eqcheck/script/exp_cnf.py &'
+      cmd = 'python ' + cur_path + '/exp/script/exp_cnf.py &'
       sp.run(cmd, shell=True)
    if args.pb:
-      cmd = 'python ' + cur_path + '/exp_TCAD/eqcheck/script/exp_pb.py &'
+      cmd = 'python ' + cur_path + '/exp/script/exp_pb.py &'
       sp.run(cmd, shell=True)
