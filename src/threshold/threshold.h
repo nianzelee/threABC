@@ -196,6 +196,16 @@ extern Abc_Ntk_t* Th_Ntk2Mux             ( Vec_Ptr_t * , int , int );
 
 extern void Th_PBPGEncoding              ( Vec_Ptr_t * , int );
 
+//===threCalKL.c====================================//
+
+extern Pair_S*    Th_CalKLIf             ( const Thre_S * , const Thre_S * , int , int , int );
+extern Pair_S*    Th_CalKLDP             ( const Thre_S * , const Thre_S * , int , int , int );
+
+//===threMultiFout.c====================================//
+
+extern int Th_Check2FoutCollapse         ( const Thre_S * , const Thre_S * , int );
+extern int Th_CheckMultiFoutCollapse     ( const Thre_S * , int );
+
 #endif
 
 ////////////////////////////////////////////////////////////////////////

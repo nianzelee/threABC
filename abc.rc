@@ -172,7 +172,7 @@ alias ft  "profile_th"
 alias mpt "mt; pt"
 
 # For debug
-alias qq  "rt c17.th; thpg"
+alias qq  "r benchmarks/iscas85/c17.bench; aig_syn; mt"
 alias zz  "rt c17.th; thpg -p"
 
 # For experiment

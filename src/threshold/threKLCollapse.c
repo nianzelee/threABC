@@ -73,6 +73,7 @@ int        MaxF                   ( Vec_Int_t * , int );
 int        MinF                   ( Vec_Int_t * , int );
 int        Th_ObjNormalCheck      ( const Thre_S * );
 void       Th_DeleteClpObj        ( Thre_S * , int );
+void       Th_DeleteClpObj_tcad   ( Thre_S * );
 int        Th_NtkMaxFanout        ();
 // Dfs helper
 void       Th_NtkDfs              ();

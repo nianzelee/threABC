@@ -136,7 +136,7 @@ Th_CheckPairCollapse( const Thre_S * tObj1 , const Thre_S * tObj2 , int nFanin )
 
 	//pair = Th_CalKLDP( tObjInv , tObj2 , nFanin , w , fInvert );
 	pair = Th_CalKLIf( tObjInv , tObj2 , nFanin , w , fInvert );
-   
+
 	if ( pair && pair->IntK > 0 && pair->IntL > 0 && 
 	     Th_KLClpCheck( tObjInv , tObj2 , pair , w , fInvert ) ) {
 		RetValue = 1; 
