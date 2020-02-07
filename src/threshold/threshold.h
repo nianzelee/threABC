@@ -174,6 +174,9 @@ extern void       Th_ProfilePrint       ();
 extern void       func_EC_writeCNF      ( Abc_Ntk_t * , Vec_Ptr_t * , char * );
 extern void       delete_sortedNode     ( Thre_S * );
 extern void       my_Vec_StrPrintNum    ( Vec_Str_t * , int );
+extern Thre_S*    slow_sortByAbsWeights ( Thre_S* );
+extern int        Thre_LocalMax         (Thre_S* , int );
+extern int        Thre_LocalMin         (Thre_S* , int );
 
 //===thresholdNZ.c================================//
 
