@@ -96,5 +96,7 @@ Directory `exp_TCAD` contains all benchmarks, scripts, log files, and data in th
 3. Sub-directory `pg_encoding` is for the PG encoding experiments
 4. Sub-directory `high_fanin` is for the translation scalability experiments
 5. Sub-directory `dnn_mnist` is for the activation-binarized neural networks experiments
+## Suggestions, Questions, Bugs, etc
+You are welcome to [create an issue](https://github.com/nianzelee/ssatABC/issues) to make suggestions, ask questions, or report bugs, etc.
 ## Contact
 Please send an email to Nian-Ze Lee (nianzelee@gmail.com) if there is any problem.
