@@ -34,7 +34,7 @@ The source code has been compiled successfully with GCC\_VERSION=8.2.0 under Cen
 ### Misc:
 - `test_th`: testing playground
 - `profile_th`: print detailed collapse information
-### Outdated:
+### Outdated (only for documentation):
 - PB_th: eq check between pNtkCur and current_TList by PB
 - CNF_th: eq check between pNtkCur and current_TList by CNF
 - NZ: eq check between cut_TList and current_TList by PB
