@@ -1,59 +1,100 @@
 # threABC
 ## Introduction
-- Threshold logic operation within ABC
-- Developed by Nian-Ze Lee (NZ) and Hao-Yuan Kuo (OAO) from National Taiwan University
+- Threshold logic collapse operation and verification within ABC
+- Primary developer: Nian-Ze Lee from National Taiwan University
 - C implementation of algorithms proposed in [Analytic Approaches to the Collapse Operation and Equivalence Verification of Threshold Logic Circuits](https://ieeexplore.ieee.org/document/7827582/)
-- Algorithms and codes for threshold logic technology mapping proposed in [Threshold Logic Synthesis Based on Cut Pruning](https://ieeexplore.ieee.org/document/7372610/) by Augusto Neutzling, et al.
+- Algorithms and codes for threshold logic technology mapping proposed in [Threshold Logic Synthesis Based on Cut Pruning](https://ieeexplore.ieee.org/document/7372610/) by Augusto Neutzling et al.
+- Reference: Nian-Ze Lee, Hao-Yuan Kuo, Yi-Hsiang Lai, Jie-Hong R. Jiang:
+Analytic approaches to the collapse operation and equivalence verification of threshold logic circuits. ICCAD 2016: 5
 ## Contents
 1. [Installation](#installation)
 2. [Commands](#commands)
 3. [Examples](#examples)
-4. [Contact](#contact)
+4. [Experiments](#experiments)
+5. [Contact](#contact)
 ## Installation
-Type `make` to complie and the executable is `bin/abc`
+Type `make` to complie and the executable file is `bin/abc`
 ```
 make
 ```
-It has been tested successfully under CentOS 7.3.1611 with GCC\_VERSION=4.8.5
+The source code has been compiled successfully with GCC\_VERSION=8.2.0 under CentOS 7.3.1611/Ubuntu 18.04 LTS
 ## Commands:
 ### I/O:
-- read_th: read a .th file (PO must be buffered)
-- write_th: write current_TList out as a .th file
-- print_th: print network statistics of current_TList
+- `read_th` (alias `rt`): read a TL circuit (TLC) file in the `.th` format (POs must be buffered)
+- `write_th` (alias `wt`): write the current TLC out in the `.th` format
+- `print_th` (alias `pt`): print the network statistics of the current TLC
 ### Synthesis:
-- aig2th:   convert AIG to TH by replacing an AND gate as a threshold gate [1,1;2]
-- merge_th: reduce # of threshold gates by collapsing
-- th2blif:  convert TH to a blif file by transforming a threshold gate to the truth table
-- th2mux:   convert TH to AIG by expanding a threshold gate to a mux tree
+- `aig2th` (alias `a2t`): convert an AIG circuit to a TLC by replacing AIG nodes with TL gates (TLGs)
+- `merge_th` (alias `mt`): the proposed collapsing-based TLC synthesis
+- `th2blif` (alias `t2b`): convert a TLC to a blif file by transforming a threshold gate to a truth table
 ### Verification:
+- `th2mux` (alias `t2m`): convert a TLC to an AIG circuit by expanding a TLG to a MUX tree
+- `thverify` (alias `tvr`): write a CNF/PB file for the equivalence checking of two TLCs
+- `thpg` (alias `tp`): write a PB file for the output satisfiability of a TLC with PG encoding
+### Misc:
+- `test_th`: testing playground
+- `profile_th`: print detailed collapse information
+### Outdated:
 - PB_th: eq check between pNtkCur and current_TList by PB
 - CNF_th: eq check between pNtkCur and current_TList by CNF
 - NZ: eq check between cut_TList and current_TList by PB
 - OAO: eq check between cut_TList and current_TList by CNF
-### misc:
-- test_th: testing playground
-- profile_th: print detailed collapse information
 ## Examples
-1. Collapse a synthesized threshold logic circuit
+1. Collapse an AIG circuit iteratively with a fanout bound = 100 (`aig_syn` is defined in file abc.rc)
 ```
-abc 01> r benchmarks/iscas85/c6288.bench
-abc 02> synth1
-abc 03> merge_th
+abc 01> r exp_TCAD/collapse/benchmark/iscas_itc/s38417.blif
+abc 02> aig_syn
+abc 03> mt -B 100
+abc 04> pt
+abc 05> q
 ```
-2. Verify equivalence using mux-based conversion and cec
-(Continued from the above example)
+2. Collapse a synthesized TLC iteratively with a fanout bound = 100 (`tl_syn` is defined in file abc.rc)
 ```
-abc 04> t2m
-abc 05> cec -n benchmarks/iscas85/c6288.bench
+abc 01> r exp_TCAD/collapse/benchmark/iscas_itc/s38417.blif
+abc 02> tl_syn
+abc 03> wt s38417_before_clp.th
+abc 04> mt -B 100
+abc 05> pt
+abc 06> wt s38417_after_clp.th
+abc 07> q
 ```
-3. Verify equivalence using PB-based conversion and minisat+
-(Continued from the above example)
+3. Verify equivalence using the TL-to-MUX translation and ABC command `cec` (continued from the above example)
 ```
-abc 06> NZ
-abc 07> quit
-bin/minisat+ compTH.opb
+abc 01> rt s38417_before_clp.th
+abc 02> t2m
+abc 03> w s38417_before_clp.aig
+abc 04> rt s38417_after_clp.th
+abc 05> t2m
+abc 06> w s38417_after_clp.aig
+abc 07> cec s38417_before_clp.aig s38417_after_clp.aig
+abc 08> q
 ```
-You can observe that PB-based equivalence checking takes much longer time.
-## Contact:
-Please let us know if you have any problem using the code.  
-Nian-Ze Lee: d04943019@ntu.edu.tw, nianzelee@gmail.com
+4. Verify equivalence using the TL-to-PB translation and `minisat+` (continued from the above example)
+```
+abc 01> tvr s38417_before_clp.th s38417_after_clp.th
+abc 02> q
+$ bin/minisat+ compTH.opb
+```
+5. Verify equivalence using the TL-to-CNF translation and `minisat` (continued from the above example)
+```
+abc 01> tvr -V 1 s38417_before_clp.th s38417_after_clp.th
+abc 02> q
+$ bin/minisat compTH.dimacs
+```
+6. Check the output satisfiability of a TLC using the PB-based method with PG encoding (`pg_and` is defined in file abc.rc)
+```
+abc 01> r exp_TCAD/pg_encoding/benchmark/b14.blif
+abc 02> pg_and
+abc 03> q
+$ bin/minisat+ no_pg.opb
+$ bin/minisat+ pg.opb
+```
+## Experiments
+Directory `exp_TCAD` contains all benchmarks, scripts, log files, and data in the experiments. Specifically:
+1. Sub-directory `collapse` is for the collapsing-based synthesis experiments
+2. Sub-directory `eqcheck` is for the verification experiments between TLCs before and after collapsing
+3. Sub-directory `pg_encoding` is for the PG encoding experiments
+4. Sub-directory `high_fanin` is for the translation scalability experiments
+5. Sub-directory `dnn_mnist` is for the activation-binarized neural networks experiments
+## Contact
+Please send an email to Nian-Ze Lee (nianzelee@gmail.com) if there is any problem.
