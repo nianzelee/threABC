@@ -99,4 +99,4 @@ Directory `exp_TCAD` contains all benchmarks, scripts, log files, and data in th
 ## Suggestions, Questions, Bugs, etc
 You are welcome to [create an issue](https://github.com/nianzelee/threABC/issues) to make suggestions, ask questions, or report bugs, etc.
 ## Contact
-Please send an email to Nian-Ze Lee (nianzelee@gmail.com) if there is any problem.
+Please send an email to Nian-Ze Lee (nian-ze.lee@sosy.ifi.lmu.de) if there is any problem.
